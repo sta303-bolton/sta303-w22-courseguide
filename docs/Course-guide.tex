@@ -1,0 +1,520 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={STA303: Methods of Data Analysis II},
+  pdfauthor={Prof.~Liza Bolton},
+  colorlinks=true,
+  linkcolor=Maroon,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=2cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\AtBeginDocument{\renewcommand{\chaptername}{}}
+
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{STA303: Methods of Data Analysis II}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Course guide}
+\author{Prof.~Liza Bolton}
+\date{Winter 2022}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+THIS SITE IS STILL IN PROGRESS! The information is not yet official.
+
+\hypertarget{how-to-use-this-course-guide}{%
+\chapter{How to use this course guide}\label{how-to-use-this-course-guide}}
+
+This course guide has been created using \href{https://bookdown.org/}{\texttt{bookdown}}.
+
+\hypertarget{communication-policy-reminder}{%
+\subsection{Communication policy reminder}\label{communication-policy-reminder}}
+
+All content and logistics questions must be asked on \href{https://piazza.com/class/kx47tj4fmy65dg}{Piazza}. Personal or private course matters should be emailed to \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
+
+\hypertarget{syllabus}{%
+\chapter{Syllabus}\label{syllabus}}
+
+\hypertarget{start-here}{%
+\chapter{Start here!}\label{start-here}}
+
+\hypertarget{introductions}{%
+\section{Introductions}\label{introductions}}
+
+Hi folks,
+
+Welcome to STA303! We're excited you're joining us on this statistical voyage. I look forward to introducing myself to you in our first class on Wednesday, but for now, there is are basic introductions below for me and our Head TA Amin. Feel free to skip to \protect\hyperlink{howthiscourseworks}{How this course works}, I know there is a lot to read in the module!
+
+Looking forward to a great semester! See you in class on Wednesday.
+
+\hypertarget{professor-liza-bolton-instructor}{%
+\subsection{Professor Liza Bolton, Instructor}\label{professor-liza-bolton-instructor}}
+
+\textbf{Email:} \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}} (Put ``{[}Prof.~Bolton{]}'' in the subject line to the email me directly)
+
+\textbf{Pronouns:} she/her
+
+Before moving (back) to Canada in 2019, I had lived more than half my life in New Zealand. (I still mention New Zealand a lot in class\ldots) My current research areas are in statistics education and online learning, as well as health disparities across ethnic groups. I used to run a small consulting company and called myself a Data Ambassador. Why? Well, lots of people are consultants. I even did an internship in management consulting once upon a time. But it wasn't a satisfying title for what I wanted my work with people to look like. I wanted something that focused on the communication and interpersonal side, not just high quality and appropriate analysis. People who aren't confident in their ability to analyse their own data need a go-between, someone who can be an ambassador for their data! While I don't do consulting any more, I love helping students build their technical and professional skills so they can go out into the world and be excellent ambassadors for data themselves.
+
+Last movie I cried in: Kiki's Delivery Service
+
+Favourite food: Corn. Popped, on the cob, in a chip, Mmmmm.
+
+Book most often given as a gift: \href{https://www.goodreads.com/book/show/41123067-a-matter-of-fact}{A Matter of Fact: Talking Truth in a Post-Truth World} by Jess Berentson-Shaw
+
+\hypertarget{amin-banihashemi-head-ta}{%
+\subsection{Amin Banihashemi, Head TA}\label{amin-banihashemi-head-ta}}
+
+\textbf{Email:} \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}} (Amin will often be the one responding to your emails)
+
+\textbf{Pronouns:} he/him
+
+I'm a fourth-year PhD student at the Institute of Medical Science. I have been a TA for STA130 in DoSS for the past 3 years and this is my second semester as Head TA of STA303.
+
+My area of research is clinical Neuroscience, something I am passionate about. I analyze images of brain and eye structures in neurodegenerative diseases. I investigate possible associations of these structures with each other and with the ability to remember well and carry out goal-oriented tasks successfully. I love creating reproducible statistical analysis workflows in R. I also like audiobooks, candlelight, and apple pie (which I make myself!)
+
+\textbackslash includegraphics{[}width=10d0\%{]}\{images/headers/map\}
+
+\hypertarget{howthiscourseworks}{%
+\section{How this course works}\label{howthiscourseworks}}
+
+This course is organized into five two-week modules of learning + two one week assessment-focus weeks.
+
+All course material will be made available through this course site in Quercus (any links to outside sites will be found here). Take a moment to familiarize yourself with some of the tools and content areas found in the left navigation bar. You can move through content in a module by selecting the ``Next'' button at the bottom right of the page. You can also visit the Module section in the left navigation menu so see all the available modules and their contents.
+
+All times listed are `Toronto time', i.e.~Eastern Time. Note that Daylight Savings Time begins Sunday, March 13, 2022. You may find this time converter helpful: \url{https://www.timeanddate.com/worldclock/meeting.html}
+
+\hypertarget{in-most-modules-there-be-will-be}{%
+\subsubsection{\texorpdfstring{\textbf{In most modules there be will be:}}{In most modules there be will be:}}\label{in-most-modules-there-be-will-be}}
+
+\begin{itemize}
+\item
+  A weekly module released on Monday morning.
+\item
+  A quiz based on the content released in the module due on Tuesday at 6:00 p.m ET.~
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Special note for the \href{https://q.utoronto.ca/courses/204826/quizzes/138607}{Week 1 quiz}: this quiz is available until January 26 at 6:00 p.m. ET. (with no penalty) because I know there is a lot to get used to in the first week.
+  \end{itemize}
+\item
+  A synchronous class on Wednesday at 12:00 p.m. ET (L0101) and 3:00 p.m. ET (L0201).
+
+  \begin{itemize}
+  \item
+    Both sessions will be the same, you only need to attend one.
+  \item
+    Please review the \href{https://q.utoronto.ca/courses/204826/pages/join-synchronous-class}{steps for attending a class.}
+  \item
+    Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the \href{https://q.utoronto.ca/courses/204826/pages/course-overview}{course overview}page.
+  \end{itemize}
+\item
+  Weekly writing Create phase due Thursday at 6:00 p.m. ET.
+\item
+  Weekly writing Assess phase due Friday at 6:00 p.m. ET.
+\item
+  Weekly writing Reflect phase due (next) Monday at 6:00 p.m. ET.
+\item
+  Office hours.
+
+  \begin{itemize}
+  \item
+    Prof office hours will occur after the Tuesday synchronous classes, i.e.~11:10--12:00 p.m ET and 3:00--4:00 p.m., in the same \href{https://q.utoronto.ca/courses/204826/pages/join-synchronous-class}{Zoom call}.
+  \item
+    TA office hours: will begin in Week 2 (TBC) and the schedule will be updated \href{https://q.utoronto.ca/courses/204826/pages/office-hours}{here}.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{students-joining-off-the-waitlist}{%
+\subsubsection{Students joining off the waitlist}\label{students-joining-off-the-waitlist}}
+
+You don't have to submit missed quizzes or writing activities or alert me that you joined the course late, these will be covered by the associated `best of' policies. See the \protect\hyperlink{syllabus}{Syllabus} for more information.
+
+If you have a \emph{friend} on the waitlist, they can sign up to receive materials here.
+
+\hypertarget{hours-expectations-approximation}{%
+\section{Hours expectations (approximation)}\label{hours-expectations-approximation}}
+
+While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.
+
+Plan to be doing 6--8 hours of work on STA303 each week. This may be comprised of:
+
+\begin{itemize}
+\item
+  1--2 hours of videos and readings
+\item
+  30 minutes weekly quiz (you'll have an hour, but the intention is that it shouldn't take that long)
+\item
+  1 hour of attending synchronous class or reviewing the recording and activities
+\item
+  30 minutes weekly writing Create phase
+\item
+  30 minutes weekly writing Assess phase
+\item
+  5-10 minutes weekly writing Reflect phase
+\item
+  Remaining time attending office hours and working on current assessments
+\end{itemize}
+
+\hypertarget{module-flow}{%
+\subsection{Module flow}\label{module-flow}}
+
+\hypertarget{communication}{%
+\subsection{Communication}\label{communication}}
+
+\begin{itemize}
+\item
+  Our course discussion board on \href{https://piazza.com/class/kx47tj4fmy65dg}{Piazza} is to be used for all content and administration questions. \emph{Only} sensitive or personal issues/questions should be sent to \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}. We reserve the right not to respond to emails that should be Piazza posts.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Please ensure all course-related emails include your \textbf{UTORID}.~
+  \end{itemize}
+\item
+  There are several important \protect\hyperlink{forms}{forms} that you may need if you miss an assessment due to \textbf{illness or emergency} or wish to request a \textbf{regrade} of an assessment.
+\item
+  I will use Quercus \href{https://q.utoronto.ca/courses/253305/announcements}{announcements} to share course information and updates. \textbf{Please make sure you read these}. I may also occasionally email or Querucs message you about things that relate specifically to you.
+\end{itemize}
+
+\hypertarget{to-do-now}{%
+\subsection{To do now}\label{to-do-now}}
+
+Press the next button below to continue through this module. In the following pages you will:
+
+\begin{itemize}
+\item
+  Read the \href{https://q.utoronto.ca/courses/204826/assignments/syllabus}{Syllabus}.~
+\item
+  Join the \href{http://piazza.com/utoronto.ca/winter2021/sta303h11002hs}{Piazza discussion board}.
+\item
+  Understand the \href{https://q.utoronto.ca/courses/204826/pages/course-tools}{tools} we will be using in this course.
+\item
+  {[}Optional{]} Introduce yourself in the\href{https://q.utoronto.ca/courses/204826/discussion_topics/763676}{Introductions discussion board}.
+\item
+  Learn about some of the \href{https://q.utoronto.ca/courses/204826/pages/services-and-support}{services and supports}available to you as a U of T student.
+\item
+  Make sure you have a U of T Zoom account \url{https://utoronto.zoom.us/}.~
+\end{itemize}
+
+\emph{Header photo by \href{https://unsplash.com/@drewmark}{Andrew Stutesman.}}
+
+\hypertarget{assessments}{%
+\chapter{Assessments}\label{assessments}}
+
+We describe our methods in this chapter.
+
+\hypertarget{modules}{%
+\chapter{Modules}\label{modules}}
+
+If you would like a PDF copy of the slides, you can `Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select `Save as PDF' (or similar).
+
+\hypertarget{module-1}{%
+\section{Module 1}\label{module-1}}
+
+\hypertarget{module-2}{%
+\section{Module 2}\label{module-2}}
+
+\hypertarget{module-3}{%
+\section{Module 3}\label{module-3}}
+
+\hypertarget{module-4}{%
+\section{Module 4}\label{module-4}}
+
+\hypertarget{module-5}{%
+\section{Module 5}\label{module-5}}
+
+\hypertarget{resources}{%
+\chapter{Resources}\label{resources}}
+
+\hypertarget{course-tools-overview}{%
+\section{Course tools overview}\label{course-tools-overview}}
+
+While we've tried to keep things as streamlined as possible, there are still several different tools we'll be using this semester. Your U of T login should work with all of them. The below PDF file provides an overview of how you'll be interacting with each one.
+
+\begin{itemize}
+\tightlist
+\item
+  At the bottom of the page is an embedded slideshow introducing you to the JupyterHub.\\
+\item
+  You can always access Piazza from the Navigation Menu on the left.\\
+\item
+  Instructions for setting up your U of T Zoom are on the Zoom page and links are in the Navigation menu and on the home page.
+\end{itemize}
+
+\hypertarget{admin}{%
+\subsection{Admin}\label{admin}}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+Logo & Description \\
+\midrule
+\endhead
+\includegraphics{images/course-tools/quercus.jpg} & \href{https://q.utoronto.ca/}{Quercus}
+will be used for timed
+assessments, some submissions
+and announcements. \\
+\includegraphics{images/course-tools/zoom.png} & Synchronous classes and office
+hours will be hosted via
+\href{https://utoronto.zoom.us}{Zoom}.
+You MUST join using your U of
+T Zoom account to be admitted.
+Get your account:
+utoronto.zoom.us \\
+\includegraphics{images/course-tools/forms.png} & Microsoft Forms will be used
+for several important
+administrative forms. You will
+need to be signed in to your U
+of T account in the same
+browser to access these. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{using-rstudio-with-the-jupyterhub}{%
+\section{Using RStudio with the JupyterHub}\label{using-rstudio-with-the-jupyterhub}}
+
+We will be using R through RStudio to conduct analyses in this course. If you have a local installation of R you are welcome to continue using that, but, for this course, you do not need to have R and RStudio installed. Instead, assessments and activities will be shared through the U of T JupyterHub. This gives you access to RStudio in your browser through your U of T login on any internet-connected device. It means you don't have to fight package installations and we can instead focus on the good stuff.
+
+\textbf{Please read through the following slides, experiment with the example sharing link, make sure you know how to knit an Rmd to pdf + export the pdf, and practice navigating and moving files.}
+
+Link: \url{https://rstudio-with-jupyerhub-uoft.netlify.app}.
+
+\hypertarget{zoom-zoom-zoom-zoom}{%
+\section{Zoom, Zoom, Zoom, Zoom\ldots{}}\label{zoom-zoom-zoom-zoom}}
+
+\hfill\break
+Access to STA303 synchronous meetings and office hours is restricted to our students.\\
+~\\
+
+\href{https://utoronto.zoom.us/signin}{Set up your U of T Zoom account}
+
+\hypertarget{make-sure-your-zoom-is-up-to-date}{%
+\subsection{Make sure your Zoom is up to date}\label{make-sure-your-zoom-is-up-to-date}}
+
+To participate fully, you will need Desktop client or mobile app: version 5.3.0 or higher. You can check your desktop client or mobile app version by following \href{https://support.zoom.us/hc/en-us/articles/201362393-Viewing-the-Zoom-version-number}{these instructions.}
+
+\hypertarget{customize}{%
+\subsection{Customize!}\label{customize}}
+
+Once you have logged in, \href{https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-Profile}{please customize your profile}:
+
+\begin{itemize}
+\item
+  Update your name to your \textbf{preferred name} (what you would like us to call you in class) Note: this may not be allowed with your U of T settings, so don't worry if this doesn't work.
+\item
+  Add a \textbf{profile picture} (please make it a photo of YOU or an avatar that looks like you\ldots we don't want Snoopy or Joe Biden\footnote{Yes, these are real images students have used.} in class)
+\end{itemize}
+
+\hypertarget{vpn}{%
+\subsection{VPN}\label{vpn}}
+
+There is a \href{https://isea.utoronto.ca/services/vpn/utorvpn/}{University of Toronto VPN (UTORvpn)} that you have access to as a student. It may help with video quality and access to U of T resources.\\
+If you are based in mainland China, the \href{https://onesearch.library.utoronto.ca/ic-faq-categories/alibaba-cloud-enterprise-network-cen-service}{Alibaba Cloud Enterprise Network (CEN)Links to an external site.} service should help with your Quercus access.
+
+\hypertarget{notes}{%
+\subsection{Notes:}\label{notes}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Please always use your real name and face for this course, and be cautious about changing them and your virtual background for other meetings. A joke background for a call with family or friends may not be appropriate for class.
+\item
+  For class meetings, the settings will always be that your camera and microphone are off to begin with so you have the control to check these things first.
+\item
+  We do ask that, when possible, you use your microphone in office hours, breakout groups and any other small group meetings and strongly prefer that you use your camera AND microphone. We trust you to make the best choice for your environment, comfort and learning.
+\item
+  You may get a \textbf{``This meeting is for authorized participants only message''.} Choose the ``Sign in with SSO'' option to sign in.
+\end{enumerate}
+
+\hypertarget{changing-your-profile-picture-on-zoom-and-quercus}{%
+\subsection{Changing your profile picture on Zoom and Quercus}\label{changing-your-profile-picture-on-zoom-and-quercus}}
+
+Follow these instructions to add a profile picture (or bitmoji style avatar if you'd prefer) to \href{https://community.canvaslms.com/docs/DOC-10599-4212710334}{Quercus} and \href{https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-profile}{Zoom}. I want this experience to be more social and less faceless. Please don't use photos of cartoon characters, etc. A good photo will be a close-up of your face so we can see who you are even when the photo is small.
+
+\hypertarget{what-to-do-if-you-experience-technical-difficulties-during-class}{%
+\subsection{What to do if you experience technical difficulties during class?}\label{what-to-do-if-you-experience-technical-difficulties-during-class}}
+
+\textbf{First}, (if possible) send me a chat note that you're having technical difficulties and are working to resolve them.
+
+\textbf{Second}, leave the meeting and re-enter. This often resets things and resolves the problem. Before entering the meeting, make sure all of your devices are properly plugged in and Bluetooth devices are connected.
+
+If that doesn't fix things, exit the meeting again and update your Zoom Client. This is the Zoom software that should be on your computer. Here's a short video tutorial explaining how to update the software: \url{https://www.youtube.com/watch?v=E7zERcVLUBM}.
+
+After updating, enter the meeting again to see if this resolved your problems.
+
+\textbf{Our synchronous classes are recorded, so if your technology is just going catastrophically wrong, go get a cup of tea/coffee/water and relax, you can catch up with the recording when it is posted on Quercus.}
+
+\hypertarget{what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom}{%
+\subsection{What to do if your instructor or TA is experiencing technical difficulties on Zoom}\label{what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom}}
+
+\textbf{First,} check the \textbf{chat} to see if the instructor or the project mentor have said what is going on and what they are doing to fix things and follow any instructions they give.
+
+\textbf{Second}, if they have disappeared completely, wait 10 minutes (or until the end of the meeting time, whichever comes first) before closing the call. (You can do other things in the meantime, but be ready to jump back in).
+
+\textbf{Third}, expect to see an announcement on Quercus afterwards telling you what to do (e.g.~it might be to watch a video I'll record later, to review some slides or perhaps there is nothing to do and i'll see you next time).
+
+\hypertarget{student-support-services-and-resources}{%
+\section{Student support services and resources}\label{student-support-services-and-resources}}
+
+\hypertarget{mental-health-support}{%
+\subsection{Mental health support}\label{mental-health-support}}
+
+You may find yourself feeling overwhelmed, depressed, or anxious. Lots of people feel the same way. There is help available from mental health professionals 24 hours a day via online and phone-based services. Here are some that are available to U of T students:
+
+\begin{itemize}
+\item
+  \href{https://www.studentlife.utoronto.ca/hwc/myssp}{MySSP - My Student Support Program} 1-844-451-9700, or outside of Canada call 001-416-380-6578
+\item
+  \href{https://good2talk.ca/}{Good2Talk Student Helpline} 1-866-925-5454, or text GOOD2TALK to 686868
+\item
+  \href{https://www.torontodistresscentre.com/}{Distress Centres of Greater Toronto} 416-408-4357, or text 45645
+\end{itemize}
+
+There is also the new Navi tool for U of T students, it is a chatbot and your questions are totally anonymous. \url{http://uoft.me/navi}
+
+The student union are also curating a list here: \url{https://www.utsu.ca/mental-health/}
+
+\hypertarget{general-university-resources}{%
+\subsection{General University resources}\label{general-university-resources}}
+
+The following are some important links to help you with academic and/or technical service and support:
+
+\begin{itemize}
+\item
+  \href{https://studentlife.utoronto.ca/department/health-wellness/}{\textbf{Health \& Wellness}} can help with appointments with a range of clinicians, nutrition, immunizations, sexual and reproductive health and much more. Many of their services continue to be available online.
+\item
+  \textbf{Arts \& Sciences} student resources through \href{https://sidneysmithcommons.artsci.utoronto.ca/}{Sidney Smith Commons Online}
+\item
+  \textbf{General} student services and resources at \href{https://www.studentlife.utoronto.ca/}{Student Life}
+
+  \begin{itemize}
+  \item
+    Tips for dealing with \href{https://studentlife.utoronto.ca/task/multiple-choice-tests-and-exams/}{multi-choice questions} (MCQs)
+  \item
+    Book an appointment with a \href{https://studentlife.utoronto.ca/service/learning-strategist-connections/}{learning strategist} (they can help you with strategies for MCQs also)
+  \end{itemize}
+\item
+  Full \textbf{library} service through the \href{http://onesearch.library.utoronto.ca/}{University of Toronto Libraries}
+\item
+  Resources on \textbf{academic support} from the \href{http://www.asc.utoronto.ca/}{Academic Success Centre}
+\item
+  Learner support at the \href{http://www.writing.utoronto.ca/}{\textbf{Writing} Centre}
+\item
+  Information about \href{http://accessibility.utoronto.ca/}{\textbf{Accessibility} Services}
+\item
+  Quercus Information in the \href{https://community.canvaslms.com/docs/DOC-10701}{Canvas Student Guide}
+\item
+  Logistical and social support for \textbf{international students} at the \href{https://studentlife.utoronto.ca/cie}{Center for International Experience}
+\end{itemize}
+
+Visit the A\&S \href{https://www.artsci.utoronto.ca/current/academic-advising-and-support/online-resources-students}{online resources for students page} for resources available to support you through your online studies. If you have further questions, please email \href{mailto:ask.artsci@utoronto.ca}{\nolinkurl{ask.artsci@utoronto.ca}}.
+
+\hypertarget{financial-support}{%
+\subsection{Financial support}\label{financial-support}}
+
+A list of University financial supports, work-study opportunities, as well as provincial and federal government programs is available on the University's \href{https://www.viceprovoststudents.utoronto.ca/covid-19/funding-opportunity-directory/}{Financial Support \& Funding Opportunity directory}.
+
+\hypertarget{arts-science-covid19-faq}{%
+\subsection{Arts \& Science COVID19 FAQ}\label{arts-science-covid19-faq}}
+
+The \href{https://www.artsci.utoronto.ca/covid19-artsci-student-faqs}{\textbf{Arts \& Science Undergraduate FAQ page}} addresses frequently asked questions that are specific to undergraduate students taking courses with the Faculty of Arts \& Science. On this page you will find information for:
+
+Messages from Dean Woodin can be found on the \href{https://www.artsci.utoronto.ca/news/covid-19-and-u-ts-response-latest-updates-and-faqs}{A\&S latest updates page}.
+
+\hypertarget{faqs-and-errata}{%
+\chapter{FAQs and Errata}\label{faqs-and-errata}}
+
+\hypertarget{frequently-asked-questions}{%
+\section{Frequently asked questions}\label{frequently-asked-questions}}
+
+\hypertarget{errata}{%
+\section{Errata}\label{errata}}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
