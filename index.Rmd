@@ -1,0 +1,31 @@
+--- 
+title: "STA303: Methods of Data Analysis II"
+subtitle: "Course guide"
+author: "Prof. Liza Bolton"
+date: "Winter 2022"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+geometry: margin=2cm
+urlcolor: blue
+description: "This is a course for STA303: Methods of Data Analysis II at the University of Toronto"
+---
+
+
+```{r, echo=FALSE}
+source("links.R")
+```
+
+THIS SITE IS STILL IN PROGRESS! The information is not yet official.
+
+# How to use this course guide
+
+This course guide has been created using [`bookdown`](https://bookdown.org/).
+
+### Communication policy reminder
+
+All content and logistics questions must be asked on [Piazza](`r piazza`). Personal or private course matters should be emailed to sta303@utoronto.ca. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
+
+

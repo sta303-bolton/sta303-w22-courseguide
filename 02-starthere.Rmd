@@ -1,0 +1,133 @@
+# Start here!
+
+```{r, echo=FALSE}
+source("links.R")
+```
+
+## Introductions
+
+Hi folks,
+
+Welcome to STA303! We're excited you're joining us on this statistical voyage. I look forward to introducing myself to you in our first class on Wednesday, but for now, there is are basic introductions below for me and our Head TA Amin. Feel free to skip to [How this course works](#howthiscourseworks), I know there is a lot to read in the module!
+
+Looking forward to a great semester! See you in class on Wednesday.
+
+### Professor Liza Bolton, Instructor
+
+**Email:** [sta303\@utoronto.ca](mailto:sta303@utoronto.ca) (Put "[Prof. Bolton]" in the subject line to the email me directly)
+
+**Pronouns:** she/her
+
+Before moving (back) to Canada in 2019, I had lived more than half my life in New Zealand. (I still mention New Zealand a lot in class...) My current research areas are in statistics education and online learning, as well as health disparities across ethnic groups. I used to run a small consulting company and called myself a Data Ambassador. Why? Well, lots of people are consultants. I even did an internship in management consulting once upon a time. But it wasn't a satisfying title for what I wanted my work with people to look like. I wanted something that focused on the communication and interpersonal side, not just high quality and appropriate analysis. People who aren't confident in their ability to analyse their own data need a go-between, someone who can be an ambassador for their data! While I don't do consulting any more, I love helping students build their technical and professional skills so they can go out into the world and be excellent ambassadors for data themselves.
+
+Last movie I cried in: Kiki's Delivery Service
+
+Favourite food: Corn. Popped, on the cob, in a chip, Mmmmm.
+
+Book most often given as a gift: [A Matter of Fact: Talking Truth in a Post-Truth World](https://www.goodreads.com/book/show/41123067-a-matter-of-fact) by Jess Berentson-Shaw
+
+### Amin Banihashemi, Head TA
+
+**Email:** [sta303\@utoronto.ca](mailto:sta303@utoronto.ca) (Amin will often be the one responding to your emails)
+
+**Pronouns:** he/him
+
+I'm a fourth-year PhD student at the Institute of Medical Science. I have been a TA for STA130 in DoSS for the past 3 years and this is my second semester as Head TA of STA303.
+
+My area of research is clinical Neuroscience, something I am passionate about. I analyze images of brain and eye structures in neurodegenerative diseases. I investigate possible associations of these structures with each other and with the ability to remember well and carry out goal-oriented tasks successfully. I love creating reproducible statistical analysis workflows in R. I also like audiobooks, candlelight, and apple pie (which I make myself!)
+
+```{r, echo=FALSE, out.width="10d0%"}
+knitr::include_graphics("images/headers/map.png")
+```
+
+## How this course works {#howthiscourseworks}
+
+This course is organized into five two-week modules of learning + two one week assessment-focus weeks.
+
+All course material will be made available through this course site in Quercus (any links to outside sites will be found here). Take a moment to familiarize yourself with some of the tools and content areas found in the left navigation bar. You can move through content in a module by selecting the "Next" button at the bottom right of the page. You can also visit the Module section in the left navigation menu so see all the available modules and their contents.
+
+All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savings Time begins `r daylight_savings`. You may find this time converter helpful: <https://www.timeanddate.com/worldclock/meeting.html>
+
+#### **In most modules there be will be:**
+
+-   A weekly module released on Monday morning.
+
+-   A quiz based on the content released in the module due on Tuesday at 6:00 p.m ET. 
+
+    -   Special note for the [Week 1 quiz](https://q.utoronto.ca/courses/204826/quizzes/138607 "Week 1 quiz"): this quiz is available until January 26 at 6:00 p.m. ET. (with no penalty) because I know there is a lot to get used to in the first week.
+
+-   A synchronous class on Wednesday at 12:00 p.m. ET (L0101) and 3:00 p.m. ET (L0201).
+
+    -   Both sessions will be the same, you only need to attend one.
+
+    -   Please review the [steps for attending a class.](https://q.utoronto.ca/courses/204826/pages/join-synchronous-class "Join synchronous class")
+
+    -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [course overview](https://q.utoronto.ca/courses/204826/pages/course-overview "Course overview")page.
+
+-   Weekly writing Create phase due Thursday at 6:00 p.m. ET.
+
+-   Weekly writing Assess phase due Friday at 6:00 p.m. ET.
+
+-   Weekly writing Reflect phase due (next) Monday at 6:00 p.m. ET.
+
+-   Office hours.
+
+    -   Prof office hours will occur after the Tuesday synchronous classes, i.e. 11:10--12:00 p.m ET and 3:00--4:00 p.m., in the same [Zoom call](https://q.utoronto.ca/courses/204826/pages/join-synchronous-class "Join synchronous class").
+
+    -   TA office hours: will begin in Week 2 (TBC) and the schedule will be updated [here](https://q.utoronto.ca/courses/204826/pages/office-hours "Office hours").
+
+
+#### Students joining off the waitlist                                                                                                                                                                            
+You don't have to submit missed quizzes or writing activities or alert me that you joined the course late, these will be covered by the associated 'best of' policies. See the [Syllabus](#syllabus) for more information. 
+
+If you have a *friend* on the waitlist, they can sign up to receive materials here.
+
+## Hours expectations (approximation)
+
+While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.
+
+Plan to be doing 6--8 hours of work on STA303 each week. This may be comprised of:
+
+-   1--2 hours of videos and readings
+
+-   30 minutes weekly quiz (you'll have an hour, but the intention is that it shouldn't take that long)
+
+-   1 hour of attending synchronous class or reviewing the recording and activities
+
+-   30 minutes weekly writing Create phase
+
+-   30 minutes weekly writing Assess phase
+
+-   5-10 minutes weekly writing Reflect phase
+
+-   Remaining time attending office hours and working on current assessments
+
+### Module flow
+
+### Communication
+
+-   Our course discussion board on [Piazza](`r piazza`) is to be used for all content and administration questions. *Only* sensitive or personal issues/questions should be sent to [sta303\@utoronto.ca](mailto:sta303@utoronto.ca). We reserve the right not to respond to emails that should be Piazza posts.
+
+    -   Please ensure all course-related emails include your **UTORID**. 
+
+-   There are several important [forms](#forms) that you may need if you miss an assessment due to **illness or emergency** or wish to request a **regrade** of an assessment.
+
+-   I will use Quercus [announcements](`r announcements`) to share course information and updates. **Please make sure you read these**. I may also occasionally email or Querucs message you about things that relate specifically to you.
+
+### To do now
+
+Press the next button below to continue through this module. In the following pages you will:
+
+-   Read the [Syllabus](https://q.utoronto.ca/courses/204826/assignments/syllabus "Syllabus"). 
+
+-   Join the [Piazza discussion board](http://piazza.com/utoronto.ca/winter2021/sta303h11002hs).
+
+-   Understand the [tools](https://q.utoronto.ca/courses/204826/pages/course-tools "Course tools") we will be using in this course.
+
+-   [Optional] Introduce yourself in the[Introductions discussion board](https://q.utoronto.ca/courses/204826/discussion_topics/763676 "Introductions [optional]").
+
+-   Learn about some of the [services and supports](https://q.utoronto.ca/courses/204826/pages/services-and-support "Services and support")available to you as a U of T student.
+
+-   Make sure you have a U of T Zoom account <https://utoronto.zoom.us/>. 
+
+*Header photo by [Andrew Stutesman.](https://unsplash.com/@drewmark)*
