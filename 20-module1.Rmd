@@ -1,0 +1,511 @@
+# Module 1
+
+## Instructor information
+
+**Prof. Liza Bolton**
+
+**Course email**: sta303@utoronto.ca
+
+**Help hours**: During the second half of Wednesday classes: 11:10—12:00 p.m. ET and 4:10—5:00 p.m. ET
+
+Please do not email my individual email with STA303 questions or use Quercus mail. It makes it harder to keep track of and address your questions. Sending me messages on three different platforms will NOT speed up my response. I will not respond messages that don't follow the course communication policy.
+
+You can see the latest version of [my email autoresponder here](https://www.lizabolton.com/autoresponder.html).
+
+## Upward management tips
+
+'Upward management' is basically managing your manager. ^[I used to haaaate this concept because I learned it while doing a consulting internship at a large international professional services firm and I really struggled with my manager.] If you make their life easier and help them be more effective, this should also make *your* life easier and is a good investment in your own career and skills building.
+
+While our course isn't a business, some of the basic parts of this concept apply well to your time at univeristy AND can set you up for success in graduate studies and your future career.
+
+**But why should you put effort into upward managing me?** Well, while I will always seek to treat all students fairly and to listen to your feedback, YOU can make this easier or harder for me, and thus make this course better or worse for yourselves. 
+
+For example, if I have to use all my time and energy following up on unclear emails for more information and dealing with students who haven't followed instructions etc. etc....I won't have that energy to put into writing TeamUp! activities to give you extra practice and opportunities to earn bonus points.
+
+
+### Communicate using the tools your manager prefers.  
+* **In business**, this means knowing who likes face-to-face vs email, or whether your manager would rather receive an instant message than an email for a quick question.
+* **In STA303**, this means: 
+  - Using Piazza for all course admin and content questions.
+  - Using the appropriate forms for accommodations and regrade requests.
+  - Emailing **sta303@utoronto.ca** for private issues not otherwise covered by the other tools, e.g. emailing me your Accommodation Serivces letter, requesting an extension to an assessment that conflicts with essential travel.
+  - Asking questions in office hours.
+  
+
+### Write good emails (when emails are appropriate)
+
+- **In business**, this might mean:
+  - Choosing who should be the main recipients vs CCed/BCCed. 
+  - Ensuring your contact details are clear in your signature.
+  - Make sure the subject line is informative and short
+  - Making the text of the email as clear and concise as possible.
+  - Use proper grammar and punctuation. 
+  - Don't use emoji in formal emails. If in doubt, leave 'em out.
+
+- **In STA303**, this looks like:
+  - Everything in the right-hand column, plus the following.
+  - Starting an email with "Hi Prof. Bolton," or "Hi Liza,".^["Dear Madam" and "To my esteemed professor" make me uncomfortable.]
+  - Sign off the email with your **preferred name** (i.e. what should I call you when I reply) and if your have different official name, include that and your UTORid below your name.
+  - Subject line including [Prof. Bolton] or [TA name] if your email is for a specific person.
+
+
+### Understand your manager's goals.
+- **In business**, this might look like understanding their KPIs and how you can help make sure these are met.
+- **In STA303**, most of *my* goals are *for you*, like that you learn useful statistical skills, improve your writing skills etc. I also personally want to improve as an instructor and have fun talking about somethign I love. 
+  - You can help me with these goals by working on this course every week, trying your best, asking for help early and often, engaging with feedback gathering mechanisms and providing constructive feedback if something is not working.
+
+### Demonstrate self-management and resilience while also asking for help and flagging problems early. 
+
+- **In business**, this might look like:
+  - Being proactive about addressing possible problems before they occur. Managers like a 'no surprises' policy.
+  - Preparing a list of questions to cover in a meeting or to compile in an organised fashion into one email (instead of ten). 
+  - Searching for answers yourself before asking your manager and improving your strategies for finding available information.
+
+- **In STA303**, this looks like:
+ - Putting in a little effort into find answers before posting on Piazza/asking in class. (*Have you searched Piazza? have you re-read/watched the assigned materials? have your checked the syllabus and recent announcements?*)
+ - Come to office hours often, lists of questions very welcome!
+ - Getting in touch (or asking your registrar to) **early** if you might hate to miss a lot of class. It is usually easier to find a solution if I know things ahead of time, or as soon as possible after.
+
+
+## Recap of linear models
+
+## Why model?
+
+- The goal of a model is to provide a (relatively) simple summary of a dataset.
+- We can describe data AND make predictions.
+
+## Linear models 
+
+In a linear model, 
+
+$y_i = \beta_0 + \beta_1x_{1i} + ... + \beta_px_{pi} + \epsilon_i$  
+
+The response is predicted by a linear function of
+explanatory (or predictor) variables plus an error term.
+
+a.k.a.
+
+__DATA = MODEL + ERROR__
+
+
+## Linear regression assumptions
+
+**L**: your model is **L**inear.
+
+**I**: Errors are **I**ndependent (usually satisfied if observations are independent).
+
+**N**: Errors are **N**ormally distributed  with expected value zero, $E[\epsilon_i]=0$
+
+
+**E**: **E**qual/constant variance (homoscedasticity), $\text{var}[\epsilon_i] = \sigma^2$.
+
+
+We can express "I N E" above as assuming the errors are i.i.d Normal with mean of zero and variance $\sigma^2$, 
+$$\epsilon_i \sim N(0, \sigma^2)$$
+
+## What makes it a _linear_ model?
+
+A model is **linear** if it is *linear in the parameters*. That is, all the $\beta$ enter the model in a linear way. It is totally fine if the predictor varaibles enter the model in a non-linear way.
+
+### Linear
+- $y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \epsilon_i$  
+- $y_i = \beta_0 + γ_1δ_1x_{1i} + \beta_2\exp(x_{2i}) + \epsilon_i$
+
+### NOT linear
+- $y_i = \beta_0 + \beta_1x_i^{\beta_2} + \epsilon_i$  
+- $y_i = \beta_0 exp(\beta_1x_{1i}) + \epsilon_i$
+
+Internally screaming "DON'T LET THE BETAS TOUCH" often helps me remember what is not linear. Additionally, don't let them do anything _weird_, like get exponentiated.
+
+
+## Optional refresher reading
+
+### Brief discussion of assumptions with examples
+Section 1.3 of *Broaden your Statistical Horizons* on the assumptions of OLS
+https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#ordinary-least-squares-ols-assumptions
+ [freely accessible]
+ 
+### Fitting linear models in R
+Section 1.6 of *Broaden your Statistical Horizons* on Mulitple linear regression (bootstrapping not assessed) https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#multreg [freely accessible]
+
+### Delicious mathematics
+
+Chapter 1 of *Wood, S. N. (2017). Generalized additive models : An introduction with r, second edition*
+http://go.utlib.ca/cat/13435628 [you will need to log in to the U of T library for access]
+
+## Common statistical tests as linear regression
+
+
+```{r setup, include = FALSE}
+install.packages("palmerpenguins", repos = "https://cloud.r-project.org")
+
+# TODO make these available again
+#remotes::install_github("rstudio/learnr", force = TRUE)
+#library(learnr)
+#remotes::install_github("rstudio-education/gradethis")
+#gradethis::gradethis_setup()
+
+
+library(knitr)
+library(palmerpenguins)
+library(tidyverse)
+
+knitr::opts_chunk$set(echo = FALSE)
+
+# replace include=FALSE with include=TRUE (note lack of spaces) to create the version that has the answers in it
+```
+
+### Introduction
+
+_Technical note: I have had to remove code answer checking, but if you get stuck the final 'Hint' is the solution. This is ungraded, so don't worry, just slightly inconvenient._
+
+You have probably encountered several statistical tests in your studies so far. 
+
+#### Parametric
+**E.g. one-sample t-tests, paired t-tests, two-sample t-tests, one-way ANOVA, two-way ANOVA**  
+Parametric tests make assumptions about the distribution of the population from which our sample data have been drawn.
+
+#### Non-parametric
+**E.g. Wilcoxon signed rank, Mann Whitney-U, Kruskal-Wallace**  
+Non-parametric tests do not assume that our outcome is Normally distributed. They are sometimes called 'distribution-free', but note that this is because they have fewer assumptions than parametric tests, not because they have no assumptions at all.
+
+#### Aside: But why are there two types of tests?
+
+Parametric tests are more **powerful**, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes ~~great responsibility~~ more assumptions that must be valid to proceed. 
+
+```{r, echo=FALSE, fig.align='center', out.width="50%"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version. Not required content. \\url{https://tenor.com/view/spider-man-uncle-ben-with-great-power-comes-great-responsibility-its-true-just-saying-gif-24193883}")
+} else {
+ include_graphics("images/m1/uncleben.gif")
+}
+
+```
+
+Non-parametric tests are a great choice when your outcome is an ordinal variable, is ranks, or there are problematic outliers. 
+
+For the purposes of this lesson, we're going to focus more on parametric tests, but also take a look at the corresponding non-parametric tests with the slight white lie that they are just ranked versions of their parametric companions. This approach is pretty good as long as you have a reasonable sample size.
+
+
+_Imagine this:_   
+_You're on a ship trying to spot land. **Parametric** tests are the crew member with the best eyesight, but they can be fussy and the conditions have to be right for them to work in or they will breakdown._
+
+_**Non-parametric** tests are the crew member with not quite as good eyesight, but they're more laid back about the conditions you make them work in._
+
+In the following sections we'll explore several of these tests.
+
+### One-sample t-test
+
+I am assuming you've seen this in a 200-level statistics course or equivalent. Brief recap below.
+
+#### Use case
+
+You want to know if it is believable that the population mean is a certain value (our 'hypothesized value' below).
+
+#### Assumptions
+1. The data are continuous.
+2. The data are normally distributed.
+3. The sample is a simple random sample from its population. Each individual in the population has an equal probability of being selected in the sample
+
+(Do these sound familiar from linear regression?)
+
+#### Hypotheses
+$$H_0: \mu = \text{hypothesized val}$$
+$$H_1: \mu \ne \text{hypothesized val}$$
+
+What are we doing? Finding the strength of evidence against the claim that the population mean is some hypothesized value.
+
+The test statistic, t, is calculated as follows:
+
+$$ t = \frac{\bar{x} - \text{hypothesized val}}{s/\sqrt{n}} $$
+
+We then compare this t value to the t-distribution with degrees of freedom df = n - 1 and find the area under the curve that represents the probability of values likes ours or more extreme.
+
+
+#### Example
+
+Suppose existing research suggests that the average weight of penguins is 4000 grams. You want to see if this makes sense for your new penguins data.
+
+$$H_0: \mu = 4000$$
+$$H_1: \mu \ne 4000$$
+
+The `penguins` dataset is already loaded, you you don't have to run any libraries. Use the `t.test()` function run a one-sample t-test.
+
+
+
+```{r onesamplt}
+t.test(penguins$body_mass_g, mu = 4000, var.equal = TRUE)
+```
+
+
+#### Now as a linear model
+
+First, consider the following, what would a linear regression with no predictor variables and just an intercept tell you?
+
+Create a linear regression model called `mod1`(replace the blank below) that is an 'intercept only model' with `body_mass_g` as the response.
+
+```{r onesamptlin-check}
+mod1 <- lm(body_mass_g ~ 1, data=penguins)
+summary(mod1)
+```
+
+It turns out the estimate from this linear regression is the same as the sample mean. 
+
+```{r, echo=TRUE}
+mean(penguins$body_mass_g, na.rm = TRUE) #na.rm = TRUE removes missing values
+```
+
+Now, recall that with the t-test, we calculate our test statistic by subtracting the hypothesized value from the mean. Let's run the linear model again, but on the left-hand side of the formula, subtract the hypothesized value.
+
+
+```{r onesamptlin2}
+mod2 <- lm(body_mass_g-4000 ~ 1, data=penguins)
+summary(mod2)
+```
+
+
+Compare the results of this `summary(mod2)` and your earlier t-test. You should see that the t value, degrees of freedom and p-value are the same for both analyses.
+
+Thus, our one sample t-test hypotheses,
+$$H_0: \mu = \text{hypothesized val}$$
+$$H_1: \mu \ne \text{hypothesized val}$$
+
+are equivalent to our linear regression hypotheses about the intercept,
+
+$$H_0: \beta_0 = \text{hypothesized val}$$
+$$H_1: \beta_0 \ne \text{hypothesized val}.$$
+
+#### Wilcoxon signed-rank test
+
+While the linear regression approach to the one-sample t-test is exact, we can also approximate the Wilcoxon rank-sign test with linear regression. See below. 
+
+```{r, echo=FALSE, fig.align='center', out.width="90%"}
+include_graphics("images/m1/wilcoxon.png")
+```
+
+Note: The above is just example from some toy data, but aims to illustrate how a t-test is treating the data and how the Wilcoxon test is treating the data. 
+
+```{r, echo=TRUE}
+# Function to get signed rank of each observation  
+signed_rank = function(x) sign(x) * rank(abs(x))
+
+# The wilcoxon test function 
+wilcox.test(penguins$body_mass_g, mu = 4000)
+
+# Equivalent linear model
+mod3 <- lm(signed_rank(penguins$body_mass_g-4000) ~ 1)
+summary(mod3)
+```
+
+[Optional] Check out the theory behind the rank transformation in section 3.0.2 https://lindeloev.github.io/tests-as-linear/#3_pearson_and_spearman_correlation
+
+#### Paired sample t-test and Wilcoxon matched pair
+
+A paired t-test is equivalent to a one sample t-test if you just consider $x_{\text{diff}\ i} = x_{1i} - x_{2i}$, i.e., $x_{\text{diff}\ i}$ is the difference of the paired values for each observation, and proceed with $x_{\text{diff}\ i}$ as you would in the one sample case. Likewise for the Wilcoxon 
+
+The R code (not evaluated here) would be as follows:
+
+```{r, eval = FALSE, echo=TRUE}
+# Built-in Wilcoxon matched pairs
+wilcox.test(x1, x2, paired = TRUE)
+
+# Equivalent linear model:
+summary(lm(signed_rank(x1 - x2) ~ 1))
+```
+
+### Dummy variables
+
+Let's take a quick detour before we explore the next tests. We'll need to understand the concept of dummy variables and contrasts first.
+
+#### The matrices we use for linear regression
+
+Recall that we can express our linear regression in matrix form: 
+  
+  $$\mathbf{y} = X\boldsymbol\beta + \boldsymbol\varepsilon$$
+  
+  where
+
+$$
+  \mathbf{y} = \begin{pmatrix} 
+y_1 \\\ 
+y_2 \\\ 
+\vdots \\\ 
+y_n 
+\end{pmatrix} ,
+$$
+$$
+  \boldsymbol\beta = \begin{pmatrix} \beta_0  \\\ \beta_1  \\\ \beta_2  \\\ \vdots  \\\ \beta_p \end{pmatrix}, \quad
+\boldsymbol\varepsilon = \begin{pmatrix} \varepsilon_1  \\\ \varepsilon_2  \\\ \vdots  \\\ \varepsilon_n \end{pmatrix}
+$$
+  
+  and 
+
+$$X = \begin{pmatrix} \mathbf{x}^\mathsf{T}_1 \\ \mathbf{x}^\mathsf{T}_2 \\ \vdots \\ \mathbf{x}^\mathsf{T}_n \end{pmatrix}
+= \begin{pmatrix} 1 &  x_{11} & \cdots & x_{1p} \\
+1 & x_{21} & \cdots & x_{2p} \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & x_{n1} & \cdots & x_{np}
+\end{pmatrix}$$
+  
+  We often talk about **X** as the **model matrix**  (or design or regressor matrix) and it will be the focus of this section.
+
+#### Getting our model matrix in R
+
+Let's start by fitting a model with `body_mass_g` as the response and `flipper_length_mm` and `species` as the predictor variables.
+
+(Note: Users of statistics use a lot of different words to refer to the same thing. Can you think of other terms people might use instead of _response_ and _predictor_?)
+
+```{r modmat1}
+mod4 <- lm(body_mass_g ~ flipper_length_mm + species, data=penguins)
+summary(mod4)
+```
+
+Now we can use the `model.matrix()` function to extract the model matrix for `mod4`. I've applied `head()` to stop the entire thing being printed.
+
+
+```{r modmat2}
+head(model.matrix(mod4), n = 20)
+```
+
+
+You'll notice that even though we only had an intercept and two variables, we have four columns in our model matrix. You should also notice that R has given the columns helpful names, and that we have a column for the Chinstrap species and the Gentoo species, but not the Adelie species.
+
+Further, recall that when we are working with a categorical variables we call the different values the the variables can take **"levels"**. I may also refer to these as factor variables, and talk about the "levels of the factor". 
+
+What R is doing is dropping the first level (alphabetically) of the categorical variable and then creating **dummy variables** for each of the other levels.
+
+The dropped level becomes our **reference level** and this should be familiar from interpreting summary output in previous courses where you have conducted multiple linear regressions with categorical variables. 
+
+A dummy variable is also called an indicator variable, and it *indicates* whether or not the given observation takes that level or not. I.e., if the 40th penguin in this dataset had a 1 in the speciesGentoo column, then I know it is a Gentoo penguin, and that it won't have a 1 in the speciesChinstrap column because each penguin can only have one species.
+
+More generally, the sum across the row of the dummy variables for one categorical variable will either be 0 (if that observation has the reference level) or 1 (not the reference level) but you will never have more than one 'one' amongst the dummies for a given categorical variable.
+
+###### [Unassessed aside] Why do we have to drop one of the levels?
+
+You may recall that for the matrix calculations required to get our vector of $\beta$s, we need to be able to invert X our matrix. We can only invert matrices for which all the columns are linearly independent and if we have the intercept AND dummies for all the levels of the categorical variable, our matrix will be linearly dependent.
+
+Additional optional discussion [here](#matrices).
+
+### Two means 
+
+Back to tests!
+
+Independent t-tests let you compare two means. I am assuming you've seen this in a 200-level statistics course or equivalent. Brief recap below.
+
+#### Use case
+
+You want to know if it is believable that two independent groups have the same population mean.
+
+#### Assumptions
+
+1. The data are continuous.
+2. The data are normally distributed (in each group).
+3. Each group is a simple random sample from its population. Each individual in the population has an equal probability of being selected in the sample
+4. The variances for the groups are equal. 
+
+Notice that these are the same assumptions as the one-sample t-test, but with the equality of variances assumption added.
+
+#### Hypotheses
+
+$$H_0: \mu_1 = \mu_2$$
+$$H_1: \mu_1 \ne \mu_2$$
+
+What are we doing? Finding the strength of evidence against the claim that the population means for both groups are the same. This differs from the one sample test because we have uncertainty about BOTH values here. Both are population parameters that we don't know. 
+
+The test statistic, t, is calculated as follows:
+
+$$ t = \frac{\bar{x_1} - \bar{x_2}}{\sqrt{s^2(\frac{1}{n_1} + \frac{1}{n_2})}} $$
+
+We then compare this t value to the t-distribution with degrees of freedom $df = n_1 + n_2 - 2$ and find the area under the curve that represents the probability of values likes ours or more extreme.
+
+
+#### Example
+
+Conduct an independent t-test to test if the mean of `body_mass_g` is the same for male and female penguins (`sex`). Add your code below. Note: you must set `, var.equal = TRUE` as one of the arguments for it two be the independent t-test. If you don't set this we are conducting a *Welch's t-test*. I won't be covering this, but it is covered in the source credited at the end of this activity.
+
+
+```{r twosamp}
+t.test(body_mass_g ~ sex, data = penguins, var.equal = TRUE)
+```
+
+
+Now, based on what we've learned, write a linear model using the `lm()` function to do the same this as our independent t-test. Save the model as `mod5`.
+
+```{r twosamplin}
+mod5 <- lm(body_mass_g ~ sex, data = penguins)
+summary(mod5)
+```
+
+
+Take a moment to match up parts of the outputs that are the same. There is a difference here in that the sign of the test statistics differs. That does not matter as out t-distribution is symmetrical and we're doing a two-tailed test. 
+
+
+#### Mann-Whitney U
+Similar idea to before, except for this test it is just rank not signed rank.
+
+```{r, echo=TRUE}
+# Wilcoxon / Mann-Whitney U (multiple names)
+wilcox.test(body_mass_g ~ sex, data = penguins)
+
+# As linear model with our dummy-coded group_y2:
+summary(lm(rank(body_mass_g) ~ sex, data = penguins))
+```
+
+### ANOVA
+
+#### Use case
+
+You've probably seen 'ANOVA' in the context of model comparison, but it is also a popular test in psychology and other disciplines. 
+
+Let's look specifically at one-way ANOVA (or the F-test). It tests if all the means for several groups (more than 2) are the same or if at least one is different. 
+
+I hope this sounds a bit like the next evolution from the independent t-test...
+
+(+ 1000 stats respect points to anyone who draws Pokemon-esque evolutions of these three tests...with regression as the mega-evolution...)
+
+#### Assumptions
+
+And it just so happens that the assumptions for the one-way ANOVA (also called the F-test) are EXACTLY the same as for the independent t-test
+
+```{r, echo=FALSE, fig.align='center', out.width="50%"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version. Not required content. \\url{https://gifst.blogspot.com/2019/03/snl-hi-saturday-night-live-hey-kate.html}")
+} else {
+ include_graphics("images/m1/meagain.gif")
+}
+```
+
+
+1. The data are continuous.
+2. The data are normally distributed (in each group).
+3. Each group is a simple random sample from its population. Each individual in the population has an equal probability of being selected in the sample
+4. The variances for the groups are equal. 
+
+#### Hypotheses
+
+$$H_0: \mu_1 = \mu_2 = ... = \mu_k $$
+
+$$H_1: \text{at least one }\mu \text{ differs from the others} $$
+
+#### Example
+
+Let's now look at body mass across species. Suppose we wanted to know if was believable that the the means body mass in grams was the same across all three species. This is when we could fit a quick ANOVA to test this. The `aov()` allows us to do this.
+
+```{r, echo = TRUE}
+summary(aov(body_mass_g ~ species, data = penguins))
+```
+
+That looks a lot like the output from calling summary on `lm()`...in fact, aov is just a wrapper for lm! Which means it has been linear regression the whole time. 
+
+
+
+#### We'll stop here and talk further about this particular topic in class this week. 
+
+Your next topic is [reproducible examples (reprexes)](https://q.utoronto.ca/courses/204826/pages/w1-reproducible-examples-reprex?module_item_id=2184624).
+
+
+### Credits
+
+Credit to **Jonas Kristoffer Lindeløv** for the excellent resource this resource is based on. [There are more examples there than we will cover in this course.](https://lindeloev.github.io/tests-as-linear/)

@@ -1,3 +1,66 @@
-# Assessments
+# (PART\*) Assessments {-} 
 
-We describe our methods in this chapter.
+# Assessment overview {#assessments}
+
+```{r, echo=FALSE}
+source("links.R")
+```
+
+
+There are two special elements of assessment/grade calculation in this course that are important to be aware of in planning your approach to it.
+
+-   *Two roads diverged in a yellow wood*[^assessments-1]*:* You can opt for Path A or Path B to get your final mark. I will calculate your marks under both paths and then assign you the higher of the two as your final mark.
+
+-   A-tisket, a-tasket[^assessments-2], fill up your **knowledge basket**[^assessments-3]:
+
+    -   Personalize which of these assessments you do based on your interests and skills you want to develop.
+
+    -   You can 'max out' your basket: just keep putting grades in until you get to 10% (Path A) or 5% (Path B).
+
+[^assessments-1]: The Road Not Taken, by Robert Frost. But, dear traveller, you can in fact take both roads and then get whichever gives you the better mark. <https://www.poetryfoundation.org/poems/44272/the-road-not-taken>
+
+[^assessments-2]: A-tisket, a-tasket by Ella Fitzgerald, <https://www.youtube.com/watch?v=1bgFkeDLpSI>
+
+[^assessments-3]: "Whaowhia te kete mātauranga" is a Māori proverb meaning "Fill up the basket of knowledge". Mātauranga is specifically traditional Māori knowledge. You can listen to the pronunciation here <https://www.massey.ac.nz/student-life/m%C4%81ori-at-massey/te-reo-m%C4%81ori-and-tikanga-resources/te-reo-m%C4%81ori-pronunciation-and-translations/whakatauk%C4%AB-m%C4%81ori-proverbs/>
+
++-----------------------+-----------------+--------+
+| Assessment            | Path A          | Path B |
++=======================+=================+========+
+| Mini-portfolio        | 5               | 0      |
++-----------------------+-----------------+--------+
+| Portfolio             | 20              | 25     |
++-----------------------+-----------------+--------+
+| Mini-mixed assessment | 5               | 0      |
++-----------------------+-----------------+--------+
+| Mixed assessment      | 20              | 25     |
++-----------------------+-----------------+--------+
+| Final project         | 40              | 45     |
++-----------------------+-----------------+--------+
+| Learning basket       | 10              | 5      |
++-----------------------+-----------------+--------+
+| Total                 | 100             | 100    |
++-----------------------+-----------------+--------+
+
+## Graduate student modification (1002H)
+
+There is no difference in the grading scheme or assessment for graduate students enrolled in STA1002, other than an additional 'path' to your final grade where you may opt out of the 'basket' assessments, if you wish. This only applies to graduate students enrolled in STA1002, not to any students enrolled in STA303.
+
+You don't need to advise me of your choice, I will calculate you mark all three ways below and give you the highest mark.
+
++-----------------------+--------+--------+--------------------------------+
+| Assessment            | Path A | Path B | STA1002 ONLY                   |
++=======================+=======:+=======:+===============================:+
+| Mini-portfolio        | 5      | 0      | 0                              |
++-----------------------+--------+--------+--------------------------------+
+| Portfolio             | 20     | 25     | 25                             |
++-----------------------+--------+--------+--------------------------------+
+| Mini-mixed assessment | 5      | 0      | 0                              |
++-----------------------+--------+--------+--------------------------------+
+| Mixed assessment      | 20     | 25     | 25                             |
++-----------------------+--------+--------+--------------------------------+
+| Final project         | 40     | 45     | 50                             |
++-----------------------+--------+--------+--------------------------------+
+| Learning basket       | 10     | 5      | 0                              |
++-----------------------+--------+--------+--------------------------------+
+
+

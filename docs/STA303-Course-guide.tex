@@ -47,6 +47,46 @@
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=2cm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -70,6 +110,9 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+\usepackage[normalem]{ulem}
+% Avoid problems with \sout in headers with hyperref
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -77,6 +120,23 @@
 \usepackage{booktabs}
 \AtBeginDocument{\renewcommand{\chaptername}{}}
 
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+  \end{minipage}
+  \ifhmode\unskip\fi
+  \aftergroup\useignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+  \makeatletter
+  \def\ignorespacesandallpars{%
+    \@ifnextchar\par
+    {\expandafter\ignorespacesandallpars\@gobble}%
+    {}%
+  }
+  \makeatother
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -107,7 +167,9 @@ THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 \hypertarget{how-to-use-this-course-guide}{%
 \chapter{How to use this course guide}\label{how-to-use-this-course-guide}}
 
-This course guide has been created using \href{https://bookdown.org/}{\texttt{bookdown}}.
+This course guide has been created using \href{https://bookdown.org/}{\texttt{bookdown}}. You can download a PDF version of the whole guide with the download button above (down arrow into a tray). You can also put the website into dark mode and changed the font style, if you find s different display preferable.
+
+If you would like a PDF copy of the slides, you can `Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select `Save as PDF' (or similar).
 
 \hypertarget{communication-policy-reminder}{%
 \subsection{Communication policy reminder}\label{communication-policy-reminder}}
@@ -115,7 +177,54 @@ This course guide has been created using \href{https://bookdown.org/}{\texttt{bo
 All content and logistics questions must be asked on \href{https://piazza.com/class/kx47tj4fmy65dg}{Piazza}. Personal or private course matters should be emailed to \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
 
 \hypertarget{syllabus}{%
-\chapter{Syllabus}\label{syllabus}}
+\chapter{STA303/1002 syllabus}\label{syllabus}}
+
+\hypertarget{key-information}{%
+\section{Key information}\label{key-information}}
+
+\raggedright
+
+\textbf{Winter 2022}, half year, half credit course
+
+\textbf{Instructor}: Prof.~Liza Bolton (she/her)
+
+\textbf{Head TA}: Amin Banihashemi (he/him)
+
+\begin{center}\includegraphics[width=0.25\linewidth]{images/syllabus/email} \end{center}
+
+\href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}
+
+\begin{center}\includegraphics[width=0.25\linewidth]{images/syllabus/email} \end{center}
+
+Synchronous class meetings
+Wednesdays
+L0101 12:10--1:00 p.m.
+L0201 3:10--4:00 p.m.
+
+Prof.~office hours will take place in the hour after class.
+
+TA office hours will be announced on Quercus.
+
+\hypertarget{delivery}{%
+\subsection{Delivery}\label{delivery}}
+
+\begin{itemize}
+\item
+  This course will be run completely online until January 31, 2022. After that, \emph{optional} in person components will be offered, subject to public health guidance.
+\item
+  In person attendance is NOT required.
+\item
+  Synchronous attendance is not required but some \protect\hyperlink{assessments}{knowledge basket (see assessments)} components are only available synchronously.
+\item
+  All assessments will be completed online.
+\end{itemize}
+
+\hypertarget{pre-requisities}{%
+\subsection{Pre-requisities}\label{pre-requisities}}
+
+STA302H1/STAC67H3/STA302H5 (or for STA1002, STA1001H1)
+
+It is Department policy to strictly enforce pre-requisites This is not up to the teaching team. You will be removed from the course if you do not meet the prerequisite course requirements.~Please \textbf{reach out to the UG stats team (\url{ug.statistics@utoronto.ca})} with any questions abour enrolment or\href{https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/}{book an appointment during their office hours}.
 
 \hypertarget{start-here}{%
 \chapter{Start here!}\label{start-here}}
@@ -215,8 +324,8 @@ You don't have to submit missed quizzes or writing activities or alert me that y
 
 If you have a \emph{friend} on the waitlist, they can sign up to receive materials here.
 
-\hypertarget{hours-expectations-approximation}{%
-\section{Hours expectations (approximation)}\label{hours-expectations-approximation}}
+\hypertarget{hours-expectations}{%
+\section{Hours expectations}\label{hours-expectations}}
 
 While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.
 
@@ -224,19 +333,15 @@ Plan to be doing 6--8 hours of work on STA303 each week. This may be comprised o
 
 \begin{itemize}
 \item
-  1--2 hours of videos and readings
-\item
-  30 minutes weekly quiz (you'll have an hour, but the intention is that it shouldn't take that long)
+  1--2 hours on videos and readings
 \item
   1 hour of attending synchronous class or reviewing the recording and activities
 \item
-  30 minutes weekly writing Create phase
+  1--2 hours on knowledge basket assessments
 \item
-  30 minutes weekly writing Assess phase
+  1--3 hours on other assessments
 \item
-  5-10 minutes weekly writing Reflect phase
-\item
-  Remaining time attending office hours and working on current assessments
+  Remaining time attending office hours
 \end{itemize}
 
 \hypertarget{module-flow}{%
@@ -282,30 +387,1423 @@ Press the next button below to continue through this module. In the following pa
 
 \emph{Header photo by \href{https://unsplash.com/@drewmark}{Andrew Stutesman.}}
 
+\hypertarget{part-assessments}{%
+\part*{Assessments}\label{part-assessments}}
+\addcontentsline{toc}{part}{Assessments}
+
 \hypertarget{assessments}{%
-\chapter{Assessments}\label{assessments}}
+\chapter{Assessment overview}\label{assessments}}
 
-We describe our methods in this chapter.
+There are two special elements of assessment/grade calculation in this course that are important to be aware of in planning your approach to it.
 
-\hypertarget{modules}{%
-\chapter{Modules}\label{modules}}
+\begin{itemize}
+\item
+  \emph{Two roads diverged in a yellow wood}\footnote{The Road Not Taken, by Robert Frost. But, dear traveller, you can in fact take both roads and then get whichever gives you the better mark. \url{https://www.poetryfoundation.org/poems/44272/the-road-not-taken}}\emph{:} You can opt for Path A or Path B to get your final mark. I will calculate your marks under both paths and then assign you the higher of the two as your final mark.
+\item
+  A-tisket, a-tasket\footnote{A-tisket, a-tasket by Ella Fitzgerald, \url{https://www.youtube.com/watch?v=1bgFkeDLpSI}}, fill up your \textbf{knowledge basket}\footnote{``Whaowhia te kete mātauranga'' is a Māori proverb meaning ``Fill up the basket of knowledge''. Mātauranga is specifically traditional Māori knowledge. You can listen to the pronunciation here \url{https://www.massey.ac.nz/student-life/m\%C4\%81ori-at-massey/te-reo-m\%C4\%81ori-and-tikanga-resources/te-reo-m\%C4\%81ori-pronunciation-and-translations/whakatauk\%C4\%AB-m\%C4\%81ori-proverbs/}}:
 
-If you would like a PDF copy of the slides, you can `Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select `Save as PDF' (or similar).
+  \begin{itemize}
+  \item
+    Personalize which of these assessments you do based on your interests and skills you want to develop.
+  \item
+    You can `max out' your basket: just keep putting grades in until you get to 10\% (Path A) or 5\% (Path B).
+  \end{itemize}
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.33}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.12}}@{}}
+\toprule
+Assessment & Path A & Path B \\
+\midrule
+\endhead
+Mini-portfolio & 5 & 0 \\
+Portfolio & 20 & 25 \\
+Mini-mixed assessment & 5 & 0 \\
+Mixed assessment & 20 & 25 \\
+Final project & 40 & 45 \\
+Learning basket & 10 & 5 \\
+Total & 100 & 100 \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{graduate-student-modification-1002h}{%
+\section{Graduate student modification (1002H)}\label{graduate-student-modification-1002h}}
+
+There is no difference in the grading scheme or assessment for graduate students enrolled in STA1002, other than an additional `path' to your final grade where you may opt out of the `basket' assessments, if you wish. This only applies to graduate students enrolled in STA1002, not to any students enrolled in STA303.
+
+You don't need to advise me of your choice, I will calculate you mark all three ways below and give you the highest mark.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.32}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.12}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.12}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.44}}@{}}
+\toprule
+Assessment & Path A & Path B & STA1002 ONLY \\
+\midrule
+\endhead
+Mini-portfolio & 5 & 0 & 0 \\
+Portfolio & 20 & 25 & 25 \\
+Mini-mixed assessment & 5 & 0 & 0 \\
+Mixed assessment & 20 & 25 & 25 \\
+Final project & 40 & 45 & 50 \\
+Learning basket & 10 & 5 & 0 \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{faqs-and-errata}{%
+\chapter{FAQs and Errata}\label{faqs-and-errata}}
+
+\hypertarget{frequently-asked-questions}{%
+\section{Frequently asked questions}\label{frequently-asked-questions}}
+
+While \href{\%60r\%20piazza\%60}{Piazza} is our main class question and answer board, this page will have some static Questions and Answers for frequently asked questions. Use Cmd + F (Mac) or Ctrl + F (PC) to search for keywords on this page.
+
+Additionally, make sure you're familiar with the \protect\hyperlink{syllabus}{Syllabus}. I've tried to explain as much as I could there.
+
+\hypertarget{course-admin}{%
+\subsection{Course admin}\label{course-admin}}
+
+\hypertarget{prereq-faq}{%
+\subsubsection{STA303 pre-requisites}\label{prereq-faq}}
+
+\emph{I didn't take STA302 or an equivalent course, can I still take STA303?}\\
+No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be removed from the course.~Please \textbf{reach out to the UG stats team (\url{ug.statistics@utoronto.ca})} about questions of this nature.
+
+\begin{itemize}
+\item
+  \href{https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/}{Book an appointment during their office hours}.
+\item
+  For grad courses, please email \href{mailto:grad.statistics@utoronto.ca}{\nolinkurl{grad.statistics@utoronto.ca}}.
+\end{itemize}
+
+\hypertarget{recorded-lectures}{%
+\subsubsection{Recorded lectures}\label{recorded-lectures}}
+
+\emph{Where can I find recorded lectures and how soon can I expect them to be available?}
+
+Recorded lectures will be linked on the \href{https://q.utoronto.ca/courses/204826/pages/course-overview}{Course overview} page. I aim to have the links up within 24 hours of class. They take some time to process.
+
+\hypertarget{sections}{%
+\subsubsection{Sections}\label{sections}}
+
+\emph{Do L0101 and L0201 cover the same materials?}
+
+Yes. The only difference is when your synchronous class is. See the below question in~ ``Attending synchronous class''.
+
+\hypertarget{attending-synchronous-class}{%
+\subsubsection{Attending synchronous class}\label{attending-synchronous-class}}
+
+\emph{Can I attend the synchronous class for the other section?}
+
+Yes!*
+
+*If the number of attendees is getting too close to the call cap of 300 (this is a Zoom license thing), preference will be given to those enrolled in the session and others will be asked to leave. Any Team Up! activity bonuses will also be applied-section/session does not matter.
+
+\emph{Why can't I access the class/office hour Zoom meeting?}
+
+You must have and be signed in with your University of Toronto Zoom account. Use the `SSO' (single sign-on) option.
+
+\textbf{\emph{``\textbf{Will STA303/STA1002 be able to be }completed online-only?''}} Yes.
+
+\begin{itemize}
+\item
+  \textbf{STA303} will be a flipped course, with content delivered online and opportunities for activities both in-person (subject to health advice) and online. All assessments will be completed and submitted online.
+\item
+  If you are enrolled in an \textbf{in-person tutorial}, you will have an option to attend online instead.
+\item
+  Synchronous attendance is NOT required to pass this course, but being able to attend (online) synchronously at the times in the timetable may make things easier for you.
+\end{itemize}
+
+\emph{``Where is your \textbf{office}?''}/\emph{``Can I come see you in-person?''} At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
+
+\hypertarget{team-up}{%
+\subsection{Team Up!}\label{team-up}}
+
+\hypertarget{troubleshooting-faq-advice-from-u-of-t-ctsi}{%
+\subsubsection{Troubleshooting \& FAQ advice from U of T CTSI}\label{troubleshooting-faq-advice-from-u-of-t-ctsi}}
+
+\emph{My screen seems to be lagging compared to those of my group members (eg. I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)}
+
+As long as you are logged in, you will receive your grade, so just continue to participate by communicating with your team. Almost always, your device will re-sync with the rest of your team's devices within a minute or two. If not, refresh your screen once. Repeatedly refreshing is not usually helpful!
+
+\emph{I've been disconnected. Will my quiz progress be saved? Can I re-join my group?}
+
+Enter the Team Up! session again and you will automatically be put back into your group. Your progress will be saved, and you will return to the question you or your group was working on. This is true for the Driver as well as any team member.
+
+\emph{How do I send my completed quiz results?}
+
+Click the large red ``Submit to Quercus'' button at the end of the Team Up! quiz.
+
+\emph{Can we change our group driver?}
+
+You can request a driver change by pressing the red exclamation mark in the top right of your Team Up! quiz.
+
+\emph{How is the driver for our group chosen, and how can the driver pass the group ID to others in remote classes?}
+
+Group members can decide who will be the Driver (ideally someone with a good internet connection). The Driver can pass the group ID to other members verbally through chat or microphone in breakout rooms.
+
+\emph{The Driver of my group has to leave unexpectedly or their device has stopped functioning. How do we proceed with the quiz?}
+
+Request for a Driver Change using the red button at the top right of your Team Up! Session. This button only provides help for Driver Changes. You may also need to speak with your instructor or TA.
+
+\hypertarget{other}{%
+\section{Other}\label{other}}
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\emph{Can you (Prof.~Bolton) write me a reference? I'm desperate!}
+
+Please read my personal policy \href{https://www.lizabolton.com/references.html}{here} to get a sense of under what circumstances I could write for you, but basically, a good mark in one class is not sufficient and you need to have at least two `activities' with me. {If you believe you meet my basic criteria, you can request a reference from me \href{https://forms.office.com/r/XHqjGXjCru}{here}.} I will then accept or decline based on the the information provided.
+
+\emph{Do you (Prof.~Bolton) have any research opportunities available?}
+
+\textbf{Research/work study/teaching assistant opportunities:}
+
+\begin{itemize}
+\item
+  See the \href{https://www.statistics.utoronto.ca/employment-opportunities/cupe-positions-unit-1}{Department website}. The main round of TA recruitment occurs during the summer but there are occasionally emergency postings.
+\item
+  Some information about opportunities with me on my \href{https://www.lizabolton.com/opportunities.html}{website}.
+\item
+  \textbf{Reading courses:} STA496/497: Readings in Statistics must be registered for as part of \href{https://utoronto.sharepoint.com/sites/ArtSci-STA/Undergrad/SitePages/Special-Enrolment-Courses--STA490Y1,-STA492H1-and-STA496H1-STA497H1.aspx}{special enrolment during July}. I will not be taking on any further students.
+
+  \begin{itemize}
+  \item
+    If you're thinking about the future, I usually consider taking on a small number of STA497 students for a \textbf{half-credit, year long version.}
+  \item
+    There is much more information about my past students, research interests and what a course with me might be like on my website: \href{https://www.lizabolton.com/reading_courses.html}{\textless https://www.lizabolton.com/reading\_courses.html\textgreater{}}.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{errata}{%
+\section{Errata}\label{errata}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+ID & Location & Note \\
+\midrule
+\endhead
+& & \\
+& & \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{part-appendix}{%
+\part*{Appendix}\label{part-appendix}}
+\addcontentsline{toc}{part}{Appendix}
+
+\hypertarget{bits-and-pieces}{%
+\chapter{Bits and pieces}\label{bits-and-pieces}}
+
+\hypertarget{code-to-generate-course-art}{%
+\section{Code to generate course art}\label{code-to-generate-course-art}}
+
+\begin{verbatim}
+# install.packages('readr')
+# install.packages('tidyverse')
+# install.packages("devtools")
+# devtools::install_github("BlakeRMills/MetBrewer")
+
+library(readr)
+library(MetBrewer)
+library(tidyverse)
+
+course_code <- "STA303"
+
+my_colours <- c(met.brewer("Cross", n = 8), met.brewer("Cross", n = 9))
+
+set.seed(parse_number(course_code))
+
+ngroup=17
+names=paste("G_",seq(1,ngroup),sep="")
+DAT=data.frame()
+
+for(i in seq(1:30)){
+  data=data.frame( matrix(0, ngroup , 3))
+  data[,1]=i
+  data[,2]=sample(names, nrow(data))
+  data[,3]=prop.table(sample( c(rep(0,100),c(1:ngroup)) ,nrow(data)))
+  DAT=rbind(DAT,data)
+}
+colnames(DAT)=c("Year","Group","Value")
+DAT=DAT[order( DAT$Year, DAT$Group) , ]
+
+ggplot(DAT, aes(x=Year, y=rev(Value), fill=Group )) +
+  geom_area(alpha=1  )+
+  theme_bw() +
+  scale_fill_manual(values = my_colours)+
+  theme(
+    text = element_blank(),
+    line = element_blank(),
+    title = element_blank(),
+    legend.position="none",
+    panel.border = element_blank(),
+    panel.background = element_blank(),
+    plot.margin = margin(0, -2.7, 0, -2.7, "cm"))
+
+ggsave(paste0(course_code, "-base.png"), width = 24, height = 2)
+\end{verbatim}
+
+\hypertarget{matrices}{%
+\section{M1 supporting information on matrices (not assessed)}\label{matrices}}
+
+\hypertarget{background}{%
+\subsection{Background}\label{background}}
+
+\hypertarget{some-true-things-about-matrices}{%
+\subsubsection{Some true things about matrices}\label{some-true-things-about-matrices}}
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{rank} of a matrix is the number of linearly independent columns your matrix has.\\
+\item
+  If the number of columns = the rank of the matrix all the columns are \textbf{linearly independent}. If the umber of columns is \textgreater{} the rank of the matrix, all the columns are \emph{not} linearly independent.\\
+\item
+  You can only \textbf{invert} a square matrix if all its columns are linearly independent. (Determinant non-zero).
+\end{itemize}
+
+\textbf{Why do we care?} In linear regression, to estimate \(\boldsymbol\beta\), our vector of coefficients, we calculate \((\boldsymbol X^T\boldsymbol X)^{-1}\boldsymbol X^T\boldsymbol Y\). The elements of \(\boldsymbol\beta\) can't be estimated if \(\boldsymbol X^T\boldsymbol X\) (a square matrix) isn't invertible.
+
+Clarification to what I said in the tests activity: We usually perform regression with an intercept because we don't want to assume out line passes through the origin, \textbf{0}. So, if there is an intercept, (column of 1s in the model matrix) we must convert every categorical variable with \(k\) levels into \(k-1\) dummy variables to have the intercept and still satisfies linear independence. IF we ditch the intercept, we can have k dummies, but this is only usually useful in the specific case of ANOVA.
+
+\hypertarget{example}{%
+\subsection{Example}\label{example}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(palmerpenguins)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# function to replace NAs with 0 and text with 1}
+\NormalTok{dummify }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x)\{}
+  \FunctionTok{if\_else}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(x), }\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{\}}
+
+\CommentTok{\# create a smaller toy version of the penguin dataset (just for diplay purposes)}
+\FunctionTok{set.seed}\NormalTok{(}\DecValTok{24601}\NormalTok{)}
+\NormalTok{pengwings }\OtherTok{\textless{}{-}}\NormalTok{ penguins }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(species) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{sample\_n}\NormalTok{(}\DecValTok{4}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(body\_mass\_g, species)}
+
+\NormalTok{pengwings}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 12 x 2
+## # Groups:   species [3]
+##    body_mass_g species  
+##          <int> <fct>    
+##  1        3900 Adelie   
+##  2        3700 Adelie   
+##  3        3450 Adelie   
+##  4        3175 Adelie   
+##  5        4500 Chinstrap
+##  6        3850 Chinstrap
+##  7        3650 Chinstrap
+##  8        4550 Chinstrap
+##  9        5150 Gentoo   
+## 10        5000 Gentoo   
+## 11        5700 Gentoo   
+## 12        4600 Gentoo
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# creating a version of the data where there is a dummy column for each level of species instead of one species column}
+\NormalTok{wider }\OtherTok{\textless{}{-}}\NormalTok{ pengwings }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{pivot\_wider}\NormalTok{(}\AttributeTok{id\_cols =} \FunctionTok{everything}\NormalTok{(), }\AttributeTok{names\_from =}\NormalTok{ species, }\AttributeTok{values\_from =}\NormalTok{ species, }\AttributeTok{names\_prefix =} \StringTok{"species."}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(}\FunctionTok{starts\_with}\NormalTok{(}\StringTok{"species."}\NormalTok{)), dummify)}
+
+\NormalTok{wider}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 12 x 4
+##    body_mass_g species.Adelie species.Chinstrap species.Gentoo
+##          <int>          <dbl>             <dbl>          <dbl>
+##  1        3900              1                 0              0
+##  2        3700              1                 0              0
+##  3        3450              1                 0              0
+##  4        3175              1                 0              0
+##  5        4500              0                 1              0
+##  6        3850              0                 1              0
+##  7        3650              0                 1              0
+##  8        4550              0                 1              0
+##  9        5150              0                 0              1
+## 10        5000              0                 0              1
+## 11        5700              0                 0              1
+## 12        4600              0                 0              1
+\end{verbatim}
+
+\hypertarget{classic-regression-k-1-dummies-intercept}{%
+\subsubsection{Classic regression, k-1 dummies (intercept)}\label{classic-regression-k-1-dummies-intercept}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mod1 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(body\_mass\_g }\SpecialCharTok{\textasciitilde{}}\NormalTok{ species, }\AttributeTok{data =}\NormalTok{ pengwings)}
+\FunctionTok{summary}\NormalTok{(mod1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g ~ species, data = pengwings)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -512.50 -310.94  -34.37  348.44  587.50 
+## 
+## Coefficients:
+##                  Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)        3556.3      206.8  17.199 3.42e-08 ***
+## speciesChinstrap    581.2      292.4   1.988  0.07809 .  
+## speciesGentoo      1556.2      292.4   5.322  0.00048 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 413.6 on 9 degrees of freedom
+## Multiple R-squared:  0.7627, Adjusted R-squared:   0.71 
+## F-statistic: 14.46 on 2 and 9 DF,  p-value: 0.001545
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod1))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   (Intercept) speciesChinstrap speciesGentoo
+## 1           1                0             0
+## 2           1                0             0
+## 3           1                0             0
+## 4           1                0             0
+## 5           1                1             0
+## 6           1                1             0
+\end{verbatim}
+
+Does the rank of the model matrix equal the number of columns?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{qr}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod1))}\SpecialCharTok{$}\NormalTok{rank }\SpecialCharTok{==} \FunctionTok{ncol}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod1))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] TRUE
+\end{verbatim}
+
+Okay, linearly independent, we're good to go!
+
+\hypertarget{classic-regression-but-trying-to-force-k-dummies-with-an-intercept}{%
+\subsubsection{Classic regression but trying to force k dummies (with an intercept)}\label{classic-regression-but-trying-to-force-k-dummies-with-an-intercept}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mod2 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(body\_mass\_g }\SpecialCharTok{\textasciitilde{}}\NormalTok{ species.Adelie }\SpecialCharTok{+}\NormalTok{ species.Gentoo }\SpecialCharTok{+}\NormalTok{ species.Chinstrap, }\AttributeTok{data=}\NormalTok{wider)}
+\FunctionTok{summary}\NormalTok{(mod2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g ~ species.Adelie + species.Gentoo + 
+##     species.Chinstrap, data = wider)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -512.50 -310.94  -34.38  348.44  587.50 
+## 
+## Coefficients: (1 not defined because of singularities)
+##                   Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)         4137.5      206.8  20.010 9.04e-09 ***
+## species.Adelie      -581.2      292.4  -1.988  0.07809 .  
+## species.Gentoo       975.0      292.4   3.334  0.00874 ** 
+## species.Chinstrap       NA         NA      NA       NA    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 413.6 on 9 degrees of freedom
+## Multiple R-squared:  0.7627, Adjusted R-squared:   0.71 
+## F-statistic: 14.46 on 2 and 9 DF,  p-value: 0.001545
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{model.matrix}\NormalTok{(mod2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    (Intercept) species.Adelie species.Gentoo species.Chinstrap
+## 1            1              1              0                 0
+## 2            1              1              0                 0
+## 3            1              1              0                 0
+## 4            1              1              0                 0
+## 5            1              0              0                 1
+## 6            1              0              0                 1
+## 7            1              0              0                 1
+## 8            1              0              0                 1
+## 9            1              0              1                 0
+## 10           1              0              1                 0
+## 11           1              0              1                 0
+## 12           1              0              1                 0
+## attr(,"assign")
+## [1] 0 1 2 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{qr}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod2))}\SpecialCharTok{$}\NormalTok{rank}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3
+\end{verbatim}
+
+Does the rank of the model matrix equal the number of columns?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{qr}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod2))}\SpecialCharTok{$}\NormalTok{rank }\SpecialCharTok{==} \FunctionTok{ncol}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod2))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] FALSE
+\end{verbatim}
+
+Not linearly independent. Why?
+
+Well, this intercept column is a linear combination of the three species columns!
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{m }\OtherTok{\textless{}{-}} \FunctionTok{model.matrix}\NormalTok{(mod2)}
+
+\NormalTok{m[,}\DecValTok{1}\NormalTok{] }\SpecialCharTok{==}\NormalTok{ m[,}\DecValTok{2}\NormalTok{] }\SpecialCharTok{+}\NormalTok{ m[,}\DecValTok{3}\NormalTok{] }\SpecialCharTok{+}\NormalTok{ m[,}\DecValTok{4}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    1    2    3    4    5    6    7    8    9   10   11   12 
+## TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+\end{verbatim}
+
+\hypertarget{regression-not-classic-actually-anova-no-intercept}{%
+\subsection{Regression NOT classic, actually ANOVA! (no intercept)}\label{regression-not-classic-actually-anova-no-intercept}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mod3 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(body\_mass\_g }\SpecialCharTok{\textasciitilde{}} \DecValTok{0} \SpecialCharTok{+}\NormalTok{ species.Adelie }\SpecialCharTok{+}\NormalTok{ species.Gentoo }\SpecialCharTok{+}\NormalTok{ species.Chinstrap, }\AttributeTok{data=}\NormalTok{wider)}
+\FunctionTok{summary}\NormalTok{(mod3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g ~ 0 + species.Adelie + species.Gentoo + 
+##     species.Chinstrap, data = wider)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -512.50 -310.94  -34.38  348.44  587.50 
+## 
+## Coefficients:
+##                   Estimate Std. Error t value Pr(>|t|)    
+## species.Adelie      3556.2      206.8   17.20 3.42e-08 ***
+## species.Gentoo      5112.5      206.8   24.73 1.39e-09 ***
+## species.Chinstrap   4137.5      206.8   20.01 9.04e-09 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 413.6 on 9 degrees of freedom
+## Multiple R-squared:  0.9932, Adjusted R-squared:  0.9909 
+## F-statistic: 435.8 on 3 and 9 DF,  p-value: 4.659e-10
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{model.matrix}\NormalTok{(mod3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    species.Adelie species.Gentoo species.Chinstrap
+## 1               1              0                 0
+## 2               1              0                 0
+## 3               1              0                 0
+## 4               1              0                 0
+## 5               0              0                 1
+## 6               0              0                 1
+## 7               0              0                 1
+## 8               0              0                 1
+## 9               0              1                 0
+## 10              0              1                 0
+## 11              0              1                 0
+## 12              0              1                 0
+## attr(,"assign")
+## [1] 1 2 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{qr}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod3))}\SpecialCharTok{$}\NormalTok{rank}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3
+\end{verbatim}
+
+\emph{Challenge question for +100 stats respect points: How do you interpret these coefficients?}
+
+Does the rank of the model matrix equal the number of columns?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{qr}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod3))}\SpecialCharTok{$}\NormalTok{rank }\SpecialCharTok{==} \FunctionTok{ncol}\NormalTok{(}\FunctionTok{model.matrix}\NormalTok{(mod3))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] TRUE
+\end{verbatim}
+
+Great, back to being linearly independent.
+
+\hypertarget{further-reading-if-you-want-it}{%
+\subsection{Further reading (if you want it)}\label{further-reading-if-you-want-it}}
+
+As I said at the beginning, I'm not planning to assess you on any of this. If you're interested in knowing more, or just think matrix algebra is delicious, I think this is a delightfully approachable walk through. \url{https://online.stat.psu.edu/stat462/node/132/}
 
 \hypertarget{module-1}{%
-\section{Module 1}\label{module-1}}
+\chapter{Module 1}\label{module-1}}
+
+\hypertarget{instructor-information}{%
+\section{Instructor information}\label{instructor-information}}
+
+\textbf{Prof.~Liza Bolton}
+
+\textbf{Course email}: \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}
+
+\textbf{Help hours}: During the second half of Wednesday classes: 11:10---12:00 p.m. ET and 4:10---5:00 p.m. ET
+
+Please do not email my individual email with STA303 questions or use Quercus mail. It makes it harder to keep track of and address your questions. Sending me messages on three different platforms will NOT speed up my response. I will not respond messages that don't follow the course communication policy.
+
+You can see the latest version of \href{https://www.lizabolton.com/autoresponder.html}{my email autoresponder here}.
+
+\hypertarget{upward-management-tips}{%
+\section{Upward management tips}\label{upward-management-tips}}
+
+`Upward management' is basically managing your manager. \footnote{I used to haaaate this concept because I learned it while doing a consulting internship at a large international professional services firm and I really struggled with my manager.} If you make their life easier and help them be more effective, this should also make \emph{your} life easier and is a good investment in your own career and skills building.
+
+While our course isn't a business, some of the basic parts of this concept apply well to your time at univeristy AND can set you up for success in graduate studies and your future career.
+
+\textbf{But why should you put effort into upward managing me?} Well, while I will always seek to treat all students fairly and to listen to your feedback, YOU can make this easier or harder for me, and thus make this course better or worse for yourselves.
+
+For example, if I have to use all my time and energy following up on unclear emails for more information and dealing with students who haven't followed instructions etc. etc\ldots.I won't have that energy to put into writing TeamUp! activities to give you extra practice and opportunities to earn bonus points.
+
+\hypertarget{communicate-using-the-tools-your-manager-prefers.}{%
+\subsection{Communicate using the tools your manager prefers.}\label{communicate-using-the-tools-your-manager-prefers.}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{In business}, this means knowing who likes face-to-face vs email, or whether your manager would rather receive an instant message than an email for a quick question.
+\item
+  \textbf{In STA303}, this means:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Using Piazza for all course admin and content questions.
+  \item
+    Using the appropriate forms for accommodations and regrade requests.
+  \item
+    Emailing \textbf{\href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}} for private issues not otherwise covered by the other tools, e.g.~emailing me your Accommodation Serivces letter, requesting an extension to an assessment that conflicts with essential travel.
+  \item
+    Asking questions in office hours.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{write-good-emails-when-emails-are-appropriate}{%
+\subsection{Write good emails (when emails are appropriate)}\label{write-good-emails-when-emails-are-appropriate}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{In business}, this might mean:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Choosing who should be the main recipients vs CCed/BCCed.
+  \item
+    Ensuring your contact details are clear in your signature.
+  \item
+    Make sure the subject line is informative and short
+  \item
+    Making the text of the email as clear and concise as possible.
+  \item
+    Use proper grammar and punctuation.
+  \item
+    Don't use emoji in formal emails. If in doubt, leave 'em out.
+  \end{itemize}
+\item
+  \textbf{In STA303}, this looks like:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Everything in the right-hand column, plus the following.
+  \item
+    Starting an email with ``Hi Prof.~Bolton,'' or ``Hi Liza,''.\footnote{``Dear Madam'' and ``To my esteemed professor'' make me uncomfortable.}
+  \item
+    Sign off the email with your \textbf{preferred name} (i.e.~what should I call you when I reply) and if your have different official name, include that and your UTORid below your name.
+  \item
+    Subject line including {[}Prof.~Bolton{]} or {[}TA name{]} if your email is for a specific person.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{understand-your-managers-goals.}{%
+\subsection{Understand your manager's goals.}\label{understand-your-managers-goals.}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{In business}, this might look like understanding their KPIs and how you can help make sure these are met.
+\item
+  \textbf{In STA303}, most of \emph{my} goals are \emph{for you}, like that you learn useful statistical skills, improve your writing skills etc. I also personally want to improve as an instructor and have fun talking about somethign I love.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You can help me with these goals by working on this course every week, trying your best, asking for help early and often, engaging with feedback gathering mechanisms and providing constructive feedback if something is not working.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{demonstrate-self-management-and-resilience-while-also-asking-for-help-and-flagging-problems-early.}{%
+\subsection{Demonstrate self-management and resilience while also asking for help and flagging problems early.}\label{demonstrate-self-management-and-resilience-while-also-asking-for-help-and-flagging-problems-early.}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{In business}, this might look like:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Being proactive about addressing possible problems before they occur. Managers like a `no surprises' policy.
+  \item
+    Preparing a list of questions to cover in a meeting or to compile in an organised fashion into one email (instead of ten).
+  \item
+    Searching for answers yourself before asking your manager and improving your strategies for finding available information.
+  \end{itemize}
+\item
+  \textbf{In STA303}, this looks like:
+\item
+  Putting in a little effort into find answers before posting on Piazza/asking in class. (\emph{Have you searched Piazza? have you re-read/watched the assigned materials? have your checked the syllabus and recent announcements?})
+\item
+  Come to office hours often, lists of questions very welcome!
+\item
+  Getting in touch (or asking your registrar to) \textbf{early} if you might hate to miss a lot of class. It is usually easier to find a solution if I know things ahead of time, or as soon as possible after.
+\end{itemize}
+
+\hypertarget{recap-of-linear-models}{%
+\section{Recap of linear models}\label{recap-of-linear-models}}
+
+\hypertarget{why-model}{%
+\section{Why model?}\label{why-model}}
+
+\begin{itemize}
+\tightlist
+\item
+  The goal of a model is to provide a (relatively) simple summary of a dataset.
+\item
+  We can describe data AND make predictions.
+\end{itemize}
+
+\hypertarget{linear-models}{%
+\section{Linear models}\label{linear-models}}
+
+In a linear model,
+
+\(y_i = \beta_0 + \beta_1x_{1i} + ... + \beta_px_{pi} + \epsilon_i\)
+
+The response is predicted by a linear function of
+explanatory (or predictor) variables plus an error term.
+
+a.k.a.
+
+\textbf{DATA = MODEL + ERROR}
+
+\hypertarget{linear-regression-assumptions}{%
+\section{Linear regression assumptions}\label{linear-regression-assumptions}}
+
+\textbf{L}: your model is \textbf{L}inear.
+
+\textbf{I}: Errors are \textbf{I}ndependent (usually satisfied if observations are independent).
+
+\textbf{N}: Errors are \textbf{N}ormally distributed with expected value zero, \(E[\epsilon_i]=0\)
+
+\textbf{E}: \textbf{E}qual/constant variance (homoscedasticity), \(\text{var}[\epsilon_i] = \sigma^2\).
+
+We can express ``I N E'' above as assuming the errors are i.i.d Normal with mean of zero and variance \(\sigma^2\),
+\[\epsilon_i \sim N(0, \sigma^2)\]
+
+\hypertarget{what-makes-it-a-linear-model}{%
+\section{\texorpdfstring{What makes it a \emph{linear} model?}{What makes it a linear model?}}\label{what-makes-it-a-linear-model}}
+
+A model is \textbf{linear} if it is \emph{linear in the parameters}. That is, all the \(\beta\) enter the model in a linear way. It is totally fine if the predictor varaibles enter the model in a non-linear way.
+
+\hypertarget{linear}{%
+\subsection{Linear}\label{linear}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \epsilon_i\)\\
+\item
+  \(y_i = \beta_0 + γ_1δ_1x_{1i} + \beta_2\exp(x_{2i}) + \epsilon_i\)
+\end{itemize}
+
+\hypertarget{not-linear}{%
+\subsection{NOT linear}\label{not-linear}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(y_i = \beta_0 + \beta_1x_i^{\beta_2} + \epsilon_i\)\\
+\item
+  \(y_i = \beta_0 exp(\beta_1x_{1i}) + \epsilon_i\)
+\end{itemize}
+
+Internally screaming ``DON'T LET THE BETAS TOUCH'' often helps me remember what is not linear. Additionally, don't let them do anything \emph{weird}, like get exponentiated.
+
+\hypertarget{optional-refresher-reading}{%
+\section{Optional refresher reading}\label{optional-refresher-reading}}
+
+\hypertarget{brief-discussion-of-assumptions-with-examples}{%
+\subsection{Brief discussion of assumptions with examples}\label{brief-discussion-of-assumptions-with-examples}}
+
+Section 1.3 of \emph{Broaden your Statistical Horizons} on the assumptions of OLS
+\url{https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html\#ordinary-least-squares-ols-assumptions}
+{[}freely accessible{]}
+
+\hypertarget{fitting-linear-models-in-r}{%
+\subsection{Fitting linear models in R}\label{fitting-linear-models-in-r}}
+
+Section 1.6 of \emph{Broaden your Statistical Horizons} on Mulitple linear regression (bootstrapping not assessed) \url{https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html\#multreg} {[}freely accessible{]}
+
+\hypertarget{delicious-mathematics}{%
+\subsection{Delicious mathematics}\label{delicious-mathematics}}
+
+Chapter 1 of \emph{Wood, S. N. (2017). Generalized additive models : An introduction with r, second edition}
+\url{http://go.utlib.ca/cat/13435628} {[}you will need to log in to the U of T library for access{]}
+
+\hypertarget{common-statistical-tests-as-linear-regression}{%
+\section{Common statistical tests as linear regression}\label{common-statistical-tests-as-linear-regression}}
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+\emph{Technical note: I have had to remove code answer checking, but if you get stuck the final `Hint' is the solution. This is ungraded, so don't worry, just slightly inconvenient.}
+
+You have probably encountered several statistical tests in your studies so far.
+
+\hypertarget{parametric}{%
+\subsubsection{Parametric}\label{parametric}}
+
+\textbf{E.g. one-sample t-tests, paired t-tests, two-sample t-tests, one-way ANOVA, two-way ANOVA}\\
+Parametric tests make assumptions about the distribution of the population from which our sample data have been drawn.
+
+\hypertarget{non-parametric}{%
+\subsubsection{Non-parametric}\label{non-parametric}}
+
+\textbf{E.g. Wilcoxon signed rank, Mann Whitney-U, Kruskal-Wallace}\\
+Non-parametric tests do not assume that our outcome is Normally distributed. They are sometimes called `distribution-free', but note that this is because they have fewer assumptions than parametric tests, not because they have no assumptions at all.
+
+\hypertarget{aside-but-why-are-there-two-types-of-tests}{%
+\subsubsection{Aside: But why are there two types of tests?}\label{aside-but-why-are-there-two-types-of-tests}}
+
+Parametric tests are more \textbf{powerful}, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes \sout{great responsibility} more assumptions that must be valid to proceed.
+
+There is a GIF in the web version. Not required content. \url{https://tenor.com/view/spider-man-uncle-ben-with-great-power-comes-great-responsibility-its-true-just-saying-gif-24193883}
+
+Non-parametric tests are a great choice when your outcome is an ordinal variable, is ranks, or there are problematic outliers.
+
+For the purposes of this lesson, we're going to focus more on parametric tests, but also take a look at the corresponding non-parametric tests with the slight white lie that they are just ranked versions of their parametric companions. This approach is pretty good as long as you have a reasonable sample size.
+
+\emph{Imagine this:}\\
+\emph{You're on a ship trying to spot land. \textbf{Parametric} tests are the crew member with the best eyesight, but they can be fussy and the conditions have to be right for them to work in or they will breakdown.}
+
+\emph{\textbf{Non-parametric} tests are the crew member with not quite as good eyesight, but they're more laid back about the conditions you make them work in.}
+
+In the following sections we'll explore several of these tests.
+
+\hypertarget{one-sample-t-test}{%
+\subsection{One-sample t-test}\label{one-sample-t-test}}
+
+I am assuming you've seen this in a 200-level statistics course or equivalent. Brief recap below.
+
+\hypertarget{use-case}{%
+\subsubsection{Use case}\label{use-case}}
+
+You want to know if it is believable that the population mean is a certain value (our `hypothesized value' below).
+
+\hypertarget{assumptions}{%
+\subsubsection{Assumptions}\label{assumptions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The data are continuous.
+\item
+  The data are normally distributed.
+\item
+  The sample is a simple random sample from its population. Each individual in the population has an equal probability of being selected in the sample
+\end{enumerate}
+
+(Do these sound familiar from linear regression?)
+
+\hypertarget{hypotheses}{%
+\subsubsection{Hypotheses}\label{hypotheses}}
+
+\[H_0: \mu = \text{hypothesized val}\]
+\[H_1: \mu \ne \text{hypothesized val}\]
+
+What are we doing? Finding the strength of evidence against the claim that the population mean is some hypothesized value.
+
+The test statistic, t, is calculated as follows:
+
+\[ t = \frac{\bar{x} - \text{hypothesized val}}{s/\sqrt{n}} \]
+
+We then compare this t value to the t-distribution with degrees of freedom df = n - 1 and find the area under the curve that represents the probability of values likes ours or more extreme.
+
+\hypertarget{example-1}{%
+\subsubsection{Example}\label{example-1}}
+
+Suppose existing research suggests that the average weight of penguins is 4000 grams. You want to see if this makes sense for your new penguins data.
+
+\[H_0: \mu = 4000\]
+\[H_1: \mu \ne 4000\]
+
+The \texttt{penguins} dataset is already loaded, you you don't have to run any libraries. Use the \texttt{t.test()} function run a one-sample t-test.
+
+\begin{verbatim}
+## 
+##  One Sample t-test
+## 
+## data:  penguins$body_mass_g
+## t = 4.6525, df = 341, p-value = 4.7e-06
+## alternative hypothesis: true mean is not equal to 4000
+## 95 percent confidence interval:
+##  4116.458 4287.050
+## sample estimates:
+## mean of x 
+##  4201.754
+\end{verbatim}
+
+\hypertarget{now-as-a-linear-model}{%
+\subsubsection{Now as a linear model}\label{now-as-a-linear-model}}
+
+First, consider the following, what would a linear regression with no predictor variables and just an intercept tell you?
+
+Create a linear regression model called \texttt{mod1}(replace the blank below) that is an `intercept only model' with \texttt{body\_mass\_g} as the response.
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g ~ 1, data = penguins)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1501.8  -651.8  -151.8   548.2  2098.2 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  4201.75      43.36   96.89   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 802 on 341 degrees of freedom
+##   (2 observations deleted due to missingness)
+\end{verbatim}
+
+It turns out the estimate from this linear regression is the same as the sample mean.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(penguins}\SpecialCharTok{$}\NormalTok{body\_mass\_g, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{) }\CommentTok{\#na.rm = TRUE removes missing values}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4201.754
+\end{verbatim}
+
+Now, recall that with the t-test, we calculate our test statistic by subtracting the hypothesized value from the mean. Let's run the linear model again, but on the left-hand side of the formula, subtract the hypothesized value.
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g - 4000 ~ 1, data = penguins)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1501.8  -651.8  -151.8   548.2  2098.2 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)   201.75      43.36   4.652  4.7e-06 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 802 on 341 degrees of freedom
+##   (2 observations deleted due to missingness)
+\end{verbatim}
+
+Compare the results of this \texttt{summary(mod2)} and your earlier t-test. You should see that the t value, degrees of freedom and p-value are the same for both analyses.
+
+Thus, our one sample t-test hypotheses,
+\[H_0: \mu = \text{hypothesized val}\]
+\[H_1: \mu \ne \text{hypothesized val}\]
+
+are equivalent to our linear regression hypotheses about the intercept,
+
+\[H_0: \beta_0 = \text{hypothesized val}\]
+\[H_1: \beta_0 \ne \text{hypothesized val}.\]
+
+\hypertarget{wilcoxon-signed-rank-test}{%
+\subsubsection{Wilcoxon signed-rank test}\label{wilcoxon-signed-rank-test}}
+
+While the linear regression approach to the one-sample t-test is exact, we can also approximate the Wilcoxon rank-sign test with linear regression. See below.
+
+\begin{center}\includegraphics[width=0.9\linewidth]{images/m1/wilcoxon} \end{center}
+
+Note: The above is just example from some toy data, but aims to illustrate how a t-test is treating the data and how the Wilcoxon test is treating the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Function to get signed rank of each observation  }
+\NormalTok{signed\_rank }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x) }\FunctionTok{sign}\NormalTok{(x) }\SpecialCharTok{*} \FunctionTok{rank}\NormalTok{(}\FunctionTok{abs}\NormalTok{(x))}
+
+\CommentTok{\# The wilcoxon test function }
+\FunctionTok{wilcox.test}\NormalTok{(penguins}\SpecialCharTok{$}\NormalTok{body\_mass\_g, }\AttributeTok{mu =} \DecValTok{4000}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Wilcoxon signed rank test with continuity correction
+## 
+## data:  penguins$body_mass_g
+## V = 34723, p-value = 0.0004829
+## alternative hypothesis: true location is not equal to 4000
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Equivalent linear model}
+\NormalTok{mod3 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(}\FunctionTok{signed\_rank}\NormalTok{(penguins}\SpecialCharTok{$}\NormalTok{body\_mass\_g}\DecValTok{{-}4000}\NormalTok{) }\SpecialCharTok{\textasciitilde{}} \DecValTok{1}\NormalTok{)}
+\FunctionTok{summary}\NormalTok{(mod3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = signed_rank(penguins$body_mass_g - 4000) ~ 1)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -334.63 -173.13  -22.13  187.87  305.37 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)    36.63      10.53   3.479 0.000569 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 194.7 on 341 degrees of freedom
+##   (2 observations deleted due to missingness)
+\end{verbatim}
+
+{[}Optional{]} Check out the theory behind the rank transformation in section 3.0.2 \url{https://lindeloev.github.io/tests-as-linear/\#3_pearson_and_spearman_correlation}
+
+\hypertarget{paired-sample-t-test-and-wilcoxon-matched-pair}{%
+\subsubsection{Paired sample t-test and Wilcoxon matched pair}\label{paired-sample-t-test-and-wilcoxon-matched-pair}}
+
+A paired t-test is equivalent to a one sample t-test if you just consider \(x_{\text{diff}\ i} = x_{1i} - x_{2i}\), i.e., \(x_{\text{diff}\ i}\) is the difference of the paired values for each observation, and proceed with \(x_{\text{diff}\ i}\) as you would in the one sample case. Likewise for the Wilcoxon
+
+The R code (not evaluated here) would be as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Built{-}in Wilcoxon matched pairs}
+\FunctionTok{wilcox.test}\NormalTok{(x1, x2, }\AttributeTok{paired =} \ConstantTok{TRUE}\NormalTok{)}
+
+\CommentTok{\# Equivalent linear model:}
+\FunctionTok{summary}\NormalTok{(}\FunctionTok{lm}\NormalTok{(}\FunctionTok{signed\_rank}\NormalTok{(x1 }\SpecialCharTok{{-}}\NormalTok{ x2) }\SpecialCharTok{\textasciitilde{}} \DecValTok{1}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{dummy-variables}{%
+\subsection{Dummy variables}\label{dummy-variables}}
+
+Let's take a quick detour before we explore the next tests. We'll need to understand the concept of dummy variables and contrasts first.
+
+\hypertarget{the-matrices-we-use-for-linear-regression}{%
+\subsubsection{The matrices we use for linear regression}\label{the-matrices-we-use-for-linear-regression}}
+
+Recall that we can express our linear regression in matrix form:
+
+\[\mathbf{y} = X\boldsymbol\beta + \boldsymbol\varepsilon\]
+
+where
+
+\[
+  \mathbf{y} = \begin{pmatrix} 
+y_1 \\\ 
+y_2 \\\ 
+\vdots \\\ 
+y_n 
+\end{pmatrix} ,
+\]
+\[
+  \boldsymbol\beta = \begin{pmatrix} \beta_0  \\\ \beta_1  \\\ \beta_2  \\\ \vdots  \\\ \beta_p \end{pmatrix}, \quad
+\boldsymbol\varepsilon = \begin{pmatrix} \varepsilon_1  \\\ \varepsilon_2  \\\ \vdots  \\\ \varepsilon_n \end{pmatrix}
+\]
+
+and
+
+\[X = \begin{pmatrix} \mathbf{x}^\mathsf{T}_1 \\ \mathbf{x}^\mathsf{T}_2 \\ \vdots \\ \mathbf{x}^\mathsf{T}_n \end{pmatrix}
+= \begin{pmatrix} 1 &  x_{11} & \cdots & x_{1p} \\
+1 & x_{21} & \cdots & x_{2p} \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & x_{n1} & \cdots & x_{np}
+\end{pmatrix}\]
+
+We often talk about \textbf{X} as the \textbf{model matrix} (or design or regressor matrix) and it will be the focus of this section.
+
+\hypertarget{getting-our-model-matrix-in-r}{%
+\subsubsection{Getting our model matrix in R}\label{getting-our-model-matrix-in-r}}
+
+Let's start by fitting a model with \texttt{body\_mass\_g} as the response and \texttt{flipper\_length\_mm} and \texttt{species} as the predictor variables.
+
+(Note: Users of statistics use a lot of different words to refer to the same thing. Can you think of other terms people might use instead of \emph{response} and \emph{predictor}?)
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g ~ flipper_length_mm + species, data = penguins)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -927.70 -254.82  -23.92  241.16 1191.68 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)       -4031.477    584.151  -6.901 2.55e-11 ***
+## flipper_length_mm    40.705      3.071  13.255  < 2e-16 ***
+## speciesChinstrap   -206.510     57.731  -3.577 0.000398 ***
+## speciesGentoo       266.810     95.264   2.801 0.005392 ** 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 375.5 on 338 degrees of freedom
+##   (2 observations deleted due to missingness)
+## Multiple R-squared:  0.7826, Adjusted R-squared:  0.7807 
+## F-statistic: 405.7 on 3 and 338 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+Now we can use the \texttt{model.matrix()} function to extract the model matrix for \texttt{mod4}. I've applied \texttt{head()} to stop the entire thing being printed.
+
+\begin{verbatim}
+##    (Intercept) flipper_length_mm speciesChinstrap speciesGentoo
+## 1            1               181                0             0
+## 2            1               186                0             0
+## 3            1               195                0             0
+## 5            1               193                0             0
+## 6            1               190                0             0
+## 7            1               181                0             0
+## 8            1               195                0             0
+## 9            1               193                0             0
+## 10           1               190                0             0
+## 11           1               186                0             0
+## 12           1               180                0             0
+## 13           1               182                0             0
+## 14           1               191                0             0
+## 15           1               198                0             0
+## 16           1               185                0             0
+## 17           1               195                0             0
+## 18           1               197                0             0
+## 19           1               184                0             0
+## 20           1               194                0             0
+## 21           1               174                0             0
+\end{verbatim}
+
+You'll notice that even though we only had an intercept and two variables, we have four columns in our model matrix. You should also notice that R has given the columns helpful names, and that we have a column for the Chinstrap species and the Gentoo species, but not the Adelie species.
+
+Further, recall that when we are working with a categorical variables we call the different values the the variables can take \textbf{``levels''}. I may also refer to these as factor variables, and talk about the ``levels of the factor''.
+
+What R is doing is dropping the first level (alphabetically) of the categorical variable and then creating \textbf{dummy variables} for each of the other levels.
+
+The dropped level becomes our \textbf{reference level} and this should be familiar from interpreting summary output in previous courses where you have conducted multiple linear regressions with categorical variables.
+
+A dummy variable is also called an indicator variable, and it \emph{indicates} whether or not the given observation takes that level or not. I.e., if the 40th penguin in this dataset had a 1 in the speciesGentoo column, then I know it is a Gentoo penguin, and that it won't have a 1 in the speciesChinstrap column because each penguin can only have one species.
+
+More generally, the sum across the row of the dummy variables for one categorical variable will either be 0 (if that observation has the reference level) or 1 (not the reference level) but you will never have more than one `one' amongst the dummies for a given categorical variable.
+
+\hypertarget{unassessed-aside-why-do-we-have-to-drop-one-of-the-levels}{%
+\subparagraph{{[}Unassessed aside{]} Why do we have to drop one of the levels?}\label{unassessed-aside-why-do-we-have-to-drop-one-of-the-levels}}
+
+You may recall that for the matrix calculations required to get our vector of \(\beta\)s, we need to be able to invert X our matrix. We can only invert matrices for which all the columns are linearly independent and if we have the intercept AND dummies for all the levels of the categorical variable, our matrix will be linearly dependent.
+
+Additional optional discussion \protect\hyperlink{matrices}{here}.
+
+\hypertarget{two-means}{%
+\subsection{Two means}\label{two-means}}
+
+Back to tests!
+
+Independent t-tests let you compare two means. I am assuming you've seen this in a 200-level statistics course or equivalent. Brief recap below.
+
+\hypertarget{use-case-1}{%
+\subsubsection{Use case}\label{use-case-1}}
+
+You want to know if it is believable that two independent groups have the same population mean.
+
+\hypertarget{assumptions-1}{%
+\subsubsection{Assumptions}\label{assumptions-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The data are continuous.
+\item
+  The data are normally distributed (in each group).
+\item
+  Each group is a simple random sample from its population. Each individual in the population has an equal probability of being selected in the sample
+\item
+  The variances for the groups are equal.
+\end{enumerate}
+
+Notice that these are the same assumptions as the one-sample t-test, but with the equality of variances assumption added.
+
+\hypertarget{hypotheses-1}{%
+\subsubsection{Hypotheses}\label{hypotheses-1}}
+
+\[H_0: \mu_1 = \mu_2\]
+\[H_1: \mu_1 \ne \mu_2\]
+
+What are we doing? Finding the strength of evidence against the claim that the population means for both groups are the same. This differs from the one sample test because we have uncertainty about BOTH values here. Both are population parameters that we don't know.
+
+The test statistic, t, is calculated as follows:
+
+\[ t = \frac{\bar{x_1} - \bar{x_2}}{\sqrt{s^2(\frac{1}{n_1} + \frac{1}{n_2})}} \]
+
+We then compare this t value to the t-distribution with degrees of freedom \(df = n_1 + n_2 - 2\) and find the area under the curve that represents the probability of values likes ours or more extreme.
+
+\hypertarget{example-2}{%
+\subsubsection{Example}\label{example-2}}
+
+Conduct an independent t-test to test if the mean of \texttt{body\_mass\_g} is the same for male and female penguins (\texttt{sex}). Add your code below. Note: you must set \texttt{,\ var.equal\ =\ TRUE} as one of the arguments for it two be the independent t-test. If you don't set this we are conducting a \emph{Welch's t-test}. I won't be covering this, but it is covered in the source credited at the end of this activity.
+
+\begin{verbatim}
+## 
+##  Two Sample t-test
+## 
+## data:  body_mass_g by sex
+## t = -8.5417, df = 331, p-value = 4.897e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -840.8014 -526.0222
+## sample estimates:
+## mean in group female   mean in group male 
+##             3862.273             4545.685
+\end{verbatim}
+
+Now, based on what we've learned, write a linear model using the \texttt{lm()} function to do the same this as our independent t-test. Save the model as \texttt{mod5}.
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = body_mass_g ~ sex, data = penguins)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1295.7  -595.7  -237.3   737.7  1754.3 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  3862.27      56.83  67.963  < 2e-16 ***
+## sexmale       683.41      80.01   8.542  4.9e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 730 on 331 degrees of freedom
+##   (11 observations deleted due to missingness)
+## Multiple R-squared:  0.1806, Adjusted R-squared:  0.1781 
+## F-statistic: 72.96 on 1 and 331 DF,  p-value: 4.897e-16
+\end{verbatim}
+
+Take a moment to match up parts of the outputs that are the same. There is a difference here in that the sign of the test statistics differs. That does not matter as out t-distribution is symmetrical and we're doing a two-tailed test.
+
+\hypertarget{mann-whitney-u}{%
+\subsubsection{Mann-Whitney U}\label{mann-whitney-u}}
+
+Similar idea to before, except for this test it is just rank not signed rank.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Wilcoxon / Mann{-}Whitney U (multiple names)}
+\FunctionTok{wilcox.test}\NormalTok{(body\_mass\_g }\SpecialCharTok{\textasciitilde{}}\NormalTok{ sex, }\AttributeTok{data =}\NormalTok{ penguins)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Wilcoxon rank sum test with continuity correction
+## 
+## data:  body_mass_g by sex
+## W = 6874.5, p-value = 1.813e-15
+## alternative hypothesis: true location shift is not equal to 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# As linear model with our dummy{-}coded group\_y2:}
+\FunctionTok{summary}\NormalTok{(}\FunctionTok{lm}\NormalTok{(}\FunctionTok{rank}\NormalTok{(body\_mass\_g) }\SpecialCharTok{\textasciitilde{}}\NormalTok{ sex, }\AttributeTok{data =}\NormalTok{ penguins))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = rank(body_mass_g) ~ sex, data = penguins)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -183.68  -74.13  -16.63   91.32  162.87 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  128.630      6.948  18.512   <2e-16 ***
+## sexmale       86.051      9.783   8.796   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 89.25 on 331 degrees of freedom
+##   (11 observations deleted due to missingness)
+## Multiple R-squared:  0.1895, Adjusted R-squared:  0.187 
+## F-statistic: 77.37 on 1 and 331 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\hypertarget{anova}{%
+\subsection{ANOVA}\label{anova}}
+
+\hypertarget{use-case-2}{%
+\subsubsection{Use case}\label{use-case-2}}
+
+You've probably seen `ANOVA' in the context of model comparison, but it is also a popular test in psychology and other disciplines.
+
+Let's look specifically at one-way ANOVA (or the F-test). It tests if all the means for several groups (more than 2) are the same or if at least one is different.
+
+I hope this sounds a bit like the next evolution from the independent t-test\ldots{}
+
+(+ 1000 stats respect points to anyone who draws Pokemon-esque evolutions of these three tests\ldots with regression as the mega-evolution\ldots)
+
+\hypertarget{assumptions-2}{%
+\subsubsection{Assumptions}\label{assumptions-2}}
+
+And it just so happens that the assumptions for the one-way ANOVA (also called the F-test) are EXACTLY the same as for the independent t-test
+
+There is a GIF in the web version. Not required content. \url{https://gifst.blogspot.com/2019/03/snl-hi-saturday-night-live-hey-kate.html}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The data are continuous.
+\item
+  The data are normally distributed (in each group).
+\item
+  Each group is a simple random sample from its population. Each individual in the population has an equal probability of being selected in the sample
+\item
+  The variances for the groups are equal.
+\end{enumerate}
+
+\hypertarget{hypotheses-2}{%
+\subsubsection{Hypotheses}\label{hypotheses-2}}
+
+\[H_0: \mu_1 = \mu_2 = ... = \mu_k \]
+
+\[H_1: \text{at least one }\mu \text{ differs from the others} \]
+
+\hypertarget{example-3}{%
+\subsubsection{Example}\label{example-3}}
+
+Let's now look at body mass across species. Suppose we wanted to know if was believable that the the means body mass in grams was the same across all three species. This is when we could fit a quick ANOVA to test this. The \texttt{aov()} allows us to do this.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(}\FunctionTok{aov}\NormalTok{(body\_mass\_g }\SpecialCharTok{\textasciitilde{}}\NormalTok{ species, }\AttributeTok{data =}\NormalTok{ penguins))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##              Df    Sum Sq  Mean Sq F value Pr(>F)    
+## species       2 146864214 73432107   343.6 <2e-16 ***
+## Residuals   339  72443483   213698                   
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 2 observations deleted due to missingness
+\end{verbatim}
+
+That looks a lot like the output from calling summary on \texttt{lm()}\ldots in fact, aov is just a wrapper for lm! Which means it has been linear regression the whole time.
+
+\hypertarget{well-stop-here-and-talk-further-about-this-particular-topic-in-class-this-week.}{%
+\subsubsection{We'll stop here and talk further about this particular topic in class this week.}\label{well-stop-here-and-talk-further-about-this-particular-topic-in-class-this-week.}}
+
+Your next topic is \href{https://q.utoronto.ca/courses/204826/pages/w1-reproducible-examples-reprex?module_item_id=2184624}{reproducible examples (reprexes)}.
+
+\hypertarget{credits}{%
+\subsection{Credits}\label{credits}}
+
+Credit to \textbf{Jonas Kristoffer Lindeløv} for the excellent resource this resource is based on. \href{https://lindeloev.github.io/tests-as-linear/}{There are more examples there than we will cover in this course.}
 
 \hypertarget{module-2}{%
-\section{Module 2}\label{module-2}}
+\chapter{Module 2}\label{module-2}}
 
 \hypertarget{module-3}{%
-\section{Module 3}\label{module-3}}
+\chapter{Module 3}\label{module-3}}
 
 \hypertarget{module-4}{%
-\section{Module 4}\label{module-4}}
+\chapter{Module 4}\label{module-4}}
 
 \hypertarget{module-5}{%
-\section{Module 5}\label{module-5}}
+\chapter{Module 5}\label{module-5}}
 
 \hypertarget{resources}{%
 \chapter{Resources}\label{resources}}
@@ -505,15 +2003,6 @@ A list of University financial supports, work-study opportunities, as well as pr
 The \href{https://www.artsci.utoronto.ca/covid19-artsci-student-faqs}{\textbf{Arts \& Science Undergraduate FAQ page}} addresses frequently asked questions that are specific to undergraduate students taking courses with the Faculty of Arts \& Science. On this page you will find information for:
 
 Messages from Dean Woodin can be found on the \href{https://www.artsci.utoronto.ca/news/covid-19-and-u-ts-response-latest-updates-and-faqs}{A\&S latest updates page}.
-
-\hypertarget{faqs-and-errata}{%
-\chapter{FAQs and Errata}\label{faqs-and-errata}}
-
-\hypertarget{frequently-asked-questions}{%
-\section{Frequently asked questions}\label{frequently-asked-questions}}
-
-\hypertarget{errata}{%
-\section{Errata}\label{errata}}
 
   \bibliography{book.bib,packages.bib}
 

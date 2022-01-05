@@ -1,0 +1,109 @@
+# FAQs and Errata
+
+## Frequently asked questions
+
+While [Piazza](%60r%20piazza%60) is our main class question and answer board, this page will have some static Questions and Answers for frequently asked questions. Use Cmd + F (Mac) or Ctrl + F (PC) to search for keywords on this page.
+
+Additionally, make sure you're familiar with the [Syllabus](#syllabus). I've tried to explain as much as I could there.
+
+### Course admin
+
+#### STA303 pre-requisites {#prereq-faq}
+
+*I didn't take STA302 or an equivalent course, can I still take STA303?*\
+No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be removed from the course. Please **reach out to the UG stats team ([ug.statistics\@utoronto.ca](ug.statistics@utoronto.ca))** about questions of this nature.
+
+-   [Book an appointment during their office hours](https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/ "https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/").
+
+-   For grad courses, please email [grad.statistics\@utoronto.ca](mailto:grad.statistics@utoronto.ca).
+
+#### Recorded lectures
+
+*Where can I find recorded lectures and how soon can I expect them to be available?*
+
+Recorded lectures will be linked on the [Course overview](https://q.utoronto.ca/courses/204826/pages/course-overview "Course overview") page. I aim to have the links up within 24 hours of class. They take some time to process.
+
+#### Sections
+
+*Do L0101 and L0201 cover the same materials?*
+
+Yes. The only difference is when your synchronous class is. See the below question in  "Attending synchronous class".
+
+#### Attending synchronous class
+
+*Can I attend the synchronous class for the other section?*
+
+Yes!\*
+
+\*If the number of attendees is getting too close to the call cap of 300 (this is a Zoom license thing), preference will be given to those enrolled in the session and others will be asked to leave. Any Team Up! activity bonuses will also be applied-section/session does not matter.
+
+*Why can't I access the class/office hour Zoom meeting?*
+
+You must have and be signed in with your University of Toronto Zoom account. Use the 'SSO' (single sign-on) option.
+
+***"**Will STA303/STA1002 be able to be **completed online-only?"*** Yes.
+
+-   **STA303** will be a flipped course, with content delivered online and opportunities for activities both in-person (subject to health advice) and online. All assessments will be completed and submitted online.
+
+-   If you are enrolled in an **in-person tutorial**, you will have an option to attend online instead.
+
+-   Synchronous attendance is NOT required to pass this course, but being able to attend (online) synchronously at the times in the timetable may make things easier for you.
+
+*"Where is your **office**?"*/*"Can I come see you in-person?"* At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
+
+### Team Up!
+
+#### Troubleshooting & FAQ advice from U of T CTSI
+
+*My screen seems to be lagging compared to those of my group members (eg. I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)*
+
+As long as you are logged in, you will receive your grade, so just continue to participate by communicating with your team. Almost always, your device will re-sync with the rest of your team's devices within a minute or two. If not, refresh your screen once. Repeatedly refreshing is not usually helpful!
+
+*I've been disconnected. Will my quiz progress be saved? Can I re-join my group?*
+
+Enter the Team Up! session again and you will automatically be put back into your group. Your progress will be saved, and you will return to the question you or your group was working on. This is true for the Driver as well as any team member.
+
+*How do I send my completed quiz results?*
+
+Click the large red "Submit to Quercus" button at the end of the Team Up! quiz.
+
+*Can we change our group driver?*
+
+You can request a driver change by pressing the red exclamation mark in the top right of your Team Up! quiz.
+
+*How is the driver for our group chosen, and how can the driver pass the group ID to others in remote classes?*
+
+Group members can decide who will be the Driver (ideally someone with a good internet connection). The Driver can pass the group ID to other members verbally through chat or microphone in breakout rooms.
+
+*The Driver of my group has to leave unexpectedly or their device has stopped functioning. How do we proceed with the quiz?*
+
+Request for a Driver Change using the red button at the top right of your Team Up! Session. This button only provides help for Driver Changes. You may also need to speak with your instructor or TA.
+
+## Other
+
+### References
+
+*Can you (Prof. Bolton) write me a reference? I'm desperate!*
+
+Please read my personal policy [here](https://www.lizabolton.com/references.html) to get a sense of under what circumstances I could write for you, but basically, a good mark in one class is not sufficient and you need to have at least two 'activities' with me. [If you believe you meet my basic criteria, you can request a reference from me [here](https://forms.office.com/r/XHqjGXjCru).]{style="background-color: #FFD700"} I will then accept or decline based on the the information provided.
+
+*Do you (Prof. Bolton) have any research opportunities available?*
+
+**Research/work study/teaching assistant opportunities:**
+
+-   See the [Department website](https://www.statistics.utoronto.ca/employment-opportunities/cupe-positions-unit-1 "https://www.statistics.utoronto.ca/employment-opportunities/cupe-positions-unit-1"). The main round of TA recruitment occurs during the summer but there are occasionally emergency postings.
+
+-   Some information about opportunities with me on my [website](https://www.lizabolton.com/opportunities.html).
+
+-   **Reading courses:** STA496/497: Readings in Statistics must be registered for as part of [special enrolment during July](https://utoronto.sharepoint.com/sites/ArtSci-STA/Undergrad/SitePages/Special-Enrolment-Courses--STA490Y1,-STA492H1-and-STA496H1-STA497H1.aspx "https://utoronto.sharepoint.com/sites/ArtSci-STA/Undergrad/SitePages/Special-Enrolment-Courses--STA490Y1,-STA492H1-and-STA496H1-STA497H1.aspx"). I will not be taking on any further students.
+
+    -   If you're thinking about the future, I usually consider taking on a small number of STA497 students for a **half-credit, year long version.**
+
+    -   There is much more information about my past students, research interests and what a course with me might be like on my website: [\<https://www.lizabolton.com/reading_courses.html\>](https://www.lizabolton.com/reading_courses.html){.uri}.
+
+## Errata
+
+| ID  | Location | Note |
+|-----|----------|------|
+|     |          |      |
+|     |          |      |

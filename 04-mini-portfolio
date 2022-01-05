@@ -1,0 +1,134 @@
+# Mini-portfolio
+
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Information**                     | **Note**                                                                                                                                         |
++=====================================+==================================================================================================================================================+
+| Name                                | Mini-portfolio                                                                                                                                   |
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type (Main, mini or basket)         | Mini                                                                                                                                             |
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Value                               | 5% (Path A)                                                                                                                                      |
+|                                     |                                                                                                                                                  |
+|                                     | 0% (Path B)                                                                                                                                      |
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Due                                 | 2022-02-03                                                                                                                                       |
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Submission instruction              | Submission: Via peerScholar, click the button at the bottom of this page to load it.                                                             |
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Accommodations and extension policy | An extension for this assessment due to illness or personal emergency can be requested through the [Illness/personal emergency declaration form](`r extension`). |
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+### Instructions
+
+You can pull the template for this assessment into your U of T JupyterHub
+
+*The cover page must have:*
+
+-   *A title and subtitle*
+-   *Your name*
+-   *Date (assessment submission date is fine)*
+
+*You can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML above (line 11) to another hex code. You could use this tool to help you:* [<https://htmlcolorcodes.com/color-picker/>](https://htmlcolorcodes.com/color-picker/){.uri}
+
+In the **introduction** section, write a brief summary of the skills you have demonstrated in this portfolio. Think of it like a cover letter for this document. It should appropriate for a fairly general audience, imagine a future employer reading this. Your introduction should be not be longer than 300 words
+
+
+
+
+**Final advice: KNIT EARLY AND OFTEN!**
+
+### Prompt
+
+Read the below job ad and write about the skills you would need to apply. The skills can be those highlighted in grey, as well as those not highlighted. Write on at least 2 soft skills and 2 analytic skills. The ad targets those with a MSc/PhD or those with 2+ years of experience, but imagine this requirement is not there.
+
+1.  **Soft skills**. What soft skills relating to communicating and working with others does the company seek?
+
+    1.  In what way do you already possess two of these skills?
+
+    2.  What evidence do you have of possessing one or two of these skills?
+
+2.  **Analytic skills.** What analytic skills relating to software use and performing data analysis does the company seek?
+
+    1.  In what way do you already possess two of these skills?
+
+    2.  What evidence do you have of possessing one or two of these skills?
+
+3.  **Connection to studies.** As part of the coursework of STA303, you proposed an activity related to your professional development. At the end of the course, you will provide evidence of completing this activity and then reflect on what you did.
+
+    1.  How does the evidence produced from your professional development activity help you in applying to this job ad?
+
+    2.  What other skills can you develop and what evidence can you accumulate during the remainder of your education to be ready for a similar job ad?
+
+**Structure your answer under three headings: 'Soft skills', 'Analytics skills' and 'Connection to studies'. Write your answers in full sentences, with appropriate paragraphing. No introduction or conclusion is required.**
+
+**Word count**: 300--500 words
+
+![Yelp logo](images/assessments/Yelp_Logo.png){width="361"}
+
+#### Data Scientist (Remote) 
+
+**Category** Data Science & Analytics
+
+**Location** Toronto, Ontario, Canada
+
+**Department** Engineering and Product
+
+At Yelp, it's our mission to connect people with great local businesses. Yelp's unique dataset contains billions of interactions between users and local business around the globe, from a user reviewing a neighborhood coffee shop to requesting a repair quote with a photo of a leaky faucet. Data Scientists at Yelp work to make sense of these interactions to deliver impactful analyses and products to our users, business partners and the general public.
+
+The Data Science team performs analyses, builds models, and designs experiments that directly impact Yelp's business and users. Our centralized team is the most wide-ranging consumer of data at Yelp, adept at tasks from modeling content growth and user behavior to sharing insights about the health of local economies. With varied backgrounds and expertise, we strive for learning and growth in a collaborative environment.
+
+We'd love to have you apply, even if you don't feel you meet every single requirement in this posting. At Yelp, we're looking for great people, not just those who simply check off all the boxes.
+
+*This opportunity is fully remote and does not require you to be located in any particular region. We welcome applicants from throughout Canada.*
+
+**We Are Looking For:**
+
+-   3+ years of experience as a data scientist or MS/PhD and 2+ years of industry experience in a quantitative role.
+
+-   Fluency with SQL and Python or R for data analysis.
+
+-   Solid understanding of statistical inference, experimental design and analysis.
+
+-   Enthusiasm for clean code and sharing reproducible results.
+
+```{=html}
+<!-- -->
+```
+-   Communication skills to work with partners on engineering, product and business teams.
+
+-   An eye for great data visualization with Matplotlib, Plotly, ggplot, or Tableau.
+
+-   If you don't have 2+ years of industry experience in a quantitative role, please take a look at our College Data Scientist roles instead!
+
+**Where You Come In:**
+
+-   Define key metrics to track Yelp's performance and inform product decisions.
+
+```{=html}
+<!-- -->
+```
+-   Assess and frame questions from partners into actionable deliverables.
+
+-   Design, execute, and analyze complex experiments impacting millions of users.
+
+-   Devise and evaluate models for diverse business needs, such as identifying growth opportunities, personalizing user experience, and matching consumers to businesses.
+
+-   Own analyses start-to-finish and communicate key insights to stakeholders.
+
+-   Share your technical skills to develop and maintain high-quality, reusable analysis tools.
+
+\#LI-Remote
+
+*At Yelp, we believe that diversity is an expression of all the unique characteristics that make us human: race, age, sexual orientation, gender identity, religion, disability, and education --- and those are just a few. We recognize that diverse backgrounds and perspectives strengthen our teams and our product. The foundation of our diversity efforts are closely tied to our core values, which include "Playing Well With Others" and "Authenticity."*
+
+*We're proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition or disability.*
+
+*We are committed to providing reasonable accommodations for individuals with disabilities in our job application process. If you need assistance or an accommodation due to a disability, you may contact us at accommodations-recruiting\@yelp.com or 415-969-8488.*
+
+*Note: Yelp does not accept agency resumes. Please do not forward resumes to any recruiting alias or employee. Yelp is not responsible for any fees related to unsolicited resumes.*
+
+Accessed from **Yelp®** on Feb 28, 2021, 15:15 PM <https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote>
+
+Large logo from Wikipedia <https://en.wikipedia.org/wiki/Yelp#/media/File:Yelp_Logo.svg>
+
+## Portfolio

@@ -6,6 +6,7 @@ announcements = "https://q.utoronto.ca/courses/253305/announcements"
 
 waitlist_form = ""
 
+extension = ""
 
 # Dates
 

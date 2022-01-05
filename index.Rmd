@@ -22,7 +22,11 @@ THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 
 # How to use this course guide
 
-This course guide has been created using [`bookdown`](https://bookdown.org/).
+This course guide has been created using [`bookdown`](https://bookdown.org/). You can download a PDF version of the whole guide with the download button above (down arrow into a tray). You can also put the website into dark mode and changed the font style, if you find s different display preferable. 
+
+
+If you would like a PDF copy of the slides, you can 'Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select 'Save as PDF' (or similar). 
+
 
 ### Communication policy reminder
 

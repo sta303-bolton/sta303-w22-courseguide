@@ -3,5 +3,54 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Syllabus {#syllabus}
+
+# STA303/1002 syllabus {#syllabus}
+
+## Key information
+\raggedright
+__Winter 2022__, half year, half credit course
+
+__Instructor__: Prof. Liza Bolton (she/her)
+
+__Head TA__: Amin Banihashemi (he/him)
+
+```{r, echo=FALSE, fig.align='center', out.width="25%"}
+knitr::include_graphics("images/syllabus/email.png")
+```
+ 
+sta303@utoronto.ca
+
+```{r, echo=FALSE, fig.align='center', out.width="25%"}
+knitr::include_graphics("images/syllabus/email.png")
+```
+Synchronous class meetings 
+Wednesdays
+L0101 12:10–1:00 p.m.
+L0201 3:10–4:00 p.m.
+
+Prof. office hours will take place in the hour after class.
+
+TA office hours will be announced on Quercus.
+
+
+
+
+
+
+
+### Delivery
+
+-   This course will be run completely online until January 31, 2022. After that, *optional* in person components will be offered, subject to public health guidance.
+
+-   In person attendance is NOT required.
+
+-   Synchronous attendance is not required but some [knowledge basket (see assessments)](#assessments) components are only available synchronously.
+
+-   All assessments will be completed online.
+
+### Pre-requisities
+
+STA302H1/STAC67H3/STA302H5 (or for STA1002, STA1001H1)
+
+It is Department policy to strictly enforce pre-requisites This is not up to the teaching team. You will be removed from the course if you do not meet the prerequisite course requirements. Please **reach out to the UG stats team ([ug.statistics\@utoronto.ca](ug.statistics@utoronto.ca))** with any questions abour enrolment or[book an appointment during their office hours](https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/ "https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/").
 

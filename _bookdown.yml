@@ -1,6 +1,7 @@
 book_filename: "STA303 Course guide"
 repo: https://github.com/sta303-bolton/sta303-w22-courseguide
 output_dir: "docs"
+delete_merged_file: TRUE
 language:
   ui:
     chapter_name: ""
