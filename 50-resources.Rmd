@@ -1,8 +1,5 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
+# (PART\*) Appendix {-}
+
 # Resources
 
 ## Course tools overview

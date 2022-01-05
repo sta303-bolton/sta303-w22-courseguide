@@ -1,5 +1,3 @@
-# (PART\*) Appendix {-}
-
 # Bits and pieces
 
 ## Code to generate course art
