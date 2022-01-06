@@ -1,0 +1,112 @@
+```{r, echo=FALSE}
+source("links.R")
+```
+
+# Knowledge basket: Writing and peer feedback
+
+The module writing and peer feedback activities have three stages.
+
+-   **Create** phase due the first Friday of the module at 3:03 p.m. ET
+
+-   **Assess** phase due the second Tuesday of the module at 3:03 p.m. ET
+
+-   __Reflect__ phase due the second Friday of the module at 3:03 p.m. ET
+
+### Create phase
+
+The **Create** phase is due the first Friday of the module at 3:03 p.m. ET
+
+-   Spend \~30 minutes writing a response to the prompt.
+
+-   Write about 200--500 words. The word count isn't strict, but the submission requirements listed below ARE.
+
+    -   The prompt should be clearly and comprehensively addressed.
+
+    -   Your writing should be in full sentences and be broken into paragraphs as appropriate.
+
+    -   Any grammatical or word choice errors should be minimal and not obstruct the meaning.
+
+    -   There is a clear central idea that is well summarized in a concluding sentence(s).
+
+    #### Submission requirements
+
+    Your submission should be:
+
+    -   typed (not handwritten)
+
+    -   no more than one page
+
+    -   single-spaced
+
+    -   size 12 font
+
+    -   margins should be no larger than 1 inch
+
+    -   saved as a PDF
+
+### Assess phase
+
+The **Assess** phase is due the second Tuesday of the module at 3:03 p.m. ET
+
+You will need to assess TWO of your peers in this phase. You will be asked:
+
+-   if they have met the submission requirements,
+
+-   to rate them on the rubric,
+
+-   to make a short comment about a strength of this piece of writing,
+
+-   to make a short comment about a way this piece of writing could be improved.
+
+### Reflect phase
+
+The **Reflect** phase is due second Friday of the module at 3:03 p.m. ET
+
+-   Read the feedback received from your peers.
+
+-   Rate the usefulness on a 3-point scale.
+
+### General instructions
+
+These assessments can be used to make up your knowledge basket. They are also useful in helping you prepare for your portfolio writing samples and final project writing.
+
+Warning: MAKE SURE YOU CLICK SUBMIT! Check that each phase is showing as submitted. Students  have occasionally struggled with this in peerScholar's interface and no regrades/adjustments will be possible after the fact.
+
+Your mark for this assessment will be based on participation. There will be separate marks for each phase, i.e., you can get part marks overall. 45% for completing create, 45% for completing assess, 10% for completing reflect. Please note that participation not in the spirit of the assessment (e.g. just putting the Lorem Ipsum text, or giving feedback like "write better" and nothing else) will not get you marks. 
+
+
+## Module 1 writing task
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Module 1 writing task                      |
++--------------------------------------------------------+----------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                             |
++--------------------------------------------------------+----------------------------------------------------+
+| Value                                                  | 0.5% (0.2%-0.2%-0.1%)  <br> Completion                                           |
++--------------------------------------------------------+----------------------------------------------------+
+| Due                                                    | __Create phase__: `r m1_c`;  <br> __Assess phase__: `r m1_a`; <br> __Reflect phase__: `r m1_r`;                                |
++--------------------------------------------------------+----------------------------------------------------+
+| Submission instructions                                | Submission: [Via peerScholar](`r know_survey_link`)                |
+|                                                        |                                                    |
+|                                                        | Untimed survey, marked for completion              |
++--------------------------------------------------------+----------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
++--------------------------------------------------------+----------------------------------------------------+
+
+### Instructions
+
+#### Prompt
+
+Discuss what you consider the most important dos and don’ts when giving peer feedback. What will make your peers' feedback most valuable to you?
+
+
+#### Rubric
+
+|                       | **Poor or Missing**                                                                                                                            | **Adequate**                                                                                                          | **Good**                                                                                              | **Excellent**                                                                                                                            |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| **Addresses prompt**  | No response OR does not address one of the prompts for this week.                                                                              | While the prompt is somewhat addressed, there is a lot missing and/or much of the response is not relevant/off-topic. | Prompt is addressed, though may go somewhat off-topic at points, or lacks some depth in its coverage. | Prompt is clearly and comprehensively addressed.                                                                                         |
+| **Structure**         | No response OR there is no structure, very difficult to follow.                                                                                | Some structure but difficult to follow                                                                                | The organization follows some logical structure                                                       | Well organized, follows a logical structure.                                                                                             |
+| **Writing mechanics** | No response OR considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice. | Multiple sections are difficult to read, but is otherwise understandable.                                             | Slight difficulty in understanding one or two sections.                                               | Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning. |
+| **Conclusion**        | No response OR there is no concluding sentence(s).                                                                                             | The conclusion is weak not well supported.                                                                            | A conclusion is present but does not completely summarise the central idea.                           | There is a clear central idea that is well summarised in a concluding sentence(s).                                                       |

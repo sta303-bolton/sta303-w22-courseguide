@@ -4,7 +4,7 @@
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
-]{book}
+  openany]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{ifxetex,ifluatex}
@@ -137,6 +137,25 @@
     {}%
   }
   \makeatother
+
+
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -329,19 +348,19 @@ If you have a \emph{friend} on the waitlist, they can sign up to receive materia
 
 While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.
 
-Plan to be doing 6--8 hours of work on STA303 each week. This may be comprised of:
+Plan to be doing 6--8 hours of work on STA303 each \emph{week.} In a two-week module, this may be comprised of:
 
 \begin{itemize}
 \item
-  1--2 hours on videos and readings
+  2--4 hours on videos and readings
 \item
-  1 hour of attending synchronous class or reviewing the recording and activities
+  1--3 hours of attending synchronous class or reviewing the recording and activities
 \item
   1--2 hours on knowledge basket assessments
 \item
-  1--3 hours on other assessments
+  2--6 hours on other assessments
 \item
-  Remaining time attending office hours
+  Remaining time attending reading announcements, office hours, checking Piazza, revision, etc.
 \end{itemize}
 
 \hypertarget{module-flow}{%
@@ -436,6 +455,862 @@ Total & 100 & 100 & 100 & \\
 There is no difference in the grading scheme or assessment for graduate students enrolled in STA1002, other than an additional `path' to your final grade where you may opt out of the `basket' assessments, if you wish. This only applies to graduate students enrolled in STA1002, not to any students enrolled in STA303.
 
 You don't need to advise me of your choice, I will calculate you mark all three ways above and give you the highest of those marks.
+
+\hypertarget{mini-portfolio}{%
+\chapter{Mini-portfolio}\label{mini-portfolio}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.21}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.79}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Mini-portfolio \\
+Type (Main, mini or basket) & Mini \\
+Value & 5\% (Path A)
+
+0\% (Path B) \\
+Due & 2022-02-03 \\
+Submission instruction & Submission: Via peerScholar, click the button at the bottom of this page to load it. \\
+Accommodations and extension policy & An extension for this assessment due to illness or personal emergency can be requested through the \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{Illness/personal emergency declaration form}. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions}{%
+\subsection{Instructions}\label{instructions}}
+
+You can pull the template for this assessment into your U of T JupyterHub
+
+\emph{The cover page must have:}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{A title and subtitle}
+\item
+  \emph{Your name}
+\item
+  \emph{Date (assessment submission date is fine)}
+\end{itemize}
+
+\emph{You can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML above (line 11) to another hex code. You could use this tool to help you:} \href{https://htmlcolorcodes.com/color-picker/}{\textless https://htmlcolorcodes.com/color-picker/\textgreater{}}
+
+In the \textbf{introduction} section, write a brief summary of the skills you have demonstrated in this portfolio. Think of it like a cover letter for this document. It should appropriate for a fairly general audience, imagine a future employer reading this. Your introduction should be not be longer than 300 words
+
+\textbf{Final advice: KNIT EARLY AND OFTEN!}
+
+\hypertarget{prompt}{%
+\subsection{Prompt}\label{prompt}}
+
+Read the below job ad and write about the skills you would need to apply. The skills can be those highlighted in grey, as well as those not highlighted. Write on at least 2 soft skills and 2 analytic skills. The ad targets those with a MSc/PhD or those with 2+ years of experience, but imagine this requirement is not there.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Soft skills}. What soft skills relating to communicating and working with others does the company seek?
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    In what way do you already possess two of these skills?
+  \item
+    What evidence do you have of possessing one or two of these skills?
+  \end{enumerate}
+\item
+  \textbf{Analytic skills.} What analytic skills relating to software use and performing data analysis does the company seek?
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    In what way do you already possess two of these skills?
+  \item
+    What evidence do you have of possessing one or two of these skills?
+  \end{enumerate}
+\item
+  \textbf{Connection to studies.} As part of the coursework of STA303, you proposed an activity related to your professional development. At the end of the course, you will provide evidence of completing this activity and then reflect on what you did.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    How does the evidence produced from your professional development activity help you in applying to this job ad?
+  \item
+    What other skills can you develop and what evidence can you accumulate during the remainder of your education to be ready for a similar job ad?
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Structure your answer under three headings: `Soft skills', `Analytics skills' and `Connection to studies'. Write your answers in full sentences, with appropriate paragraphing. No introduction or conclusion is required.}
+
+\textbf{Word count}: 300--500 words
+
+\begin{figure}
+\centering
+\includegraphics[width=3.76042in,height=\textheight]{images/assessments/Yelp_Logo.png}
+\caption{Yelp logo}
+\end{figure}
+
+\hypertarget{data-scientist-remote}{%
+\subsubsection{Data Scientist (Remote)}\label{data-scientist-remote}}
+
+\textbf{Category} Data Science \& Analytics
+
+\textbf{Location} Toronto, Ontario, Canada
+
+\textbf{Department} Engineering and Product
+
+At Yelp, it's our mission to connect people with great local businesses. Yelp's unique dataset contains billions of interactions between users and local business around the globe, from a user reviewing a neighborhood coffee shop to requesting a repair quote with a photo of a leaky faucet. Data Scientists at Yelp work to make sense of these interactions to deliver impactful analyses and products to our users, business partners and the general public.
+
+The Data Science team performs analyses, builds models, and designs experiments that directly impact Yelp's business and users. Our centralized team is the most wide-ranging consumer of data at Yelp, adept at tasks from modeling content growth and user behavior to sharing insights about the health of local economies. With varied backgrounds and expertise, we strive for learning and growth in a collaborative environment.
+
+We'd love to have you apply, even if you don't feel you meet every single requirement in this posting. At Yelp, we're looking for great people, not just those who simply check off all the boxes.
+
+\emph{This opportunity is fully remote and does not require you to be located in any particular region. We welcome applicants from throughout\,Canada.}
+
+\textbf{We Are Looking For:}
+
+\begin{itemize}
+\item
+  3+ years of experience as a data scientist or MS/PhD and 2+ years of industry experience in a quantitative role.
+\item
+  Fluency with SQL and Python or R for data analysis.
+\item
+  Solid understanding of statistical inference, experimental design and analysis.
+\item
+  Enthusiasm for clean code and sharing reproducible results.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Communication skills to work with partners on engineering, product and business teams.
+\item
+  An eye for great data visualization with Matplotlib, Plotly, ggplot, or Tableau.
+\item
+  If you don't have 2+ years of industry experience in a quantitative role, please take a look at our College Data Scientist roles instead!
+\end{itemize}
+
+\textbf{Where You Come In:}
+
+\begin{itemize}
+\tightlist
+\item
+  Define key metrics to track Yelp's performance and inform product decisions.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Assess and frame questions from partners into actionable deliverables.
+\item
+  Design, execute, and analyze complex experiments impacting millions of users.
+\item
+  Devise and evaluate models for diverse business needs, such as identifying growth opportunities, personalizing user experience, and matching consumers to businesses.
+\item
+  Own analyses start-to-finish and communicate key insights to stakeholders.
+\item
+  Share your technical skills to develop and maintain high-quality, reusable analysis tools.
+\end{itemize}
+
+\#LI-Remote
+
+\emph{At Yelp, we believe that diversity is an expression of all the unique characteristics that make us human: race, age, sexual orientation, gender identity, religion, disability, and education --- and those are just a few. We recognize that diverse backgrounds and perspectives strengthen our teams and our product. The foundation of our diversity efforts are closely tied to our core values, which include ``Playing Well With Others'' and ``Authenticity.''}
+
+\emph{We're proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition or disability.}
+
+\emph{We are committed to providing reasonable accommodations for individuals with disabilities in our job application process. If you need assistance or an accommodation due to a disability, you may contact us at accommodations-recruiting@yelp.com or 415-969-8488.}
+
+\emph{Note: Yelp does not accept agency resumes. Please do not forward resumes to any recruiting alias or employee. Yelp is not responsible for any fees related to unsolicited resumes.}
+
+Accessed from \textbf{Yelp®} on Feb 28, 2021, 15:15 PM \url{https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote}
+
+Large logo from Wikipedia \url{https://en.wikipedia.org/wiki/Yelp\#/media/File:Yelp_Logo.svg}
+
+\hypertarget{portfolio}{%
+\section{Portfolio}\label{portfolio}}
+
+\hypertarget{knowledge-basket-writing-and-peer-feedback}{%
+\chapter{Knowledge basket: Writing and peer feedback}\label{knowledge-basket-writing-and-peer-feedback}}
+
+The module writing and peer feedback activities have three stages.
+
+\begin{itemize}
+\item
+  \textbf{Create} phase due the first Friday of the module at 3:03 p.m. ET
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Spend \textasciitilde30 minutes writing a paragraph response to the prompt
+  \end{itemize}
+\item
+  \textbf{Assess} phase due second Tuesday of the module at 3:03 p.m. ET
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Read two peer's pieces and provide feedback
+  \end{itemize}
+\item
+  Reflect phase due second Friday of the module at 3:03 p.m. ET
+
+  \begin{itemize}
+  \item
+    Read the feedback received from your peers
+  \item
+    Rate the usefulness on a 3-point scale
+  \end{itemize}
+\end{itemize}
+
+These assessments can be used to make up your knowledge basket. They are also useful in helping you prepare for your portfolio writing samples and final project writing.
+
+Warning: MAKE SURE YOU CLICK SUBMIT! Check that each phase is showing as submitted. Student occasionally have stuggled with this in peerScholar's interface.
+
+\hypertarget{module-1-writing-task}{%
+\section{Module 1 writing task}\label{module-1-writing-task}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Module 1 writing task \\
+Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
+Basket
+\end{minipage} \\
+Value & 0.5\% (0.2\%-0.2\%-0.1\%) Completion \\
+Due & Create Friday, January 14, 2022 at 3:03 p.m ET; Assess Tuesday, January 18, 2022 at 3:03 p.m ET; Reflect Friday, January 21, 2022 at 3:03 p.m ET; \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235067}{Via peerScholar}
+
+Untimed survey, marked for completion \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-1}{%
+\subsection{Instructions}\label{instructions-1}}
+
+Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
+
+(Some questions are from factfulnessquiz.com, you are not being marked on correctness, so please answer to the best of your ability without looking anything up.)
+
+\hypertarget{pre-knowledge-check}{%
+\section{Pre-knowledge check}\label{pre-knowledge-check}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Pre-knowledge check \\
+Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
+Basket
+\end{minipage} \\
+Value & 0.5\% for completion + 0.5\% for a score of 80\%+ OR active attendance at the prerequisite knowledge workshop 2022-02-02 \\
+Due & Thursday, January 20, 2022 at 3:03 p.m ET (Workshop: Wednesday, February 2, 2022 in class time) \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235900}{Via Quercus survey}
+
+60 minutes, 1 attempt, no pausing \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-2}{%
+\subsection{Instructions}\label{instructions-2}}
+
+Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80\%+ score or workshop engagement/attendance.
+
+\hypertarget{grade-structure}{%
+\subsubsection{Grade structure}\label{grade-structure}}
+
+\begin{itemize}
+\item
+  Completion of the quiz (all questions attempted) will earn you 0.5\%.
+\item
+  If you score 80\% or more on the quiz, you earn an additional 0.5\%.
+\item
+  If you \emph{do not} score 80\% or more, you can still earn this additional 0.5\% by attending and actively engaging with the workshop on Wednesday, February 2, 2022 in class time.
+\item
+  The maximum points to earn here is 1\% (i.e., you cannot get BOTH the 80\%+ and workshop attendance bonuses)
+\end{itemize}
+
+\hypertarget{knowledge-basket-professional-development-task}{%
+\chapter{Knowledge basket: Professional development task}\label{knowledge-basket-professional-development-task}}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{images/assessments/tree-sounds} \end{center}
+
+Image source: \url{https://www.nsta.org/q-if-tree-falls-forest-and-theres-no-one-around-hear-it-does-it-make-sound}
+
+If a tree falls in a forest, and there's no one around to hear it, does it make a sound? Or, more relevant to this course, if you do a data analysis and can't share it with anyone in helpful ways, did you\emph{really} do anything? With this in mind, you will have the opportunity to choose an area of relevant professional development to pursue over the course of the semester. This could include technical skills that make you better at collaborating with others (version control, Git, GitHub), creating things others will find useful (an R package) or practising communication (oral or written).
+
+There is a 1\% \textbf{proposal} due fairly early in the semester, and then the final submission of \textbf{evidence} of, and \textbf{reflection} on, your activity is worth 3\% and due toward the end of the semster.
+
+Example professional development tasks include:
+
+\begin{itemize}
+\item
+  Learning how to set up and use Git and GitHub (this might come in handy if collaborating on the final project with a group)
+\item
+  Setting up a personal profile website (a bit like a digital CV, GitHub provides free hosting for simple sites)
+\item
+  Participating in weekly TidyTuesday activities
+\item
+  Writing a stats blog
+\item
+  Developing an R package and sharing it on GitHub
+\item
+  A public speaking based activity like a debating society or Toastmasters
+\item
+  Conducting a series of interviews with industry professional or academics and publishing videos/write-ups
+\item
+  Create a wildly successful stats memes TikTok à la \href{https://www.tiktok.com/@chelseaparlettpelleriti/video/6811647290709757189?u_code=d894729j1bcal8\&preview_pb=0\&language=en\&timestamp=1585960235\&user_id=6736543492652696582\&utm_campaign=client_share\&app=musically\&utm_medium=ios\&user_id=6736543492652696582\&tt_from=twitter\&utm_source=twitter\&source=h5_m}{Chelsea Parlett-Pelleriti} (okay, maybe not this one\ldots but she's well worth checking out)
+\end{itemize}
+
+Note: the task must be related to \textbf{communication or collaboration in some way}. For example, `learning SQL' would not be sufficiently directly related to communication or collaboration, but developing an R package and sharing it with others requires communication (writing the documentation) and is a great way to contribute to the collaborative and supportive R community. If you are not sure, please ask!
+
+You will use the SMART goals framework (see image below) when setting out your proposal. The more thought you put into this upfront, the easier collecting evidence and reflecting on your progress will be at the end. More information will be available on the respective assessment pages when they go live.
+
+\hypertarget{professional-development-proposal}{%
+\section{Professional development proposal}\label{professional-development-proposal}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Professional development proposal \\
+Type Main, Mini or Basket & Basket \\
+Value & 1\% \\
+Due & 2022-01-13 3:03 p.m. ET \\
+Submission instructions & Submission: PDF via \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} \\
+Late submissions, accommodations, and extension policy & An extension can be requested up to \textbf{48 hours} before the due date through the \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{extension request form}.
+
+In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-3}{%
+\subsection{Instructions}\label{instructions-3}}
+
+\textbf{There is a general overview of this task on the \href{https://q.utoronto.ca/courses/204826/pages/professional-development}{professional development overview page}.}
+
+Example professional development tasks include:
+
+\begin{itemize}
+\item
+  Learning how to set up and use Git and GitHub (this might come in handy if collaborating on the final project with a group)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Possible resource: \url{https://happygitwithr.com/}
+  \end{itemize}
+\item
+  Setting up a personal profile website (a bit like a digital CV, GitHub provides free hosting for simple sites)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Possible resource: \url{http://jmcglone.com/guides/github-pages/}
+  \item
+    Possible resource: \url{https://uoft-doss-issc.github.io/website-workshop/}
+  \end{itemize}
+\item
+  Participating in weekly TidyTuesday activities
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Possible resource: \url{https://github.com/rfordatascience/tidytuesday}
+  \end{itemize}
+\item
+  Writing a stats blog
+\item
+  Developing an R package
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Possible resource: \url{https://r-pkgs.org/index.html}
+  \end{itemize}
+\item
+  A public speaking based activity like a debating society or Toastmasters
+\item
+  Conducting a series of interviews with industry professional or academics and publishing videos/write-ups
+\item
+  Create a wildly successful stats memes TikTok à la \href{https://www.tiktok.com/@chelseaparlettpelleriti/video/6811647290709757189?u_code=d894729j1bcal8\&preview_pb=0\&language=en\&timestamp=1585960235\&user_id=6736543492652696582\&utm_campaign=client_share\&app=musically\&utm_medium=ios\&user_id=6736543492652696582\&tt_from=twitter\&utm_source=twitter\&source=h5_m}{Chelsea Parlett-Pelleriti} (okay, maybe not this one\ldots but she's well worth checking out)
+\end{itemize}
+
+1. Choose a professional development task that you can devote at least 5--10 hours to over the next several weeks.
+
+2. Work through the SMART goals framework to describe what you will do. The more thought you put into this upfront, the easier collecting evidence and reflecting on your progress will be at the end. More information will be available on the respective assessment pages when they go live.
+
+3. Explain WHY the goal is a good choice for you and your career/further education path (`Relevant' criteria).
+
+\hypertarget{submission-requirements}{%
+\subsection{Submission requirements}\label{submission-requirements}}
+
+Your proposal should be:
+
+\begin{itemize}
+\item
+  typed (not handwritten)
+\item
+  one page\footnote{References, if relevant, may be included on a second page, but a simple hyperlink may also be sufficient. References are not required.}
+\item
+  single-spaced
+\item
+  size 12 font
+\item
+  margins should be no larger than 1 inch
+\item
+  saved as a PDF
+\end{itemize}
+
+With these specifications, your proposal will be approximately 500 words.
+
+\hypertarget{rubric}{%
+\subsection{Rubric}\label{rubric}}
+
+\newpage
+\blandscape
+
+\begin{table}
+\centering\begingroup\fontsize{8}{10}\selectfont
+
+\begin{tabular}{l>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}r}
+\toprule
+Component & Missing 0\% & Poor 25\% & Adequate 50\% & Good 75\% & Excellent 100\% & Points\\
+\midrule
+\cellcolor{gray!6}{Specific} & \cellcolor{gray!6}{There is no goal stated.} & \cellcolor{gray!6}{Goal is too generic and poorly specified.} & \cellcolor{gray!6}{Goal is stated but it is not specific. At least one resource may or may not be listed.} & \cellcolor{gray!6}{Goal is specific but no/unclear resource is mentioned.} & \cellcolor{gray!6}{Goal is specific. At least one resource that will be used to help is mentioned.} & \cellcolor{gray!6}{1}\\
+Measurable & There is no measure for attaining the goal. & Minimal evidence of consideration for measuring progress towards the goal or success. & Definition of success lacks clarity. Measures of progress may or may not be listed. & What success will look like is clearly defined but there no/unclear statement of measure of progress. & Both definition of success and a measure of progress are clearly defined. & 1\\
+\cellcolor{gray!6}{Attainable} & \cellcolor{gray!6}{There is no explanation for how the goal is to be attained.} & \cellcolor{gray!6}{Inappropriate scope, not believable that the goal is attainable.} & \cellcolor{gray!6}{Some issues with the scope of the goal, may not be attainable. Understanding of the steps and potential problems very limited.} & \cellcolor{gray!6}{Goal has a mostly appropriate scope but may lack some clarity around steps to take and potential problems.} & \cellcolor{gray!6}{Goal has an appropriate scope, and a strong understanding of the steps to take and potential problems is shown.} & \cellcolor{gray!6}{1}\\
+Relevant & Goal is not related to communication or collaboration appropriate for statisticians/data-related roles AND no discussion of why this goal was chosen. & Goal is not related to communication or collaboration appropriate for statisticians/data-related roles but some discussion of why this goal was chosen OR goal is appropriate, but no discussion of personal relevance. & Goal is tenuously related to communication or collaboration appropriate for statisticians/data-related roles but good discussion of why this goal was chosen OR goal is appropriate, but limited discussion of personal relevance. & Goal is related to communication or collaboration appropriate for statisticians/data-related roles AND there is a reasonable discussion of personal relevance. & Goal is related to communication or collaboration appropriate for statisticians/data-related roles AND there is a clear discussion of personal relevance. & 2\\
+\cellcolor{gray!6}{Time-bound} & \cellcolor{gray!6}{There is no timeline or evidence of consideration of time-bounding the goal.} & \cellcolor{gray!6}{Minimal evidence of consideration time-bounding the goal.} & \cellcolor{gray!6}{Timeline is not listed according to days/weeks or dates. Time for delays and troubleshooting may or may not have been considered.} & \cellcolor{gray!6}{Timeline is listed based on days/weeks or dates. No/unclear time for delays and troubleshooting is considered.} & \cellcolor{gray!6}{Timeline is listed based on days/weeks or dates. Time for delays and troubleshooting is considered.} & \cellcolor{gray!6}{1}\\
+\addlinespace
+Structure & There is no structure, very difficult to follow. & Minimal evidence of an attempt to structure the proposal logically. & Some structure but difficult to follow. & The organization follows some logical structure. & Well organized, follows a logical structure. & 1\\
+\cellcolor{gray!6}{Writing mechanics} & \cellcolor{gray!6}{No response OR response is largely unintelligible.} & \cellcolor{gray!6}{Considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice.} & \cellcolor{gray!6}{Multiple sections are difficult to read but it is otherwise understandable.} & \cellcolor{gray!6}{Slight difficulty in understanding one or two sections.} & \cellcolor{gray!6}{Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning.} & \cellcolor{gray!6}{2}\\
+Conclusion & There is no concluding sentences. & Minimal evidence of a concluding statement. & The conclusion is weak not well supported. & A conclusion is present but does not completely summarise the central idea. & There is a clear central idea that is well summarised in a concluding sentences. & 1\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\elandscape
+
+\hypertarget{checklist}{%
+\subsection{Checklist}\label{checklist}}
+
+Before submitting your proposal, check the following:
+
+\begin{itemize}
+\item
+  Your goal is specific. \textbf{(Specific)}
+\item
+  At least one resource you will use to help you is identified. \textbf{(Specific)}
+\item
+  It is clear how you will define success.\textbf{(Measurable)}
+\item
+  It is clear how you will measure your progress. \textbf{(Measurable)}
+\item
+  Your goal has an appropriate scope and is attainable. \textbf{(Attainable)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This is shown through a description of the steps you'll need to take and what potential problems you might face. Related to timeline below.
+  \end{itemize}
+\item
+  The goal is related to communication and/or collaboration appropriate for a statistician/data-related role. \textbf{(Relevant)}
+\item
+  It is clear why this goal is relevant to you personally. \textbf{(Relevant)}
+\item
+  The steps you want to complete can be completed in 7 weeks. (\textbf{Attainable} and \textbf{Time-bounded})
+\item
+  A timeline with dates/weeks for the required steps is included. \textbf{(Time-bounded)}
+\item
+  The timeline shows some accommodation for troubleshooting/delays. \textbf{(Time-bounded)}
+\item
+  There is a clear concluding sentence or sentences that wrap(s) up the proposal.
+\item
+  You have proofread your proposal and made sure the structure is logical and there are not intrusive grammatical or word choice errors.
+\item
+  You have written in full sentences.
+\item
+  Your submission is typed (not handwritten), one page, single-spaced with size 12 font and the margins are no larger than 1 inch.
+\item
+  Your final version is saved as a PDF.
+\end{itemize}
+
+\hypertarget{things-to-keep-in-minds-as-you-start-working-towards-your-professional-development-goal}{%
+\subsection{Things to keep in minds as you start working towards your professional development goal}\label{things-to-keep-in-minds-as-you-start-working-towards-your-professional-development-goal}}
+
+\begin{itemize}
+\item
+  Track your time
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A time sheet should be part of your evidence submission
+  \end{itemize}
+\item
+  Create a work log document or file to store screenshots in, make notes of tasks you've completed
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This will make writing your reflection much easier
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{example-smart-goal}{%
+\subsection{Example smart goal}\label{example-smart-goal}}
+
+Note: This is \emph{not} a collaboration/communication goal, but provides some examples of how to approach a SMART goal. Where there are ellipses (``\ldots{}'') we are suggesting there would be more of the same, but this example should be enough to give you the idea. You should \emph{not} use ellipses in this way in your own proposal.
+
+\hypertarget{specific}{%
+\subsubsection{Specific}\label{specific}}
+
+Goal: \emph{``Climb to the peak of Mount Robson over 2 weeks in January and write one blog post for my website about the journey.''}
+
+Bad example: ``Climb a mountain and write about it.'' Which mountain? What type of writing and with what purpose?
+
+Resources: \emph{``I will need climbing equipment, my camera, notebook \ldots{}''}
+
+\hypertarget{measurable}{%
+\subsubsection{Measurable}\label{measurable}}
+
+Defining success: "\emph{Reach the peak of Mount Robson and return and write at least 1 blog entry with a picture about the journey, all in 2 weeks."}
+
+Bad example: ``Climbed Mount Robson.'' Needs more details about what this success looks like. Walk up a few metres and turn back? Relates to time-bounded also.
+
+Measuring my progress: \emph{``I will measure my progress by how many steps of my goals I have accomplished and the altitude of my climb relative to the elevation of Mount Robson (3,954 m). I will have taken a picture''}
+
+\hypertarget{attainable}{%
+\subsubsection{Attainable}\label{attainable}}
+
+You have or can you learn the required skills: \emph{``I am sufficiently fit to make this climb safely and have climbed a similar mountain recently. I have a camera and am currently taking an online course on blogging.''}
+
+Possible steps I need to take:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \emph{Arrive at Mount Robson Visitors Center with my climbing plan.}
+\item
+  \emph{Climb until \ldots{} on first day.}
+\end{enumerate}
+
+\emph{\ldots{}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \emph{Write one blog entry with one picture.}
+\end{enumerate}
+
+Bad example: ``Make progress with my goal by 7\% each day.'' Not useful to you, what does 7\% actually mean here? Will it really be the same amount of progress every day?
+
+Potential problems:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \emph{Weather might be bad, and I may have to delay my climb by a few days.}
+\end{enumerate}
+
+Bad example: ``Something might not work.'' What? In what way? Could you solve it?
+
+\hypertarget{relevant}{%
+\subsubsection{Relevant:}\label{relevant}}
+
+Personal relevance: "\emph{The climbing experience will help me learn new skills like \ldots{} which will help me work towards becoming a professional climbing guide."}
+
+Bad example\emph{: ``Seems like fun.''}
+
+\hypertarget{time-bounded}{%
+\subsubsection{Time-bounded:}\label{time-bounded}}
+
+\emph{``A 2-week journey from Jan 25th:Days 1-3to climb;Days4-6return;5 days for delays;3days to rest.''}
+
+\begin{center}\includegraphics[width=1\linewidth]{images/assessments/SMART} \end{center}
+
+\emph{Source: Canadian Management Center, \url{https://cmcoutperform.com/setting-smart-goals}}
+
+\hypertarget{professional-development-evidence-and-reflection}{%
+\section{Professional development evidence and reflection}\label{professional-development-evidence-and-reflection}}
+
+You may wish to use the provided template to complete this task. This is not required to get full marks, but we believe this will be a helpful structure for you to ensure you have addressed all parts of the task.
+
+\hypertarget{templates}{%
+\subsection{Templates}\label{templates}}
+
+\begin{itemize}
+\item
+  \href{other-files/template.docx}{template.docx}
+\item
+  \href{other-files/template.Rmd}{template.Rmd}, \href{other-files/template.pdf}{template.pdf}, \href{other-files/template_rmd.zip}{template\_rmd.zip}
+\end{itemize}
+
+\hypertarget{reflection-and-evidence-components}{%
+\subsection{Reflection and evidence components}\label{reflection-and-evidence-components}}
+
+\hypertarget{activity-alignment-and-lessons}{%
+\subsubsection{Activity, alignment and lessons}\label{activity-alignment-and-lessons}}
+
+\textbf{Activity}: Describe what you did and what you learned. Be \textbf{specific} but you don't need a step-by-step guide or dates, save that for your timesheet. Assume your reader has \emph{not} read your proposal and that you are introducing your goal and plan to them for the first time. (It may help to imagine how you might explain this task and your progress in a job interview.)
+
+\hypertarget{examples}{%
+\paragraph{Examples}\label{examples}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{I wrote 4 blog posts on \ldots. The first one was on \ldots{} One unanticipated activity I had to do was \ldots{}}\\
+\item
+  \emph{This task helped me learn how to write for general audience\ldots{}}\\
+\item
+  \emph{Through this task I improved my\ldots{}}
+\end{itemize}
+
+\textbf{Alignment}: How well did your activity and progress align with your proposal?
+
+\hypertarget{examples-1}{%
+\paragraph{Examples}\label{examples-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{My plan changed as my goal was not specific enough. I think the reason for this is \ldots{} I can set realistic goals next time by \ldots{}}\\
+\item
+  \emph{Most of my attainable steps and potential problems were correctly identified because \ldots.}\\
+\item
+  \emph{This is a good method which I will use again when I need to \ldots{}}\\
+\item
+  \emph{My way of measuring progress worked because \ldots{} This is useful for next time because \ldots{}}
+\end{itemize}
+
+\textbf{Lessons}: What did you learn from using the SMART goal-setting experience?
+
+\hypertarget{examples-2}{%
+\paragraph{Examples}\label{examples-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{An interesting thing I learned from the SMART goal-setting exercise was that \ldots{}}\\
+\item
+  \emph{I prefer to modify the format of SMART goals to match my work habits by \ldots{}}
+\end{itemize}
+
+\hypertarget{evidence}{%
+\subsubsection{Evidence}\label{evidence}}
+
+Provide links \textbf{and/or} copy/paste a screenshot of a blog, website, Github repository, Rmd document, \ldots{} Provide commentary on what the image/link is and what it demonstrates. I.e., Describe what we should be seeing and understanding from what you've included and how it relates to your goals.
+
+\hypertarget{examples-3}{%
+\paragraph{Examples}\label{examples-3}}
+
+\begin{itemize}
+\item
+  \emph{The screenshot shows \ldots{} which is evidence of partially completing {[}goal{]} \ldots{}}
+\item
+  \emph{The provided link goes to \ldots{} which relates to {[}goal{]} \ldots{}}
+\item
+  \emph{Notice that there are separate buttons on the website for each of the \ldots{}}
+\end{itemize}
+
+\hypertarget{timesheet}{%
+\subsubsection{Timesheet}\label{timesheet}}
+
+Include a timesheet that briefly describes how you used your time (no specific format required, but something like the below is fine). Hours spent can be approximate.
+
+Describe what you learned from filling your timesheet. This can be short and could include how you'd track your time differently in future, what you noticed about your work habits from tracking your time
+
+\hypertarget{examples-4}{%
+\paragraph{Examples}\label{examples-4}}
+
+\emph{About \ldots\% of my time was spent preparing, maybe because the task was new. This means for future tasks that are new I need to consider \ldots.}
+
+\emph{The timesheet can be better suited to my work habits if \ldots{}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.08}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.14}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.12}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.66}}@{}}
+\toprule
+\textbf{Week} & \textbf{Week starts on}
+
+\textbf{(Monday)} & \textbf{Time spent}
+
+\textbf{(Hrs)} & \textbf{Activity}
+
+\emph{(Brief description of what was done, e.g.~what you read, what you tried on GitHub or state.)} \\
+\midrule
+\endhead
+5 & Feb 7 & 1.5 & Example: Worked through chapters 1 \& 2 of \ldots{} \\
+6 & Feb 14 & 0 & Example: No progress this week \\
+& Feb 21 & & \emph{Reading week} \\
+7 & Feb 28 & 1 & Example: Set up postcard home page and pushed to GitHub \ldots{} \\
+8 & Mar 7 & 2 & Example: Wrote one blog entry about \ldots{} \\
+9 & Mar 14 & 1.5 & Example: Fixed coding error that \ldots{[}reason for error{]} .. by {[}fix{]} \ldots{} \\
+10 & Mar 21 & 2 & Example: Edited the video on {[}topic{]} \ldots{} using {[}software{]} \ldots{} \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{recommended-structure}{%
+\subsection{Recommended structure}\label{recommended-structure}}
+
+You do not \emph{have} to set out your writing in this way to get full marks, but we believe this will be a helpful structure for you to ensure you have addressed all parts of the task.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.09}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.36}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.55}}@{}}
+\toprule
+\textbf{\#} & \textbf{Section heading} & \textbf{Format} \\
+\midrule
+\endhead
+1 & Activity, alignment and lessons & \begin{minipage}[t]{\linewidth}\raggedright
+\textasciitilde3 paragraphs:
+
+\begin{itemize}
+\item
+  activity,
+\item
+  alignment,
+\item
+  SMART lessons
+\end{itemize}
+\end{minipage} \\
+2 & Evidence & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Selected screenshots of work done, links, \ldots{}
+\end{itemize}
+\end{minipage} \\
+3 & Timesheet & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  Fill provided template or create your own
+\item
+  1-3 sentences of what you learned
+\end{itemize}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{rubric-1}{%
+\subsection{Rubric}\label{rubric-1}}
+
+\newpage
+\blandscape
+
+\begin{table}
+\centering\begingroup\fontsize{8}{10}\selectfont
+
+\begin{tabular}{l>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{12em}r}
+\toprule
+Component & Missing 0\% & Poor 25\% & Adequate 50\% & Good 75\% & Excellent 100\% & Points\\
+\midrule
+\cellcolor{gray!6}{Activity description} & \cellcolor{gray!6}{Missing} & \cellcolor{gray!6}{Limited description of task, insufficient detail to understand the scope of activity.} & \cellcolor{gray!6}{Some description of the activity, but too general and/or would require the reader to have some previous knowledge of the goal/activity chosen to fully under it.} & \cellcolor{gray!6}{Mostly clear description of activity but lacking some specificity or does not fully introduce the task for a reader with no previous knowledge of the tasks.} & \cellcolor{gray!6}{Clear and specific description of the activity undertaken.  Appropriately introduced for a reader with no background knowledge of the task.} & \cellcolor{gray!6}{2}\\
+Alignment & Missing & Limited description of alignment with original proposal. Lacks specifics and clear reasoning. & Some description of alignment with original proposal, though lacking reflective depth. & Reflection on alignment with proposal provides some specific details and reasoning for changes/successes. & Reflection on alignment with proposal is insightful and specific, detailing what went to plan/what didn’t and any changes that needed to be made, as appropriate. & 2\\
+\cellcolor{gray!6}{SMART goal-setting lessons} & \cellcolor{gray!6}{Missing} & \cellcolor{gray!6}{Limited description of lessons learned from the SMART goal setting approach.} & \cellcolor{gray!6}{Some description of lessons learned from the SMART goal setting approach, though lacking reflective depth.} & \cellcolor{gray!6}{Reflection on lessons learned from the SMART goal setting approach provides some specific details} & \cellcolor{gray!6}{Reflection on lessons learned from the SMART goal setting approach is insightful and specific.} & \cellcolor{gray!6}{2}\\
+Evidence & Missing & Insufficient evidence provided. No explanation or relation to goal was not clear. & Some evidence provided but aspects of explanation/commentary were not clear and/or the relationship to the goal not well described. & Evidence provided with commentary and the relationship to the goal described. & Relevant evidence provided with clear commentary on what it demonstrated and how it related to the goal described. & 1\\
+\cellcolor{gray!6}{Timesheet} & \cellcolor{gray!6}{Missing} & \cellcolor{gray!6}{Some hours or activity descriptions missing/insufficient. No description of what was learned from the time tracking activity.} & \cellcolor{gray!6}{Some hours or activity descriptions missing/insufficient. Some description of what was learned from the time tracking activity.} & \cellcolor{gray!6}{Timesheet complete but insufficient description of what was learned from the time tracking activity OR timesheet somewhat complete but good description of what was learned from the time tracking activity.} & \cellcolor{gray!6}{Timesheet complete and a clear and relevant description of what they learned from the time tracking activity.} & \cellcolor{gray!6}{1}\\
+\addlinespace
+Structure & Missing & Minimal evidence of an attempt to structure logically. & Some structure but difficult to follow. & The organization follows some logical structure. Paragraphs either don’t have topic sentences or have unrelated ideas. & Well organized, follows a logical structure. Paragraphs have topic sentences and contain related ideas. & 1\\
+\cellcolor{gray!6}{Writing mechanics} & \cellcolor{gray!6}{Missing} & \cellcolor{gray!6}{Considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice.} & \cellcolor{gray!6}{Multiple sections are difficult to read but it is otherwise understandable.} & \cellcolor{gray!6}{Slight difficulty in understanding one or two sections.} & \cellcolor{gray!6}{Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning.} & \cellcolor{gray!6}{1}\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\elandscape
+
+\hypertarget{knowledge-basket-other}{%
+\chapter{Knowledge basket: Other}\label{knowledge-basket-other}}
+
+\hypertarget{getting-to-know-you-survey}{%
+\section{`Getting to know you' survey}\label{getting-to-know-you-survey}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & `Getting to know you' survey \\
+Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
+Basket
+\end{minipage} \\
+Value & 0.1\% \\
+Due & Thursday, January 13, 2022 at 3:03 p.m ET \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235067}{Via Quercus survey}
+
+Untimed survey, marked for completion \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-4}{%
+\subsection{Instructions}\label{instructions-4}}
+
+Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
+
+(Some questions are from factfulnessquiz.com, you are not being marked on correctness, so please answer to the best of your ability without looking anything up.)
+
+\hypertarget{pre-knowledge-check-1}{%
+\section{Pre-knowledge check}\label{pre-knowledge-check-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Pre-knowledge check \\
+Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
+Basket
+\end{minipage} \\
+Value & 0.5\% for completion + 0.5\% for a score of 80\%+ OR active attendance at the prerequisite knowledge workshop 2022-02-02 \\
+Due & Thursday, January 20, 2022 at 3:03 p.m ET (Workshop: Wednesday, February 2, 2022 in class time) \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235900}{Via Quercus survey}
+
+60 minutes, 1 attempt, no pausing \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-5}{%
+\subsection{Instructions}\label{instructions-5}}
+
+Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80\%+ score or workshop engagement/attendance.
+
+\hypertarget{grade-structure-1}{%
+\subsubsection{Grade structure}\label{grade-structure-1}}
+
+\begin{itemize}
+\item
+  Completion of the quiz (all questions attempted) will earn you 0.5\%.
+\item
+  If you score 80\% or more on the quiz, you earn an additional 0.5\%.
+\item
+  If you \emph{do not} score 80\% or more, you can still earn this additional 0.5\% by attending and actively engaging with the workshop on Wednesday, February 2, 2022 in class time.
+\item
+  The maximum points to earn here is 1\% (i.e., you cannot get BOTH the 80\%+ and workshop attendance bonuses)
+\end{itemize}
 
 \hypertarget{part-modules}{%
 \part*{Modules}\label{part-modules}}

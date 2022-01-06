@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="assessments.html"/>
-<link rel="next" href="modules.html"/>
+<link rel="next" href="knowledge-basket-writing-and-peer-feedback.html"/>
 <script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -52,8 +52,74 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -76,7 +142,14 @@
 <ul>
 <li class="chapter" data-level="1.0.1" data-path="index.html"><a href="index.html#communication-policy-reminder"><i class="fa fa-check"></i><b>1.0.1</b> Communication policy reminder</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i><b>2</b> Syllabus</a></li>
+<li class="chapter" data-level="2" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i><b>2</b> STA303/1002 syllabus</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="syllabus.html"><a href="syllabus.html#key-information"><i class="fa fa-check"></i><b>2.1</b> Key information</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="syllabus.html"><a href="syllabus.html#delivery"><i class="fa fa-check"></i><b>2.1.1</b> Delivery</a></li>
+<li class="chapter" data-level="2.1.2" data-path="syllabus.html"><a href="syllabus.html#pre-requisities"><i class="fa fa-check"></i><b>2.1.2</b> Pre-requisities</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="start-here.html"><a href="start-here.html"><i class="fa fa-check"></i><b>3</b> Start here!</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="start-here.html"><a href="start-here.html#introductions"><i class="fa fa-check"></i><b>3.1</b> Introductions</a>
@@ -85,68 +158,155 @@
 <li class="chapter" data-level="3.1.2" data-path="start-here.html"><a href="start-here.html#amin-banihashemi-head-ta"><i class="fa fa-check"></i><b>3.1.2</b> Amin Banihashemi, Head TA</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="start-here.html"><a href="start-here.html#howthiscourseworks"><i class="fa fa-check"></i><b>3.2</b> How this course works</a></li>
-<li class="chapter" data-level="3.3" data-path="start-here.html"><a href="start-here.html#hours-expectations-approximation"><i class="fa fa-check"></i><b>3.3</b> Hours expectations (approximation)</a>
+<li class="chapter" data-level="3.3" data-path="start-here.html"><a href="start-here.html#hours-expectations"><i class="fa fa-check"></i><b>3.3</b> Hours expectations</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="start-here.html"><a href="start-here.html#module-flow"><i class="fa fa-check"></i><b>3.3.1</b> Module flow</a></li>
 <li class="chapter" data-level="3.3.2" data-path="start-here.html"><a href="start-here.html#communication"><i class="fa fa-check"></i><b>3.3.2</b> Communication</a></li>
 <li class="chapter" data-level="3.3.3" data-path="start-here.html"><a href="start-here.html#to-do-now"><i class="fa fa-check"></i><b>3.3.3</b> To do now</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="assessments.html"><a href="assessments.html"><i class="fa fa-check"></i><b>4</b> Assessments</a>
+<li class="part"><span><b>Assessments</b></span></li>
+<li class="chapter" data-level="4" data-path="assessments.html"><a href="assessments.html"><i class="fa fa-check"></i><b>4</b> Assessment overview</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="assessments.html"><a href="assessments.html#graduate-student-modification-1002h"><i class="fa fa-check"></i><b>4.1</b> Graduate student modification (1002H)</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="mini-portfolio.html"><a href="mini-portfolio.html"><i class="fa fa-check"></i><b>5</b> Mini-portfolio</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#instructions"><i class="fa fa-check"></i><b>5.1</b> Instructions</a></li>
-<li class="chapter" data-level="5.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#prompt"><i class="fa fa-check"></i><b>5.2</b> Prompt</a>
+<li class="chapter" data-level="5.0.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#instructions"><i class="fa fa-check"></i><b>5.0.1</b> Instructions</a></li>
+<li class="chapter" data-level="5.0.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#prompt"><i class="fa fa-check"></i><b>5.0.2</b> Prompt</a></li>
+<li class="chapter" data-level="5.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#portfolio"><i class="fa fa-check"></i><b>5.1</b> Portfolio</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html"><i class="fa fa-check"></i><b>6</b> Knowledge basket: Writing and peer feedback</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#data-scientist-remote"><i class="fa fa-check"></i><b>5.2.1</b> Data Scientist (Remote)</a></li>
-<li class="chapter" data-level="5.2.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#portfolio"><i class="fa fa-check"></i><b>5.2.2</b> Portfolio</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="modules.html"><a href="modules.html"><i class="fa fa-check"></i><b>6</b> Modules</a>
+<li class="chapter" data-level="6.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-1-writing-task"><i class="fa fa-check"></i><b>6.1</b> Module 1 writing task</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="modules.html"><a href="modules.html#module-1"><i class="fa fa-check"></i><b>6.1</b> Module 1</a></li>
-<li class="chapter" data-level="6.2" data-path="modules.html"><a href="modules.html#module-2"><i class="fa fa-check"></i><b>6.2</b> Module 2</a></li>
-<li class="chapter" data-level="6.3" data-path="modules.html"><a href="modules.html#module-3"><i class="fa fa-check"></i><b>6.3</b> Module 3</a></li>
-<li class="chapter" data-level="6.4" data-path="modules.html"><a href="modules.html#module-4"><i class="fa fa-check"></i><b>6.4</b> Module 4</a></li>
-<li class="chapter" data-level="6.5" data-path="modules.html"><a href="modules.html#module-5"><i class="fa fa-check"></i><b>6.5</b> Module 5</a></li>
+<li class="chapter" data-level="6.1.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#instructions-1"><i class="fa fa-check"></i><b>6.1.1</b> Instructions</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>7</b> Resources</a>
+<li class="chapter" data-level="6.2" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#pre-knowledge-check"><i class="fa fa-check"></i><b>6.2</b> Pre-knowledge check</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="resources.html"><a href="resources.html#course-tools-overview"><i class="fa fa-check"></i><b>7.1</b> Course tools overview</a>
+<li class="chapter" data-level="6.2.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#instructions-2"><i class="fa fa-check"></i><b>6.2.1</b> Instructions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html"><i class="fa fa-check"></i><b>7</b> Knowledge basket: Professional development task</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="resources.html"><a href="resources.html#admin"><i class="fa fa-check"></i><b>7.1.1</b> Admin</a></li>
-</ul></li>
-<li class="chapter" data-level="7.2" data-path="resources.html"><a href="resources.html#using-rstudio-with-the-jupyterhub"><i class="fa fa-check"></i><b>7.2</b> Using RStudio with the JupyterHub</a></li>
-<li class="chapter" data-level="7.3" data-path="resources.html"><a href="resources.html#zoom-zoom-zoom-zoom"><i class="fa fa-check"></i><b>7.3</b> Zoom, Zoom, Zoom, Zoom…</a>
+<li class="chapter" data-level="7.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#professional-development-proposal"><i class="fa fa-check"></i><b>7.1</b> Professional development proposal</a>
 <ul>
-<li class="chapter" data-level="7.3.1" data-path="resources.html"><a href="resources.html#make-sure-your-zoom-is-up-to-date"><i class="fa fa-check"></i><b>7.3.1</b> Make sure your Zoom is up to date</a></li>
-<li class="chapter" data-level="7.3.2" data-path="resources.html"><a href="resources.html#customize"><i class="fa fa-check"></i><b>7.3.2</b> Customize!</a></li>
-<li class="chapter" data-level="7.3.3" data-path="resources.html"><a href="resources.html#vpn"><i class="fa fa-check"></i><b>7.3.3</b> VPN</a></li>
-<li class="chapter" data-level="7.3.4" data-path="resources.html"><a href="resources.html#notes"><i class="fa fa-check"></i><b>7.3.4</b> Notes:</a></li>
-<li class="chapter" data-level="7.3.5" data-path="resources.html"><a href="resources.html#changing-your-profile-picture-on-zoom-and-quercus"><i class="fa fa-check"></i><b>7.3.5</b> Changing your profile picture on Zoom and Quercus</a></li>
-<li class="chapter" data-level="7.3.6" data-path="resources.html"><a href="resources.html#what-to-do-if-you-experience-technical-difficulties-during-class"><i class="fa fa-check"></i><b>7.3.6</b> What to do if you experience technical difficulties during class?</a></li>
-<li class="chapter" data-level="7.3.7" data-path="resources.html"><a href="resources.html#what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom"><i class="fa fa-check"></i><b>7.3.7</b> What to do if your instructor or TA is experiencing technical difficulties on Zoom</a></li>
+<li class="chapter" data-level="7.1.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#instructions-3"><i class="fa fa-check"></i><b>7.1.1</b> Instructions</a></li>
+<li class="chapter" data-level="7.1.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#submission-requirements"><i class="fa fa-check"></i><b>7.1.2</b> Submission requirements</a></li>
+<li class="chapter" data-level="7.1.3" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#rubric"><i class="fa fa-check"></i><b>7.1.3</b> Rubric</a></li>
+<li class="chapter" data-level="7.1.4" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#checklist"><i class="fa fa-check"></i><b>7.1.4</b> Checklist</a></li>
+<li class="chapter" data-level="7.1.5" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#things-to-keep-in-minds-as-you-start-working-towards-your-professional-development-goal"><i class="fa fa-check"></i><b>7.1.5</b> Things to keep in minds as you start working towards your professional development goal</a></li>
+<li class="chapter" data-level="7.1.6" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#example-smart-goal"><i class="fa fa-check"></i><b>7.1.6</b> Example smart goal</a></li>
 </ul></li>
-<li class="chapter" data-level="7.4" data-path="resources.html"><a href="resources.html#student-support-services-and-resources"><i class="fa fa-check"></i><b>7.4</b> Student support services and resources</a>
+<li class="chapter" data-level="7.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#professional-development-evidence-and-reflection"><i class="fa fa-check"></i><b>7.2</b> Professional development evidence and reflection</a>
 <ul>
-<li class="chapter" data-level="7.4.1" data-path="resources.html"><a href="resources.html#mental-health-support"><i class="fa fa-check"></i><b>7.4.1</b> Mental health support</a></li>
-<li class="chapter" data-level="7.4.2" data-path="resources.html"><a href="resources.html#general-university-resources"><i class="fa fa-check"></i><b>7.4.2</b> General University resources</a></li>
-<li class="chapter" data-level="7.4.3" data-path="resources.html"><a href="resources.html#financial-support"><i class="fa fa-check"></i><b>7.4.3</b> Financial support</a></li>
-<li class="chapter" data-level="7.4.4" data-path="resources.html"><a href="resources.html#arts-science-covid19-faq"><i class="fa fa-check"></i><b>7.4.4</b> Arts &amp; Science COVID19 FAQ</a></li>
+<li class="chapter" data-level="7.2.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#templates"><i class="fa fa-check"></i><b>7.2.1</b> Templates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#reflection-and-evidence-components"><i class="fa fa-check"></i><b>7.2.2</b> Reflection and evidence components</a></li>
+<li class="chapter" data-level="7.2.3" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#recommended-structure"><i class="fa fa-check"></i><b>7.2.3</b> Recommended structure</a></li>
+<li class="chapter" data-level="7.2.4" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#rubric-1"><i class="fa fa-check"></i><b>7.2.4</b> Rubric</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html"><i class="fa fa-check"></i><b>8</b> FAQs and Errata</a>
+<li class="chapter" data-level="8" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html"><i class="fa fa-check"></i><b>8</b> Knowledge basket: Other</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#frequently-asked-questions"><i class="fa fa-check"></i><b>8.1</b> Frequently asked questions</a></li>
-<li class="chapter" data-level="8.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#errata"><i class="fa fa-check"></i><b>8.2</b> Errata</a></li>
+<li class="chapter" data-level="8.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#getting-to-know-you-survey"><i class="fa fa-check"></i><b>8.1</b> ‘Getting to know you’ survey</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-4"><i class="fa fa-check"></i><b>8.1.1</b> Instructions</a></li>
 </ul></li>
+<li class="chapter" data-level="8.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#pre-knowledge-check-1"><i class="fa fa-check"></i><b>8.2</b> Pre-knowledge check</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-5"><i class="fa fa-check"></i><b>8.2.1</b> Instructions</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>Modules</b></span></li>
+<li class="chapter" data-level="9" data-path="module-1.html"><a href="module-1.html"><i class="fa fa-check"></i><b>9</b> Module 1</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="module-1.html"><a href="module-1.html#instructor-information"><i class="fa fa-check"></i><b>9.1</b> Instructor information</a></li>
+<li class="chapter" data-level="9.2" data-path="module-1.html"><a href="module-1.html#upward-management-tips"><i class="fa fa-check"></i><b>9.2</b> Upward management tips</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="module-1.html"><a href="module-1.html#communicate-using-the-tools-your-manager-prefers."><i class="fa fa-check"></i><b>9.2.1</b> Communicate using the tools your manager prefers.</a></li>
+<li class="chapter" data-level="9.2.2" data-path="module-1.html"><a href="module-1.html#write-good-emails-when-emails-are-appropriate"><i class="fa fa-check"></i><b>9.2.2</b> Write good emails (when emails are appropriate)</a></li>
+<li class="chapter" data-level="9.2.3" data-path="module-1.html"><a href="module-1.html#understand-your-managers-goals."><i class="fa fa-check"></i><b>9.2.3</b> Understand your manager’s goals.</a></li>
+<li class="chapter" data-level="9.2.4" data-path="module-1.html"><a href="module-1.html#demonstrate-self-management-and-resilience-while-also-asking-for-help-and-flagging-problems-early."><i class="fa fa-check"></i><b>9.2.4</b> Demonstrate self-management and resilience while also asking for help and flagging problems early.</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="module-1.html"><a href="module-1.html#recap-of-linear-models"><i class="fa fa-check"></i><b>9.3</b> Recap of linear models</a></li>
+<li class="chapter" data-level="9.4" data-path="module-1.html"><a href="module-1.html#why-model"><i class="fa fa-check"></i><b>9.4</b> Why model?</a></li>
+<li class="chapter" data-level="9.5" data-path="module-1.html"><a href="module-1.html#linear-models"><i class="fa fa-check"></i><b>9.5</b> Linear models</a></li>
+<li class="chapter" data-level="9.6" data-path="module-1.html"><a href="module-1.html#linear-regression-assumptions"><i class="fa fa-check"></i><b>9.6</b> Linear regression assumptions</a></li>
+<li class="chapter" data-level="9.7" data-path="module-1.html"><a href="module-1.html#what-makes-it-a-linear-model"><i class="fa fa-check"></i><b>9.7</b> What makes it a <em>linear</em> model?</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="module-1.html"><a href="module-1.html#linear"><i class="fa fa-check"></i><b>9.7.1</b> Linear</a></li>
+<li class="chapter" data-level="9.7.2" data-path="module-1.html"><a href="module-1.html#not-linear"><i class="fa fa-check"></i><b>9.7.2</b> NOT linear</a></li>
+</ul></li>
+<li class="chapter" data-level="9.8" data-path="module-1.html"><a href="module-1.html#optional-refresher-reading"><i class="fa fa-check"></i><b>9.8</b> Optional refresher reading</a>
+<ul>
+<li class="chapter" data-level="9.8.1" data-path="module-1.html"><a href="module-1.html#brief-discussion-of-assumptions-with-examples"><i class="fa fa-check"></i><b>9.8.1</b> Brief discussion of assumptions with examples</a></li>
+<li class="chapter" data-level="9.8.2" data-path="module-1.html"><a href="module-1.html#fitting-linear-models-in-r"><i class="fa fa-check"></i><b>9.8.2</b> Fitting linear models in R</a></li>
+<li class="chapter" data-level="9.8.3" data-path="module-1.html"><a href="module-1.html#delicious-mathematics"><i class="fa fa-check"></i><b>9.8.3</b> Delicious mathematics</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="module-1.html"><a href="module-1.html#common-statistical-tests-as-linear-regression"><i class="fa fa-check"></i><b>9.9</b> Common statistical tests as linear regression</a>
+<ul>
+<li class="chapter" data-level="9.9.1" data-path="module-1.html"><a href="module-1.html#introduction"><i class="fa fa-check"></i><b>9.9.1</b> Introduction</a></li>
+<li class="chapter" data-level="9.9.2" data-path="module-1.html"><a href="module-1.html#one-sample-t-test"><i class="fa fa-check"></i><b>9.9.2</b> One-sample t-test</a></li>
+<li class="chapter" data-level="9.9.3" data-path="module-1.html"><a href="module-1.html#dummy-variables"><i class="fa fa-check"></i><b>9.9.3</b> Dummy variables</a></li>
+<li class="chapter" data-level="9.9.4" data-path="module-1.html"><a href="module-1.html#two-means"><i class="fa fa-check"></i><b>9.9.4</b> Two means</a></li>
+<li class="chapter" data-level="9.9.5" data-path="module-1.html"><a href="module-1.html#anova"><i class="fa fa-check"></i><b>9.9.5</b> ANOVA</a></li>
+<li class="chapter" data-level="9.9.6" data-path="module-1.html"><a href="module-1.html#credits"><i class="fa fa-check"></i><b>9.9.6</b> Credits</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="module-2.html"><a href="module-2.html"><i class="fa fa-check"></i><b>10</b> Module 2</a></li>
+<li class="chapter" data-level="11" data-path="module-3.html"><a href="module-3.html"><i class="fa fa-check"></i><b>11</b> Module 3</a></li>
+<li class="chapter" data-level="12" data-path="module-4.html"><a href="module-4.html"><i class="fa fa-check"></i><b>12</b> Module 4</a></li>
+<li class="chapter" data-level="13" data-path="module-5.html"><a href="module-5.html"><i class="fa fa-check"></i><b>13</b> Module 5</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="9" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html"><i class="fa fa-check"></i><b>9</b> Bits and pieces</a>
+<li class="part"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="14" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>14</b> Resources</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#code-to-generate-course-art"><i class="fa fa-check"></i><b>9.1</b> Code to generate course art</a></li>
+<li class="chapter" data-level="14.1" data-path="resources.html"><a href="resources.html#course-tools-overview"><i class="fa fa-check"></i><b>14.1</b> Course tools overview</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="resources.html"><a href="resources.html#admin"><i class="fa fa-check"></i><b>14.1.1</b> Admin</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="resources.html"><a href="resources.html#using-rstudio-with-the-jupyterhub"><i class="fa fa-check"></i><b>14.2</b> Using RStudio with the JupyterHub</a></li>
+<li class="chapter" data-level="14.3" data-path="resources.html"><a href="resources.html#zoom-zoom-zoom-zoom"><i class="fa fa-check"></i><b>14.3</b> Zoom, Zoom, Zoom, Zoom…</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="resources.html"><a href="resources.html#make-sure-your-zoom-is-up-to-date"><i class="fa fa-check"></i><b>14.3.1</b> Make sure your Zoom is up to date</a></li>
+<li class="chapter" data-level="14.3.2" data-path="resources.html"><a href="resources.html#customize"><i class="fa fa-check"></i><b>14.3.2</b> Customize!</a></li>
+<li class="chapter" data-level="14.3.3" data-path="resources.html"><a href="resources.html#vpn"><i class="fa fa-check"></i><b>14.3.3</b> VPN</a></li>
+<li class="chapter" data-level="14.3.4" data-path="resources.html"><a href="resources.html#notes"><i class="fa fa-check"></i><b>14.3.4</b> Notes:</a></li>
+<li class="chapter" data-level="14.3.5" data-path="resources.html"><a href="resources.html#changing-your-profile-picture-on-zoom-and-quercus"><i class="fa fa-check"></i><b>14.3.5</b> Changing your profile picture on Zoom and Quercus</a></li>
+<li class="chapter" data-level="14.3.6" data-path="resources.html"><a href="resources.html#what-to-do-if-you-experience-technical-difficulties-during-class"><i class="fa fa-check"></i><b>14.3.6</b> What to do if you experience technical difficulties during class?</a></li>
+<li class="chapter" data-level="14.3.7" data-path="resources.html"><a href="resources.html#what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom"><i class="fa fa-check"></i><b>14.3.7</b> What to do if your instructor or TA is experiencing technical difficulties on Zoom</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="resources.html"><a href="resources.html#student-support-services-and-resources"><i class="fa fa-check"></i><b>14.4</b> Student support services and resources</a>
+<ul>
+<li class="chapter" data-level="14.4.1" data-path="resources.html"><a href="resources.html#mental-health-support"><i class="fa fa-check"></i><b>14.4.1</b> Mental health support</a></li>
+<li class="chapter" data-level="14.4.2" data-path="resources.html"><a href="resources.html#general-university-resources"><i class="fa fa-check"></i><b>14.4.2</b> General University resources</a></li>
+<li class="chapter" data-level="14.4.3" data-path="resources.html"><a href="resources.html#financial-support"><i class="fa fa-check"></i><b>14.4.3</b> Financial support</a></li>
+<li class="chapter" data-level="14.4.4" data-path="resources.html"><a href="resources.html#arts-science-covid19-faq"><i class="fa fa-check"></i><b>14.4.4</b> Arts &amp; Science COVID19 FAQ</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html"><i class="fa fa-check"></i><b>15</b> FAQs and Errata</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#frequently-asked-questions"><i class="fa fa-check"></i><b>15.1</b> Frequently asked questions</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#course-admin"><i class="fa fa-check"></i><b>15.1.1</b> Course admin</a></li>
+<li class="chapter" data-level="15.1.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#team-up"><i class="fa fa-check"></i><b>15.1.2</b> Team Up!</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#other"><i class="fa fa-check"></i><b>15.2</b> Other</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#references-1"><i class="fa fa-check"></i><b>15.2.1</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#errata"><i class="fa fa-check"></i><b>15.3</b> Errata</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html"><i class="fa fa-check"></i><b>16</b> Bits and pieces</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#code-to-generate-course-art"><i class="fa fa-check"></i><b>16.1</b> Code to generate course art</a></li>
+<li class="chapter" data-level="16.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#matrices"><i class="fa fa-check"></i><b>16.2</b> M1 supporting information on matrices (not assessed)</a>
+<ul>
+<li class="chapter" data-level="16.2.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#background"><i class="fa fa-check"></i><b>16.2.1</b> Background</a></li>
+<li class="chapter" data-level="16.2.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#example-3"><i class="fa fa-check"></i><b>16.2.2</b> Example</a></li>
+<li class="chapter" data-level="16.2.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#regression-not-classic-actually-anova-no-intercept"><i class="fa fa-check"></i><b>16.2.3</b> Regression NOT classic, actually ANOVA! (no intercept)</a></li>
+<li class="chapter" data-level="16.2.4" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#further-reading-if-you-want-it"><i class="fa fa-check"></i><b>16.2.4</b> Further reading (if you want it)</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.statistics.utoronto.ca/" target="blank">Department of Statistical Sciences, The University of Toronto</a></li>
@@ -205,12 +365,12 @@
 </tr>
 <tr class="even">
 <td>Accommodations and extension policy</td>
-<td>An extension for this assessment due to illness or personal emergency can be requested through the <a href="">Illness/personal emergency declaration form</a>.</td>
+<td>An extension for this assessment due to illness or personal emergency can be requested through the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u">Illness/personal emergency declaration form</a>.</td>
 </tr>
 </tbody>
 </table>
-<div id="instructions" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Instructions</h2>
+<div id="instructions" class="section level3" number="5.0.1">
+<h3><span class="header-section-number">5.0.1</span> Instructions</h3>
 <p>You can pull the template for this assessment into your U of T JupyterHub</p>
 <p><em>The cover page must have:</em></p>
 <ul>
@@ -222,8 +382,8 @@
 <p>In the <strong>introduction</strong> section, write a brief summary of the skills you have demonstrated in this portfolio. Think of it like a cover letter for this document. It should appropriate for a fairly general audience, imagine a future employer reading this. Your introduction should be not be longer than 300 words</p>
 <p><strong>Final advice: KNIT EARLY AND OFTEN!</strong></p>
 </div>
-<div id="prompt" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Prompt</h2>
+<div id="prompt" class="section level3" number="5.0.2">
+<h3><span class="header-section-number">5.0.2</span> Prompt</h3>
 <p>Read the below job ad and write about the skills you would need to apply. The skills can be those highlighted in grey, as well as those not highlighted. Write on at least 2 soft skills and 2 analytic skills. The ad targets those with a MSc/PhD or those with 2+ years of experience, but imagine this requirement is not there.</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Soft skills</strong>. What soft skills relating to communicating and working with others does the company seek?</p>
@@ -245,11 +405,11 @@
 <p><strong>Structure your answer under three headings: ‘Soft skills,’ ‘Analytics skills’ and ‘Connection to studies.’ Write your answers in full sentences, with appropriate paragraphing. No introduction or conclusion is required.</strong></p>
 <p><strong>Word count</strong>: 300–500 words</p>
 <div class="figure">
-<img src="images/Yelp_Logo.png" width="361" alt="" />
+<img src="images/assessments/Yelp_Logo.png" width="361" alt="" />
 <p class="caption">Yelp logo</p>
 </div>
-<div id="data-scientist-remote" class="section level3" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Data Scientist (Remote)</h3>
+<div id="data-scientist-remote" class="section level4" number="5.0.2.1">
+<h4><span class="header-section-number">5.0.2.1</span> Data Scientist (Remote)</h4>
 <p><strong>Category</strong> Data Science &amp; Analytics</p>
 <p><strong>Location</strong> Toronto, Ontario, Canada</p>
 <p><strong>Department</strong> Engineering and Product</p>
@@ -290,10 +450,10 @@
 <p>Accessed from <strong>Yelp®</strong> on Feb 28, 2021, 15:15 PM <a href="https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote" class="uri">https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote</a></p>
 <p>Large logo from Wikipedia <a href="https://en.wikipedia.org/wiki/Yelp#/media/File:Yelp_Logo.svg" class="uri">https://en.wikipedia.org/wiki/Yelp#/media/File:Yelp_Logo.svg</a></p>
 </div>
-<div id="portfolio" class="section level3" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Portfolio</h3>
-
 </div>
+<div id="portfolio" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Portfolio</h2>
+
 </div>
 </div>
             </section>
@@ -302,7 +462,7 @@
         </div>
       </div>
 <a href="assessments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="modules.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="knowledge-basket-writing-and-peer-feedback.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -355,6 +515,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

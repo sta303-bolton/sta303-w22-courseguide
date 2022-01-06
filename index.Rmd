@@ -5,6 +5,7 @@ author: "Prof. Liza Bolton"
 date: "Winter 2022"
 site: bookdown::bookdown_site
 documentclass: book
+classoption: openany
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
