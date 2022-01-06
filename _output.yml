@@ -9,7 +9,8 @@ bookdown::gitbook:
         <li><a href="./">STA303: Methods of Data Analysis II</a></li>
       after: |
         <li><a href="https://www.statistics.utoronto.ca/" target="blank">Department of Statistical Sciences, The University of Toronto</a></li>
-    download: ["pdf", "epub"]
+    download:
+      - ["STA303-Course-guide.pdf", "pdf"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

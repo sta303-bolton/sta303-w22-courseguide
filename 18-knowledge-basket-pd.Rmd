@@ -1,3 +1,9 @@
+---
+output:
+  html_document:
+    df_print: paged
+---
+
 ```{r, echo=FALSE}
 source("links.R")
 ```
@@ -39,23 +45,21 @@ You will use the SMART goals framework (see image below) when setting out your p
 
 ## Professional development proposal
 
-+--------------------------------------------------------+----------------------------------------------------+
-| **Information**                                        | **Note**                                           |
-+:=======================================================+:===================================================+
-| Name                                                   | Professional development proposal                                                                                                                            |
-+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Type Main, Mini or Basket                              | Basket                                                                                                                                                       |
-+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Value                                                  | 1%                                                                                                                                                           |
-+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Due                                                    | 2022-01-13 3:03 p.m. ET                                                                                                                                      |
-+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Submission instructions                                | Submission: PDF via [Markus](`r markus`)                                                                                                               |
-+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Late submissions, accommodations, and extension policy | An extension can be requested up to **48 hours** before the due date through the [extension request form](`r extension`).                              |
-|                                                        |                                                                                                                                                              |
-|                                                        | In the case of a personal illness/emergency, a [declaration can be made](`r extension`), but must be submitted no more than 3 days after the due date. |
-+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Information**                                        | **Note**                                                                                                                                                                                                                                           |
++:=======================================================+:===================================================================================================================================================================================================================================================+
+| Name                                                   | Professional development proposal                                                                                                                                                                                                                  |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type Main, Mini or Basket                              | Basket                                                                                                                                                                                                                                             |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Value                                                  | 1%                                                                                                                                                                                                                                                 |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Due                                                    | `r pd_prop`                                                                                                                                                                                                                            |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Submission instructions                                | Submission: PDF via [Markus](`r markus`)                                                                                                                                                                                                     |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Late submissions, accommodations, and extension policy | In the case of a personal illness/emergency, a [declaration can be made](`r extension`), but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ### Instructions
 
@@ -116,10 +120,10 @@ With these specifications, your proposal will be approximately 500 words.
 
 ### Rubric
 
-
+```{=tex}
 \newpage
 \blandscape
-
+```
 ```{r, echo=FALSE, message=FALSE}
 require(tidyverse)
 pd_prop_rubric <- read_csv("rubrics/pd-prop.csv") 
@@ -230,7 +234,7 @@ Potential problems:
 
 Bad example: "Something might not work." What? In what way? Could you solve it?
 
-#### Relevant:
+#### Relevant
 
 Personal relevance: "*The climbing experience will help me learn new skills like ... which will help me work towards becoming a professional climbing guide."*
 
@@ -249,13 +253,29 @@ knitr::include_graphics("images/assessments/SMART.jpeg")
 
 ## Professional development evidence and reflection
 
-You may wish to use the provided template to complete this task. This is not required to get full marks, but we believe this will be a helpful structure for you to ensure you have addressed all parts of the task.
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Information**                                        | **Note**                                                                                                                                                                                                                                           |
++:=======================================================+:===================================================================================================================================================================================================================================================+
+| Name                                                   | Professional development evidence & reflection                                                                                                                                                                                                                  |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type Main, Mini or Basket                              | Basket                                                                                                                                                                                                                                             |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Value                                                  | 3%                                                                                                                                                                                                                                                 |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Due                                                    | `r pd_evidence`                                                                                                                                                                                                                            |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Submission instructions                                | Submission: PDF via [Markus](`r markus`)                                                                                                                                                                                                     |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Late submissions, accommodations, and extension policy | In the case of a personal illness/emergency, a [declaration can be made](`r extension`), but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. |
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+You may wish to use the provided template to complete this task. This is _not_ required to get full marks, but we believe this will be a helpful structure for you to ensure you have addressed all parts of the task.
 
 ### Templates
 
--   [template.docx](other-files/template.docx)
+-   [template.docx](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.docx)
 
--   [template.Rmd](other-files/template.Rmd), [template.pdf](other-files/template.pdf), [template_rmd.zip](other-files/template_rmd.zip)
+-   [template.Rmd](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.Rmd), [template.pdf](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.pdf), [template_rmd.zip](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template_rmd.zip)
 
 ### Reflection and evidence components
 
@@ -265,24 +285,25 @@ You may wish to use the provided template to complete this task. This is not req
 
 ##### Examples
 
-- *I wrote 4 blog posts on .... The first one was on ... One unanticipated activity I had to do was ...*   
-- *This task helped me learn how to write for general audience...*   
-- *Through this task I improved my...*                                                   
+-   *I wrote 4 blog posts on .... The first one was on ... One unanticipated activity I had to do was ...*\
+-   *This task helped me learn how to write for general audience...*\
+-   *Through this task I improved my...*
 
 **Alignment**: How well did your activity and progress align with your proposal?
 
 ##### Examples
 
-- *My plan changed as my goal was not specific enough. I think the reason for this is ... I can set realistic goals next time by ...*   
-- *Most of my attainable steps and potential problems were correctly identified because ....*  
-- *This is a good method which I will use again when I need to ...*                   
-- *My way of measuring progress worked because ... This is useful for next time because ...*  
+-   *My plan changed as my goal was not specific enough. I think the reason for this is ... I can set realistic goals next time by ...*\
+-   *Most of my attainable steps and potential problems were correctly identified because ....*\
+-   *This is a good method which I will use again when I need to ...*\
+-   *My way of measuring progress worked because ... This is useful for next time because ...*
 
 **Lessons**: What did you learn from using the SMART goal-setting experience?
 
 ##### Examples
-- *An interesting thing I learned from the SMART goal-setting exercise was that ...*   
-- *I prefer to modify the format of SMART goals to match my work habits by ...* 
+
+-   *An interesting thing I learned from the SMART goal-setting exercise was that ...*\
+-   *I prefer to modify the format of SMART goals to match my work habits by ...*
 
 #### Evidence
 
@@ -290,11 +311,11 @@ Provide links **and/or** copy/paste a screenshot of a blog, website, Github repo
 
 ##### Examples
 
-- *The screenshot shows ... which is evidence of partially completing [goal] ...*
+-   *The screenshot shows ... which is evidence of partially completing [goal] ...*
 
-- *The provided link goes to ... which relates to [goal] ...*
+-   *The provided link goes to ... which relates to [goal] ...*
 
-- *Notice that there are separate buttons on the website for each of the ...*
+-   *Notice that there are separate buttons on the website for each of the ...*
 
 #### Timesheet
 
@@ -352,9 +373,10 @@ You do not *have* to set out your writing in this way to get full marks, but we 
 
 ### Rubric
 
+```{=tex}
 \newpage
 \blandscape
-
+```
 ```{r, echo=FALSE, message=FALSE}
 require(tidyverse)
 pd_prop_rubric <- read_csv("rubrics/pd-evidence.csv") 

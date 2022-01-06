@@ -186,7 +186,7 @@ THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 \hypertarget{how-to-use-this-course-guide}{%
 \chapter{How to use this course guide}\label{how-to-use-this-course-guide}}
 
-This course guide has been created using \href{https://bookdown.org/}{\texttt{bookdown}}. You can download a PDF version of the whole guide with the download button above (down arrow into a tray). You can also put the website into dark mode and changed the font style, if you find s different display preferable.
+This course guide has been created using \href{https://bookdown.org/}{\texttt{bookdown}}. You can download a PDF version of the whole guide with the download button above (down arrow into a tray). Note that many part of this guide will be updated as the course proceeds. You can also put the website into dark mode and changed the font style, if you find a different display preferable.
 
 If you would like a PDF copy of the slides, you can `Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select `Save as PDF' (or similar).
 
@@ -196,54 +196,647 @@ If you would like a PDF copy of the slides, you can `Print to PDF' in your brows
 All content and logistics questions must be asked on \href{https://piazza.com/class/kx47tj4fmy65dg}{Piazza}. Personal or private course matters should be emailed to \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
 
 \hypertarget{syllabus}{%
-\chapter{STA303/1002 syllabus}\label{syllabus}}
+\chapter{Syllabus}\label{syllabus}}
 
-\hypertarget{key-information}{%
-\section{Key information}\label{key-information}}
+You can get a more visual PDF version of the syllabus \href{https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/1002_W22_syllabus.pdf}{here}. This version is hopefully better suited to searching and screen readers.
 
-\raggedright
+\emph{University of Toronto, Department of Statistical Sciences}\\
+\emph{STA303/1002: Methods of Data Analysis II}
 
-\textbf{Winter 2022}, half year, half credit course
+\hypertarget{course-information}{%
+\section{Course information}\label{course-information}}
 
-\textbf{Instructor}: Prof.~Liza Bolton (she/her)
+\textbf{2022}\\
+\textbf{HALF YEAR, HALF CREDIT}
 
-\textbf{Head TA}: Amin Banihashemi (he/him)
+\hypertarget{course-description}{%
+\subsection{Course description}\label{course-description}}
 
-\begin{center}\includegraphics[width=0.25\linewidth]{images/syllabus/email} \end{center}
+The course focuses on using and interpreting advanced statistical methods with applications in a number of different areas. The overall theme of this course is dealing with situations where the assumptions of the regression models developed in STA302 may not apply. The course is a mixture of theory and application. Assignments will involve computing with R and there is a significant focus on written and oral communication.
 
-\href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}
+\hypertarget{class-times}{%
+\subsection{Class times}\label{class-times}}
 
-\begin{center}\includegraphics[width=0.25\linewidth]{images/syllabus/email} \end{center}
+\textbf{Class}: Wednesdays
 
-Synchronous class meetings
-Wednesdays
-L0101 12:10--1:00 p.m.
-L0201 3:10--4:00 p.m.
+\begin{itemize}
+\tightlist
+\item
+  L0101: 10:00 a.m.--12:00 p.m. ET
+\item
+  L0201: 3:00---5:00 p.m. ET
+\end{itemize}
 
-Prof.~office hours will take place in the hour after class.
+\textbf{Tutorials}: Alternating Thursdays
 
-TA office hours will be announced on Quercus.
+\begin{itemize}
+\tightlist
+\item
+  12:00---1:00 p.m. ET or
+\item
+  5:00---6:00 p.m. ET
+\end{itemize}
 
-\hypertarget{delivery}{%
-\subsection{Delivery}\label{delivery}}
+\textbf{Delivery}
 
 \begin{itemize}
 \item
-  This course will be run completely online until January 31, 2022. After that, \emph{optional} in person components will be offered, subject to public health guidance.
+  Wednesday classes will be \textbf{online} and recorded.
 \item
-  In person attendance is NOT required.
+  The Thursday tutorial time will alternate between group activities and TA office hours. They will be \textbf{online} for January, and an optional in-person stream for the fortnightly group activities is planned after that.
 \item
-  Synchronous attendance is not required but some \protect\hyperlink{assessments}{knowledge basket (see assessments)} components are only available synchronously.
-\item
-  All assessments will be completed online.
+  \textbf{Synchronous attendance} is recommended but not required to complete the course.
 \end{itemize}
 
-\hypertarget{pre-requisities}{%
-\subsection{Pre-requisities}\label{pre-requisities}}
+\hypertarget{materials}{%
+\subsection{Materials}\label{materials}}
 
-STA302H1/STAC67H3/STA302H5 (or for STA1002, STA1001H1)
+All \textbf{materials} will be posted on \href{https://q.utoronto.ca/courses/253305}{Quercus} and/or the \href{https://sta303-bolton.github.io/sta303-w22-courseguide/}{course guide}.
 
-It is Department policy to strictly enforce pre-requisites This is not up to the teaching team. You will be removed from the course if you do not meet the prerequisite course requirements.~Please \textbf{reach out to the UG stats team (\url{ug.statistics@utoronto.ca})} with any questions abour enrolment or\href{https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/}{book an appointment during their office hours}.
+\textbf{Course discussion board:} \href{http://piazza.com/utoronto.ca/winter2022/sta303sta1002/home}{Piazza}
+
+\hypertarget{teaching-team}{%
+\subsection{Teaching team}\label{teaching-team}}
+
+\hypertarget{instructor}{%
+\subsubsection{\texorpdfstring{\textbf{Instructor}}{Instructor}}\label{instructor}}
+
+Liza Bolton
+
+\textbf{Pronouns:} \href{https://www.mypronouns.org/she-her}{she/her}
+
+\textbf{Email:} \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}
+
+\textbf{Office hours:} 2nd half of Wednesday classes
+
+\textbf{Please call me:} Liza or Prof.~Bolton/Prof.~B
+
+\emph{How do you pronounce that?}
+
+\begin{itemize}
+\item
+  Liza: \href{https://www.youtube.com/watch?v=hWURas7fYwk}{a video\ldots{}}
+\item
+  Bolton: like the words ``bowl'' + ``tonne''
+\end{itemize}
+
+\hypertarget{head-ta}{%
+\subsubsection{Head TA}\label{head-ta}}
+
+Amin Banihashemi (\href{https://www.mypronouns.org/he-him}{he/him})
+
+\textbf{Please call me:} Amin (A-meen {[}æˈmiːn or əˈmiːn{]} {[}bæniːˈhɑːʃɛmiː{]} decode \href{https://easypronunciation.com/en/phonetic-symbols-chart/british-english/ipa}{here})
+
+\textbf{Email}: \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}
+
+\hypertarget{teaching-assistants}{%
+\subsubsection{Teaching assistants}\label{teaching-assistants}}
+
+Vedant Choudhary, Shuang Di, Sonia Markes, Ian Richter, Xiaochuan Shi, Lei Sun, Liam Welsh, Dongyang Yang, Kevin Zhang, Robert Zimmerman
+
+\textbf{Office hours:} Alternating Thursdays, see Quercus
+
+\textbf{Email:} \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}
+
+\hypertarget{land-acknowledgment}{%
+\section{Land acknowledgment}\label{land-acknowledgment}}
+
+The land on which our University operates is the traditional lands of the Anishinaabe, the Haudenosaunee, and the Mississaugas of the Credit. With the Dish With One Spoon treaty, these peoples agreed to share and protect this land, and all those who have come here since, both Indigenous and non-Indigenous, are invited into this treaty in a spirit of respect and peace. This land is also, more recently, subject to Treaty 13, a treaty between the Mississaugas and the British Crown.
+
+In this course, we are coming together to discuss statistics, a field that has been part of historical and ongoing colonization, oppression, and harm of Indigenous peoples. Let us remind ourselves of our responsibilities to this land, its original peoples, and to each other and work to be ethical and culturally competent practitioners in our chosen fields.
+
+We encourage you to consider the history of the land wherever you are. \url{https://www.whose.land/en/}
+
+\hypertarget{prerequisites}{%
+\section{Prerequisites}\label{prerequisites}}
+
+STA302/1001
+
+I.e., we will assume that you are familiar with running linear regression analyses, including checking assumptions and some of the mathematical reasoning behind the models. Material from the second-year statistical theory courses which are prerequisites to STA302 will be drawn on extensively. Knowledge of programming with R is essential.
+
+\hypertarget{course-format-and-organization}{%
+\section{Course format and organization}\label{course-format-and-organization}}
+
+This course is composed of \textbf{five two-week modules} and \textbf{two assessment focus weeks.}
+
+Each \textbf{module} has an ``I show you, you show me'' structure. It starts with you watching videos and/or doing readings and a guided code demonstration or other relevant class topics (``I show you''). This course is flipped, so the expectation is that you engage with some or all of the asynchronous content before Wednesday in the first week. Then you will do some or all of the following: a group problem-solving activity, practice quizzes, assessment activities.
+
+During \textbf{assessment focus weeks}, no new content will be released.
+
+\hypertarget{learning-objectives}{%
+\section{Learning objectives}\label{learning-objectives}}
+
+By the end of the course, you will be able to:
+
+\begin{itemize}
+\item
+  \textbf{Wrangle} and \textbf{explore} a dataset
+\item
+  Create appropriate data \textbf{visualizations}
+\item
+  Describe \textbf{ethical} \textbf{considerations} in data analysis
+\item
+  Understand the assumptions and appropriate use cases for \textbf{linear mixed models, generalized linear models, generalized linear mixed models,} and \textbf{generalized additive models}
+\item
+  \textbf{Write} and \textbf{execute R code} for the model types covered
+\item
+  Accurately and appropriately \textbf{interpret} the results of the model types covered and communicate these to a range of \textbf{audiences}
+\end{itemize}
+
+\hypertarget{textbooks}{%
+\section{Textbooks}\label{textbooks}}
+
+You do not have to purchase a textbook for this course. There are three texts that we will use extensively, and they are all freely available to you. Additional readings will be assigned as appropriate.
+
+\href{https://r4ds.had.co.nz}{Wickham. R for Data Science. 2019.}
+
+\href{https://bookdown.org/roback/bookdown-bysh/}{Legler and Roback. Broadening Your Statistical Horizons. 2019.}
+
+\href{https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4862399}{Wood. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.} (requires you to log in with your UTORid)
+
+\hypertarget{computing-and-minimum-technical-requirements}{%
+\section{Computing and minimum technical requirements}\label{computing-and-minimum-technical-requirements}}
+
+We will be using \href{https://www.rstudio.com/}{RStudio} to make reproducible data analysis reports using \href{https://www.r-project.org/}{R} and \href{http://rmarkdown.rstudio.com/}{R Markdown}.
+
+You can use RStudio on your personal machine or through the U of T JupyterHub: \href{https://jupyter.utoronto.ca/}{jupyter.utoronto.ca}.
+
+To participate in synchronous classes and office hours you will need a \textbf{U of T Zoom account.} If you do not yet have one, go to \url{https://utoronto.zoom.us/} to set one up. To participate fully, you will need Desktop client or mobile app: version 5.3.0 or higher or ChromeOS: version 5.0.0 (4241.1207) or higher. You can check your desktop client or mobile app version by following \href{https://support.zoom.us/hc/en-us/articles/201362393-Viewing-the-Zoom-version-number}{these instructions.}
+
+All students should consult the \href{https://www.viceprovoststudents.utoronto.ca/covid-19/tech-requirements-online-learning/}{minimum technical requirements} for participation in online learning. If you are facing financial barriers to obtaining the required technology, please contact your \href{https://www.artsci.utoronto.ca/current/academic-advising-and-support/college-registrars-offices}{College Registrar's Office} to obtain information regarding your potential eligibility for a need-based bursary.
+
+\hypertarget{course-outline}{%
+\section{Course outline}\label{course-outline}}
+
+The topics listed below are subject to change.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.58}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.42}}@{}}
+\toprule
+Module/focus & Important dates \\
+\midrule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{Jan 10--21 Module 1: Welcome!}
+
+\begin{itemize}
+\item
+  How this course works, assessments, admin, upward management
+\item
+  Common tests as linear regression and linear regression recap
+\item
+  Reading strategy: previewing and skimming
+\item
+  {[}Optional{]} Get ahead for module 2 if unfamiliar with R Markdown, ggplot and dplyr
+\end{itemize}
+\end{minipage} & \textbf{JAN 20} Prerequisite knowledge check due
+
+\textbf{JAN 23} Last day to enrol in S courses \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{Jan 24--Feb 4 Module 2: Professional skills for data analysis}
+
+\begin{itemize}
+\item
+  Data visualization
+\item
+  Data cleaning, merging, and exploration
+\item
+  Statistical communication
+\item
+  Ethical professional practice
+\end{itemize}
+\end{minipage} & \textbf{FEB 1} Lunar New Year 🐯
+
+\textbf{FEB 2} Prerequisite check workshop
+
+\textbf{FEB 3} Professional dev proposal due
+
+\textbf{FEB 3} Mini-portfolio due \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{Feb 7--Feb 18 Module 3: Linear mixed models}
+
+\begin{itemize}
+\item
+  Identifying correlated data
+\item
+  Fixed and random effects
+\item
+  Fitting, visualizing and interpreting correlated data
+\item
+  Likelihood ratio tests
+\end{itemize}
+\end{minipage} & \textbf{FEB 14} Valentine's Day 💕
+
+\textbf{FEB 17} Portfolio due \\
+\textbf{Feb 21--25 Reading Week: No class!} & \textbf{FEB 21} Family Day (U of T closed) \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{Feb 28--Mar 11 Module 4: Generalized linear models}
+
+\begin{itemize}
+\item
+  Theory for GLMs
+\item
+  Fitting models, checking assumptions and interpreting logistic and Poisson regression
+\end{itemize}
+\end{minipage} & \textbf{MAR 9} Mini-mixed assessment (12 hour window, 8 a.m.--8 p.m.) \\
+\textbf{Mar 14--18 Mixed assessment focus week} & \textbf{MAR 13} Daylight savings begins
+
+\textbf{MAR 14} Last day to cancel course
+
+\textbf{MAR 16} Mixed assessment (12 hour window, 8 a.m.--8 p.m.) \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{Mar 21--Apr 1 Module 5: GLMMS and GAMS}
+
+\begin{itemize}
+\item
+  Generalized linear mixed models
+\item
+  Generalized additive mixed models
+\end{itemize}
+\end{minipage} & \textbf{MAR 31} Professional dev evidence and reflection due \\
+\textbf{Apr 4--8 Project Focus week} & \textbf{APR 7} Final project due (bonus)
+
+\textbf{APR 11} Project (no bonus) \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{assessments}{%
+\section{Assessments}\label{assessments}}
+
+There are two special elements of assessment/grade calculation in this course that are important to be aware of in planning your approach to it.
+
+\begin{itemize}
+\item
+  \emph{Two roads diverged in a yellow wood}\footnote{The Road Not Taken, by Robert Frost. But, dear traveller, you can in fact take both roads and then get whichever gives you the better mark. \url{https://www.poetryfoundation.org/poems/44272/the-road-not-taken}}\emph{:} You can opt for Path A or Path B to get your final mark. I will calculate your marks along both paths and then assign you the higher of the two as your final mark.
+\item
+  A-tisket, a-tasket\footnote{A-tisket, a-tasket by Ella Fitzgerald, \url{https://www.youtube.com/watch?v=1bgFkeDLpSI}}, fill up your \textbf{knowledge basket}\footnote{``Whaowhia te kete mātauranga'' is a Māori proverb meaning ``Fill up the basket of knowledge''. Mātauranga is specifically traditional Māori knowledge. You can listen to the pronunciation here \url{https://www.massey.ac.nz/student-life/m\%C4\%81ori-at-massey/te-reo-m\%C4\%81ori-and-tikanga-resources/te-reo-m\%C4\%81ori-pronunciation-and-translations/whakatauk\%C4\%AB-m\%C4\%81ori-proverbs/}}:
+
+  \begin{itemize}
+  \item
+    Personalize which of these assessments you do based on your interests and skills you want to develop.
+  \item
+    You can `max out' your basket: just keep putting grades in until you get to 10\% (Path A) or 5\% (Path B).
+  \end{itemize}
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.20}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.13}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.52}}@{}}
+\toprule
+Assessment & Path A & Path B & STA1002 ONLY & Due dates \\
+\midrule
+\endhead
+Mini-portfolio & 5 & 0 & 0 & Feb 3 \\
+Portfolio & 20 & 25 & 25 & Feb 7 \\
+Mini-mixed assessment & 5 & 0 & 0 & Mar 9 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) \\
+Mixed assessment & 20 & 25 & 25 & Mar 16 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) \\
+Final project & 45 & 45 & 50 & Apr 7 (5\% pt bonus) \textbar{} Apr 11 (no bonus \\
+Knowledge basket & 5 & 5 & 0 & Multiple \\
+Total & 100 & 100 & 100 & \\
+\bottomrule
+\end{longtable}
+
+Everything \footnote{Mixed assessment windows are 8-8, I could make the 303 work out fairly.} in STA303 is due at 3:03 p.m. ET
+
+Note: All times in this course are in Eastern Time (Toronto time). Please note that daylight savings will begin in Canada on March 13. If you are not based in Canada this may change the time conversion for you. Please keep this in mind.
+
+\hypertarget{knowledge-basket}{%
+\subsection{Knowledge basket}\label{knowledge-basket}}
+
+The following components are guaranteed knowledge basket assessment options. Additional opportunities may be offered throughout the course (Team Up!, speaker series reflections, etc.)
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.51}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.09}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.40}}@{}}
+\toprule
+Assessment & \% & Due date \\
+\midrule
+\endhead
+Pre-knowledge check: completion & 0.5 & Jan 20 \\
+Pre-knowledge check: 80\%+ or workshop & 0.5 & Jan 20 (80\%+ score) \textbar{} Feb 2 (workshop) \\
+Professional development task proposal & 1 & Feb 3 \\
+Professional development task evidence \& reflection & 3 & Mar 31 \\
+Writing \& peer review (Create-Assess-Reflect) x 5 & 0.5 X 5 & Friday-Tuesday-Friday each Module \\
+Module check-in x 5 & 0.1 X 5 & Last Friday of each Module \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{hours-expectations}{%
+\section{Hours expectations}\label{hours-expectations}}
+
+While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for you.
+
+Plan to be doing 6--8 hours of work on STA303 each week. In a \textbf{two-week module}, this may look like:
+
+\begin{itemize}
+\item
+  2--4 hours on videos and readings
+\item
+  1--3 hours of attending synchronous class or reviewing the recording and activities
+\item
+  1--2 hours on knowledge basket assessments
+\item
+  2--6 hours on other assessments
+\item
+  Remaining time attending reading announcements, office hours, checking Piazza, revision, etc.
+\end{itemize}
+
+\hypertarget{marking-concerns-regrade-requests}{%
+\section{Marking concerns / regrade requests}\label{marking-concerns-regrade-requests}}
+
+Any request to have an assessment remarked must be submitted to \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNE02UzJaMUNQM0Q2U0RTOUlJS1JMM1dCTC4u}{the appropriate form} on the Forms page on Quercus under the following conditions:
+
+\begin{itemize}
+\item
+  \textbf{Wait} 24 hours after the release of grades. Use this time to go over sample solutions and course materials. Wait 24 hours after the release of grades. Use this time to go over any sample solutions and feedback, the instructions, and relevant course materials.
+\item
+  After the 24-hour period has finished, you will have one week to submit your regrade request. (I.e., one week + 24 hours total.)
+\item
+  Your request must include a detailed and thoughtful justification referring to your answer and the relevant course material to be considered. Please note that I reserve the right to review the grading of all questions or parts when you re-submit an assessment for reconsideration (i.e., your grade could go down).
+\item
+  You will receive a confirmation email upon submitting the form. Allow for two weeks for processing after the request window closes before following up.
+\item
+  The specific timeline and requirements for \textbf{final project regrade requests} will be announced later.
+\end{itemize}
+
+Only answers in English (or appropriate code, mathematical symbols) can be accepted in this course. Answers submitted in a different language will receive a 0 and will not be eligible for regrading. If you have an autotranslation extension on your browser, be very careful about how this can interact with Quercus.
+
+\textbf{Please note that I reserve the right to review the grading of all questions or parts when you re-submit an assessment for reconsideration (i.e., your grade could go down).}
+
+\hypertarget{missed-work-policies}{%
+\section{Missed work policies}\label{missed-work-policies}}
+
+In general, late work is not accepted, without either:
+
+\begin{itemize}
+\item
+  an extension approved \textbf{48 hours} before the due date, or
+\item
+  a personal illness/emergency declaration no more than 3 days after the due date.
+\end{itemize}
+
+Please note that technical difficulties knitting an Rmd or getting the due time wrong do \textbf{not} constitute personal emergencies.
+
+The following assessments are eligible:
+
+\begin{itemize}
+\item
+  Mini-portfolio
+\item
+  Portfolio
+\item
+  Mini-mixed assessment
+\item
+  Mixed assessment
+\item
+  Professional development proposal
+\item
+  Professional development evidence and reflection
+\end{itemize}
+
+Upon receipt of your request, we will contact you via email within 2 business days to confirm an accommodation, as appropriate.
+
+\hypertarget{exceptions}{%
+\subsection{Exceptions}\label{exceptions}}
+
+\begin{itemize}
+\item
+  \textbf{Knowledge basket} assessments (other than the professional development task) are not eligible for extensions.
+\item
+  There are no routine extensions granted for the \textbf{final project.} In exceptional circumstances, you can work with your College Registrar and me on this.
+\end{itemize}
+
+\hypertarget{important-notes}{%
+\subsection{IMPORTANT NOTES}\label{important-notes}}
+
+\begin{itemize}
+\item
+  If too much work is missed, even for valid reasons, an \textbf{oral exam} may be required to calculate a fair mark, at the discretion of the instructor. Please ensure you and/or your College Registrar get in touch with me as early as possible if this may be the case for you.
+\item
+  If you have accommodation letters from an accessibility advisor, make sure you read the instructions in the `Accommodations and accessibility' section.
+\item
+  Unless discussed with your instructor first and an agreement is come to, if you submit an assessment, it will be assumed that you deemed yourself fit enough to do so and your grade will stand as calculated. No accommodation will be made based on claims of medical, physical, or emotional distress after the fact.
+\end{itemize}
+
+\hypertarget{communication-policy}{%
+\section{Communication policy}\label{communication-policy}}
+
+\emph{AKA How to get your questions answered}
+
+Following our course communication policy helps ensure you receive answers and supports in a timely fashion, and also shows respect for the teaching team's time and effort. We reserve the right to ignore any correspondence that does not conform to this policy.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.27}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.73}}@{}}
+\toprule
+\endhead
+\textbf{Course logistics? e.g.,}
+
+\emph{- What is the deadline for the final project?}
+
+\emph{- Where do I submit the assignment?}
+
+\textbf{Course content? e.g.,}
+
+\emph{- Why do we sometimes use glm() and sometimes use glmer()?}
+
+\emph{- My code won't run for question \#1}
+
+\textbf{Info to share with class? e.g.,}
+
+\emph{- I have a link/resource/opportunity to share with my classmates} & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{PIAZZA FORUM}
+
+\begin{itemize}
+\item
+  Link in Quercus' course navigation menu.
+\item
+  Posts can be anonymous for your classmates, but instructors and TAs will be able to see your name.
+\item
+  Before posting a question, double-check the syllabus AND search to see if someone else has already asked a similar question (you can edit the question to add yours or post a follow-up at the bottom).
+\end{itemize}
+
+- Try to answer your classmates' questions---this is a great way to reinforce your own understanding while also helping your classmates! Don't worry if you aren't 100\% sure of the answer---answers will be reviewed/endorsed/completed by the teaching team!
+\end{minipage} \\
+\textbf{Missed an assessment due to illness or personal emergency?}
+
+~
+
+\textbf{Want to request a regrade of an assessment?} & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{FORMS}
+
+\begin{itemize}
+\item
+  Use the appropriate form linked on the \href{https://q.utoronto.ca/courses/253305/pages/forms}{Forms} page on Quercus.
+\item
+  If you cannot meet a deadline because you are ill, please also refer to the \textbf{Missed Work} section in this syllabus. A doctor's note is not required, but if you have one you can upload it as supporting documentation.
+\item
+  If you wish to request a regrade, please also refer to the \textbf{Marking Concerns} section in this syllabus. Be prepared to provide a detailed justification and possible supplementary materials. ``I worked hard on this so I should get a better mark'' is not an appropriate justification (yes, I do receive emails like that).
+\end{itemize}
+\end{minipage} \\
+\textbf{Personal/sensitive circumstances?} (i.e., something which is not appropriate to share with the whole class) & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{COURSE EMAIL:} sta303@utoronto.ca
+
+\begin{itemize}
+\item
+  Send emails from your utoronto.ca email address to ensure they don't automatically go to a Junk folder.
+\item
+  Include your full name and UTORid.
+\item
+  This account will be monitored by the head TA and course instructor; if you want to reach Prof.~Bolton only please include {[}Prof.~Bolton{]} in the \textbf{subject line}; do not email her directly about course matters.
+\item
+  Allow at least 24 hours for a response during the week (Monday to Friday, ET) and do not expect responses on the weekend. Do not send a follow-up email until at least two business days (Toronto time) later.
+\end{itemize}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+\textbf{NEVER} send Quercus mail to the STA303 teaching team
+
+\textbf{NEVER} use the `Add Comment' option on Quercus. They will not read.
+
+Please. 🥺
+
+\hypertarget{accommodations-and-accessibility}{%
+\section{Accommodations and accessibility}\label{accommodations-and-accessibility}}
+
+If you have an accommodation letter from your accessibility advisor that is relevant to this course, please do the following:
+
+\begin{itemize}
+\item
+  Email your letter to \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}} with ``Accommodation letter'' as part of the email subject, CC your advisor and let us know anything else you wish us to know/any questions you have. Please do this as soon as possible after you enroll in the course/receive this syllabus.
+\item
+  Confirm any accommodations for each specific assessment \textbf{one week} before the assessment. (I.e., if you receive extra time for timed assessments, confirm this one week prior to the mixed assessments, even if we have already discussed this at the beginning of the semester.)
+\end{itemize}
+
+\hypertarget{accessibility-services}{%
+\subsection{Accessibility services}\label{accessibility-services}}
+
+The University of Toronto is committed to accessibility. If you require accommodations for a disability or have any accessibility concerns about the course or course materials, please contact Accessibility Services as soon as possible: email \href{mailto:accessibility.services@utoronto.ca}{\nolinkurl{accessibility.services@utoronto.ca}} or visit the website at \href{http://accessibility.utoronto.ca/}{\textless http://accessibility.utoronto.ca\textgreater{}}.
+
+\hypertarget{religious-accommodation}{%
+\subsection{Religious Accommodation}\label{religious-accommodation}}
+
+At the University of Toronto, we are part of a diverse community of students, staff, and faculty from a wide range of cultural and religious traditions. For this course, I have sought to avoid scheduling compulsory activities in ways that will clash with religious holy days (not captured by statutory holidays). If you anticipate missing a course activity due to a religious observance, please let me know as early in the course as possible. With sufficient notice---ideally at least three weeks---we can work together to make alternate arrangements.
+
+\hypertarget{recognized-study-groups}{%
+\section{Recognized study groups}\label{recognized-study-groups}}
+
+I would highly recommend you \href{https://sidneysmithcommons.artsci.utoronto.ca/recognized-study-groups/join/}{get involved with an RSG}. RSGs are small study groups of 3 to 6 students from the same course who meet weekly to learn course content in a collaborative environment.
+
+\hypertarget{meet-to-complete}{%
+\section{Meet to complete}\label{meet-to-complete}}
+
+Meet to Complete is an online ``study with me'' space where you can study alongside other students. To join Meet to Complete, enroll in the \href{https://q.utoronto.ca/enroll/8CXECE}{Meet to Complete course on Quercus.} Learning, even online, doesn't need to be lonely!
+
+\hypertarget{feeling-distressed}{%
+\section{Feeling distressed?}\label{feeling-distressed}}
+
+You may find yourself feeling overwhelmed, depressed, or anxious. Lots of people feel the same way. There is help available from mental health professionals 24 hours a day via online and phone-based services listed on \href{https://sta303-bolton.github.io/sta303-w22-courseguide/resources.html\#student-support-services-and-resources}{this page in the course guide}, as well as a range of other helpful U of T and community resources.
+
+Accessibility Services (see above) also provides supports for mental health concerns.
+
+\hypertarget{intellectual-property-statement}{%
+\section{Intellectual property statement}\label{intellectual-property-statement}}
+
+Course material that has been created by your instructor (i.e., lecture slides, questions/solutions, and any other course material and resources made available to you) is the intellectual property of your instructor (or the credited holder of the copyright) and is made available to you for your personal use in this course. Sharing, posting, selling or using this material outside of your personal use in this course is not permitted under any circumstances and is considered an infringement of intellectual property rights. If you would like to record any course activities in this course, you MUST ask permission from your instructor in advance. According to intellectual property laws, not asking permission constitutes stealing.
+
+\hypertarget{academic-integrity}{%
+\section{Academic integrity}\label{academic-integrity}}
+
+\hypertarget{plagiarism}{%
+\subsection{Plagiarism}\label{plagiarism}}
+
+You may be at risk of plagiarizing if you do not understand the rules and your responsibilities. You must not present the work of others as your own. This includes, but is certainly not limited to, copying text and including it in your writing without a citation and quotation marks.
+
+There are many resources to help you learn more:
+
+\begin{itemize}
+\item
+  \url{https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/}
+\item
+  \url{https://www.academicintegrity.utoronto.ca/smart-strategies/}
+\item
+  \href{https://web.microsoftstream.com/video/496ed3f7-4136-420f-9108-b5f3605bc899}{This video} will be assigned later in the course.
+\end{itemize}
+
+YOU are responsible for knowing the content of the \href{http://www.governingcouncil.utoronto.ca/policies/behaveac.htm}{University of Toronto's Code of Behaviour on Academic Matters}. The University of Toronto treats cases of academic misconduct very seriously. Academic integrity is a fundamental value of learning and scholarship at the U of T. Participating honestly, respectfully, responsibly, and fairly in this academic community ensures that your U of T degree is valued and respected as a true signifier of your individual academic achievement.
+
+Other potential offences include, but are not limited to:
+
+\begin{itemize}
+\item
+  Looking at someone else's answers.
+\item
+  Letting someone else look at your answers.
+\item
+  Misrepresenting your identity.
+\item
+  Falsifying or altering any documentation required by the University.
+\item
+  Falsifying institutional documents or grades.
+\end{itemize}
+
+All suspected cases of academic dishonesty will be investigated following the procedures outlined in the Code of Behaviour on Academic Matters. If you have any questions about what is or is not permitted in this course, please do not hesitate to contact me.
+
+\hypertarget{specific-advice-on-untimed-assessments}{%
+\subsection{Specific advice on untimed assessments}\label{specific-advice-on-untimed-assessments}}
+
+As a general rule, for untimed assessments, I encourage you to discuss course material with each other and ask others for advice. However, it is \textbf{not permitted} to share R code or written answers for anything that is to be handed in. For example, ``For question 2 what R function did you use?'' is a fair question when discussing course material with others in the class; ``Please show me your R code for question 2'' is not an appropriate question.
+
+If writing or code is discovered to match another student's submission or outside source, this will be reported as an academic offense. \textbf{When asked to hand in code and the output it creates, the code you submit must have been used to generate the document.} If it does not (i.e., the submitted code does not match the submitted output), this is also considered an academic offense.
+
+\hypertarget{rules-for-timed-assessments-e.g.-mixed-assessments}{%
+\subsection{Rules for timed assessments (e.g., mixed assessments)}\label{rules-for-timed-assessments-e.g.-mixed-assessments}}
+
+While all timed assessments in this course are open-book, they are not ``open-person''. You MUST NOT discuss any details of the assessment with anyone else during the assessment window, regardless of your completion status. This includes, but is not limited to, current classmates, friends, and tutors. For example, even asking someone ``which slide did you look at to answer question 3'' is not appropriate for timed assessments.
+
+\hypertarget{note-be-careful-about-private-tutoring-companies}{%
+\subsection{NOTE: BE CAREFUL ABOUT PRIVATE TUTORING COMPANIES}\label{note-be-careful-about-private-tutoring-companies}}
+
+You may have been contacted by private tutoring companies trying to sell their services to you for statistics courses. Please be extremely careful with these services as some forms of tutoring can pose an academic offence risk. A good tutor helps you understand the subject area and supports your learning. A good tutor does not give you answers. \textbf{There are no shortcuts to learning. Learning takes time and effort.}
+
+Be cautious about giving money to companies whose motivation is profit. They may tell you they have `insider information'. They don't. They may even offer you the opportunity to commit academic offenses. Please do not put your University of Toronto education at risk by participating in these kinds of unacceptable behaviours. If you have any questions or concerns about what is okay and what is not in your course, please ask!
+
+\hypertarget{course-design-principles}{%
+\section{Course design principles}\label{course-design-principles}}
+
+Here are some of the principles around which I have designed this course. I hope they might provide some useful insight into why some things are the way they are, and help you think about how to navigate this course and make the best of it.
+
+The teaching team really wants you to have a great time in this course, learn lots of delicious statistics, and become confident, competent, and useful statistical thinkers. Please approach us and this course with an open mind and help us make it a good experience for you by providing thoughtful, constructive feedback.
+
+\hypertarget{humans-learn-better-little-and-often-but-everyone-is-burnout-from-two-years-of-a-pandemic}{%
+\subsection{Humans learn better `little and often' but everyone is burnout from two years of a pandemic}\label{humans-learn-better-little-and-often-but-everyone-is-burnout-from-two-years-of-a-pandemic}}
+
+I know some students absolutely hate weekly tasks and how common they have become with online learning, and that all the little tasks and deadlines can become overwhelming. I also know that cramming is the absolute worst way to learn and actually retain that learning.
+
+This is why in this course:
+
+\begin{itemize}
+\item
+  I have taken things out or made them baskets options, based on student feedback
+\item
+  There is a knowledge basket that lets you approach frequent low-stakes practice in the way that suits you best and aims to facilitate and reward spaced repetition, the way science says is the best way to learn (\href{http://www.coursera.org/learn/learning-how-to-learn}{this free course is fantastic for learning more about how to learn}).
+\item
+  Has been converted to have a two-week module structure to give you more flexibility.
+\item
+  Has two assessments pathways with different numbers of assessments.
+\end{itemize}
+
+\hypertarget{writing-is-good-for-statisticians}{%
+\subsection{Writing is good for statisticians}\label{writing-is-good-for-statisticians}}
+
+Writing not only helps you explain yourself to others, it can also be a fulfilling act of creative personal expression and a way to clarify your own understanding of a concept. Writing is an important part of this course because it is an important skill for your future careers/next steps in education. Lots of support and information here: \href{https://writing.utoronto.ca}{\textless https://writing.utoronto.ca/\textgreater{}}.
+
+\hypertarget{course-content-is-accessible}{%
+\subsection{Course content is Accessible}\label{course-content-is-accessible}}
+
+My intention is to make this course accessible as possible with captions for all video and audio and Quercus/course guide design that is easy for folks using screen readers to navigate. If there is something I could do differently in this area that would make your life easier and you're comfortable to tell me, please do! One thing I know isn't great but, regretfully, don't have the resources to change, is the `quality assurance' of the autogenerated captions for videos. Please reach out on Piazza if you're ever unsure about something they say.
 
 \hypertarget{start-here}{%
 \chapter{Start here!}\label{start-here}}
@@ -343,8 +936,8 @@ You don't have to submit missed quizzes or writing activities or alert me that y
 
 If you have a \emph{friend} on the waitlist, they can sign up to receive materials here.
 
-\hypertarget{hours-expectations}{%
-\section{Hours expectations}\label{hours-expectations}}
+\hypertarget{hours-expectations-1}{%
+\section{Hours expectations}\label{hours-expectations-1}}
 
 While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.
 
@@ -441,8 +1034,8 @@ Assessment & Path A & Path B & STA1002 ONLY & Due dates \\
 \endhead
 Mini-portfolio & 5 & 0 & 0 & Feb 3 \\
 Portfolio & 20 & 25 & 25 & Feb 7 \\
-Mini-mixed assessment & 5 & 0 & 0 & Mar 9 \\
-Mixed assessment & 20 & 25 & 25 & Mar 16 \\
+Mini-mixed assessment & 5 & 0 & 0 & Mar 9 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) \\
+Mixed assessment & 20 & 25 & 25 & Mar 16 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) \\
 Final project & 45 & 45 & 50 & Apr 7 (5\% pt bonus) \textbar{} Apr 11 (no bonus \\
 Knowledge basket & 5 & 5 & 0 & Multiple \\
 Total & 100 & 100 & 100 & \\
@@ -460,208 +1053,220 @@ You don't need to advise me of your choice, I will calculate you mark all three 
 \chapter{Mini-portfolio}\label{mini-portfolio}}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.21}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.79}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.18}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.82}}@{}}
 \toprule
 \textbf{Information} & \textbf{Note} \\
 \midrule
 \endhead
 Name & Mini-portfolio \\
-Type (Main, mini or basket) & Mini \\
+Type (Main, Mini or Basket) & Mini \\
 Value & 5\% (Path A)
 
 0\% (Path B) \\
-Due & 2022-02-03 \\
-Submission instruction & Submission: Via peerScholar, click the button at the bottom of this page to load it. \\
-Accommodations and extension policy & An extension for this assessment due to illness or personal emergency can be requested through the \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{Illness/personal emergency declaration form}. \\
+Due & Thursday, February 3, 2022 at 3:03 p.m. ET \\
+Submission instruction & Submission: Via \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} \\
+Accommodations and extension policy & In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. \\
 \bottomrule
 \end{longtable}
 
 \hypertarget{instructions}{%
 \subsection{Instructions}\label{instructions}}
 
-You can pull the template for this assessment into your U of T JupyterHub
-
-\emph{The cover page must have:}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{A title and subtitle}
-\item
-  \emph{Your name}
-\item
-  \emph{Date (assessment submission date is fine)}
-\end{itemize}
-
-\emph{You can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML above (line 11) to another hex code. You could use this tool to help you:} \href{https://htmlcolorcodes.com/color-picker/}{\textless https://htmlcolorcodes.com/color-picker/\textgreater{}}
-
-In the \textbf{introduction} section, write a brief summary of the skills you have demonstrated in this portfolio. Think of it like a cover letter for this document. It should appropriate for a fairly general audience, imagine a future employer reading this. Your introduction should be not be longer than 300 words
-
-\textbf{Final advice: KNIT EARLY AND OFTEN!}
-
-\hypertarget{prompt}{%
-\subsection{Prompt}\label{prompt}}
-
-Read the below job ad and write about the skills you would need to apply. The skills can be those highlighted in grey, as well as those not highlighted. Write on at least 2 soft skills and 2 analytic skills. The ad targets those with a MSc/PhD or those with 2+ years of experience, but imagine this requirement is not there.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{Soft skills}. What soft skills relating to communicating and working with others does the company seek?
-
-  \begin{enumerate}
-  \def\labelenumii{\arabic{enumii}.}
-  \item
-    In what way do you already possess two of these skills?
-  \item
-    What evidence do you have of possessing one or two of these skills?
-  \end{enumerate}
-\item
-  \textbf{Analytic skills.} What analytic skills relating to software use and performing data analysis does the company seek?
-
-  \begin{enumerate}
-  \def\labelenumii{\arabic{enumii}.}
-  \item
-    In what way do you already possess two of these skills?
-  \item
-    What evidence do you have of possessing one or two of these skills?
-  \end{enumerate}
-\item
-  \textbf{Connection to studies.} As part of the coursework of STA303, you proposed an activity related to your professional development. At the end of the course, you will provide evidence of completing this activity and then reflect on what you did.
-
-  \begin{enumerate}
-  \def\labelenumii{\arabic{enumii}.}
-  \item
-    How does the evidence produced from your professional development activity help you in applying to this job ad?
-  \item
-    What other skills can you develop and what evidence can you accumulate during the remainder of your education to be ready for a similar job ad?
-  \end{enumerate}
-\end{enumerate}
-
-\textbf{Structure your answer under three headings: `Soft skills', `Analytics skills' and `Connection to studies'. Write your answers in full sentences, with appropriate paragraphing. No introduction or conclusion is required.}
-
-\textbf{Word count}: 300--500 words
-
-\begin{figure}
-\centering
-\includegraphics[width=3.76042in,height=\textheight]{images/assessments/Yelp_Logo.png}
-\caption{Yelp logo}
-\end{figure}
-
-\hypertarget{data-scientist-remote}{%
-\subsubsection{Data Scientist (Remote)}\label{data-scientist-remote}}
-
-\textbf{Category} Data Science \& Analytics
-
-\textbf{Location} Toronto, Ontario, Canada
-
-\textbf{Department} Engineering and Product
-
-At Yelp, it's our mission to connect people with great local businesses. Yelp's unique dataset contains billions of interactions between users and local business around the globe, from a user reviewing a neighborhood coffee shop to requesting a repair quote with a photo of a leaky faucet. Data Scientists at Yelp work to make sense of these interactions to deliver impactful analyses and products to our users, business partners and the general public.
-
-The Data Science team performs analyses, builds models, and designs experiments that directly impact Yelp's business and users. Our centralized team is the most wide-ranging consumer of data at Yelp, adept at tasks from modeling content growth and user behavior to sharing insights about the health of local economies. With varied backgrounds and expertise, we strive for learning and growth in a collaborative environment.
-
-We'd love to have you apply, even if you don't feel you meet every single requirement in this posting. At Yelp, we're looking for great people, not just those who simply check off all the boxes.
-
-\emph{This opportunity is fully remote and does not require you to be located in any particular region. We welcome applicants from throughout\,Canada.}
-
-\textbf{We Are Looking For:}
-
-\begin{itemize}
-\item
-  3+ years of experience as a data scientist or MS/PhD and 2+ years of industry experience in a quantitative role.
-\item
-  Fluency with SQL and Python or R for data analysis.
-\item
-  Solid understanding of statistical inference, experimental design and analysis.
-\item
-  Enthusiasm for clean code and sharing reproducible results.
-\end{itemize}
-
-\begin{itemize}
-\item
-  Communication skills to work with partners on engineering, product and business teams.
-\item
-  An eye for great data visualization with Matplotlib, Plotly, ggplot, or Tableau.
-\item
-  If you don't have 2+ years of industry experience in a quantitative role, please take a look at our College Data Scientist roles instead!
-\end{itemize}
-
-\textbf{Where You Come In:}
-
-\begin{itemize}
-\tightlist
-\item
-  Define key metrics to track Yelp's performance and inform product decisions.
-\end{itemize}
-
-\begin{itemize}
-\item
-  Assess and frame questions from partners into actionable deliverables.
-\item
-  Design, execute, and analyze complex experiments impacting millions of users.
-\item
-  Devise and evaluate models for diverse business needs, such as identifying growth opportunities, personalizing user experience, and matching consumers to businesses.
-\item
-  Own analyses start-to-finish and communicate key insights to stakeholders.
-\item
-  Share your technical skills to develop and maintain high-quality, reusable analysis tools.
-\end{itemize}
-
-\#LI-Remote
-
-\emph{At Yelp, we believe that diversity is an expression of all the unique characteristics that make us human: race, age, sexual orientation, gender identity, religion, disability, and education --- and those are just a few. We recognize that diverse backgrounds and perspectives strengthen our teams and our product. The foundation of our diversity efforts are closely tied to our core values, which include ``Playing Well With Others'' and ``Authenticity.''}
-
-\emph{We're proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition or disability.}
-
-\emph{We are committed to providing reasonable accommodations for individuals with disabilities in our job application process. If you need assistance or an accommodation due to a disability, you may contact us at accommodations-recruiting@yelp.com or 415-969-8488.}
-
-\emph{Note: Yelp does not accept agency resumes. Please do not forward resumes to any recruiting alias or employee. Yelp is not responsible for any fees related to unsolicited resumes.}
-
-Accessed from \textbf{Yelp®} on Feb 28, 2021, 15:15 PM \url{https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote}
-
-Large logo from Wikipedia \url{https://en.wikipedia.org/wiki/Yelp\#/media/File:Yelp_Logo.svg}
-
 \hypertarget{portfolio}{%
-\section{Portfolio}\label{portfolio}}
+\chapter{Portfolio}\label{portfolio}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.18}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.82}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Portfolio \\
+Type (Main, Mini or Basket) & Main \\
+Value & 20\% (Path A)
+
+25\% (Path B) \\
+Due & Thursday, February 17, 2022 at 3:03 p.m. ET \\
+Submission instruction & Submission: Via \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} \\
+Accommodations and extension policy & In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-1}{%
+\subsection{Instructions}\label{instructions-1}}
+
+\hypertarget{mini-mixed-assessment}{%
+\chapter{Mini-mixed assessment}\label{mini-mixed-assessment}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.18}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.82}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Mini-mixed assessment \\
+Type (Main, Mini or Basket) & Mini \\
+Value & 5\% (Path A)
+
+0\% (Path B) \\
+Due & Wednesday, March 9, 2022; assessment window from 8:00 a.m. ET - 8:00 p.m. ET \\
+Submission instruction & Submission: Via Quercus quiz (50 minutes, 1 attempt, no pausing) and \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} (10 percentage point penalty for not submitting required files) \\
+Accommodations and extension policy & In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-2}{%
+\subsection{Instructions}\label{instructions-2}}
+
+\hypertarget{mini-portfolio-1}{%
+\chapter{Mini-portfolio}\label{mini-portfolio-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.18}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.82}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Final project \\
+Type (Main, Mini or Basket) & Main \\
+Value & 45\% (Path A)
+
+45\% (Path B) \\
+Due & Thursday, April 7, 2022 at 3:03 p.m. ET for 2\% pt bonus. Submission accepted until Monday, April 11, 2022 at 3:03 p.m. \\
+Submission instruction & Submission: Via \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} \\
+Accommodations and extension policy & There are no routine extensions granted for the final project. In exceptional circumstances, you can work with your College Registrar and me on this. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-3}{%
+\subsection{Instructions}\label{instructions-3}}
+
+\hypertarget{mixed-assessment}{%
+\chapter{Mixed assessment}\label{mixed-assessment}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.18}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.82}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Mixed assessment \\
+Type (Main, Mini or Basket) & Main \\
+Value & 20\% (Path A)
+
+25\% (Path B) \\
+Due & Wednesday, March 16, 2022; assessment window from 8:00 a.m. ET - 8:00 p.m. ET \\
+Submission instruction & Submission: Via Quercus quiz (2 x 50 minute components, 1 attempt, no pausing) and \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} (10 percentage point penalty for not submitting required files) \\
+Accommodations and extension policy & In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-4}{%
+\subsection{Instructions}\label{instructions-4}}
 
 \hypertarget{knowledge-basket-writing-and-peer-feedback}{%
 \chapter{Knowledge basket: Writing and peer feedback}\label{knowledge-basket-writing-and-peer-feedback}}
+
+\hypertarget{writinggeneral}{%
+\section{General instructions}\label{writinggeneral}}
 
 The module writing and peer feedback activities have three stages.
 
 \begin{itemize}
 \item
   \textbf{Create} phase due the first Friday of the module at 3:03 p.m. ET
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Spend \textasciitilde30 minutes writing a paragraph response to the prompt
-  \end{itemize}
 \item
-  \textbf{Assess} phase due second Tuesday of the module at 3:03 p.m. ET
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Read two peer's pieces and provide feedback
-  \end{itemize}
+  \textbf{Assess} phase due the second Tuesday of the module at 3:03 p.m. ET
 \item
-  Reflect phase due second Friday of the module at 3:03 p.m. ET
+  \textbf{Reflect} phase due the second Friday of the module at 3:03 p.m. ET
+\end{itemize}
+
+\hypertarget{create-phase}{%
+\subsection{Create phase}\label{create-phase}}
+
+The \textbf{Create} phase is due the first Friday of the module at 3:03 p.m. ET
+
+\begin{itemize}
+\item
+  Spend \textasciitilde30 minutes writing a response to the prompt.
+\item
+  Write about 200--500 words. The word count isn't strict, but the submission requirements listed below ARE.
 
   \begin{itemize}
   \item
-    Read the feedback received from your peers
+    The prompt should be clearly and comprehensively addressed.
   \item
-    Rate the usefulness on a 3-point scale
+    Your writing should be in full sentences and be broken into paragraphs as appropriate.
+  \item
+    Any grammatical or word choice errors should be minimal and not obstruct the meaning.
+  \item
+    There is a clear central idea that is well summarized in a concluding sentence(s).
+  \end{itemize}
+
+  \hypertarget{submission-requirements}{%
+  \subsubsection{Submission requirements}\label{submission-requirements}}
+
+  Your submission should be:
+
+  \begin{itemize}
+  \item
+    typed (not handwritten)
+  \item
+    no more than one page
+  \item
+    single-spaced
+  \item
+    size 12 font
+  \item
+    margins should be no larger than 1 inch
+  \item
+    saved as a PDF
   \end{itemize}
 \end{itemize}
 
+\hypertarget{assess-phase}{%
+\subsection{Assess phase}\label{assess-phase}}
+
+The \textbf{Assess} phase is due the second Tuesday of the module at 3:03 p.m. ET
+
+You will need to assess TWO of your peers in this phase. You will be asked:
+
+\begin{itemize}
+\item
+  if they have met the submission requirements,
+\item
+  to rate them on the rubric,
+\item
+  to make a short comment about a strength of this piece of writing,
+\item
+  to make a short comment about a way this piece of writing could be improved.
+\end{itemize}
+
+\hypertarget{reflect-phase}{%
+\subsection{Reflect phase}\label{reflect-phase}}
+
+The \textbf{Reflect} phase is due second Friday of the module at 3:03 p.m. ET
+
+\begin{itemize}
+\item
+  Read the feedback received from your peers.
+\item
+  Rate the usefulness on a 3-point scale.
+\end{itemize}
+
+\hypertarget{general-instructions}{%
+\subsection{General instructions}\label{general-instructions}}
+
 These assessments can be used to make up your knowledge basket. They are also useful in helping you prepare for your portfolio writing samples and final project writing.
 
-Warning: MAKE SURE YOU CLICK SUBMIT! Check that each phase is showing as submitted. Student occasionally have stuggled with this in peerScholar's interface.
+Warning: MAKE SURE YOU CLICK SUBMIT! Check that each phase is showing as submitted. Students have occasionally struggled with this in peerScholar's interface and no regrades/adjustments will be possible after the fact.
+
+Your mark for this assessment will be based on participation. There will be separate marks for each phase, i.e., you can get part marks overall. 45\% for completing create, 45\% for completing assess, 10\% for completing reflect. Please note that participation not in the spirit of the assessment (e.g.~just putting the Lorem Ipsum text, or giving feedback like ``write better'' and nothing else) will not get you marks.
 
 \hypertarget{module-1-writing-task}{%
 \section{Module 1 writing task}\label{module-1-writing-task}}
@@ -677,63 +1282,44 @@ Name & Module 1 writing task \\
 Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
 Basket
 \end{minipage} \\
-Value & 0.5\% (0.2\%-0.2\%-0.1\%) Completion \\
-Due & Create Friday, January 14, 2022 at 3:03 p.m ET; Assess Tuesday, January 18, 2022 at 3:03 p.m ET; Reflect Friday, January 21, 2022 at 3:03 p.m ET; \\
+Value & 0.5\% (0.245\%, 0.245\%, 0.01\%) Completion \\
+Due & \textbf{Create phase}: Friday, January 14, 2022 at 3:03 p.m ET; \textbf{Assess phase}: Tuesday, January 18, 2022 at 3:03 p.m ET; \textbf{Reflect phase}: Friday, January 21, 2022 at 3:03 p.m ET; \\
 Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235067}{Via peerScholar}
 
-Untimed survey, marked for completion \\
+Marked for completion \\
 Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-1}{%
-\subsection{Instructions}\label{instructions-1}}
+\hypertarget{instructions-5}{%
+\subsection{Instructions}\label{instructions-5}}
 
-Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
+Make sure you are familiar with the \protect\hyperlink{writinggeneral}{general instructions} for these types of tasks.
 
-(Some questions are from factfulnessquiz.com, you are not being marked on correctness, so please answer to the best of your ability without looking anything up.)
+\hypertarget{prompt}{%
+\subsubsection{Prompt}\label{prompt}}
 
-\hypertarget{pre-knowledge-check}{%
-\section{Pre-knowledge check}\label{pre-knowledge-check}}
+Discuss what you consider the most important dos and don'ts when giving peer feedback. What will make your peers' feedback most valuable to you?
+
+\hypertarget{rubric}{%
+\subsubsection{Rubric}\label{rubric}}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.04}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.27}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.23}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.20}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.26}}@{}}
 \toprule
-\textbf{Information} & \textbf{Note} \\
+& \textbf{Poor or Missing} & \textbf{Adequate} & \textbf{Good} & \textbf{Excellent} \\
 \midrule
 \endhead
-Name & Pre-knowledge check \\
-Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
-Basket
-\end{minipage} \\
-Value & 0.5\% for completion + 0.5\% for a score of 80\%+ OR active attendance at the prerequisite knowledge workshop 2022-02-02 \\
-Due & Thursday, January 20, 2022 at 3:03 p.m ET (Workshop: Wednesday, February 2, 2022 in class time) \\
-Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235900}{Via Quercus survey}
-
-60 minutes, 1 attempt, no pausing \\
-Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\textbf{Addresses prompt} & No response OR does not address one of the prompts for this week. & While the prompt is somewhat addressed, there is a lot missing and/or much of the response is not relevant/off-topic. & Prompt is addressed, though may go somewhat off-topic at points, or lacks some depth in its coverage. & Prompt is clearly and comprehensively addressed. \\
+\textbf{Structure} & No response OR there is no structure, very difficult to follow. & Some structure but difficult to follow & The organization follows some logical structure & Well organized, follows a logical structure. \\
+\textbf{Writing mechanics} & No response OR considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice. & Multiple sections are difficult to read, but is otherwise understandable. & Slight difficulty in understanding one or two sections. & Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning. \\
+\textbf{Conclusion} & No response OR there is no concluding sentence(s). & The conclusion is weak not well supported. & A conclusion is present but does not completely summarise the central idea. & There is a clear central idea that is well summarised in a concluding sentence(s). \\
 \bottomrule
 \end{longtable}
-
-\hypertarget{instructions-2}{%
-\subsection{Instructions}\label{instructions-2}}
-
-Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80\%+ score or workshop engagement/attendance.
-
-\hypertarget{grade-structure}{%
-\subsubsection{Grade structure}\label{grade-structure}}
-
-\begin{itemize}
-\item
-  Completion of the quiz (all questions attempted) will earn you 0.5\%.
-\item
-  If you score 80\% or more on the quiz, you earn an additional 0.5\%.
-\item
-  If you \emph{do not} score 80\% or more, you can still earn this additional 0.5\% by attending and actively engaging with the workshop on Wednesday, February 2, 2022 in class time.
-\item
-  The maximum points to earn here is 1\% (i.e., you cannot get BOTH the 80\%+ and workshop attendance bonuses)
-\end{itemize}
 
 \hypertarget{knowledge-basket-professional-development-task}{%
 \chapter{Knowledge basket: Professional development task}\label{knowledge-basket-professional-development-task}}
@@ -775,8 +1361,8 @@ You will use the SMART goals framework (see image below) when setting out your p
 \section{Professional development proposal}\label{professional-development-proposal}}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.19}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.81}}@{}}
 \toprule
 \textbf{Information} & \textbf{Note} \\
 \midrule
@@ -784,16 +1370,14 @@ You will use the SMART goals framework (see image below) when setting out your p
 Name & Professional development proposal \\
 Type Main, Mini or Basket & Basket \\
 Value & 1\% \\
-Due & 2022-01-13 3:03 p.m. ET \\
+Due & Thursday, February 3, 2022 at 3:03 p.m. ET \\
 Submission instructions & Submission: PDF via \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} \\
-Late submissions, accommodations, and extension policy & An extension can be requested up to \textbf{48 hours} before the due date through the \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{extension request form}.
-
-In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. \\
+Late submissions, accommodations, and extension policy & In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. \\
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-3}{%
-\subsection{Instructions}\label{instructions-3}}
+\hypertarget{instructions-6}{%
+\subsection{Instructions}\label{instructions-6}}
 
 \textbf{There is a general overview of this task on the \href{https://q.utoronto.ca/courses/204826/pages/professional-development}{professional development overview page}.}
 
@@ -850,8 +1434,8 @@ Example professional development tasks include:
 
 3. Explain WHY the goal is a good choice for you and your career/further education path (`Relevant' criteria).
 
-\hypertarget{submission-requirements}{%
-\subsection{Submission requirements}\label{submission-requirements}}
+\hypertarget{submission-requirements-1}{%
+\subsection{Submission requirements}\label{submission-requirements-1}}
 
 Your proposal should be:
 
@@ -872,8 +1456,8 @@ Your proposal should be:
 
 With these specifications, your proposal will be approximately 500 words.
 
-\hypertarget{rubric}{%
-\subsection{Rubric}\label{rubric}}
+\hypertarget{rubric-1}{%
+\subsection{Rubric}\label{rubric-1}}
 
 \newpage
 \blandscape
@@ -1029,7 +1613,7 @@ Potential problems:
 Bad example: ``Something might not work.'' What? In what way? Could you solve it?
 
 \hypertarget{relevant}{%
-\subsubsection{Relevant:}\label{relevant}}
+\subsubsection{Relevant}\label{relevant}}
 
 Personal relevance: "\emph{The climbing experience will help me learn new skills like \ldots{} which will help me work towards becoming a professional climbing guide."}
 
@@ -1047,16 +1631,32 @@ Bad example\emph{: ``Seems like fun.''}
 \hypertarget{professional-development-evidence-and-reflection}{%
 \section{Professional development evidence and reflection}\label{professional-development-evidence-and-reflection}}
 
-You may wish to use the provided template to complete this task. This is not required to get full marks, but we believe this will be a helpful structure for you to ensure you have addressed all parts of the task.
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.19}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.81}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Professional development evidence \& reflection \\
+Type Main, Mini or Basket & Basket \\
+Value & 3\% \\
+Due & Thursday, March 31, 2022 at 3:03 p.m. ET \\
+Submission instructions & Submission: PDF via \href{https://markus-ds.teach.cs.toronto.edu/}{Markus} \\
+Late submissions, accommodations, and extension policy & In the case of a personal illness/emergency, a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u}{declaration can be made}, but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. \\
+\bottomrule
+\end{longtable}
+
+You may wish to use the provided template to complete this task. This is \emph{not} required to get full marks, but we believe this will be a helpful structure for you to ensure you have addressed all parts of the task.
 
 \hypertarget{templates}{%
 \subsection{Templates}\label{templates}}
 
 \begin{itemize}
 \item
-  \href{other-files/template.docx}{template.docx}
+  \href{https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.docx}{template.docx}
 \item
-  \href{other-files/template.Rmd}{template.Rmd}, \href{other-files/template.pdf}{template.pdf}, \href{other-files/template_rmd.zip}{template\_rmd.zip}
+  \href{https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.Rmd}{template.Rmd}, \href{https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.pdf}{template.pdf}, \href{https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template_rmd.zip}{template\_rmd.zip}
 \end{itemize}
 
 \hypertarget{reflection-and-evidence-components}{%
@@ -1209,8 +1809,8 @@ You do not \emph{have} to set out your writing in this way to get full marks, bu
 \bottomrule
 \end{longtable}
 
-\hypertarget{rubric-1}{%
-\subsection{Rubric}\label{rubric-1}}
+\hypertarget{rubric-2}{%
+\subsection{Rubric}\label{rubric-2}}
 
 \newpage
 \blandscape
@@ -1263,15 +1863,15 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-4}{%
-\subsection{Instructions}\label{instructions-4}}
+\hypertarget{instructions-7}{%
+\subsection{Instructions}\label{instructions-7}}
 
 Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
 
 (Some questions are from factfulnessquiz.com, you are not being marked on correctness, so please answer to the best of your ability without looking anything up.)
 
-\hypertarget{pre-knowledge-check-1}{%
-\section{Pre-knowledge check}\label{pre-knowledge-check-1}}
+\hypertarget{pre-knowledge-check}{%
+\section{Pre-knowledge check}\label{pre-knowledge-check}}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
@@ -1293,13 +1893,13 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-5}{%
-\subsection{Instructions}\label{instructions-5}}
+\hypertarget{instructions-8}{%
+\subsection{Instructions}\label{instructions-8}}
 
 Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80\%+ score or workshop engagement/attendance.
 
-\hypertarget{grade-structure-1}{%
-\subsubsection{Grade structure}\label{grade-structure-1}}
+\hypertarget{grade-structure}{%
+\subsubsection{Grade structure}\label{grade-structure}}
 
 \begin{itemize}
 \item
@@ -2127,6 +2727,10 @@ Credit to \textbf{Jonas Kristoffer Lindeløv} for the excellent resource this re
 \hypertarget{module-5}{%
 \chapter{Module 5}\label{module-5}}
 
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
 \hypertarget{part-appendix}{%
 \part*{Appendix}\label{part-appendix}}
 \addcontentsline{toc}{part}{Appendix}
@@ -2429,8 +3033,8 @@ Request for a Driver Change using the red button at the top right of your Team U
 \hypertarget{other}{%
 \section{Other}\label{other}}
 
-\hypertarget{references}{%
-\subsection{References}\label{references}}
+\hypertarget{references-1}{%
+\subsection{References}\label{references-1}}
 
 \emph{Can you (Prof.~Bolton) write me a reference? I'm desperate!}
 

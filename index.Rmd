@@ -16,14 +16,14 @@ description: "This is a course for STA303: Methods of Data Analysis II at the Un
 
 
 ```{r, echo=FALSE}
-source("links.R")
+source("links.R", local = knitr::knit_global())
 ```
 
 THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 
 # How to use this course guide
 
-This course guide has been created using [`bookdown`](https://bookdown.org/). You can download a PDF version of the whole guide with the download button above (down arrow into a tray). You can also put the website into dark mode and changed the font style, if you find s different display preferable. 
+This course guide has been created using [`bookdown`](https://bookdown.org/). You can download a PDF version of the whole guide with the download button above (down arrow into a tray). Note that many part of this guide will be updated as the course proceeds. You can also put the website into dark mode and changed the font style, if you find a different display preferable. 
 
 
 If you would like a PDF copy of the slides, you can 'Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select 'Save as PDF' (or similar). 

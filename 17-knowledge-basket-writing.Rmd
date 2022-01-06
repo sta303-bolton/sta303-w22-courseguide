@@ -4,6 +4,7 @@ source("links.R")
 
 # Knowledge basket: Writing and peer feedback
 
+## General instructions {#writinggeneral}
 The module writing and peer feedback activities have three stages.
 
 -   **Create** phase due the first Friday of the module at 3:03 p.m. ET
@@ -84,18 +85,20 @@ Your mark for this assessment will be based on participation. There will be sepa
 +--------------------------------------------------------+----------------------------------------------------+
 | Type (Main, Mini or Basket)                              | Basket                                             |
 +--------------------------------------------------------+----------------------------------------------------+
-| Value                                                  | 0.5% (0.2%-0.2%-0.1%)  <br> Completion                                           |
+| Value                                                  | 0.5% (0.245%, 0.245%, 0.01%) <br> Completion                                           |
 +--------------------------------------------------------+----------------------------------------------------+
 | Due                                                    | __Create phase__: `r m1_c`;  <br> __Assess phase__: `r m1_a`; <br> __Reflect phase__: `r m1_r`;                                |
 +--------------------------------------------------------+----------------------------------------------------+
 | Submission instructions                                | Submission: [Via peerScholar](`r know_survey_link`)                |
 |                                                        |                                                    |
-|                                                        | Untimed survey, marked for completion              |
+|                                                        | Marked for completion              |
 +--------------------------------------------------------+----------------------------------------------------+
 | Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
 +--------------------------------------------------------+----------------------------------------------------+
 
 ### Instructions
+
+Make sure you are familiar with the [general instructions](#writinggeneral) for these types of tasks.
 
 #### Prompt
 
