@@ -1,6 +1,6 @@
-# (PART\*) Assessments {.unnumbered}
+# (PART\*) Assessments overview {.unnumbered}
 
-# Assessment overview {#assessments}
+# Assessment overview {#assessmentsoverview}
 
 ```{r, echo=FALSE}
 source("links.R")
@@ -8,7 +8,7 @@ source("links.R")
 
 There are two special elements of assessment/grade calculation in this course that are important to be aware of in planning your approach to it.
 
--   *Two roads diverged in a yellow wood*[^assessments-1]*:* You can opt for Path A or Path B to get your final mark. I will calculate your marks along both paths and then assign you the higher of the two as your final mark.
+-   *Two roads diverged in a yellow wood*[^assessments-1]*:* You can opt for Path A or Path B to get your final mark. I will calculate your marks along both paths and then assign you the higher of the two as your final mark. (Grad students have a third option, see below.)
 
 -   A-tisket, a-tasket[^assessments-2], fill up your **knowledge basket**[^assessments-3]:
 

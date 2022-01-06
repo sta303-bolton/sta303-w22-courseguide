@@ -8,7 +8,7 @@
 
 **Course email**: sta303@utoronto.ca
 
-**Help hours**: During the second half of Wednesday classes: 11:10—12:00 p.m. ET and 4:10—5:00 p.m. ET
+**Office hours**: During the second half of Wednesday classes: 11:10—12:00 p.m. ET and 4:10—5:00 p.m. ET
 
 Please do not email my individual email with STA303 questions or use Quercus mail. It makes it harder to keep track of and address your questions. Sending me messages on three different platforms will NOT speed up my response. I will not respond messages that don't follow the course communication policy.
 
@@ -25,7 +25,7 @@ While our course isn't a business, some of the basic parts of this concept apply
 For example, if I have to use all my time and energy following up on unclear emails for more information and dealing with students who haven't followed instructions etc. etc....I won't have that energy to put into writing TeamUp! activities to give you extra practice and opportunities to earn bonus points.
 
 
-### Communicate using the tools your manager prefers.  
+### Communicate using the tools your manager prefers  
 * **In business**, this means knowing who likes face-to-face vs email, or whether your manager would rather receive an instant message than an email for a quick question.
 * **In STA303**, this means: 
   - Using Piazza for all course admin and content questions.
@@ -51,7 +51,7 @@ For example, if I have to use all my time and energy following up on unclear ema
   - Subject line including [Prof. Bolton] or [TA name] if your email is for a specific person.
 
 
-### Understand your manager's goals.
+### Understand your manager's goals
 - **In business**, this might look like understanding their KPIs and how you can help make sure these are met.
 - **In STA303**, most of *my* goals are *for you*, like that you learn useful statistical skills, improve your writing skills etc. I also personally want to improve as an instructor and have fun talking about somethign I love. 
   - You can help me with these goals by working on this course every week, trying your best, asking for help early and often, engaging with feedback gathering mechanisms and providing constructive feedback if something is not working.
@@ -173,7 +173,7 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 
 #### Aside: But why are there two types of tests?
 
-Parametric tests are more **powerful**, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes ~~great responsibility~~ more assumptions that must be valid to proceed. 
+Parametric tests are more **powerful**, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes ~~great responsibility~~, or at least, more assumptions that must be valid to proceed. 
 
 ```{r, echo=FALSE, fig.align='center', out.width="50%"}
 
