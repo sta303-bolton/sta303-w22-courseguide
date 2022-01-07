@@ -36,31 +36,27 @@ I'm a fourth-year PhD student at the Institute of Medical Science. I have been a
 
 My area of research is clinical Neuroscience, something I am passionate about. I analyze images of brain and eye structures in neurodegenerative diseases. I investigate possible associations of these structures with each other and with the ability to remember well and carry out goal-oriented tasks successfully. I love creating reproducible statistical analysis workflows in R. I also like audiobooks, candlelight, and apple pie (which I make myself!)
 
-```{r, echo=FALSE, out.width="10d0%"}
+```{r, echo=FALSE, out.width="100%"}
 knitr::include_graphics("images/headers/map.png")
 ```
 
 ## How this course works {#howthiscourseworks}
 
-This course is organized into five two-week modules of learning + two one week assessment-focus weeks.
+This course is organized into five two-week modules of learning + two one-week assessment-focus weeks.
 
-All course material will be made available through this course site in Quercus (any links to outside sites will be found here). Take a moment to familiarize yourself with some of the tools and content areas found in the left navigation bar. You can move through content in a module by selecting the "Next" button at the bottom right of the page. You can also visit the Module section in the left navigation menu so see all the available modules and their contents.
+All course material will be made available through this course guide and/or in Quercus. 
 
 All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savings Time begins `r daylight_savings`. You may find this time converter helpful: <https://www.timeanddate.com/worldclock/meeting.html>
 
 #### **In most modules there be will be:**
 
--   A weekly module released on Monday morning.
-
--   A quiz based on the content released in the module due on Tuesday at 6:00 p.m ET. 
-
-    -   Special note for the [Week 1 quiz](https://q.utoronto.ca/courses/204826/quizzes/138607 "Week 1 quiz"): this quiz is available until January 26 at 6:00 p.m. ET. (with no penalty) because I know there is a lot to get used to in the first week.
+-   Asynchronous content released at the beginning.
 
 -   A synchronous class on Wednesday at 12:00 p.m. ET (L0101) and 3:00 p.m. ET (L0201).
 
     -   Both sessions will be the same, you only need to attend one.
 
-    -   Please review the [steps for attending a class.](https://q.utoronto.ca/courses/204826/pages/join-synchronous-class "Join synchronous class")
+    -   You must be logged in with your U of T Zoom account ([utoronto.zoom.us](https://utoronto.zoom.us)) to access the class.
 
     -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [course overview](https://q.utoronto.ca/courses/204826/pages/course-overview "Course overview")page.
 

@@ -1,6 +1,13 @@
-# (PART\*) Modules {-}
+# Module 1 {#m1}
 
-# Module 1
+## Learning Checklist
+By the end of this module, you should be able to:
+
+- Understand the structure and policies of STA303.  
+- Be able to open and work with an RMarkdown document, knit to pdf and export that pdf (RStudio, JupyterHub).
+- [STA302 review] Explain the assumptions of linear regression and identify situations where they might be violated.  
+- Describe the execution and purpose of several common statistical tests (one-sample t-test, paired sample t-test, two-sample t-test, one-way ANOVA), and identify how to conduct them in a linear regression framework.  
+- Create a reproducible example (reprex) for use in explaining an error being produced by your code.
 
 ## Instructor information
 
@@ -71,12 +78,12 @@ For example, if I have to use all my time and energy following up on unclear ema
 
 ## Recap of linear models
 
-## Why model?
+### Why model?
 
 - The goal of a model is to provide a (relatively) simple summary of a dataset.
 - We can describe data AND make predictions.
 
-## Linear models 
+### Linear models 
 
 In a linear model, 
 
@@ -90,7 +97,7 @@ a.k.a.
 __DATA = MODEL + ERROR__
 
 
-## Linear regression assumptions
+### Linear regression assumptions
 
 **L**: your model is **L**inear.
 
@@ -105,38 +112,125 @@ __DATA = MODEL + ERROR__
 We can express "I N E" above as assuming the errors are i.i.d Normal with mean of zero and variance $\sigma^2$, 
 $$\epsilon_i \sim N(0, \sigma^2)$$
 
-## What makes it a _linear_ model?
+### What makes it a _linear_ model?
 
 A model is **linear** if it is *linear in the parameters*. That is, all the $\beta$ enter the model in a linear way. It is totally fine if the predictor varaibles enter the model in a non-linear way.
 
-### Linear
+#### Linear
 - $y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \epsilon_i$  
 - $y_i = \beta_0 + γ_1δ_1x_{1i} + \beta_2\exp(x_{2i}) + \epsilon_i$
 
-### NOT linear
+#### NOT linear
 - $y_i = \beta_0 + \beta_1x_i^{\beta_2} + \epsilon_i$  
 - $y_i = \beta_0 exp(\beta_1x_{1i}) + \epsilon_i$
 
 Internally screaming "DON'T LET THE BETAS TOUCH" often helps me remember what is not linear. Additionally, don't let them do anything _weird_, like get exponentiated.
 
 
-## Optional refresher reading
+### Optional refresher reading
 
-### Brief discussion of assumptions with examples
+#### Brief discussion of assumptions with examples
 Section 1.3 of *Broaden your Statistical Horizons* on the assumptions of OLS
 https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#ordinary-least-squares-ols-assumptions
  [freely accessible]
  
-### Fitting linear models in R
+#### Fitting linear models in R
 Section 1.6 of *Broaden your Statistical Horizons* on Mulitple linear regression (bootstrapping not assessed) https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#multreg [freely accessible]
 
-### Delicious mathematics
+#### Delicious mathematics
 
 Chapter 1 of *Wood, S. N. (2017). Generalized additive models : An introduction with r, second edition*
 http://go.utlib.ca/cat/13435628 [you will need to log in to the U of T library for access]
 
+## The data for module 1
+
+.left-column[
+
+The data we'll be looking for the next section of this week is from the `palmerpenguins` package by Allison Horst.
+
+```{r}
+# install.packages("palmerpenguins")
+library(palmerpenguins)
+```
+
+
+```{r, echo=FALSE, fig.align='center', out.width="70%"}
+knitr::include_graphics("images/m1/lter_penguins.png")
+```
+
+_Artwork by \@allison_horst_
+
+```{r, echo=FALSE, fig.align='center', out.width="20%"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version. Not required content.")
+} else {
+ knitr::include_graphics("images/m1/pengwings.gif")
+}
+```
+
+### Let's meet the penguins 
+
+```{r, message=FALSE}
+library(tidyverse)
+
+glimpse(penguins, width = 80) # width here just influences how this is displayed
+```
+
+The `glimpse` function comes from the `tibble` package, which is in loaded by the `tidyverse` package.
+
+One of the most common issues students encounter when learning R is that they are trying to use functions that they haven't installed or loaded the package for. Make sure you've read the [slides about RStudio on the JupyerHub](https://q.utoronto.ca/courses/204826/pages/course-tools#jupyter) because packages you install there will need to be **reinstalled each session** if they are not the list of automatically available ones. 
+`tidyverse` is automatically available so you only need to run `library(tidyverse)` or use the namespace for the function `tibble::glimpse()`. 
+
+### The variables
+
+I hope most of the variables here are clear from their names. In particular, we will be interested in `species`, which has three levels (`r unique(penguins$species)`), `sex`  (`r unique(penguins$sex)`), `body_mass_g` (body mass in grams) and `flipper_length_mm` (length of their flippers measure in mm). We're not using the variables about the bills, but I thought this diagram was interesting anyway.
+
+```{r, echo=FALSE, fig.align='center', out.width="40%"}
+knitr::include_graphics("images/m1/culmen_depth.png")
+```
+_Artwork by \@allison_horst_
+
+
+.left-column[
+```{r, echo=FALSE}
+flipper_bill <- penguins %>% 
+  filter(!is.na(sex)) %>% 
+  ggplot(aes(x = flipper_length_mm,
+                             y = bill_length_mm)) +
+  geom_point(aes(color = species, 
+                 shape = sex),
+             size = 3,
+             alpha = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, aes(color = species)) +
+  theme_minimal() +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(title = "Flipper and bill length",
+       subtitle = "Dimensions for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER",
+       x = "Flipper length (mm)",
+       y = "Bill length (mm)",
+       color = "Penguin species",
+       shape = "Sex",
+       caption = "Source: @allison_horst, palmerpenguins package") +
+  theme(
+        legend.background = element_rect(fill = "white", color = NA),
+        plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot")
+ggsave("images/m1/ah_plot.png", flipper_bill, width = 7, height = 5)
+```
+
+```{r, echo=FALSE, fig.align='center', out.width="90%"}
+knitr::include_graphics("images/m1/ah_plot.png")
+```
+
+Here are all our variables of interest in one plot.
+
+Note: In  this chart and in future analyses involving `sex`, penguins with an unknown sex have been removed.
+
 ## Common statistical tests as linear regression
 
+[There is an interactive version of the below notes at this link.](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303_activities&urlpath=shiny%2Fsta303_activities%2Finst%2Ftutorials%2Fsta303_w1_tests%2F&branch=main)
 
 ```{r setup, include = FALSE}
 install.packages("palmerpenguins", repos = "https://cloud.r-project.org")
@@ -159,8 +253,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Introduction
 
-_Technical note: I have had to remove code answer checking, but if you get stuck the final 'Hint' is the solution. This is ungraded, so don't worry, just slightly inconvenient._
-
 You have probably encountered several statistical tests in your studies so far. 
 
 #### Parametric
@@ -173,14 +265,14 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 
 #### Aside: But why are there two types of tests?
 
-Parametric tests are more **powerful**, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes ~~great responsibility~~, or at least, more assumptions that must be valid to proceed. 
+Parametric tests are more **powerful**, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes ~~great responsibility~~ more assumptions that must be valid to proceed. 
 
 ```{r, echo=FALSE, fig.align='center', out.width="50%"}
 
 if (knitr:::is_latex_output()) {
   knitr::asis_output("There is a GIF in the web version. Not required content. \\url{https://tenor.com/view/spider-man-uncle-ben-with-great-power-comes-great-responsibility-its-true-just-saying-gif-24193883}")
 } else {
- include_graphics("images/m1/uncleben.gif")
+ knitr::include_graphics("images/m1/uncleben.gif")
 }
 
 ```
@@ -283,7 +375,7 @@ $$H_1: \beta_0 \ne \text{hypothesized val}.$$
 While the linear regression approach to the one-sample t-test is exact, we can also approximate the Wilcoxon rank-sign test with linear regression. See below. 
 
 ```{r, echo=FALSE, fig.align='center', out.width="90%"}
-include_graphics("images/m1/wilcoxon.png")
+knitr::include_graphics("images/m1/wilcoxon.png")
 ```
 
 Note: The above is just example from some toy data, but aims to illustrate how a t-test is treating the data and how the Wilcoxon test is treating the data. 
@@ -475,7 +567,7 @@ And it just so happens that the assumptions for the one-way ANOVA (also called t
 if (knitr:::is_latex_output()) {
   knitr::asis_output("There is a GIF in the web version. Not required content. \\url{https://gifst.blogspot.com/2019/03/snl-hi-saturday-night-live-hey-kate.html}")
 } else {
- include_graphics("images/m1/meagain.gif")
+ knitr::include_graphics("images/m1/meagain.gif")
 }
 ```
 
@@ -502,12 +594,66 @@ summary(aov(body_mass_g ~ species, data = penguins))
 That looks a lot like the output from calling summary on `lm()`...in fact, aov is just a wrapper for lm! Which means it has been linear regression the whole time. 
 
 
-
-#### We'll stop here and talk further about this particular topic in class this week. 
-
-Your next topic is [reproducible examples (reprexes)](https://q.utoronto.ca/courses/204826/pages/w1-reproducible-examples-reprex?module_item_id=2184624).
-
-
 ### Credits
 
 Credit to **Jonas Kristoffer Lindeløv** for the excellent resource this resource is based on. [There are more examples there than we will cover in this course.](https://lindeloev.github.io/tests-as-linear/)
+
+## Reproducible examples (reprex)
+
+### What is a reproducible example?
+
+Well, it is an example that someone else can reproduce...
+
+Specifically, it is a minimal example needed for someone helping you to reproduce an error or other behaviour you would like to show them with. 
+
+This is especially helpful while we are all working online! I can't look over your shoulder in a lab to see what's wrong. 
+
+```{r, echo=FALSE, fig.align='center', out.width="50%"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version. Not required content.")
+} else {
+ knitr::include_graphics("images/m1/throwcomp.gif")
+}
+```
+
+### Why should you care about creating reproducible examples?
+
+- Useful professional skill for those working with R and other programming languages in graduate school/future employment (concepts transferable to programming in any language).
+- The best way to help me (and the TAs and your classmates) help YOU on Piazza.
+- The process of preparing a reprex to ask for help forces you to think about your code in a specific way that can help you spot the problem without actually having to ask anyone else (this literally happened to me about 2 hours before writing this slide!)
+
+
+#### Other things to know
+
+- Please try to use use reprexes when asking for help on Piazza!
+  - The outputs from the reprex package work beautifully on Piazza, too. 
+  - No more upside down photos of computer screens taken from phones, please! 
+- `reprex` is installed in the JupyterHub and will be loaded whenever we run `library(tidyverse)`
+- You won't have to worry about the data side of reprexes as much for this course, as in almost all cases we will all be working with the same data. But! It is a key skill if you will be working with data and programming languages in the future.
+
+### Watch the creator of the reprex package explain it
+
+Jenny Bryan is a hero of mine, and this was even BEFORE I knew she was the creator of the `reprex` package.
+
+I think the whole video is excellent, and you're very welcome to watch all of it, but at minimum, please watch the following time intervals:
+
+- 0:00 - 7:20 (background and initial demo)
+- 14:08 - 29:48 (philosophy and examples)
+
+**The video and slides are on this page: https://reprex.tidyverse.org/articles/articles/learn-reprex.html**
+
+### Using reprexes on Piazza
+
+[Watch this 4 minute video.](https://play.library.utoronto.ca/f395cfcc26b4009cbc28c1aa9a86096c)
+
+```{r, echo=FALSE, fig.align='center', out.width="60%"}
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("images/stop-video.png")
+} 
+```
+
+Web version embedding for MyMedia is not great, I would recommending opening the link and/or going full screen. 
+
+<div><iframe src="https://play.library.utoronto.ca/watch/f395cfcc26b4009cbc28c1aa9a86096c" width="900" height="500" allowfullscreen="allowfullscreen"></iframe></div>

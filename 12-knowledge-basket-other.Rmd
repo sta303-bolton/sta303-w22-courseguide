@@ -1,0 +1,89 @@
+```{r, echo=FALSE}
+source("links.R",  local = knitr::knit_global())
+```
+
+# Knowledge basket: Other
+
+## 'Getting to know you' survey
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | 'Getting to know you' survey                       |
++--------------------------------------------------------+----------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                             |
++--------------------------------------------------------+----------------------------------------------------+
+| Value                                                  | 0.1%                                               |
++--------------------------------------------------------+----------------------------------------------------+
+| Due                                                    | `r know_survey`                                    |
++--------------------------------------------------------+----------------------------------------------------+
+| Submission instructions                                | Submission: [Via Quercus survey](`r know_survey_link`)                |
+|                                                        |                                                    |
+|                                                        | Untimed survey, marked for completion              |
++--------------------------------------------------------+----------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
++--------------------------------------------------------+----------------------------------------------------+
+
+### Instructions
+
+Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
+
+(Some questions are from factfulnessquiz.com, you are not being marked on correctness, so please answer to the best of your ability without looking anything up.)
+
+## Pre-knowledge check
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Pre-knowledge check                                                                                          |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                                                                                                |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Value                                                  | 0.5% for completion + 0.5% for a score of 80%+ OR active attendance at the prerequisite knowledge workshop 2022-02-02 |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Due                                                    | `r prereq_quiz` <br> (Workshop: `r prereq_workshop`)                                                                                             |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Submission instructions                                | Submission: [Via Quercus survey](`r prereq_quiz_link`)                                                                                           |
+|                                                        |                                                                                                                       |
+|                                                        | 60 minutes, 1 attempt, no pausing                                                                                                 |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                                    |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+
+### Instructions
+
+Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80%+ score or workshop engagement/attendance.
+
+#### Grade structure
+
+- Completion of the quiz (all questions attempted) will earn you 0.5%.
+
+- If you score 80% or more on the quiz, you earn an additional 0.5%.
+
+- If you _do not_ score 80% or more, you can still earn this additional 0.5% by attending and actively engaging with the workshop on `r prereq_workshop`. 
+
+- The maximum points to earn here is 1% (i.e., you cannot get BOTH the 80%+ and workshop attendance bonuses)
+
+## Module check-ins
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Module check-in 1--5                                                                                         |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                                                                                                |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Value                                                  | 0.1% for completion |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Due                                                    | Second Fridays of Modules at 3:03 p.m.                                                                                            |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Submission instructions                                | Submission: [Via Quercus surveys](`r assignments_link`)                                                                                    |
+|                                                        |                                                                                                                       |
+|                                                        | Untimed, unlimited attempts                                                                                                 |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                                    |
++--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+
+### Instructions
+
+Module check-ins are a short questionnaire to help me 'take the pulse' of the class. Each survey will like take only 5--10 minutes and will be available about 6:00 p.m. on the second Wednesday of each module, until 3:03 p.m. ET on the second Friday.

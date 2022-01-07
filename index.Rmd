@@ -17,20 +17,27 @@ description: "This is a course for STA303: Methods of Data Analysis II at the Un
 
 ```{r, echo=FALSE}
 source("links.R", local = knitr::knit_global())
+library(knitr)
 ```
 
-THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 
 # How to use this course guide
 
-This course guide has been created using [`bookdown`](https://bookdown.org/). You can download a PDF version of the whole guide with the download button above (down arrow into a tray). Note that many part of this guide will be updated as the course proceeds. You can also put the website into dark mode and changed the font style, if you find a different display preferable. 
+THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 
+```{r, echo=FALSE, out.width="50%", fig.align='center',}
+knitr::include_graphics("images/quercus-cover.png")
+```
 
-If you would like a PDF copy of the slides, you can 'Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select 'Save as PDF' (or similar). 
+This course guide has been created in R using the [`bookdown`](https://bookdown.org/) package. 
 
+In the web version, you can put this guide into dark mode and change the font style, if you find a different display preferable. Play around with the buttons at the top of the screen and see what they do.
 
-### Communication policy reminder
+You can download a PDF version of the whole guide with the download button (on the web version, look for the PDF icon button at the top). Note that _many_ parts of this guide will be updated as the course proceeds, so the PDF might not be that useful to you unless you are separating out relevant portions for your annotations/notes, etc. Alternatively, to get just a specific chapter, you can 'Print to PDF' from your browser, and this is also how you can get a PDF copy of any linked/embedded slides. Shortcut: Cmd+P or Ctrl+P, and select 'Save as PDF' (or similar). 
+
+## Communication policy reminder
 
 All content and logistics questions must be asked on [Piazza](`r piazza`). Personal or private course matters should be emailed to sta303@utoronto.ca. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
 
+See the [communication policy in the syllabus](#communication-policy) for more information.
 

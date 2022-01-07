@@ -181,19 +181,25 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-THIS SITE IS STILL IN PROGRESS! The information is not yet official.
-
 \hypertarget{how-to-use-this-course-guide}{%
 \chapter{How to use this course guide}\label{how-to-use-this-course-guide}}
 
-This course guide has been created using \href{https://bookdown.org/}{\texttt{bookdown}}. You can download a PDF version of the whole guide with the download button above (down arrow into a tray). Note that many part of this guide will be updated as the course proceeds. You can also put the website into dark mode and changed the font style, if you find a different display preferable.
+THIS SITE IS STILL IN PROGRESS! The information is not yet official.
 
-If you would like a PDF copy of the slides, you can `Print to PDF' in your browser. Shortcut: Cmd+P or Ctrl+P, and select `Save as PDF' (or similar).
+\begin{center}\includegraphics[width=0.5\linewidth]{images/quercus-cover} \end{center}
+
+This course guide has been created in R using the \href{https://bookdown.org/}{\texttt{bookdown}} package.
+
+In the web version, you can put this guide into dark mode and change the font style, if you find a different display preferable. Play around with the buttons at the top of the screen and see what they do.
+
+You can download a PDF version of the whole guide with the download button (on the web version, look for the PDF icon button at the top). Note that \emph{many} parts of this guide will be updated as the course proceeds, so the PDF might not be that useful to you unless you are separating out relevant portions for your annotations/notes, etc. Alternatively, to get just a specific chapter, you can `Print to PDF' from your browser, and this is also how you can get a PDF copy of any linked/embedded slides. Shortcut: Cmd+P or Ctrl+P, and select `Save as PDF' (or similar).
 
 \hypertarget{communication-policy-reminder}{%
-\subsection{Communication policy reminder}\label{communication-policy-reminder}}
+\section{Communication policy reminder}\label{communication-policy-reminder}}
 
 All content and logistics questions must be asked on \href{https://piazza.com/class/kx47tj4fmy65dg}{Piazza}. Personal or private course matters should be emailed to \href{mailto:sta303@utoronto.ca}{\nolinkurl{sta303@utoronto.ca}}. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
+
+See the \protect\hyperlink{communication-policy}{communication policy in the syllabus} for more information.
 
 \hypertarget{syllabus}{%
 \chapter{Syllabus}\label{syllabus}}
@@ -876,14 +882,14 @@ I'm a fourth-year PhD student at the Institute of Medical Science. I have been a
 
 My area of research is clinical Neuroscience, something I am passionate about. I analyze images of brain and eye structures in neurodegenerative diseases. I investigate possible associations of these structures with each other and with the ability to remember well and carry out goal-oriented tasks successfully. I love creating reproducible statistical analysis workflows in R. I also like audiobooks, candlelight, and apple pie (which I make myself!)
 
-\textbackslash includegraphics{[}width=10d0\%{]}\{images/headers/map\}
+\includegraphics[width=1\linewidth]{images/headers/map}
 
 \hypertarget{howthiscourseworks}{%
 \section{How this course works}\label{howthiscourseworks}}
 
-This course is organized into five two-week modules of learning + two one week assessment-focus weeks.
+This course is organized into five two-week modules of learning + two one-week assessment-focus weeks.
 
-All course material will be made available through this course site in Quercus (any links to outside sites will be found here). Take a moment to familiarize yourself with some of the tools and content areas found in the left navigation bar. You can move through content in a module by selecting the ``Next'' button at the bottom right of the page. You can also visit the Module section in the left navigation menu so see all the available modules and their contents.
+All course material will be made available through this course guide and/or in Quercus.
 
 All times listed are `Toronto time', i.e.~Eastern Time. Note that Daylight Savings Time begins Sunday, March 13, 2022. You may find this time converter helpful: \url{https://www.timeanddate.com/worldclock/meeting.html}
 
@@ -892,15 +898,7 @@ All times listed are `Toronto time', i.e.~Eastern Time. Note that Daylight Savin
 
 \begin{itemize}
 \item
-  A weekly module released on Monday morning.
-\item
-  A quiz based on the content released in the module due on Tuesday at 6:00 p.m ET.~
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Special note for the \href{https://q.utoronto.ca/courses/204826/quizzes/138607}{Week 1 quiz}: this quiz is available until January 26 at 6:00 p.m. ET. (with no penalty) because I know there is a lot to get used to in the first week.
-  \end{itemize}
+  Asynchronous content released at the beginning.
 \item
   A synchronous class on Wednesday at 12:00 p.m. ET (L0101) and 3:00 p.m. ET (L0201).
 
@@ -908,7 +906,7 @@ All times listed are `Toronto time', i.e.~Eastern Time. Note that Daylight Savin
   \item
     Both sessions will be the same, you only need to attend one.
   \item
-    Please review the \href{https://q.utoronto.ca/courses/204826/pages/join-synchronous-class}{steps for attending a class.}
+    You must be logged in with your U of T Zoom account (\href{https://utoronto.zoom.us}{utoronto.zoom.us}) to access the class.
   \item
     Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the \href{https://q.utoronto.ca/courses/204826/pages/course-overview}{course overview}page.
   \end{itemize}
@@ -1927,20 +1925,91 @@ Type (Main, Mini or Basket) & \begin{minipage}[t]{\linewidth}\raggedright
 Basket
 \end{minipage} \\
 Value & 0.1\% for completion \\
-Due & Second Fridays of Modules \\
-Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/235900}{Via Quercus survey}
+Due & Second Fridays of Modules at 3:03 p.m. \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/assignments}{Via Quercus surveys}
 
-60 minutes, 1 attempt, no pausing \\
+Untimed, unlimited attempts \\
 Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
 \bottomrule
 \end{longtable}
+
+\hypertarget{instructions-9}{%
+\subsection{Instructions}\label{instructions-9}}
+
+Module check-ins are a short questionnaire to help me `take the pulse' of the class. Each survey will like take only 5--10 minutes and will be available about 6:00 p.m. on the second Wednesday of each module, until 3:03 p.m. ET on the second Friday.
 
 \hypertarget{part-modules}{%
 \part*{Modules}\label{part-modules}}
 \addcontentsline{toc}{part}{Modules}
 
-\hypertarget{module-1}{%
-\chapter{Module 1}\label{module-1}}
+\hypertarget{overview}{%
+\chapter{Overview}\label{overview}}
+
+\hypertarget{module-1-key-links}{%
+\section{Module 1 key links}\label{module-1-key-links}}
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{m1}{Asynchronous materials}
+\item
+  1st Wednesday class recording
+\item
+  2nd Wednesday class recording
+\end{itemize}
+
+\hypertarget{assessments-1}{%
+\subsection{Assessments}\label{assessments-1}}
+
+\hypertarget{due-during-this-module}{%
+\subsubsection{Due during this module}\label{due-during-this-module}}
+
+\begin{itemize}
+\tightlist
+\item
+  {[}`Getting to know you' survey (basket){]}
+\item
+  Module 1 writing task (basket)
+\item
+  Pre-knowledge check (basket)
+\item
+  Team up! activity 1
+\item
+  Module check-in (basket)
+\end{itemize}
+
+\hypertarget{not-due-but-available-to-work-on}{%
+\subsubsection{Not due, but available to work on}\label{not-due-but-available-to-work-on}}
+
+\begin{itemize}
+\tightlist
+\item
+  Professional development proposal (basket)
+\item
+  Mini-portfolio (availability TBA) (mini)
+\end{itemize}
+
+\hypertarget{m1}{%
+\chapter{Module 1}\label{m1}}
+
+\hypertarget{learning-checklist}{%
+\section{Learning Checklist}\label{learning-checklist}}
+
+By the end of this module, you should be able to:
+
+\begin{itemize}
+\tightlist
+\item
+  Understand the structure and policies of STA303.\\
+\item
+  Be able to open and work with an RMarkdown document, knit to pdf and export that pdf (RStudio, JupyterHub).
+\item
+  {[}STA302 review{]} Explain the assumptions of linear regression and identify situations where they might be violated.\\
+\item
+  Describe the execution and purpose of several common statistical tests (one-sample t-test, paired sample t-test, two-sample t-test, one-way ANOVA), and identify how to conduct them in a linear regression framework.\\
+\item
+  Create a reproducible example (reprex) for use in explaining an error being produced by your code.
+\end{itemize}
 
 \hypertarget{instructor-information}{%
 \section{Instructor information}\label{instructor-information}}
@@ -2076,7 +2145,7 @@ For example, if I have to use all my time and energy following up on unclear ema
 \section{Recap of linear models}\label{recap-of-linear-models}}
 
 \hypertarget{why-model}{%
-\section{Why model?}\label{why-model}}
+\subsection{Why model?}\label{why-model}}
 
 \begin{itemize}
 \tightlist
@@ -2087,7 +2156,7 @@ For example, if I have to use all my time and energy following up on unclear ema
 \end{itemize}
 
 \hypertarget{linear-models}{%
-\section{Linear models}\label{linear-models}}
+\subsection{Linear models}\label{linear-models}}
 
 In a linear model,
 
@@ -2101,7 +2170,7 @@ a.k.a.
 \textbf{DATA = MODEL + ERROR}
 
 \hypertarget{linear-regression-assumptions}{%
-\section{Linear regression assumptions}\label{linear-regression-assumptions}}
+\subsection{Linear regression assumptions}\label{linear-regression-assumptions}}
 
 \textbf{L}: your model is \textbf{L}inear.
 
@@ -2115,12 +2184,12 @@ We can express ``I N E'' above as assuming the errors are i.i.d Normal with mean
 \[\epsilon_i \sim N(0, \sigma^2)\]
 
 \hypertarget{what-makes-it-a-linear-model}{%
-\section{\texorpdfstring{What makes it a \emph{linear} model?}{What makes it a linear model?}}\label{what-makes-it-a-linear-model}}
+\subsection{\texorpdfstring{What makes it a \emph{linear} model?}{What makes it a linear model?}}\label{what-makes-it-a-linear-model}}
 
 A model is \textbf{linear} if it is \emph{linear in the parameters}. That is, all the \(\beta\) enter the model in a linear way. It is totally fine if the predictor varaibles enter the model in a non-linear way.
 
 \hypertarget{linear}{%
-\subsection{Linear}\label{linear}}
+\subsubsection{Linear}\label{linear}}
 
 \begin{itemize}
 \tightlist
@@ -2131,7 +2200,7 @@ A model is \textbf{linear} if it is \emph{linear in the parameters}. That is, al
 \end{itemize}
 
 \hypertarget{not-linear}{%
-\subsection{NOT linear}\label{not-linear}}
+\subsubsection{NOT linear}\label{not-linear}}
 
 \begin{itemize}
 \tightlist
@@ -2144,33 +2213,103 @@ A model is \textbf{linear} if it is \emph{linear in the parameters}. That is, al
 Internally screaming ``DON'T LET THE BETAS TOUCH'' often helps me remember what is not linear. Additionally, don't let them do anything \emph{weird}, like get exponentiated.
 
 \hypertarget{optional-refresher-reading}{%
-\section{Optional refresher reading}\label{optional-refresher-reading}}
+\subsection{Optional refresher reading}\label{optional-refresher-reading}}
 
 \hypertarget{brief-discussion-of-assumptions-with-examples}{%
-\subsection{Brief discussion of assumptions with examples}\label{brief-discussion-of-assumptions-with-examples}}
+\subsubsection{Brief discussion of assumptions with examples}\label{brief-discussion-of-assumptions-with-examples}}
 
 Section 1.3 of \emph{Broaden your Statistical Horizons} on the assumptions of OLS
 \url{https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html\#ordinary-least-squares-ols-assumptions}
 {[}freely accessible{]}
 
 \hypertarget{fitting-linear-models-in-r}{%
-\subsection{Fitting linear models in R}\label{fitting-linear-models-in-r}}
+\subsubsection{Fitting linear models in R}\label{fitting-linear-models-in-r}}
 
 Section 1.6 of \emph{Broaden your Statistical Horizons} on Mulitple linear regression (bootstrapping not assessed) \url{https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html\#multreg} {[}freely accessible{]}
 
 \hypertarget{delicious-mathematics}{%
-\subsection{Delicious mathematics}\label{delicious-mathematics}}
+\subsubsection{Delicious mathematics}\label{delicious-mathematics}}
 
 Chapter 1 of \emph{Wood, S. N. (2017). Generalized additive models : An introduction with r, second edition}
 \url{http://go.utlib.ca/cat/13435628} {[}you will need to log in to the U of T library for access{]}
 
+\hypertarget{the-data-for-module-1}{%
+\section{The data for module 1}\label{the-data-for-module-1}}
+
+.left-column{[}
+
+The data we'll be looking for the next section of this week is from the \texttt{palmerpenguins} package by Allison Horst.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# install.packages("palmerpenguins")}
+\FunctionTok{library}\NormalTok{(palmerpenguins)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{images/m1/lter_penguins} \end{center}
+
+\emph{Artwork by @allison\_horst}
+
+There is a GIF in the web version. Not required content.
+
+\hypertarget{lets-meet-the-penguins}{%
+\subsection{Let's meet the penguins}\label{lets-meet-the-penguins}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+
+\FunctionTok{glimpse}\NormalTok{(penguins, }\AttributeTok{width =} \DecValTok{80}\NormalTok{) }\CommentTok{\# width here just influences how this is displayed}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 344
+## Columns: 8
+## $ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~
+## $ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~
+## $ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~
+## $ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~
+## $ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~
+## $ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~
+## $ sex               <fct> male, female, female, NA, female, male, female, male~
+## $ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~
+\end{verbatim}
+
+The \texttt{glimpse} function comes from the \texttt{tibble} package, which is in loaded by the \texttt{tidyverse} package.
+
+One of the most common issues students encounter when learning R is that they are trying to use functions that they haven't installed or loaded the package for. Make sure you've read the \href{https://q.utoronto.ca/courses/204826/pages/course-tools\#jupyter}{slides about RStudio on the JupyerHub} because packages you install there will need to be \textbf{reinstalled each session} if they are not the list of automatically available ones.
+\texttt{tidyverse} is automatically available so you only need to run \texttt{library(tidyverse)} or use the namespace for the function \texttt{tibble::glimpse()}.
+
+\hypertarget{the-variables}{%
+\subsection{The variables}\label{the-variables}}
+
+I hope most of the variables here are clear from their names. In particular, we will be interested in \texttt{species}, which has three levels (Adelie, Gentoo, Chinstrap), \texttt{sex} (male, female, NA), \texttt{body\_mass\_g} (body mass in grams) and \texttt{flipper\_length\_mm} (length of their flippers measure in mm). We're not using the variables about the bills, but I thought this diagram was interesting anyway.
+
+\begin{center}\includegraphics[width=0.4\linewidth]{images/m1/culmen_depth} \end{center}
+
+\emph{Artwork by @allison\_horst}
+
+.left-column{[}
+
+\begin{verbatim}
+## `geom_smooth()` using formula 'y ~ x'
+\end{verbatim}
+
+\begin{center}\includegraphics[width=0.9\linewidth]{images/m1/ah_plot} \end{center}
+
+Here are all our variables of interest in one plot.
+
+Note: In this chart and in future analyses involving \texttt{sex}, penguins with an unknown sex have been removed.
+
 \hypertarget{common-statistical-tests-as-linear-regression}{%
 \section{Common statistical tests as linear regression}\label{common-statistical-tests-as-linear-regression}}
 
+\href{https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https\%3A\%2F\%2Fgithub.com\%2Fsta303-bolton\%2Fsta303_activities\&urlpath=shiny\%2Fsta303_activities\%2Finst\%2Ftutorials\%2Fsta303_w1_tests\%2F\&branch=main}{There is an interactive version of the below notes at this link.}
+
 \hypertarget{introduction}{%
 \subsection{Introduction}\label{introduction}}
-
-\emph{Technical note: I have had to remove code answer checking, but if you get stuck the final `Hint' is the solution. This is ungraded, so don't worry, just slightly inconvenient.}
 
 You have probably encountered several statistical tests in your studies so far.
 
@@ -2189,7 +2328,7 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 \hypertarget{aside-but-why-are-there-two-types-of-tests}{%
 \subsubsection{Aside: But why are there two types of tests?}\label{aside-but-why-are-there-two-types-of-tests}}
 
-Parametric tests are more \textbf{powerful}, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes \sout{great responsibility}, or at least, more assumptions that must be valid to proceed.
+Parametric tests are more \textbf{powerful}, i.e., they have a better chance of detecting an effect if there is one there to find. So why would you ever use a less powerful test? Well, with great power comes \sout{great responsibility} more assumptions that must be valid to proceed.
 
 There is a GIF in the web version. Not required content. \url{https://tenor.com/view/spider-man-uncle-ben-with-great-power-comes-great-responsibility-its-true-just-saying-gif-24193883}
 
@@ -2728,15 +2867,84 @@ Let's now look at body mass across species. Suppose we wanted to know if was bel
 
 That looks a lot like the output from calling summary on \texttt{lm()}\ldots in fact, aov is just a wrapper for lm! Which means it has been linear regression the whole time.
 
-\hypertarget{well-stop-here-and-talk-further-about-this-particular-topic-in-class-this-week.}{%
-\subsubsection{We'll stop here and talk further about this particular topic in class this week.}\label{well-stop-here-and-talk-further-about-this-particular-topic-in-class-this-week.}}
-
-Your next topic is \href{https://q.utoronto.ca/courses/204826/pages/w1-reproducible-examples-reprex?module_item_id=2184624}{reproducible examples (reprexes)}.
-
 \hypertarget{credits}{%
 \subsection{Credits}\label{credits}}
 
 Credit to \textbf{Jonas Kristoffer Lindeløv} for the excellent resource this resource is based on. \href{https://lindeloev.github.io/tests-as-linear/}{There are more examples there than we will cover in this course.}
+
+\hypertarget{reproducible-examples-reprex}{%
+\section{Reproducible examples (reprex)}\label{reproducible-examples-reprex}}
+
+\hypertarget{what-is-a-reproducible-example}{%
+\subsection{What is a reproducible example?}\label{what-is-a-reproducible-example}}
+
+Well, it is an example that someone else can reproduce\ldots{}
+
+Specifically, it is a minimal example needed for someone helping you to reproduce an error or other behaviour you would like to show them with.
+
+This is especially helpful while we are all working online! I can't look over your shoulder in a lab to see what's wrong.
+
+There is a GIF in the web version. Not required content.
+
+\hypertarget{why-should-you-care-about-creating-reproducible-examples}{%
+\subsection{Why should you care about creating reproducible examples?}\label{why-should-you-care-about-creating-reproducible-examples}}
+
+\begin{itemize}
+\tightlist
+\item
+  Useful professional skill for those working with R and other programming languages in graduate school/future employment (concepts transferable to programming in any language).
+\item
+  The best way to help me (and the TAs and your classmates) help YOU on Piazza.
+\item
+  The process of preparing a reprex to ask for help forces you to think about your code in a specific way that can help you spot the problem without actually having to ask anyone else (this literally happened to me about 2 hours before writing this slide!)
+\end{itemize}
+
+\hypertarget{other-things-to-know}{%
+\subsubsection{Other things to know}\label{other-things-to-know}}
+
+\begin{itemize}
+\tightlist
+\item
+  Please try to use use reprexes when asking for help on Piazza!
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The outputs from the reprex package work beautifully on Piazza, too.
+  \item
+    No more upside down photos of computer screens taken from phones, please!
+  \end{itemize}
+\item
+  \texttt{reprex} is installed in the JupyterHub and will be loaded whenever we run \texttt{library(tidyverse)}
+\item
+  You won't have to worry about the data side of reprexes as much for this course, as in almost all cases we will all be working with the same data. But! It is a key skill if you will be working with data and programming languages in the future.
+\end{itemize}
+
+\hypertarget{watch-the-creator-of-the-reprex-package-explain-it}{%
+\subsection{Watch the creator of the reprex package explain it}\label{watch-the-creator-of-the-reprex-package-explain-it}}
+
+Jenny Bryan is a hero of mine, and this was even BEFORE I knew she was the creator of the \texttt{reprex} package.
+
+I think the whole video is excellent, and you're very welcome to watch all of it, but at minimum, please watch the following time intervals:
+
+\begin{itemize}
+\tightlist
+\item
+  0:00 - 7:20 (background and initial demo)
+\item
+  14:08 - 29:48 (philosophy and examples)
+\end{itemize}
+
+\textbf{The video and slides are on this page: \url{https://reprex.tidyverse.org/articles/articles/learn-reprex.html}}
+
+\hypertarget{using-reprexes-on-piazza}{%
+\subsection{Using reprexes on Piazza}\label{using-reprexes-on-piazza}}
+
+\href{https://play.library.utoronto.ca/f395cfcc26b4009cbc28c1aa9a86096c}{Watch this 4 minute video.}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{images/stop-video} \end{center}
+
+Web version embedding for MyMedia is not great, I would recommending opening the link and/or going full screen.
 
 \hypertarget{module-2}{%
 \chapter{Module 2}\label{module-2}}
