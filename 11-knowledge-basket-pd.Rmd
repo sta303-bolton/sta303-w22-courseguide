@@ -273,9 +273,9 @@ You may wish to use the provided template to complete this task. This is _not_ r
 
 ### Templates
 
--   [template.docx](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.docx)
+-   [template.docx](https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/template.docx)
 
--   [template.Rmd](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.Rmd), [template.pdf](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template.pdf), [template_rmd.zip](https://raw.githubusercontent.com/sta303-bolton/sta303-w22-courseguide/master/docs/other-files/template_rmd.zip)
+-   [template.Rmd](https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/template.Rmd), [template.pdf](https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/template.pdf), [template_rmd.zip](https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/template_rmd.zip)
 
 ### Reflection and evidence components
 
