@@ -7,12 +7,16 @@ yes_extend_policy = "In the case of a personal illness/emergency, a [declaration
 
 piazza = "https://piazza.com/class/kx47tj4fmy65dg"
 
+syllabus_pdf = "https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/STA303-1002_W22_syllabus.pdf"
+
 announcements = "https://q.utoronto.ca/courses/253305/announcements"
 
 waitlist_form = "https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpURUtOV1dVU1hZVjJRQzBHMTk0WEhQTFZXVS4u"
 
 extension = "https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNTFDSzhZTFlXUzVYMVlNM1FEUTRZMkVWOC4u"
-regrade =
+regrade = "https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUREUwSDI5UUlCOUlEMUxBQ0pKNTNLT0xNNC4u"
+
+forms = "https://q.utoronto.ca/courses/253305/pages/forms"
 
 markus = "https://markus-ds.teach.cs.toronto.edu/"
 
@@ -47,6 +51,8 @@ mixed = "Wednesday, March 16, 2022; assessment window from 8:00 a.m. ET - 8:00 p
 final_project = "Thursday, April 7, 2022 at 3:03 p.m. ET for 2% pt bonus. Submission accepted until Monday, April 11, 2022 at 3:03 p.m."
 
 assignments_link = "https://q.utoronto.ca/courses/253305/assignments"
+
+oneperc = "Friday, April 8, 2022 at 3:03 p.m. ET"
 
 #### Writing
 m1_c = "Friday, January 14, 2022 at 3:03 p.m ET"

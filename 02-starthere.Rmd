@@ -20,11 +20,11 @@ Looking forward to a great semester! See you in class on Wednesday.
 
 Before moving (back) to Canada in 2019, I had lived more than half my life in New Zealand. (I still mention New Zealand a lot in class...) My current research areas are in statistics education and online learning, as well as health disparities across ethnic groups. I used to run a small consulting company and called myself a Data Ambassador. Why? Well, lots of people are consultants. I even did an internship in management consulting once upon a time. But it wasn't a satisfying title for what I wanted my work with people to look like. I wanted something that focused on the communication and interpersonal side, not just high quality and appropriate analysis. People who aren't confident in their ability to analyse their own data need a go-between, someone who can be an ambassador for their data! While I don't do consulting any more, I love helping students build their technical and professional skills so they can go out into the world and be excellent ambassadors for data themselves.
 
-Last movie I cried in: Kiki's Delivery Service
+**Last movie I cried in**: Kiki's Delivery Service
 
-Favourite food: Corn. Popped, on the cob, in a chip, Mmmmm.
+**Favourite food**: Corn. Popped, on the cob, in a chip, Mmmmm.
 
-Book most often given as a gift: [A Matter of Fact: Talking Truth in a Post-Truth World](https://www.goodreads.com/book/show/41123067-a-matter-of-fact) by Jess Berentson-Shaw
+**Book most often given as a gift**: [A Matter of Fact: Talking Truth in a Post-Truth World](https://www.goodreads.com/book/show/41123067-a-matter-of-fact) by Jess Berentson-Shaw
 
 ### Amin Banihashemi, Head TA
 
@@ -36,15 +36,41 @@ I'm a fourth-year PhD student at the Institute of Medical Science. I have been a
 
 My area of research is clinical Neuroscience, something I am passionate about. I analyze images of brain and eye structures in neurodegenerative diseases. I investigate possible associations of these structures with each other and with the ability to remember well and carry out goal-oriented tasks successfully. I love creating reproducible statistical analysis workflows in R. I also like audiobooks, candlelight, and apple pie (which I make myself!)
 
-```{r, echo=FALSE, out.width="100%"}
-knitr::include_graphics("images/headers/map.png")
-```
+## A few things to know upfront
+
+-   **R** is the programming language used in this course.
+
+-   I use and teach a lot of **`tidyverse`**, especially **`dplyr`** for data wrangling and **`ggplot`** for visualization.
+
+    -   If you're not familiar with these, consider getting ahead by checking out:
+
+        -   chapters 3 and 5 of [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham & Garret Grolemund, and
+
+        -   the [DoSS Toolkit](https://dosstoolkit.com/), especially the modules ['Hand me my plyrs'](https://dosstoolkit.com/#hand-me-my-plyrs) and [To ggplot or not to ggplot](https://dosstoolkit.com/#to-ggplot-or-not-to-ggplot).
+
+-   [The entire course is online until Jan 31.](https://www.utoronto.ca/utogether/covid-19-planning-update) While some elements of the delivery of STA303 may be in person after that, the course will have a large online component regardless and **all assessments will be able to be completed and submitted online.**
+
+    -   If you are enrolled in an **in-person tutorial**, you will have an option to attend online instead.
+
+    -   Synchronous attendance is NOT required to pass this course, but being able to attend (online) synchronously at the times in the timetable may make things easier for you.
+
+-   I *cannot* add students to a course, waive prerequisites or move them off a waitlist. If you or a friend have any questions of this nature, please reach out to the UG stats team ([ug.statistics\@utoronto.ca](mailto:ug.statistics@utoronto.ca)).
+
+    -   Waitlisted STA303 students may access course materials by [filling out this form](https://forms.office.com/r/sKWPFFE2Cd), but they will not be able to complete assessments during this time. The course is designed to accommodate this.
+
+-   Check out my [autoresponder message post](https://www.lizabolton.com/autoresponder.html) for FAQs and other useful information.
+
+### Students joining off the waitlist
+
+You do not have to submit any assessments you missed while on the waitlist. They are all knowledge basket assessments and you will have multiple future opportunities to make up those grades. See the [Syllabus](#syllabus) for more information.
+
+If you have a *friend* on the waitlist, they can sign up to receive materials [here](https://forms.office.com/r/sKWPFFE2Cd).
 
 ## How this course works {#howthiscourseworks}
 
 This course is organized into five two-week modules of learning + two one-week assessment-focus weeks.
 
-All course material will be made available through this course guide and/or in Quercus. 
+All course material will be made available through this course guide and/or in Quercus.
 
 All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savings Time begins `r daylight_savings`. You may find this time converter helpful: <https://www.timeanddate.com/worldclock/meeting.html>
 
@@ -52,7 +78,7 @@ All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savin
 
 -   Asynchronous content released at the beginning.
 
--   A synchronous class on Wednesday at 12:00 p.m. ET (L0101) and 3:00 p.m. ET (L0201).
+-   A synchronous class on Wednesday at 10:00 a.m. ET (L0101) and 3:00 p.m. ET (L0201).
 
     -   Both sessions will be the same, you only need to attend one.
 
@@ -60,29 +86,25 @@ All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savin
 
     -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [module overview](https://q.utoronto.ca/courses/204826/pages/course-overview "Course overview")page.
 
--   Weekly writing Create phase due Thursday at 6:00 p.m. ET.
+-   A knowledge basket writing task.
 
--   Weekly writing Assess phase due Friday at 6:00 p.m. ET.
+    -   Create phase due first Friday at 3:03 p.m. ET.
 
--   Weekly writing Reflect phase due (next) Monday at 6:00 p.m. ET.
+    -    Assess phase due second Tuesday at 3:03 p.m. ET.
+
+    -   Reflect phase due second Friday at 3:03 p.m. ET.
 
 -   Office hours.
 
-    -   Prof office hours will occur after the Tuesday synchronous classes, i.e. 11:10--12:00 p.m ET and 3:00--4:00 p.m., in the same [Zoom call](https://q.utoronto.ca/courses/204826/pages/join-synchronous-class "Join synchronous class").
+    -   Prof office hours will occur during the second half of the Wednesday synchronous classes, i.e. approximately 11:10--12:00 p.m ET and 4:10--5:00 p.m., in the same Zoom call.
 
-    -   TA office hours: will begin in Week 2 (TBC) and the schedule will be updated [here](https://q.utoronto.ca/courses/204826/pages/office-hours "Office hours").
-
-
-#### Students joining off the waitlist                                                                                                                                                                            
-You don't have to submit missed quizzes or writing activities or alert me that you joined the course late, these will be covered by the associated 'best of' policies. See the [Syllabus](#syllabus) for more information. 
-
-If you have a *friend* on the waitlist, they can sign up to receive materials here.
+    -   TA office hours: will take place during the Thursday tutorial times (12:00 p.m. and 5:00 p.m. ET)
 
 ## Hours expectations
 
 While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.
 
-Plan to be doing 6--8 hours of work on STA303 each _week._ In a two-week module, this may be comprised of:
+Plan to be doing 6--8 hours of work on STA303 each *week.* In a two-week module, this may be comprised of:
 
 -   2--4 hours on videos and readings
 
@@ -94,8 +116,6 @@ Plan to be doing 6--8 hours of work on STA303 each _week._ In a two-week module,
 
 -   Remaining time attending reading announcements, office hours, checking Piazza, revision, etc.
 
-### Module flow
-
 ### Communication
 
 -   Our course discussion board on [Piazza](`r piazza`) is to be used for all content and administration questions. *Only* sensitive or personal issues/questions should be sent to [sta303\@utoronto.ca](mailto:sta303@utoronto.ca). We reserve the right not to respond to emails that should be Piazza posts.
@@ -104,22 +124,17 @@ Plan to be doing 6--8 hours of work on STA303 each _week._ In a two-week module,
 
 -   There are several important [forms](#forms) that you may need if you miss an assessment due to **illness or emergency** or wish to request a **regrade** of an assessment.
 
--   I will use Quercus [announcements](`r announcements`) to share course information and updates. **Please make sure you read these**. I may also occasionally email or Querucs message you about things that relate specifically to you.
+-   I will use Quercus [announcements](`r announcements`) to share course information and updates. **Please make sure you read these**. I may also occasionally email or Quercus message you about things that relate specifically to you.
 
-### To do now
+## To do now
 
-Press the next button below to continue through this module. In the following pages you will:
+-   Read the [Syllabus](#syllabus) (pdf version [here](`r syllabus_pdf`))
 
--   Read the [Syllabus](https://q.utoronto.ca/courses/204826/assignments/syllabus "Syllabus"). 
+-   Join the [Piazza discussion board](`r piazza`).
 
--   Join the [Piazza discussion board](http://piazza.com/utoronto.ca/winter2021/sta303h11002hs).
+-   Understand the [tools](#course-tools-overview) we will be using in this course.
 
--   Understand the [tools](https://q.utoronto.ca/courses/204826/pages/course-tools "Course tools") we will be using in this course.
+-   Learn about some of the [services and supports](#student-support-services-and-resources) available to you as a U of T student.
 
--   [Optional] Introduce yourself in the[Introductions discussion board](https://q.utoronto.ca/courses/204826/discussion_topics/763676 "Introductions [optional]").
+-   Make sure you have a U of T Zoom account <https://utoronto.zoom.us/>. Update it if needed, see more [here](#zoom-zoom-zoom-zoom).
 
--   Learn about some of the [services and supports](https://q.utoronto.ca/courses/204826/pages/services-and-support "Services and support")available to you as a U of T student.
-
--   Make sure you have a U of T Zoom account <https://utoronto.zoom.us/>. 
-
-*Header photo by [Andrew Stutesman.](https://unsplash.com/@drewmark)*

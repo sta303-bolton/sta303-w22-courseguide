@@ -21,12 +21,17 @@ library(pander)
 tibble(
   Logo = c("images/course-tools/quercus.jpg" %>% pander::pandoc.image.return(),
            "images/course-tools/zoom.png" %>% pander::pandoc.image.return(),
-          "images/course-tools/forms.png" %>% pander::pandoc.image.return()),
+          "images/course-tools/forms.png" %>% pander::pandoc.image.return(),
+  "images/course-tools/markus_logo.jpeg" %>% pander::pandoc.image.return(),
+  "images/course-tools/peer-scholar.png" %>% pander::pandoc.image.return()
+  ),
   Description = c("[Quercus](https://q.utoronto.ca/) will be used for timed assessments, some submissions and announcements.",
                   "Synchronous classes and office hours will be hosted via [Zoom](https://utoronto.zoom.us). You MUST join using your U of T Zoom account to be admitted. Get your account: utoronto.zoom.us",
-                  "Microsoft Forms will be used for several important administrative forms. You will need to be signed in to your U of T account in the same browser to access these.")
+                  "Microsoft Forms will be used for several important administrative forms. You will need to be signed in to your U of T account in the same browser to access these.",
+                  "[Markus](`r markus`) will be used for the submission of code and analysis documentation for several assessments.",
+                  "peerScholar will be used for the Create, Asses and Reflect phases of the module writing and peer review tasks. You can access the peerScholar links through the associated Quercus assessments.")
 ) %>% 
-pander()
+pander::pander()
 ```
 
 ## Using RStudio with the JupyterHub

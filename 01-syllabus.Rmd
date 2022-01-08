@@ -288,7 +288,7 @@ Plan to be doing 6--8 hours of work on STA303 each week. In a **two-week module*
 
 Any request to have an assessment remarked must be submitted to [the appropriate form](https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNE02UzJaMUNQM0Q2U0RTOUlJS1JMM1dCTC4u) on the Forms page on Quercus under the following conditions:
 
--   **Wait** 24 hours after the release of grades. Use this time to go over sample solutions and course materials. Wait 24 hours after the release of grades. Use this time to go over any sample solutions and feedback, the instructions, and relevant course materials.
+-   **Wait** 24 hours after the release of grades. Use this time to go over any sample solutions and feedback, the instructions, and relevant course materials.
 
 -   After the 24-hour period has finished, you will have one week to submit your regrade request. (I.e., one week + 24 hours total.)
 
@@ -384,7 +384,7 @@ Following our course communication policy helps ensure you receive answers and s
 |                                                                                                                     | -   Allow at least 24 hours for a response during the week (Monday to Friday, ET) and do not expect responses on the weekend. Do not send a follow-up email until at least two business days (Toronto time) later.                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**NEVER** send Quercus mail to the STA303 teaching team
+**NEVER** send Quercus mail to the STA303 teaching team.
 
 **NEVER** use the 'Add Comment' option on Quercus. They will not read.
 

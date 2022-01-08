@@ -25,7 +25,7 @@ You can see the latest version of [my email autoresponder here](https://www.liza
 
 'Upward management' is basically managing your manager. ^[I used to haaaate this concept because I learned it while doing a consulting internship at a large international professional services firm and I really struggled with my manager.] If you make their life easier and help them be more effective, this should also make *your* life easier and is a good investment in your own career and skills building.
 
-While our course isn't a business, some of the basic parts of this concept apply well to your time at univeristy AND can set you up for success in graduate studies and your future career.
+While our course isn't a business, some of the basic parts of this concept apply well to your time at university AND can set you up for success in graduate studies and your future career.
 
 **But why should you put effort into upward managing me?** Well, while I will always seek to treat all students fairly and to listen to your feedback, YOU can make this easier or harder for me, and thus make this course better or worse for yourselves. 
 
@@ -37,7 +37,7 @@ For example, if I have to use all my time and energy following up on unclear ema
 * **In STA303**, this means: 
   - Using Piazza for all course admin and content questions.
   - Using the appropriate forms for accommodations and regrade requests.
-  - Emailing **sta303@utoronto.ca** for private issues not otherwise covered by the other tools, e.g. emailing me your Accommodation Serivces letter, requesting an extension to an assessment that conflicts with essential travel.
+  - Emailing **sta303@utoronto.ca** for private issues not otherwise covered by the other tools, e.g. emailing me your Accommodation Services letter, requesting an extension to an assessment that conflicts with essential travel.
   - Asking questions in office hours.
   
 
@@ -53,21 +53,21 @@ For example, if I have to use all my time and energy following up on unclear ema
 
 - **In STA303**, this looks like:
   - Everything in the right-hand column, plus the following.
-  - Starting an email with "Hi Prof. Bolton," or "Hi Liza,".^["Dear Madam" and "To my esteemed professor" make me uncomfortable.]
+  - Starting an email with "Hi Prof. Bolton," or "Hi Liza,".^["Dear Madam" and "To my esteemed professor" honestly make me uncomfortable.]
   - Sign off the email with your **preferred name** (i.e. what should I call you when I reply) and if your have different official name, include that and your UTORid below your name.
   - Subject line including [Prof. Bolton] or [TA name] if your email is for a specific person.
 
 
 ### Understand your manager's goals
 - **In business**, this might look like understanding their KPIs and how you can help make sure these are met.
-- **In STA303**, most of *my* goals are *for you*, like that you learn useful statistical skills, improve your writing skills etc. I also personally want to improve as an instructor and have fun talking about somethign I love. 
+- **In STA303**, most of *my* goals are *for you*, like that you learn useful statistical skills, improve your writing skills etc. I also personally want to improve as an instructor and have fun talking about something I love. 
   - You can help me with these goals by working on this course every week, trying your best, asking for help early and often, engaging with feedback gathering mechanisms and providing constructive feedback if something is not working.
 
 ### Demonstrate self-management and resilience while also asking for help and flagging problems early. 
 
 - **In business**, this might look like:
   - Being proactive about addressing possible problems before they occur. Managers like a 'no surprises' policy.
-  - Preparing a list of questions to cover in a meeting or to compile in an organised fashion into one email (instead of ten). 
+  - Preparing a list of questions to cover in a meeting or to compile in an organized fashion into one email (instead of ten). 
   - Searching for answers yourself before asking your manager and improving your strategies for finding available information.
 
 - **In STA303**, this looks like:
@@ -114,7 +114,7 @@ $$\epsilon_i \sim N(0, \sigma^2)$$
 
 ### What makes it a _linear_ model?
 
-A model is **linear** if it is *linear in the parameters*. That is, all the $\beta$ enter the model in a linear way. It is totally fine if the predictor varaibles enter the model in a non-linear way.
+A model is **linear** if it is *linear in the parameters*. That is, all the $\beta$ enter the model in a linear way. It is totally fine if the predictor variables enter the model in a non-linear way.
 
 #### Linear
 - $y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \epsilon_i$  
@@ -135,7 +135,7 @@ https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#ordinary-least-squar
  [freely accessible]
  
 #### Fitting linear models in R
-Section 1.6 of *Broaden your Statistical Horizons* on Mulitple linear regression (bootstrapping not assessed) https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#multreg [freely accessible]
+Section 1.6 of *Broaden your Statistical Horizons* on Multiple linear regression (bootstrapping not assessed) https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#multreg [freely accessible]
 
 #### Delicious mathematics
 

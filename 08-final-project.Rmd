@@ -1,0 +1,21 @@
+# Final project
+| **Information**                     | **Note**                                                                                                                                              |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name                                | Final project                                                                                                                                         |
+| Type (Main, Mini or Basket)         | Main                                                                                                                                                  |
+| Value                               | 45%                                                                                                                                                   |
+| Due                                 | `r final_project`                                                                                                                                     |
+| Submission instruction              | Submission: Via [Markus](`r markus`)                                                                                                            |
+| Accommodations and extension policy | There are no routine extensions granted for the final project. In exceptional circumstances, you can work with your College Registrar and me on this. |
+
+### Instructions
+
+To be announced.
+
+#### Project groups
+
+You can work on your project alone or with up to __three__ other students (regardless of section) for a group of __four__ total students.
+
+Groups will need to register a few weeks in advance of the deadline (date TBC).
+
+There will be opportunities to meet others in the class through some of the activities planned, and closer to the deadline to register groups, I will make the Piazza "Search for Teammates!" area available.

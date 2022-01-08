@@ -14,7 +14,7 @@ There are two special elements of assessment/grade calculation in this course th
 
     -   Personalize which of these assessments you do based on your interests and skills you want to develop.
 
-    -   You can 'max out' your basket: just keep putting grades in until you get to 10% (Path A) or 5% (Path B).
+    -   You can 'max out' your basket: just keep putting grades in until you get to 5%.
 
 [^assessments-1]: The Road Not Taken, by Robert Frost. But, dear traveller, you can in fact take both roads and then get whichever gives you the better mark. <https://www.poetryfoundation.org/poems/44272/the-road-not-taken>
 

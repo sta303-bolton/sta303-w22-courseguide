@@ -21,7 +21,7 @@ No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be remove
 
 *Where can I find recorded lectures and how soon can I expect them to be available?*
 
-Recorded lectures will be linked on the [Course overview](https://q.utoronto.ca/courses/204826/pages/course-overview "Course overview") page. I aim to have the links up within 24 hours of class. They take some time to process.
+Recorded lectures will be linked on the [Course overview](#overview) page. I aim to have the links up within 24 hours of class. They take some time to process.
 
 #### Sections
 

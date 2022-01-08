@@ -87,3 +87,72 @@ Answer the pre-knowledge check quiz questions to the best of your ability. In Qu
 ### Instructions
 
 Module check-ins are a short questionnaire to help me 'take the pulse' of the class. Each survey will like take only 5--10 minutes and will be available about 6:00 p.m. on the second Wednesday of each module, until 3:03 p.m. ET on the second Friday.
+
+
+## Punctuation art
+
+| **Information**                                        | **Note**                                            |
+|:-------------------------------------------------------|:----------------------------------------------------|
+| Name                                                   | Punctuation art                                     |
+| Type (Main, Mini or Basket)                            | Basket                                              |
+| Value                                                  | 1%                                                  |
+| Due                                                    | `r oneperc`                                         |
+| Submission instructions                                | Submission: Via Quercus                             |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
+
+
+### Instructions
+
+This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
+
+Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you _can_, but this task/prompt can only be used once. I.e., if you do a punctiation art based component for your professional development, you cannot also submit this assessment.
+
+#### Prompt
+
+Use R to create a representation of the entire text of a book, using only the punctuation.
+
+#### Examples
+
+  - https://www.theguardian.com/books/gallery/2016/feb/23/say-what-books-with-the-words-removed-punctuation-maps-in-pictures
+  - https://www.mentalfloss.com/article/75602/what-famous-novels-look-stripped-everything-punctuation
+  
+  
+```{r, echo=FALSE, out.width="100%", fig.align='center'}
+knitr::include_graphics("images/assessments/hound_of_the_baskervilles.png")
+```
+
+#### Skills
+
+- regular expressions  
+- ggplot (could use base if you prefer)
+
+#### Tips
+
+- Works in the public domain are probably going to be the easiest to access. [Project Gutenburg](https://www.gutenberg.org/) has .txt versions of many classics.
+
+```{r, eval=FALSE}
+# Read in the text of hounds of the Baskervilles and remove the front matter and end matter
+text <- readLines("https://www.gutenberg.org/cache/epub/3070/pg3070.txt")[0:7298+61]
+```
+
+#### Submission instructions
+
+Submit the following:
+
+- Commented code that produces your punctuation art (Rmd file)
+- Your final art output (PNG recommended)
+- A PDF one-page description that: 
+    - introduces what your output shows,
+    - how you got the text data (make sure you credit the source),
+    - notable steps in preparing the data to create your art, and
+    - a brief summary of the skills you learned or demonstrated in this task.
+- If you would be willing to have your art shared with future students, please include at the end of your write-up "I give my permission for my punctuation art to be shared [anonymously | and credited to me, <name>]". Update the statement appropriately, e.g., _I give my permission for my punctuation art to be shared and credited to me, Liza Bolton._. If you have posted it on social media or a personal website, you're welcome to also provide that link.
+
+#### Rubric
+
++---------------------+---------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------+
+|                     | **Missing or insufficient** 0%                          | P**artial** 0.5%                                                           | **Complete** 1%                             |
++=====================+=========================================================+============================================================================+=============================================+
+| **Task completion** | No submission OR instructions insufficiently satisfied. | Some appropriate work shown, but may be somewhat incomplete or irrelevant. | Prompt/instructions sufficiently satisfied. |
++---------------------+---------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------+
+
