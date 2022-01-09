@@ -503,10 +503,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Preparing a list of questions to cover in a meeting or to compile in an organized fashion into one email (instead of ten).</li>
 <li>Searching for answers yourself before asking your manager and improving your strategies for finding available information.</li>
 </ul></li>
-<li><strong>In STA303</strong>, this looks like:</li>
+<li><strong>In STA303</strong>, this looks like:
+<ul>
 <li>Putting in a little effort into find answers before posting on Piazza/asking in class. (<em>Have you searched Piazza? have you re-read/watched the assigned materials? have your checked the syllabus and recent announcements?</em>)</li>
 <li>Come to office hours often, lists of questions very welcome!</li>
 <li>Getting in touch (or asking your registrar to) <strong>early</strong> if you might hate to miss a lot of class. It is usually easier to find a solution if I know things ahead of time, or as soon as possible after.</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -676,6 +678,7 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 <p><span class="math display">\[H_0: \mu = 4000\]</span>
 <span class="math display">\[H_1: \mu \ne 4000\]</span></p>
 <p>The <code>penguins</code> dataset is already loaded, you you don’t have to run any libraries. Use the <code>t.test()</code> function run a one-sample t-test.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="m1.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">mu =</span> <span class="dv">4000</span>, <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## 
 ##  One Sample t-test
 ## 
@@ -692,6 +695,8 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 <h4><span class="header-section-number">15.6.2.5</span> Now as a linear model</h4>
 <p>First, consider the following, what would a linear regression with no predictor variables and just an intercept tell you?</p>
 <p>Create a linear regression model called <code>mod1</code>(replace the blank below) that is an ‘intercept only model’ with <code>body_mass_g</code> as the response.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="m1.html#cb8-1" aria-hidden="true" tabindex="-1"></a>mod1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data=</span>penguins)</span>
+<span id="cb8-2"><a href="m1.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod1)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = body_mass_g ~ 1, data = penguins)
@@ -709,9 +714,11 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 ## Residual standard error: 802 on 341 degrees of freedom
 ##   (2 observations deleted due to missingness)</code></pre>
 <p>It turns out the estimate from this linear regression is the same as the sample mean.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="m1.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="co">#na.rm = TRUE removes missing values</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="m1.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="co">#na.rm = TRUE removes missing values</span></span></code></pre></div>
 <pre><code>## [1] 4201.754</code></pre>
 <p>Now, recall that with the t-test, we calculate our test statistic by subtracting the hypothesized value from the mean. Let’s run the linear model again, but on the left-hand side of the formula, subtract the hypothesized value.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="m1.html#cb12-1" aria-hidden="true" tabindex="-1"></a>mod2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g<span class="dv">-4000</span> <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data=</span>penguins)</span>
+<span id="cb12-2"><a href="m1.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod2)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = body_mass_g - 4000 ~ 1, data = penguins)
@@ -741,20 +748,20 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 <p>While the linear regression approach to the one-sample t-test is exact, we can also approximate the Wilcoxon rank-sign test with linear regression. See below.</p>
 <p><img src="images/m1/wilcoxon.png" width="90%" style="display: block; margin: auto;" /></p>
 <p>Note: The above is just example from some toy data, but aims to illustrate how a t-test is treating the data and how the Wilcoxon test is treating the data.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="m1.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to get signed rank of each observation  </span></span>
-<span id="cb11-2"><a href="m1.html#cb11-2" aria-hidden="true" tabindex="-1"></a>signed_rank <span class="ot">=</span> <span class="cf">function</span>(x) <span class="fu">sign</span>(x) <span class="sc">*</span> <span class="fu">rank</span>(<span class="fu">abs</span>(x))</span>
-<span id="cb11-3"><a href="m1.html#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="m1.html#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># The wilcoxon test function </span></span>
-<span id="cb11-5"><a href="m1.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">mu =</span> <span class="dv">4000</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="m1.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to get signed rank of each observation  </span></span>
+<span id="cb14-2"><a href="m1.html#cb14-2" aria-hidden="true" tabindex="-1"></a>signed_rank <span class="ot">=</span> <span class="cf">function</span>(x) <span class="fu">sign</span>(x) <span class="sc">*</span> <span class="fu">rank</span>(<span class="fu">abs</span>(x))</span>
+<span id="cb14-3"><a href="m1.html#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="m1.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># The wilcoxon test function </span></span>
+<span id="cb14-5"><a href="m1.html#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">mu =</span> <span class="dv">4000</span>)</span></code></pre></div>
 <pre><code>## 
 ##  Wilcoxon signed rank test with continuity correction
 ## 
 ## data:  penguins$body_mass_g
 ## V = 34723, p-value = 0.0004829
 ## alternative hypothesis: true location is not equal to 4000</code></pre>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="m1.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Equivalent linear model</span></span>
-<span id="cb13-2"><a href="m1.html#cb13-2" aria-hidden="true" tabindex="-1"></a>mod3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">signed_rank</span>(penguins<span class="sc">$</span>body_mass_g<span class="dv">-4000</span>) <span class="sc">~</span> <span class="dv">1</span>)</span>
-<span id="cb13-3"><a href="m1.html#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod3)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="m1.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Equivalent linear model</span></span>
+<span id="cb16-2"><a href="m1.html#cb16-2" aria-hidden="true" tabindex="-1"></a>mod3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">signed_rank</span>(penguins<span class="sc">$</span>body_mass_g<span class="dv">-4000</span>) <span class="sc">~</span> <span class="dv">1</span>)</span>
+<span id="cb16-3"><a href="m1.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod3)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = signed_rank(penguins$body_mass_g - 4000) ~ 1)
@@ -775,13 +782,13 @@ Non-parametric tests do not assume that our outcome is Normally distributed. The
 </div>
 <div id="paired-sample-t-test-and-wilcoxon-matched-pair" class="section level4" number="15.6.2.7">
 <h4><span class="header-section-number">15.6.2.7</span> Paired sample t-test and Wilcoxon matched pair</h4>
-<p>A paired t-test is equivalent to a one sample t-test if you just consider <span class="math inline">\(x_{\text{diff}\ i} = x_{1i} - x_{2i}\)</span>, i.e., <span class="math inline">\(x_{\text{diff}\ i}\)</span> is the difference of the paired values for each observation, and proceed with <span class="math inline">\(x_{\text{diff}\ i}\)</span> as you would in the one sample case. Likewise for the Wilcoxon</p>
+<p>A paired t-test is equivalent to a one sample t-test if you just consider <span class="math inline">\(x_{\text{diff}\ i} = x_{1i} - x_{2i}\)</span>, i.e., <span class="math inline">\(x_{\text{diff}\ i}\)</span> is the difference of the paired values for each observation, and proceed with <span class="math inline">\(x_{\text{diff}\ i}\)</span> as you would in the one sample case. Likewise for the Wilcoxon.</p>
 <p>The R code (not evaluated here) would be as follows:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="m1.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Built-in Wilcoxon matched pairs</span></span>
-<span id="cb15-2"><a href="m1.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(x1, x2, <span class="at">paired =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb15-3"><a href="m1.html#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="m1.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Equivalent linear model:</span></span>
-<span id="cb15-5"><a href="m1.html#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(<span class="fu">signed_rank</span>(x1 <span class="sc">-</span> x2) <span class="sc">~</span> <span class="dv">1</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="m1.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Built-in Wilcoxon matched pairs</span></span>
+<span id="cb18-2"><a href="m1.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(x1, x2, <span class="at">paired =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb18-3"><a href="m1.html#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="m1.html#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Equivalent linear model:</span></span>
+<span id="cb18-5"><a href="m1.html#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(<span class="fu">signed_rank</span>(x1 <span class="sc">-</span> x2) <span class="sc">~</span> <span class="dv">1</span>))</span></code></pre></div>
 </div>
 </div>
 <div id="dummy-variables" class="section level3" number="15.6.3">
@@ -817,6 +824,8 @@ y_n
 <h4><span class="header-section-number">15.6.3.2</span> Getting our model matrix in R</h4>
 <p>Let’s start by fitting a model with <code>body_mass_g</code> as the response and <code>flipper_length_mm</code> and <code>species</code> as the predictor variables.</p>
 <p>(Note: Users of statistics use a lot of different words to refer to the same thing. Can you think of other terms people might use instead of <em>response</em> and <em>predictor</em>?)</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="m1.html#cb19-1" aria-hidden="true" tabindex="-1"></a>mod4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> flipper_length_mm <span class="sc">+</span> species, <span class="at">data=</span>penguins)</span>
+<span id="cb19-2"><a href="m1.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod4)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = body_mass_g ~ flipper_length_mm + species, data = penguins)
@@ -839,6 +848,7 @@ y_n
 ## Multiple R-squared:  0.7826, Adjusted R-squared:  0.7807 
 ## F-statistic: 405.7 on 3 and 338 DF,  p-value: &lt; 2.2e-16</code></pre>
 <p>Now we can use the <code>model.matrix()</code> function to extract the model matrix for <code>mod4</code>. I’ve applied <code>head()</code> to stop the entire thing being printed.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="m1.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">model.matrix</span>(mod4), <span class="at">n =</span> <span class="dv">20</span>)</span></code></pre></div>
 <pre><code>##    (Intercept) flipper_length_mm speciesChinstrap speciesGentoo
 ## 1            1               181                0             0
 ## 2            1               186                0             0
@@ -903,6 +913,7 @@ y_n
 <div id="example-1" class="section level4" number="15.6.4.4">
 <h4><span class="header-section-number">15.6.4.4</span> Example</h4>
 <p>Conduct an independent t-test to test if the mean of <code>body_mass_g</code> is the same for male and female penguins (<code>sex</code>). Add your code below. Note: you must set <code>, var.equal = TRUE</code> as one of the arguments for it two be the independent t-test. If you don’t set this we are conducting a <em>Welch’s t-test</em>. I won’t be covering this, but it is covered in the source credited at the end of this activity.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="m1.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(body_mass_g <span class="sc">~</span> sex, <span class="at">data =</span> penguins, <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## 
 ##  Two Sample t-test
 ## 
@@ -915,6 +926,8 @@ y_n
 ## mean in group female   mean in group male 
 ##             3862.273             4545.685</code></pre>
 <p>Now, based on what we’ve learned, write a linear model using the <code>lm()</code> function to do the same this as our independent t-test. Save the model as <code>mod5</code>.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="m1.html#cb25-1" aria-hidden="true" tabindex="-1"></a>mod5 <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> sex, <span class="at">data =</span> penguins)</span>
+<span id="cb25-2"><a href="m1.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod5)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = body_mass_g ~ sex, data = penguins)
@@ -939,16 +952,16 @@ y_n
 <div id="mann-whitney-u" class="section level4" number="15.6.4.5">
 <h4><span class="header-section-number">15.6.4.5</span> Mann-Whitney U</h4>
 <p>Similar idea to before, except for this test it is just rank not signed rank.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="m1.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Wilcoxon / Mann-Whitney U (multiple names)</span></span>
-<span id="cb20-2"><a href="m1.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(body_mass_g <span class="sc">~</span> sex, <span class="at">data =</span> penguins)</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="m1.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Wilcoxon / Mann-Whitney U (multiple names)</span></span>
+<span id="cb27-2"><a href="m1.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(body_mass_g <span class="sc">~</span> sex, <span class="at">data =</span> penguins)</span></code></pre></div>
 <pre><code>## 
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  body_mass_g by sex
 ## W = 6874.5, p-value = 1.813e-15
 ## alternative hypothesis: true location shift is not equal to 0</code></pre>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="m1.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># As linear model with our dummy-coded group_y2:</span></span>
-<span id="cb22-2"><a href="m1.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(<span class="fu">rank</span>(body_mass_g) <span class="sc">~</span> sex, <span class="at">data =</span> penguins))</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="m1.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># As linear model with our dummy-coded group_y2:</span></span>
+<span id="cb29-2"><a href="m1.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(<span class="fu">rank</span>(body_mass_g) <span class="sc">~</span> sex, <span class="at">data =</span> penguins))</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = rank(body_mass_g) ~ sex, data = penguins)
@@ -981,7 +994,7 @@ y_n
 </div>
 <div id="assumptions-2" class="section level4" number="15.6.5.2">
 <h4><span class="header-section-number">15.6.5.2</span> Assumptions</h4>
-<p>And it just so happens that the assumptions for the one-way ANOVA (also called the F-test) are EXACTLY the same as for the independent t-test</p>
+<p>And it just so happens that the assumptions for the one-way ANOVA (also called the F-test) are EXACTLY the same as for the independent t-test.</p>
 <p><img src="images/m1/meagain.gif" width="50%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: decimal">
 <li>The data are continuous.</li>
@@ -998,7 +1011,7 @@ y_n
 <div id="example-2" class="section level4" number="15.6.5.4">
 <h4><span class="header-section-number">15.6.5.4</span> Example</h4>
 <p>Let’s now look at body mass across species. Suppose we wanted to know if was believable that the the means body mass in grams was the same across all three species. This is when we could fit a quick ANOVA to test this. The <code>aov()</code> allows us to do this.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="m1.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">aov</span>(body_mass_g <span class="sc">~</span> species, <span class="at">data =</span> penguins))</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="m1.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">aov</span>(body_mass_g <span class="sc">~</span> species, <span class="at">data =</span> penguins))</span></code></pre></div>
 <pre><code>##              Df    Sum Sq  Mean Sq F value Pr(&gt;F)    
 ## species       2 146864214 73432107   343.6 &lt;2e-16 ***
 ## Residuals   339  72443483   213698                   

@@ -16,7 +16,7 @@ Looking forward to a great semester! See you in class on Wednesday.
 
 **Email:** [sta303\@utoronto.ca](mailto:sta303@utoronto.ca) (Put "[Prof. Bolton]" in the subject line to the email me directly)
 
-**Pronouns:** she/her
+**Pronouns:** [she/her](https://www.mypronouns.org/she-her)
 
 Before moving (back) to Canada in 2019, I had lived more than half my life in New Zealand. (I still mention New Zealand a lot in class...) My current research areas are in statistics education and online learning, as well as health disparities across ethnic groups. I used to run a small consulting company and called myself a Data Ambassador. Why? Well, lots of people are consultants. I even did an internship in management consulting once upon a time. But it wasn't a satisfying title for what I wanted my work with people to look like. I wanted something that focused on the communication and interpersonal side, not just high quality and appropriate analysis. People who aren't confident in their ability to analyse their own data need a go-between, someone who can be an ambassador for their data! While I don't do consulting any more, I love helping students build their technical and professional skills so they can go out into the world and be excellent ambassadors for data themselves.
 
@@ -30,7 +30,7 @@ Before moving (back) to Canada in 2019, I had lived more than half my life in Ne
 
 **Email:** [sta303\@utoronto.ca](mailto:sta303@utoronto.ca) (Amin will often be the one responding to your emails)
 
-**Pronouns:** he/him
+**Pronouns:** [he/him](https://www.mypronouns.org/he-him)
 
 I'm a fourth-year PhD student at the Institute of Medical Science. I have been a TA for STA130 in DoSS for the past 3 years and this is my second semester as Head TA of STA303.
 
@@ -84,7 +84,7 @@ All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savin
 
     -   You must be logged in with your U of T Zoom account ([utoronto.zoom.us](https://utoronto.zoom.us)) to access the class.
 
-    -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [module overview](`r course_overview`) page.
+    -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [course overview](`r course_overview`) page.
 
 -   A knowledge basket writing task.
 
@@ -96,9 +96,9 @@ All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savin
 
 -   Office hours.
 
-    -   Prof office hours will occur during the second half of the Wednesday synchronous classes, i.e. approximately 11:10--12:00 p.m ET and 4:10--5:00 p.m., in the same Zoom call.
+    -   __Prof office hours__ will occur during the second half of the Wednesday synchronous classes, i.e. approximately 11:10--12:00 p.m ET and 4:10--5:00 p.m., in the same Zoom call.
 
-    -   TA office hours: will take place during the Thursday tutorial times (12:00 p.m. and 5:00 p.m. ET)
+    -   __TA office hours__ will take place during the Thursday tutorial times (12:00 p.m. and 5:00 p.m. ET) on the _second_ Thursday of each module.
 
 ## Hours expectations
 
@@ -136,5 +136,5 @@ Plan to be doing 6--8 hours of work on STA303 each *week.* In a two-week module,
 
 -   Learn about some of the [services and supports](#student-support-services-and-resources) available to you as a U of T student.
 
--   Make sure you have a U of T Zoom account <https://utoronto.zoom.us/>. Update it if needed, see more [here](#zoom-zoom-zoom-zoom).
+-   Make sure you have a U of T Zoom account, <https://utoronto.zoom.us/>. Update it if needed, see more [here](#zoom-zoom-zoom-zoom).
 

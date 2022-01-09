@@ -71,9 +71,9 @@ For example, if I have to use all my time and energy following up on unclear ema
   - Searching for answers yourself before asking your manager and improving your strategies for finding available information.
 
 - **In STA303**, this looks like:
- - Putting in a little effort into find answers before posting on Piazza/asking in class. (*Have you searched Piazza? have you re-read/watched the assigned materials? have your checked the syllabus and recent announcements?*)
- - Come to office hours often, lists of questions very welcome!
- - Getting in touch (or asking your registrar to) **early** if you might hate to miss a lot of class. It is usually easier to find a solution if I know things ahead of time, or as soon as possible after.
+  - Putting in a little effort into find answers before posting on Piazza/asking in class. (*Have you searched Piazza? have you re-read/watched the assigned materials? have your checked the syllabus and recent announcements?*)
+  - Come to office hours often, lists of questions very welcome!
+  - Getting in touch (or asking your registrar to) **early** if you might hate to miss a lot of class. It is usually easier to find a solution if I know things ahead of time, or as soon as possible after.
 
 
 ## Recap of linear models
@@ -328,7 +328,7 @@ The `penguins` dataset is already loaded, you you don't have to run any librarie
 
 
 
-```{r onesamplt}
+```{r onesamplt, echo=T}
 t.test(penguins$body_mass_g, mu = 4000, var.equal = TRUE)
 ```
 
@@ -339,21 +339,21 @@ First, consider the following, what would a linear regression with no predictor 
 
 Create a linear regression model called `mod1`(replace the blank below) that is an 'intercept only model' with `body_mass_g` as the response.
 
-```{r onesamptlin-check}
+```{r onesamptlin-check, echo=T}
 mod1 <- lm(body_mass_g ~ 1, data=penguins)
 summary(mod1)
 ```
 
 It turns out the estimate from this linear regression is the same as the sample mean. 
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, echo=T}
 mean(penguins$body_mass_g, na.rm = TRUE) #na.rm = TRUE removes missing values
 ```
 
 Now, recall that with the t-test, we calculate our test statistic by subtracting the hypothesized value from the mean. Let's run the linear model again, but on the left-hand side of the formula, subtract the hypothesized value.
 
 
-```{r onesamptlin2}
+```{r onesamptlin2, echo=T}
 mod2 <- lm(body_mass_g-4000 ~ 1, data=penguins)
 summary(mod2)
 ```
@@ -396,7 +396,7 @@ summary(mod3)
 
 #### Paired sample t-test and Wilcoxon matched pair
 
-A paired t-test is equivalent to a one sample t-test if you just consider $x_{\text{diff}\ i} = x_{1i} - x_{2i}$, i.e., $x_{\text{diff}\ i}$ is the difference of the paired values for each observation, and proceed with $x_{\text{diff}\ i}$ as you would in the one sample case. Likewise for the Wilcoxon 
+A paired t-test is equivalent to a one sample t-test if you just consider $x_{\text{diff}\ i} = x_{1i} - x_{2i}$, i.e., $x_{\text{diff}\ i}$ is the difference of the paired values for each observation, and proceed with $x_{\text{diff}\ i}$ as you would in the one sample case. Likewise for the Wilcoxon. 
 
 The R code (not evaluated here) would be as follows:
 
@@ -450,7 +450,7 @@ Let's start by fitting a model with `body_mass_g` as the response and `flipper_l
 
 (Note: Users of statistics use a lot of different words to refer to the same thing. Can you think of other terms people might use instead of _response_ and _predictor_?)
 
-```{r modmat1}
+```{r modmat1, echo=T}
 mod4 <- lm(body_mass_g ~ flipper_length_mm + species, data=penguins)
 summary(mod4)
 ```
@@ -458,7 +458,7 @@ summary(mod4)
 Now we can use the `model.matrix()` function to extract the model matrix for `mod4`. I've applied `head()` to stop the entire thing being printed.
 
 
-```{r modmat2}
+```{r modmat2, echo=T}
 head(model.matrix(mod4), n = 20)
 ```
 
@@ -519,14 +519,14 @@ We then compare this t value to the t-distribution with degrees of freedom $df =
 Conduct an independent t-test to test if the mean of `body_mass_g` is the same for male and female penguins (`sex`). Add your code below. Note: you must set `, var.equal = TRUE` as one of the arguments for it two be the independent t-test. If you don't set this we are conducting a *Welch's t-test*. I won't be covering this, but it is covered in the source credited at the end of this activity.
 
 
-```{r twosamp}
+```{r twosamp, echo=T}
 t.test(body_mass_g ~ sex, data = penguins, var.equal = TRUE)
 ```
 
 
 Now, based on what we've learned, write a linear model using the `lm()` function to do the same this as our independent t-test. Save the model as `mod5`.
 
-```{r twosamplin}
+```{r twosamplin, echo=T}
 mod5 <- lm(body_mass_g ~ sex, data = penguins)
 summary(mod5)
 ```
@@ -560,7 +560,7 @@ I hope this sounds a bit like the next evolution from the independent t-test...
 
 #### Assumptions
 
-And it just so happens that the assumptions for the one-way ANOVA (also called the F-test) are EXACTLY the same as for the independent t-test
+And it just so happens that the assumptions for the one-way ANOVA (also called the F-test) are EXACTLY the same as for the independent t-test.
 
 ```{r, echo=FALSE, fig.align='center', out.width="50%"}
 
