@@ -230,7 +230,7 @@ Note: In  this chart and in future analyses involving `sex`, penguins with an un
 
 ## Common statistical tests as linear regression
 
-[There is an interactive version of the below notes at this link.](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303_activities&urlpath=shiny%2Fsta303_activities%2Finst%2Ftutorials%2Fsta303_w1_tests%2F&branch=main)
+[There is an interactive version of the below notes at this link.](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m1_tests%2F&branch=master)
 
 ```{r setup, include = FALSE}
 install.packages("palmerpenguins", repos = "https://cloud.r-project.org")
@@ -657,3 +657,19 @@ if (knitr:::is_latex_output()) {
 Web version embedding for MyMedia is not great, I would recommending opening the link and/or going full screen. 
 
 <div><iframe src="https://play.library.utoronto.ca/watch/f395cfcc26b4009cbc28c1aa9a86096c" width="900" height="500" allowfullscreen="allowfullscreen"></iframe></div>
+
+## Reading strategy: previewing and skimming
+
+In graduate school and/or in future employment, it is likely that you will need gather and synthesize information from a range of written sources. To decide if a source is useful to you, and to be as efficient and effective as possible, it is important to have strategies for approaching reading. 
+
+In the next module, for the knowledge basket writing task, you will be guided through reading an article called Science isn't broken and asked to respond to it. You can also keep this in mind as a stategry for 'first reads' of course notes, or when re-reading to find some.
+
+__Previewing__ a written text helps you think about the origins and purpose of the text, how it is organised, and where you expect to find information.
+
+__Skimming__ is done after previewing, and is a strategy of reading key paragraphs, like the first and last which usually introduce and conclude the piece, as well as reading the opening sentences of in-between paragraphs and paying attention to figures, captions and any other emphasized text.
+
+## Getting ahead on Module 2
+
+Students who are unfamiliar with the `tidyverse`, especially `dplyr` and `ggplot2`, may find Module 2 to be quite full on. You may wish to start the readings for the next module early in this case.
+
+**Wickham & Grolemund. *R for Data Science*. 2017 [Chapter 3: Data Visualization](https://r4ds.had.co.nz/data-visualisation.html) and [Chapter 5: Data transformation](https://r4ds.had.co.nz/transform.html)**

@@ -171,7 +171,7 @@ The topics listed below are subject to change.
 |                                                                                           |                                                                  |
 | -   Ethical professional practice                                                         |                                                                  |
 +-------------------------------------------------------------------------------------------+------------------------------------------------------------------+
-| **Feb 7--Feb 18 Module 3: Linear mixed models**                                           | **FEB 14** Valentine's Day 💕                                     |
+| **Feb 7--18 Module 3: Linear mixed models**                                               | **FEB 14** Valentine's Day 💕                                     |
 |                                                                                           |                                                                  |
 | -   Identifying correlated data                                                           | **FEB 17** Portfolio due                                         |
 |                                                                                           |                                                                  |

@@ -84,7 +84,7 @@ All times listed are 'Toronto time', i.e. Eastern Time. Note that Daylight Savin
 
     -   You must be logged in with your U of T Zoom account ([utoronto.zoom.us](https://utoronto.zoom.us)) to access the class.
 
-    -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [module overview](https://q.utoronto.ca/courses/204826/pages/course-overview "Course overview")page.
+    -   Synchronous classes will be recorded. You're expected to watch the recording if you cannot attend live. They will be posted on the [module overview](`r course_overview`) page.
 
 -   A knowledge basket writing task.
 

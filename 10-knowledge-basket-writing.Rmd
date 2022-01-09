@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 ```{r, echo=FALSE}
 source("links.R")
 ```
@@ -107,9 +112,26 @@ Discuss what you consider the most important dos and don’ts when giving peer f
 
 #### Rubric
 
-|                       | **Poor or Missing**                                                                                                                            | **Adequate**                                                                                                          | **Good**                                                                                              | **Excellent**                                                                                                                            |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| **Addresses prompt**  | No response OR does not address one of the prompts for this week.                                                                              | While the prompt is somewhat addressed, there is a lot missing and/or much of the response is not relevant/off-topic. | Prompt is addressed, though may go somewhat off-topic at points, or lacks some depth in its coverage. | Prompt is clearly and comprehensively addressed.                                                                                         |
-| **Structure**         | No response OR there is no structure, very difficult to follow.                                                                                | Some structure but difficult to follow                                                                                | The organization follows some logical structure                                                       | Well organized, follows a logical structure.                                                                                             |
-| **Writing mechanics** | No response OR considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice. | Multiple sections are difficult to read, but is otherwise understandable.                                             | Slight difficulty in understanding one or two sections.                                               | Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning. |
-| **Conclusion**        | No response OR there is no concluding sentence(s).                                                                                             | The conclusion is weak not well supported.                                                                            | A conclusion is present but does not completely summarise the central idea.                           | There is a clear central idea that is well summarised in a concluding sentence(s).                                                       |
+<br>
+
+<br>
+
+```{r, echo=FALSE, message=FALSE}
+require(tidyverse)
+pd_prop_rubric <- read_csv("rubrics/m1-writing.csv") 
+
+if (knitr:::is_latex_output()) {
+  pd_prop_rubric %>% 
+  kableExtra::kable(booktabs = T) %>%
+  kableExtra::kable_styling(latex_options = c("striped"), font_size = 8) %>% 
+        kableExtra::column_spec(2:5, width = "12em") 
+  
+  
+} else {
+ pd_prop_rubric %>% 
+  kableExtra::kable() %>%
+  kableExtra::kable_styling() %>% 
+  kableExtra::scroll_box(width = "100%")
+}
+
+```

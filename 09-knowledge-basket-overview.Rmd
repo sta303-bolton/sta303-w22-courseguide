@@ -1,35 +1,131 @@
 # Knowledge basket overview
 
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| Assessment                                                                                       | \%      | Due date                                |
-+==================================================================================================+=========+=========================================+
-| [Pre-knowledge check: completion](https://q.utoronto.ca/courses/253305/quizzes/235900)           | 0.5     | Jan 20                                  |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| [Pre-knowledge check: 80%+ or workshop](https://q.utoronto.ca/courses/253305/assignments/781204) | 0.5     | Jan 20 (80%+ score) \| Feb 2 (workshop) |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| ['Getting to know you' survey](https://q.utoronto.ca/courses/253305/quizzes/235067)              | 0.1     | Jan 13                                  |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| Professional development task proposal                                                           | 1       | Feb 3                                   |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| Professional development task evidence & reflection                                              | 3       | Mar 31                                  |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| [Writing & peer review (Create-Assess-Reflect) x 5](#knowledge-basket-writing-and-peer-feedback) | 0.5 X 5 | Friday-Tuesday-Friday each Module       |
-|                                                                                                  |         |                                         |
-| -   [Module 1](https://q.utoronto.ca/courses/253305/assignments/781343)                          |         |                                         |
-|                                                                                                  |         |                                         |
-| -   [Module 2](https://q.utoronto.ca/courses/253305/assignments/782393)                          |         |                                         |
-|                                                                                                  |         |                                         |
-| -   [Module 3](https://q.utoronto.ca/courses/253305/assignments/782398)                          |         |                                         |
-|                                                                                                  |         |                                         |
-| -   [Module 4](https://q.utoronto.ca/courses/253305/assignments/782399)                          |         |                                         |
-|                                                                                                  |         |                                         |
-| -   [Module 5](https://q.utoronto.ca/courses/253305/assignments/782400)                          |         |                                         |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
-| [Module check-in x 5](#module-check-ins)                                                         | 0.1 X 5 | Last Friday of each Module              |
-|                                                                                                  |         |                                         |
-| -   [Module 1](https://q.utoronto.ca/courses/253305/quizzes/236273)                              |         |                                         |
-|                                                                                                  |         |                                         |
-| -   [Module 2](https://q.utoronto.ca/courses/253305/quizzes/236279)                              |         |                                         |
-|                                                                                                  |         |                                         |
-| -   [Module 3](https://q.utoronto.ca/courses/253305/quizzes/236280)                              |         |                                         |
-+--------------------------------------------------------------------------------------------------+---------+-----------------------------------------+
+You can max your knowledge basket out to the full 5% of your final grade.
+
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| Assessment                                                                                       | Possible percentage            | Due date                                            |
++:=================================================================================================+:===============================+:====================================================+
+| [Pre-knowledge check: completion](https://q.utoronto.ca/courses/253305/quizzes/235900)           | 0.5%                           | Jan 20                                              |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| [Pre-knowledge check: 80%+ or workshop](https://q.utoronto.ca/courses/253305/assignments/781204) | 0.5%                           | Jan 20 (80%+ score) \| Feb 2 (workshop)             |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| ['Getting to know you' survey](https://q.utoronto.ca/courses/253305/quizzes/235067)              | 0.1%                           | Jan 13                                              |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| Professional development task proposal                                                           | 1% (graded on quality)         | Feb 3                                               |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| Professional development task evidence & reflection                                              | 3% (graded on quality)         | Mar 31                                              |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| [Writing & peer review (Create-Assess-Reflect) x 5](#knowledge-basket-writing-and-peer-feedback) | 0.5% x 5                       | Friday-Tuesday-Friday each Module                   |
+|                                                                                                  |                                |                                                     |
+| -   [Module 1](https://q.utoronto.ca/courses/253305/assignments/781343)                          |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   [Module 2](https://q.utoronto.ca/courses/253305/assignments/782393)                          |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   [Module 3](https://q.utoronto.ca/courses/253305/assignments/782398)                          |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   [Module 4](https://q.utoronto.ca/courses/253305/assignments/782399)                          |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   [Module 5](https://q.utoronto.ca/courses/253305/assignments/782400)                          |                                |                                                     |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| [Module check-in x 5](#module-check-ins)                                                         | 0.1% X 5                       | Last Friday of each Module                          |
+|                                                                                                  |                                |                                                     |
+| -   [Module 1](https://q.utoronto.ca/courses/253305/quizzes/236273)                              |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   [Module 2](https://q.utoronto.ca/courses/253305/quizzes/236279)                              |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   [Module 3](https://q.utoronto.ca/courses/253305/quizzes/236280)                              |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   Module 4                                                                                     |                                |                                                     |
+|                                                                                                  |                                |                                                     |
+| -   Module 5                                                                                     |                                |                                                     |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| Team Up! Activities                                                                              | 0.5% (graded on quality) X \~5 | First Thursdays of modules (not guaranteed for all) |
+|                                                                                                  |                                |                                                     |
+| -   MOdule 1                                                                                     |                                |                                                     |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+| Punctuation art                                                                                  | 1% (graded on quality)         | April 8                                             |
++--------------------------------------------------------------------------------------------------+--------------------------------+-----------------------------------------------------+
+
+
+### Planning and tips
+
+There are LOTS of ways to fill up your knowledge basket and I really encourage you to spend some time thinking about both your own working style, what the rhythym of your semester is going to look like and, most importantly, __what your personal learning and growth goals are__. Past students have told me they hated doing the writing tasks, but then embarked on a summer internship and found the practice had been really helpful to them and allowed them to stand out as both data cruncher AND communicator. 
+
+DO NOT LEAVE THIS TILL THE END! There will not be make up tasks offered if you get to the end of the semester and realize you're missing a few percentage points.
+
+The knowledge basket activities listed in the (syllabus)(#syllabus) are guaranteed, and there will also be some additional opportunities offered (for example the punctuation art and Team Up! options also included in the examples below).
+
+### Examples
+
+All the student below would earn their full 5%, but in very different ways.
+
+#### Student A
+
++--------------------------+----------------------+------------------------+
+| Task                     | Example grade/note   | Contribution to basket |
++:=========================+:=====================+:=======================+
+| Module 1 Team Up!        | 8% score             | 0.4%                   |
++--------------------------+----------------------+-----------------------+
+| Pre-knowledge check      | 60% score            | 0.5%                   |
++--------------------------+----------------------+------------------------+
+| Module 5 writing task    | Completed all phases | 0.5%                   |
++--------------------------+----------------------+------------------------+
+| PD Proposal              | 70% score            | 0.7%                   |
++--------------------------+----------------------+------------------------+
+| PD Evidence & reflection | 70% score            | 2.1%                   |
++--------------------------+----------------------+------------------------+
+| Punctuation art          | 100% score           | 1%                     |
++--------------------------+----------------------+------------------------+
+
+#### Student B
+
++--------------------------+---------------------+------------------------+
+| Task                     | Example grade/note  | Contribution to basket |
++:=========================+:====================+:=======================+
+| Pre-knowledge check      | 88% score           | 1\%                    |
++--------------------------+---------------------+------------------------+
+| PD Proposal              | 100% score          | 1\%                    |
++--------------------------+---------------------+------------------------+
+| PD Evidence & reflection | 990% score          | 2.7%                   |
++--------------------------+---------------------+------------------------+
+| Punctuation art          | 100%                | 1\%                    |
++--------------------------+---------------------+------------------------+
+
+
+#### Student C
+
++------------------------+-----------------------------+------------------------+
+| Task                   | Example grade/note          | Contribution to basket |
++:=======================+:============================+:=======================+
+| Pre-knowledge check    | 67% score                   | 0.5%                   |
++------------------------+-----------------------------+------------------------+
+| Pre-knowledge check    | Workshop                    | 0.5%                   |
++------------------------+-----------------------------+------------------------+
+| Module 1 check-in      | Complete                    | 0.1%                   |
++------------------------+-----------------------------+------------------------+
+| Module 2 check-in      | Complete                    | 0.1%                   |
++------------------------+-----------------------------+------------------------+
+| Module 3 check-in      | Complete                    | 0.1%                   |
++------------------------+-----------------------------+------------------------+
+| Module 4 check-in      | Complete                    | 0.1%                   |
++------------------------+-----------------------------+------------------------+
+| Module 5 check-in      | Complete                    | 0.1%                   |
++------------------------+-----------------------------+------------------------+
+| Module 1 Team Up!      | 80% score                   | 0.4%                   |
++------------------------+-----------------------------+------------------------+
+| Module 2 Team Up!      | 70% score                   | 0.35%                  |
++------------------------+-----------------------------+------------------------+
+| Module 3 Team Up!      | 85% score                   | 0.425%                 |
++------------------------+-----------------------------+------------------------+
+| Module 4 Team Up!      | 50% score                   | 0.25%                  |
++------------------------+-----------------------------+------------------------+
+| Module 5 Team Up!      | 10% score                   | 0.5%                   |
++------------------------+-----------------------------+------------------------+
+| Module 1 writing task  | Completed all phases        | 0.5%                   |
++------------------------+-----------------------------+------------------------+
+| Module 2 writing task  | Completed Create phase only | 0.245%                 |
++------------------------+-----------------------------+------------------------+
+| Module 3 writing task  | Completed all phases        | 0.5%                   |
++------------------------+-----------------------------+------------------------+
+| Module 5 writing task  | Completed all phases        | 0.5%                   |
++------------------------+-----------------------------+------------------------+

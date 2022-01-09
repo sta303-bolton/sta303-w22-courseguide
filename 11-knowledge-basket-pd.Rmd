@@ -373,10 +373,9 @@ You do not *have* to set out your writing in this way to get full marks, but we 
 
 ### Rubric
 
-```{=tex}
 \newpage
 \blandscape
-```
+
 ```{r, echo=FALSE, message=FALSE}
 require(tidyverse)
 pd_prop_rubric <- read_csv("rubrics/pd-evidence.csv") 

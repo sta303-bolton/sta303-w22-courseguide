@@ -6,6 +6,7 @@ yes_extend_policy = "In the case of a personal illness/emergency, a [declaration
 # Links
 
 piazza = "https://piazza.com/class/kx47tj4fmy65dg"
+course_overview = "https://q.utoronto.ca/courses/253305/pages/course-overview"
 
 syllabus_pdf = "https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/STA303-1002_W22_syllabus.pdf"
 

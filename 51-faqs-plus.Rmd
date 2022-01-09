@@ -21,7 +21,7 @@ No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be remove
 
 *Where can I find recorded lectures and how soon can I expect them to be available?*
 
-Recorded lectures will be linked on the [Course overview](#overview) page. I aim to have the links up within 24 hours of class. They take some time to process.
+Recorded lectures will be linked on the [Course overview](`r course_overview`) page. I aim to have the links up within 24 hours of class. They take some time to process.
 
 #### Sections
 
@@ -35,7 +35,7 @@ Yes. The only difference is when your synchronous class is. See the below questi
 
 Yes!\*
 
-\*If the number of attendees is getting too close to the call cap of 300 (this is a Zoom license thing), preference will be given to those enrolled in the session and others will be asked to leave. Any Team Up! activity bonuses will also be applied-section/session does not matter.
+\*If the number of attendees is getting too close to the call cap of 300 (this is a Zoom license thing), preference will be given to those enrolled in the session and others will be asked to leave. Any Team Up! activity bonuses will also be applied—section/session does not matter.
 
 *Why can't I access the class/office hour Zoom meeting?*
 
