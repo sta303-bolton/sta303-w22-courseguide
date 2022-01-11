@@ -54,6 +54,8 @@ final_project = "Thursday, April 7, 2022 at 3:03 p.m. ET for 2% pt bonus. Submis
 assignments_link = "https://q.utoronto.ca/courses/253305/assignments"
 
 oneperc = "Friday, April 8, 2022 at 3:03 p.m. ET"
+punctart_link = "https://q.utoronto.ca/courses/253305/assignments/786424"
+
 
 #### Writing
 m1_c = "Friday, January 14, 2022 at 3:03 p.m ET"

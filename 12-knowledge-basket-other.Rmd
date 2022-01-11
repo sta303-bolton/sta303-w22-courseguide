@@ -138,7 +138,7 @@ Module check-ins are a short questionnaire to help me 'take the pulse' of the cl
 | Type (Main, Mini or Basket)                            | Basket                                              |
 | Value                                                  | 1%                                                  |
 | Due                                                    | `r oneperc`                                         |
-| Submission instructions                                | Submission: Via Quercus                             |
+| Submission instructions                                | Submission: [Via Quercus ](`r punctart_link`)                            |
 | Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
 
 
