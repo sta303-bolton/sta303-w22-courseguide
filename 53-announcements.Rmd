@@ -2,20 +2,89 @@
 
 This is mostly to aid searching, as you can easily search the course guide, but not always as easily the full text of announcements on Quercus.
 
-+-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Title (and link)                                                                          | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Key topics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-+:==========================================================================================+:==============================================================================+:====================================================================================================================================================================================+
-| [Welcome to STA303/1002!](https://q.utoronto.ca/courses/253305/discussion_topics/1558090) | 2022-01-10 3:03 p.m. ET                                                       | -   Welcome                                                                                                                                                                         |
-|                                                                                           |                                                                               |                                                                                                                                                                                     |
-|                                                                                           |                                                                               | -   Course structure and delivery                                                                                                                                                   |
-|                                                                                           |                                                                               |                                                                                                                                                                                     |
-|                                                                                           |                                                                               | -   How the course is managing online/in-person                                                                                                                                     |
-|                                                                                           |                                                                               |                                                                                                                                                                                     |
-|                                                                                           |                                                                               | -   Communication policy                                                                                                                                                            |
-|                                                                                           |                                                                               |                                                                                                                                                                                     |
-|                                                                                           |                                                                               | -   To dos                                                                                                                                                                          |
-|                                                                                           |                                                                               |                                                                                                                                                                                     |
-|                                                                                           |                                                                               | -   Volunteer notetaker role                                                                                                                                                        |
-|                                                                                           |                                                                               |                                                                                                                                                                                     |
-|                                                                                           |                                                                               | -   Volunteer student representative role                                                                                                                                           |
-+-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+-------------------------+----------------------------------------------------------+
+| Title (and link)                                                                          | Date                    | Key topics                                               |
++:==========================================================================================+:========================+:=========================================================+
+| [Welcome to STA303/1002!](https://q.utoronto.ca/courses/253305/discussion_topics/1558090) | 2022-01-10 3:03 p.m. ET | -   Welcome                                              |
+|                                                                                           |                         |                                                          |
+|                                                                                           |                         | -   Course structure and delivery                        |
+|                                                                                           |                         |                                                          |
+|                                                                                           |                         | -   How the course is managing online/in-person          |
+|                                                                                           |                         |                                                          |
+|                                                                                           |                         | -   Communication policy                                 |
+|                                                                                           |                         |                                                          |
+|                                                                                           |                         | -   To dos                                               |
+|                                                                                           |                         |                                                          |
+|                                                                                           |                         | -   [Volunteer notetaker role](#notetaker)               |
+|                                                                                           |                         |                                                          |
+|                                                                                           |                         | -   [Volunteer student representative role](#studentrep) |
++-------------------------------------------------------------------------------------------+-------------------------+----------------------------------------------------------+
+
+### Volunteer notetaker needed for STA303  {#notetaker}
+
+The volunteer notetaking program is one of the most commonly used resources provided to students registered with Accessibility Services. Here at the University of Toronto, the accessibility office is seeking dependable volunteer note-takers to assist students living with a disability to achieve academic success.
+
+Volunteers report that by giving back to the U of T community, their class attendance and notetaking skills improve.
+
+To become a volunteer notetaker, all you must do is attend classes regularly & submit/upload your notes consistently/weekly. Volunteers can receive co-curricular credit(s) and/or a certificate of appreciation and/or be eligible for year-end prize draws.
+
+[To become a volunteer note-taker, please follow these 4 steps]{.ul}:
+
+1.  Register Online as a Volunteer Note-Taker at: [https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx](https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx)
+
+2.  Click on Volunteer Notetakers, and sign in using your UTORid.
+
+3.  Select the course(s) you wish to take notes for. Please note: you do NOT need to upload sample notes or be selected as a volunteer to begin uploading your notes.
+
+4.  Start uploading notes.
+
+Email us at [as.notetaking\@utoronto.ca](mailto:as.notetaking@utoronto.ca) if you have questions or require any assistance with uploading notes. If you are no longer able to upload notes for a course, please also let us know immediately. For more information about the Accessibility Services Peer Notetaking program, please visit [https://studentlife.utoronto.ca/program/volunteer-note-taking/](https://studentlife.utoronto.ca/program/volunteer-note-taking)]. Thank you for your support and for making notes more accessible for our students.\
+
+*AS Note-taking Team\
+*
+
+------------------------------------------------------------------------
+
+### Looking for student representatives for STA303 {#studentrep}
+
+Our course is part of a small pilot of student representative pilot for the Department of Statistical Sciences and I am looking for two undergraduate student representatives to work with me to represent our course. (STA1002 students, there isn't a grad version of this, but you can also provide feedback to these reps and I encourage you to also reach out to me directly!)
+
+Student representatives work with their instructor to solicit and respond to student feedback throughout the semester. Representatives talk with their instructors about how the course is going, provide feedback to the department about student needs more generally and learn about department resources so that they can help connect students to these, as relevant.
+
+You can learn more about the experience from previous reps [here](https://www.statistics.utoronto.ca/news/new-pilot-program-enhances-academic-experience-giving-students-voice).
+
+#### The role of a student representative
+
+Once a rep is selected, they will:
+
+-   Attend a mandatory training session.
+
+-   Have their email made available to the class on Quercus so students can contact them. They may also introduce themselves in a synchronous class, or write a small blurb for an announcement or create a pre-recorded video. This is up to the student/instructor team.
+
+-   Reach out to students to elicit feedback. Additional tasks (e.g., helping with optional student pulse surveys or organising study groups or class events, etc.) would be left to the discretion of the student representative and instructor (they are *not* a required part of the program).  
+
+-   Keep in regular contact with the instructor as issues or concerns arise.
+
+#### Benefits of being a student representative
+
+-   Being part of creating a great learning experience for themselves and others.
+
+-   Networking with other students and members of the Department.
+
+-   Opportunities to work closely with an instructor that may mean they could be a strong referee for you and/or lead to taking a reading course with them etc.
+
+-   A chance to demonstrate and improve communication, leadership, and organisational skills.
+
+-   Something to put on a CV.
+
+#### How to become a rep
+
+**If you are eligible (see below), you can put yourself forward via [this form](https://forms.office.com/r/3ZjP0TBpQd).** Please make sure you choose the correct section, where applicable! Student representatives for each section will be selected via lottery from the eligible students that have expressed interest by Monday, January 24 at 6:00 p.m. ET.  
+
+#### Eligibility criteria
+
+-   You will need to be available to attend an online training, 11:10 a.m.--12:00 p.m. ET on Friday, 28 January 2022.
+
+-   You must be enrolled in the section you put yourself forward for.
+
+-   You *don't* have to be enrolled in a DoSS program to put yourself forward for the role, though it may be of more interest/use to you if you are.

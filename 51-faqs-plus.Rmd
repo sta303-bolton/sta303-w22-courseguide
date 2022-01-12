@@ -2,7 +2,7 @@
 
 ## Frequently asked questions
 
-While [Piazza](%60r%20piazza%60) is our main class question and answer board, this page will have some static Questions and Answers for frequently asked questions. Use Cmd + F (Mac) or Ctrl + F (PC) to search for keywords on this page.
+While [Piazza](`r `piazza`) is our main class question and answer board, this page will have some static Questions and Answers for frequently asked questions. Use Cmd + F (Mac) or Ctrl + F (PC) to search for keywords on this page.
 
 Additionally, make sure you're familiar with the [Syllabus](#syllabus). I've tried to explain as much as I could there.
 
@@ -83,7 +83,7 @@ Request for a Driver Change using the red button at the top right of your Team U
 
 ### References
 
-*Can you (Prof. Bolton) write me a reference? I'm desperate!*
+*Can you (Prof. Bolton) write me a reference?*
 
 Please read my personal policy [here](https://www.lizabolton.com/references.html) to get a sense of under what circumstances I could write for you, but basically, a good mark in one class is not sufficient and you need to have at least two 'activities' with me. [If you believe you meet my basic criteria, you can request a reference from me [here](https://forms.office.com/r/XHqjGXjCru).]{style="background-color: #FFD700"} I will then accept or decline based on the the information provided.
 

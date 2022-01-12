@@ -94,7 +94,7 @@ Your mark for this assessment will be based on participation. There will be sepa
 +--------------------------------------------------------+----------------------------------------------------+
 | Due                                                    | __Create phase__: `r m1_c`;  <br> __Assess phase__: `r m1_a`; <br> __Reflect phase__: `r m1_r`;                                |
 +--------------------------------------------------------+----------------------------------------------------+
-| Submission instructions                                | Submission: [Via peerScholar](`r know_survey_link`)                |
+| Submission instructions                                | Submission: [Via peerScholar](`r m1_link`)                |
 |                                                        |                                                    |
 |                                                        | Marked for completion              |
 +--------------------------------------------------------+----------------------------------------------------+
@@ -107,7 +107,7 @@ Make sure you are familiar with the [general instructions](#writinggeneral) for 
 
 #### M1 Prompt
 
-Discuss what you consider the most important dos and don’ts when giving peer feedback. What will make your peers' feedback most valuable to you?
+Discuss what you consider the most important dos and don'ts when giving peer feedback. What will make your peers' feedback most valuable to you?
 
 
 #### M1 Rubric
