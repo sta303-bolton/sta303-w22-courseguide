@@ -46,6 +46,105 @@ We will be using R through RStudio to conduct analyses in this course. If you ha
 
 Link: <https://rstudio-with-jupyerhub-uoft.netlify.app>.
 
+
+## Team Up!
+
+[Link to student-facing Quercus Support resources.](https://q.utoronto.ca/courses/46670/pages/integration-team-up-for-students)
+
+Participating in Team Up! activities can earn you knowledge basket points. They will be based on how well your team does, so work together and give it a good effort. 
+
+You will complete the following 5 steps:
+.midi[
+1. **Introductions** (first/personal name + a one-word description of how your week is going so far). Use this time to confirm everyone understands the instructions.
+2. **Driver** sets up Team Up! group
+3. **Members** join Team Up! group
+4. Complete the activity
+5. **Submit** the activity
+
+
+### Step 1: Decide on roles
+
+You will need: 
+
+* An **Instructions Master** who is responsible for helping the team follow these instructions carefully.  
+* A **Screensharer** who is responsible for sharing the activity on their screen. 
+
+* A **Driver** for the Team Up! side of the activity. The Driver acts as team leader, responsible for navigating the quiz, confirming the team's final agreed upon answer to a question, and submitting the completed quiz score to Quercus.The Driver has a steering wheel next to their ID and is differently coloured than other Team Members.
+
+
+Team Members (other than the Driver) participate and choose vote on answers, so all team mates can see what they have chosen, but they cannot submit their choices to Team Up!.
+
+
+DECIDE THIS BEFORE CLICKING ANYTHING TO DO WITH TEAM UP!
+
+### Step 2: Driver sets up group
+
+The person in your group whose first/personal name comes last alphabetically will be the Leader (Driver) for the session.
+
+**The Driver must do the below steps FIRST to get the group code.** Then they will share the group code with all the members of the group so they can also join.
+
+1  Log-in to Quercus from your device (phone, tablet, computer).
+
+1 Click on the Team Up! assignment from the [Course Overview](`r course_overview`) page.
+
+
+2 Click ‘Go to Tool’. If it is not appearing, refresh your page or try a different browser.
+
+```{r, echo=FALSE, fig.align='center', out.width="50%", fig.align="center"}
+knitr::include_graphics("images/course-tools/gototool.png")
+```
+
+NON-DRIVERS! DO NOT TOUCH ANYTHING!
+
+3 Choose “Create New Group”
+
+```{r, echo=FALSE, fig.align='center', out.width="100%", fig.align="center"}
+knitr::include_graphics("images/course-tools/choose create.png")
+```
+
+
+4 Share group ID in Zoom 
+```{r, echo=FALSE, fig.align='center', out.width="100%", fig.align="center"}
+knitr::include_graphics("images/course-tools/group id.png")
+```
+
+
+### Step 3: Members join
+
+Once the Driver has shared the group ID, AND ONLY THEN do the following:
+
+1 Click on the Team Up! assignment from the [Course Overview](`r course_overview`) page.
+
+
+2 Click ‘Go to Tool’. If it is not appearing, refresh your page or try a different browser.
+
+```{r, echo=FALSE, fig.align='center', out.width="50%", fig.align="center"}
+knitr::include_graphics("images/course-tools/gototool.png")
+```
+
+3 Input the code your driver provided and click 'Join Group'. 
+
+```{r, echo=FALSE, fig.align='center', out.width="45%", fig.align="center"}
+knitr::include_graphics("images/course-tools/choose create.png")
+```
+
+### Step 4: Complete the activity
+
+1. You will need to have the __interactive activity (question document)__ associated with this task open on to see the answer options and update any code. __Be prepared to switch between Team Up! and the JupyterHub tab.__
+
+2. The Driver chooses a question, and the team can participate by choosing their own answers and discussing their choices with each other. Once the team decides on a final answer, the driver chooses it and clicks the Check Answer button. **Note**: The Driver can check an answer despite what the team members choose, so be careful that you have consensus before clicking the Check Answer button. You cannot undo.
+
+3. If the answer is __correct__, you will be awarded the full score or "diamonds" for that question. You will be able to proceed onward by clicking the Next button that will appear under the Check Answer button or by clicking on a question in the menu on the left. If your team's answer is __not correct__, discuss the question and choose again. Repeat until you get the correct answer. All teammates can see whether responses are correct/incorrect as well as their team's overall score as they progress through the Team Up! session.
+
+
+### Step 5: The Driver MUST click Submit to Quercus for your answers to be processed. 
+
+If this is not done, no one on the team will get a grade!!!!
+
+```{r, echo=FALSE, fig.align='center', out.width="70%", fig.align="center"}
+knitr::include_graphics("images/course-tools/submit.png")
+```
+
 ## Zoom, Zoom, Zoom, Zoom...
 
 \

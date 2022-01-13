@@ -17,31 +17,43 @@ No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be remove
 
 -   For grad courses, please email [grad.statistics\@utoronto.ca](mailto:grad.statistics@utoronto.ca).
 
+#### Lecture and tutorial times
+
+*How exactly do the tutorials and lectures work?*
+
+__Wednesdays__: 1st part is (recorded) content/demo and the second is office hour (unrecorded). Aiming for half-half, but will vary.
+
+__Thursdays__: The 1st Thursday of a module will have a Team Up! or other practice activity. This will also be made available asynchronously, but the knowledge basket points for a Team Up! can only be earned by __synchronous, group participation__. The 2nd Thursday will be drop-in TA office hours to get help on content and assessments. 
+
+Thursday sessions are not recorded, but the Team Up! or other activities content will be made available to everyone. There are several other ways to earn your knowledge basket points if this doesn't suit your tech setup (e.g. no mic) or time zone.
+
 #### Recorded lectures
 
-*Where can I find recorded lectures and how soon can I expect them to be available?*
+*"Where can I find recorded lectures and how soon can I expect them to be available?"*
 
 Recorded lectures will be linked on the [Course overview](`r course_overview`) page. I aim to have the links up within 24 hours of class. They take some time to process.
 
 #### Sections
 
-*Do L0101 and L0201 cover the same materials?*
+*"Do L0101 and L0201 cover the same materials?"*
 
 Yes. The only difference is when your synchronous class is. See the below question in  "Attending synchronous class".
 
 #### Attending synchronous class
 
-*Can I attend the synchronous class for the other section?*
+*"Can I attend the synchronous class for the other section?"*
 
 Yes!\*
 
 \*If the number of attendees is getting too close to the call cap of 300 (this is a Zoom license thing), preference will be given to those enrolled in the session and others will be asked to leave. Any Team Up! activity bonuses will also be applied—section/session does not matter.
 
-*Why can't I access the class/office hour Zoom meeting?*
+*"Why can't I access the class/office hour Zoom meeting?"*
 
 You must have and be signed in with your University of Toronto Zoom account. Use the 'SSO' (single sign-on) option.
 
-***"**Will STA303/STA1002 be able to be **completed online-only?"*** Yes.
+*"Will STA303/STA1002 be able to be **completed online-only?"* 
+
+Yes.
 
 -   **STA303** will be a flipped course, with content delivered online and opportunities for activities both in-person (subject to health advice) and online. All assessments will be completed and submitted online.
 
@@ -51,11 +63,104 @@ You must have and be signed in with your University of Toronto Zoom account. Use
 
 *"Where is your **office**?"*/*"Can I come see you in-person?"* At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
 
+### Assessments FAQ
+
+#### Knowledge basket FAQ
+
+_"I don't really understand the knowledge basket, how will that work? Can we earn more than 5 marks?"_
+
+The knowledge basket maxes out at 5%, otherwise I get in trouble for giving away too many "free" points. (I know, I wish.)
+
+_"Can we do as many knowledge basket activities as we want in order to gain the full 5%?"_
+
+Yes! But do try to plan ahead, as I won't be adding a bunch of make-up opportunities at the end...part of the goal is to incentivize personalized, regular participation in the course to create the best learning outcomes for you.
+
+_"How fast will we receive grades back for the knowledge basket activities?"_
+
+It will depend, but many should be fairly quick—a few days if autograded/based on completion. 1–2 weeks for professional development proposal and evidence & reflection.
+
+
+_"I am not too sure what ‘pre-knowledge quiz: 80% or workshop’ is supposed to mean."_
+
+If you score 80% or more on the pre-knowledge check, you automatically get 0.5% for doing it + 0.5% for a high score. If you do the check but get less than 80% you get 0.5% for completion, and can still get that additional 0.5% if you come participate in the workshop.
+
+Workshop open to all. And you don't have to go if you have other plan for filling your basket. It is meant to be helpful to you, though. 
+
+And no, you can't get the workshop AND 80%+ points. One or the other for a max of 1%.
+
+_"What will additional opportunities like speaker series reflections be like?"_
+
+May vary depending on the speaker/workshop, but for next week (grad panel) it will likely be attendance + a short Quercus survey. Just confirming a few things still so, TBA. (Watch for more details in announcements.)
+
+_"Are the three phases of each writing assignment graded on completion?"_
+
+Yes, but see caveats [here in the general instructions for the writing tasks.](https://sta303-bolton.github.io/sta303-w22-courseguide/knowledge-basket-writing-and-peer-feedback.html#general-instructions)
+
+
+_"No questions, although seems to be a hectic course with a lot of minor deadlines."_
+
+If you don't want lots of little deadlines, you don't have to have lots of little deadlines! Do the professional development tasks + a few Team Ups! or the professional development task + punctuation art. Throw in the pre-knowledge check and you're looking great! 
+
+#### Portfolios FAQ
+
+_"I am curious about the format of portfolio and assessment and how they will be conducted."_
+
+2022-01-12: __More info over the next two weeks__, but these will be a lot like a traditional assignment, but with a writing task (the module writing tasks are good indicators and practice) and some additional narrative about what you're learning/demonstrating. You'll submit commented code in an Rmd and the associated PDF. 
+
+
+#### Mixed assessments FAQ
+
+_"How does the mixed assessment work? Is it like a midterm?"_
+
+Mostly, except there will also be a small amount of pre-work. More information closer too, but the overall goal is to make it more real-world. When you prep for a big meeting in the real world, you might calculate some summary stats, have a few basic plots ready, have some notes, etc. Sure, there are some things where you'll have to think it through in the moment (in the mixed assessment and in the real world), but I hope having the untimed pre-work helps lessen some of the test anxiety folks can feel. Less mind reading, more targeted prep. 
+
+_"What's the difference between mini and mixed assessments? Are they both term tests?"_
+
+One is bigger and one is smaller. ;) But yeah, the mini has one 50 minute timed component while the main mixed assessment will have more pre-work and two 50 minute timed parts.
+
+_Will we get some sample practice problems to work on before the mini-mixed and mixed assessments?_
+
+The 'mini' is effectively practice problems for the main, but Team Up!s will also be useful practice for the mixed assessments. If there isn't a Team Up! (which you've be able to review asynchronously for study purposes) for a module I'll offer a practice quiz (no points) option or other practice activity.
+
+
+_"What exactly will we do in assessment weeks?"_
+
+There is __no new content or writing module__. They are a time to focus your 6–8 hours of weekly STA303 time on the assessment. __Mixed:__ doing the pre-work and the 100 minute (2 x 50) timed component. __Project week:__ working with your group/self, asking questions in office hours. The expectation is that you'll start the project well before then, but I know the end of the semester can be stressful and busy, so I'm making things as simple and focused for you as I can.
+
+
+#### Final project FAQ
+
+_"What kind of activities will the final project entail?"_
+
+More details before reading week, but you will receive data and a client brief and be asked to create a written report that includes an executive summary as well as a more technical report.
+
+
+#### Assessments: General FAQ
+
+_"How we can choose path A or B for the marking scheme-- would this be on Quercus?"_
+
+As long as you're okay with getting the higher of the two marks, I'll calculate your grade both ways and give you the higher one.
+
+_"So are all assessment due on Thursday 3:03?"_
+
+Almost all the big ones! The mixed assessments have a window, but professional development proposal, professional development evidence & reflection, mini-portfolio, portfolio and project are all due on a Thursday at 3:03 p.m.
+
+_"Are we allowed to answer assignments with programming languages other than R?"_
+
+This is an R-based course, so only coding assessments using R will be accepted.
+
+_"What are the minimum requirements to pass the course?"_
+
+50% overall, no special conditions.
+
+
 ### Team Up!
 
 #### Troubleshooting & FAQ advice from U of T CTSI
 
-*My screen seems to be lagging compared to those of my group members (eg. I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)*
+[__Link to student facing Quercus Support resources__.](https://q.utoronto.ca/courses/46670/pages/integration-team-up-for-students)
+
+*My screen seems to be lagging compared to those of my group members (e.g., I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)*
 
 As long as you are logged in, you will receive your grade, so just continue to participate by communicating with your team. Almost always, your device will re-sync with the rest of your team's devices within a minute or two. If not, refresh your screen once. Repeatedly refreshing is not usually helpful!
 

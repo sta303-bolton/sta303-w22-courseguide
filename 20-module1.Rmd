@@ -146,8 +146,6 @@ http://go.utlib.ca/cat/13435628 [you will need to log in to the U of T library f
 
 ## The data for module 1
 
-.left-column[
-
 The data we'll be looking for the next section of this week is from the `palmerpenguins` package by Allison Horst.
 
 ```{r}
@@ -194,7 +192,6 @@ knitr::include_graphics("images/m1/culmen_depth.png")
 _Artwork by \@allison_horst_
 
 
-.left-column[
 ```{r, echo=FALSE}
 flipper_bill <- penguins %>% 
   filter(!is.na(sex)) %>% 

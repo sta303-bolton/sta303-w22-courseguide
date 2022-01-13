@@ -2,23 +2,43 @@
 
 This is mostly to aid searching, as you can easily search the course guide, but not always as easily the full text of announcements on Quercus.
 
-+-------------------------------------------------------------------------------------------+-------------------------+----------------------------------------------------------+
-| Title (and link)                                                                          | Date                    | Key topics                                               |
-+:==========================================================================================+:========================+:=========================================================+
-| [Welcome to STA303/1002!](https://q.utoronto.ca/courses/253305/discussion_topics/1558090) | 2022-01-10 3:03 p.m. ET | -   Welcome                                              |
-|                                                                                           |                         |                                                          |
-|                                                                                           |                         | -   Course structure and delivery                        |
-|                                                                                           |                         |                                                          |
-|                                                                                           |                         | -   How the course is managing online/in-person          |
-|                                                                                           |                         |                                                          |
-|                                                                                           |                         | -   Communication policy                                 |
-|                                                                                           |                         |                                                          |
-|                                                                                           |                         | -   To dos                                               |
-|                                                                                           |                         |                                                          |
-|                                                                                           |                         | -   [Volunteer notetaker role](#notetaker)               |
-|                                                                                           |                         |                                                          |
-|                                                                                           |                         | -   [Volunteer student representative role](#studentrep) |
-+-------------------------------------------------------------------------------------------+-------------------------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------+
+| Title (and link)                                                                                                              | Date                    | Key topics                                                         |
++:==============================================================================================================================+:========================+:===================================================================+
+| [Welcome to STA303/1002!](https://q.utoronto.ca/courses/253305/discussion_topics/1558090)                                     | 2022-01-10 3:03 p.m. ET | -   Welcome                                                        |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Course structure and delivery                                  |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   How the course is managing online/in-person                    |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Communication policy                                           |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   To dos                                                         |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   [Volunteer notetaker role](#notetaker)                         |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   [Volunteer student representative role](#studentrep)           |
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------+
+| [STA303 L0101 class starts online in 20 minutes (10:10 a.m.)](https://q.utoronto.ca/courses/253305/discussion_topics/1564941) | 2022-01-12 9:50 a.m.    | For L0101                                                          |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Reminder that class starts at 10:10                            |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Link to Zoom (and reminder to be licensed)                     |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Link to slides on the course overview page                     |
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------+
+| [Make sure your Zoom is licensed!](https://q.utoronto.ca/courses/253305/discussion_topics/1565885)                            | 2022-01-12 1:41 p.m.    | How to ensure authorization/license on your U of T Zoom account    |
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------+
+| [STA303 L0201 class starts online in 20 minutes (3:10 p.m.)](https://q.utoronto.ca/courses/253305/discussion_topics/1565901)  | 2022-01-12 2:50 p.m.    | For L0201                                                          |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Reminder that class starts at 3:10                             |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Link to Zoom (and reminder to be licensed)                     |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Link to slides on the course overview page                     |
+|                                                                                                                               |                         |                                                                    |
+|                                                                                                                               |                         | -   Note that the first part of the session will probably run long |
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------+
 
 ### Volunteer notetaker needed for STA303  {#notetaker}
 
@@ -30,7 +50,7 @@ To become a volunteer notetaker, all you must do is attend classes regularly & s
 
 [To become a volunteer note-taker, please follow these 4 steps]{.ul}:
 
-1.  Register Online as a Volunteer Note-Taker at: [https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx](https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx)
+1.  Register Online as a Volunteer Note-Taker at: <https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx>
 
 2.  Click on Volunteer Notetakers, and sign in using your UTORid.
 
