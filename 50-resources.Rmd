@@ -51,6 +51,75 @@ Link: <https://rstudio-with-jupyerhub-uoft.netlify.app>.
 
 [Link to student-facing Quercus Support resources.](https://q.utoronto.ca/courses/46670/pages/integration-team-up-for-students)
 
+
+Please only attend one of these sessions if you are prepared to...
+
+```{r, echo=FALSE, fig.align='center', out.width="60%"}
+knitr::include_graphics("images/course-tools/engage.jpeg")
+```
+
+Image description: Captain Picard (of the Starship Enterprise) in uniform, pointing forwards. Text reads: ENGAGE
+
+### To participate in these activities, you **need**:
+
+-   A U of T LICENSED Zoom account to access the call. Some troubleshooting tips in this announcement: [Make sure your Zoom is licensed!](https://q.utoronto.ca/courses/253305/discussion_topics/1565885 "Make sure your Zoom is licensed!").
+
+-   A reasonable **internet connection**.
+
+-   A **working microphone.**
+
+-   To be WILLING TO ACTIVELY PARTICIPATE. Please don't ruin this for others who are interested in engaging in meaningful group problem-solving.
+
+    -   There is **no reason to come and lurk**. These sessions are the activity and nothing else.
+
+    -   You can easily get marks for your 🧺knowledge basket in SOOO many other ways AND I will make an asynchronous practice version available so you don't miss out on practice. 
+
+### **Before** the activity you should:
+
+1.  Remember that **you don't have to participate in Team Up! activities**, there are plenty of other ways to earn your 🧺knowledge basket marks. 
+
+    -   Only participate if you really are going to participate (see above).
+
+2.  Check you can access **Shiny interactives** on the JupyterHub: [Module 1 interactive](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m1_tests%2F&branch=master).
+
+    -   If you get a 'Not Found' error this is most likely due to one of two issues:
+
+        -   Solution 1: Ensure you don't have any other interactives open. (Close any tabs with the orange-arcs JupyterHub logo).
+
+        -   Solution 2: Go to <https://jupyter.utoronto.ca>, open a new RStudio session by going New -\> RStudio (see slide 3 of [these instructions](https://sta303-bolton.github.io/sta303-w22-courseguide/resources.html#using-rstudio-with-the-jupyterhub)) and move any .Rmd files in your 🏠Home directory (see slide 10 of [these instructions](https://sta303-bolton.github.io/sta303-w22-courseguide/resources.html#using-rstudio-with-the-jupyterhub)) to a new folder (or delete them if you don't need them). Remember: No naked Rmds in YOUR home!
+
+3.  Decide if you want to be **randomized into a group** or **work with a group of people you already know in the course** (section/tut enrolment doesn't matter).
+
+    -   If **randomizing**, join the Zoom link for the tutorial time you are attending. 'Arrive' on time as latecomers may not be placed in a group.
+
+    -   If **working with your own group**, you don't need to join the call (but can if you get stuck with the tech!). Decide at which time you want to do the activity and set up a personal Zoom/Teams/WeChat/Instagram/carrier pigeon/semaphore chat. Zoom has nothing to do with Team Up!.
+
+4.  Read over the Team Up! instructions below.
+
+### Some rules/logistics
+
+-   **Speak up!** Practice talking about statistics. For these activities, I'd honestly rather you be wrong out loud than right in silence.
+
+-   **Be kind** and constructive. You are in a team, practice being a good team member.
+
+-   Team Up! does not have a great back end. If you don't submit correctly or don't join a group correctly, I CANNOT go in and check or move you around. **FOLLOW INSTRUCTIONS**.
+
+    -   No accommodations will be made for Team Up! issues. Team Up! marks will not be updated by hand (e.g., if you end up in a solo group/tech issues, etc.).
+
+-   You must do this as a group activity, during a tutorial time, if you wish to receive a 🧺knowledge basket grade.
+
+    -   **A 'group' is 2--4 people.**
+
+    -   All members of groups of 1 (solos) and 5+ will receive a zero. Group size is based on what is **recorded by Team Up!** through your registration with your group codes.
+
+-   You cannot do a Team Up! more than once.  You cannot attend both sessions.
+
+-   If you have a ghost 👻in your room (randomized in the class organized Zoom call), please 'Ask for help' (there is a button). 'Raise hand' *doesn't* alert me if you're in a breakout room.
+
+**Timing note: Assessment pages will become available at 15 minutes past the hour and remain available for 45 minutes. Ensure sure your team submits by the end of the session.**
+
+### Team Up! Instructions
+
 Participating in Team Up! activities can earn you knowledge basket points. They will be based on how well your team does, so work together and give it a good effort. 
 
 You will complete the following 5 steps:
@@ -62,7 +131,7 @@ You will complete the following 5 steps:
 5. **Submit** the activity
 
 
-### Step 1: Decide on roles
+#### Step 1: Decide on roles
 
 You will need: 
 
@@ -77,7 +146,7 @@ Team Members (other than the Driver) participate and choose vote on answers, so 
 
 DECIDE THIS BEFORE CLICKING ANYTHING TO DO WITH TEAM UP!
 
-### Step 2: Driver sets up group
+#### Step 2: Driver sets up group
 
 The person in your group whose first/personal name comes last alphabetically will be the Leader (Driver) for the session.
 
@@ -109,7 +178,7 @@ knitr::include_graphics("images/course-tools/group id.png")
 ```
 
 
-### Step 3: Members join
+#### Step 3: Members join
 
 Once the Driver has shared the group ID, AND ONLY THEN do the following:
 
@@ -128,7 +197,7 @@ knitr::include_graphics("images/course-tools/gototool.png")
 knitr::include_graphics("images/course-tools/choose create.png")
 ```
 
-### Step 4: Complete the activity
+#### Step 4: Complete the activity
 
 1. You will need to have the __interactive activity (question document)__ associated with this task open on to see the answer options and update any code. __Be prepared to switch between Team Up! and the JupyterHub tab.__
 
@@ -137,7 +206,7 @@ knitr::include_graphics("images/course-tools/choose create.png")
 3. If the answer is __correct__, you will be awarded the full score or "diamonds" for that question. You will be able to proceed onward by clicking the Next button that will appear under the Check Answer button or by clicking on a question in the menu on the left. If your team's answer is __not correct__, discuss the question and choose again. Repeat until you get the correct answer. All teammates can see whether responses are correct/incorrect as well as their team's overall score as they progress through the Team Up! session.
 
 
-### Step 5: The Driver MUST click Submit to Quercus for your answers to be processed. 
+#### Step 5: The Driver MUST click Submit to Quercus for your answers to be processed. 
 
 If this is not done, no one on the team will get a grade!!!!
 
@@ -145,7 +214,7 @@ If this is not done, no one on the team will get a grade!!!!
 knitr::include_graphics("images/course-tools/submit.png")
 ```
 
-## Zoom, Zoom, Zoom, Zoom...
+## Zoom, Zoom, Zoom, Zoom... {#zoomzoomzoomzoom}
 
 \
 Access to STA303 synchronous meetings and office hours is restricted to our students.\

@@ -10,7 +10,7 @@ Additionally, make sure you're familiar with the [Syllabus](#syllabus). I've tri
 
 #### STA303 pre-requisites {#prereq-faq}
 
-*I didn't take STA302 or an equivalent course, can I still take STA303?*\
+##### *I didn't take STA302 or an equivalent course, can I still take STA303?*\
 No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be removed from the course. Please **reach out to the UG stats team ([ug.statistics\@utoronto.ca](ug.statistics@utoronto.ca))** about questions of this nature.
 
 -   [Book an appointment during their office hours](https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/ "https://outlook.office365.com/owa/calendar/DepartmentofStatisticalSciencesUndergraduate@utoronto.onmicrosoft.com/bookings/").
@@ -19,7 +19,7 @@ No, sorry. We enforce pre-reqs strictly. This isn't up to me. You will be remove
 
 #### Lecture and tutorial times
 
-*How exactly do the tutorials and lectures work?*
+##### *How exactly do the tutorials and lectures work?*
 
 __Wednesdays__: 1st part is (recorded) content/demo and the second is office hour (unrecorded). Aiming for half-half, but will vary.
 
@@ -29,29 +29,29 @@ Thursday sessions are not recorded, but the Team Up! or other activities content
 
 #### Recorded lectures
 
-*"Where can I find recorded lectures and how soon can I expect them to be available?"*
+##### *"Where can I find recorded lectures and how soon can I expect them to be available?"*
 
 Recorded lectures will be linked on the [Course overview](`r course_overview`) page. I aim to have the links up within 24 hours of class. They take some time to process.
 
 #### Sections
 
-*"Do L0101 and L0201 cover the same materials?"*
+##### *"Do L0101 and L0201 cover the same materials?"*
 
 Yes. The only difference is when your synchronous class is. See the below question in  "Attending synchronous class".
 
 #### Attending synchronous class
 
-*"Can I attend the synchronous class for the other section?"*
+##### *"Can I attend the synchronous class for the other section?"*
 
 Yes!\*
 
 \*If the number of attendees is getting too close to the call cap of 300 (this is a Zoom license thing), preference will be given to those enrolled in the session and others will be asked to leave. Any Team Up! activity bonuses will also be applied—section/session does not matter.
 
-*"Why can't I access the class/office hour Zoom meeting?"*
+##### *"Why can't I access the class/office hour Zoom meeting?"*
 
-You must have and be signed in with your University of Toronto Zoom account. Use the 'SSO' (single sign-on) option.
+You must have and be signed in with your University of Toronto Zoom account. Use the 'SSO' (single sign-on) option. More info and troubleshooting advice [here](#zoomzoomzoomzoom).
 
-*"Will STA303/STA1002 be able to be **completed online-only?"* 
+##### *"Will STA303/STA1002 be able to be completed online-only?"* 
 
 Yes.
 
@@ -61,26 +61,26 @@ Yes.
 
 -   Synchronous attendance is NOT required to pass this course, but being able to attend (online) synchronously at the times in the timetable may make things easier for you.
 
-*"Where is your **office**?"*/*"Can I come see you in-person?"* At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
+##### *"Where is your **office**?"*/*"Can I come see you in-person?"* At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
 
 ### Assessments FAQ
 
 #### Knowledge basket FAQ
 
-_"I don't really understand the knowledge basket, how will that work? Can we earn more than 5 marks?"_
+##### _"I don't really understand the knowledge basket, how will that work? Can we earn more than 5 marks?"_
 
 The knowledge basket maxes out at 5%, otherwise I get in trouble for giving away too many "free" points. (I know, I wish.)
 
-_"Can we do as many knowledge basket activities as we want in order to gain the full 5%?"_
+##### _"Can we do as many knowledge basket activities as we want in order to gain the full 5%?"_
 
 Yes! But do try to plan ahead, as I won't be adding a bunch of make-up opportunities at the end...part of the goal is to incentivize personalized, regular participation in the course to create the best learning outcomes for you.
 
-_"How fast will we receive grades back for the knowledge basket activities?"_
+##### _"How fast will we receive grades back for the knowledge basket activities?"_
 
 It will depend, but many should be fairly quick—a few days if autograded/based on completion. 1–2 weeks for professional development proposal and evidence & reflection.
 
 
-_"I am not too sure what ‘pre-knowledge quiz: 80% or workshop’ is supposed to mean."_
+##### _"I am not too sure what ‘pre-knowledge quiz: 80% or workshop’ is supposed to mean."_
 
 If you score 80% or more on the pre-knowledge check, you automatically get 0.5% for doing it + 0.5% for a high score. If you do the check but get less than 80% you get 0.5% for completion, and can still get that additional 0.5% if you come participate in the workshop.
 
@@ -88,68 +88,68 @@ Workshop open to all. And you don't have to go if you have other plan for fillin
 
 And no, you can't get the workshop AND 80%+ points. One or the other for a max of 1%.
 
-_"What will additional opportunities like speaker series reflections be like?"_
+##### _"What will additional opportunities like speaker series reflections be like?"_
 
 May vary depending on the speaker/workshop, but for next week (grad panel) it will likely be attendance + a short Quercus survey. Just confirming a few things still so, TBA. (Watch for more details in announcements.)
 
-_"Are the three phases of each writing assignment graded on completion?"_
+##### _"Are the three phases of each writing assignment graded on completion?"_
 
 Yes, but see caveats [here in the general instructions for the writing tasks.](https://sta303-bolton.github.io/sta303-w22-courseguide/knowledge-basket-writing-and-peer-feedback.html#general-instructions)
 
 
-_"No questions, although seems to be a hectic course with a lot of minor deadlines."_
+##### _"No questions, although seems to be a hectic course with a lot of minor deadlines."_
 
 If you don't want lots of little deadlines, you don't have to have lots of little deadlines! Do the professional development tasks + a few Team Ups! or the professional development task + punctuation art. Throw in the pre-knowledge check and you're looking great! 
 
 #### Portfolios FAQ
 
-_"I am curious about the format of portfolio and assessment and how they will be conducted."_
+##### _"I am curious about the format of portfolio and assessment and how they will be conducted."_
 
 2022-01-12: __More info over the next two weeks__, but these will be a lot like a traditional assignment, but with a writing task (the module writing tasks are good indicators and practice) and some additional narrative about what you're learning/demonstrating. You'll submit commented code in an Rmd and the associated PDF. 
 
 
 #### Mixed assessments FAQ
 
-_"How does the mixed assessment work? Is it like a midterm?"_
+##### _"How does the mixed assessment work? Is it like a midterm?"_
 
 Mostly, except there will also be a small amount of pre-work. More information closer too, but the overall goal is to make it more real-world. When you prep for a big meeting in the real world, you might calculate some summary stats, have a few basic plots ready, have some notes, etc. Sure, there are some things where you'll have to think it through in the moment (in the mixed assessment and in the real world), but I hope having the untimed pre-work helps lessen some of the test anxiety folks can feel. Less mind reading, more targeted prep. 
 
-_"What's the difference between mini and mixed assessments? Are they both term tests?"_
+##### _"What's the difference between mini and mixed assessments? Are they both term tests?"_
 
 One is bigger and one is smaller. ;) But yeah, the mini has one 50 minute timed component while the main mixed assessment will have more pre-work and two 50 minute timed parts.
 
-_Will we get some sample practice problems to work on before the mini-mixed and mixed assessments?_
+##### _Will we get some sample practice problems to work on before the mini-mixed and mixed assessments?_
 
 The 'mini' is effectively practice problems for the main, but Team Up!s will also be useful practice for the mixed assessments. If there isn't a Team Up! (which you've be able to review asynchronously for study purposes) for a module I'll offer a practice quiz (no points) option or other practice activity.
 
 
-_"What exactly will we do in assessment weeks?"_
+##### _"What exactly will we do in assessment weeks?"_
 
 There is __no new content or writing module__. They are a time to focus your 6–8 hours of weekly STA303 time on the assessment. __Mixed:__ doing the pre-work and the 100 minute (2 x 50) timed component. __Project week:__ working with your group/self, asking questions in office hours. The expectation is that you'll start the project well before then, but I know the end of the semester can be stressful and busy, so I'm making things as simple and focused for you as I can.
 
 
 #### Final project FAQ
 
-_"What kind of activities will the final project entail?"_
+##### _"What kind of activities will the final project entail?"_
 
 More details before reading week, but you will receive data and a client brief and be asked to create a written report that includes an executive summary as well as a more technical report.
 
 
 #### Assessments: General FAQ
 
-_"How we can choose path A or B for the marking scheme-- would this be on Quercus?"_
+##### _"How we can choose path A or B for the marking scheme-- would this be on Quercus?"_
 
 As long as you're okay with getting the higher of the two marks, I'll calculate your grade both ways and give you the higher one.
 
-_"So are all assessment due on Thursday 3:03?"_
+##### _"So are all assessment due on Thursday 3:03?"_
 
 Almost all the big ones! The mixed assessments have a window, but professional development proposal, professional development evidence & reflection, mini-portfolio, portfolio and project are all due on a Thursday at 3:03 p.m.
 
-_"Are we allowed to answer assignments with programming languages other than R?"_
+##### _"Are we allowed to answer assignments with programming languages other than R?"_
 
 This is an R-based course, so only coding assessments using R will be accepted.
 
-_"What are the minimum requirements to pass the course?"_
+##### _"What are the minimum requirements to pass the course?"_
 
 50% overall, no special conditions.
 
@@ -160,27 +160,27 @@ _"What are the minimum requirements to pass the course?"_
 
 [__Link to student facing Quercus Support resources__.](https://q.utoronto.ca/courses/46670/pages/integration-team-up-for-students)
 
-*My screen seems to be lagging compared to those of my group members (e.g., I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)*
+##### *"My screen seems to be lagging compared to those of my group members (e.g., I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)"*
 
 As long as you are logged in, you will receive your grade, so just continue to participate by communicating with your team. Almost always, your device will re-sync with the rest of your team's devices within a minute or two. If not, refresh your screen once. Repeatedly refreshing is not usually helpful!
 
-*I've been disconnected. Will my quiz progress be saved? Can I re-join my group?*
+##### *"I've been disconnected. Will my quiz progress be saved? Can I re-join my group?"*
 
 Enter the Team Up! session again and you will automatically be put back into your group. Your progress will be saved, and you will return to the question you or your group was working on. This is true for the Driver as well as any team member.
 
-*How do I send my completed quiz results?*
+##### *"How do I send my completed quiz results?"*
 
 Click the large red "Submit to Quercus" button at the end of the Team Up! quiz.
 
-*Can we change our group driver?*
+##### *"Can we change our group driver?"*
 
 You can request a driver change by pressing the red exclamation mark in the top right of your Team Up! quiz.
 
-*How is the driver for our group chosen, and how can the driver pass the group ID to others in remote classes?*
+##### *"How is the driver for our group chosen, and how can the driver pass the group ID to others in remote classes?"*
 
 Group members can decide who will be the Driver (ideally someone with a good internet connection). The Driver can pass the group ID to other members verbally through chat or microphone in breakout rooms.
 
-*The Driver of my group has to leave unexpectedly or their device has stopped functioning. How do we proceed with the quiz?*
+##### *"The Driver of my group has to leave unexpectedly or their device has stopped functioning. How do we proceed with the quiz?"*
 
 Request for a Driver Change using the red button at the top right of your Team Up! Session. This button only provides help for Driver Changes. You may also need to speak with your instructor or TA.
 
@@ -188,11 +188,11 @@ Request for a Driver Change using the red button at the top right of your Team U
 
 ### References
 
-*Can you (Prof. Bolton) write me a reference?*
+##### *"Can you (Prof. Bolton) write me a reference?"*
 
 Please read my personal policy [here](https://www.lizabolton.com/references.html) to get a sense of under what circumstances I could write for you, but basically, a good mark in one class is not sufficient and you need to have at least two 'activities' with me. [If you believe you meet my basic criteria, you can request a reference from me [here](https://forms.office.com/r/XHqjGXjCru).]{style="background-color: #FFD700"} I will then accept or decline based on the the information provided.
 
-*Do you (Prof. Bolton) have any research opportunities available?*
+##### *"Do you (Prof. Bolton) have any research opportunities available?"*
 
 **Research/work study/teaching assistant opportunities:**
 
@@ -208,7 +208,8 @@ Please read my personal policy [here](https://www.lizabolton.com/references.html
 
 ## Errata
 
-| ID  | Location | Note |
-|-----|----------|------|
-|     |          |      |
-|     |          |      |
+| ID  | Location          | Note                                                                                                                                                                                                                                                                                                                             |
+|:----|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Module 1 Team Up! | See corrected [asynch answers](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m1_teamup_asynch%2FSTA303_m1_teamup_synch.Rmd&branch=master). Marks were corrected for all groups. |
+|     |                   |                                                                                                                                                                                                                                                                                                                                  |
+
