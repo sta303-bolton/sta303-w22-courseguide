@@ -14,3 +14,21 @@ pre code {
 }
 
 .cols {display: flex; }
+
+.yellowbox {
+  padding: 1em;
+  background: #FEBB43;
+  color: black;
+}
+.center {
+  text-align: center;
+}
+
+.highlight {
+  background-color: #FFDD33;
+  padding-top: 0.25px;
+}
+
+.redify
+
+.bluify

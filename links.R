@@ -64,5 +64,21 @@ m1_r = "Friday, January 21, 2022 at 3:03 p.m ET"
 
 m1_link = "https://q.utoronto.ca/courses/253305/assignments/781343"
 
+
+m2_c = "Friday, January 28, 2022 at 3:03 p.m ET"
+m2_a = "Tuesday, February 1, 2022 at 3:03 p.m ET"
+m2_r = "Friday, February 4, 2022 at 3:03 p.m ET"
+
+m2_link = "https://q.utoronto.ca/courses/253305/assignments/782393"
+
+
 # m1_link =
 
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+            x)
+  } else x
+}

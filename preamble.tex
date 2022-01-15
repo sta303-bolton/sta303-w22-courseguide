@@ -23,3 +23,14 @@
 \usepackage{lscape}
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
+
+\usepackage{color}
+\usepackage{framed}
+\setlength{\fboxsep}{.8em}
+
+\newenvironment{yellowbox}{
+  \definecolor{shadecolor}{rgb}{254,187,67}  % yellow of course image
+  \color{black}
+  \begin{shaded}}
+ {\end{shaded}}
+

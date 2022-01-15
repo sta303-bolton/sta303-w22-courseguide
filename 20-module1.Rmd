@@ -2,6 +2,10 @@
 
 # Module 1 {#m1}
 
+:::: {.yellowbox data-latex=""}
+Materials for January 10--21, 2022.
+::::
+
 ## Learning Checklist
 By the end of this module, you should be able to:
 
@@ -657,7 +661,7 @@ Web version embedding for MyMedia is not great, I would recommending opening the
 
 <div><iframe src="https://play.library.utoronto.ca/watch/f395cfcc26b4009cbc28c1aa9a86096c" width="900" height="500" allowfullscreen="allowfullscreen"></iframe></div>
 
-## Reading strategy: previewing and skimming
+## Reading strategy: previewing and skimming {#previewskim}
 
 In graduate school and/or in future employment, it is likely that you will need gather and synthesize information from a range of written sources. To decide if a source is useful to you, and to be as efficient and effective as possible, it is important to have strategies for approaching reading. 
 

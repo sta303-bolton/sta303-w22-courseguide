@@ -255,6 +255,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="11.2.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m1-instructions"><i class="fa fa-check"></i><b>11.2.1</b> M1 Instructions</a></li>
 </ul></li>
+<li class="chapter" data-level="11.3" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-2-writing-task"><i class="fa fa-check"></i><b>11.3</b> Module 2 writing task</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m2-instructions"><i class="fa fa-check"></i><b>11.3.1</b> M2 Instructions</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html"><i class="fa fa-check"></i><b>12</b> Knowledge basket: Professional development task</a>
 <ul>
@@ -336,10 +340,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="14.7.3" data-path="m1.html"><a href="m1.html#watch-the-creator-of-the-reprex-package-explain-it"><i class="fa fa-check"></i><b>14.7.3</b> Watch the creator of the reprex package explain it</a></li>
 <li class="chapter" data-level="14.7.4" data-path="m1.html"><a href="m1.html#using-reprexes-on-piazza"><i class="fa fa-check"></i><b>14.7.4</b> Using reprexes on Piazza</a></li>
 </ul></li>
-<li class="chapter" data-level="14.8" data-path="m1.html"><a href="m1.html#reading-strategy-previewing-and-skimming"><i class="fa fa-check"></i><b>14.8</b> Reading strategy: previewing and skimming</a></li>
+<li class="chapter" data-level="14.8" data-path="m1.html"><a href="m1.html#previewskim"><i class="fa fa-check"></i><b>14.8</b> Reading strategy: previewing and skimming</a></li>
 <li class="chapter" data-level="14.9" data-path="m1.html"><a href="m1.html#getting-ahead-on-module-2"><i class="fa fa-check"></i><b>14.9</b> Getting ahead on Module 2</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="module-2.html"><a href="module-2.html"><i class="fa fa-check"></i><b>15</b> Module 2</a></li>
+<li class="chapter" data-level="15" data-path="m2.html"><a href="m2.html"><i class="fa fa-check"></i><b>15</b> Module 2</a></li>
 <li class="chapter" data-level="16" data-path="module-3.html"><a href="module-3.html"><i class="fa fa-check"></i><b>16</b> Module 3</a></li>
 <li class="chapter" data-level="17" data-path="module-4.html"><a href="module-4.html"><i class="fa fa-check"></i><b>17</b> Module 4</a></li>
 <li class="chapter" data-level="18" data-path="module-5.html"><a href="module-5.html"><i class="fa fa-check"></i><b>18</b> Module 5</a></li>
@@ -400,6 +404,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="21.2.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#example-3"><i class="fa fa-check"></i><b>21.2.2</b> Example</a></li>
 <li class="chapter" data-level="21.2.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#regression-not-classic-actually-anova-no-intercept"><i class="fa fa-check"></i><b>21.2.3</b> Regression NOT classic, actually ANOVA! (no intercept)</a></li>
 <li class="chapter" data-level="21.2.4" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#further-reading-if-you-want-it"><i class="fa fa-check"></i><b>21.2.4</b> Further reading (if you want it)</a></li>
+</ul></li>
+<li class="chapter" data-level="21.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#p-values-recap"><i class="fa fa-check"></i><b>21.3</b> P-values (recap)</a>
+<ul>
+<li class="chapter" data-level="21.3.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#what-if-you-get-a-calue-that-is-exactly-one-of-these-thresholds"><i class="fa fa-check"></i><b>21.3.1</b> What if you get a calue that is exactly one of these thresholds?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="22" data-path="announcements-summary.html"><a href="announcements-summary.html"><i class="fa fa-check"></i><b>22</b> Announcements summary</a>
@@ -651,6 +659,56 @@ ggsave(paste0(course_code, &quot;-base.png&quot;), width = 24, height = 2)
 <div id="further-reading-if-you-want-it" class="section level3" number="21.2.4">
 <h3><span class="header-section-number">21.2.4</span> Further reading (if you want it)</h3>
 <p>As I said at the beginning, I’m not planning to assess you on any of this. If you’re interested in knowing more, or just think matrix algebra is delicious, I think this is a delightfully approachable walk through. <a href="https://online.stat.psu.edu/stat462/node/132/" class="uri">https://online.stat.psu.edu/stat462/node/132/</a></p>
+</div>
+</div>
+<div id="p-values-recap" class="section level2" number="21.3">
+<h2><span class="header-section-number">21.3</span> P-values (recap)</h2>
+<p>Remember: “Small but mighty!” The <em>smaller</em> the p-value, the <em>stronger</em> the evidence against the null hypothesis.</p>
+<ul>
+<li>We should never be making claims in in favour/against the alternative hypothesis. Our <em>statistical</em> claims are always about the null. This may inform practical decisions in less strict ways, depending on practical significance, risks, etc., but a correct statistical claim for a p-value should ALWAYS be about the null. Absolutes are rare in teaching statistics.<br />
+</li>
+<li>A common threshold for rejecting or failing to reject the null hypothesis is 0.05. This is mostly from habit/convention, rather than some truly meaningful cosmic value. “Yeah, 1 in 20? Unlikely, sure.” Difference disciplines/sub-disciplines develop norms appropriate to their context.</li>
+<li>Many statisticians—especially in light of the reproducibilty crisis and poor public, and even sometimes researcher, understanding of p-values—prefer to make statements about the <strong>strength</strong> of evidence, not just reject/fail to reject.</li>
+</ul>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>P-value range</th>
+<th>Strength comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&gt; 0.1</td>
+<td>No evidence against the null</td>
+</tr>
+<tr class="even">
+<td>0.05 &lt; p-value &gt; 0.1</td>
+<td>Weak evidence against the null hypothesis</td>
+</tr>
+<tr class="odd">
+<td>0.01 &lt; p-value&lt; 0.05</td>
+<td>Moderate/some evidence against the null hypothesis</td>
+</tr>
+<tr class="even">
+<td>0.001 &lt; p-value &lt; 0.01</td>
+<td>Strong evidence against the null hypothesis</td>
+</tr>
+<tr class="odd">
+<td>&lt; 0.001</td>
+<td>Very strong evidence against the null hypothesis</td>
+</tr>
+</tbody>
+</table>
+<div id="what-if-you-get-a-calue-that-is-exactly-one-of-these-thresholds" class="section level3" number="21.3.1">
+<h3><span class="header-section-number">21.3.1</span> What if you get a calue that is exactly one of these thresholds?</h3>
+<p>It would be very rare to get a p-value of exactly one of these thresholds. If you were to, you could decide based on your judgment of the context. Should you be more or less conservative in your interpretation based on the needs of the project/client?</p>
+<p>So, you’ll almost always have something, that while it may round to 0.001 (or another threshold), is really something like 0.001345789 or 0.00098963. What judgment would you make in each case, with this in mind?</p>
+<p>But remember, these are <strong>fuzzy boundaries based on easy-to-grasp probabilities for humans</strong>, particularly humans used to thinking in base 10. 1 in 20, 1 in 100, 1 in 1000, etc. Easy to think about but not universally meaningful thresholds. Honestly, being a little over or under really doesn’t make that much of a difference. P-values are continuous random variables. We impose discrete categories for our own ease. Used too rigidly, these guidelines have the same problem as rejecting/failing to reject, but just with a few more levels.</p>
 
 </div>
 </div>

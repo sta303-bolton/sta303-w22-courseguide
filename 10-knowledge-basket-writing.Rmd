@@ -135,3 +135,96 @@ if (knitr:::is_latex_output()) {
 }
 
 ```
+
+## Module 2 writing task
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Module 2 writing task                      |
++--------------------------------------------------------+----------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                             |
++--------------------------------------------------------+----------------------------------------------------+
+| Value                                                  | 0.5% (0.245%, 0.245%, 0.01%) <br> Completion                                           |
++--------------------------------------------------------+----------------------------------------------------+
+| Due                                                    | __Create phase__: `r m2_c`;  <br> __Assess phase__: `r m2_a`; <br> __Reflect phase__: `r m2_r`;                                |
++--------------------------------------------------------+----------------------------------------------------+
+| Submission instructions                                | Submission: [Via peerScholar](`r m2_link`)                |
+|                                                        |                                                    |
+|                                                        | Marked for completion              |
++--------------------------------------------------------+----------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
++--------------------------------------------------------+----------------------------------------------------+
+
+### M2 Instructions
+
+Make sure you are familiar with the [general instructions](#writinggeneral) for these types of tasks.
+
+#### M2 Prompt
+
+Read [*Science isn't broken* (Aschwanden, 2015)](https://fivethirtyeight.com/features/science-isnt-broken/) using the *previewing* and *skimming* strategy outlined below. Discuss what you learn from the article, with a focus on what you **notice about your own thinking** when playing with the *"Hack Your Way To Scientific Glory*" interactive. Make sure you paraphrase appropriately (see [Module 2 paraphrasing section](#paraphrasing)) and add the reference for the article. (It is okay to put the reference by itself on a second page, if required.) 
+
+Instead of reading from beginning to end try ***previewing*** and then ***skimming*** to be faster:
+
+1.  Read the **title**. Pay attention to the "Filed Under" and date of publication.
+
+   🤔*Why do you think we have assigned this reading to you?*
+
+2.  Skip the text until the **interactive figure** called "*Hack Your Way To Scientific Glory*".
+
+When you change political party in section 1, or other items in section 2, how does the p-value change in section 4 of the interactive figure?
+
+   🤔*What do you understand from this figure? What do you notice about your own thinking as you play with it?*
+
+**Tip:** Reading one paragraph before and after a figure helps clarify the figure.
+
+3.  Skip the text until the **figure** of the football field.
+
+   🤔 *What do you understand from this figure?*
+
+4.  Skip the text until the **figure** called "*Same Data, Different Conclusions*".
+
+   🤔 *What do you understand from this figure?*
+
+6.  Read the two **bolded quotes**: "*Science is great, but*..." and "*Human fallibilities*...".
+
+7.  Read the **last paragraph** (often the concluding paragraph).
+
+8.  Now write your **200--500-word reflection** on what you have learned.
+
+    -   **Paraphrase!** That is, use your own words, don't copy/paste. Use the [paraphrasing how-to from the week 2 module](https://q.utoronto.ca/courses/204826/pages/w2-paraphrasing "W2 Paraphrasing") to help you.
+
+    -   Discuss what you noticed about your thinking while playing with the *Hack Your Way To Scientific Glory*" interactive.
+
+    -   Include a **conclusion** at the end.
+
+    -   Use in-text **citation** as follows (Aschwanden, 2015) and put the reference at the end.
+
+9. Go back and read the entire text to see if your understanding was correct.
+
+##### M2 Reference
+
+Aschwanden, C. (2015). *Science Isn't Broken: It's just a hell of a lot harder than we give it credit for*. Retrieved from [https://fivethirtyeight.com/features/science-isnt-broken](https://fivethirtyeight.com/features/science-isnt-broken)
+
+#### M2 Rubric
+
+```{r, echo=FALSE, message=FALSE}
+require(tidyverse)
+rubric <- read_csv("rubrics/m2-writing.csv") %>% 
+  filter(!is.na(Component))
+
+if (knitr:::is_latex_output()) {
+  rubric %>% 
+  kableExtra::kable(booktabs = T) %>%
+  kableExtra::kable_styling(latex_options = c("striped"), font_size = 8) %>% 
+        kableExtra::column_spec(2:5, width = "12em") 
+  
+  
+} else {
+ rubric %>% 
+  kableExtra::kable() %>%
+  kableExtra::kable_styling() %>% 
+  kableExtra::scroll_box(width = "100%")
+  }
+
+```

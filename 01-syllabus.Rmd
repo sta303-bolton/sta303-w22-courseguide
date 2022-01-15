@@ -216,7 +216,7 @@ There are two special elements of assessment/grade calculation in this course th
 
     -   Personalize which of these assessments you do based on your interests and skills you want to develop.
 
-    -   You can 'max out' your basket: just keep putting grades in until you get to 10% (Path A) or 5% (Path B).
+    -   You can 'max out' your basket: just keep putting grades in until you get to 5%.
 
 [^syllabus-1]: The Road Not Taken, by Robert Frost. But, dear traveller, you can in fact take both roads and then get whichever gives you the better mark. <https://www.poetryfoundation.org/poems/44272/the-road-not-taken>
 
@@ -224,15 +224,23 @@ There are two special elements of assessment/grade calculation in this course th
 
 [^syllabus-3]: "Whaowhia te kete mātauranga" is a Māori proverb meaning "Fill up the basket of knowledge". Mātauranga is specifically traditional Māori knowledge. You can listen to the pronunciation here <https://www.massey.ac.nz/student-life/m%C4%81ori-at-massey/te-reo-m%C4%81ori-and-tikanga-resources/te-reo-m%C4%81ori-pronunciation-and-translations/whakatauk%C4%AB-m%C4%81ori-proverbs/>
 
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
 | Assessment            | Path A | Path B | STA1002 ONLY | Due dates                                                   |
-|-----------------------|-------:|-------:|-------------:|-------------------------------------------------------------|
-| Mini-portfolio        |      5 |      0 |            0 | Feb 3                                                       |
-| Portfolio             |     20 |     25 |           25 | Feb 7                                                       |
-| Mini-mixed assessment |      5 |      0 |            0 | Mar 9 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET)  |
-| Mixed assessment      |     20 |     25 |           25 | Mar 16 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) |
-| Final project         |     45 |     45 |           50 | Apr 7 (2% pt bonus) \| Apr 11 (no bonus)                    |
-| Knowledge basket      |      5 |      5 |            0 | Multiple                                                    |
-| Total                 |    100 |    100 |          100 |                                                             |
++=======================+=======:+=======:+=============:+=============================================================+
+| Mini-portfolio        | 5      | 0      | 0            | Feb 3                                                       |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Portfolio             | 20     | 25     | 25           | Feb 7                                                       |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Mini-mixed assessment | 5      | 0      | 0            | Mar 9 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET)  |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Mixed assessment      | 20     | 25     | 25           | Mar 16 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Final project         | 45     | 45     | 50           | Apr 7 (2% pt bonus) \| Apr 11 (no bonus)                    |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Knowledge basket      | 5      | 5      | 0            | Multiple                                                    |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Total                 | 100    | 100    | 100          |                                                             |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
 
 Everything [^syllabus-4] in STA303 is due at 3:03 p.m. ET
 
@@ -244,14 +252,21 @@ Note: All times in this course are in Eastern Time (Toronto time). Please note t
 
 The following components are guaranteed knowledge basket assessment options. Additional opportunities may be offered throughout the course (Team Up!, speaker series reflections, etc.)
 
++-----------------------------------------------------+---------+-----------------------------------------+
 | Assessment                                          | \%      | Due date                                |
-|-----------------------------------------------------|---------|-----------------------------------------|
++=====================================================+=========+=========================================+
 | Pre-knowledge check: completion                     | 0.5     | Jan 20                                  |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Pre-knowledge check: 80%+ or workshop               | 0.5     | Jan 20 (80%+ score) \| Feb 2 (workshop) |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Professional development task proposal              | 1       | Feb 3                                   |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Professional development task evidence & reflection | 3       | Mar 31                                  |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Writing & peer review (Create-Assess-Reflect) x 5   | 0.5 X 5 | Friday-Tuesday-Friday each Module       |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Module check-in x 5                                 | 0.1 X 5 | Last Friday of each Module              |
++-----------------------------------------------------+---------+-----------------------------------------+
 
 ## Hours expectations
 
