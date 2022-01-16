@@ -150,6 +150,35 @@ Module check-ins are a short questionnaire to help me 'take the pulse' of the cl
 | Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                                 |
 +--------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
+## Graduate school info session
+
+| **Information**                                        | **Note**                                            |
+|:-------------------------------------------------------|:----------------------------------------------------|
+| Name                                                   | Module 1 graduate school info session and panel     |
+| Type (Main, Mini or Basket)                            | Basket                                              |
+| Value                                                  | 0.1%                                                |
+| Due                                                    | `r m1_friday`                                       |
+| Submission instructions                                | Submission: [Via Quercus](`r m1_gradschool`)        |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
+
+
+There will be two versions of this session, each in class time on January 19, 2022, 10:10 to 11:00 a.m. and 3:10 to 4:00 p.m.
+
+These sessions will have a short presentat frionom the administrators of some potentially relevant U of T graduate programs as well as a panel discussion with some of the course TAs. They will talk about their experiences, things they wish they'd know, and reference letters.
+
+**10:00 a.m. class:** [Master of Financial Insurance (MFI)](https://mfi.utoronto.ca/) and [Master of Science in Applied Commuting (MScAC)](https://mscac.utoronto.ca/) administrators + TA panel
+
+**3:00 p.m. class:** [Master of Science in Statistics and PhD in Statistics](https://www.statistics.utoronto.ca/future-students/our-graduate-programs) administrator (note: Alison will also share some general advice for if you're looking at program elsewhere as well) + TA panel
+
+
+To earn the 0.1 points up for attending a grad school information session and panel you must attend for at least 75% of one of the sessions (i.e., you cannot just log in and then log out again) AND complete this short questionnaire. There are three questions, you must answer Q1 and 2, but Q3 is optional.
+
+__Notes__: 
+
+- You _cannot_ earn double points for attending both sessions.  
+- Attendance is not required, there are plenty of other ways to earn 🧺knowledge basket points.  
+- You can attend either session (or both, if you really wanted). There are no section restrictions for STA303.
+- The session is _not_ being recorded.
 
 
 ## Punctuation art

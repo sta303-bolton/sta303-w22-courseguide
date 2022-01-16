@@ -56,6 +56,8 @@ assignments_link = "https://q.utoronto.ca/courses/253305/assignments"
 oneperc = "Friday, April 8, 2022 at 3:03 p.m. ET"
 punctart_link = "https://q.utoronto.ca/courses/253305/assignments/786424"
 
+m1_friday = "Friday, January 21, 2022 at 3:03 p.m ET"
+m1_gradschool = "https://q.utoronto.ca/courses/253305/quizzes/239864"
 
 #### Writing
 m1_c = "Friday, January 14, 2022 at 3:03 p.m ET"
