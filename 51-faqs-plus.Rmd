@@ -61,7 +61,9 @@ Yes.
 
 -   Synchronous attendance is NOT required to pass this course, but being able to attend (online) synchronously at the times in the timetable may make things easier for you.
 
-##### *"Where is your **office**?"*/*"Can I come see you in-person?"* At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
+##### *"Where is your **office**?"*/*"Can I come see you in-person?"* 
+
+At this stage, I cannot offer in-person office hours nor student meetings in my office. Drop-ins are not currently allowed for any instructors or TAs in Statistical Sciences, unless they have told you they have organized another meeting space for this purpose.
 
 ### Assessments FAQ
 
@@ -147,7 +149,7 @@ Almost all the big ones! The mixed assessments have a window, but professional d
 
 ##### _"Are we allowed to answer assignments with programming languages other than R?"_
 
-This is an R-based course, so only coding assessments using R will be accepted.
+This is an R-based course, so only coding assessments using R will be accepted. (Note: For the professional development task ONLY you could use another language in a blog post/write-up etc., as we are grading your goal-setting and reflection on a communication/collaboration task, not your code directly.)
 
 ##### _"What are the minimum requirements to pass the course?"_
 
