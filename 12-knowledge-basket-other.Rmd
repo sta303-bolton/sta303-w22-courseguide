@@ -164,14 +164,14 @@ Module check-ins are a short questionnaire to help me 'take the pulse' of the cl
 
 There will be two versions of this session, each in class time on January 19, 2022, 10:10 to 11:00 a.m. and 3:10 to 4:00 p.m.
 
-These sessions will have a short presentat frionom the administrators of some potentially relevant U of T graduate programs as well as a panel discussion with some of the course TAs. They will talk about their experiences, things they wish they'd know, and reference letters.
+These sessions will have a short presentation from the administrators/program managers of some potentially relevant U of T graduate programs as well as a panel discussion with some of the course TAs. They will talk about their experiences, things they wish they'd know, and reference letters.
 
 **10:00 a.m. class:** [Master of Financial Insurance (MFI)](https://mfi.utoronto.ca/) and [Master of Science in Applied Commuting (MScAC)](https://mscac.utoronto.ca/) administrators + TA panel
 
 **3:00 p.m. class:** [Master of Science in Statistics and PhD in Statistics](https://www.statistics.utoronto.ca/future-students/our-graduate-programs) administrator (note: Alison will also share some general advice for if you're looking at program elsewhere as well) + TA panel
 
 
-To earn the 0.1 points up for attending a grad school information session and panel you must attend for at least 75% of one of the sessions (i.e., you cannot just log in and then log out again) AND complete this short questionnaire. There are three questions, you must answer Q1 and 2, but Q3 is optional.
+To earn the 0.1 points up for attending a grad school information session and panel you must attend for at least 75% of one of the sessions (i.e., you cannot just log in and then log out again) AND complete the short questionnaire. There are three questions, you must answer Q1 and 2, but Q3 is optional.
 
 __Notes__: 
 
@@ -179,6 +179,7 @@ __Notes__:
 - Attendance is not required, there are plenty of other ways to earn 🧺knowledge basket points.  
 - You can attend either session (or both, if you really wanted). There are no section restrictions for STA303.
 - The session is _not_ being recorded.
+- PollEverywhere has nothing to do with your attendance/knowledge basket points. You don't have to engage with it if you do not want to.
 
 
 ## Punctuation art
