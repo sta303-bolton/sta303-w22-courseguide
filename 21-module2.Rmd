@@ -252,7 +252,7 @@ knitr::include_graphics("images/stop-video.png")
 
 - [Video 1: Set up](https://play.library.utoronto.ca/6f87f2df36d49522514fb4d638967b52)
 
-- [Video 2: Data wrangling](https://play.library.utoronto.ca/watch/973c94fbbac4ceed5c10047a6e38d009)
+- [Video 2: Data wrangling](https://play.library.utoronto.ca/watch/6653b80f2a13fb7338132ae14e5a03c8)
 
 - [Video 3: Data viz](https://play.library.utoronto.ca/56e0b46e07f3af60f346518ef7f1e478)
 
