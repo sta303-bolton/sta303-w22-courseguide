@@ -760,7 +760,8 @@ Useful if you feel you need more details than you can reasonably give in the Int
 #### Results {#resultsreport}
 
 * Make sure this section is clearly organized, point-by-point, in paragraphs.
-* Computer output `r colorize("NEVER", "red")` goes in the body of the report, and RARELY in an appendix, though this depends on your audience/future users.
+* Computer output `r colorize("NEVER", "red")` goes in the body of the report, and RARELY in an appendix, though this depends on your audience/future users.  
+  * I would encourage you to consider providing code in 'supplementary materials' as this can aid others with reproducing your results and learning from your work. Privacy and sensitivity of data considerations apply.  
 * Include graphs and small tables that tell the main story; less relevant graphs/tables should go in an appendix.  
 * If you include a figure/table, you must refer to it in the body of the report (NO lonely figures/tables!). Describe in words what the table/graph shows.
 * If you find you are repeating all of the information that is in the graph or table, consider whether or not you need the graph or table.

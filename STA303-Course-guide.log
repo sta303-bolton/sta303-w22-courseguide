@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.23)  24 JAN 2022 10:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.23)  24 JAN 2022 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1400,55 +1400,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 4347--4349
  []
 
 [89] [90]
-Underfull \hbox (badness 10000) in paragraph at lines 4468--4470
+Underfull \hbox (badness 10000) in paragraph at lines 4471--4472
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 4474--4476
+
+ []
+
+[91]
 File: images/m2/worst-graph.png Graphic file (type bmp)
 <images/m2/worst-graph.png>
-[91]
 File: images/m2/fiscal.png Graphic file (type bmp)
 <images/m2/fiscal.png>
 [92] [93]
 File: images/m2/paraphrase.png Graphic file (type bmp)
 <images/m2/paraphrase.png>
 [94]
-Underfull \hbox (badness 10000) in paragraph at lines 4665--4667
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4667--4669
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4669--4671
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 4671--4673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4700--4702
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4710--4712
+Underfull \hbox (badness 10000) in paragraph at lines 4675--4677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4720--4722
+Underfull \hbox (badness 10000) in paragraph at lines 4677--4679
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4706--4708
 
  []
 
 [95]
-Underfull \hbox (badness 10000) in paragraph at lines 4722--4724
+Underfull \hbox (badness 10000) in paragraph at lines 4716--4718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4726--4728
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4728--4730
 
  []
 
@@ -1471,12 +1476,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4722--4724
 ]
  19.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4786--4788
+Underfull \hbox (badness 10000) in paragraph at lines 4792--4794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4788--4790
+Underfull \hbox (badness 10000) in paragraph at lines 4794--4796
 
  []
 
@@ -1511,7 +1516,7 @@ tex-text;!
 Missing character: There is no 👻 (U+1F47B) in font [lmroman10-regular]:mapping=
 tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 4969--4971
+Underfull \hbox (badness 10000) in paragraph at lines 4975--4977
 
  []
 
@@ -1531,12 +1536,12 @@ File: images/course-tools/choose create.png Graphic file (type bmp)
 File: images/course-tools/submit.png Graphic file (type bmp)
 <images/course-tools/submit.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 5043--5046
+Underfull \hbox (badness 10000) in paragraph at lines 5049--5052
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5043--5046
+Underfull \hbox (badness 10000) in paragraph at lines 5049--5052
 
  []
 
@@ -1545,7 +1550,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5043--5046
 [111
 
 ] [112] [113] [114]
-Overfull \hbox (6.48778pt too wide) in paragraph at lines 5458--5458
+Overfull \hbox (6.48778pt too wide) in paragraph at lines 5464--5464
 []|\TU/lmr/m/n/10 ID|  
  []
 
@@ -1554,17 +1559,17 @@ Overfull \hbox (6.48778pt too wide) in paragraph at lines 5458--5458
 [116
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 5530--5532
+Underfull \hbox (badness 10000) in paragraph at lines 5536--5538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5532--5534
+Underfull \hbox (badness 10000) in paragraph at lines 5538--5540
 
  []
 
 [117] [118] [119]
-Underfull \hbox (badness 10000) in paragraph at lines 5759--5761
+Underfull \hbox (badness 10000) in paragraph at lines 5765--5767
 
  []
 
@@ -1572,25 +1577,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 5759--5761
  22.
 Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
 tex-text;!
+Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
+tex-text;!
+Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
+tex-text;!
 [122
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[123]
-Underfull \hbox (badness 10000) in paragraph at lines 5937--5938
+] [123] [124]
+Underfull \hbox (badness 10000) in paragraph at lines 5970--5971
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5940--5941
+Underfull \hbox (badness 10000) in paragraph at lines 5973--5974
 
  []
 
-[124]
+[125]
 File: images/Student Rep Ad (Winter 2022).png Graphic file (type bmp)
 <images/Student Rep Ad (Winter 2022).png>
-(./STA303-Course-guide.bbl [125]
+(./STA303-Course-guide.bbl [126]
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -1598,16 +1604,16 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[126
+[127
 
 ] (./STA303-Course-guide.aux) ) 
 Here is how much of TeX's memory you used:
  20935 strings out of 478190
  391540 string characters out of 5853559
- 885809 words of memory out of 5000000
+ 896809 words of memory out of 5000000
  41137 multiletter control sequences out of 15000+600000
  477413 words of font info for 109 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,11n,121p,1043b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on STA303-Course-guide.pdf (126 pages).
+Output written on STA303-Course-guide.pdf (127 pages).
