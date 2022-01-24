@@ -150,6 +150,9 @@ Module check-ins are a short questionnaire to help me 'take the pulse' of the cl
 | Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                                 |
 +--------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
+See the [course overview page on Quercus](https://q.utoronto.ca/courses/253305/pages/course-overview) for the links to the versions with answers.
+
+
 ## Graduate school info session
 
 | **Information**                                        | **Note**                                            |
