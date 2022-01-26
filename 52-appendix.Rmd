@@ -168,14 +168,14 @@ Remember: "Small but mighty!" The _smaller_ the p-value, the _stronger_ the evid
 +--------------------------+----------------------------------------------------+
 | 0.05 \< p-value \> 0.1   | Weak evidence against the null hypothesis          |
 +--------------------------+----------------------------------------------------+
-| 0.01 \< p-value\< 0.05   | Moderate/some evidence against the null hypothesis |
+| 0.01 \< p-value \< 0.05   | Moderate/some evidence against the null hypothesis |
 +--------------------------+----------------------------------------------------+
 | 0.001 \< p-value \< 0.01 | Strong evidence against the null hypothesis        |
 +--------------------------+----------------------------------------------------+
 | \< 0.001                 | Very strong evidence against the null hypothesis   |
 +--------------------------+----------------------------------------------------+
 
-### What if you get a calue that is exactly one of these thresholds?
+### What if you get a value that is exactly one of these thresholds?
 
 It would be very rare to get a p-value of exactly one of these thresholds. If you were to, you could decide based on your judgment of the context. Should you be more or less conservative in your interpretation based on the needs of the project/client?
 

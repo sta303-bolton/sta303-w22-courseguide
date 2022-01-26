@@ -23,6 +23,517 @@ source("links.R",  local = knitr::knit_global())
 | Accommodations and extension policy | In the case of a personal illness/emergency, a [declaration can be made](`r extension`), but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-### Instructions
+Portfolio assessments aim to help you demonstrate your technical coding, statistical thinking, communication and reflection skills. This mini-portfolio also aims to recap and refresh knowledge from your previous statistics courses as well as building your ability to create quality data visualizations.
 
-To be announced.
+## General instructions
+
+-   Be very careful to follow instructions on variable naming. If you do not, your code won't pass autograding and you will not receive the grades. This will not be eligible for regrading requests.
+
+-   Comment your code! In an R code chunk comments start with a \# (pound sign or hastag symbol). Don't confuse this with the use of \# to denote different levels of headings in the text parts (governed by Markdown syntax) of an R Markdown document.
+
+-   You should neatly format your code. No strict style is required, but make sure it is easy to read your work. (Optional) You may find [Google's R Style Guide](https://google.github.io/styleguide/Rguide.html#:~:text=R%20is%20a%20high%2Dlevel,Guide%20by%20Hadley%20Wickham%20license.) or the [Tidyverse Style Guide](https://style.tidyverse.org/) interesting.
+
+-   DO include your code in the body of the PDF itself (don't set echo=FALSE, don't hide/suppress etc.). Note that this is _different_ to what you will be asked to do in the final project or in professional reporting. This is a demonstration of your skills.
+
+- If asked to write and answer in words, write in full sentences.
+
+-   KNIT EARLY AND OFTEN! Don't leave things till the last minute, your Rmd not knitting is not an emergency for which an extension will be granted.
+
+### Template
+
+You can access the template for this assessment [here](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-mini-portfolio&urlpath=rstudio%2F&branch=master).
+
+There is currently a lot of 'filler text' and 'filler code' in the template that you will want to **delete.** Fun fact: All filler text sourced from [Hipster Ipsum](https://hipsum.co/), which Katy Wang in the UG Stats office introduced me to.
+
+## Submission instructions
+
+-   Submit both your Rmd (must be called: sta303-w22-mini-portfolio.Rmd) and PDF (must be called: sta303-w22-mini-portfolio.pdf) on MarkUs.
+-   You do not need to submit any data or tex files.
+
+## Cover page
+
+You don't have to use the provided template, but you DO need to write your mini-portfolio in RMarkdown and include a cover page. The cover page must have:
+
+-   A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHUb portfolio, in the future)
+
+-   Your name
+
+-   Date (assessment submission date is fine)
+
+In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 11) to another hex code. You could use this tool to help you: <https://htmlcolorcodes.com/color-picker/>
+
+## Introduction
+
+*Write this section last or second to last (before the refection).*
+
+In the introduction section, write a brief summary of the skills you have demonstrated in this mini-portfolio, across the statistical skills sample, writing sample and reflection sections. Think of it like a **cover letter** for this document. It should be appropriate for a fairly general audience---imagine a future employer reading this. You may want to breifly explain the course context, as you understand it. What is STA303/1002 about? (Consider the [learning objectives in the syllabus](https://sta303-bolton.github.io/sta303-w22-courseguide/syllabus.html#learning-objectives))
+
+Your introduction should be **no longer than 300 words** and must **fit on one page**.
+
+## Statistical skills sample
+
+### Task 1: Setting up libraries
+
+Set up a chunk called `setup` where you load the `tidyverse` and `readxl` libraries. Set your chunk options to `message=FALSE` so all the package loading information isn't included in your our output. You will need to make sure you run this chunk each time you start a new session so you can use many of the functions required.
+
+```{r, include=FALSE, message = FALSE}
+library(tidyverse)
+library(readxl)
+```
+
+### Task 2: Visualizing the variance of a Binomial random variable for varying proportions
+
+**Goal**: Show visually that for a fixed value of $n$, $p=0.5$ will result in the largest variance for a Binomial random variable.
+
+-   Choose two appropriate values of $n>0$ for your demonstration and save them as `n1` and `n2`
+
+-   Create a vector of proportions, `props`, from 0 to 1, in steps of 0.01 (Tip: use the `seq()` function).
+
+    -   If I suggest a function you haven't seen before, you can search its documentation in your console by typing a ? in front of the function name, e.g. ?seq.
+
+-   Create a tibble (a data type in R, like a dataframe), `for_plot`, with the vector of `props` as the first variable, and two additional variables calculating the variance for each of your two chosen n values. (Call these `n1_var` and `n2_var`)
+
+-   Create **two** plots, one for each of your values of $n$, using `ggplot` and apply `theme_minimal()` to each one. These should appear in your PDF and do not need to be saved with specific name.
+
+    -   Add an appropriate **figure caption** to each chart (use fig.cap="Your text here" in the R chunk settings.
+
+        -   An appropriate title should succinctly explain the chart and mention the chosen n value.
+
+    -   Add a **caption** *within* the ggplot that says "Created by STUDENT NAME in STA303/1002, Winter 2022".
+
+    -   Give the x and y labels appropriate **labels**.
+
+#### Objects that must be carefully assigned to pass autograding
+
+-   `n1` and `n2` (both should be integer vectors of length 1)
+-   `props`, a numeric vector
+-   `for_plot`, a tibble with three correctly named columns
+
+```{r, include = FALSE, eval=FALSE, fig.cap="Variance of a binomial random variable a different proportions, for n = 3"}
+# Set n values
+n1 <- 3
+n2 <- 100
+
+# Create a sequence of proportions between 0 and 1
+props <- seq(0, 1, by = 0.01)
+
+# Create a tibble of the propotions and variances for plotting
+for_plot <- tibble(props = props, n1_var = n1*props*(1-props), n2_var = n2*props*(1-props))
+
+# First plot, for n = 3 (any n > 0 and an integer is appropriate)
+for_plot %>% 
+  ggplot(aes(x = props, y = n1_var)) +
+  geom_line() +  
+  theme_minimal() +
+  labs(caption = "Created by STUDENT NAME in STA303/1002, Winter 2022",
+      y = "Variance",
+      x = "Proportion")
+```
+
+```{r, fig.cap="Variance of a binomial random variable a different proportions, for n = 100", include = FALSE, eval=FALSE}
+# Second plot, for n = 100
+for_plot %>% 
+  ggplot(aes(x = p, y = n2_var)) +
+  geom_line() +  
+  theme_minimal() +
+      caption = "Created by STUDENT NAME in STA303/1002, Winter 2022",
+      y = "Variance",
+      x = "Proportion")
+
+```
+
+
+### Task 3: Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter
+
+**Goal**: Simulate a population of size 1000, using $N(10, 2)$, and take 100 independent, random samples of size 30 observations each from it. Calculate a Wald confidence interval (using an appropriate t-multiplier) for the population mean from each sample. Calculate what proportion of intervals contain the population mean and plot all these intervals, coloured by successful population mean capture or not.
+
+#### Specific steps
+
+-   Set the seed to the last three digits of your student ID (this is your numeric student identifier number, NOT your UTORID).
+
+-   Set up the following objects with the appropriate simulation parameters, sample size and number of samples.
+
+    -   `sim_mean` and `sim_sd`
+
+    -   `sample_size`
+
+    -   `number_of_samples`
+
+-   Calculate the appropriate t-multiplier (function: `qt(...)`) for constructing a 95% confidence interval in this context. Make sure your degrees of freedom are appropriate. Save it as `tmult` for later use.
+
+-   Create a vector called `population`, a simulated population using `sim_mean` and `sim_sd` and with 1000 values (function to generate random numbers from a normal distribution: `rnorm(...)`).
+
+-   Find the *actual* true mean for your population and save it as `pop_param`. This should be a numeric vector of length 1.
+
+-   Get 100 samples of size 30 from your population and save them in a vector called `sample_set`. (This might be a little tricky/unfamiliar, so here is one way to do it. You can just copy and paste this code.)
+
+```
+sample_set <- unlist(lapply(1:number_of_samples,
+    function (x) sample(population, size = sample_size)))
+```
+-   Create a new vector called `group_id` that will allow you to label the values from the 100 different samples above. Hint: `rep(…)` will be useful here, and has a great little argument called `each`. Take a look at the documentation (`?rep`) to compare the behaviour of `times` and `each`.
+
+-   Create a new `tibble` (a data type in R, like a dataframe), `my_sim`, that has two columns:`group_id` and `sample_set.`
+
+-   Create a new tibble, `ci_vals`, that starts with the dataset `my_sim` and then groups by `group_id`, and summarizes appropriately to create two new columns: `mean` and `sd`, that hold the means and standard deviations. There should be one row per group.
+
+-   Continue to change the tibble `ci_vals` by adding the following variables:
+
+    -   `lower` and `upper`, two columns that hold the lower and upper bound of a 95% confidence interval for the group. You will need to calculate this. Consider the equations for a confidence interval and remember that we are using a t-multiplier that you have already calculated.
+
+    -   `capture` which takes the values `TRUE` if the population parameter is in the 95% CI, and `FALSE` if not. These should be logical NOT character types.
+
+-   Create an object called `proportion_capture` that uses `ci_vals` and stores the proportion of intervals you created that capture the population parameter. This should be done using the object names, not 'hard coded', so that if you changed your set.seed or your sample size, etc., and run all the code again, it would update this value. It should be a vector of length 1.
+
+-   Plot these 100 confidence intervals in one plot, with the means indicated as points, as well as and a dotted line for the population parameter. `geom_errorbar()` will be very helpful.
+
+    -   **Colour** the confidence intervals by whether or not they contain the population parameter.
+
+        -   If the interval include the population parameter, colour it \#122451 if it DOES contain the parameter (TRUE) and \#B80000 if it DOES NOT (FALSE).
+
+    -   Set the **figure caption** to "Exploring our long-run 'confidence' in confidence intervals. This figure shows how often 95% confidence intervals from 100 simple random samples capture the population mean. The population was simulated from N(10, 2)".
+
+    -   Set the caption to "Created by STUDENT NAME in STA303/1002, Winter 2022". Replace STUDENT NAME with your name.
+
+    -   Set the **legend title** to "CI captures population parameter".
+
+    -   **Flip the coordinates** using `coord_flip()` so the intervals are horizontal across your chart.
+
+-   Add the following sentence to your Markdown (not in a code chunk):
+
+    -   $`$r proportion_capture\*100$`$ % of my intervals capture the the population parameter.
+
+    -   Important! Use BACKTICKS around r proportion_capture\*100. Things you put in backticks with an r at the beginning will be processed as inline R code. This key is located under the escape button on many keyboards.You may need to remove some spaces compared to the above.
+
+-   Briefly (\~1 paragraph) describe why we *can* include the population parameter in this plot AND why we cannot usually compare the population parameter to our confidence interval in practice (e.g., when working with data that has not been simulated). Write this for a non-statistical audience.
+
+#### Objects that must be carefully assigned to pass autograding
+
+-   `sim_mean` and `sim_sd`
+
+-   `sample_size`
+
+-   `number_of_samples`
+
+-   `tmult`
+
+-   `population`
+
+-   `pop_param`
+
+-   `group_id`
+
+-   `sample_set`
+
+-   `my_sim` , tibble with two columns
+
+-   `ci_vals`, tibble with 5 columns (after all steps completed)
+
+-   `proportion_capture`
+
+```{r, fig.width=9, fig.height=12, fig.cap="This is generally what your output should look like for the confidence interval task. Note: It won't be exactly the same.", echo=FALSE}
+# Set your seed to the last three digits of your student id
+set.seed(111)
+
+# Set up simulation parameters, sample size and number of samples
+sim_mean <- 10
+sim_sd <- 2
+sample_size <- 30
+number_of_samples <- 100
+
+# Set up T-multiplier
+tmult <- qt(0.975, sample_size-1)
+
+# Create a simulated true population
+population <- rnorm(1000, sim_mean, sim_sd)
+
+# Get the population parameter
+pop_param <- mean(population)
+
+# Get 100 samples
+sample_set <- unlist(lapply(1:number_of_samples, 
+                            function (x) sample(population, size = sample_size)))
+  
+# Set up group IDs
+group_id <- rep(1:100, each = 30)
+
+# Set up a tibble
+my_sim <- tibble(group_id, sample_set)
+
+ci_vals <- my_sim %>% 
+  group_by(group_id) %>% 
+  summarise(mean = mean(sample_set), sd = sd(sample_set)) %>% 
+  mutate(lower = mean - tmult*sd/sqrt(sample_size),
+         upper = mean + tmult*sd/sqrt(sample_size)) %>% 
+  mutate(capture = lower <= pop_param & upper >= pop_param)
+
+# What proportion of your intervals capture the population parameter
+proportion_capture <- mean(ci_vals$capture)
+
+ci_vals %>% 
+  ggplot(aes(x = group_id, y = mean, color = capture)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower, ymax = upper)) +
+  theme_minimal() +
+  geom_hline(yintercept = 10, lty = "dotted") +
+  scale_color_manual(values = c("TRUE" = "#122451", "FALSE" = "#B80000")) +
+  labs(color = "CI captures population parameter",
+       caption = "Created by STUDENT NAME in STA303/1002, Winter 2022", 
+       x = "", y = "") +
+  theme(legend.position = "bottom",
+        axis.text.y = element_blank()) +
+    coord_flip() 
+
+```
+
+\newpage
+
+### Task 4: Investigating whether there is an association between cGPA and STA303/1002 students correctly answering a question on global poverty rates
+
+In the 'getting to know you' survey at the beginning of STA303, students who participated in the survey were asked:
+
+-   What their current cumulative grade point average (CGPA) was at U of T.
+-   Whether the proportion of people living below the global poverty line had halved, doubled or stayed about the same in the last 20 years.
+
+So, what was the correct answer to the question about global poverty? [The proportion of the global population living below the poverty line has HALVED!](https://www.gapminder.org/ignorance/ignorance-test/results/question-3/)
+
+In the .xlsx file called `sta303-mini-portfolio-poverty.xlsx` there are 200 observations that represent the patterns in our class but from which is is not possible to identify individual students. The final goal of this task is to test whether there is a difference in cGPA between students who correctly answered this question and those who did not.
+
+#### Goal
+
+-  Briefly describe the goal of this task to someone who has not read these instructions and only has a general awareness of hypothesis testing. **Put it in your own words.**
+
+#### Wrangling the data
+
+-  Load the data, `sta303-mini-portfolio-poverty.xlsx,` into an object called `cgpa_data`, and apply the `clean_names()` function from the `janitor` package. Pay attention to the path to the file when providing it to R. It won't know to look in the data folder if you don't tell it.\
+-  Rename the cGPA variable to `cgpa` and the poverty question answer to `global_poverty_ans`.\
+-  Clean the data so only appropriate cGPA variables are included.\
+-  Create a new variable called `correct` that takes the value TRUE (logical, not character) if the respondent answered 'Halved' and FALSE if they answered 'Doubled' or "stayed about the same'.
+
+All of the above changes should be saved into the dataset called `cgpa_data.` I recommend using pipes `%>%`. There is a keyboard shortcut too: Cmd+Shift+M (Mac) or Ctrl+Shift+M (Windows).
+
+```{r, include=FALSE, eval=FALSE}
+# Read in the data
+cgpa_data <- readxl::read_xlsx("data/sta303-mini-portfolio-poverty.xlsx") %>% 
+  # Clean the names
+  janitor::clean_names() %>% 
+  # Rename the cGPA and answer variable to be easier to work with
+  rename(cgpa = what_is_your_c_gpa_at_u_of_t_if_you_dont_want_to_answer_you_can_put_a_0,
+         global_poverty_ans = in_the_last_20_years_the_proportion_of_the_world_population_living_in_extreme_poverty_has) %>% 
+  # Filter out inappropriate cGPA values
+  filter(cgpa > 0 & cgpa <= 4) %>% 
+  # Create a new variable called correct that is TRUE/FALSE based on 
+  mutate(correct = if_else(global_poverty_ans == "Halved", TRUE, FALSE))
+```
+
+#### Visualizing the data
+
+-  Create a set of histograms, in one figure, positioned on top of each other, that will allow you examine the data in a useful way.
+
+```{r,  include=FALSE, eval=FALSE}
+# Plotting histograms to check normality
+cgpa_data %>% 
+  ggplot(aes(x = cgpa)) +
+  geom_histogram(bins=30) +
+  facet_wrap(~correct, nrow=2) +
+  theme_minimal() +
+  labs(title = "Distribution of cGPAs based on correct or incorrect answer to a question about\nwhether the proportion of people living below the global poverty line had halved,\ndoubled or stayed about the same in the last 20 years.",
+       caption = "Created")
+```
+
+#### Testing
+
+-  Choose an appropriate test to test whether there is an association between cGPA and if a student in STA303/1002 answered this question correctly. JUSTIFY your choice appropriately.
+
+```{r justifytest, include = FALSE, eval = FALSE}
+# The answer
+answer <- "We are interested in comparing the cGPA between two groups, those that answered the global poverty question correctly, and those who didn't. As there are two groups, we want one of the tests that compares two groups. We can assume the groups are independent of each other as there is no reasong to believe there is pairing or interference. Our first preferences is to use a indpedent samples t-test, if the assumptions for it are met, as it is more powerful than the corresponding non-parametric test. Considering the data visualization above, the normality assumption does not seem met as the data is truncated at the maximum cGPA value of 4, with a lot of left skew. Therefore, we will use the Mann-Whitney U test."
+
+```
+
+-  Conduct the test AND the equivalent version using `lm()` **interpret the result of the test appropriately** in a sentence or two.
+
+```{r tests, include = FALSE, eval = FALSE}
+# Mann Whitney-U test for two groups
+wilcox.test(cgpa~correct, data = cgpa_data)
+
+# Equivalent test using lm()
+summary(lm(rank(cgpa) ~ correct, data = cgpa_data))
+
+
+answer <- "The p-value of 0.35 suggest that we have no evidence against the claim that these groups have the same population distributions, that is that we have no evidence against the claim that there is no association between answering this question correctly and cGPA."
+```
+
+Recall the types of tests you have now encountered, in this and previous courses:
+
+-   T-test `t.test(x, data = my_data)` or `t.test(x~y, data = my_data)`
+-   ANOVA \`summary(aov(x\~y, data = my_data))
+-   Wilcoxon test `wilcox.test(x, data = my_data)`
+-   Mann-Whitney U `wilcox.test(x~y, data = my_data)` (note different use of wilcox function)
+-   Kruskal-Wallis Rank Sum test `kruskal.test(x~y, data = my_data)`
+
+Make sure you're considering the assumptions for the tests as well as some of the other criteria about which tests we choose to reach for. You may need ask some questions in office hours or find relevant readings to help you consider the non-parametric tests. Your strategies here might be something to consider in your reflection.
+
+## Writing sample
+
+#### Prompt
+
+Read the below job ad and write about the skills you would need to apply. Write on at least 2 soft skills and 2 analytic skills. The ad targets those with a MSc/PhD or those with 2+ years of experience, but imagine this requirement is not there.
+
+1.  **Soft skills**. What soft skills relating to communicating and working with others does the company seek?
+
+    1.  In what way do you already possess two of these skills?
+
+    2.  What evidence do you have of possessing one or two of these skills?
+
+2.  **Analytic skills.** What analytic skills relating to software use and performing data analysis does the company seek?
+
+    1.  In what way do you already possess two of these skills?
+
+    2.  What evidence do you have of possessing one or two of these skills?
+
+3.  **Connection to studies.** What other skills can you develop and what evidence can you accumulate during the remainder of your education to be ready for a similar job ad?
+
+**Structure your answer under five headings: 'Introduction', 'Soft skills', 'Analytics skills', 'Connection to studies' and 'Conclusion'. Write your answers in full sentences, with appropriate paragraphing. There should be a brief introduction and conclusion. Imagine a future employer or graduate school admission officer was reading this, you should explain what you are going to do, do it (the three headings) and then sum up what you did.**
+
+**Word count**: 300--500 words. **Please add a statement of your word count at the end of the passage.**
+
+![Yelp logo](images/assessments/Yelp_Logo.png){width="361"}
+
+#### Job add
+
+##### Data Scientist (Remote)
+
+**Category** Data Science & Analytics
+
+**Location** Toronto, Ontario, Canada
+
+**Department** Engineering and Product
+
+At Yelp, it's our mission to connect people with great local businesses. Yelp's unique dataset contains billions of interactions between users and local business around the globe, from a user reviewing a neighborhood coffee shop to requesting a repair quote with a photo of a leaky faucet. Data Scientists at Yelp work to make sense of these interactions to deliver impactful analyses and products to our users, business partners and the general public.
+
+The Data Science team performs analyses, builds models, and designs experiments that directly impact Yelp's business and users. Our centralized team is the most wide-ranging consumer of data at Yelp, adept at tasks from modeling content growth and user behavior to sharing insights about the health of local economies. With varied backgrounds and expertise, we strive for learning and growth in a collaborative environment.
+
+We'd love to have you apply, even if you don't feel you meet every single requirement in this posting. At Yelp, we're looking for great people, not just those who simply check off all the boxes.
+
+*This opportunity is fully remote and does not require you to be located in any particular region. We welcome applicants from throughout Canada.*
+
+**We Are Looking For:**
+
+-   3+ years of experience as a data scientist or MS/PhD and 2+ years of industry experience in a quantitative role.
+
+-   Fluency with SQL and Python or R for data analysis.
+
+-   Solid understanding of statistical inference, experimental design and analysis.
+
+-   Enthusiasm for clean code and sharing reproducible results.
+
+<!-- -->
+
+-   Communication skills to work with partners on engineering, product and business teams.
+
+-   An eye for great data visualization with Matplotlib, Plotly, ggplot, or Tableau.
+
+-   If you don't have 2+ years of industry experience in a quantitative role, please take a look at our College Data Scientist roles instead!
+
+**Where You Come In:**
+
+-   Define key metrics to track Yelp's performance and inform product decisions.
+
+<!-- -->
+
+-   Assess and frame questions from partners into actionable deliverables.
+
+-   Design, execute, and analyze complex experiments impacting millions of users.
+
+-   Devise and evaluate models for diverse business needs, such as identifying growth opportunities, personalizing user experience, and matching consumers to businesses.
+
+-   Own analyses start-to-finish and communicate key insights to stakeholders.
+
+-   Share your technical skills to develop and maintain high-quality, reusable analysis tools.
+
+#### LI-Remote
+
+*At Yelp, we believe that diversity is an expression of all the unique characteristics that make us human: race, age, sexual orientation, gender identity, religion, disability, and education --- and those are just a few. We recognize that diverse backgrounds and perspectives strengthen our teams and our product. The foundation of our diversity efforts are closely tied to our core values, which include "Playing Well With Others" and "Authenticity."*
+
+*We're proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition or disability.*
+
+*We are committed to providing reasonable accommodations for individuals with disabilities in our job application process. If you need assistance or an accommodation due to a disability, you may contact us at accommodations-recruiting\@yelp.com or 415-969-8488.*
+
+*Note: Yelp does not accept agency resumes. Please do not forward resumes to any recruiting alias or employee. Yelp is not responsible for any fees related to unsolicited resumes.*
+
+[Accessed from **Yelp®** on Feb 28, 2021, 15:15 PM](https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote)
+
+Large logo from Wikipedia <https://en.wikipedia.org/wiki/Yelp#/media/File:Yelp_Logo.svg>
+
+\newpage
+
+## Reflection
+
+Briefly, 100 to 200 words each, answer the following questions:
+
+-   What is something specific I'm proud of in this mini-portfolio?
+
+-   How might I apply what I've learned and demonstrated in this mini-portfolio in future work and study, after STA303/1002?
+
+-   What is something I'd do differently next time?
+
+\newpage
+
+## Rubric
+
+There is a breakdown of the overall contribution of each component to your grade below, followed by a more detailed rubric.
+
+
+```{r, echo=FALSE, message=FALSE}
+require(tidyverse)
+
+components <- readxl::read_xlsx("rubrics/mini-portfolio-rubric.xlsx") %>% 
+  filter(!is.na(Component) & !is.na(`Percentage for component` )) %>% 
+  mutate(`Percentage for component` = str_c(`Percentage for component`*100, "%")) %>% 
+  select(Component, `Percentage for component`)
+
+if (knitr:::is_latex_output()) {
+  components %>% 
+  kableExtra::kable(booktabs = T, align = c("l", "r")) %>%
+  kableExtra::kable_styling(latex_options = c("striped", "HOLD_position"), font_size = 12) 
+  
+  
+} else {
+ components %>% 
+  kableExtra::kable() %>%
+  kableExtra::kable_styling() %>% 
+  kableExtra::scroll_box(width = "100%")
+}
+```
+
+```{=tex}
+\newpage
+\blandscape
+```
+
+```{r, echo=FALSE, message=FALSE}
+rubric <- readxl::read_xlsx("rubrics/mini-portfolio-rubric.xlsx") %>% 
+  filter(!is.na(Component)) %>% 
+  select(-`Percentage for component`)
+
+if (knitr:::is_latex_output()) {
+  rubric %>% 
+  kableExtra::kable(booktabs = T, longtable = T) %>%
+  kableExtra::kable_styling(latex_options = c("striped", "repeat_header"), font_size = 8) %>% 
+        kableExtra::column_spec(1:2, width = "5em") %>% 
+        kableExtra::column_spec(3, width = "10em") %>% 
+        kableExtra::column_spec(4:6, width = "16em")
+
+} else {
+ rubric %>% 
+  kableExtra::kable() %>%
+  kableExtra::kable_styling() %>% 
+  kableExtra::scroll_box(width = "100%")
+  }
+
+```
+
+```{=tex}
+\elandscape
+```

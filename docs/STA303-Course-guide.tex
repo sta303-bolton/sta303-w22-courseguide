@@ -139,9 +139,9 @@
   \makeatother
 
 
-\usepackage{lscape}
-\newcommand{\blandscape}{\begin{landscape}}
-\newcommand{\elandscape}{\end{landscape}}
+  \usepackage{lscape}
+  \newcommand{\blandscape}{\begin{landscape}}
+  \newcommand{\elandscape}{\end{landscape}}
 
 \usepackage{color}
 \usepackage{framed}
@@ -1112,10 +1112,544 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions}{%
-\subsection{Instructions}\label{instructions}}
+Portfolio assessments aim to help you demonstrate your technical coding, statistical thinking, communication and reflection skills. This mini-portfolio also aims to recap and refresh knowledge from your previous statistics courses as well as building your ability to create quality data visualizations.
 
-To be announced.
+\hypertarget{general-instructions}{%
+\section{General instructions}\label{general-instructions}}
+
+\begin{itemize}
+\item
+  Be very careful to follow instructions on variable naming. If you do not, your code won't pass autograding and you will not receive the grades. This will not be eligible for regrading requests.
+\item
+  Comment your code! In an R code chunk comments start with a \# (pound sign or hastag symbol). Don't confuse this with the use of \# to denote different levels of headings in the text parts (governed by Markdown syntax) of an R Markdown document.
+\item
+  You should neatly format your code. No strict style is required, but make sure it is easy to read your work. (Optional) You may find \href{https://google.github.io/styleguide/Rguide.html\#:~:text=R\%20is\%20a\%20high\%2Dlevel,Guide\%20by\%20Hadley\%20Wickham\%20license.}{Google's R Style Guide} or the \href{https://style.tidyverse.org/}{Tidyverse Style Guide} interesting.
+\item
+  DO include your code in the body of the PDF itself (don't set echo=FALSE, don't hide/suppress etc.). Note that this is \emph{different} to what you will be asked to do in the final project or in professional reporting. This is a demonstration of your skills.
+\item
+  If asked to write and answer in words, write in full sentences.
+\item
+  KNIT EARLY AND OFTEN! Don't leave things till the last minute, your Rmd not knitting is not an emergency for which an extension will be granted.
+\end{itemize}
+
+\hypertarget{template}{%
+\subsection{Template}\label{template}}
+
+You can access the template for this assessment \href{https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https\%3A\%2F\%2Fgithub.com\%2Fsta303-bolton\%2Fsta303-w22-mini-portfolio\&urlpath=rstudio\%2F\&branch=master}{here}.
+
+There is currently a lot of `filler text' and `filler code' in the template that you will want to \textbf{delete.} Fun fact: All filler text sourced from \href{https://hipsum.co/}{Hipster Ipsum}, which Katy Wang in the UG Stats office introduced me to.
+
+\hypertarget{submission-instructions}{%
+\section{Submission instructions}\label{submission-instructions}}
+
+\begin{itemize}
+\tightlist
+\item
+  Submit both your Rmd (must be called: sta303-w22-mini-portfolio.Rmd) and PDF (must be called: sta303-w22-mini-portfolio.pdf) on MarkUs.
+\item
+  You do not need to submit any data or tex files.
+\end{itemize}
+
+\hypertarget{cover-page}{%
+\section{Cover page}\label{cover-page}}
+
+You don't have to use the provided template, but you DO need to write your mini-portfolio in RMarkdown and include a cover page. The cover page must have:
+
+\begin{itemize}
+\item
+  A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHUb portfolio, in the future)
+\item
+  Your name
+\item
+  Date (assessment submission date is fine)
+\end{itemize}
+
+In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 11) to another hex code. You could use this tool to help you: \url{https://htmlcolorcodes.com/color-picker/}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\emph{Write this section last or second to last (before the refection).}
+
+In the introduction section, write a brief summary of the skills you have demonstrated in this mini-portfolio, across the statistical skills sample, writing sample and reflection sections. Think of it like a \textbf{cover letter} for this document. It should be appropriate for a fairly general audience---imagine a future employer reading this. You may want to breifly explain the course context, as you understand it. What is STA303/1002 about? (Consider the \href{https://sta303-bolton.github.io/sta303-w22-courseguide/syllabus.html\#learning-objectives}{learning objectives in the syllabus})
+
+Your introduction should be \textbf{no longer than 300 words} and must \textbf{fit on one page}.
+
+\hypertarget{statistical-skills-sample}{%
+\section{Statistical skills sample}\label{statistical-skills-sample}}
+
+\hypertarget{task-1-setting-up-libraries}{%
+\subsection{Task 1: Setting up libraries}\label{task-1-setting-up-libraries}}
+
+Set up a chunk called \texttt{setup} where you load the \texttt{tidyverse} and \texttt{readxl} libraries. Set your chunk options to \texttt{message=FALSE} so all the package loading information isn't included in your our output. You will need to make sure you run this chunk each time you start a new session so you can use many of the functions required.
+
+\hypertarget{task-2-visualizing-the-variance-of-a-binomial-random-variable-for-varying-proportions}{%
+\subsection{Task 2: Visualizing the variance of a Binomial random variable for varying proportions}\label{task-2-visualizing-the-variance-of-a-binomial-random-variable-for-varying-proportions}}
+
+\textbf{Goal}: Show visually that for a fixed value of \(n\), \(p=0.5\) will result in the largest variance for a Binomial random variable.
+
+\begin{itemize}
+\item
+  Choose two appropriate values of \(n>0\) for your demonstration and save them as \texttt{n1} and \texttt{n2}
+\item
+  Create a vector of proportions, \texttt{props}, from 0 to 1, in steps of 0.01 (Tip: use the \texttt{seq()} function).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If I suggest a function you haven't seen before, you can search its documentation in your console by typing a ? in front of the function name, e.g.~?seq.
+  \end{itemize}
+\item
+  Create a tibble (a data type in R, like a dataframe), \texttt{for\_plot}, with the vector of \texttt{props} as the first variable, and two additional variables calculating the variance for each of your two chosen n values. (Call these \texttt{n1\_var} and \texttt{n2\_var})
+\item
+  Create \textbf{two} plots, one for each of your values of \(n\), using \texttt{ggplot} and apply \texttt{theme\_minimal()} to each one. These should appear in your PDF and do not need to be saved with specific name.
+
+  \begin{itemize}
+  \item
+    Add an appropriate \textbf{figure caption} to each chart (use fig.cap=``Your text here'' in the R chunk settings.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      An appropriate title should succinctly explain the chart and mention the chosen n value.
+    \end{itemize}
+  \item
+    Add a \textbf{caption} \emph{within} the ggplot that says ``Created by STUDENT NAME in STA303/1002, Winter 2022''.
+  \item
+    Give the x and y labels appropriate \textbf{labels}.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{objects-that-must-be-carefully-assigned-to-pass-autograding}{%
+\subsubsection{Objects that must be carefully assigned to pass autograding}\label{objects-that-must-be-carefully-assigned-to-pass-autograding}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{n1} and \texttt{n2} (both should be integer vectors of length 1)
+\item
+  \texttt{props}, a numeric vector
+\item
+  \texttt{for\_plot}, a tibble with three correctly named columns
+\end{itemize}
+
+\hypertarget{task-3-demonstrating-frequentist-confidence-intervals-as-long-run-probabilities-of-capturing-a-population-parameter}{%
+\subsection{Task 3: Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter}\label{task-3-demonstrating-frequentist-confidence-intervals-as-long-run-probabilities-of-capturing-a-population-parameter}}
+
+\textbf{Goal}: Simulate a population of size 1000, using \(N(10, 2)\), and take 100 independent, random samples of size 30 observations each from it. Calculate a Wald confidence interval (using an appropriate t-multiplier) for the population mean from each sample. Calculate what proportion of intervals contain the population mean and plot all these intervals, coloured by successful population mean capture or not.
+
+\hypertarget{specific-steps}{%
+\subsubsection{Specific steps}\label{specific-steps}}
+
+\begin{itemize}
+\item
+  Set the seed to the last three digits of your student ID (this is your numeric student identifier number, NOT your UTORID).
+\item
+  Set up the following objects with the appropriate simulation parameters, sample size and number of samples.
+
+  \begin{itemize}
+  \item
+    \texttt{sim\_mean} and \texttt{sim\_sd}
+  \item
+    \texttt{sample\_size}
+  \item
+    \texttt{number\_of\_samples}
+  \end{itemize}
+\item
+  Calculate the appropriate t-multiplier (function: \texttt{qt(...)}) for constructing a 95\% confidence interval in this context. Make sure your degrees of freedom are appropriate. Save it as \texttt{tmult} for later use.
+\item
+  Create a vector called \texttt{population}, a simulated population using \texttt{sim\_mean} and \texttt{sim\_sd} and with 1000 values (function to generate random numbers from a normal distribution: \texttt{rnorm(...)}).
+\item
+  Find the \emph{actual} true mean for your population and save it as \texttt{pop\_param}. This should be a numeric vector of length 1.
+\item
+  Get 100 samples of size 30 from your population and save them in a vector called \texttt{sample\_set}. (This might be a little tricky/unfamiliar, so here is one way to do it. You can just copy and paste this code.)
+\end{itemize}
+
+\begin{verbatim}
+sample_set <- unlist(lapply(1:number_of_samples,
+    function (x) sample(population, size = sample_size)))
+\end{verbatim}
+
+\begin{itemize}
+\item
+  Create a new vector called \texttt{group\_id} that will allow you to label the values from the 100 different samples above. Hint: \texttt{rep(\ldots{})} will be useful here, and has a great little argument called \texttt{each}. Take a look at the documentation (\texttt{?rep}) to compare the behaviour of \texttt{times} and \texttt{each}.
+\item
+  Create a new \texttt{tibble} (a data type in R, like a dataframe), \texttt{my\_sim}, that has two columns:\texttt{group\_id} and \texttt{sample\_set.}
+\item
+  Create a new tibble, \texttt{ci\_vals}, that starts with the dataset \texttt{my\_sim} and then groups by \texttt{group\_id}, and summarizes appropriately to create two new columns: \texttt{mean} and \texttt{sd}, that hold the means and standard deviations. There should be one row per group.
+\item
+  Continue to change the tibble \texttt{ci\_vals} by adding the following variables:
+
+  \begin{itemize}
+  \item
+    \texttt{lower} and \texttt{upper}, two columns that hold the lower and upper bound of a 95\% confidence interval for the group. You will need to calculate this. Consider the equations for a confidence interval and remember that we are using a t-multiplier that you have already calculated.
+  \item
+    \texttt{capture} which takes the values \texttt{TRUE} if the population parameter is in the 95\% CI, and \texttt{FALSE} if not. These should be logical NOT character types.
+  \end{itemize}
+\item
+  Create an object called \texttt{proportion\_capture} that uses \texttt{ci\_vals} and stores the proportion of intervals you created that capture the population parameter. This should be done using the object names, not `hard coded', so that if you changed your set.seed or your sample size, etc., and run all the code again, it would update this value. It should be a vector of length 1.
+\item
+  Plot these 100 confidence intervals in one plot, with the means indicated as points, as well as and a dotted line for the population parameter. \texttt{geom\_errorbar()} will be very helpful.
+
+  \begin{itemize}
+  \item
+    \textbf{Colour} the confidence intervals by whether or not they contain the population parameter.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      If the interval include the population parameter, colour it \#122451 if it DOES contain the parameter (TRUE) and \#B80000 if it DOES NOT (FALSE).
+    \end{itemize}
+  \item
+    Set the \textbf{figure caption} to ``Exploring our long-run `confidence' in confidence intervals. This figure shows how often 95\% confidence intervals from 100 simple random samples capture the population mean. The population was simulated from N(10, 2)''.
+  \item
+    Set the caption to ``Created by STUDENT NAME in STA303/1002, Winter 2022''. Replace STUDENT NAME with your name.
+  \item
+    Set the \textbf{legend title} to ``CI captures population parameter''.
+  \item
+    \textbf{Flip the coordinates} using \texttt{coord\_flip()} so the intervals are horizontal across your chart.
+  \end{itemize}
+\item
+  Add the following sentence to your Markdown (not in a code chunk):
+
+  \begin{itemize}
+  \item
+    \(`\)r proportion\_capture*100\(`\) \% of my intervals capture the the population parameter.
+  \item
+    Important! Use BACKTICKS around r proportion\_capture*100. Things you put in backticks with an r at the beginning will be processed as inline R code. This key is located under the escape button on many keyboards.You may need to remove some spaces compared to the above.
+  \end{itemize}
+\item
+  Briefly (\textasciitilde1 paragraph) describe why we \emph{can} include the population parameter in this plot AND why we cannot usually compare the population parameter to our confidence interval in practice (e.g., when working with data that has not been simulated). Write this for a non-statistical audience.
+\end{itemize}
+
+\hypertarget{objects-that-must-be-carefully-assigned-to-pass-autograding-1}{%
+\subsubsection{Objects that must be carefully assigned to pass autograding}\label{objects-that-must-be-carefully-assigned-to-pass-autograding-1}}
+
+\begin{itemize}
+\item
+  \texttt{sim\_mean} and \texttt{sim\_sd}
+\item
+  \texttt{sample\_size}
+\item
+  \texttt{number\_of\_samples}
+\item
+  \texttt{tmult}
+\item
+  \texttt{population}
+\item
+  \texttt{pop\_param}
+\item
+  \texttt{group\_id}
+\item
+  \texttt{sample\_set}
+\item
+  \texttt{my\_sim} , tibble with two columns
+\item
+  \texttt{ci\_vals}, tibble with 5 columns (after all steps completed)
+\item
+  \texttt{proportion\_capture}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-10-1.pdf}
+\caption{\label{fig:unnamed-chunk-10}This is generally what your output should look like for the confidence interval task. Note: It won't be exactly the same.}
+\end{figure}
+
+\newpage
+
+\hypertarget{task-4-investigating-whether-there-is-an-association-between-cgpa-and-sta3031002-students-correctly-answering-a-question-on-global-poverty-rates}{%
+\subsection{Task 4: Investigating whether there is an association between cGPA and STA303/1002 students correctly answering a question on global poverty rates}\label{task-4-investigating-whether-there-is-an-association-between-cgpa-and-sta3031002-students-correctly-answering-a-question-on-global-poverty-rates}}
+
+In the `getting to know you' survey at the beginning of STA303, students who participated in the survey were asked:
+
+\begin{itemize}
+\tightlist
+\item
+  What their current cumulative grade point average (CGPA) was at U of T.
+\item
+  Whether the proportion of people living below the global poverty line had halved, doubled or stayed about the same in the last 20 years.
+\end{itemize}
+
+So, what was the correct answer to the question about global poverty? \href{https://www.gapminder.org/ignorance/ignorance-test/results/question-3/}{The proportion of the global population living below the poverty line has HALVED!}
+
+In the .xlsx file called \texttt{sta303-mini-portfolio-poverty.xlsx} there are 200 observations that represent the patterns in our class but from which is is not possible to identify individual students. The final goal of this task is to test whether there is a difference in cGPA between students who correctly answered this question and those who did not.
+
+\hypertarget{goal}{%
+\subsubsection{Goal}\label{goal}}
+
+\begin{itemize}
+\tightlist
+\item
+  Briefly describe the goal of this task to someone who has not read these instructions and only has a general awareness of hypothesis testing. \textbf{Put it in your own words.}
+\end{itemize}
+
+\hypertarget{wrangling-the-data}{%
+\subsubsection{Wrangling the data}\label{wrangling-the-data}}
+
+\begin{itemize}
+\tightlist
+\item
+  Load the data, \texttt{sta303-mini-portfolio-poverty.xlsx,} into an object called \texttt{cgpa\_data}, and apply the \texttt{clean\_names()} function from the \texttt{janitor} package. Pay attention to the path to the file when providing it to R. It won't know to look in the data folder if you don't tell it.\\
+\item
+  Rename the cGPA variable to \texttt{cgpa} and the poverty question answer to \texttt{global\_poverty\_ans}.\\
+\item
+  Clean the data so only appropriate cGPA variables are included.\\
+\item
+  Create a new variable called \texttt{correct} that takes the value TRUE (logical, not character) if the respondent answered `Halved' and FALSE if they answered `Doubled' or "stayed about the same'.
+\end{itemize}
+
+All of the above changes should be saved into the dataset called \texttt{cgpa\_data.} I recommend using pipes \texttt{\%\textgreater{}\%}. There is a keyboard shortcut too: Cmd+Shift+M (Mac) or Ctrl+Shift+M (Windows).
+
+\hypertarget{visualizing-the-data}{%
+\subsubsection{Visualizing the data}\label{visualizing-the-data}}
+
+\begin{itemize}
+\tightlist
+\item
+  Create a set of histograms, in one figure, positioned on top of each other, that will allow you examine the data in a useful way.
+\end{itemize}
+
+\hypertarget{testing}{%
+\subsubsection{Testing}\label{testing}}
+
+\begin{itemize}
+\item
+  Choose an appropriate test to test whether there is an association between cGPA and if a student in STA303/1002 answered this question correctly. JUSTIFY your choice appropriately.
+\item
+  Conduct the test AND the equivalent version using \texttt{lm()} \textbf{interpret the result of the test appropriately} in a sentence or two.
+\end{itemize}
+
+Recall the types of tests you have now encountered, in this and previous courses:
+
+\begin{itemize}
+\tightlist
+\item
+  T-test \texttt{t.test(x,\ data\ =\ my\_data)} or \texttt{t.test(x\textasciitilde{}y,\ data\ =\ my\_data)}
+\item
+  ANOVA `summary(aov(x\textasciitilde y, data = my\_data))
+\item
+  Wilcoxon test \texttt{wilcox.test(x,\ data\ =\ my\_data)}
+\item
+  Mann-Whitney U \texttt{wilcox.test(x\textasciitilde{}y,\ data\ =\ my\_data)} (note different use of wilcox function)
+\item
+  Kruskal-Wallis Rank Sum test \texttt{kruskal.test(x\textasciitilde{}y,\ data\ =\ my\_data)}
+\end{itemize}
+
+Make sure you're considering the assumptions for the tests as well as some of the other criteria about which tests we choose to reach for. You may need ask some questions in office hours or find relevant readings to help you consider the non-parametric tests. Your strategies here might be something to consider in your reflection.
+
+\hypertarget{writing-sample}{%
+\section{Writing sample}\label{writing-sample}}
+
+\hypertarget{prompt}{%
+\subsubsection{Prompt}\label{prompt}}
+
+Read the below job ad and write about the skills you would need to apply. Write on at least 2 soft skills and 2 analytic skills. The ad targets those with a MSc/PhD or those with 2+ years of experience, but imagine this requirement is not there.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Soft skills}. What soft skills relating to communicating and working with others does the company seek?
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    In what way do you already possess two of these skills?
+  \item
+    What evidence do you have of possessing one or two of these skills?
+  \end{enumerate}
+\item
+  \textbf{Analytic skills.} What analytic skills relating to software use and performing data analysis does the company seek?
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    In what way do you already possess two of these skills?
+  \item
+    What evidence do you have of possessing one or two of these skills?
+  \end{enumerate}
+\item
+  \textbf{Connection to studies.} What other skills can you develop and what evidence can you accumulate during the remainder of your education to be ready for a similar job ad?
+\end{enumerate}
+
+\textbf{Structure your answer under five headings: `Introduction', `Soft skills', `Analytics skills', `Connection to studies' and `Conclusion'. Write your answers in full sentences, with appropriate paragraphing. There should be a brief introduction and conclusion. Imagine a future employer or graduate school admission officer was reading this, you should explain what you are going to do, do it (the three headings) and then sum up what you did.}
+
+\textbf{Word count}: 300--500 words. \textbf{Please add a statement of your word count at the end of the passage.}
+
+\begin{figure}
+\centering
+\includegraphics[width=3.76042in,height=\textheight]{images/assessments/Yelp_Logo.png}
+\caption{Yelp logo}
+\end{figure}
+
+\hypertarget{job-add}{%
+\subsubsection{Job add}\label{job-add}}
+
+\hypertarget{data-scientist-remote}{%
+\paragraph{Data Scientist (Remote)}\label{data-scientist-remote}}
+
+\textbf{Category} Data Science \& Analytics
+
+\textbf{Location} Toronto, Ontario, Canada
+
+\textbf{Department} Engineering and Product
+
+At Yelp, it's our mission to connect people with great local businesses. Yelp's unique dataset contains billions of interactions between users and local business around the globe, from a user reviewing a neighborhood coffee shop to requesting a repair quote with a photo of a leaky faucet. Data Scientists at Yelp work to make sense of these interactions to deliver impactful analyses and products to our users, business partners and the general public.
+
+The Data Science team performs analyses, builds models, and designs experiments that directly impact Yelp's business and users. Our centralized team is the most wide-ranging consumer of data at Yelp, adept at tasks from modeling content growth and user behavior to sharing insights about the health of local economies. With varied backgrounds and expertise, we strive for learning and growth in a collaborative environment.
+
+We'd love to have you apply, even if you don't feel you meet every single requirement in this posting. At Yelp, we're looking for great people, not just those who simply check off all the boxes.
+
+\emph{This opportunity is fully remote and does not require you to be located in any particular region. We welcome applicants from throughout\,Canada.}
+
+\textbf{We Are Looking For:}
+
+\begin{itemize}
+\item
+  3+ years of experience as a data scientist or MS/PhD and 2+ years of industry experience in a quantitative role.
+\item
+  Fluency with SQL and Python or R for data analysis.
+\item
+  Solid understanding of statistical inference, experimental design and analysis.
+\item
+  Enthusiasm for clean code and sharing reproducible results.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Communication skills to work with partners on engineering, product and business teams.
+\item
+  An eye for great data visualization with Matplotlib, Plotly, ggplot, or Tableau.
+\item
+  If you don't have 2+ years of industry experience in a quantitative role, please take a look at our College Data Scientist roles instead!
+\end{itemize}
+
+\textbf{Where You Come In:}
+
+\begin{itemize}
+\tightlist
+\item
+  Define key metrics to track Yelp's performance and inform product decisions.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Assess and frame questions from partners into actionable deliverables.
+\item
+  Design, execute, and analyze complex experiments impacting millions of users.
+\item
+  Devise and evaluate models for diverse business needs, such as identifying growth opportunities, personalizing user experience, and matching consumers to businesses.
+\item
+  Own analyses start-to-finish and communicate key insights to stakeholders.
+\item
+  Share your technical skills to develop and maintain high-quality, reusable analysis tools.
+\end{itemize}
+
+\hypertarget{li-remote}{%
+\subsubsection{LI-Remote}\label{li-remote}}
+
+\emph{At Yelp, we believe that diversity is an expression of all the unique characteristics that make us human: race, age, sexual orientation, gender identity, religion, disability, and education --- and those are just a few. We recognize that diverse backgrounds and perspectives strengthen our teams and our product. The foundation of our diversity efforts are closely tied to our core values, which include ``Playing Well With Others'' and ``Authenticity.''}
+
+\emph{We're proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition or disability.}
+
+\emph{We are committed to providing reasonable accommodations for individuals with disabilities in our job application process. If you need assistance or an accommodation due to a disability, you may contact us at accommodations-recruiting@yelp.com or 415-969-8488.}
+
+\emph{Note: Yelp does not accept agency resumes. Please do not forward resumes to any recruiting alias or employee. Yelp is not responsible for any fees related to unsolicited resumes.}
+
+\href{https://www.yelp.careers/us/en/job/YELPUS97AE2C833B0240318A66253960395242EXTERNALENUS/Data-Scientist-Remote}{Accessed from \textbf{Yelp®} on Feb 28, 2021, 15:15 PM}
+
+Large logo from Wikipedia \url{https://en.wikipedia.org/wiki/Yelp\#/media/File:Yelp_Logo.svg}
+
+\newpage
+
+\hypertarget{reflection}{%
+\section{Reflection}\label{reflection}}
+
+Briefly, 100 to 200 words each, answer the following questions:
+
+\begin{itemize}
+\item
+  What is something specific I'm proud of in this mini-portfolio?
+\item
+  How might I apply what I've learned and demonstrated in this mini-portfolio in future work and study, after STA303/1002?
+\item
+  What is something I'd do differently next time?
+\end{itemize}
+
+\newpage
+
+\hypertarget{rubric}{%
+\section{Rubric}\label{rubric}}
+
+There is a breakdown of the overall contribution of each component to your grade below, followed by a more detailed rubric.
+
+\begin{table}[H]
+\centering\begingroup\fontsize{12}{14}\selectfont
+
+\begin{tabular}{lr}
+\toprule
+Component & Percentage for component\\
+\midrule
+\cellcolor{gray!6}{Cover page} & \cellcolor{gray!6}{1\%}\\
+Introduction & 5\%\\
+\cellcolor{gray!6}{Statistical skills sample} & \cellcolor{gray!6}{60\%}\\
+Commenting of code & 1\%\\
+\cellcolor{gray!6}{Readability of R code} & \cellcolor{gray!6}{1\%}\\
+\addlinespace
+Reproducibility & 2\%\\
+\cellcolor{gray!6}{Writing sample} & \cellcolor{gray!6}{20\%}\\
+Reflection & 5\%\\
+\cellcolor{gray!6}{General (multiple components)} & \cellcolor{gray!6}{5\%}\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\newpage
+\blandscape
+
+\begingroup\fontsize{8}{10}\selectfont
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{5em}>{\raggedright\arraybackslash}p{5em}>{\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{16em}>{\raggedright\arraybackslash}p{16em}>{\raggedright\arraybackslash}p{16em}}
+\toprule
+Component & Subcomponent & Poor or missing (0\%) & Adequate (50\%) & Good (75\%) & Excellent (100\%)\\
+\midrule
+\endfirsthead
+\multicolumn{6}{@{}l}{\textit{(continued)}}\\
+\toprule
+Component & Subcomponent & Poor or missing (0\%) & Adequate (50\%) & Good (75\%) & Excellent (100\%)\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+\cellcolor{gray!6}{Cover page} & \cellcolor{gray!6}{Cover page} & \cellcolor{gray!6}{Not all required cover page components are present} & \cellcolor{gray!6}{N/A} & \cellcolor{gray!6}{N/A} & \cellcolor{gray!6}{All required cover page components are present}\\
+Introduction & Introduction & Missing OR significantly off topic OR totally inappropriate for audience OR longer than one page. & Some evidence of understanding of the course and the skills demonstrated in this assessment shown, but lacks clarity/specificity. May be someone inappropriate for specified audience. No longer than one page. & Introduction provides a mostly specific introduction to the mini-portfolio, explaining the context of the work and describing the skills demonstrated with mostly reasonble understanding. It is no longer than one page. & Introduction provides a succint and specific introduction to the mini-portfolio, explaining the context of the work and comprehensively describing the skills demonstrated. It is no longer than one page.\\
+\cellcolor{gray!6}{Statistical skills sample} & \cellcolor{gray!6}{Task 1} & \cellcolor{gray!6}{Missing or significant issues with completion of instructions for this task.} & \cellcolor{gray!6}{Correct libraries loaded but several instructions not followed.} & \cellcolor{gray!6}{Correct libraries loaded, but chunk may not be named or printed in the PDf appropriately.} & \cellcolor{gray!6}{Correct libraries loaded without package messages being included in the PDF, and the chunk is named 'setup'. This code chunk  appears in the PDF, under the apporpriate heading.}\\
+Statistical skills sample & Task 2 code and chart & Missing or goal not achieved. & A reasonable attempt made to complete the instructions, but with so many omissions or error that the goal is not fully achieved. & Most instructions correctly followed and mostly appropriate charts produced, but some major omissions or errors or a large number of minor errors. & All instructions correctly followed and appropriate charts produced. A small number of minor errors allowable.\\
+\cellcolor{gray!6}{Statistical skills sample} & \cellcolor{gray!6}{Task 3 code and chart} & \cellcolor{gray!6}{Missing or goal not achieved.} & \cellcolor{gray!6}{An attempt made to complete the instructions, but appropriate plot not created generated.} & \cellcolor{gray!6}{Most instructions correctly followed and a mostly appropriate chart produced, but some major omissions or errors or a large number of minor errors.} & \cellcolor{gray!6}{All instructions correctly followed and appropriate chart produced. A small number of minor errors allowable.}\\
+\addlinespace
+Statistical skills sample & Task 3 writing & Missing or more than one of the issues in the Adequate column. & Statement of \% of intervals that capture the the population parameter is incorrect OR hardcoded OR major incorrect claims made OR part of prompt not addressed. & Statement of \% of intervals that capture the the population parameter is correct and set programmatically (not hardcoded). A mostly clear and correct explanation of why we can show the pop parameter on this chart AND appropriate disucssion of why this is not usually the case in practice. Minor omissions allowable, but should not make any incorrect claims. & Statement of \% of intervals that capture the the population parameter is correct and set programmatically (not hardcoded). Clear and correct explanation of why we can show the pop parameter on this chart AND appropriate disucssion of why this is not usually the case in practice.\\
+\cellcolor{gray!6}{Statistical skills sample} & \cellcolor{gray!6}{Task 4 goal} & \cellcolor{gray!6}{Missing or more than one of the issues in the Adequate column.} & \cellcolor{gray!6}{Attempt made to put goal in own words, but paraprashing insufficient OR description of goal includes many errors OR description inappropriate for the audience.} & \cellcolor{gray!6}{Goal correctly stated and put into own words, but may lack some clarity OR not be somewhat inappropriate for the audience.} & \cellcolor{gray!6}{Goal clearly, correctly and succintly stated in the writers own words, in a way that is appropriate for the specified audience.}\\
+Statistical skills sample & Task 4 wrangling & Missing or goal not achieved. & An attempt made to complete the instructions, but final dataset & Most instructions correctly followed. & All instructions correctly followed.\\
+\cellcolor{gray!6}{Statistical skills sample} & \cellcolor{gray!6}{Task 4 viz} & \cellcolor{gray!6}{Missing or significant issues with completion of instructions for this task.} & \cellcolor{gray!6}{An attempt at a plot that would fufil the instructions, but many errors or omissions.  (Carryover errors from wrangling ignored.)} & \cellcolor{gray!6}{Mostly correct plot produced. (Carryover errors from wrangling ignored.)} & \cellcolor{gray!6}{Fully correct plot produced. (Carryover errors from wrangling ignored.)}\\
+Statistical skills sample & Task 4 test & Incorrect test chosen OR major errors in interpretation of p-value. & Correct test chosen, but without sufficient justification OR p-value description incorrect/missing. & Correct test chosen but justification somewhat lacking OR lm() implementation missing OR p-value interpretion had minor errors. & Correct test chosen and clearly justified. Both versions (test function +  lm()) correctly implemented and interpretation of p-value correctly put into plain language.\\
+\addlinespace
+\cellcolor{gray!6}{Commenting of code} & \cellcolor{gray!6}{Commenting of code} & \cellcolor{gray!6}{No relevant comments or some comments, but limited or innappropriate.} & \cellcolor{gray!6}{Some reasonable comments, though they would be only limited use to a reader.} & \cellcolor{gray!6}{Reasonable comments, though may be unhelpful to a reader in some sections.} & \cellcolor{gray!6}{Code is well-commented and so that a new reader could pick up and get a strong idea of what was being done, where—even if they are not an R coder.}\\
+Readability of R code & Readiability of R code & No R code in document OR major issues in clarity of code as to be mostly unreadable. & Code is mostly well formatted, but some innapropriate choices make some sections difficicult to read. & N/A & Code is well formatted and easy to read.\\
+\cellcolor{gray!6}{Reproducibility} & \cellcolor{gray!6}{Reproducibility} & \cellcolor{gray!6}{Rmd does not successfully knit OR was not included in the upload.} & \cellcolor{gray!6}{Minor changes need to be made to the Rmd to successfully knit to PDF AND/OR PDF not included in submission.} & \cellcolor{gray!6}{N/A} & \cellcolor{gray!6}{Rmd can be run to recreate the submitted PDF exactly AND both Rmd and PDF were submitted. E.g., Seeds set correctly and no errors that prevent knitting.}\\
+Writing sample & Addresses prompt & No response OR does not address one of the prompts for this week. & While the prompt is somewhat addressed, there is a lot missing and/or much of the response is not relevant/off-topic. & Prompt is addressed, though may go somewhat off-topic at points, or lacks some depth in its coverage. & Prompt is clearly and comprehensively addressed.\\
+\cellcolor{gray!6}{Writing sample} & \cellcolor{gray!6}{Structure} & \cellcolor{gray!6}{No response OR there is no structure, very difficult to follow.} & \cellcolor{gray!6}{Some structure but difficult to follow.} & \cellcolor{gray!6}{The organization follows a mostly logical structure, with some issues in paragraphing OR meets criteria for excellent but word count not included at the end.} & \cellcolor{gray!6}{Well organized, follows a logical structure. Word count included at the end.}\\
+\addlinespace
+Writing sample & Introduction & No response OR there is no concluding sentence(s). & An introduction is present but is only weakly connected to the topic/body of the writing sample or very somewhat generic. & An introduction is present but may lack some connection to the topic/body of the writing sample or is somewhat generic. & A clear introduction succintly introduces the central ideas and purpose of this writing sample.\\
+\cellcolor{gray!6}{Writing sample} & \cellcolor{gray!6}{Conclusion} & \cellcolor{gray!6}{No response OR there is no concluding sentence(s).} & \cellcolor{gray!6}{The conclusion is weak not well supported.} & \cellcolor{gray!6}{A conclusion is present but does not completely summarise the central ideas.} & \cellcolor{gray!6}{A clear conclusion summarizes the central ideas.}\\
+Reflection & Reflection & No reflection OR prompts not addressed approrpiately/answers off topic OR inappropriate tone for reflection in a professional context. & Majority of prompts adressed appropriately, but may be overally general AND/OR lack evidence of thoughtful relfection AND/OR the tone may be somewhat inappropriate for a professional context. & All prompts are addressed appropriately. Reasonably clear and mostly specific, though perhaps with some overaly general comments that are not more deeply developed. Evidence of some good reflective though. Tone is appropriately professional for academic/work context. & All prompts are answered clearly and specificly. Strong evidence of reflective thought. Tone is appropriately professional for academic/work context.\\
+\cellcolor{gray!6}{General (multiple components)} & \cellcolor{gray!6}{Writing mechanics} & \cellcolor{gray!6}{Several missing written compoennts OR considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice.} & \cellcolor{gray!6}{Multiple sections are difficult to read, but is otherwise understandable.} & \cellcolor{gray!6}{Slight difficulty in understanding one or two sections.} & \cellcolor{gray!6}{Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning.}\\*
+\end{longtable}
+\endgroup{}
+
+\elandscape
 
 \hypertarget{portfolio}{%
 \chapter{Portfolio}\label{portfolio}}
@@ -1138,8 +1672,8 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-1}{%
-\subsection{Instructions}\label{instructions-1}}
+\hypertarget{instructions}{%
+\subsection{Instructions}\label{instructions}}
 
 To be announced.
 
@@ -1164,8 +1698,8 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-2}{%
-\subsection{Instructions}\label{instructions-2}}
+\hypertarget{instructions-1}{%
+\subsection{Instructions}\label{instructions-1}}
 
 To be announced.
 
@@ -1190,8 +1724,8 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-3}{%
-\subsection{Instructions}\label{instructions-3}}
+\hypertarget{instructions-2}{%
+\subsection{Instructions}\label{instructions-2}}
 
 \hypertarget{final-project}{%
 \chapter{Final project}\label{final-project}}
@@ -1212,8 +1746,8 @@ Accommodations and extension policy & There are no routine extensions granted fo
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-4}{%
-\subsection{Instructions}\label{instructions-4}}
+\hypertarget{instructions-3}{%
+\subsection{Instructions}\label{instructions-3}}
 
 To be announced.
 
@@ -1455,8 +1989,8 @@ The \textbf{Reflect} phase is due second Friday of the module at 3:03 p.m. ET
   Rate the usefulness on a 3-point scale.
 \end{itemize}
 
-\hypertarget{general-instructions}{%
-\subsection{General instructions}\label{general-instructions}}
+\hypertarget{general-instructions-1}{%
+\subsection{General instructions}\label{general-instructions-1}}
 
 These assessments can be used to make up your knowledge basket. They are also useful in helping you prepare for your portfolio writing samples and final project writing.
 
@@ -1699,8 +2233,8 @@ Late submissions, accommodations, and extension policy & In the case of a person
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-5}{%
-\subsection{Instructions}\label{instructions-5}}
+\hypertarget{instructions-4}{%
+\subsection{Instructions}\label{instructions-4}}
 
 \textbf{There is a general overview of this task on the \href{https://q.utoronto.ca/courses/204826/pages/professional-development}{professional development overview page}.}
 
@@ -1779,8 +2313,8 @@ Your proposal should be:
 
 With these specifications, your proposal will be approximately 500 words.
 
-\hypertarget{rubric}{%
-\subsection{Rubric}\label{rubric}}
+\hypertarget{rubric-1}{%
+\subsection{Rubric}\label{rubric-1}}
 
 \newpage
 \blandscape
@@ -2043,9 +2577,9 @@ Provide links \textbf{and/or} copy/paste a screenshot of a blog, website, Github
 
 \begin{itemize}
 \item
-  \emph{The screenshot shows \ldots{} which is evidence of partially completing {[}goal{]} \ldots{}}
+  \emph{The screenshot shows \ldots{} which is evidence of partially completing \protect\hyperlink{goal}{goal} \ldots{}}
 \item
-  \emph{The provided link goes to \ldots{} which relates to {[}goal{]} \ldots{}}
+  \emph{The provided link goes to \ldots{} which relates to \protect\hyperlink{goal}{goal} \ldots{}}
 \item
   \emph{Notice that there are separate buttons on the website for each of the \ldots{}}
 \end{itemize}
@@ -2132,8 +2666,8 @@ You do not \emph{have} to set out your writing in this way to get full marks, bu
 \bottomrule
 \end{longtable}
 
-\hypertarget{rubric-1}{%
-\subsection{Rubric}\label{rubric-1}}
+\hypertarget{rubric-2}{%
+\subsection{Rubric}\label{rubric-2}}
 
 \newpage
 \blandscape
@@ -2186,8 +2720,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-6}{%
-\subsection{Instructions}\label{instructions-6}}
+\hypertarget{instructions-5}{%
+\subsection{Instructions}\label{instructions-5}}
 
 Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
 
@@ -2216,8 +2750,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-7}{%
-\subsection{Instructions}\label{instructions-7}}
+\hypertarget{instructions-6}{%
+\subsection{Instructions}\label{instructions-6}}
 
 Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80\%+ score or workshop engagement/attendance.
 
@@ -2290,8 +2824,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-8}{%
-\subsection{Instructions}\label{instructions-8}}
+\hypertarget{instructions-7}{%
+\subsection{Instructions}\label{instructions-7}}
 
 Module check-ins are a short questionnaire to help me `take the pulse' of the class. Each survey will like take only 5--10 minutes and will be available about 6:00 p.m. on the second Wednesday of each module, until 3:03 p.m. ET on the second Friday.
 
@@ -2382,15 +2916,15 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-9}{%
-\subsection{Instructions}\label{instructions-9}}
+\hypertarget{instructions-8}{%
+\subsection{Instructions}\label{instructions-8}}
 
 This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
 
 Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you \emph{can}, but this task/prompt can only be used once. I.e., if you do a punctiation art based component for your professional development, you cannot also submit this assessment.
 
-\hypertarget{prompt}{%
-\subsubsection{Prompt}\label{prompt}}
+\hypertarget{prompt-1}{%
+\subsubsection{Prompt}\label{prompt-1}}
 
 Use R to create a representation of the entire text of a book, using only the punctuation.
 
@@ -2434,8 +2968,8 @@ Use R to create a representation of the entire text of a book, using only the pu
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{submission-instructions}{%
-\subsubsection{Submission instructions}\label{submission-instructions}}
+\hypertarget{submission-instructions-1}{%
+\subsubsection{Submission instructions}\label{submission-instructions-1}}
 
 Submit the following:
 
@@ -2463,8 +2997,8 @@ Submit the following:
   If you would be willing to have your art shared with future students, please include at the end of your write-up ``I give my permission for my punctuation art to be shared {[}anonymously \textbar{} and credited to me, {]}''. Update the statement appropriately, e.g., \emph{I give my permission for my punctuation art to be shared and credited to me, Liza Bolton.}. If you have posted it on social media or a personal website, you're welcome to also provide that link.
 \end{itemize}
 
-\hypertarget{rubric-2}{%
-\subsubsection{Rubric}\label{rubric-2}}
+\hypertarget{rubric-3}{%
+\subsubsection{Rubric}\label{rubric-3}}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.11}}
@@ -2807,8 +3341,8 @@ Note: In this chart and in future analyses involving \texttt{sex}, penguins with
 
 \href{https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https\%3A\%2F\%2Fgithub.com\%2Fsta303-bolton\%2Fsta303-w22-activities\&urlpath=shiny\%2Fsta303-w22-activities\%2Finst\%2Ftutorials\%2Fsta303_m1_tests\%2F\&branch=master}{There is an interactive version of the below notes at this link.}
 
-\hypertarget{introduction}{%
-\subsection{Introduction}\label{introduction}}
+\hypertarget{introduction-1}{%
+\subsection{Introduction}\label{introduction-1}}
 
 You have probably encountered several statistical tests in your studies so far.
 
@@ -3848,7 +4382,7 @@ Please note, I filmed these videos last year, so please ignore any assessment/ad
 \item
   \href{https://play.library.utoronto.ca/6f87f2df36d49522514fb4d638967b52}{Video 1: Set up}
 \item
-  \href{https://play.library.utoronto.ca/watch/973c94fbbac4ceed5c10047a6e38d009}{Video 2: Data wrangling}
+  \href{https://play.library.utoronto.ca/watch/6653b80f2a13fb7338132ae14e5a03c8}{Video 2: Data wrangling}
 \item
   \href{https://play.library.utoronto.ca/56e0b46e07f3af60f346518ef7f1e478}{Video 3: Data viz}
 \end{itemize}
@@ -5778,14 +6312,16 @@ P-value range & Strength comment \\
 \endhead
 \textgreater{} 0.1 & No evidence against the null \\
 0.05 \textless{} p-value \textgreater{} 0.1 & Weak evidence against the null hypothesis \\
-0.01 \textless{} p-value\textless{} 0.05 & Moderate/some evidence against the null hypothesis \\
+0.01 \textless{} p-value \textless{} 0.05 & \begin{minipage}[t]{\linewidth}\raggedright
+Moderate/some evidence against the null hypothesis
+\end{minipage} \\
 0.001 \textless{} p-value \textless{} 0.01 & Strong evidence against the null hypothesis \\
 \textless{} 0.001 & Very strong evidence against the null hypothesis \\
 \bottomrule
 \end{longtable}
 
-\hypertarget{what-if-you-get-a-calue-that-is-exactly-one-of-these-thresholds}{%
-\subsection{What if you get a calue that is exactly one of these thresholds?}\label{what-if-you-get-a-calue-that-is-exactly-one-of-these-thresholds}}
+\hypertarget{what-if-you-get-a-value-that-is-exactly-one-of-these-thresholds}{%
+\subsection{What if you get a value that is exactly one of these thresholds?}\label{what-if-you-get-a-value-that-is-exactly-one-of-these-thresholds}}
 
 It would be very rare to get a p-value of exactly one of these thresholds. If you were to, you could decide based on your judgment of the context. Should you be more or less conservative in your interpretation based on the needs of the project/client?
 
