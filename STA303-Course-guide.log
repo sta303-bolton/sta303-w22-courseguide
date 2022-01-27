@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.25)  26 JAN 2022 07:34
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.25)  26 JAN 2022 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,9 +1050,9 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 [24
 
 ] [25] [26] [27]
-File: STA303-Course-guide_files/figure-latex/unnamed-chunk-10-1.pdf Graphic fil
-e (type pdf)
-<use STA303-Course-guide_files/figure-latex/unnamed-chunk-10-1.pdf>
+File: STA303-Course-guide_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file
+ (type pdf)
+<use STA303-Course-guide_files/figure-latex/unnamed-chunk-8-1.pdf>
 
 LaTeX Warning: Float too large for page by 34.21796pt on input line 1357.
 
@@ -1679,22 +1679,24 @@ Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mappin
 tex-text;!
 Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
 tex-text;!
+Missing character: There is no 📣 (U+1F4E3) in font [lmroman10-regular]:mapping=
+tex-text;!
 [137
 
 ] [138] [139]
-Underfull \hbox (badness 10000) in paragraph at lines 6506--6507
+Underfull \hbox (badness 10000) in paragraph at lines 6524--6525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6509--6510
+Underfull \hbox (badness 10000) in paragraph at lines 6527--6528
 
  []
 
 [140]
 File: images/Student Rep Ad (Winter 2022).png Graphic file (type bmp)
 <images/Student Rep Ad (Winter 2022).png>
-(./STA303-Course-guide.bbl [141]
+(./STA303-Course-guide.bbl [141] [142]
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -1702,16 +1704,16 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[142
+[143
 
 ] (./STA303-Course-guide.aux) ) 
 Here is how much of TeX's memory you used:
  20991 strings out of 478190
- 393315 string characters out of 5853559
+ 393306 string characters out of 5853559
  905618 words of memory out of 5000000
  41188 multiletter control sequences out of 15000+600000
  477421 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,11n,121p,1043b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on STA303-Course-guide.pdf (142 pages).
+Output written on STA303-Course-guide.pdf (143 pages).

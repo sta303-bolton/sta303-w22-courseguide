@@ -109,40 +109,6 @@ library(readxl)
 -   `props`, a numeric vector
 -   `for_plot`, a tibble with three correctly named columns
 
-```{r, include = FALSE, eval=FALSE, fig.cap="Variance of a binomial random variable a different proportions, for n = 3"}
-# Set n values
-n1 <- 3
-n2 <- 100
-
-# Create a sequence of proportions between 0 and 1
-props <- seq(0, 1, by = 0.01)
-
-# Create a tibble of the propotions and variances for plotting
-for_plot <- tibble(props = props, n1_var = n1*props*(1-props), n2_var = n2*props*(1-props))
-
-# First plot, for n = 3 (any n > 0 and an integer is appropriate)
-for_plot %>% 
-  ggplot(aes(x = props, y = n1_var)) +
-  geom_line() +  
-  theme_minimal() +
-  labs(caption = "Created by STUDENT NAME in STA303/1002, Winter 2022",
-      y = "Variance",
-      x = "Proportion")
-```
-
-```{r, fig.cap="Variance of a binomial random variable a different proportions, for n = 100", include = FALSE, eval=FALSE}
-# Second plot, for n = 100
-for_plot %>% 
-  ggplot(aes(x = p, y = n2_var)) +
-  geom_line() +  
-  theme_minimal() +
-      caption = "Created by STUDENT NAME in STA303/1002, Winter 2022",
-      y = "Variance",
-      x = "Proportion")
-
-```
-
-
 ### Task 3: Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter
 
 **Goal**: Simulate a population of size 1000, using $N(10, 2)$, and take 100 independent, random samples of size 30 observations each from it. Calculate a Wald confidence interval (using an appropriate t-multiplier) for the population mean from each sample. Calculate what proportion of intervals contain the population mean and plot all these intervals, coloured by successful population mean capture or not.
@@ -312,57 +278,16 @@ In the .xlsx file called `sta303-mini-portfolio-poverty.xlsx` there are 200 obse
 
 All of the above changes should be saved into the dataset called `cgpa_data.` I recommend using pipes `%>%`. There is a keyboard shortcut too: Cmd+Shift+M (Mac) or Ctrl+Shift+M (Windows).
 
-```{r, include=FALSE, eval=FALSE}
-# Read in the data
-cgpa_data <- readxl::read_xlsx("data/sta303-mini-portfolio-poverty.xlsx") %>% 
-  # Clean the names
-  janitor::clean_names() %>% 
-  # Rename the cGPA and answer variable to be easier to work with
-  rename(cgpa = what_is_your_c_gpa_at_u_of_t_if_you_dont_want_to_answer_you_can_put_a_0,
-         global_poverty_ans = in_the_last_20_years_the_proportion_of_the_world_population_living_in_extreme_poverty_has) %>% 
-  # Filter out inappropriate cGPA values
-  filter(cgpa > 0 & cgpa <= 4) %>% 
-  # Create a new variable called correct that is TRUE/FALSE based on 
-  mutate(correct = if_else(global_poverty_ans == "Halved", TRUE, FALSE))
-```
-
 #### Visualizing the data
 
 -  Create a set of histograms, in one figure, positioned on top of each other, that will allow you examine the data in a useful way.
-
-```{r,  include=FALSE, eval=FALSE}
-# Plotting histograms to check normality
-cgpa_data %>% 
-  ggplot(aes(x = cgpa)) +
-  geom_histogram(bins=30) +
-  facet_wrap(~correct, nrow=2) +
-  theme_minimal() +
-  labs(title = "Distribution of cGPAs based on correct or incorrect answer to a question about\nwhether the proportion of people living below the global poverty line had halved,\ndoubled or stayed about the same in the last 20 years.",
-       caption = "Created")
-```
 
 #### Testing
 
 -  Choose an appropriate test to test whether there is an association between cGPA and if a student in STA303/1002 answered this question correctly. JUSTIFY your choice appropriately.
 
-```{r justifytest, include = FALSE, eval = FALSE}
-# The answer
-answer <- "We are interested in comparing the cGPA between two groups, those that answered the global poverty question correctly, and those who didn't. As there are two groups, we want one of the tests that compares two groups. We can assume the groups are independent of each other as there is no reasong to believe there is pairing or interference. Our first preferences is to use a indpedent samples t-test, if the assumptions for it are met, as it is more powerful than the corresponding non-parametric test. Considering the data visualization above, the normality assumption does not seem met as the data is truncated at the maximum cGPA value of 4, with a lot of left skew. Therefore, we will use the Mann-Whitney U test."
-
-```
-
 -  Conduct the test AND the equivalent version using `lm()` **interpret the result of the test appropriately** in a sentence or two.
 
-```{r tests, include = FALSE, eval = FALSE}
-# Mann Whitney-U test for two groups
-wilcox.test(cgpa~correct, data = cgpa_data)
-
-# Equivalent test using lm()
-summary(lm(rank(cgpa) ~ correct, data = cgpa_data))
-
-
-answer <- "The p-value of 0.35 suggest that we have no evidence against the claim that these groups have the same population distributions, that is that we have no evidence against the claim that there is no association between answering this question correctly and cGPA."
-```
 
 Recall the types of tests you have now encountered, in this and previous courses:
 
