@@ -21,7 +21,7 @@ library(knitr)
 
 # How to use this course guide
 
-```{r, echo=FALSE, out.width="50%", fig.align='center',}
+```{r, echo=FALSE, out.width="50%", fig.align='center'}
 knitr::include_graphics("images/quercus-cover.png")
 ```
 
@@ -33,7 +33,18 @@ You can download a PDF version of the whole guide with the download button (on t
 
 ## Communication policy reminder
 
-All content and logistics questions must be asked on [Piazza](%60r%20piazza%60). Personal or private course matters should be emailed to [sta303\@utoronto.ca](mailto:sta303@utoronto.ca){.email}. Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
+All content and logistics questions must be asked on [Piazza](`r piazza`). Personal or private course matters should be emailed to [sta303@utoronto.ca](mailto:sta303@utoronto.ca). Quercus mail or emails sent directly to teaching team members will not be answered. If you've missed an assessment due to illness or emergency, please fill out the appropriate form.
 
 See the [communication policy in the syllabus](#communication-policy) for more information.
 
+## Intellectual property statement
+
+Course material that has been created by your instructor (i.e., lecture slides, questions/solutions, and any other course material and resources made available to you) is the intellectual property of your instructor (or the credited holder of the copyright) and is made available to you for your personal use in this course. Sharing, posting, selling or using this material outside of your personal use in this course is not permitted under any circumstances and is considered an infringement of intellectual property rights. If you would like to record any course activities in this course, you MUST ask permission from your instructor in advance. According to intellectual property laws, not asking permission constitutes stealing.
+
+### Tutoring companies
+
+Tutoring companies do not have any right to suggest they are associated with this course. There is extensive support available within the course, department and university for all students. __It is the opinion of the author that many tutoring companies are a predatory scam and a potential risk to students' academic integrity.__ This statement should be prominently included by any such company seeking to share this resource.
+
+## Contributors
+
+Big thanks to Amin Banihashemi, Sonia Markes, Ian Richter, Dongyang (Dawn) Yang, Kevin Zhang, and Rob Zimmerman for their contributions to this course guide.
