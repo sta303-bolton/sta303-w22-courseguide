@@ -95,7 +95,7 @@ library(readxl)
 
 -   Create **two** plots, one for each of your values of $n$, using `ggplot` and apply `theme_minimal()` to each one. These should appear in your PDF and do not need to be saved with specific name.
 
-    -   Add an appropriate **figure caption** to each chart (use fig.cap="Your text here" in the R chunk settings.
+    -   Add an appropriate **figure caption** to each chart (use fig.cap="Your text here" in the R chunk settings).
 
         -   An appropriate title should succinctly explain the chart and mention the chosen n value.
 
@@ -108,6 +108,7 @@ library(readxl)
 -   `n1` and `n2` (both should be integer vectors of length 1)
 -   `props`, a numeric vector
 -   `for_plot`, a tibble with three correctly named columns
+
 ### Task 3: Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter
 
 **Goal**: Simulate a population of size 1000, using $N(10, 2)$, and take 100 independent, random samples of size 30 observations each from it. Calculate a Wald confidence interval (using an appropriate t-multiplier) for the population mean from each sample. Calculate what proportion of intervals contain the population mean and plot all these intervals, coloured by successful population mean capture or not.
