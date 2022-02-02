@@ -166,7 +166,7 @@ Remember: "Small but mighty!" The _smaller_ the p-value, the _stronger_ the evid
 +==========================+====================================================+
 | \> 0.1                   | No evidence against the null                       |
 +--------------------------+----------------------------------------------------+
-| 0.05 \< p-value \> 0.1   | Weak evidence against the null hypothesis          |
+| 0.05 \< p-value \< 0.1   | Weak evidence against the null hypothesis          |
 +--------------------------+----------------------------------------------------+
 | 0.01 \< p-value \< 0.05   | Moderate/some evidence against the null hypothesis |
 +--------------------------+----------------------------------------------------+
