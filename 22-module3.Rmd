@@ -66,6 +66,24 @@ You may want to pay special attention to the likelihood ratio test.
 
 [Chapter 2](https://bookdown.org/roback/bookdown-BeyondMLR/ch-beyondmost.html) (§ 2.1–2.9) of Roback, P. & Legler, J. Beyond Multiple Linear Regression. (2021). Retrieved from: https://bookdown.org/roback/bookdown-BeyondMLR/ (Links to an external site.) 
 
+### Model comparison more generally
+
+_Thank you to TA Ian for developing this section! He applies statistics in his own research in ecology._
+
+- Model selection is a key component of the development of any statistical model. In model development, there may be multiple plausible hypotheses that can be evaluated simultaneously by parameterizing different models with the same data. These candidate models can differ in both fixed and random effects however the models generally have a similar structure (e.g., multiple combinations of a set of fixed effects). To test the hypotheses with the candidate models, one must determine and compare the support for each model to determine which model(s) fit the observed data the best. While the likelihood-ratio test is suitable when comparing two models to one another, there are certain situations when the goal is to compare multiple (> 2) models to identify the model that best fits the data. 
+
+- There are many different criteria for model selection that can be used. Measures such as Akaike Information Criterion (AIC), adjusted $R^2$, and the Bayesian Information Criterion (BIC) measure the goodness of fit of the model to the data whereas others are focused on calculating the predictive performance of the model (e.g., prediction error rate, root mean square error). Model selection criteria focus on model fit however some will also consider model complexity as model fit generally increases with an increase in the number of model parameters. The selection of the appropriate criteria is generally dependent on the type of model and the purpose of model development (i.e. inference or prediction). 
+
+- For this course, we will use likelihood ratio tests as well as the information-theoretic (I-T) approach using AIC for model selection. AIC measures the lack of model fit to the data based on the log-likelihood of the model while penalizing for the number of parameters in the model. Lower AIC values indicate that the model strongly fits the observed data whereas a higher value indicates a poor model fit. __The absolute AIC values can be challenging to interpret__ so the values are compared relative to one another. Among the candidate models, identify the lowest AIC value ($AIC_{min}$}) and calculate the differences between $AIC_{min}$ and the AIC values of every candidate model ($AIC_{i}$) to obtain AIC differences ($\Delta$AIC) for each model. In general, large values of $\Delta$AIC (> 10) indicate no support for the model, models with intermediate values (4-7) have little support, and models with small values (0-3) have strong support. These categories are arbitrary and may differ among studies. 
+
+- There are scenarios where multiple models have similar support and there is no considerable difference among the model selection criteria. These models would then represent plausible models and support their associated hypotheses. Additionally, model weights can be calculated to evaluate the relative support of each model by the data. Larger weights indicate that the model is strongly supported by the data whereas small values suggest the model poorly fits the data. 
+
+##### References
+
+Burnham, K. P., Anderson, D. R., & Huyvaert, K. P. (2011). AIC model selection and multimodel inference in behavioral ecology: some background, observations, and comparisons. Behavioral ecology and sociobiology, 65(1), 23-35.
+
+
+
 ## Correlated data 
 
 ### Reading
@@ -160,7 +178,7 @@ You can use R for so much more than just running regressions! This section is __
 1. Choose an image to pixelate to get your character. You'll need to have a URL for it (or you could edit the code for a local file). I think it is easiest to upload to GitHub (or Google Photos) and then right click to copy the image address.
 1. Play with the Shiny app interface for the pixelart package to help you get the settings right.
 1. Update these settings in the code below.
-1. [Super super optional] Post your character on the [optional discussion board for this week](https://q.utoronto.ca/courses/204826/discussion_topics/1061843?module_item_id=2273817). If you have a Stardew Valley character or some other pixel art of yourself, you can share that, too. This is just for fun, no requirement to participate. Please be sensible about making sure any images are _appropriate._ Don't use images of other people, etc. 
+1. [Super super optional] Post your character on the [optional discussion board for this week](https://q.utoronto.ca/courses/253305/discussion_topics/1616645). If you have a Stardew Valley character or some other pixel art of yourself, you can share that, too. This is just for fun, no requirement to participate. Please be sensible about making sure any images are _appropriate._ Don't use images of other people, etc. 
 
 ```{r pixelart, eval=FALSE}
 # Install pixel art

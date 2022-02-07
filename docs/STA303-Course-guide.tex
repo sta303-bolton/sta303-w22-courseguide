@@ -1694,7 +1694,7 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \item
   Be very careful to follow instructions on variable naming. If you do not, your code won't pass auto-grading and you will not receive the grades. This will not be eligible for regrading requests.
 \item
-  Comment your code! In an R code chunk comments start with a \# (pound sign or hastag symbol). Don't confuse this with the use of \# to denote different levels of headings in the text parts (governed by Markdown syntax) of an R Markdown document.
+  Comment your code! In an R code chunk comments start with a \# (pound sign or hashtag symbol). Don't confuse this with the use of \# to denote different levels of headings in the text parts (governed by Markdown syntax) of an R Markdown document.
 \item
   \textbf{All figures and tables should have appropriate (and appropriately positioned) captions.}
 \item
@@ -1710,7 +1710,7 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \hypertarget{template-1}{%
 \subsection{Template}\label{template-1}}
 
-You can access the template for this assessment \href{https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https\%3A\%2F\%2Fgithub.com\%2Fsta303-bolton\%2Fsta303-w22-portfolio\&urlpath=rstudio\%2F\&branch=master}{here}. {[}COMING SOON{]}
+You can access the template for this assessment \href{https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https\%3A\%2F\%2Fgithub.com\%2Fsta303-bolton\%2Fsta303-w22-portfolio\&urlpath=rstudio\%2F\&branch=master}{here}.
 
 There is currently a lot of `filler text' and `filler code' in the template that you will want to \textbf{delete.} Fun fact: All filler text sourced from \href{https://hipsum.co/}{Hipster Ipsum}, which Katy Wang in the UG Stats office introduced me to.
 
@@ -1757,7 +1757,687 @@ Your introduction should be \textbf{no longer than 300 words} and must \textbf{f
 \hypertarget{statistical-skills-sample-1}{%
 \section{Statistical skills sample}\label{statistical-skills-sample-1}}
 
-Finalizing, will be posted soon.
+\hypertarget{a-note-on-time-management.}{%
+\subsection{A note on time management.}\label{a-note-on-time-management.}}
+
+Tasks 3 and 5 are essentially revision tasks for previous courses as I saw that there were still quite a few misunderstandings about these core concepts. If you find yourself unable to completely finish this portfolio, focusing your attention on the new material in Task 2 is a good strategy.
+
+I have tried to make the revision a useful practice opportunity for other skills. You'll see that Task 3 asks you to build a function. You may not have seen this in other classes before, but use the templates provided to help you. I expect your focus to be on modifying these templates to display appropriate text, I don't expect you to be an expert on error handling in R functions.
+
+\hypertarget{task-1-setting-up-libraries-and-seed-value}{%
+\subsection{Task 1: Setting up libraries and seed value}\label{task-1-setting-up-libraries-and-seed-value}}
+
+\begin{itemize}
+\item
+  Set up a chunk called \texttt{setup\_portfolio} where you load the \texttt{tidyverse} library.
+\item
+  Set your chunk options to \texttt{message=FALSE} so all the package loading information isn't included in your our output. You will need to make sure you run this chunk each time you start a new session so you can use many of the functions required.
+\item
+  Create an object called \texttt{last3digplus} that takes the value 100 + the last three digits of your student ID number.
+\item
+  Delete any placeholder library chunks in the template (if using).
+\end{itemize}
+
+\hypertarget{task-2a-return-to-statdew-valley-exploring-sources-of-variance-in-a-balanced-experimental-design-teaching-and-learning-world}{%
+\subsection{Task 2a: Return to Statdew Valley: exploring sources of variance in a balanced experimental design (teaching and learning world)}\label{task-2a-return-to-statdew-valley-exploring-sources-of-variance-in-a-balanced-experimental-design-teaching-and-learning-world}}
+
+In a class interactive, we explored some tomato and honey data in a statistical farming simulator.
+
+Suppose you also have some data about strawberry yields (in kgs) across 18 different strawberry patches on your farm. There had been a problem with birds eating more than their fair share of your grandmother's strawberries (there wouldn't be enough for her famous jam!) so she had tried out three `treatment' types: a scarecrow, covering the strawberries with netting and doing nothing (as a control).
+
+Each patch was harvested 6 times, twice under each treatment. Your grandmother says weather and soil conditions were remarkably consistent across the entire time.
+
+\hypertarget{growing-your-grandmothers-strawberry-patch}{%
+\subsubsection{Growing your (grandmother's) strawberry patch}\label{growing-your-grandmothers-strawberry-patch}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Don\textquotesingle{}t edit this file}
+\CommentTok{\# Sourcing it makes a function available}
+\CommentTok{\# You CAN edit these comments}
+\CommentTok{\# Load grow\_my\_strawberries() function}
+\FunctionTok{source}\NormalTok{(}\StringTok{"grow\_my\_strawberries.R"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  Run the function \texttt{grow\_my\_strawberries()} (the chunk to source the function must be run first for this to work) with \texttt{seed\ =\ last3digplus} as the input, saving the output as the object \texttt{my\_patch}.
+\item
+  Alter the \texttt{my\_patch} data so that \texttt{treatment} is a factor variable with the levels ordered as follows: ``No netting,'' ``Netting,'' ``Scarecrow.''
+\end{itemize}
+
+\hypertarget{plotting-the-strawberry-patch}{%
+\subsubsection{Plotting the strawberry patch}\label{plotting-the-strawberry-patch}}
+
+Create a plot, using \texttt{ggplot2}, where the x-xis has each plot (alphabetical) and the y-axis represents yield.
+
+\begin{itemize}
+\tightlist
+\item
+  Just for fun, make each point an upside-down triangle (strawberry-shaped).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Within \texttt{geom\_point()}, set \texttt{pch\ =\ 25}.\\
+  \end{itemize}
+\item
+  Colour the points with the following colours:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    No netting (\#78BC61), Netting (\#E03400), Scarecrow (\#520048).\\
+  \item
+    You will need to point both \texttt{fill} and \texttt{color} to the appropriate variable in your aesthetic mapping and use \texttt{scale\_fill\_manual} and \texttt{scale\_color\_manual} to set the colours.
+  \end{itemize}
+\item
+  Apply \texttt{theme\_minimal()} to the plot
+\item
+  Add a caption ``Created by YOUR NAME in STA303/1002, Winter 2022,'' with your name included
+\item
+  Add an appropriate figure caption
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{STA303-Course-guide_files/figure-latex/stawberrypatch-1.pdf}
+\caption{\label{fig:stawberrypatch}Target figure for task 2a (your patch data will be different, though!)}
+\end{figure}
+
+\hypertarget{demonstrating-calculation-of-sources-of-variance-in-a-least-squares-modelling-context}{%
+\subsubsection{Demonstrating calculation of sources of variance in a least-squares modelling context}\label{demonstrating-calculation-of-sources-of-variance-in-a-least-squares-modelling-context}}
+
+\hypertarget{model-formula}{%
+\paragraph{Model formula}\label{model-formula}}
+
+Write out the model formulation for the model that fits a fixed effect for treatment, a random effect for patch, and a random effect for the interaction of treatment and patch.
+
+\begin{itemize}
+\item
+  Make sure you also EXPLAIN each term. All random effects should have a statement of their distribution.
+\item
+  While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Stardew Valley interactive.
+\item
+  Create a table with the following columns: \texttt{Source\ of\ variation}, the name for this source of variation \texttt{Variance}, the values you've calculated (\texttt{var\_patch}, \texttt{var\_int}, \texttt{var\_ab}), \texttt{Proportion}, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use kable to display the table nicely and add an a
+\end{itemize}
+
+\hypertarget{objects-to-create-proof-read-carefully-for-autograding}{%
+\paragraph{Objects to create (proof-read carefully for autograding)}\label{objects-to-create-proof-read-carefully-for-autograding}}
+
+\hypertarget{tibbles}{%
+\subparagraph{Tibbles}\label{tibbles}}
+
+\begin{itemize}
+\item
+  \texttt{my\_patch}, your `patch' of strawberries, grown based on a \texttt{set.seed} that is the last THREE digits of your numeric student ID.
+\item
+  \texttt{agg\_patch}, starting with \texttt{my\_patch}, group by \texttt{patch} and then summarize to create a new variable, \texttt{yield\_avg\_patch}.
+\item
+  \texttt{agg\_int}, starting with \texttt{my\_patch}, group by both \texttt{patch} and \texttt{treatment} and then summarize to create a new variable, \texttt{yield\_avg\_int} that is the average strawberry yield for each \texttt{patch} and \texttt{treatment} combination.
+\end{itemize}
+
+\hypertarget{models}{%
+\subparagraph{Models}\label{models}}
+
+\begin{itemize}
+\item
+  \texttt{int\_mod}, an interaction model including main effects. \texttt{yield} is the response and \texttt{patch} and \texttt{treatment} should be the predictors.
+\item
+  \texttt{patch\_mod}, a intercept only model using data aggregated to find the average yield per patch.
+\item
+  \texttt{agg\_mod},
+\end{itemize}
+
+\hypertarget{numeric-values}{%
+\subparagraph{Numeric values}\label{numeric-values}}
+
+Note: These should not be hardcoded (i.e., not \texttt{var\_patch\ =\ 3}), the should make use of your models
+
+\begin{itemize}
+\item
+  \texttt{var\_patch}, variance in average yield patch-to-patch
+\item
+  \texttt{var\_int}, residual variance after fitting the version of this linear model with this most parameters
+\item
+  \texttt{var\_ab}, variance in yield explained by the interaction between patch and treatment, after accounting
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Example tibble}
+\FunctionTok{tibble}\NormalTok{(}\StringTok{\textasciigrave{}}\AttributeTok{Source of variation}\StringTok{\textasciigrave{}} \OtherTok{=} \FunctionTok{c}\NormalTok{(}\StringTok{"Source 1"}\NormalTok{, }
+                                 \StringTok{"Source 2"}\NormalTok{, }
+                                 \StringTok{"Source 4"}\NormalTok{),}
+       \AttributeTok{Variance =} \FunctionTok{c}\NormalTok{(}\StringTok{"var\_b"}\NormalTok{, }\StringTok{"var\_ab"}\NormalTok{, }\StringTok{"var\_int"}\NormalTok{),}
+       \AttributeTok{Proportion =} \FunctionTok{c}\NormalTok{(}\FunctionTok{round}\NormalTok{(}\FloatTok{0.3333333}\NormalTok{, }\DecValTok{2}\NormalTok{),}
+                      \FunctionTok{round}\NormalTok{(}\FloatTok{0.3333333}\NormalTok{, }\DecValTok{2}\NormalTok{),}
+                      \FunctionTok{round}\NormalTok{(}\FloatTok{0.3333333}\NormalTok{,}\DecValTok{2}\NormalTok{) )) }\SpecialCharTok{\%\textgreater{}\%} 
+  \CommentTok{\# It is okay if that caption goes off the page when knitting}
+\NormalTok{  knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\AttributeTok{caption =} \StringTok{"An example table, where you can replace the appropriate values, including removing the quote marks around the variance values and calculating the proportions values"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-15}An example table, where you can replace the appropriate values, including removing the quote marks around the variance values and calculating the proportions values}
+\centering
+\begin{tabular}[t]{l|l|r}
+\hline
+Source of variation & Variance & Proportion\\
+\hline
+Source 1 & var\_b & 0.33\\
+\hline
+Source 2 & var\_ab & 0.33\\
+\hline
+Source 4 & var\_int & 0.33\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{task-2b-applying-linear-mixed-models-for-the-strawberry-data-practical-world}{%
+\subsection{Task 2b: Applying linear mixed models for the strawberry data (practical world)}\label{task-2b-applying-linear-mixed-models-for-the-strawberry-data-practical-world}}
+
+\begin{itemize}
+\tightlist
+\item
+  Fit 3 models (yield will be the response in all of them)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{mod0}, a linear model with only \texttt{treatment},
+  \item
+    \texttt{mod1}, a linear mixed model with \texttt{treatment} and \texttt{patch} (appropriate choices about what is a fixed vs random effect should be made)
+  \item
+    \texttt{mod2}, a linear mixed model with \texttt{treatment}, \texttt{patch} and the interaction of \texttt{treatment} and \texttt{patch} (appropriate choices about what is a fixed vs random effect should be made)
+  \end{itemize}
+\item
+  Set up appropriate comparisons between these models, using a likelihood ratio test (\texttt{lmtest::lrtest})
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Writing}: make explicit comment on whether/where you are using REML / ML and WHY)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{justification-and-interpreation}{%
+\subsubsection{Justification and interpreation}\label{justification-and-interpreation}}
+
+\begin{itemize}
+\tightlist
+\item
+  Chose which model, out of \texttt{mod0}, \texttt{mod1} and \texttt{mod2} is the most appropriate final model (make it clear which one you are choosing and justify why).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Interpret the fixed effect coefficients.
+  \item
+    Discuss the proportion of variance, not explained by the fixed effects, that is explained by each source of variance in the model.
+  \item
+    Hint: If you have done both Task 2a correctly, it will match your variances from one of these model.
+  \end{itemize}
+\end{itemize}
+
+This should be at MAX 1-2 paragraphs.
+
+\hypertarget{task-3a-building-a-confidence-interval-interpreter}{%
+\subsection{Task 3a: Building a confidence interval interpreter}\label{task-3a-building-a-confidence-interval-interpreter}}
+
+Write a function that helps you interpret a frequentist confidence interval with the appropriate language. Remember that we need to be careful about what our confidence level means and what value the interval is for.
+
+Note: For this and the next task, you are largely replacing and reworking what I have set up. I am definitely not claiming these are excellently specified functions, there are lots of other improvement we might try to make if we were really adding a useful function to a package. For now, I just want you to get a bit of a sense of where the errors and warnings you see when using other functions come from. \textbf{The main focus should be on practising a sensible template for how to interpret these values.} Honestly, this is not a place where you need to be \emph{creative} in your writing. It will speed up your writing and communication if you have a mental script for each time you have to interpret a \emph{p} value or confidence interval.
+
+\hypertarget{specifications}{%
+\subsubsection{Specifications:}\label{specifications}}
+
+\begin{itemize}
+\tightlist
+\item
+  The function should be called \texttt{interpret\_ci}.\\
+\item
+  It should take 4 arguments:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{lower}, the lower bound of the confidence interval (numeric)
+  \item
+    \texttt{upper}, the upper bound of the confidence interval (numeric)
+  \item
+    \texttt{ci\_level}, the confidence level this interval was calculated at, e.g.~\texttt{99} or \texttt{95} (numeric)
+  \item
+    \texttt{stat} a description of the statistic of interest\\
+  \end{itemize}
+\item
+  The output must be a full sentence that uses all 4 of the inputs to the function. It must be CLEAR what the confidence interval is making a claim about and the interpretation must be statistically appropriate.\\
+\item
+  Warnings must be produced in the following cases:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If \texttt{lower} or \texttt{upper} is not numeric.
+  \item
+    If \texttt{ci\_level} is not an numeric value between 0 and 100.
+  \item
+    If \texttt{stat} isn't a character string.
+  \end{itemize}
+\item
+  You must run (and include) the following code after setting up your function:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{interpret\_ci(10,\ 20,\ 99,\ "mean\ number\ of\ shoes\ owned\ by\ students")}
+  \item
+    \texttt{interpret\_ci(10,\ 20,\ -1,\ "mean\ number\ of\ shoes\ owned\ by\ students")}
+  \item
+    \texttt{interpret\_ci(10,\ 20,\ -1,\ tibble(stat\ =\ 3))}
+  \item
+    The results of the above must be printed out in the main text of the PDf (see examples in template)
+  \end{itemize}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{interpret\_ci }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(lower, upper, ci\_level, stat)\{}
+  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.character}\NormalTok{(stat)) \{}
+    \CommentTok{\# produce a warning if the statement of the parameter isn\textquotesingle{}t a character string}
+    \CommentTok{\# the spacing is a little weird looking so that it prints nicely in your pdf}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{    Warning:}
+\StringTok{    stat should be a character string that describes the statistics of }
+\StringTok{    interest. The first part of this would be appropriate error text for this }
+\StringTok{    issue. You can reuse it as in in your code (not plagairisim concern), }
+\StringTok{    just make sure you delete this part."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(lower)) \{}
+    \CommentTok{\# produce a warning if lower isn\textquotesingle{}t numeric}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{            Warning: NOPE! This error message should be improved."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(upper)) \{}
+    \CommentTok{\# produce a warning if upper isn\textquotesingle{}t numeric}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{            Warning: NOPE! This error message should be improved."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(ci\_level) }\SpecialCharTok{|}\NormalTok{ ci\_level }\SpecialCharTok{\textless{}} \DecValTok{0} \SpecialCharTok{|}\NormalTok{ ci\_level }\SpecialCharTok{\textgreater{}} \DecValTok{100}\NormalTok{) \{}
+    \CommentTok{\# produce a warning if ci\_level isn\textquotesingle{}t appropriate}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{    Warning: Your ci\_level is wrooooong. }
+\StringTok{    This error message should be improved."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{\{}
+    \CommentTok{\# print interpretation}
+    \CommentTok{\# this is the main skill I want to see, writing a good CI interpretation.}
+  \FunctionTok{str\_c}\NormalTok{(}\StringTok{"This is the confidence level: "}\NormalTok{, ci\_level, }
+        \StringTok{"\%. And the text fed to stat is "}\NormalTok{, stat, }
+        \StringTok{". There is also the lower and upper bounds: "}\NormalTok{, lower, }\StringTok{" and "}\NormalTok{, upper, }
+        \StringTok{". This part needs to be fixed!"}\NormalTok{ )}
+\NormalTok{  \}}
+\NormalTok{\}}
+
+\CommentTok{\# Test 1}
+\NormalTok{ci\_test1 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_ci}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{99}\NormalTok{, }\StringTok{"mean number of shoes owned by students"}\NormalTok{)}
+
+\CommentTok{\# Test 2}
+\NormalTok{ci\_test2 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_ci}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{, }\StringTok{"mean number of shoes owned by students"}\NormalTok{)}
+
+\CommentTok{\# Test 3}
+\NormalTok{ci\_test3 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_ci}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{95}\NormalTok{, }\DecValTok{99}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{CI function test 1:} This is the confidence level: 99\%. And the text fed to stat is mean number of shoes owned by students. There is also the lower and upper bounds: 10 and 20. This part needs to be fixed!
+
+\textbf{CI function test 2:}
+Warning: Your ci\_level is wrooooong.
+This error message should be improved.
+
+\textbf{CI function test 3:}
+Warning:
+stat should be a character string that describes the statistics of
+interest. The first part of this would be appropriate error text for this
+issue. You can reuse it as in in your code (not plagairisim concern),
+just make sure you delete this part.
+
+\hypertarget{task-3b-building-a-p-value-interpreter}{%
+\subsection{Task 3b: Building a p value interpreter}\label{task-3b-building-a-p-value-interpreter}}
+
+Write a function that will interpret \emph{p} values based on strength of evidence. Use \protect\hyperlink{p-values-recap}{this table} to help you. You can decide how to set up the `greater than' vs 'strictly greater than's, etc. just be consistent (and make sure you understand why I'm a little fuzzy about the borders anyways.)
+
+\hypertarget{here-is-an-example.-this-is-not-the-answer.-i-do-not-want-to-see-this-submitted-as-an-answer.}{%
+\subsubsection{Here is an EXAMPLE. This is not the answer. I DO NOT want to see this submitted as an answer.}\label{here-is-an-example.-this-is-not-the-answer.-i-do-not-want-to-see-this-submitted-as-an-answer.}}
+
+This would be an example of a \emph{p} values interpreter that uses a 0.05 threshold to reject or fail to reject the null hypothesis.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# This is just an example! MODIFY THIS CODE}
+\NormalTok{interpret\_pval }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(pval, nullhyp)\{}
+  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.character}\NormalTok{(nullhyp)) \{}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{            Warning: Excuse me, why isn\textquotesingle{}t nullyhyp a character string? }
+\StringTok{            This is not an appropriate error message, FYI. }
+\StringTok{            Make yours more professional."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(pval)) \{}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"You p value should be a number."}\NormalTok{)}
+\NormalTok{  \}  }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(pval }\SpecialCharTok{\textgreater{}} \DecValTok{1}\NormalTok{) \{}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{            Warning: What do you mean, a p value greater than 1?!?! }
+\StringTok{            No way. }
+\StringTok{            This is also not an appropriately professional error message."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(pval }\SpecialCharTok{\textless{}} \DecValTok{0}\NormalTok{)\{}
+    \FunctionTok{warning}\NormalTok{(}\StringTok{"}
+\StringTok{            Warning: Negative? I don\textquotesingle{}t think so! }
+\StringTok{            This is also not an appropriately professional error message."}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(pval }\SpecialCharTok{\textgreater{}} \FloatTok{0.05}\NormalTok{)\{}
+    \FunctionTok{str\_c}\NormalTok{(}\StringTok{"The p value is "}\NormalTok{, }\FunctionTok{round}\NormalTok{(pval, }\DecValTok{5}\NormalTok{), }
+                \StringTok{", we fail to reject the hyothesis that "}\NormalTok{, nullhyp)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(pval }\SpecialCharTok{\textless{}=} \FloatTok{0.05}\NormalTok{)\{}
+    \FunctionTok{str\_c}\NormalTok{(}\StringTok{"The p value is "}\NormalTok{, }\FunctionTok{round}\NormalTok{(pval, }\DecValTok{5}\NormalTok{), }
+                \StringTok{", we reject the hypothesis that "}\NormalTok{, nullhyp, }\StringTok{"."}\NormalTok{)}
+\NormalTok{  \}}
+\NormalTok{\}}
+
+\NormalTok{pval\_test1 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_pval}\NormalTok{(}\FloatTok{0.0000000003}\NormalTok{, }
+                             \StringTok{"the mean grade for statistics students is the same as for non{-}stats students"}\NormalTok{)}
+
+\NormalTok{pval\_test2 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_pval}\NormalTok{(}\FloatTok{0.0499999}\NormalTok{, }
+                             \StringTok{"the mean grade for statistics students is the same as for non{-}stats students"}\NormalTok{)}
+
+\NormalTok{pval\_test3 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_pval}\NormalTok{(}\FloatTok{0.050001}\NormalTok{, }
+                             \StringTok{"the mean grade for statistics students is the same as for non{-}stats students"}\NormalTok{)}
+
+\NormalTok{pval\_test4 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_pval}\NormalTok{(}\StringTok{"0.05"}\NormalTok{, }\DecValTok{7}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{p value function test 1:} The p value is 0, we reject the hypothesis that the mean grade for statistics students is the same as for non-stats students.
+
+\_\_p value function test 2:\_\_The p value is 0.05, we reject the hypothesis that the mean grade for statistics students is the same as for non-stats students.
+
+\textbf{p value function test 3:} The p value is 0.05, we fail to reject the hyothesis that the mean grade for statistics students is the same as for non-stats students
+
+\textbf{p value function test 4:}
+Warning: Excuse me, why isn't nullyhyp a character string?
+This is not an appropriate error message, FYI.
+Make yours more professional.
+
+\begin{itemize}
+\tightlist
+\item
+  Specifications for your function:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Your function must be called \texttt{interpret\_pval}.
+  \item
+    It must take two arguments: \texttt{pval} and \texttt{nullhyp}.
+  \item
+    There must be an warning produced, with an \emph{appropriately informative} (and \textbf{professional}!) error message, for values that \emph{p} values cannot take AND non-character string null hypotheses. Use the template above and improve the text as well as adding new \texttt{else\ if}s to the chain.
+  \item
+    The interpretation messages must be statistically appropriate and should \emph{not} talk about rejecting or failing to reject the null. Instead the strength of evidence should be discussed appropriately.
+  \item
+    The output should be:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      a full sentence,
+    \item
+      that included the \emph{p} value, rounded to 3 decimal places or replaced with ``\textless.001'' if less than 0.001 (based on APA guidelines for reporting statistics), and
+    \item
+      incorporate the text of the null hypothesis.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{task-3c-user-instructions-and-disclaimer}{%
+\subsection{Task 3c: User instructions and disclaimer}\label{task-3c-user-instructions-and-disclaimer}}
+
+Neither of these sections should be very long (1 to 3 paragraphs maximum). Please write in full sentences.
+
+\hypertarget{instructions}{%
+\subsubsection{Instructions}\label{instructions}}
+
+Write \textbf{brief} instructions for how to use your two interpreters to someone who is new to statistics, but has been told they need to apply some basic statistical methods in their summer research project.
+
+This should touch on what a \textbf{null hypothesis} is and what a \textbf{population parameter} is, and should give some examples and tips on wording a null hypothesis appropriately. It should also mention some common pitfalls in interpreting frequentist confidence intervals.
+
+\hypertarget{disclaimer}{%
+\subsubsection{Disclaimer}\label{disclaimer}}
+
+Write a \textbf{disclaimer/warning} for your \emph{p} value interpreter, specifically. What should people know and be cautious of before using it? Note: This should not be ``be careful, I might have messed up my code,'' this should be based on what guidance someone should be aware of if they were going to use this interpreter to interpret the results of a independent samples t-test, for example.
+
+\newpage
+
+\hypertarget{task-4-creating-a-reproducible-example-reprex}{%
+\subsection{Task 4: Creating a reproducible example (reprex)}\label{task-4-creating-a-reproducible-example-reprex}}
+
+In Module 1, we discussed creating \href{https://sta303-bolton.github.io/sta303-w22-courseguide/m1.html\#reproducible-examples-reprex}{reproducible examples in R}.
+
+Suppose you had written the below code. You want to summarize the dataset \texttt{my\_data} into a new dataset called \texttt{my\_summary} and find the mean value for each group, and just have one row per group, but for some reason it is not working.
+
+Note: DO NOT \emph{FIX} THIS CODE. That is not the \emph{point} of this activity.
+
+\textbf{Goal: Create a reproducible example that would allow someone ELSE to understand the code and situation.}
+
+In your submission there should be two things:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A brief \textbf{description} IN YOUR OWN WORDS of what a reprex is and what you needed to consider to produce the reprex.
+\item
+  The reprex \textbf{output} that would allow someone to completely reproduce your problem exactly. Think carefully about what you would need to provide. I.e., what you might post on a help-board as part of a request for help. You do NOT need to write up the rest of the description.
+\end{enumerate}
+
+Hint: The workflow will be something like (1) create the code chunk for the reprex, (2) copy the code chunk to clipboard (Ctrl+C or Cmd+C), (3) run \texttt{reprex::reprex()} in the console, (4) paste output into your template (it \emph{won't} be a runable code chunk, you should be able to just paste as is and not edit it at all). Delete the original chunk (i.e., there should be now code run in this section of your report when you knit it.)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{my\_data }\OtherTok{\textless{}{-}} \FunctionTok{tibble}\NormalTok{(}\AttributeTok{group =} \FunctionTok{rep}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{10}\NormalTok{, }\AttributeTok{each=}\DecValTok{10}\NormalTok{), }
+                  \AttributeTok{value =} \FunctionTok{c}\NormalTok{(}\DecValTok{16}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{19}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{16}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{16}\NormalTok{, }\DecValTok{17}\NormalTok{, }\DecValTok{17}\NormalTok{, }
+                            \DecValTok{16}\NormalTok{, }\DecValTok{37}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{13}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{35}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{19}\NormalTok{, }\DecValTok{21}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{18}\NormalTok{, }
+                            \DecValTok{17}\NormalTok{, }\DecValTok{14}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{27}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{12}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{18}\NormalTok{, }
+                            \DecValTok{21}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{21}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{21}\NormalTok{, }\DecValTok{12}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{21}\NormalTok{, }
+                            \DecValTok{33}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{27}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{14}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{21}\NormalTok{, }\DecValTok{19}\NormalTok{, }\DecValTok{20}\NormalTok{, }
+                            \DecValTok{18}\NormalTok{, }\DecValTok{16}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{7}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{30}\NormalTok{, }\DecValTok{19}\NormalTok{, }\DecValTok{21}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{12}\NormalTok{, }
+                            \DecValTok{18}\NormalTok{, }\DecValTok{18}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{32}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{26}\NormalTok{, }\DecValTok{5}\NormalTok{, }
+                            \DecValTok{16}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{26}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{34}\NormalTok{, }\DecValTok{27}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{28}\NormalTok{))}
+
+\NormalTok{my\_summary }\OtherTok{\textless{}{-}}\NormalTok{ my\_data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summarize}\NormalTok{(}\AttributeTok{group\_by =}\NormalTok{ group, }\AttributeTok{mean\_val =} \FunctionTok{mean}\NormalTok{(value))}
+
+\FunctionTok{glimpse}\NormalTok{(my\_summary)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 100
+## Columns: 2
+## $ group_by <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3~
+## $ mean_val <dbl> 19.67, 19.67, 19.67, 19.67, 19.67, 19.67, 19.67, 19.67, 19.67~
+\end{verbatim}
+
+\newpage
+
+\hypertarget{task-5-simulating-p-values}{%
+\subsection{Task 5: Simulating p values}\label{task-5-simulating-p-values}}
+
+\hypertarget{setting-up-simulated-data}{%
+\subsubsection{Setting up simulated data}\label{setting-up-simulated-data}}
+
+This revision task is meant to connect to Question 16 of your pre-knowledge quiz and help you visualize the behaviour of\_p\_ values.
+
+\begin{itemize}
+\tightlist
+\item
+  Set your seed to \texttt{last3digplus} (that you set up in Task 1)
+\item
+  Create 4 simulated data sets (\texttt{sim1} to \texttt{sim4}) of length 100000 and with two columns: \texttt{group} and \texttt{val}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Use \texttt{tibble} to create each dataset.
+  \item
+    For each dataset, set \texttt{group\ =\ rep(1:1000,\ each\ =\ 100)}
+  \item
+    For \texttt{sim1} set val to be 100000 values drawn from \(N(0, 1)\) (see function \texttt{rnorm}()`).
+  \item
+    For \texttt{sim2} set val to be 100000 values drawn from \(N(0.2, 1)\).\\
+  \item
+    For \texttt{sim3} set val to be 100000 values drawn from \(N(1, 1)\).\\
+  \end{itemize}
+\item
+  Stack all 4 datasets into one new dataset called \texttt{all\_sim}, with an new column at the beginning called \texttt{sim} that takes the value 1 if the observation is from \texttt{sim1}, 2 from \texttt{sim2}, and so on.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This is most of the code you will need \texttt{bind\_rows(sim1,\ sim2,\ sim3,\ .id\ =\ "sim")}
+  \end{itemize}
+\item
+  Make any alterations necessary to \texttt{all\_sim}so that you can join on the dataset \texttt{sim\_description} to provided better labels for each simulation (but without including any irrelevant labels.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You will need to include the code below to create this dataset.
+  \end{itemize}
+\item
+  Plot histograms for the \textbf{first three groups} for each simulated dataset in one plot. Your final plot should use \texttt{ggplot} and \texttt{facet\_wrap}. There should be four rows and three columns. The facets should be labelled with \texttt{desc} (the more informative description than just 1, 2, 3, 4).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Provide an appropriate figure caption, set with your chunk options.
+  \item
+    Add a within-image caption: ``Created by YOUR NAME in STA303/1002, Winter 2022,'' with your name included
+  \item
+    Apply \texttt{theme\_minimal()}.
+  \end{itemize}
+\end{itemize}
+
+\begin{verbatim}
+# Create sim_description
+# Dataset to merge with improved simulation names
+sim_description <- tibble(sim = 1:4, 
+                          desc = c("N(5, 1)",
+                                   "N(5.2, 1)",
+                                   "N(6, 1)",
+                                   "Pois(5)"))
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{all\_sim }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(group }\SpecialCharTok{\textless{}=} \DecValTok{3}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ val)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =} \DecValTok{40}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(desc}\SpecialCharTok{\textasciitilde{}}\NormalTok{group, }\AttributeTok{nrow =} \DecValTok{3}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{caption =} \StringTok{"Created by YOUR NAME in STA303/1002, Winter 2022"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{STA303-Course-guide_files/figure-latex/echo-FALSE-1.pdf}
+\caption{\label{fig:echo-FALSE}Target first visualisation for task 5}
+\end{figure}
+
+\hypertarget{calculating-p-values}{%
+\subsubsection{\texorpdfstring{Calculating \emph{p} values}{Calculating p values}}\label{calculating-p-values}}
+
+\begin{itemize}
+\item
+  Create a new dataset called \texttt{pvals} that starts with \texttt{all\_sim}, groups by both \texttt{desc} AND \texttt{group}, and then summarizes to find the \emph{p} value for each group, based on a \textbf{one sample, 2-sided t.test, where the null hypothesis is the the population mean is 0.}
+\item
+  \texttt{t.test(val,\ mu\ =\ 0)\$p.value} will pull out the \emph{p} value as a value for you (when included within the appropriate code).\\
+\item
+  \texttt{.groups\ =\ "drop"} may be useful to add to your summarize statement if you are getting a message about groups.
+\item
+  Plot histograms of the \emph{p} values, faceted by \texttt{desc}. I would recommend adding \texttt{scales\ =\ "free\_y"} to your \texttt{facet\_wrap()} call as well (not assessed: can you figure out what it does?)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Use these statements appropriately in in your code to make the figure:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \texttt{geom\_histogram(boundary\ =\ 0,\ binwidth\ =\ 0.05,\ fill\ =\ "grey",\ color\ =\ "black")}
+    \item
+      \texttt{xlim(0,1)}
+    \end{itemize}
+  \item
+    Provide an appropriate figure caption, set with your chunk options.
+  \item
+    Add a within-image caption: ``Created by YOUR NAME in STA303/1002, Winter 2022,'' with your name included
+  \end{itemize}
+\item
+  Apply \texttt{theme\_minimal()}.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-24-1.pdf}
+\caption{\label{fig:unnamed-chunk-24}Target second visualisation for task 5}
+\end{figure}
+
+\hypertarget{q-q-plots}{%
+\subsubsection{Q-Q plots}\label{q-q-plots}}
+
+\begin{itemize}
+\tightlist
+\item
+  Create one final plot that creates a 2x2 figure with Q-Q plots for each simulation. You must determine what the distribution of a \emph{p} value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of \emph{p} values we have generated.
+\end{itemize}
+
+I have provided a template for the code, you just need to decide which quantile function to put where the XXXXXXX is now. (e.g., \texttt{qpois} is the quantile function for the Poisson distribution). Also adjust the caption with your authorship and add an appropriate figure caption.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pvals }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{sample =}\NormalTok{ pval)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_qq}\NormalTok{(}\AttributeTok{distribution =}\NormalTok{ XXXXXXX) }\SpecialCharTok{+}
+  \FunctionTok{geom\_abline}\NormalTok{(}\AttributeTok{intercept =} \DecValTok{0}\NormalTok{, }\AttributeTok{slope =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{desc) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{caption =} \StringTok{"Created by YOUR NAME in STA303/1002, Winter 2022"}\NormalTok{)}
+  
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-25-1.pdf}
+\caption{\label{fig:unnamed-chunk-25}Target final visualisation for task 5}
+\end{figure}
+
+\hypertarget{conclusion-and-summary}{%
+\subsubsection{Conclusion and summary}\label{conclusion-and-summary}}
+
+Remark briefly on:
+
+\begin{itemize}
+\tightlist
+\item
+  how what you have done in this task connects to the \textbf{definition} of a \emph{p} value, and\\
+\item
+  specifically how it connects to answering the below question from the pre-knowledge check.
+\end{itemize}
+
+(Note: so that you didn't have to wait to long for your PDF to knit, I made the number of simulations and simulation size a little smaller, but the idea is the same.)
+
+\includegraphics[width=1\linewidth]{images/assessments/q16}
 
 \hypertarget{writing-sample-1}{%
 \section{Writing sample}\label{writing-sample-1}}
@@ -1775,7 +2455,7 @@ Motulsky, H. J. (2014). Common misconceptions about data analysis and statistics
 
 You might also incorporate it as \emph{``Motulsky (2014) states that\ldots{}''}. You don't need the reference at the end of every sentence, but \textbf{it should be clear to a reader what ideas have come from the article and what has come from you, throughout the piece.}
 
-You can use another referencing style if you wish, or you can just copy this (that is not an academic offense!).
+You can use another referencing style if you wish, or you can just copy this (that is not an academic offence!).
 
 \textbf{Please be very mindful of proper paraphrasing!} The main point of this activity is to put things in YOUR OWN WORDS. Read the \protect\hyperlink{paraphrasing}{provided advice} in Module 2.
 
@@ -1854,8 +2534,8 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions}{%
-\subsection{Instructions}\label{instructions}}
+\hypertarget{instructions-1}{%
+\subsection{Instructions}\label{instructions-1}}
 
 To be announced.
 
@@ -1880,8 +2560,8 @@ Accommodations and extension policy & In the case of a personal illness/emergenc
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-1}{%
-\subsection{Instructions}\label{instructions-1}}
+\hypertarget{instructions-2}{%
+\subsection{Instructions}\label{instructions-2}}
 
 \hypertarget{final-project}{%
 \chapter{Final project}\label{final-project}}
@@ -1902,8 +2582,8 @@ Accommodations and extension policy & There are no routine extensions granted fo
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-2}{%
-\subsection{Instructions}\label{instructions-2}}
+\hypertarget{instructions-3}{%
+\subsection{Instructions}\label{instructions-3}}
 
 To be announced.
 
@@ -2569,8 +3249,8 @@ Late submissions, accommodations, and extension policy & In the case of a person
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-3}{%
-\subsection{Instructions}\label{instructions-3}}
+\hypertarget{instructions-4}{%
+\subsection{Instructions}\label{instructions-4}}
 
 \textbf{There is a general overview of this task on the \href{https://q.utoronto.ca/courses/204826/pages/professional-development}{professional development overview page}.}
 
@@ -3056,8 +3736,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-4}{%
-\subsection{Instructions}\label{instructions-4}}
+\hypertarget{instructions-5}{%
+\subsection{Instructions}\label{instructions-5}}
 
 Answer the following questions to help me get to know the class. Some of the questions might seem a little random, but I'm hoping to use them for some future class activities.
 
@@ -3086,8 +3766,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-5}{%
-\subsection{Instructions}\label{instructions-5}}
+\hypertarget{instructions-6}{%
+\subsection{Instructions}\label{instructions-6}}
 
 Answer the pre-knowledge check quiz questions to the best of your ability. In Quercus, you will see two assignment entries, one for the quiz and for storing your final score that takes into account completion of the quiz and the 80\%+ score or workshop engagement/attendance.
 
@@ -3178,8 +3858,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-6}{%
-\subsection{Instructions}\label{instructions-6}}
+\hypertarget{instructions-7}{%
+\subsection{Instructions}\label{instructions-7}}
 
 Module check-ins are a short questionnaire to help me `take the pulse' of the class. Each survey will like take only 5--10 minutes and will be available about 6:00 p.m. on the second Wednesday of each module, until 3:03 p.m. ET on the second Friday.
 
@@ -3270,8 +3950,8 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 \bottomrule
 \end{longtable}
 
-\hypertarget{instructions-7}{%
-\subsection{Instructions}\label{instructions-7}}
+\hypertarget{instructions-8}{%
+\subsection{Instructions}\label{instructions-8}}
 
 This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
 
@@ -5761,6 +6441,27 @@ You may want to pay special attention to the likelihood ratio test.
 
 \href{https://bookdown.org/roback/bookdown-BeyondMLR/ch-beyondmost.html}{Chapter 2} (§ 2.1--2.9) of Roback, P. \& Legler, J. Beyond Multiple Linear Regression. (2021). Retrieved from: \url{https://bookdown.org/roback/bookdown-BeyondMLR/} (Links to an external site.)
 
+\hypertarget{model-comparison-more-generally}{%
+\subsection{Model comparison more generally}\label{model-comparison-more-generally}}
+
+\emph{Thank you to TA Ian for developing this section! He applies statistics in his own research in ecology.}
+
+\begin{itemize}
+\item
+  Model selection is a key component of the development of any statistical model. In model development, there may be multiple plausible hypotheses that can be evaluated simultaneously by parameterizing different models with the same data. These candidate models can differ in both fixed and random effects however the models generally have a similar structure (e.g., multiple combinations of a set of fixed effects). To test the hypotheses with the candidate models, one must determine and compare the support for each model to determine which model(s) fit the observed data the best. While the likelihood-ratio test is suitable when comparing two models to one another, there are certain situations when the goal is to compare multiple (\textgreater{} 2) models to identify the model that best fits the data.
+\item
+  There are many different criteria for model selection that can be used. Measures such as Akaike Information Criterion (AIC), adjusted \(R^2\), and the Bayesian Information Criterion (BIC) measure the goodness of fit of the model to the data whereas others are focused on calculating the predictive performance of the model (e.g., prediction error rate, root mean square error). Model selection criteria focus on model fit however some will also consider model complexity as model fit generally increases with an increase in the number of model parameters. The selection of the appropriate criteria is generally dependent on the type of model and the purpose of model development (i.e.~inference or prediction).
+\item
+  For this course, we will use likelihood ratio tests as well as the information-theoretic (I-T) approach using AIC for model selection. AIC measures the lack of model fit to the data based on the log-likelihood of the model while penalizing for the number of parameters in the model. Lower AIC values indicate that the model strongly fits the observed data whereas a higher value indicates a poor model fit. \textbf{The absolute AIC values can be challenging to interpret} so the values are compared relative to one another. Among the candidate models, identify the lowest AIC value (\(AIC_{min}\)\}) and calculate the differences between \(AIC_{min}\) and the AIC values of every candidate model (\(AIC_{i}\)) to obtain AIC differences (\(\Delta\)AIC) for each model. In general, large values of \(\Delta\)AIC (\textgreater{} 10) indicate no support for the model, models with intermediate values (4-7) have little support, and models with small values (0-3) have strong support. These categories are arbitrary and may differ among studies.
+\item
+  There are scenarios where multiple models have similar support and there is no considerable difference among the model selection criteria. These models would then represent plausible models and support their associated hypotheses. Additionally, model weights can be calculated to evaluate the relative support of each model by the data. Larger weights indicate that the model is strongly supported by the data whereas small values suggest the model poorly fits the data.
+\end{itemize}
+
+\hypertarget{references}{%
+\paragraph{References}\label{references}}
+
+Burnham, K. P., Anderson, D. R., \& Huyvaert, K. P. (2011). AIC model selection and multimodel inference in behavioral ecology: some background, observations, and comparisons. Behavioral ecology and sociobiology, 65(1), 23-35.
+
 \hypertarget{correlated-data}{%
 \section{Correlated data}\label{correlated-data}}
 
@@ -5835,7 +6536,7 @@ You can use R for so much more than just running regressions! This section is \t
 \item
   Update these settings in the code below.
 \item
-  {[}Super super optional{]} Post your character on the \href{https://q.utoronto.ca/courses/204826/discussion_topics/1061843?module_item_id=2273817}{optional discussion board for this week}. If you have a Stardew Valley character or some other pixel art of yourself, you can share that, too. This is just for fun, no requirement to participate. Please be sensible about making sure any images are \emph{appropriate.} Don't use images of other people, etc.
+  {[}Super super optional{]} Post your character on the \href{https://q.utoronto.ca/courses/253305/discussion_topics/1616645}{optional discussion board for this week}. If you have a Stardew Valley character or some other pixel art of yourself, you can share that, too. This is just for fun, no requirement to participate. Please be sensible about making sure any images are \emph{appropriate.} Don't use images of other people, etc.
 \end{enumerate}
 
 \begin{center}\includegraphics[width=0.25\linewidth]{images/m3/lb-for-statdew-valley} \end{center}
@@ -5905,8 +6606,8 @@ The two longer horizontal lines in this graph represent \(\alpha_{basic}\) and \
 
 \begin{figure}
 \centering
-\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-67-1.pdf}
-\caption{\label{fig:unnamed-chunk-67}\emph{Figure: Visual representation of the equation for this data}}
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-82-1.pdf}
+\caption{\label{fig:unnamed-chunk-82}\emph{Figure: Visual representation of the equation for this data}}
 \end{figure}
 
 Now, this probably looks a little different to how you've been writing models, but I hope it makes sense as describing the data that we're interested in.
@@ -6302,7 +7003,7 @@ She left you some data that she thinks proves this. While the sample size isn't 
 
 We've actually made an interaction plot for our data. There is a function in the core \texttt{stats} package that also does this for us.
 
-\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-75-1.pdf}
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-90-1.pdf}
 
 \textbf{Question: What has us worried about the independence assumption if we were just going to do regression as usual?}
 
@@ -6324,8 +7025,8 @@ D. Not possible to design a nested version.
 
 Answer: C. You can't be nested and crossed for the same grouping variable. A fully nested version of this would be much like our tomato study, with two hives assigned to each song.
 
-\hypertarget{model-formula}{%
-\subsubsection{Model formula}\label{model-formula}}
+\hypertarget{model-formula-1}{%
+\subsubsection{Model formula}\label{model-formula-1}}
 
 This looks like:
 \[ y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}\]
@@ -7580,8 +8281,8 @@ She left you some data that she thinks proves this. While the sample size isn't 
 ## $ honey_g <dbl> 196.56, 199.58, 200.71, 195.80, 199.58, 200.71, 226.80, 227.55~
 \end{verbatim}
 
-\hypertarget{model-formula-1}{%
-\subsection{Model formula}\label{model-formula-1}}
+\hypertarget{model-formula-2}{%
+\subsection{Model formula}\label{model-formula-2}}
 
 I said the model formula would look like this:
 
@@ -7707,8 +8408,8 @@ And \href{https://advice.writing.utoronto.ca/using-sources/how-not-to-plagiarize
 \hypertarget{module-5}{%
 \chapter{Module 5}\label{module-5}}
 
-\hypertarget{references}{%
-\chapter*{References}\label{references}}
+\hypertarget{references-1}{%
+\chapter*{References}\label{references-1}}
 \addcontentsline{toc}{chapter}{References}
 
 \hypertarget{part-appendix}{%
@@ -8361,8 +9062,8 @@ Request for a Driver Change using the red button at the top right of your Team U
 \hypertarget{other}{%
 \section{Other}\label{other}}
 
-\hypertarget{references-1}{%
-\subsection{References}\label{references-1}}
+\hypertarget{references-2}{%
+\subsection{References}\label{references-2}}
 
 \hypertarget{can-you-prof.-bolton-write-me-a-reference}{%
 \paragraph{\texorpdfstring{\emph{``Can you (Prof.~Bolton) write me a reference?''}}{``Can you (Prof.~Bolton) write me a reference?''}}\label{can-you-prof.-bolton-write-me-a-reference}}
