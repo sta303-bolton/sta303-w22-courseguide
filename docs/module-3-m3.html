@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>16 Module 3 {m3} | R Notebook</title>
+  <meta name="description" content="This is a course for STA303: Methods of Data Analysis II at the University of Toronto" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="16 Module 3 {m3} | R Notebook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a course for STA303: Methods of Data Analysis II at the University of Toronto" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="16 Module 3 {m3} | R Notebook" />
+  
+  <meta name="twitter:description" content="This is a course for STA303: Methods of Data Analysis II at the University of Toronto" />
+  
+
+<meta name="author" content="Prof. Liza Bolton" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="m2.html"/>
+<link rel="next" href="module-4.html"/>
+<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STA303: Methods of Data Analysis II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> How to use this course guide</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#communication-policy-reminder"><i class="fa fa-check"></i><b>1.1</b> Communication policy reminder</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#intellectual-property-statement"><i class="fa fa-check"></i><b>1.2</b> Intellectual property statement</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#tutoring-companies"><i class="fa fa-check"></i><b>1.2.1</b> Tutoring companies</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i><b>1.3</b> Contributors</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i><b>2</b> Syllabus</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="syllabus.html"><a href="syllabus.html#course-information"><i class="fa fa-check"></i><b>2.1</b> Course information</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="syllabus.html"><a href="syllabus.html#course-description"><i class="fa fa-check"></i><b>2.1.1</b> Course description</a></li>
+<li class="chapter" data-level="2.1.2" data-path="syllabus.html"><a href="syllabus.html#class-times"><i class="fa fa-check"></i><b>2.1.2</b> Class times</a></li>
+<li class="chapter" data-level="2.1.3" data-path="syllabus.html"><a href="syllabus.html#materials"><i class="fa fa-check"></i><b>2.1.3</b> Materials</a></li>
+<li class="chapter" data-level="2.1.4" data-path="syllabus.html"><a href="syllabus.html#teaching-team"><i class="fa fa-check"></i><b>2.1.4</b> Teaching team</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="syllabus.html"><a href="syllabus.html#land-acknowledgment"><i class="fa fa-check"></i><b>2.2</b> Land acknowledgment</a></li>
+<li class="chapter" data-level="2.3" data-path="syllabus.html"><a href="syllabus.html#prerequisites"><i class="fa fa-check"></i><b>2.3</b> Prerequisites</a></li>
+<li class="chapter" data-level="2.4" data-path="syllabus.html"><a href="syllabus.html#course-format-and-organization"><i class="fa fa-check"></i><b>2.4</b> Course format and organization</a></li>
+<li class="chapter" data-level="2.5" data-path="syllabus.html"><a href="syllabus.html#learning-objectives"><i class="fa fa-check"></i><b>2.5</b> Learning objectives</a></li>
+<li class="chapter" data-level="2.6" data-path="syllabus.html"><a href="syllabus.html#textbooks"><i class="fa fa-check"></i><b>2.6</b> Textbooks</a></li>
+<li class="chapter" data-level="2.7" data-path="syllabus.html"><a href="syllabus.html#computing-and-minimum-technical-requirements"><i class="fa fa-check"></i><b>2.7</b> Computing and minimum technical requirements</a></li>
+<li class="chapter" data-level="2.8" data-path="syllabus.html"><a href="syllabus.html#course-outline"><i class="fa fa-check"></i><b>2.8</b> Course outline</a></li>
+<li class="chapter" data-level="2.9" data-path="syllabus.html"><a href="syllabus.html#assessments"><i class="fa fa-check"></i><b>2.9</b> Assessments</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="syllabus.html"><a href="syllabus.html#knowledge-basket"><i class="fa fa-check"></i><b>2.9.1</b> Knowledge basket</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="syllabus.html"><a href="syllabus.html#hours-expectations"><i class="fa fa-check"></i><b>2.10</b> Hours expectations</a></li>
+<li class="chapter" data-level="2.11" data-path="syllabus.html"><a href="syllabus.html#marking-concerns-regrade-requests"><i class="fa fa-check"></i><b>2.11</b> Marking concerns / regrade requests</a></li>
+<li class="chapter" data-level="2.12" data-path="syllabus.html"><a href="syllabus.html#missed-work-policies"><i class="fa fa-check"></i><b>2.12</b> Missed work policies</a>
+<ul>
+<li class="chapter" data-level="2.12.1" data-path="syllabus.html"><a href="syllabus.html#exceptions"><i class="fa fa-check"></i><b>2.12.1</b> Exceptions</a></li>
+<li class="chapter" data-level="2.12.2" data-path="syllabus.html"><a href="syllabus.html#important-notes"><i class="fa fa-check"></i><b>2.12.2</b> IMPORTANT NOTES</a></li>
+</ul></li>
+<li class="chapter" data-level="2.13" data-path="syllabus.html"><a href="syllabus.html#communication-policy"><i class="fa fa-check"></i><b>2.13</b> Communication policy</a></li>
+<li class="chapter" data-level="2.14" data-path="syllabus.html"><a href="syllabus.html#accommodations-and-accessibility"><i class="fa fa-check"></i><b>2.14</b> Accommodations and accessibility</a>
+<ul>
+<li class="chapter" data-level="2.14.1" data-path="syllabus.html"><a href="syllabus.html#accessibility-services"><i class="fa fa-check"></i><b>2.14.1</b> Accessibility services</a></li>
+<li class="chapter" data-level="2.14.2" data-path="syllabus.html"><a href="syllabus.html#religious-accommodation"><i class="fa fa-check"></i><b>2.14.2</b> Religious Accommodation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.15" data-path="syllabus.html"><a href="syllabus.html#recognized-study-groups"><i class="fa fa-check"></i><b>2.15</b> Recognized study groups</a></li>
+<li class="chapter" data-level="2.16" data-path="syllabus.html"><a href="syllabus.html#meet-to-complete"><i class="fa fa-check"></i><b>2.16</b> Meet to complete</a></li>
+<li class="chapter" data-level="2.17" data-path="syllabus.html"><a href="syllabus.html#feeling-distressed"><i class="fa fa-check"></i><b>2.17</b> Feeling distressed?</a></li>
+<li class="chapter" data-level="2.18" data-path="syllabus.html"><a href="syllabus.html#intellectual-property-statement-1"><i class="fa fa-check"></i><b>2.18</b> Intellectual property statement</a></li>
+<li class="chapter" data-level="2.19" data-path="syllabus.html"><a href="syllabus.html#academic-integrity"><i class="fa fa-check"></i><b>2.19</b> Academic integrity</a>
+<ul>
+<li class="chapter" data-level="2.19.1" data-path="syllabus.html"><a href="syllabus.html#plagiarism"><i class="fa fa-check"></i><b>2.19.1</b> Plagiarism</a></li>
+<li class="chapter" data-level="2.19.2" data-path="syllabus.html"><a href="syllabus.html#specific-advice-on-untimed-assessments"><i class="fa fa-check"></i><b>2.19.2</b> Specific advice on untimed assessments</a></li>
+<li class="chapter" data-level="2.19.3" data-path="syllabus.html"><a href="syllabus.html#rules-for-timed-assessments-e.g.-mixed-assessments"><i class="fa fa-check"></i><b>2.19.3</b> Rules for timed assessments (e.g., mixed assessments)</a></li>
+<li class="chapter" data-level="2.19.4" data-path="syllabus.html"><a href="syllabus.html#note-be-careful-about-private-tutoring-companies"><i class="fa fa-check"></i><b>2.19.4</b> NOTE: BE CAREFUL ABOUT PRIVATE TUTORING COMPANIES</a></li>
+</ul></li>
+<li class="chapter" data-level="2.20" data-path="syllabus.html"><a href="syllabus.html#course-design-principles"><i class="fa fa-check"></i><b>2.20</b> Course design principles</a>
+<ul>
+<li class="chapter" data-level="2.20.1" data-path="syllabus.html"><a href="syllabus.html#humans-learn-better-little-and-often-but-everyone-is-burnout-from-two-years-of-a-pandemic"><i class="fa fa-check"></i><b>2.20.1</b> Humans learn better ‘little and often’ but everyone is burnout from two years of a pandemic</a></li>
+<li class="chapter" data-level="2.20.2" data-path="syllabus.html"><a href="syllabus.html#writing-is-good-for-statisticians"><i class="fa fa-check"></i><b>2.20.2</b> Writing is good for statisticians</a></li>
+<li class="chapter" data-level="2.20.3" data-path="syllabus.html"><a href="syllabus.html#course-content-is-accessible"><i class="fa fa-check"></i><b>2.20.3</b> Course content is Accessible</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="start-here.html"><a href="start-here.html"><i class="fa fa-check"></i><b>3</b> Start here!</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="start-here.html"><a href="start-here.html#introductions"><i class="fa fa-check"></i><b>3.1</b> Introductions</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="start-here.html"><a href="start-here.html#professor-liza-bolton-instructor"><i class="fa fa-check"></i><b>3.1.1</b> Professor Liza Bolton, Instructor</a></li>
+<li class="chapter" data-level="3.1.2" data-path="start-here.html"><a href="start-here.html#amin-banihashemi-head-ta"><i class="fa fa-check"></i><b>3.1.2</b> Amin Banihashemi, Head TA</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="start-here.html"><a href="start-here.html#a-few-things-to-know-upfront"><i class="fa fa-check"></i><b>3.2</b> A few things to know upfront</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="start-here.html"><a href="start-here.html#students-joining-off-the-waitlist"><i class="fa fa-check"></i><b>3.2.1</b> Students joining off the waitlist</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="start-here.html"><a href="start-here.html#howthiscourseworks"><i class="fa fa-check"></i><b>3.3</b> How this course works</a></li>
+<li class="chapter" data-level="3.4" data-path="start-here.html"><a href="start-here.html#hours-expectations-1"><i class="fa fa-check"></i><b>3.4</b> Hours expectations</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="start-here.html"><a href="start-here.html#communication"><i class="fa fa-check"></i><b>3.4.1</b> Communication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="start-here.html"><a href="start-here.html#to-do-now"><i class="fa fa-check"></i><b>3.5</b> To do now</a></li>
+</ul></li>
+<li class="part"><span><b>Assessments overview</b></span></li>
+<li class="chapter" data-level="4" data-path="assessmentsoverview.html"><a href="assessmentsoverview.html"><i class="fa fa-check"></i><b>4</b> Assessment overview</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="assessmentsoverview.html"><a href="assessmentsoverview.html#graduate-student-modification-1002h"><i class="fa fa-check"></i><b>4.1</b> Graduate student modification (1002H)</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mini-portfolio.html"><a href="mini-portfolio.html"><i class="fa fa-check"></i><b>5</b> Mini-portfolio</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#general-instructions"><i class="fa fa-check"></i><b>5.1</b> General instructions</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#template"><i class="fa fa-check"></i><b>5.1.1</b> Template</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#submission-instructions"><i class="fa fa-check"></i><b>5.2</b> Submission instructions</a></li>
+<li class="chapter" data-level="5.3" data-path="mini-portfolio.html"><a href="mini-portfolio.html#cover-page"><i class="fa fa-check"></i><b>5.3</b> Cover page</a></li>
+<li class="chapter" data-level="5.4" data-path="mini-portfolio.html"><a href="mini-portfolio.html#introduction"><i class="fa fa-check"></i><b>5.4</b> Introduction</a></li>
+<li class="chapter" data-level="5.5" data-path="mini-portfolio.html"><a href="mini-portfolio.html#statistical-skills-sample"><i class="fa fa-check"></i><b>5.5</b> Statistical skills sample</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-1-setting-up-libraries"><i class="fa fa-check"></i><b>5.5.1</b> Task 1: Setting up libraries</a></li>
+<li class="chapter" data-level="5.5.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-2-visualizing-the-variance-of-a-binomial-random-variable-for-varying-proportions"><i class="fa fa-check"></i><b>5.5.2</b> Task 2: Visualizing the variance of a Binomial random variable for varying proportions</a></li>
+<li class="chapter" data-level="5.5.3" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-3-demonstrating-frequentist-confidence-intervals-as-long-run-probabilities-of-capturing-a-population-parameter"><i class="fa fa-check"></i><b>5.5.3</b> Task 3: Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter</a></li>
+<li class="chapter" data-level="5.5.4" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-4-investigating-whether-there-is-an-association-between-cgpa-and-sta3031002-students-correctly-answering-a-question-on-global-poverty-rates"><i class="fa fa-check"></i><b>5.5.4</b> Task 4: Investigating whether there is an association between cGPA and STA303/1002 students correctly answering a question on global poverty rates</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="mini-portfolio.html"><a href="mini-portfolio.html#writing-sample"><i class="fa fa-check"></i><b>5.6</b> Writing sample</a></li>
+<li class="chapter" data-level="5.7" data-path="mini-portfolio.html"><a href="mini-portfolio.html#reflection"><i class="fa fa-check"></i><b>5.7</b> Reflection</a></li>
+<li class="chapter" data-level="5.8" data-path="mini-portfolio.html"><a href="mini-portfolio.html#rubric"><i class="fa fa-check"></i><b>5.8</b> Rubric</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="portfolio.html"><a href="portfolio.html"><i class="fa fa-check"></i><b>6</b> Portfolio</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="portfolio.html"><a href="portfolio.html#instructions"><i class="fa fa-check"></i><b>6.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="mini-mixed-assessment.html"><a href="mini-mixed-assessment.html"><i class="fa fa-check"></i><b>7</b> Mini-mixed assessment</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="mini-mixed-assessment.html"><a href="mini-mixed-assessment.html#instructions-1"><i class="fa fa-check"></i><b>7.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="mixed-assessment.html"><a href="mixed-assessment.html"><i class="fa fa-check"></i><b>8</b> Mixed assessment</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="mixed-assessment.html"><a href="mixed-assessment.html#instructions-2"><i class="fa fa-check"></i><b>8.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="final-project.html"><a href="final-project.html"><i class="fa fa-check"></i><b>9</b> Final project</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="final-project.html"><a href="final-project.html#instructions-3"><i class="fa fa-check"></i><b>9.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="knowledge-basket-overview.html"><a href="knowledge-basket-overview.html"><i class="fa fa-check"></i><b>10</b> Knowledge basket overview</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="knowledge-basket-overview.html"><a href="knowledge-basket-overview.html#planning-and-tips"><i class="fa fa-check"></i><b>10.0.1</b> Planning and tips</a></li>
+<li class="chapter" data-level="10.0.2" data-path="knowledge-basket-overview.html"><a href="knowledge-basket-overview.html#examples"><i class="fa fa-check"></i><b>10.0.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html"><i class="fa fa-check"></i><b>11</b> Knowledge basket: Writing and peer feedback</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#writinggeneral"><i class="fa fa-check"></i><b>11.1</b> General instructions</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#create-phase"><i class="fa fa-check"></i><b>11.1.1</b> Create phase</a></li>
+<li class="chapter" data-level="11.1.2" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#assess-phase"><i class="fa fa-check"></i><b>11.1.2</b> Assess phase</a></li>
+<li class="chapter" data-level="11.1.3" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#reflect-phase"><i class="fa fa-check"></i><b>11.1.3</b> Reflect phase</a></li>
+<li class="chapter" data-level="11.1.4" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#general-instructions-1"><i class="fa fa-check"></i><b>11.1.4</b> General instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-1-writing-task"><i class="fa fa-check"></i><b>11.2</b> Module 1 writing task</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m1-instructions"><i class="fa fa-check"></i><b>11.2.1</b> M1 Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-2-writing-task"><i class="fa fa-check"></i><b>11.3</b> Module 2 writing task</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m2-instructions"><i class="fa fa-check"></i><b>11.3.1</b> M2 Instructions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html"><i class="fa fa-check"></i><b>12</b> Knowledge basket: Professional development task</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#professional-development-proposal"><i class="fa fa-check"></i><b>12.1</b> Professional development proposal</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#instructions-4"><i class="fa fa-check"></i><b>12.1.1</b> Instructions</a></li>
+<li class="chapter" data-level="12.1.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#submission-requirements-1"><i class="fa fa-check"></i><b>12.1.2</b> Submission requirements</a></li>
+<li class="chapter" data-level="12.1.3" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#rubric-1"><i class="fa fa-check"></i><b>12.1.3</b> Rubric</a></li>
+<li class="chapter" data-level="12.1.4" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#checklist"><i class="fa fa-check"></i><b>12.1.4</b> Checklist</a></li>
+<li class="chapter" data-level="12.1.5" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#things-to-keep-in-minds-as-you-start-working-towards-your-professional-development-goal"><i class="fa fa-check"></i><b>12.1.5</b> Things to keep in minds as you start working towards your professional development goal</a></li>
+<li class="chapter" data-level="12.1.6" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#example-smart-goal"><i class="fa fa-check"></i><b>12.1.6</b> Example smart goal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#professional-development-evidence-and-reflection"><i class="fa fa-check"></i><b>12.2</b> Professional development evidence and reflection</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#templates"><i class="fa fa-check"></i><b>12.2.1</b> Templates</a></li>
+<li class="chapter" data-level="12.2.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#reflection-and-evidence-components"><i class="fa fa-check"></i><b>12.2.2</b> Reflection and evidence components</a></li>
+<li class="chapter" data-level="12.2.3" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#recommended-structure"><i class="fa fa-check"></i><b>12.2.3</b> Recommended structure</a></li>
+<li class="chapter" data-level="12.2.4" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#rubric-2"><i class="fa fa-check"></i><b>12.2.4</b> Rubric</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html"><i class="fa fa-check"></i><b>13</b> Knowledge basket: Other</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#getting-to-know-you-survey"><i class="fa fa-check"></i><b>13.1</b> ‘Getting to know you’ survey</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-5"><i class="fa fa-check"></i><b>13.1.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#pre-knowledge-check"><i class="fa fa-check"></i><b>13.2</b> Pre-knowledge check</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-6"><i class="fa fa-check"></i><b>13.2.1</b> Instructions</a></li>
+<li class="chapter" data-level="13.2.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance"><i class="fa fa-check"></i><b>13.2.2</b> Workshop attendance</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#module-check-ins"><i class="fa fa-check"></i><b>13.3</b> Module check-ins</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-7"><i class="fa fa-check"></i><b>13.3.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#team-up-activities"><i class="fa fa-check"></i><b>13.4</b> Team Up! activities</a></li>
+<li class="chapter" data-level="13.5" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#graduate-school-info-session"><i class="fa fa-check"></i><b>13.5</b> Graduate school info session</a></li>
+<li class="chapter" data-level="13.6" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#punctuation-art"><i class="fa fa-check"></i><b>13.6</b> Punctuation art</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.6.1</b> Instructions</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>Modules</b></span></li>
+<li class="chapter" data-level="14" data-path="m1.html"><a href="m1.html"><i class="fa fa-check"></i><b>14</b> Module 1</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="m1.html"><a href="m1.html#learning-checklist"><i class="fa fa-check"></i><b>14.1</b> Learning checklist</a></li>
+<li class="chapter" data-level="14.2" data-path="m1.html"><a href="m1.html#instructor-information"><i class="fa fa-check"></i><b>14.2</b> Instructor information</a></li>
+<li class="chapter" data-level="14.3" data-path="m1.html"><a href="m1.html#upward-management-tips"><i class="fa fa-check"></i><b>14.3</b> Upward management tips</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="m1.html"><a href="m1.html#communicate-using-the-tools-your-manager-prefers"><i class="fa fa-check"></i><b>14.3.1</b> Communicate using the tools your manager prefers</a></li>
+<li class="chapter" data-level="14.3.2" data-path="m1.html"><a href="m1.html#write-good-emails-when-emails-are-appropriate"><i class="fa fa-check"></i><b>14.3.2</b> Write good emails (when emails are appropriate)</a></li>
+<li class="chapter" data-level="14.3.3" data-path="m1.html"><a href="m1.html#understand-your-managers-goals"><i class="fa fa-check"></i><b>14.3.3</b> Understand your manager’s goals</a></li>
+<li class="chapter" data-level="14.3.4" data-path="m1.html"><a href="m1.html#demonstrate-self-management-and-resilience-while-also-asking-for-help-and-flagging-problems-early."><i class="fa fa-check"></i><b>14.3.4</b> Demonstrate self-management and resilience while also asking for help and flagging problems early.</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="m1.html"><a href="m1.html#recap-of-linear-models"><i class="fa fa-check"></i><b>14.4</b> Recap of linear models</a>
+<ul>
+<li class="chapter" data-level="14.4.1" data-path="m1.html"><a href="m1.html#why-model"><i class="fa fa-check"></i><b>14.4.1</b> Why model?</a></li>
+<li class="chapter" data-level="14.4.2" data-path="m1.html"><a href="m1.html#linear-models"><i class="fa fa-check"></i><b>14.4.2</b> Linear models</a></li>
+<li class="chapter" data-level="14.4.3" data-path="m1.html"><a href="m1.html#linear-regression-assumptions"><i class="fa fa-check"></i><b>14.4.3</b> Linear regression assumptions</a></li>
+<li class="chapter" data-level="14.4.4" data-path="m1.html"><a href="m1.html#what-makes-it-a-linear-model"><i class="fa fa-check"></i><b>14.4.4</b> What makes it a <em>linear</em> model?</a></li>
+<li class="chapter" data-level="14.4.5" data-path="m1.html"><a href="m1.html#optional-refresher-reading"><i class="fa fa-check"></i><b>14.4.5</b> Optional refresher reading</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="m1.html"><a href="m1.html#the-data-for-module-1"><i class="fa fa-check"></i><b>14.5</b> The data for module 1</a>
+<ul>
+<li class="chapter" data-level="14.5.1" data-path="m1.html"><a href="m1.html#lets-meet-the-penguins"><i class="fa fa-check"></i><b>14.5.1</b> Let’s meet the penguins</a></li>
+<li class="chapter" data-level="14.5.2" data-path="m1.html"><a href="m1.html#the-variables"><i class="fa fa-check"></i><b>14.5.2</b> The variables</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="m1.html"><a href="m1.html#common-statistical-tests-as-linear-regression"><i class="fa fa-check"></i><b>14.6</b> Common statistical tests as linear regression</a>
+<ul>
+<li class="chapter" data-level="14.6.1" data-path="m1.html"><a href="m1.html#introduction-1"><i class="fa fa-check"></i><b>14.6.1</b> Introduction</a></li>
+<li class="chapter" data-level="14.6.2" data-path="m1.html"><a href="m1.html#one-sample-t-test"><i class="fa fa-check"></i><b>14.6.2</b> One-sample t-test</a></li>
+<li class="chapter" data-level="14.6.3" data-path="m1.html"><a href="m1.html#dummy-variables"><i class="fa fa-check"></i><b>14.6.3</b> Dummy variables</a></li>
+<li class="chapter" data-level="14.6.4" data-path="m1.html"><a href="m1.html#two-means"><i class="fa fa-check"></i><b>14.6.4</b> Two means</a></li>
+<li class="chapter" data-level="14.6.5" data-path="m1.html"><a href="m1.html#anova"><i class="fa fa-check"></i><b>14.6.5</b> ANOVA</a></li>
+<li class="chapter" data-level="14.6.6" data-path="m1.html"><a href="m1.html#credits"><i class="fa fa-check"></i><b>14.6.6</b> Credits</a></li>
+</ul></li>
+<li class="chapter" data-level="14.7" data-path="m1.html"><a href="m1.html#reproducible-examples-reprex"><i class="fa fa-check"></i><b>14.7</b> Reproducible examples (reprex)</a>
+<ul>
+<li class="chapter" data-level="14.7.1" data-path="m1.html"><a href="m1.html#what-is-a-reproducible-example"><i class="fa fa-check"></i><b>14.7.1</b> What is a reproducible example?</a></li>
+<li class="chapter" data-level="14.7.2" data-path="m1.html"><a href="m1.html#why-should-you-care-about-creating-reproducible-examples"><i class="fa fa-check"></i><b>14.7.2</b> Why should you care about creating reproducible examples?</a></li>
+<li class="chapter" data-level="14.7.3" data-path="m1.html"><a href="m1.html#watch-the-creator-of-the-reprex-package-explain-it"><i class="fa fa-check"></i><b>14.7.3</b> Watch the creator of the reprex package explain it</a></li>
+<li class="chapter" data-level="14.7.4" data-path="m1.html"><a href="m1.html#using-reprexes-on-piazza"><i class="fa fa-check"></i><b>14.7.4</b> Using reprexes on Piazza</a></li>
+</ul></li>
+<li class="chapter" data-level="14.8" data-path="m1.html"><a href="m1.html#previewskim"><i class="fa fa-check"></i><b>14.8</b> Reading strategy: previewing and skimming</a></li>
+<li class="chapter" data-level="14.9" data-path="m1.html"><a href="m1.html#getting-ahead-on-module-2"><i class="fa fa-check"></i><b>14.9</b> Getting ahead on Module 2</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="m2.html"><a href="m2.html"><i class="fa fa-check"></i><b>15</b> Module 2</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="m2.html"><a href="m2.html#learning-checklist-1"><i class="fa fa-check"></i><b>15.1</b> Learning checklist</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="m2.html"><a href="m2.html#key-functions"><i class="fa fa-check"></i><b>15.1.1</b> Key functions</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="m2.html"><a href="m2.html#introduction-to-module-2"><i class="fa fa-check"></i><b>15.2</b> Introduction to Module 2</a></li>
+<li class="chapter" data-level="15.3" data-path="m2.html"><a href="m2.html#readings-for-this-module"><i class="fa fa-check"></i><b>15.3</b> Readings for this module</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="m2.html"><a href="m2.html#r-for-data-science-story-time"><i class="fa fa-check"></i><b>15.3.1</b> R for Data Science (+ story time)</a></li>
+<li class="chapter" data-level="15.3.2" data-path="m2.html"><a href="m2.html#common-misconceptions-about-data-analysis-and-statistics"><i class="fa fa-check"></i><b>15.3.2</b> Common misconceptions about data analysis and statistics</a></li>
+<li class="chapter" data-level="15.3.3" data-path="m2.html"><a href="m2.html#to-predict-and-serve"><i class="fa fa-check"></i><b>15.3.3</b> To predict and serve?</a></li>
+<li class="chapter" data-level="15.3.4" data-path="m2.html"><a href="m2.html#science-isnt-broken"><i class="fa fa-check"></i><b>15.3.4</b> Science isn’t broken</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="m2.html"><a href="m2.html#data-wrangling-and-visualization"><i class="fa fa-check"></i><b>15.4</b> Data wrangling and visualization</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="m2.html"><a href="m2.html#tidy-data"><i class="fa fa-check"></i><b>15.4.1</b> Tidy data</a></li>
+<li class="chapter" data-level="15.4.2" data-path="m2.html"><a href="m2.html#student-grades-case-study"><i class="fa fa-check"></i><b>15.4.2</b> Student grades case study</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="m2.html"><a href="m2.html#ethical-professional-practice-for-statisticians"><i class="fa fa-check"></i><b>15.5</b> Ethical professional practice for statisticians</a>
+<ul>
+<li class="chapter" data-level="15.5.1" data-path="m2.html"><a href="m2.html#why-should-statisticians-be-ethical"><i class="fa fa-check"></i><b>15.5.1</b> Why should statisticians be ethical?</a></li>
+<li class="chapter" data-level="15.5.2" data-path="m2.html"><a href="m2.html#getting-data"><i class="fa fa-check"></i><b>15.5.2</b> Getting data</a></li>
+<li class="chapter" data-level="15.5.3" data-path="m2.html"><a href="m2.html#analyzingethics"><i class="fa fa-check"></i><b>15.5.3</b> Analyzing data</a></li>
+<li class="chapter" data-level="15.5.4" data-path="m2.html"><a href="m2.html#making-decisions-with-data"><i class="fa fa-check"></i><b>15.5.4</b> Making decisions with data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.6" data-path="m2.html"><a href="m2.html#statistical-communication"><i class="fa fa-check"></i><b>15.6</b> Statistical communication</a>
+<ul>
+<li class="chapter" data-level="15.6.1" data-path="m2.html"><a href="m2.html#prioritize-statistical-communication-as-part-of-your-toolbox"><i class="fa fa-check"></i><b>15.6.1</b> Prioritize statistical communication as part of your toolbox</a></li>
+<li class="chapter" data-level="15.6.2" data-path="m2.html"><a href="m2.html#what-do-statisticians-usually-write"><i class="fa fa-check"></i><b>15.6.2</b> What do statisticians usually <em>write</em>?</a></li>
+<li class="chapter" data-level="15.6.3" data-path="m2.html"><a href="m2.html#common-report-components"><i class="fa fa-check"></i><b>15.6.3</b> Common report components</a></li>
+<li class="chapter" data-level="15.6.4" data-path="m2.html"><a href="m2.html#paraphrasing"><i class="fa fa-check"></i><b>15.6.4</b> Paraphrasing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="module-3-m3.html"><a href="module-3-m3.html"><i class="fa fa-check"></i><b>16</b> Module 3 {m3}</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="module-3-m3.html"><a href="module-3-m3.html#introduction-2"><i class="fa fa-check"></i><b>16.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="module-3-m3.html"><a href="module-3-m3.html#how-deep-are-we-going-on-likelihoods"><i class="fa fa-check"></i><b>16.1.1</b> How deep are we going on likelihoods?</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="module-3-m3.html"><a href="module-3-m3.html#learning-checklist-2"><i class="fa fa-check"></i><b>16.2</b> Learning checklist</a></li>
+<li class="chapter" data-level="16.3" data-path="module-3-m3.html"><a href="module-3-m3.html#correlated-data"><i class="fa fa-check"></i><b>16.3</b> Correlated data</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="module-3-m3.html"><a href="module-3-m3.html#reading"><i class="fa fa-check"></i><b>16.3.1</b> Reading</a></li>
+<li class="chapter" data-level="16.3.2" data-path="module-3-m3.html"><a href="module-3-m3.html#key-vocabulary"><i class="fa fa-check"></i><b>16.3.2</b> Key vocabulary</a></li>
+<li class="chapter" data-level="16.3.3" data-path="module-3-m3.html"><a href="module-3-m3.html#statdew-valley-interactive"><i class="fa fa-check"></i><b>16.3.3</b> Statdew Valley interactive</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="module-3-m3.html"><a href="module-3-m3.html#maximum-likelihood-review"><i class="fa fa-check"></i><b>16.4</b> Maximum likelihood review</a>
+<ul>
+<li class="chapter" data-level="16.4.1" data-path="module-3-m3.html"><a href="module-3-m3.html#properties-of-maximum-likelihood-estimators"><i class="fa fa-check"></i><b>16.4.1</b> Properties of maximum likelihood estimators</a></li>
+<li class="chapter" data-level="16.4.2" data-path="module-3-m3.html"><a href="module-3-m3.html#suggested-reading"><i class="fa fa-check"></i><b>16.4.2</b> Suggested reading</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="module-3-m3.html"><a href="module-3-m3.html#advice-for-polishing-your-writing"><i class="fa fa-check"></i><b>16.5</b> Advice for polishing your writing</a></li>
+<li class="chapter" data-level="16.6" data-path="module-3-m3.html"><a href="module-3-m3.html#linear-mixed-models-lmms"><i class="fa fa-check"></i><b>16.6</b> Linear mixed models (LMMs)</a>
+<ul>
+<li class="chapter" data-level="16.6.1" data-path="module-3-m3.html"><a href="module-3-m3.html#vocal-pitch-case-study-part-1"><i class="fa fa-check"></i><b>16.6.1</b> Vocal pitch case study: Part 1</a></li>
+<li class="chapter" data-level="16.6.2" data-path="module-3-m3.html"><a href="module-3-m3.html#formal-vs-informal-example"><i class="fa fa-check"></i><b>16.6.2</b> Formal vs informal example</a></li>
+<li class="chapter" data-level="16.6.3" data-path="module-3-m3.html"><a href="module-3-m3.html#recall-linear-regression-assumptions"><i class="fa fa-check"></i><b>16.6.3</b> Recall: Linear regression assumptions</a></li>
+<li class="chapter" data-level="16.6.4" data-path="module-3-m3.html"><a href="module-3-m3.html#why-we-cant-assume-independence"><i class="fa fa-check"></i><b>16.6.4</b> Why we can’t assume independence</a></li>
+<li class="chapter" data-level="16.6.5" data-path="module-3-m3.html"><a href="module-3-m3.html#lets-start-with-a-picture"><i class="fa fa-check"></i><b>16.6.5</b> Let’s start with a picture</a></li>
+</ul></li>
+<li class="chapter" data-level="16.7" data-path="module-3-m3.html"><a href="module-3-m3.html#linear-mixed-models"><i class="fa fa-check"></i><b>16.7</b> Linear mixed models</a>
+<ul>
+<li class="chapter" data-level="16.7.1" data-path="module-3-m3.html"><a href="module-3-m3.html#thoughts-on-plots-for-hierarchicalcorrelated-data-generally"><i class="fa fa-check"></i><b>16.7.1</b> Thoughts on plots for hierarchical/correlated data generally</a></li>
+<li class="chapter" data-level="16.7.2" data-path="module-3-m3.html"><a href="module-3-m3.html#assumptions-3"><i class="fa fa-check"></i><b>16.7.2</b> Assumptions</a></li>
+<li class="chapter" data-level="16.7.3" data-path="module-3-m3.html"><a href="module-3-m3.html#our-model-set-up"><i class="fa fa-check"></i><b>16.7.3</b> Our model set up</a></li>
+<li class="chapter" data-level="16.7.4" data-path="module-3-m3.html"><a href="module-3-m3.html#what-can-correlated-errors-look-like"><i class="fa fa-check"></i><b>16.7.4</b> What can correlated errors look like?</a></li>
+<li class="chapter" data-level="16.7.5" data-path="module-3-m3.html"><a href="module-3-m3.html#how-do-we-tell-r-which-situation-were-in"><i class="fa fa-check"></i><b>16.7.5</b> How do we tell R which situation we’re in?</a></li>
+<li class="chapter" data-level="16.7.6" data-path="module-3-m3.html"><a href="module-3-m3.html#additional-considerations"><i class="fa fa-check"></i><b>16.7.6</b> Additional considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="16.8" data-path="module-3-m3.html"><a href="module-3-m3.html#vocal-pitch-case-study-part-2"><i class="fa fa-check"></i><b>16.8</b> Vocal pitch case study: Part 2</a>
+<ul>
+<li class="chapter" data-level="16.8.1" data-path="module-3-m3.html"><a href="module-3-m3.html#modelling-individual-means-with-random-intercepts"><i class="fa fa-check"></i><b>16.8.1</b> Modelling individual means with random intercepts</a></li>
+<li class="chapter" data-level="16.8.2" data-path="module-3-m3.html"><a href="module-3-m3.html#model-with-condition-and-sex"><i class="fa fa-check"></i><b>16.8.2</b> Model with condition and sex</a></li>
+<li class="chapter" data-level="16.8.3" data-path="module-3-m3.html"><a href="module-3-m3.html#aside-summary-of-means"><i class="fa fa-check"></i><b>16.8.3</b> Aside: Summary of means</a></li>
+<li class="chapter" data-level="16.8.4" data-path="module-3-m3.html"><a href="module-3-m3.html#scenario-random-slopes"><i class="fa fa-check"></i><b>16.8.4</b> Scenario random slopes</a></li>
+</ul></li>
+<li class="chapter" data-level="16.9" data-path="module-3-m3.html"><a href="module-3-m3.html#interactions-between-random-effects-and-fixed-effects"><i class="fa fa-check"></i><b>16.9</b> Interactions between random effects and fixed effects</a>
+<ul>
+<li class="chapter" data-level="16.9.1" data-path="module-3-m3.html"><a href="module-3-m3.html#model-formula"><i class="fa fa-check"></i><b>16.9.1</b> Model formula</a></li>
+<li class="chapter" data-level="16.9.2" data-path="module-3-m3.html"><a href="module-3-m3.html#how-would-we-fit-this-with-lmer"><i class="fa fa-check"></i><b>16.9.2</b> How would we fit this with <code>lmer</code>?</a></li>
+</ul></li>
+<li class="chapter" data-level="16.10" data-path="module-3-m3.html"><a href="module-3-m3.html#more-fixed-vs-random-effects-practice"><i class="fa fa-check"></i><b>16.10</b> More fixed vs random effects practice</a>
+<ul>
+<li class="chapter" data-level="16.10.1" data-path="module-3-m3.html"><a href="module-3-m3.html#answers"><i class="fa fa-check"></i><b>16.10.1</b> Answers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="module-4.html"><a href="module-4.html"><i class="fa fa-check"></i><b>17</b> Module 4</a></li>
+<li class="chapter" data-level="18" data-path="module-5.html"><a href="module-5.html"><i class="fa fa-check"></i><b>18</b> Module 5</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="part"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="19" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>19</b> Resources</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="resources.html"><a href="resources.html#course-tools-overview"><i class="fa fa-check"></i><b>19.1</b> Course tools overview</a>
+<ul>
+<li class="chapter" data-level="19.1.1" data-path="resources.html"><a href="resources.html#admin"><i class="fa fa-check"></i><b>19.1.1</b> Admin</a></li>
+</ul></li>
+<li class="chapter" data-level="19.2" data-path="resources.html"><a href="resources.html#using-rstudio-with-the-jupyterhub"><i class="fa fa-check"></i><b>19.2</b> Using RStudio with the JupyterHub</a></li>
+<li class="chapter" data-level="19.3" data-path="resources.html"><a href="resources.html#team-up"><i class="fa fa-check"></i><b>19.3</b> Team Up!</a>
+<ul>
+<li class="chapter" data-level="19.3.1" data-path="resources.html"><a href="resources.html#to-participate-in-these-activities-you-need"><i class="fa fa-check"></i><b>19.3.1</b> To participate in these activities, you <strong>need</strong>:</a></li>
+<li class="chapter" data-level="19.3.2" data-path="resources.html"><a href="resources.html#before-the-activity-you-should"><i class="fa fa-check"></i><b>19.3.2</b> <strong>Before</strong> the activity you should:</a></li>
+<li class="chapter" data-level="19.3.3" data-path="resources.html"><a href="resources.html#some-ruleslogistics"><i class="fa fa-check"></i><b>19.3.3</b> Some rules/logistics</a></li>
+<li class="chapter" data-level="19.3.4" data-path="resources.html"><a href="resources.html#team-up-instructions"><i class="fa fa-check"></i><b>19.3.4</b> Team Up! Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="19.4" data-path="resources.html"><a href="resources.html#zoomzoomzoomzoom"><i class="fa fa-check"></i><b>19.4</b> Zoom, Zoom, Zoom, Zoom…</a>
+<ul>
+<li class="chapter" data-level="19.4.1" data-path="resources.html"><a href="resources.html#make-sure-your-zoom-is-up-to-date"><i class="fa fa-check"></i><b>19.4.1</b> Make sure your Zoom is up to date</a></li>
+<li class="chapter" data-level="19.4.2" data-path="resources.html"><a href="resources.html#customize"><i class="fa fa-check"></i><b>19.4.2</b> Customize!</a></li>
+<li class="chapter" data-level="19.4.3" data-path="resources.html"><a href="resources.html#vpn"><i class="fa fa-check"></i><b>19.4.3</b> VPN</a></li>
+<li class="chapter" data-level="19.4.4" data-path="resources.html"><a href="resources.html#notes"><i class="fa fa-check"></i><b>19.4.4</b> Notes:</a></li>
+<li class="chapter" data-level="19.4.5" data-path="resources.html"><a href="resources.html#changing-your-profile-picture-on-zoom-and-quercus"><i class="fa fa-check"></i><b>19.4.5</b> Changing your profile picture on Zoom and Quercus</a></li>
+<li class="chapter" data-level="19.4.6" data-path="resources.html"><a href="resources.html#what-to-do-if-you-experience-technical-difficulties-during-class"><i class="fa fa-check"></i><b>19.4.6</b> What to do if you experience technical difficulties during class?</a></li>
+<li class="chapter" data-level="19.4.7" data-path="resources.html"><a href="resources.html#what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom"><i class="fa fa-check"></i><b>19.4.7</b> What to do if your instructor or TA is experiencing technical difficulties on Zoom</a></li>
+</ul></li>
+<li class="chapter" data-level="19.5" data-path="resources.html"><a href="resources.html#student-support-services-and-resources"><i class="fa fa-check"></i><b>19.5</b> Student support services and resources</a>
+<ul>
+<li class="chapter" data-level="19.5.1" data-path="resources.html"><a href="resources.html#mental-health-support"><i class="fa fa-check"></i><b>19.5.1</b> Mental health support</a></li>
+<li class="chapter" data-level="19.5.2" data-path="resources.html"><a href="resources.html#general-university-resources"><i class="fa fa-check"></i><b>19.5.2</b> General University resources</a></li>
+<li class="chapter" data-level="19.5.3" data-path="resources.html"><a href="resources.html#financial-support"><i class="fa fa-check"></i><b>19.5.3</b> Financial support</a></li>
+<li class="chapter" data-level="19.5.4" data-path="resources.html"><a href="resources.html#arts-science-covid19-faq"><i class="fa fa-check"></i><b>19.5.4</b> Arts &amp; Science COVID19 FAQ</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html"><i class="fa fa-check"></i><b>20</b> FAQs and Errata</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#frequently-asked-questions"><i class="fa fa-check"></i><b>20.1</b> Frequently asked questions</a>
+<ul>
+<li class="chapter" data-level="20.1.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#course-admin"><i class="fa fa-check"></i><b>20.1.1</b> Course admin</a></li>
+<li class="chapter" data-level="20.1.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#assessments-faq"><i class="fa fa-check"></i><b>20.1.2</b> Assessments FAQ</a></li>
+<li class="chapter" data-level="20.1.3" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#team-up-1"><i class="fa fa-check"></i><b>20.1.3</b> Team Up!</a></li>
+</ul></li>
+<li class="chapter" data-level="20.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#other"><i class="fa fa-check"></i><b>20.2</b> Other</a>
+<ul>
+<li class="chapter" data-level="20.2.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#references-1"><i class="fa fa-check"></i><b>20.2.1</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="20.3" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#errata"><i class="fa fa-check"></i><b>20.3</b> Errata</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html"><i class="fa fa-check"></i><b>21</b> Bits and pieces</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#code-to-generate-course-art"><i class="fa fa-check"></i><b>21.1</b> Code to generate course art</a></li>
+<li class="chapter" data-level="21.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#matrices"><i class="fa fa-check"></i><b>21.2</b> M1 supporting information on matrices (not assessed)</a>
+<ul>
+<li class="chapter" data-level="21.2.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#background"><i class="fa fa-check"></i><b>21.2.1</b> Background</a></li>
+<li class="chapter" data-level="21.2.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#example-3"><i class="fa fa-check"></i><b>21.2.2</b> Example</a></li>
+<li class="chapter" data-level="21.2.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#regression-not-classic-actually-anova-no-intercept"><i class="fa fa-check"></i><b>21.2.3</b> Regression NOT classic, actually ANOVA! (no intercept)</a></li>
+<li class="chapter" data-level="21.2.4" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#further-reading-if-you-want-it"><i class="fa fa-check"></i><b>21.2.4</b> Further reading (if you want it)</a></li>
+</ul></li>
+<li class="chapter" data-level="21.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#p-values-recap"><i class="fa fa-check"></i><b>21.3</b> P-values (recap)</a>
+<ul>
+<li class="chapter" data-level="21.3.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#what-if-you-get-a-value-that-is-exactly-one-of-these-thresholds"><i class="fa fa-check"></i><b>21.3.1</b> What if you get a value that is exactly one of these thresholds?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="announcements-summary.html"><a href="announcements-summary.html"><i class="fa fa-check"></i><b>22</b> Announcements summary</a>
+<ul>
+<li class="chapter" data-level="22.0.1" data-path="announcements-summary.html"><a href="announcements-summary.html#studentrep"><i class="fa fa-check"></i><b>22.0.1</b> Looking for student representatives for STA303</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.statistics.utoronto.ca/" target="blank">Department of Statistical Sciences, The University of Toronto</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R Notebook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="module-3-m3" class="section level1" number="16">
+<h1><span class="header-section-number">16</span> Module 3 {m3}</h1>
+<div class="yellowbox">
+<p>DRAFT! These materials have not been officially launched yet.
+Materials for February 7–February 18, 2022.</p>
+</div>
+<div id="introduction-2" class="section level2" number="16.1">
+<h2><span class="header-section-number">16.1</span> Introduction</h2>
+<p>This module recaps a few topics you should have encountered in previous courses:
+* statistical independence and correlated data,
+* specifically, <em>from your understanding of the context/collection of data, can you identify whether observations are likely to be independent?</em>, and
+* maximum likelihood/maximum likelihood estimates (MLEs).</p>
+<p>It also introduces an extension to regression, the <strong>linear mixed model</strong></p>
+<div id="how-deep-are-we-going-on-likelihoods" class="section level3" number="16.1.1">
+<h3><span class="header-section-number">16.1.1</span> How deep are we going on likelihoods?</h3>
+<p>We’ll need the concept of maximum likelihood for most of the models we’ll meet in this course. That said, <strong>proofs about MLEs are not the focus of <em>this</em> course.</strong></p>
+<ul>
+<li>You should have encountered the concept of likelihood in <em>STA238: Probability, Statistics and Data Analysis II</em> OR <em>STA261: Probability and Statistics II</em>.
+<ul>
+<li>Having taken one of these is a pre-req for STA302, which is the pre-req for STA303.</li>
+</ul></li>
+<li>For more depth on this important and useful topic (mathematically and/or computationally) consider taking:
+<ul>
+<li><em>STA355: Theory of Statistical Practice</em>, and/or</li>
+<li><em>STA410: Statistical Computation</em>, and/or</li>
+<li><em>STA422: Theory of Statistical Inference</em> and/or</li>
+<li><em>STA452: Mathematical Statistics I</em> + <em>STA453: Mathematical Statistics II</em></li>
+</ul></li>
+</ul>
+<p>These recommendations are based only on the calendar entries for these courses, the <a href="https://www.statistics.utoronto.ca/resources/past-courses-outlines">latest syllabi</a> of these courses are probably your best guide to what is covered.</p>
+</div>
+</div>
+<div id="learning-checklist-2" class="section level2" number="16.2">
+<h2><span class="header-section-number">16.2</span> Learning checklist</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Identify situations where linear mixed models may be needed.</li>
+<li>Create plots to explore hierarchical data.</li>
+<li>Write the formula for LMMs.</li>
+<li>Fit LMMs with the <code>lmer</code> function using random slopes and random intercepts, as appropriate.</li>
+<li>Interpret the results of <code>lmer</code> outputs.</li>
+<li>Conduct appropriate tests to compare LMMs.</li>
+</ul>
+</div>
+<div id="correlated-data" class="section level2" number="16.3">
+<h2><span class="header-section-number">16.3</span> Correlated data</h2>
+<div id="reading" class="section level3" number="16.3.1">
+<h3><span class="header-section-number">16.3.1</span> Reading</h3>
+<p><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 (§ 7.3 and 7.8) of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression. (2021). Retrieved from: https://bookdown.org/roback/bookdown-BeyondMLR/</a></p>
+</div>
+<div id="key-vocabulary" class="section level3" number="16.3.2">
+<h3><span class="header-section-number">16.3.2</span> Key vocabulary</h3>
+<ul>
+<li><strong>Fixed effects</strong>: These are non-random quantities. All the coefficients you were estimating in STA302 are examples of fixed effects as you were not treating <span class="math inline">\(\beta_1\)</span> as a random variable, for example.</li>
+<li><strong>Random effects</strong>: These ARE random quantities. These model parameters are treated as random variables.</li>
+<li><strong>Mixed effects model</strong>: A model that includes both fixed and random effects as its parameters. These are also called hierarchical models and just mixed models. They are NOT the same as <em>mixed methods</em>, which is a ‘mix’ of <em>quantitative</em> and <em>qualitative</em> research methodology.</li>
+<li><strong>Nested/nesting design</strong>: Observational units are grouped within grouping units. There may be multiple levels of grouping.</li>
+<li><strong>Crossed effect design</strong>: Every observational unit experiences every level of the treatment variable.</li>
+<li><strong>Observational units</strong>: The person or thing on which your outcome of interest is measured. In an experiment we might also call this the ‘experimental unit’ or some might say ‘statistical unit.’ In <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 of Beyond Multiple Linear Regression</a>, these are referred to as ‘level-one observational units.’
+<ul>
+<li>E.g. In a survey of our class, each student is the observational unit. When I am preparing my final grades, each assessment for each student is my unit of observation. This links back to tidy data (week 2). We want each observational unit to have its own row and only that one row.</li>
+</ul></li>
+<li><strong>Grouping units</strong>: How your observational units are grouped together. In <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 of Beyond Multiple Linear Regression</a>, these are referred to as ‘level-two observational units,’ but you could have even more levels of grouping. Groups within groups, etc.</li>
+</ul>
+</div>
+<div id="statdew-valley-interactive" class="section level3" number="16.3.3">
+<h3><span class="header-section-number">16.3.3</span> Statdew Valley interactive</h3>
+<p><a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303_activities&amp;urlpath=shiny%2Fsta303_activities%2Fweek_4%2F&amp;branch=main">Click this text to go to the interactive</a></p>
+<p><img src="images/m3/statdewvalley.png" width="45%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="maximum-likelihood-review" class="section level2" number="16.4">
+<h2><span class="header-section-number">16.4</span> Maximum likelihood review</h2>
+<p><span class="math display">\[L(\theta) = f(x | \theta) \]</span>
+* Likelihood helps us understand how well our model fits our data.
+* Maximizing the likelihood function find estimate the coefficient values for our model that make <em>the data we actually observed the most likely</em>.
+* That might feel a little backwards, as you could say the chance of observing out data is 100%, because we did…observe it…but hopefully the idea of picking the coefficient estimates for our model that make our data the most likely makes some sense.</p>
+<div id="properties-of-maximum-likelihood-estimators" class="section level3" number="16.4.1">
+<h3><span class="header-section-number">16.4.1</span> Properties of maximum likelihood estimators</h3>
+<p>For large sample sizes:
+* Bias goes to 0 (as sample size increases)
+* Approximately minimum variance
+* Approximately normal distribution (usually)</p>
+<p>Another nice feature of MLEs are that they are ‘<strong>invariant</strong>’ under transformation. This means that if <span class="math inline">\(\hat\theta\)</span> is an MLE of <span class="math inline">\(\theta\)</span>, and <span class="math inline">\(g\)</span> is a 1-1 function, then <span class="math inline">\(g(\hat\theta)\)</span> is an MLE of <span class="math inline">\(g(\theta)\)</span>. This will come in handy from week 7 when we want to do some transformations of our coefficients estimates with link functions.</p>
+</div>
+<div id="suggested-reading" class="section level3" number="16.4.2">
+<h3><span class="header-section-number">16.4.2</span> Suggested reading</h3>
+<p>As this should mostly be a recap of likelihood, this is a great article on which to practice your <a href="m1.html#previewskim">previewing and skimming strategies</a>.</p>
+<p>You may want to pay special attention to the likelihood ratio test.</p>
+<p><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-beyondmost.html">Chapter 2</a> (§ 2.1–2.9) of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression. (2021). Retrieved from: <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a> (Links to an external site.)</p>
+</div>
+</div>
+<div id="advice-for-polishing-your-writing" class="section level2" number="16.5">
+<h2><span class="header-section-number">16.5</span> Advice for polishing your writing</h2>
+<p>The U of T writing advice site has some great short articles with tips about common writing mistakes and tips for improving your writing. The full list from the <a href="https://advice.writing.utoronto.ca/revising/">‘Revising’</a> section is below. Choose one or two that seem relevant to you and read them. If you don’t know where to start, go for the <a href="https://advice.writing.utoronto.ca/revising/hit-parade-of-errors/">‘Hit Parade’</a>.</p>
+<ul>
+<li class="page_item page-item-296">
+<a href="https://advice.writing.utoronto.ca/revising/revising-and-editing/">Revising And Editing</a>
+</li>
+<li class="page_item page-item-117">
+<a href="https://advice.writing.utoronto.ca/revising/hit-parade-of-errors/">Hit Parade Of Errors In Grammar, Punctuation, and Style</a>
+</li>
+<li class="page_item page-item-299">
+<a href="https://advice.writing.utoronto.ca/revising/using-the-computer/">Using the Computer to Improve Your Writing</a>
+</li>
+<li class="page_item page-item-302">
+<a href="https://advice.writing.utoronto.ca/revising/wordiness/">Wordiness: Danger Signals and Ways to React</a>
+</li>
+<li class="page_item page-item-306">
+<a href="https://advice.writing.utoronto.ca/revising/unbiased-language/">Unbiased Language</a>
+</li>
+<li class="page_item page-item-309">
+<a href="https://advice.writing.utoronto.ca/revising/punctuation/">Punctuation</a>
+</li>
+<li class="page_item page-item-312">
+<a href="https://advice.writing.utoronto.ca/revising/comma-splices/">Fixing Comma Splices</a>
+</li>
+</ul>
+<p>]</p>
+<ul>
+<li class="page_item page-item-314">
+<a href="https://advice.writing.utoronto.ca/revising/faulty-parallelism/">Faulty Parallelism</a>
+</li>
+<li class="page_item page-item-318">
+<a href="https://advice.writing.utoronto.ca/revising/passive-voice/">Passive Voice: When to Use It and When to Avoid It</a>
+</li>
+<li class="page_item page-item-321">
+<a href="https://advice.writing.utoronto.ca/revising/dangling-modifiers/">Fixing Dangling Modifiers</a>
+</li>
+<li class="page_item page-item-324">
+<a href="https://advice.writing.utoronto.ca/revising/spelling/">Some Tools and Rules to Improve Your Spelling</a>
+</li>
+<li class="page_item page-item-327">
+<a href="https://advice.writing.utoronto.ca/revising/plurals/">Plurals</a>
+</li>
+<li class="page_item page-item-330">
+<a href="https://advice.writing.utoronto.ca/revising/possessives/">Possessives</a>
+</li>
+<li class="page_item page-item-333">
+<a href="https://advice.writing.utoronto.ca/revising/subject-verb-agreement/">Subject-Verb Agreement</a>
+</li>
+<li class="page_item page-item-74">
+<a href="https://advice.writing.utoronto.ca/revising/sentence-fragments/">Sentence Fragments</a>
+</li>
+</ul>
+</div>
+<div id="linear-mixed-models-lmms" class="section level2" number="16.6">
+<h2><span class="header-section-number">16.6</span> Linear mixed models (LMMs)</h2>
+<div id="vocal-pitch-case-study-part-1" class="section level3" number="16.6.1">
+<h3><span class="header-section-number">16.6.1</span> Vocal pitch case study: Part 1</h3>
+<div id="motivation" class="section level4" number="16.6.1.1">
+<h4><span class="header-section-number">16.6.1.1</span> Motivation</h4>
+<p>You’re interested in a language and especially want to investigate how <strong>voice pitch</strong> (perceived “highness” or “lowness” of a voice) is related to politeness for speakers of that language.</p>
+</div>
+<div id="design-of-the-experiment" class="section level4" number="16.6.1.2">
+<h4><span class="header-section-number">16.6.1.2</span> Design of the experiment</h4>
+<ul>
+<li>You recruit 6 speakers of the language as subjects in your study.</li>
+<li>There are 3 males and 3 females.</li>
+<li>Each subject is asked to respond to 14 hypothetical situations.
+<ul>
+<li>7 of these situations are <em>formal</em> situations that usually require politeness (e.g., giving an excuse for being late to your scary boss), and</li>
+<li>7 were more <em>informal</em> situations (e.g., explaining to a friend why you’re late).</li>
+</ul></li>
+<li>For each hypothetical situation you measure the subjects voice pitch as they respond. You also take note of each of your subjects’ sex, since you know that’s another important influence on voice pitch.]</li>
+</ul>
+<p>.footnote[.small[Much of the content here is adapted from Winter, B. (2013). <strong>Linear models and linear mixed effects models in R with linguistic applications</strong>. arXiv:1308.5499. The language considered was Korean.]]</p>
+</div>
+</div>
+<div id="formal-vs-informal-example" class="section level3" number="16.6.2">
+<h3><span class="header-section-number">16.6.2</span> Formal vs informal example</h3>
+<div id="talking-to-your-boss" class="section level4" number="16.6.2.1">
+<h4><span class="header-section-number">16.6.2.1</span> Talking to your boss</h4>
+<p><img src="images/m3/boss.jpeg" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="talking-to-your-friend" class="section level4" number="16.6.2.2">
+<h4><span class="header-section-number">16.6.2.2</span> Talking to your friend</h4>
+<p><img src="images/m3/friend.jpeg" width="50%" style="display: block; margin: auto;" />
+.small[Photos from unsplash.com]</p>
+</div>
+<div id="read-in-the-data" class="section level4" number="16.6.2.3">
+<h4><span class="header-section-number">16.6.2.3</span> Read in the data</h4>
+<p>For convenience, I have created a new variable called <code>condition</code>, it is just a modification of the <code>attitude</code> variable, that takes the level <code>formal</code> if the particular measurement was under formal conditions and <code>informal</code> if the measurement was under informal conditions. This variable contains the same information as the <code>attitude</code> variable, just coded how I want it to be, so I remove the <code>attitude</code> variable at the end.</p>
+<p>Additionally, the gender variable here is probably more accurately considered as a measure of sex here than gender identity, so I am creating a new variables called <code>sex</code> and also making it a factor.</p>
+<pre><code>## Rows: 84 Columns: 5</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (3): subject, gender, attitude
+## dbl (2): scenario, frequency</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div id="take-a-look-at-our-data" class="section level4" number="16.6.2.4">
+<h4><span class="header-section-number">16.6.2.4</span> Take a look at our data</h4>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="module-3-m3.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(polite_data, <span class="at">width=</span><span class="dv">85</span>)</span></code></pre></div>
+<pre><code>## Rows: 84
+## Columns: 5
+## $ subject   &lt;chr&gt; &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;,…
+## $ scenario  &lt;dbl&gt; 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 1, 1, 2, 2, 3, 3, 4, 4,…
+## $ frequency &lt;dbl&gt; 213.3, 204.5, 285.1, 259.7, 203.9, 286.9, 250.8, 276.8, 231.9, 25…
+## $ condition &lt;fct&gt; formal, informal, formal, informal, formal, informal, formal, inf…
+## $ sex       &lt;fct&gt; F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F,…</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="module-3-m3.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(polite_data)</span></code></pre></div>
+<pre><code>## # A tibble: 6 × 5
+##   subject scenario frequency condition sex  
+##   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt; &lt;fct&gt;     &lt;fct&gt;
+## 1 F1             1      213. formal    F    
+## 2 F1             1      204. informal  F    
+## 3 F1             2      285. formal    F    
+## 4 F1             2      260. informal  F    
+## 5 F1             3      204. formal    F    
+## 6 F1             3      287. informal  F</code></pre>
+<p><strong>Without doing any analysis, how might this data violate our assumptions for a linear model?</strong></p>
+</div>
+</div>
+<div id="recall-linear-regression-assumptions" class="section level3" number="16.6.3">
+<h3><span class="header-section-number">16.6.3</span> Recall: Linear regression assumptions</h3>
+<ol style="list-style-type: decimal">
+<li><strong>Errors are independent (observations are independent)</strong></li>
+<li>Errors are identically distributed and the expected value of the errors is zero, <span class="math inline">\(E[\epsilon_i]=0\)</span></li>
+<li>Constant variance (homoscedasticity), <span class="math inline">\(var[\epsilon_i] = \sigma^2\)</span>.</li>
+<li>A straight-line relationship exists between the errors <span class="math inline">\(\epsilon_i\)</span> and responses <span class="math inline">\(y_i\)</span></li>
+</ol>
+<p>1.-3. are usually expressed as assuming the errors are i.i.d normally distributed with mean of zero and variance <span class="math inline">\(\sigma^2\)</span>,
+<span class="math display">\[\epsilon_i \sim N(0, \sigma^2)\]</span></p>
+</div>
+<div id="why-we-cant-assume-independence" class="section level3" number="16.6.4">
+<h3><span class="header-section-number">16.6.4</span> Why we can’t assume independence</h3>
+<p>Each subject has 14 measurements of their pitch (measured as the frequency of the vibration of your vocal cords) in different scenarios and different levels of politeness (formal/informal).</p>
+<p>With this kind of data, since each subject gave multiple responses (a “repeated measures” design), we can see that this would violate the independence assumption that’s important in linear modelling: <strong>multiple responses from the same subject cannot be regarded as independent from each other</strong>.</p>
+<p>In this scenario, every person has a <em>slightly different</em> voice pitch. This personal factor affects all responses from the same subject, thus responses are inter-dependent (correlated) within subjects rather than independent. I.e., if you have a generally low voice, even if you change your pitch when you are being informal versus formal, you probably still have a generally low pitch.</p>
+<p>There also differences, on <em>average</em> in pitch by sex, so this is something we will also want to account for in our model, later.
+<br>
+<br></p>
+<p><strong>So what do we do?</strong></p>
+</div>
+<div id="lets-start-with-a-picture" class="section level3" number="16.6.5">
+<h3><span class="header-section-number">16.6.5</span> Let’s start with a picture</h3>
+<p>Female subjects have an ID starting with “F” and males subjects have an ID starting with “M.” <strong>What do you see?</strong></p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="module-3-m3.html#cb41-1" aria-hidden="true" tabindex="-1"></a>polite_data <span class="sc">%&gt;%</span> </span>
+<span id="cb41-2"><a href="module-3-m3.html#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> condition, </span>
+<span id="cb41-3"><a href="module-3-m3.html#cb41-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> frequency,</span>
+<span id="cb41-4"><a href="module-3-m3.html#cb41-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">color=</span>subject)) <span class="sc">+</span></span>
+<span id="cb41-5"><a href="module-3-m3.html#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb41-6"><a href="module-3-m3.html#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb41-7"><a href="module-3-m3.html#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>subject, <span class="at">nrow =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb41-8"><a href="module-3-m3.html#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="at">label=</span><span class="st">&quot;Voice pitch by subjects and formal/informal setting&quot;</span>) <span class="sc">+</span></span>
+<span id="cb41-9"><a href="module-3-m3.html#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb41-10"><a href="module-3-m3.html#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="co"># remove legend because we have facet names</span></span></code></pre></div>
+<p><img src="images/m3/explore.png" width="100%" /></p>
+<div id="key-themes-from-our-plot" class="section level4" number="16.6.5.1">
+<h4><span class="header-section-number">16.6.5.1</span> Key themes from our plot</h4>
+<ol style="list-style-type: decimal">
+<li>Males tend to have lower voices than females.</li>
+<li>Within the male and the female groups, there is plenty of individual variation. Some subjects have relatively high pitch for their sex and others have relatively low values, regardless of the formal/informal version of the scenario.</li>
+<li>Subjects seem to generally use a higher pitch when speaking informally than they do when speaking formally.</li>
+</ol>
+<p><strong>Before we can go further with this case study, let’s establish a few things…</strong></p>
+<hr />
+</div>
+</div>
+</div>
+<div id="linear-mixed-models" class="section level2" number="16.7">
+<h2><span class="header-section-number">16.7</span> Linear mixed models</h2>
+<div id="thoughts-on-plots-for-hierarchicalcorrelated-data-generally" class="section level3" number="16.7.1">
+<h3><span class="header-section-number">16.7.1</span> Thoughts on plots for hierarchical/correlated data generally</h3>
+<ul>
+<li>Make use of faceted plots! You may have also seen these called lattice plots or trellis plots. These plots show you relationships in your data, conditioned on one or more of your other variables. Facet based on your grouping units.</li>
+<li>When working with ggplot you can facet by adding the <code>facet_wrap</code> command. You can control which variables you condition on and how many rows and columns the facets are organised into. (There are lots of other great features we won’t go in to in depth here.)</li>
+</ul>
+<p>E.g. <code>plot +  facet_wrap(~one_var)</code> or
+<code>plot +  facet_wrap(~one_var + two var, nrow = 3)</code></p>
+<p>.Assume <code>plot</code> is a ggplot object.</p>
+<p><img src="images/m3/trellis.jpeg" width="100%" style="display: block; margin: auto;" /></p>
+<p>These names come from the appearance of these plots being similar to the lattice of a garden trellis. They also show you different <em>faces</em> (facets) of your data.]</p>
+</div>
+<div id="assumptions-3" class="section level3" number="16.7.2">
+<h3><span class="header-section-number">16.7.2</span> Assumptions</h3>
+<p>Linear mixed models assume that:</p>
+<ol style="list-style-type: decimal">
+<li>There is a continuous response variable.</li>
+<li>We have modelled the dependency structure correctly (i.e. made correct choices about our random variables).</li>
+<li>Our units/subjects are independent, even through observations within each subject are taken not to to be.</li>
+<li>Both the random effects and within-unit residual errors follow normal distributions.</li>
+<li>The random effects errors and within-unit residual errors have constant variance .</li>
+</ol>
+<p>While it is possible to some extent to check these assumptions through various diagnostics, a natural concern is that if one or more assumptions do not hold, our inferences may be invalid. Fortunately it turns out that linear mixed models are robust to violations of some of their assumptions.</p>
+</div>
+<div id="our-model-set-up" class="section level3" number="16.7.3">
+<h3><span class="header-section-number">16.7.3</span> Our model set up</h3>
+<div id="our-sta302-linear-model" class="section level4" number="16.7.3.1">
+<h4><span class="header-section-number">16.7.3.1</span> Our STA302 linear model</h4>
+<p><span class="math display">\[\boldsymbol{y} = \boldsymbol{X\beta} + \boldsymbol{\epsilon}\]</span>
+<span class="math display">\[\boldsymbol{\epsilon} \sim N(0, \Lambda_\theta)\]</span></p>
+</div>
+<div id="linear-mixed-model" class="section level4" number="16.7.3.2">
+<h4><span class="header-section-number">16.7.3.2</span> Linear mixed model</h4>
+<p><span class="math display">\[\boldsymbol{y} = \boldsymbol{X\beta} + \boldsymbol{Zb} + \epsilon\]</span>
+<span class="math display">\[\boldsymbol{b} \sim N(0, \psi_\theta),\ \  \boldsymbol{\epsilon} \sim N(0, \Lambda_\theta)\]</span>]</p>
+<ul>
+<li><span class="math inline">\(\boldsymbol{y}\)</span> is vector of outcomes for subject <span class="math inline">\(i\)</span>,</li>
+<li><span class="math inline">\(\boldsymbol{X}\)</span> and <span class="math inline">\(\boldsymbol{Z}\)</span> are model matrices for the <strong>fixed</strong> and <strong>random</strong> effects, respectively,</li>
+<li>the vector <span class="math inline">\(\boldsymbol{\beta}\)</span> describes the effect of covariates on the mean/expectation of the outcome, <span class="math inline">\(b\)</span> is the random effects for the units (assumed to be normally distributed with mean zero),</li>
+<li><span class="math inline">\(\epsilon\)</span> is the residual errors, normally distributed with a given variance and the errors within units are mutually independent. In this course we won’t deal with more complicated situations than a simple error vector that is distributed <span class="math inline">\(N(0, \sigma^2)\)</span> .</li>
+</ul>
+</div>
+<div id="alternative-formulations" class="section level4" number="16.7.3.3">
+<h4><span class="header-section-number">16.7.3.3</span> Alternative formulations</h4>
+<p>Where you have observations <span class="math inline">\(Y_{ij}\)</span> for repeated measures <span class="math inline">\(j\)</span> on individuals <span class="math inline">\(i\)</span>, you may also see:</p>
+<p><span class="math display">\[Y_{ij} = \boldsymbol{X_{ij}\beta} + \epsilon_{ij}\]</span></p>
+<p>Where <span class="math inline">\(\epsilon_{ij} = U_i + Z_{ij}\)</span> and <span class="math inline">\(Z_{ij} \sim N(0, \tau^2)\)</span>.</p>
+<p>These errors are normally distributed BUT correlated.</p>
+<p>OR</p>
+<p><span class="math display">\[Y_{ij}|U_i \sim N(\mu_{ij}, \tau^2)\]</span>
+<span class="math display">\[\mu_{ij{ = \boldsymbol{X_{ij}\beta}+U_i}}\]</span>
+<span class="math display">\[ [U_1,\ldots,U_M]^T \sim MVN(\boldsymbol0, \Sigma)\]</span></p>
+<ul>
+<li>fixed effects: <span class="math inline">\(\boldsymbol{X_{ij}\beta}\)</span> (what you’re used to)</li>
+<li>random effects: <span class="math inline">\(U_i\)</span> for i in 1 to M (new part that makes this a linear mixed model)</li>
+</ul>
+</div>
+</div>
+<div id="what-can-correlated-errors-look-like" class="section level3" number="16.7.4">
+<h3><span class="header-section-number">16.7.4</span> What can correlated errors look like?</h3>
+<div id="random-intercepts" class="section level4" number="16.7.4.1">
+<h4><span class="header-section-number">16.7.4.1</span> Random intercepts</h4>
+<p>This is one example of dependence. Here, if a subject is above average in one observation, they’re likely to be above average in their other observations.</p>
+<p><img src="images/m3/randomintindep.png" height = 350></p>
+<p><img src="images/m3/randomintdep.png" height = 350></p>
+</div>
+<div id="random-slopes" class="section level4" number="16.7.4.2">
+<h4><span class="header-section-number">16.7.4.2</span> Random slopes</h4>
+<p><img src="images/m3/rand_slope.png" width="45%" style="display: block; margin: auto;" /></p>
+<p>In this case, not only would the residuals for subject 1 tend to be positive while the residuals for subject 2 would tend to be negative, the difference would get bigger as x increases. You don’t want that kind of pattern in the residuals!</p>
+</div>
+<div id="random-slopes-and-intercepts" class="section level4" number="16.7.4.3">
+<h4><span class="header-section-number">16.7.4.3</span> Random slopes and intercepts</h4>
+<p><img src="images/m3/rand_slope_int.png" width="45%" style="display: block; margin: auto;" /></p>
+<p>Subjects appear to have different slopes AND intercepts.</p>
+</div>
+</div>
+<div id="how-do-we-tell-r-which-situation-were-in" class="section level3" number="16.7.5">
+<h3><span class="header-section-number">16.7.5</span> How do we tell R which situation we’re in?</h3>
+<p>We’ll be using the <code>lmer()</code> function from the <code>lme4</code> package.</p>
+<p>Many R packages provide a “vignette” to help you understand how to use the package and the theory behind it.</p>
+<p>.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="module-3-m3.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This line only installs lme4 if you haven&#39;t got it installed already</span></span>
+<span id="cb42-2"><a href="module-3-m3.html#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span>(<span class="st">&quot;lme4&quot;</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>())) <span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
+<span id="cb42-3"><a href="module-3-m3.html#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="module-3-m3.html#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
+<span id="cb42-5"><a href="module-3-m3.html#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">&quot;lmer&quot;</span>)</span></code></pre></div>
+<div id="vignette-activity" class="section level4" number="16.7.5.1">
+<h4><span class="header-section-number">16.7.5.1</span> Vignette activity</h4>
+<p><strong><em>Have you ever looked at a package vignette before?</em></strong></p>
+<p>Use the vignette for this package (see the code above) to try to fill out the syntax for the following situations. You may find Table 2 on page 7 of the vignette quite helpful.</p>
+<p><img src="images/m3/table.png" height = 350></p>
+</div>
+</div>
+<div id="additional-considerations" class="section level3" number="16.7.6">
+<h3><span class="header-section-number">16.7.6</span> Additional considerations</h3>
+<div id="linear-mixed-models-come-with-lots-of-different-names" class="section level4" number="16.7.6.1">
+<h4><span class="header-section-number">16.7.6.1</span> Linear mixed models come with lots of different names</h4>
+<p><img src="images/m3/names_for_lmm.png" /></p>
+</div>
+<div id="fixed-vs.-random-effects" class="section level4" number="16.7.6.2">
+<h4><span class="header-section-number">16.7.6.2</span> Fixed vs. random effects</h4>
+<p>Fixed effects are the things you care about and want to estimate. You likely chose the factor levels for a specific reason or measured the variable because you are interested in the relationship it has to your response variable.
+Random effects can be variables that were opportunistically measured whose variation needs to be accounted for but that you are not necessarily interested in (e.g. spatial block in a large experiment). The levels of the random effect are likely a random subset of all possible levels (although as a rule of thumb, there should usually be at least 5). However, if the experimental design includes nesting or non-independence of any kind, this needs to be accounted for to avoid pseudoreplication.</p>
+</div>
+<div id="reml-or-ml" class="section level4" number="16.7.6.3">
+<h4><span class="header-section-number">16.7.6.3</span> REML or ML</h4>
+<p>The math behind maximum likelihood (ML) and restricted maximum likelihood (REML) is beyond what I will assess you on in this course. The main difference between the two is how they estimate the variance parameters. They will estimate <span class="math inline">\(\beta\)</span>s the same way.</p>
+<p>REML is effectively a two-stage approach where estimates of the random effects are conditioned on the fixed effects. REML accounts for the degrees of freedom lost when estimating the fixed effects and provides us with unbiased estimates of our variance components. ML estimates of the variance components tend to be biased downward (smaller than they should be), making us more likely to pick models with simpler random effects structures than we should.</p>
+</div>
+<div id="reml-or-ml-1" class="section level4" number="16.7.6.4">
+<h4><span class="header-section-number">16.7.6.4</span> REML or ML</h4>
+<p>We <strong>prefer ML</strong> if we need to compare two nested based on their fixed effects, as we can’t do likelihood ratio tests with models fit with REML <em>unless</em> the fixed effects are exactly the same. We <strong>prefer REML</strong> when there is a large number of parameters or if our main goal is estimates of our model parameters (random and fixed). Which is usually our goal.</p>
+<p>For this course, we’ll usually use REML, unless we are trying to compare nested models with the same random effects. There are often not major differences between the two methods, anyways.</p>
+</div>
+<div id="confidence-intervals-and-tests" class="section level4" number="16.7.6.5">
+<h4><span class="header-section-number">16.7.6.5</span> Confidence intervals and tests</h4>
+<p>You can create Wald confidence intervals for fixed effects the way you’re used to from STA302. BUT for our random effects things can get a bit more awkward.</p>
+<p>A variance must be in <span class="math inline">\([0, \infty)\)</span>, so what happens if you get an estimate for <span class="math inline">\(\hat{\sigma_b^2}\)</span> that is <span class="math inline">\(0.02 \pm 0.04 = (-0.02, 0.06)\)</span>? We can get into trouble if our variance components are close to the boundary of the parameter space or if a test requires us to fix them at these boundaries.</p>
+<p>Despite these difficulties, if our interval estimates of our variance components are pretty safely away from 0, then we can conclude the associated random effect is needed in the model. If it seems that a variance component is effectively 0, than we can conclude we don’t need the associated random effect. We can also get this from likelihood ratio tests, where big or small p-values lead to clear-cut conclusions, but we face more challenges for making inferences when our p-value is close to our decision criteria.</p>
+</div>
+</div>
+</div>
+<div id="vocal-pitch-case-study-part-2" class="section level2" number="16.8">
+<h2><span class="header-section-number">16.8</span> Vocal pitch case study: Part 2</h2>
+<p>Recall:</p>
+<p><span class="math display">\[Y_{ij} = \boldsymbol{X_{ij}\beta} + Z_{i}\boldsymbol{b} + \epsilon_{ij}\]</span></p>
+<ul>
+<li><span class="math inline">\(Y_{ij}\)</span> is the vocal pitch for the <span class="math inline">\(i\)</span>th subject on the <span class="math inline">\(j\)</span>th vocal response.</li>
+<li><span class="math inline">\(X_{ij}\beta\)</span> has an intercept and an effect for sex and condition (formal/informal)</li>
+<li><span class="math inline">\(Z_ib\)</span> represents subject <span class="math inline">\(i\)</span>’s ‘baseline’ pitch</li>
+<li><span class="math inline">\(\epsilon_{ij}\)</span> is random noise (and potentially other unmeasured confounders)</li>
+</ul>
+<div id="modelling-individual-means-with-random-intercepts" class="section level3" number="16.8.1">
+<h3><span class="header-section-number">16.8.1</span> Modelling individual means with random intercepts</h3>
+<p>We can consider each subject’s mean vocal pitch and in our model we will assume different random intercepts for each subject. The mixed model estimates these intercepts for us.</p>
+<p>We are going to use the package <code>lme4</code> and the function <code>lmer()</code> and then fit a model with only the random effect of subject (each subject gets their own intercept).</p>
+<div id="random-intercept-only-model" class="section level4" number="16.8.1.1">
+<h4><span class="header-section-number">16.8.1.1</span> Random intercept only model</h4>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="module-3-m3.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;lme4&quot;)</span></span>
+<span id="cb43-2"><a href="module-3-m3.html#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4) <span class="co"># load the package</span></span></code></pre></div>
+<pre><code>## Loading required package: Matrix</code></pre>
+<pre><code>## 
+## Attaching package: &#39;Matrix&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:tidyr&#39;:
+## 
+##     expand, pack, unpack</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="module-3-m3.html#cb47-1" aria-hidden="true" tabindex="-1"></a>sub_only <span class="ot">=</span> <span class="fu">lmer</span>(frequency <span class="sc">~</span> (<span class="dv">1</span> <span class="sc">|</span> subject),  <span class="at">data =</span> polite_data)</span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="module-3-m3.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sub_only)</span></code></pre></div>
+<pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
+## Formula: frequency ~ (1 | subject)
+##    Data: polite_data
+## 
+## REML criterion at convergence: 828.7
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -2.4980 -0.6071 -0.1817  0.6433  2.7520 
+## 
+## Random effects:
+##  Groups   Name        Variance Std.Dev.
+##  subject  (Intercept) 4003     63.27   
+##  Residual              940     30.66   
+## Number of obs: 84, groups:  subject, 6
+## 
+## Fixed effects:
+##             Estimate Std. Error t value
+## (Intercept)   192.66      26.04   7.397</code></pre>
+</div>
+<div id="what-does-this-model-do" class="section level4" number="16.8.1.2">
+<h4><span class="header-section-number">16.8.1.2</span> What does this model do?</h4>
+<p><code>(1 | subject)</code> is the R syntax for a random intercept. It asks that we assume there is a different intercept for each subject. The ‘1’ stands for the intercept and the term to the right of the ‘|’ should be a nominal or factor variable to be used for the random effect. You can think of this formula as telling your model that it should expect that there’s going to be multiple responses per subject, and these responses will depend on each subject’s baseline level. This effectively resolves the non-independence that stems from having multiple responses by the same subject.</p>
+</div>
+<div id="interpreting-this-output" class="section level4" number="16.8.1.3">
+<h4><span class="header-section-number">16.8.1.3</span> Interpreting this output</h4>
+<p>From top to bottom:
+- The model was fit using restricted maximum likelihood (REML) - what is that? We’ll see soon.
+- Then we are shown our formula again.
+- The next part gives us the estimated variance for the random effects in the model.
+- Finally, we have the fixed effect portions of the model, with a separate intercept but nothing else yet because we haven’t added any fixed effects.</p>
+</div>
+<div id="adding-our-fixed-effects" class="section level4" number="16.8.1.4">
+<h4><span class="header-section-number">16.8.1.4</span> Adding our fixed effects</h4>
+<p>We’re interested in the effects of a formal/informal scenario and sex on the pitch of the subject’s voice, so we’ll add these as fixed effects.</p>
+<p>.center[<strong>Question of interest: What is the influence of formal vs informal condition on voice pitch in speakers of this language, while accounting for sex and variation within subjects?</strong>]</p>
+</div>
+</div>
+<div id="model-with-condition-and-sex" class="section level3" number="16.8.2">
+<h3><span class="header-section-number">16.8.2</span> Model with condition and sex</h3>
+<pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
+## Formula: frequency ~ condition + sex + (1 | subject)
+##    Data: polite_data
+## 
+## REML criterion at convergence: 795.8
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -2.3629 -0.5677 -0.2082  0.4615  3.2900 
+## 
+## Random effects:
+##  Groups   Name        Variance Std.Dev.
+##  subject  (Intercept) 599.5    24.49   
+##  Residual             844.6    29.06   
+## Number of obs: 84, groups:  subject, 6
+## 
+## Fixed effects:
+##                   Estimate Std. Error t value
+## (Intercept)        237.054     15.166  15.631
+## conditioninformal   19.864      6.342   3.132
+## sexM              -108.660     20.974  -5.181
+## 
+## Correlation of Fixed Effects:
+##             (Intr) cndtnn
+## condtnnfrml -0.209       
+## sexM        -0.691  0.000</code></pre>
+<p><strong><em>You should be able to interpret the fixed effects in the way you are used to from linear models. Interpret the fixed effects coefficients below.</em></strong></p>
+<pre><code>##       (Intercept) conditioninformal              sexM 
+##         237.05357          19.86429        -108.65952</code></pre>
+<p>Males have lower pitches than females by an average of 109 Hz and in informal situations speakers have a higher pitch by about 20 Hz on average.</p>
+</div>
+<div id="aside-summary-of-means" class="section level3" number="16.8.3">
+<h3><span class="header-section-number">16.8.3</span> Aside: Summary of means</h3>
+<p><img src="images/m3/aside.png" width="910%" /></p>
+<p>This gives us a general idea of what is going on…but doesn’t account for variability at all! Maybe these differences don’t actually mean anything in the context of the variability of our data. That is why we want to take a modelling approach.</p>
+<div id="random-slopes-for-condition" class="section level4" number="16.8.3.1">
+<h4><span class="header-section-number">16.8.3.1</span> Random slopes for condition</h4>
+<p>Previously we assumed that the effect of formal/informal conditions were the same for all subjects (one coefficient for this variable). However, the effect of the condition might be <em>different for different subjects</em>; that is, there might be a condition and subject interaction. For example, it might be expected that some people are more polite in formal scenarios, others less. We need a random slope model, where subjects and items are not only allowed to have differing intercepts, but where they are also allowed to have different slopes for the effect of formality on pitch.</p>
+<p>&lt;img src=“images/m3/subject_slopes.png,” height = 400&gt;</p>
+<p><strong><em>Do you think the slopes are different for different subjects?</em></strong></p>
+</div>
+<div id="random-slopes-for-condition-1" class="section level4" number="16.8.3.2">
+<h4><span class="header-section-number">16.8.3.2</span> Random slopes for condition</h4>
+<pre><code>## boundary (singular) fit: see ?isSingular</code></pre>
+<pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
+## Formula: frequency ~ condition + sex + (1 + condition | subject)
+##    Data: polite_data
+## 
+## REML criterion at convergence: 795.8
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -2.3537 -0.5822 -0.2209  0.4785  3.2847 
+## 
+## Random effects:
+##  Groups   Name              Variance Std.Dev. Corr 
+##  subject  (Intercept)       621.9309 24.939        
+##           conditioninformal   0.8045  0.897   -1.00
+##  Residual                   844.3846 29.058        
+## Number of obs: 84, groups:  subject, 6
+## 
+## Fixed effects:
+##                   Estimate Std. Error t value
+## (Intercept)        237.737     15.279  15.560
+## conditioninformal   19.864      6.352   3.127
+## sexM              -110.027     20.946  -5.253
+## 
+## Correlation of Fixed Effects:
+##             (Intr) cndtnn
+## condtnnfrml -0.246       
+## sexM        -0.685  0.000
+## convergence code: 0
+## boundary (singular) fit: see ?isSingular</code></pre>
+</div>
+<div id="random-slopes-for-condition-2" class="section level4" number="16.8.3.3">
+<h4><span class="header-section-number">16.8.3.3</span> Random slopes for condition</h4>
+<p>These new condition slopes are looking pretty similar…</p>
+<pre><code>## $subject
+##    (Intercept) conditioninformal      sexM
+## F1    223.1947          20.38733 -110.0272
+## F2    247.4326          19.51559 -110.0272
+## F3    240.4958          19.76508 -110.0272
+## M3    266.7502          18.82080 -110.0272
+## M4    243.5792          19.65418 -110.0272
+## M7    204.9719          21.04275 -110.0272
+## 
+## attr(,&quot;class&quot;)
+## [1] &quot;coef.mer&quot;</code></pre>
+<ul>
+<li>Let’s compare some models. <code>lmtest::lrtest</code> will run a likelihood ratio test for us.</li>
+</ul>
+<p><strong><em>What is your conclusion? Do we need the random slopes?</em></strong></p>
+<pre><code>## Likelihood ratio test
+## 
+## Model 1: frequency ~ condition + sex + (1 | subject)
+## Model 2: frequency ~ condition + sex + (1 + condition | subject)
+##   #Df LogLik Df  Chisq Pr(&gt;Chisq)
+## 1   5 -397.9                     
+## 2   7 -397.9  2 0.0119     0.9941</code></pre>
+<p>Note: We can happily do a likelihood ratio test because we have the same fixed effects and are only comparing nested random effects here. See the additional considerations section for why I mention this.</p>
+<p>Conclusion from this test: The slopes are an unnecessary complication to our model. (I.e., No evidence against the hypothesis that the simpler model explains the data just as well.)</p>
+</div>
+<div id="scenario-random-intercepts" class="section level4" number="16.8.3.4">
+<h4><span class="header-section-number">16.8.3.4</span> Scenario random intercepts</h4>
+<p><strong><em>Does adding random intercepts for the scenarios improve the model?</em></strong></p>
+<p><img src="images/m3/scen_int.png"></p>
+<pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
+## Formula: frequency ~ condition + sex + (1 | subject) + (1 | scenario)
+##    Data: polite_data
+## 
+## REML criterion at convergence: 784
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -2.2717 -0.6326 -0.0833  0.5260  3.5191 
+## 
+## Random effects:
+##  Groups   Name        Variance Std.Dev.
+##  scenario (Intercept) 222.0    14.90   
+##  subject  (Intercept) 614.4    24.79   
+##  Residual             637.0    25.24   
+## Number of obs: 84, groups:  scenario, 7; subject, 6
+## 
+## Fixed effects:
+##                   Estimate Std. Error t value
+## (Intercept)        237.054     16.101  14.723
+## conditioninformal   19.864      5.507   3.607
+## sexM              -108.660     20.974  -5.181
+## 
+## Correlation of Fixed Effects:
+##             (Intr) cndtnn
+## condtnnfrml -0.171       
+## sexM        -0.651  0.000</code></pre>
+<p><strong><em>Does adding random intercepts for the scenarios improve the model?</em></strong></p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="module-3-m3.html#cb57-1" aria-hidden="true" tabindex="-1"></a>lmtest<span class="sc">::</span><span class="fu">lrtest</span>(w_scen, w_fixed)</span></code></pre></div>
+<pre><code>## Likelihood ratio test
+## 
+## Model 1: frequency ~ condition + sex + (1 | subject) + (1 | scenario)
+## Model 2: frequency ~ condition + sex + (1 | subject)
+##   #Df  LogLik Df  Chisq Pr(&gt;Chisq)    
+## 1   6 -391.98                         
+## 2   5 -397.90 -1 11.851  0.0005765 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Conclusion from this test: Yes! Including a random effect for scenario does explain the data better. We have very strong evidence against the hypothesis that the simpler model fits the data just as well.</p>
+</div>
+</div>
+<div id="scenario-random-slopes" class="section level3" number="16.8.4">
+<h3><span class="header-section-number">16.8.4</span> Scenario random slopes</h3>
+<p><strong><em>Does adding random slopes for the scenarios improve the model?</em></strong></p>
+<pre><code>## `summarise()` has grouped output by &#39;scenario&#39;. You can override using the `.groups` argument.</code></pre>
+<p>&lt;img src=“images/m3/scenario_slopes.png,” height = 200&gt;</p>
+<pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
+## Formula: frequency ~ condition + sex + (1 | subject) + (1 + condition |  
+##     scenario)
+##    Data: polite_data
+## 
+## REML criterion at convergence: 783.6
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -2.1567 -0.6021 -0.1097  0.5033  3.4023 
+## 
+## Random effects:
+##  Groups   Name              Variance Std.Dev. Corr 
+##  scenario (Intercept)       278.2    16.680        
+##           conditioninformal  72.3     8.503   -0.51
+##  subject  (Intercept)       615.6    24.812        
+##  Residual                   618.6    24.873        
+## Number of obs: 84, groups:  scenario, 7; subject, 6
+## 
+## Fixed effects:
+##                   Estimate Std. Error t value
+## (Intercept)        237.054     16.342  14.506
+## conditioninformal   19.864      6.308   3.149
+## sexM              -108.660     20.973  -5.181
+## 
+## Correlation of Fixed Effects:
+##             (Intr) cndtnn
+## condtnnfrml -0.244       
+## sexM        -0.642  0.000</code></pre>
+<p><strong><em>Does adding random slopes for the scenarios improve the model?</em></strong></p>
+<pre><code>## Likelihood ratio test
+## 
+## Model 1: frequency ~ condition + sex + (1 | subject) + (1 | scenario)
+## Model 2: frequency ~ condition + sex + (1 | subject) + (1 + condition | 
+##     scenario)
+##   #Df  LogLik Df  Chisq Pr(&gt;Chisq)
+## 1   6 -391.98                     
+## 2   8 -391.79  2 0.3755     0.8288</code></pre>
+<p>Conclusion from this test: We have no evidence against the claim that the model with the simpler random effects is as good a fit to the data as the model with the more complicated random effect structure.</p>
+</div>
+</div>
+<div id="interactions-between-random-effects-and-fixed-effects" class="section level2" number="16.9">
+<h2><span class="header-section-number">16.9</span> Interactions between random effects and fixed effects</h2>
+<p>Recall the honey data from the Statdew Valley interactive.</p>
+<blockquote>
+<p>Your grandmother was a bit eccentric when it came to farm management. She swore that her bees produced more honey if she played them music in the morning. In fact, she even mentioned that she thought they particularly liked K-pop.</p>
+</blockquote>
+<blockquote>
+<p>She left you some data that she thinks proves this. While the sample size isn’t that large, you decide to take a look anyways. The data is called <code>honey</code> and records the honey produced each month for each of her 6 hives (in grams). Each hive listened to each of the song options (Dynamite by BTS, Adagio in B minor by Mozart and No music) for a month, three times. The order was randomized for each hive. It took 9 months to collect this data and the information your grandmother left you says honey production should have been fairly constant over this period and that all the hives experienced the same weather conditions, food access, etc.</p>
+</blockquote>
+<pre><code>## Rows: 54
+## Columns: 3
+## $ hive    &lt;int&gt; 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 1, 1, 1,…
+## $ song    &lt;chr&gt; &quot;No music&quot;, &quot;No music&quot;, &quot;No music&quot;, &quot;No music&quot;, &quot;No music&quot;, &quot;N…
+## $ honey_g &lt;dbl&gt; 196.56, 199.58, 200.71, 195.80, 199.58, 200.71, 226.80, 227.55…</code></pre>
+<div id="model-formula" class="section level3" number="16.9.1">
+<h3><span class="header-section-number">16.9.1</span> Model formula</h3>
+<p>I said the model formula would look like this:</p>
+<p><span class="math display">\[y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}\]</span></p>
+<p>where <span class="math inline">\(y_{ijk}\)</span> is the amount of honey produced (in grams) in the <span class="math inline">\(k^{th}\)</span> month by the <span class="math inline">\(j^{th}\)</span> hive while listening to song <span class="math inline">\(i\)</span>. Here, <span class="math inline">\(\mu\)</span> is the grand mean of honey production, <span class="math inline">\(\alpha_i\)</span> are the <span class="math inline">\(I\)</span> fixed effects for <code>song</code> and <span class="math inline">\(b_j\)</span> are the random effects for hive <span class="math inline">\(j\)</span>. <span class="math inline">\((\alpha b)_{ij}\)</span> are the <span class="math inline">\(IJ\)</span> interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. <span class="math inline">\((\alpha b)_{ij}\)</span> is a random effect because any term involving a random effect must also be a random effect. <span class="math inline">\((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\)</span>, <span class="math inline">\(b_k \sim N(0, \sigma_b^2)\)</span> and <span class="math inline">\(\epsilon_{ijk} \sim N(0, \sigma^2)\)</span>. All the random effects are mutually independent random variables.</p>
+</div>
+<div id="how-would-we-fit-this-with-lmer" class="section level3" number="16.9.2">
+<h3><span class="header-section-number">16.9.2</span> How would we fit this with <code>lmer</code>?</h3>
+<p>This is how we would fit a model with <em>only</em> a hive effect:</p>
+<p>This is how we would fit our <strong>full</strong> model, with a hive effect AND a hive and song interaction:</p>
+<div id="do-we-need-the-interaction" class="section level4" number="16.9.2.1">
+<h4><span class="header-section-number">16.9.2.1</span> Do we need the interaction?</h4>
+<pre><code>## Likelihood ratio test
+## 
+## Model 1: honey_g ~ song + (1 | hive) + (1 | hive:song)
+## Model 2: honey_g ~ song + (1 | hive)
+##   #Df  LogLik Df  Chisq Pr(&gt;Chisq)    
+## 1   6 -175.66                         
+## 2   5 -211.25 -1 71.199  &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Conclusion: We get a really small p-value, so we have strong evidence against the hypothesis that the simper model, with no song/hive interaction is as good as our full model.</p>
+</div>
+</div>
+</div>
+<div id="more-fixed-vs-random-effects-practice" class="section level2" number="16.10">
+<h2><span class="header-section-number">16.10</span> More fixed vs random effects practice</h2>
+<p>Consider the following two examples from <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#exercises-6">Roback &amp; Legler (2021), section 7.10</a>.
+<strong>Identify which variable is the response and which are the fixed effects and the random effects.</strong></p>
+<blockquote>
+<p>Cockroaches! For a study of cockroach infestation, traps were set up in the kitchen, bathroom, and bedroom in a random sample of 100 New York City apartments. The goal is to estimate cockroach infestation levels given tenant income and age of the building.</p>
+</blockquote>
+<p><strong>Variables: room type, tenant income,apartment, building age, building, count of cockroaches</strong></p>
+<blockquote>
+<p>Radon in Minnesota. Radon is a carcinogen – a naturally occurring radioactive gas whose decay products are also radioactive – known to cause lung cancer in high concentrations. The EPA sampled more than 80,000 homes across the U.S. Each house came from a randomly selected county and measurements were made on each level of each home. Uranium measurements at the county level were included to improve the radon estimates.</p>
+</blockquote>
+<p><strong>Variables: radon measurement, home, level of home, uranium, county</strong></p>
+<div id="answers" class="section level3" number="16.10.1">
+<h3><span class="header-section-number">16.10.1</span> Answers</h3>
+<div id="cockroaches" class="section level4" number="16.10.1.1">
+<h4><span class="header-section-number">16.10.1.1</span> Cockroaches</h4>
+<ul>
+<li>response: count of cockroaches</li>
+<li>fixed effects: room type (kitchen, bathroom, bedroom), tenant income, building
+age</li>
+<li>random effects: apartment, building</li>
+</ul>
+</div>
+<div id="radon" class="section level4" number="16.10.1.2">
+<h4><span class="header-section-number">16.10.1.2</span> Radon</h4>
+<ul>
+<li>response: radon measurement</li>
+<li>fixed effects: level of home (e.g. upper or lower level), uranium (county level variable)</li>
+<li>random effects: home, county</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="m2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="module-4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["STA303-Course-guide.pdf", "PDF"]],
+"toc": {
+"collapse": "section",
+"toc_depth": 2,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

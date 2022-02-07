@@ -3,8 +3,9 @@ output:
   pdf_document: default
   html_document: default
 ---
-```{r, echo=FALSE}
-source("links.R")
+```{r, echo=FALSE, message=F}
+source("links.R", local=.GlobalEnv)
+attach(.GlobalEnv)
 ```
 
 # Knowledge basket: Writing and peer feedback
@@ -228,3 +229,133 @@ if (knitr:::is_latex_output()) {
   }
 
 ```
+
+## Module 3 writing task
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Module 2 writing task                      |
++--------------------------------------------------------+----------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                             |
++--------------------------------------------------------+----------------------------------------------------+
+| Value                                                  | 0.5% (0.245%, 0.245%, 0.01%) <br> Completion                                           |
++--------------------------------------------------------+----------------------------------------------------+
+| Due                                                    | __Create phase__: `r m3_c`;  <br> __Assess phase__: `r m3_a`; <br> __Reflect phase__: `r m3_r`;                                |
++--------------------------------------------------------+----------------------------------------------------+
+| Submission instructions                                | Submission: [Via peerScholar](`r m3_link`)                |
+|                                                        |                                                    |
+|                                                        | Marked for completion              |
++--------------------------------------------------------+----------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
++--------------------------------------------------------+----------------------------------------------------+
+
+### M3 instructions
+
+Make sure you are familiar with the [general instructions](#writinggeneral) for these types of tasks.
+
+#### M3 prompt
+
+Write the methods section of parts of the case study from [Chapter 8 Case Study: Music Performance Anxiety (Roback & Legler, 2021)](https://bookdown.org/roback/bookdown-BeyondMLR/ch-multilevelintro.html#cs:music).
+
+I strongly suggest that you use **RMarkdown** for your writing in preparation for your final project. Knit and submit as a **PDF**. (You won't lose marks for doing it in Word, but if you're not comfortable in RMarkdown yet, I'd really recommend working on that! [Guide to writing LaTex equations in Word](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8).)
+
+Write a short methods section that covers the final model from section 8.10.
+
+-   Add a reference to the version of R this analysis was conducted with AND a reference to the package used.
+
+    -   Recommend including a statement like the following: "*We fit a linear mixed model in R version 4.0.5 (R Core Team, 2021) using the **lme4** package (Bates, Maechker, Bolker, & Walker, 2015).* " (For this writing, it is okay to copy this exactly or modify is slightly.
+
+        -   You can find the version of R you are using by running `version` into your console.
+
+        -   You can get the appropriate R citation running `citation()` and `citation("lme4")` in your browser as well.
+
+-   Include the the **model,** written out in LaTeX.
+
+    -   In the current reading it is written as a series of equations. You should rewrite it to be a single **composite** equation, like the way we have been writing them in class.
+
+    -   **Explain each model term below the model**; paraphrase (do not just copy/paste) from the book.
+
+-   DO NOT plagiarize Roback and Legler (2021) or the original article (Sadler & Christopehr, 2010). Use your own words. You will be writing something shorter, anyway.
+
+-   Write it as if *you were* one of the authors of the study (you can use 'we').
+
+-   Include all of the methods components you can from the list below ('Methods components'). Section 8.2 will be especially helpful with this.
+
+    -   You also can access the original research article through the U of T library, if you wish.
+
+        -   Need help navigating library resources? Reach out to the Head Librarian at the Mathematical Sciences Library, Bruce Garrod. You can find his contact details in the Library Resources tab of the Course Navigation menu.
+
+-   Place these **references** at the end (can be on a ***second*** page IF required):
+
+    -   Roback, P., & Legler, J. (2021). 8 Introduction to Multilevel Models. In Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R. Retreived from <https://bookdown.org/roback/bookdown-BeyondMLR/ch-multilevelintro.html>. Boca Raton: CRC Press.
+
+    -   Sadler, Michael E., and Christopher J. Miller. 2010. "Performance Anxiety: A Longitudinal Study of the Roles of Personality and Experience in Musicians." *Social Psychological and Personality Science* 1 (3): 280--87. <http://dx.doi.org/10.1177/1948550610370492>.
+
+    -   Get the citation for R with `citation()` and include it.
+
+    -   Get the citation for **lme4** with `citation("lme4")` and include it.
+
+-   You may wish to use phrases from the [Methods section of the Manchester Academic Phrase bank](https://www.phrasebank.manchester.ac.uk/describing-methods/) to help you describe your methods.
+
+The methods section is usually written in **past tense** and often in the **passive voice** (Swales & Feak, 2012), though there is LOTS of discussion in academia about the use of passive vs active voice. We are not going to require you to write one way or the other for this---consistency is the key thing to aim for.
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ### **Methods components**                                                                                                                                            |
++=======================================================================================================================================================================+
+| Study design                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Setting                                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Participants                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Data sources/ measurement                                                                                                                                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Statistical methods                                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (b) Write the formula of the model                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (c) Clearly define all outcomes, exposures, predictors, potential confounders, and effect modifiers. Explain how quantitative variables were handled in the analyses. |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| *Adapted from STROBE checklist* (von Elm et al., 2007): <https://www.strobe-statement.org/index.php?id=available-checklists>                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+##### Example from a *different* article: Modified from (Berlowitz et al., 2017):                                                                                                                                (1) We conducted a study to compare the effect of two strategies to control blood pressure on physical health: an experimental intensive treatment and the standard treatment currently in use. After recruitment, participants were randomly allocated (randomization) to either the intensive treatment or the standard treatment. (2) The study involved recruitment from 102 clinical sites from November 2010 to March 2013. (3) A total of 9,361 participants 50 years of age or older who had evidence of hypertension were included, but those with diabetes or prior stroke were excluded. (4) The source of the data is the SPRINT study. Physical health was measured using a questionnaire with scores ranging from 0 to 100, with greater scores meaning better physical health. Data were collected at baseline and follow up. 
+
+(5a) To compare longitudinal change for physical health between the treatment groups, "we estimated a linear mixed model assuming linear mean change over time within each treatment group." (5b) "The model for 𝑌~𝑖𝑗~ (*j^th^*physical health measurement for *i^th^* participant measured at time *t~ij~* (in years)) is as follows:     
+
+𝑌~𝑖𝑗~= 𝛽0 +𝛽~1~𝐼𝑛𝑡𝑒𝑛𝑠𝑖𝑣𝑒~𝑖~ + 𝛽~2~𝑡~𝑖𝑗~ + 𝛽~3~𝐼𝑛𝑡𝑒𝑛𝑠𝑖𝑣𝑒~𝑖~𝑡~𝑖𝑗~+ 𝑏~1𝑖~ + 𝑏~2𝑐𝑖~ + 𝜀~𝑖𝑗~                                                                                                                                                                                  (5c) Where 𝐼𝑛𝑡𝑒𝑛𝑠𝑖𝑣𝑒~𝑖~ is the randomization assignment for the *i^th^* participant (1=Intensive-treatment; 0=Standard-treatment), 𝑐~𝑖~ denotes the clinic site for the *i^th^* participant (participants were randomized at 102 clinic sites), 𝑏~1𝑖~ is a subject-specific random effect, 𝑏~2,𝑐𝑖~ is a clinic-specific random effect, and 𝜀~𝑖𝑗~ denotes the residual error component."                                                                                             
+
+"The models included participant-specific and clinic-specific random effects to address within-participant correlations as a result of repeated assessments and correlations among participants at the same [study] site. Fixed effects in the model included treatment group, follow-up time, and the interaction between the treatment group and follow-up time."                                           
+
+##### Reference:                                                                                                                                                                                               Berlowitz, D. R., Foy, C. G., Kazis, L. E., Bolin, L. P., Conroy, M. B., Fitzpatrick, P., . . . Group, S. R. (2017). Effect of Intensive Blood-Pressure Treatment on Patient-Reported Outcomes. *N Engl J Med, 377*(8), 733-744. doi:10.1056/NEJMoa1611179                                                             
+
+#### References for this prompt
+
+Berlowitz, D. R., Foy, C. G., Kazis, L. E., Bolin, L. P., Conroy, M. B., Fitzpatrick, P., . . . Group, S. R. (2017). Effect of Intensive Blood-Pressure Treatment on Patient-Reported Outcomes. *N Engl J Med, 377*(8), 733-744. doi:10.1056/NEJMoa1611179
+
+Roback, P., & Legler, J. (2021). 8 Introduction to Multilevel Models. In Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R. Retreived from <https://bookdown.org/roback/bookdown-BeyondMLR/ch-multilevelintro.html>. Boca Raton: CRC Press.
+
+Sadler, Michael E., and Christopher J. Miller. 2010. "Performance Anxiety: A Longitudinal Study of the Roles of Personality and Experience in Musicians." *Social Psychological and Personality Science* 1 (3): 280--87. <http://dx.doi.org/10.1177/1948550610370492>.
+
+Swales, J., & Feak, C. B. (2012). *Academic writing for graduate students: essential tasks and skills* (3rd ed.). Ann Arbor: University of Michigan Press.
+
+von Elm, E., Altman, D. G., Egger, M., Pocock, S. J., Gotzsche, P. C., Vandenbroucke, J. P., & Initiative, S. (2007). The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. *Lancet, 370*(9596), 1453-1457. doi:10.1016/S0140-6736(07)61602-X
+
+#### M3 Rubric 
+
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+|                         | **Poor or Missing**                                                                                                                                                             | **Adequate**                                                                                                                          | **Good**                                                                                                                     | **Excellent**                                                                                                                            |
++=========================+=================================================================================================================================================================================+=======================================================================================================================================+==============================================================================================================================+==========================================================================================================================================+
+| **Study information**   | 0-1 items of study design, setting, participants, data sources and measures defined.                                                                                            | Only 2 items of study design, setting, participants, data sources and measures defined.                                               | Only 3 items of study design, setting, participants, data sources and measures defined.                                      | All 4 items of study design, setting, participants, data sources and measures defined.                                                   |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| **Statistical methods** | Neither statistical methods used named nor reason for their use given. Not all variables used in each statistical method described.                                             | Not all statistical methods used named but reason for use given for those named. Variables used in each statistical method described. | All statistical methods used named but no reason for use given. Not all variables used in each statistical method described. | All statistical methods used named and reason for use given. Variables used in each statistical method described.                        |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| **Model formula**       | No model formula included. Model terms not explained.                                                                                                                           | Model formula written but may not be correct. Model terms not explained clearly.                                                      | Model formula written but may not be correct. Each model term explained clearly.                                             | Model formula written correctly. Each model term explained clearly.                                                                      |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| **Writing mechanics**   | No response OR considerable writing and grammatical issues that completely obscure the meaning OR lots of slang and inappropriate word choice.                                  | Multiple sections are difficult to read but is otherwise understandable.                                                              | Slight difficulty in understanding one or two sections.                                                                      | Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning. |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| **Paraphrasing**        | Methods and model terms described is too similar to the source material, with only minimal changes made and/or quotes overused and/or sections copied verbatim without quotes.  |                                                                                                                                       |                                                                                                                              | Methods and model terms described in the writer's own word and are sufficiently different from the source material provided.             |
+|                         |                                                                                                                                                                                 |                                                                                                                                       |                                                                                                                              |                                                                                                                                          |
+|                         | In-text citation may or may not be used. References NOT provided at the end.                                                                                                    |                                                                                                                                       |                                                                                                                              | In-text citation may or may not be used. References provided at the end.                                                                 |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+   

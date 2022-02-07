@@ -4,7 +4,7 @@
 Materials for January 24--February 4, 2022.
 :::
 
-## Learning Checklist
+## Learning checklist
 
 By the end of this module, you should be able to:
 
@@ -711,7 +711,7 @@ These are common academic articles.
 * No figures, no tables, no/few references.
 
 ###### 'Plain English' summaries 
-These are also becoming popular in some academic journals. Think of this as something a high school student could read and understand the purpose of the article. [Nice suggestions + example here (optional).](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/ToolkitPLS.pdf)]
+These are also becoming popular in some academic journals. Think of this as something a high school student could read and understand the purpose of the article. [Nice suggestions + example here (optional).](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/Toolkit---PLS.pdf)]
 
 ##### Executive summary
 You might see this more commonly in business or government contexts. It is a summary aimed at busy and **non-technical** 'executives' (for example) and would accompany or preface a more detailed technical report. Your ability to communicate flexibly to different audiences is very important here.

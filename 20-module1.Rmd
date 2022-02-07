@@ -6,7 +6,7 @@
 Materials for January 10--21, 2022.
 ::::
 
-## Learning Checklist
+## Learning checklist
 By the end of this module, you should be able to:
 
 - Understand the structure and policies of STA303.  

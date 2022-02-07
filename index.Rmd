@@ -14,9 +14,10 @@ urlcolor: blue
 description: "This is a course for STA303: Methods of Data Analysis II at the University of Toronto"
 ---
 
-```{r, echo=FALSE}
-source("links.R", local = knitr::knit_global())
+```{r, include=FALSE}
 library(knitr)
+#source("links.R", local = knit_global())
+sys.source("links.R", envir = knit_global())
 ```
 
 # How to use this course guide

@@ -1,5 +1,11 @@
 # Portfolio
 
+```{r, include=FALSE}
+library(knitr)
+#source("links.R", local = knit_global())
+sys.source("links.R", envir = knit_global())
+```
+
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Information**                     | **Note**                                                                                                                                                               |
 +=====================================+========================================================================================================================================================================+
@@ -18,6 +24,152 @@
 | Accommodations and extension policy | In the case of a personal illness/emergency, a [declaration can be made](`r extension`), but must be submitted no more than 3 days after the due date. Extensions may be requested through the same form up to 48 hours before the due date. |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-### Instructions
+_Portfolio assessments aim to help you demonstrate your technical coding, statistical thinking, communication and reflection skills. This portfolio also aims to recap and refresh knowledge from your previous statistics courses as well as building your ability to create quality data visualizations._
 
-To be announced.
+## General instructions
+
+-   Be very careful to follow instructions on variable naming. If you do not, your code won't pass auto-grading and you will not receive the grades. This will not be eligible for regrading requests.
+
+-   Comment your code! In an R code chunk comments start with a \# (pound sign or hastag symbol). Don't confuse this with the use of \# to denote different levels of headings in the text parts (governed by Markdown syntax) of an R Markdown document.
+
+-  __All figures and tables should have appropriate (and appropriately positioned) captions.__
+
+-   You should neatly format your code. No strict style is required, but make sure it is easy to read your work. (Optional) You may find [Google's R Style Guide](https://google.github.io/styleguide/Rguide.html#:~:text=R%20is%20a%20high%2Dlevel,Guide%20by%20Hadley%20Wickham%20license.) or the [Tidyverse Style Guide](https://style.tidyverse.org/) interesting.
+
+-   Include your code in the body of the PDF itself (don't set echo=FALSE, don't hide/suppress etc.). Note that this is different to what you will be asked to do in the final project or in professional reporting. This is a demonstration of your skills.
+
+- If asked to write and answer in words, write in full sentences.
+
+-   KNIT EARLY AND OFTEN! Don't leave things till the last minute, your Rmd not knitting is not an emergency for which an extension will be granted.
+
+### Template
+
+You can access the template for this assessment [here](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-portfolio&urlpath=rstudio%2F&branch=master). [COMING SOON]
+
+There is currently a lot of 'filler text' and 'filler code' in the template that you will want to **delete.** Fun fact: All filler text sourced from [Hipster Ipsum](https://hipsum.co/), which Katy Wang in the UG Stats office introduced me to.
+
+## Submission instructions
+
+-   Submit both your Rmd (must be called: sta303-w22-portfolio.Rmd) and PDF (must be called: sta303-w22-portfolio.pdf) on MarkUs.
+-   You do not need to submit any data or tex files.
+- The PDF must be knit directly from the Rmd (not Word or HTML first).
+
+## Cover page
+
+You don't have to use the provided template, but you DO need to write your portfolio in RMarkdown and include a standalone cover page. The cover page must have:
+
+-   A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHUb portfolio, in the future)
+
+-   Your name
+
+-   Date (assessment submission date is fine)
+
+It should not have your table of contents or any analyses on it.
+
+In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 11) to another hex code. You could use this tool to help you: <https://htmlcolorcodes.com/color-picker/>
+
+## Introduction
+
+*Write this section last or second to last (before the refection).*
+
+In the introduction section, write a brief summary of the skills you have demonstrated in this portfolio, __across the statistical skills sample, writing sample and reflection sections__. Think of it like a **cover letter** for this document. It should be appropriate for a fairly general audience---imagine a future employer reading this. You may want to briefly explain the course context, as you understand it. What is STA303/1002 about? (Consider the [learning objectives in the syllabus](https://sta303-bolton.github.io/sta303-w22-courseguide/syllabus.html#learning-objectives))
+
+Your introduction should be **no longer than 300 words** and must **fit on one page**. If you did the mini-portfolio, you may _reuse_ your own phrasing from that introduction (e.g., in introducing the course context), but this is also an opportunity to _improve_ upon it.
+
+## Statistical skills sample
+
+Finalizing, will be posted soon.
+
+## Writing sample
+
+### Prompt
+
+Read Motulsky (2014), [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4203998/pdf/210_2014_Article_1037.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4203998/pdf/210_2014_Article_1037.pdf), and **paraphrase** it with the goal of giving advice to your future self. I.e., YOU in the future is your audience, but keep the tone professional enough that you could share it as a LinkedIn post, or provide a copy to an acquaintance as advice. This *shouldn't* be a summary of the full article. Instead, focus on what surprised you, what you didn't know before, what you don't want to forget. You can also disagree with the claims in the article if you see fit.
+
+As your task is to explicitly comment on this article, you must **reference** the article! The in-text APA style reference for this article is: (Motulsky, 2014) with the below the full reference to include at the end:
+
+> Motulsky, H. J. (2014). Common misconceptions about data analysis and statistics. *Naunyn-Schmiedeberg's Archives of Pharmacology*, *387*(11), 1017--1023. <https://doi.org/10.1007/s00210-014-1037-6>
+
+You might also incorporate it as *"Motulsky (2014) states that..."*. You don't need the reference at the end of every sentence, but **it should be clear to a reader what ideas have come from the article and what has come from you, throughout the piece.**
+
+You can use another referencing style if you wish, or you can just copy this (that is not an academic offense!).
+
+**Please be very mindful of proper paraphrasing!** The main point of this activity is to put things in YOUR OWN WORDS. Read the [provided advice](#paraphrasing) in Module 2. 
+
+There should not be too many direct __quotes__ from the article, and better if there are none at all. __IMPORTANT NOTE: A zero grade on paraphrasing will result in a zero on the ENTIRE writing component of your portfolio.__
+
+Make sure your writing sample has an __introduction__ and comes to a __conclusion.__
+
+__Word count: 300–500 words (not including reference at the end). Please add a statement of your word count at the end of the passage.__
+
+## Reflection
+
+Briefly, 100 to 200 words each, answer the following questions:
+
+-   What is something specific I'm proud of in this portfolio?
+
+-   How might I apply what I've learned and demonstrated in this portfolio in future work and study, after STA303/1002?
+
+-   What is something I'd do differently next time?
+
+
+## Rubric
+
+There is a breakdown of the overall contribution of each component to your grade below, followed by a more detailed rubric.
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE}
+require(tidyverse)
+
+components <- readxl::read_xlsx("rubrics/mini-portfolio-rubric.xlsx") %>% 
+  filter(!is.na(Component) & !is.na(`Percentage for component` )) %>% 
+  mutate(`Percentage for component` = str_c(`Percentage for component`*100, "%")) %>% 
+  select(Component, `Percentage for component`)
+
+if (knitr:::is_latex_output()) {
+  components %>% 
+  kableExtra::kable(booktabs = T, align = c("l", "r")) %>%
+  kableExtra::kable_styling(latex_options = c("striped", "HOLD_position"), font_size = 12) 
+  
+  
+} else {
+ components %>% 
+  kableExtra::kable() %>%
+  kableExtra::kable_styling() %>% 
+  kableExtra::scroll_box(width = "100%")
+}
+```
+
+Detailed rubric TBA.
+
+```{=tex}
+\newpage
+\blandscape
+```
+
+```{r, eval=FALSE, echo=FALSE, message=FALSE}
+rubric <- readxl::read_xlsx("rubrics/mini-portfolio-rubric.xlsx") %>% 
+  filter(!is.na(Component)) %>% 
+  select(-`Percentage for component`)
+
+if (knitr:::is_latex_output()) {
+  rubric %>% 
+  kableExtra::kable(booktabs = T, longtable = T) %>%
+  kableExtra::kable_styling(latex_options = c("striped", "repeat_header"), font_size = 8) %>% 
+        kableExtra::column_spec(1:2, width = "5em") %>% 
+        kableExtra::column_spec(3, width = "10em") %>% 
+        kableExtra::column_spec(4:6, width = "16em")
+
+} else {
+ rubric %>% 
+  kableExtra::kable() %>%
+  kableExtra::kable_styling() %>% 
+  kableExtra::scroll_box(width = "100%")
+  }
+
+```
+
+```{=tex}
+\elandscape
+```
+

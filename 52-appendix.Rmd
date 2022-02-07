@@ -153,32 +153,33 @@ Great, back to being linearly independent.
 
 As I said at the beginning, I'm not planning to assess you on any of this. If you're interested in knowing more, or just think matrix algebra is delicious, I think this is a delightfully approachable walk through. https://online.stat.psu.edu/stat462/node/132/ 
 
-## P-values (recap)
+## _p_ values (recap)
 
-Remember: "Small but mighty!" The _smaller_ the p-value, the _stronger_ the evidence against the null hypothesis.
+Remember: "Small but mighty!" The _smaller_ the _p_ value, the _stronger_ the evidence against the null hypothesis.
 
-- We should never be making claims in in favour/against the alternative hypothesis. Our _statistical_ claims are always about the null. This may inform practical decisions in less strict ways, depending on practical significance, risks, etc., but a correct statistical claim for a p-value should ALWAYS be about the null. Absolutes are rare in teaching statistics.  
+- We should never be making claims in in favour/against the alternative hypothesis. Our _statistical_ claims are always about the null. This may inform practical decisions in less strict ways, depending on practical significance, risks, etc., but a correct statistical claim for a _p_ value should ALWAYS be about the null. Absolutes are rare in teaching statistics.  
 - A common threshold for rejecting or failing to reject the null hypothesis is 0.05. This is mostly from habit/convention, rather than some truly meaningful cosmic value. "Yeah, 1 in 20? Unlikely, sure." Difference disciplines/sub-disciplines develop norms appropriate to their context. 
-- Many statisticians—especially in light of the reproducibilty crisis and poor public, and even sometimes researcher, understanding of p-values—prefer to make statements about the __strength__ of evidence, not just reject/fail to reject.
+- Many statisticians—especially in light of the reproducibility crisis and poor public, and even sometimes researcher, understanding of _p_ values—prefer to make statements about the __strength__ of evidence, not just reject/fail to reject.
 
 +--------------------------+----------------------------------------------------+
-| P-value range            | Strength comment                                   |
+| _p_ value range            | Strength comment                                   |
 +==========================+====================================================+
 | \> 0.1                   | No evidence against the null                       |
 +--------------------------+----------------------------------------------------+
-| 0.05 \< p-value \< 0.1   | Weak evidence against the null hypothesis          |
+| 0.05 \< _p_ value \< 0.1   | Weak evidence against the null hypothesis          |
 +--------------------------+----------------------------------------------------+
-| 0.01 \< p-value \< 0.05   | Moderate/some evidence against the null hypothesis |
+| 0.01 \< _p_ value \< 0.05   | Moderate/some evidence against the null hypothesis |
 +--------------------------+----------------------------------------------------+
-| 0.001 \< p-value \< 0.01 | Strong evidence against the null hypothesis        |
+| 0.001 \< _p_ value \< 0.01 | Strong evidence against the null hypothesis        |
 +--------------------------+----------------------------------------------------+
 | \< 0.001                 | Very strong evidence against the null hypothesis   |
 +--------------------------+----------------------------------------------------+
 
 ### What if you get a value that is exactly one of these thresholds?
 
-It would be very rare to get a p-value of exactly one of these thresholds. If you were to, you could decide based on your judgment of the context. Should you be more or less conservative in your interpretation based on the needs of the project/client?
+It would be very rare to get a _p_ value of exactly one of these thresholds. If you were to, you could decide based on your judgment of the context. Should you be more or less conservative in your interpretation based on the needs of the project/client?
 
 So, you'll almost always have something, that while it may round to 0.001 (or another threshold), is really something like 0.001345789 or 0.00098963. What judgment would you make in each case, with this in mind?
 
-But remember, these are __fuzzy boundaries based on easy-to-grasp probabilities for humans__, particularly humans used to thinking in base 10. 1 in 20, 1 in 100, 1 in 1000, etc. Easy to think about but not universally meaningful thresholds. Honestly, being a little over or under really doesn't make that much of a difference. P-values are continuous random variables. We impose discrete categories for our own ease. Used too rigidly, these guidelines have the same problem as rejecting/failing to reject, but just with a few more levels.
+But remember, these are __fuzzy boundaries based on easy-to-grasp probabilities for humans__, particularly humans used to thinking in base 10. 1 in 20, 1 in 100, 1 in 1000, etc. Easy to think about but not universally meaningful thresholds. Honestly, being a little over or under really doesn't make that much of a difference. _p_ values are continuous random variables. We impose discrete categories for our own ease. Used too rigidly, these guidelines have the same problem as rejecting/failing to reject, but just with a few more levels.
+
