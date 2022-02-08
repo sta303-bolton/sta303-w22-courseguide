@@ -1734,7 +1734,7 @@ You don't have to use the provided template, but you DO need to write your portf
 
 \begin{itemize}
 \item
-  A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHUb portfolio, in the future)
+  A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHub portfolio, in the future)
 \item
   Your name
 \item
@@ -1743,7 +1743,7 @@ You don't have to use the provided template, but you DO need to write your portf
 
 It should not have your table of contents or any analyses on it.
 
-In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 11) to another hex code. You could use this tool to help you: \url{https://htmlcolorcodes.com/color-picker/}
+In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 13) to another hex code. You could use this tool to help you: \url{https://htmlcolorcodes.com/color-picker/}
 
 \hypertarget{introduction-1}{%
 \section{Introduction}\label{introduction-1}}
@@ -2279,7 +2279,7 @@ This revision task is meant to connect to Question 16 of your pre-knowledge quiz
 \item
   Set your seed to \texttt{last3digplus} (that you set up in Task 1)
 \item
-  Create 4 simulated data sets (\texttt{sim1} to \texttt{sim4}) of length 100000 and with two columns: \texttt{group} and \texttt{val}.
+  Create 3 simulated data sets (\texttt{sim1} to \texttt{sim3}) of length 100000 and with two columns: \texttt{group} and \texttt{val}.
 
   \begin{itemize}
   \tightlist
@@ -2303,7 +2303,7 @@ This revision task is meant to connect to Question 16 of your pre-knowledge quiz
     This is most of the code you will need \texttt{bind\_rows(sim1,\ sim2,\ sim3,\ .id\ =\ "sim")}
   \end{itemize}
 \item
-  Make any alterations necessary to \texttt{all\_sim}so that you can join on the dataset \texttt{sim\_description} to provided better labels for each simulation (but without including any irrelevant labels.
+  Make any alterations necessary to \texttt{all\_sim} so that you can join on the dataset \texttt{sim\_description} to provided better labels for each simulation (but without including any irrelevant labels).
 
   \begin{itemize}
   \tightlist
@@ -2311,7 +2311,7 @@ This revision task is meant to connect to Question 16 of your pre-knowledge quiz
     You will need to include the code below to create this dataset.
   \end{itemize}
 \item
-  Plot histograms for the \textbf{first three groups} for each simulated dataset in one plot. Your final plot should use \texttt{ggplot} and \texttt{facet\_wrap}. There should be four rows and three columns. The facets should be labelled with \texttt{desc} (the more informative description than just 1, 2, 3, 4).
+  Plot histograms for the \textbf{first three groups} for each simulated dataset in one plot. Your final plot should use \texttt{ggplot} and \texttt{facet\_wrap}. There should be three rows and three columns. The facets should be labelled with \texttt{desc} (the more informative description than just 1, 2, 3).
 
   \begin{itemize}
   \tightlist
@@ -2328,9 +2328,9 @@ This revision task is meant to connect to Question 16 of your pre-knowledge quiz
 # Create sim_description
 # Dataset to merge with improved simulation names
 sim_description <- tibble(sim = 1:4, 
-                          desc = c("N(5, 1)",
-                                   "N(5.2, 1)",
-                                   "N(6, 1)",
+                          desc = c("N(0, 1)",
+                                   "N(0.2, 1)",
+                                   "N(1, 1)",
                                    "Pois(5)"))
 \end{verbatim}
 
@@ -9107,6 +9107,13 @@ ID & Location & Note \\
 3 & Mini-portfolio instructions & There should be 6 columns, not 5 in the tibble \texttt{ci\_vals}.
 
 \texttt{ci\_vals}, tibble with \sout{5} 6 columns (after all steps completed) \\
+4 & Portfolio instructions & There are 5 tasks total (some have sub parts).
+
+\vtop{\hbox{\strut In Task 5: Simulating \emph{p} values, there are only 3 simulated datasets to make, \texttt{sim1}, \texttt{sim2}, \texttt{sim3}. A previous version of the instructions had 4 (I simplified the task from my original plan).}\hbox{\strut Re-pulling the template through the template link will update your instruction document.}}
+
+Note: The mention of \texttt{sim4} in the \texttt{sim\_desc} dataset IS intentional. Notice the instruction to ``Make any alterations necessary to \texttt{all\_sim} so that you can join on the dataset \texttt{sim\_description} to provided better labels for each simulation (but without including any irrelevant labels).''
+
+Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=212} \\
 \bottomrule
 \end{longtable}
 

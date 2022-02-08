@@ -643,12 +643,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">6.3</span> Cover page</h2>
 <p>You don’t have to use the provided template, but you DO need to write your portfolio in RMarkdown and include a standalone cover page. The cover page must have:</p>
 <ul>
-<li><p>A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHUb portfolio, in the future)</p></li>
+<li><p>A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHub portfolio, in the future)</p></li>
 <li><p>Your name</p></li>
 <li><p>Date (assessment submission date is fine)</p></li>
 </ul>
 <p>It should not have your table of contents or any analyses on it.</p>
-<p>In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 11) to another hex code. You could use this tool to help you: <a href="https://htmlcolorcodes.com/color-picker/" class="uri">https://htmlcolorcodes.com/color-picker/</a></p>
+<p>In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 13) to another hex code. You could use this tool to help you: <a href="https://htmlcolorcodes.com/color-picker/" class="uri">https://htmlcolorcodes.com/color-picker/</a></p>
 </div>
 <div id="introduction-1" class="section level2" number="6.4">
 <h2><span class="header-section-number">6.4</span> Introduction</h2>
@@ -1052,7 +1052,7 @@ Make yours more professional.</p>
 <p>This revision task is meant to connect to Question 16 of your pre-knowledge quiz and help you visualize the behaviour of_p_ values.</p>
 <ul>
 <li>Set your seed to <code>last3digplus</code> (that you set up in Task 1)</li>
-<li>Create 4 simulated data sets (<code>sim1</code> to <code>sim4</code>) of length 100000 and with two columns: <code>group</code> and <code>val</code>.
+<li>Create 3 simulated data sets (<code>sim1</code> to <code>sim3</code>) of length 100000 and with two columns: <code>group</code> and <code>val</code>.
 <ul>
 <li>Use <code>tibble</code> to create each dataset.</li>
 <li>For each dataset, set <code>group = rep(1:1000, each = 100)</code></li>
@@ -1066,11 +1066,11 @@ Make yours more professional.</p>
 <ul>
 <li>This is most of the code you will need <code>bind_rows(sim1, sim2, sim3, .id = "sim")</code></li>
 </ul></li>
-<li>Make any alterations necessary to <code>all_sim</code>so that you can join on the dataset <code>sim_description</code> to provided better labels for each simulation (but without including any irrelevant labels.
+<li>Make any alterations necessary to <code>all_sim</code> so that you can join on the dataset <code>sim_description</code> to provided better labels for each simulation (but without including any irrelevant labels).
 <ul>
 <li>You will need to include the code below to create this dataset.</li>
 </ul></li>
-<li>Plot histograms for the <strong>first three groups</strong> for each simulated dataset in one plot. Your final plot should use <code>ggplot</code> and <code>facet_wrap</code>. There should be four rows and three columns. The facets should be labelled with <code>desc</code> (the more informative description than just 1, 2, 3, 4).
+<li>Plot histograms for the <strong>first three groups</strong> for each simulated dataset in one plot. Your final plot should use <code>ggplot</code> and <code>facet_wrap</code>. There should be three rows and three columns. The facets should be labelled with <code>desc</code> (the more informative description than just 1, 2, 3).
 <ul>
 <li>Provide an appropriate figure caption, set with your chunk options.</li>
 <li>Add a within-image caption: “Created by YOUR NAME in STA303/1002, Winter 2022,” with your name included</li>
@@ -1080,9 +1080,9 @@ Make yours more professional.</p>
 <pre><code># Create sim_description
 # Dataset to merge with improved simulation names
 sim_description &lt;- tibble(sim = 1:4, 
-                          desc = c(&quot;N(5, 1)&quot;,
-                                   &quot;N(5.2, 1)&quot;,
-                                   &quot;N(6, 1)&quot;,
+                          desc = c(&quot;N(0, 1)&quot;,
+                                   &quot;N(0.2, 1)&quot;,
+                                   &quot;N(1, 1)&quot;,
                                    &quot;Pois(5)&quot;))</code></pre>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="portfolio.html#cb9-1" aria-hidden="true" tabindex="-1"></a>all_sim <span class="sc">%&gt;%</span> </span>
 <span id="cb9-2"><a href="portfolio.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(group <span class="sc">&lt;=</span> <span class="dv">3</span>) <span class="sc">%&gt;%</span></span>

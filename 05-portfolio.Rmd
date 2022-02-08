@@ -58,7 +58,7 @@ There is currently a lot of 'filler text' and 'filler code' in the template that
 
 You don't have to use the provided template, but you DO need to write your portfolio in RMarkdown and include a standalone cover page. The cover page must have:
 
--   A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHUb portfolio, in the future)
+-   A title and subtitle (you can use my examples in the template or update them as you see fit, no points for changing, but it might make it a better part of your own website or GitHub portfolio, in the future)
 
 -   Your name
 
@@ -66,7 +66,7 @@ You don't have to use the provided template, but you DO need to write your portf
 
 It should not have your table of contents or any analyses on it.
 
-In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 11) to another hex code. You could use this tool to help you: <https://htmlcolorcodes.com/color-picker/>
+In the template, you can change the colour of this cover to any colour you would like by replacing 6C3082 in the YAML (line 13) to another hex code. You could use this tool to help you: <https://htmlcolorcodes.com/color-picker/>
 
 ## Introduction
 
@@ -589,7 +589,7 @@ glimpse(my_summary)
 This revision task is meant to connect to Question 16 of your pre-knowledge quiz and help you visualize the behaviour of_p_ values.
 
 - Set your seed to `last3digplus` (that you set up in Task 1)
-- Create 4 simulated data sets (`sim1` to `sim4`) of length 100000 and with two columns: `group` and `val`.
+- Create 3 simulated data sets (`sim1` to `sim3`) of length 100000 and with two columns: `group` and `val`.
   - Use `tibble` to create each dataset.
   - For each dataset, set `group = rep(1:1000, each = 100)`
   - For `sim1` set val to be 100000 values drawn from $N(0, 1)$ (see function `rnorm`()`).
@@ -597,9 +597,9 @@ This revision task is meant to connect to Question 16 of your pre-knowledge quiz
   - For `sim3` set val to be 100000 values drawn from $N(1, 1)$.  
 - Stack all 4 datasets into one new dataset called `all_sim`, with an new column at the beginning called `sim` that takes the value 1 if the observation is from `sim1`, 2 from `sim2`, and so on.
   - This is most of the code you will need `bind_rows(sim1, sim2, sim3, .id = "sim")`
-- Make any alterations necessary to `all_sim`so that you can join on the dataset `sim_description` to provided better labels for each simulation (but without including any irrelevant labels.
+- Make any alterations necessary to `all_sim` so that you can join on the dataset `sim_description` to provided better labels for each simulation (but without including any irrelevant labels).
   - You will need to include the code below to create this dataset.
-- Plot histograms for the __first three groups__ for each simulated dataset in one plot. Your final plot should use `ggplot` and `facet_wrap`. There should be four rows and three columns. The facets should be labelled with `desc` (the more informative description than just 1, 2, 3, 4).
+- Plot histograms for the __first three groups__ for each simulated dataset in one plot. Your final plot should use `ggplot` and `facet_wrap`. There should be three rows and three columns. The facets should be labelled with `desc` (the more informative description than just 1, 2, 3).
   - Provide an appropriate figure caption, set with your chunk options.
   - Add a within-image caption: "Created by YOUR NAME in STA303/1002, Winter 2022", with your name included
   - Apply `theme_minimal()`.
@@ -609,9 +609,9 @@ This revision task is meant to connect to Question 16 of your pre-knowledge quiz
 # Create sim_description
 # Dataset to merge with improved simulation names
 sim_description <- tibble(sim = 1:4, 
-                          desc = c("N(5, 1)",
-                                   "N(5.2, 1)",
-                                   "N(6, 1)",
+                          desc = c("N(0, 1)",
+                                   "N(0.2, 1)",
+                                   "N(1, 1)",
                                    "Pois(5)"))
 ```
 
@@ -629,7 +629,7 @@ sim2 <- tibble(group = rep(1:1000, each = 100),
                  val = rnorm(100000, 0.2, 1))
 
 # Simulate 1000 data sets with 100 observations each
-# N(6, 1)
+# N(`, 1)
 sim3 <- tibble(group = rep(1:1000, each = 100),
                  val = rnorm(100000, 1, 1))
 
