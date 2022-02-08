@@ -301,7 +301,7 @@ Write a short methods section that covers the final model from section 8.10.
 The methods section is usually written in **past tense** and often in the **passive voice** (Swales & Feak, 2012), though there is LOTS of discussion in academia about the use of passive vs active voice. We are not going to require you to write one way or the other for this---consistency is the key thing to aim for.
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ### **Methods components**                                                                                                                                            |
+| Methods components                                                                                                                                           |
 +=======================================================================================================================================================================+
 | Study design                                                                                                                                                          |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
