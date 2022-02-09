@@ -750,7 +750,7 @@ Figure 6.1: Target figure for task 2a (your patch data will be different, though
 <ul>
 <li><p><code>var_patch</code>, variance in average yield patch-to-patch</p></li>
 <li><p><code>var_int</code>, residual variance after fitting the version of this linear model with this most parameters</p></li>
-<li><p><code>var_ab</code>, variance in yield explained by the interaction between patch and treatment, after accounting</p></li>
+<li><p><code>var_ab</code>, variance in yield explained by the interaction between patch and treatment, after accounting for the fixed effects and other sources.</p></li>
 </ul>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="portfolio.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example tibble</span></span>
 <span id="cb3-2"><a href="portfolio.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="st">`</span><span class="at">Source of variation</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Source 1&quot;</span>, </span>
