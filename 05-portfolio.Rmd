@@ -161,7 +161,7 @@ Write out the model formulation for the model that fits a fixed effect for treat
   - Make sure you also EXPLAIN each term. All random effects should have a statement of their distribution.
   - While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Stardew Valley interactive.
   
-- Create a table with the following columns: `Source of variation`, the name for this source of variation `Variance`, the values you've calculated (`var_patch`, `var_int`, `var_ab`), `Proportion`, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use kable to display the table nicely and add an a
+- Create a table with the following columns: `Source of variation`, the name for this source of variation `Variance`, the values you've calculated (`var_patch`, `var_int`, `var_ab`), `Proportion`, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use `kable` to display the table nicely and add an appropriate caption.
 
 ##### Objects to create (proof-read carefully for autograding)
 
@@ -177,13 +177,13 @@ Write out the model formulation for the model that fits a fixed effect for treat
 ###### Models
 - `int_mod`, an interaction model including main effects. `yield` is the response and `patch` and `treatment` should be the predictors.
 
-- `patch_mod`, a intercept only model using data aggregated to find the average yield per patch.
+- `patch_mod`, an intercept only model, where `yield_avg_patch` is the response. Use appropriate data aggregated to find the average yield per patch.
 
-- `agg_mod`, 
+- `agg_mod`, a main effects model where `yield_avg_int` is the response and `patch` and `treatment` are the predictors. Use appropriate data aggregated across both `patch` and `treatment`.
 
 ###### Numeric values
 
-Note: These should not be hardcoded (i.e., not `var_patch = 3`), the should make use of your models
+Note: These should not be hardcoded (i.e., not `var_patch = 3`), they should make use of your models
 
 - `var_patch`, variance in average yield patch-to-patch
 

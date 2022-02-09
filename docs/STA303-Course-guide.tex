@@ -1861,7 +1861,7 @@ Write out the model formulation for the model that fits a fixed effect for treat
 \item
   While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Stardew Valley interactive.
 \item
-  Create a table with the following columns: \texttt{Source\ of\ variation}, the name for this source of variation \texttt{Variance}, the values you've calculated (\texttt{var\_patch}, \texttt{var\_int}, \texttt{var\_ab}), \texttt{Proportion}, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use kable to display the table nicely and add an a
+  Create a table with the following columns: \texttt{Source\ of\ variation}, the name for this source of variation \texttt{Variance}, the values you've calculated (\texttt{var\_patch}, \texttt{var\_int}, \texttt{var\_ab}), \texttt{Proportion}, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use \texttt{kable} to display the table nicely and add an appropriate caption.
 \end{itemize}
 
 \hypertarget{objects-to-create-proof-read-carefully-for-autograding}{%
@@ -1886,15 +1886,15 @@ Write out the model formulation for the model that fits a fixed effect for treat
 \item
   \texttt{int\_mod}, an interaction model including main effects. \texttt{yield} is the response and \texttt{patch} and \texttt{treatment} should be the predictors.
 \item
-  \texttt{patch\_mod}, a intercept only model using data aggregated to find the average yield per patch.
+  \texttt{patch\_mod}, an intercept only model, where \texttt{yield\_avg\_patch} is the response. Use appropriate data aggregated to find the average yield per patch.
 \item
-  \texttt{agg\_mod},
+  \texttt{agg\_mod}, a main effects model where \texttt{yield\_avg\_int} is the response and \texttt{patch} and \texttt{treatment} are the predictors. Use appropriate data aggregated across both \texttt{patch} and \texttt{treatment}.
 \end{itemize}
 
 \hypertarget{numeric-values}{%
 \subparagraph{Numeric values}\label{numeric-values}}
 
-Note: These should not be hardcoded (i.e., not \texttt{var\_patch\ =\ 3}), the should make use of your models
+Note: These should not be hardcoded (i.e., not \texttt{var\_patch\ =\ 3}), they should make use of your models
 
 \begin{itemize}
 \item
@@ -3144,8 +3144,15 @@ Statistical methods \\
 \bottomrule
 \end{longtable}
 
-\hypertarget{example-from-a-different-article-modified-from-berlowitz-et-al.-2017-1-we-conducted-a-study-to-compare-the-effect-of-two-strategies-to-control-blood-pressure-on-physical-health-an-experimental-intensive-treatment-and-the-standard-treatment-currently-in-use.-after-recruitment-participants-were-randomly-allocated-randomization-to-either-the-intensive-treatment-or-the-standard-treatment.-2-the-study-involved-recruitment-from-102-clinical-sites-from-november-2010-to-march-2013.-3-a-total-of-9361-participants-50-years-of-age-or-older-who-had-evidence-of-hypertension-were-included-but-those-with-diabetes-or-prior-stroke-were-excluded.-4-the-source-of-the-data-is-the-sprint-study.-physical-health-was-measured-using-a-questionnaire-with-scores-ranging-from-0-to-100-with-greater-scores-meaning-better-physical-health.-data-were-collected-at-baseline-and-follow-up.}{%
-\paragraph{\texorpdfstring{Example from a \emph{different} article: Modified from (Berlowitz et al., 2017): (1) We conducted a study to compare the effect of two strategies to control blood pressure on physical health: an experimental intensive treatment and the standard treatment currently in use. After recruitment, participants were randomly allocated (randomization) to either the intensive treatment or the standard treatment. (2) The study involved recruitment from 102 clinical sites from November 2010 to March 2013. (3) A total of 9,361 participants 50 years of age or older who had evidence of hypertension were included, but those with diabetes or prior stroke were excluded. (4) The source of the data is the SPRINT study. Physical health was measured using a questionnaire with scores ranging from 0 to 100, with greater scores meaning better physical health. Data were collected at baseline and follow up.}{Example from a different article: Modified from (Berlowitz et al., 2017): (1) We conducted a study to compare the effect of two strategies to control blood pressure on physical health: an experimental intensive treatment and the standard treatment currently in use. After recruitment, participants were randomly allocated (randomization) to either the intensive treatment or the standard treatment. (2) The study involved recruitment from 102 clinical sites from November 2010 to March 2013. (3) A total of 9,361 participants 50 years of age or older who had evidence of hypertension were included, but those with diabetes or prior stroke were excluded. (4) The source of the data is the SPRINT study. Physical health was measured using a questionnaire with scores ranging from 0 to 100, with greater scores meaning better physical health. Data were collected at baseline and follow up.}}\label{example-from-a-different-article-modified-from-berlowitz-et-al.-2017-1-we-conducted-a-study-to-compare-the-effect-of-two-strategies-to-control-blood-pressure-on-physical-health-an-experimental-intensive-treatment-and-the-standard-treatment-currently-in-use.-after-recruitment-participants-were-randomly-allocated-randomization-to-either-the-intensive-treatment-or-the-standard-treatment.-2-the-study-involved-recruitment-from-102-clinical-sites-from-november-2010-to-march-2013.-3-a-total-of-9361-participants-50-years-of-age-or-older-who-had-evidence-of-hypertension-were-included-but-those-with-diabetes-or-prior-stroke-were-excluded.-4-the-source-of-the-data-is-the-sprint-study.-physical-health-was-measured-using-a-questionnaire-with-scores-ranging-from-0-to-100-with-greater-scores-meaning-better-physical-health.-data-were-collected-at-baseline-and-follow-up.}}
+\hypertarget{example-from-a-different-article-modified-from-berlowitz-et-al.-2017}{%
+\paragraph{\texorpdfstring{Example from a \emph{different} article: Modified from (Berlowitz et al., 2017):}{Example from a different article: Modified from (Berlowitz et al., 2017):}}\label{example-from-a-different-article-modified-from-berlowitz-et-al.-2017}}
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  We conducted a study to compare the effect of two strategies to control blood pressure on physical health: an experimental intensive treatment and the standard treatment currently in use. After recruitment, participants were randomly allocated (randomization) to either the intensive treatment or the standard treatment. (2) The study involved recruitment from 102 clinical sites from November 2010 to March 2013. (3) A total of 9,361 participants 50 years of age or older who had evidence of hypertension were included, but those with diabetes or prior stroke were excluded. (4) The source of the data is the SPRINT study. Physical health was measured using a questionnaire with scores ranging from 0 to 100, with greater scores meaning better physical health. Data were collected at baseline and follow up.
+\end{enumerate}
 
 (5a) To compare longitudinal change for physical health between the treatment groups, ``we estimated a linear mixed model assuming linear mean change over time within each treatment group.'' (5b) "The model for 𝑌\textsubscript{𝑖𝑗} (\emph{j\textsuperscript{th}}physical health measurement for \emph{i\textsuperscript{th}} participant measured at time \emph{t\textsubscript{ij}} (in years)) is as follows:
 
@@ -9114,6 +9121,13 @@ ID & Location & Note \\
 Note: The mention of \texttt{sim4} in the \texttt{sim\_desc} dataset IS intentional. Notice the instruction to ``Make any alterations necessary to \texttt{all\_sim} so that you can join on the dataset \texttt{sim\_description} to provided better labels for each simulation (but without including any irrelevant labels).''
 
 Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=212} \\
+5 & Portfolio instructions & Task 2a) Missing fragments:
+
+``Use \texttt{kable} to display the table nicely and add an appropriate caption.''
+
+``\texttt{agg\_mod}, a main effects model where \texttt{yield\_avg\_int} is the response and \texttt{patch} and \texttt{treatment} are the predictors. Use appropriate data aggregated across both \texttt{patch} and \texttt{treatment}.''
+
+Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=216} \\
 \bottomrule
 \end{longtable}
 

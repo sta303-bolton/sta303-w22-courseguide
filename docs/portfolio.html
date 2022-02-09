@@ -723,7 +723,7 @@ Figure 6.1: Target figure for task 2a (your patch data will be different, though
 <ul>
 <li><p>Make sure you also EXPLAIN each term. All random effects should have a statement of their distribution.</p></li>
 <li><p>While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Stardew Valley interactive.</p></li>
-<li><p>Create a table with the following columns: <code>Source of variation</code>, the name for this source of variation <code>Variance</code>, the values you’ve calculated (<code>var_patch</code>, <code>var_int</code>, <code>var_ab</code>), <code>Proportion</code>, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use kable to display the table nicely and add an a</p></li>
+<li><p>Create a table with the following columns: <code>Source of variation</code>, the name for this source of variation <code>Variance</code>, the values you’ve calculated (<code>var_patch</code>, <code>var_int</code>, <code>var_ab</code>), <code>Proportion</code>, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use <code>kable</code> to display the table nicely and add an appropriate caption.</p></li>
 </ul>
 </div>
 <div id="objects-to-create-proof-read-carefully-for-autograding" class="section level5" number="6.5.3.3.2">
@@ -740,13 +740,13 @@ Figure 6.1: Target figure for task 2a (your patch data will be different, though
 <h6><span class="header-section-number">6.5.3.3.2.2</span> Models</h6>
 <ul>
 <li><p><code>int_mod</code>, an interaction model including main effects. <code>yield</code> is the response and <code>patch</code> and <code>treatment</code> should be the predictors.</p></li>
-<li><p><code>patch_mod</code>, a intercept only model using data aggregated to find the average yield per patch.</p></li>
-<li><p><code>agg_mod</code>,</p></li>
+<li><p><code>patch_mod</code>, an intercept only model, where <code>yield_avg_patch</code> is the response. Use appropriate data aggregated to find the average yield per patch.</p></li>
+<li><p><code>agg_mod</code>, a main effects model where <code>yield_avg_int</code> is the response and <code>patch</code> and <code>treatment</code> are the predictors. Use appropriate data aggregated across both <code>patch</code> and <code>treatment</code>.</p></li>
 </ul>
 </div>
 <div id="numeric-values" class="section level6" number="6.5.3.3.2.3">
 <h6><span class="header-section-number">6.5.3.3.2.3</span> Numeric values</h6>
-<p>Note: These should not be hardcoded (i.e., not <code>var_patch = 3</code>), the should make use of your models</p>
+<p>Note: These should not be hardcoded (i.e., not <code>var_patch = 3</code>), they should make use of your models</p>
 <ul>
 <li><p><code>var_patch</code>, variance in average yield patch-to-patch</p></li>
 <li><p><code>var_int</code>, residual variance after fitting the version of this linear model with this most parameters</p></li>
