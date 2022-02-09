@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.7)  8 FEB 2022 21:22
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.7)  9 FEB 2022 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1903,7 +1903,12 @@ Overfull \hbox (149.49194pt too wide) in alignment at lines 7522--7531
  [] [] [] 
  []
 
-[153] [154]
+[153]
+Overfull \hbox (12.04254pt too wide) in paragraph at lines 7567--7568
+\TU/lmtt/m/n/10 honey_agg_hive)  
+ []
+
+[154]
 File: images/m3/boss.jpeg Graphic file (type bmp)
 <images/m3/boss.jpeg>
 File: images/m3/friend.jpeg Graphic file (type bmp)

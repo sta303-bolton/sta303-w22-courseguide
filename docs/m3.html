@@ -1361,8 +1361,8 @@ These are equivalent, just with different contrasts (how we set up our model mat
 <h5><span class="header-section-number">16.4.5.7.3</span> Intercept only model for hives averages (<code>bee_hive_mod</code>)</h5>
 <table>
 <colgroup>
-<col width="12%" />
-<col width="26%" />
+<col width="14%" />
+<col width="25%" />
 <col width="60%" />
 </colgroup>
 <thead>
@@ -1374,9 +1374,9 @@ These are equivalent, just with different contrasts (how we set up our model mat
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><code>lm(honey_g ~ 1, data = honey_agg)</code></p>
+<td><p><code>lm(honey_g ~ 1, data = honey_agg_hive)</code></p>
 <p>(note aggregated dataset)</p></td>
-<td><p><span class="math inline">\(y_{\cdot j \cdot} = \mu + \frac{1}{I}\Sigma^I_{i = 1}\alpha_i + \epsilon_j\)</span></p>
+<td><p><span class="math inline">\(y_{\cdot j \cdot} = \mu + \frac{1}{I}\Sigma^I_{i = 1}\alpha_i + \epsilon\)</span></p>
 <p>where:</p>
 <p><span class="math inline">\(\epsilon_j = b_j + \frac{1}{I}\Sigma\epsilon_j\)</span></p>
 <p><strong>Traditional linear regression</strong></p>

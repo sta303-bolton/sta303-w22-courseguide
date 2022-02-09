@@ -7557,16 +7557,16 @@ where
 \paragraph{\texorpdfstring{Intercept only model for hives averages (\texttt{bee\_hive\_mod})}{Intercept only model for hives averages (bee\_hive\_mod)}}\label{intercept-only-model-for-hives-averages-bee_hive_mod}}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.13}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.27}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.14}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.26}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.60}}@{}}
 \toprule
 In R & Notation & RSE \\
 \midrule
 \endhead
-\texttt{lm(honey\_g\ \textasciitilde{}\ 1,\ data\ =\ honey\_agg)}
+\texttt{lm(honey\_g\ \textasciitilde{}\ 1,\ data\ =\ honey\_agg\_hive)}
 
-(note aggregated dataset) & \(y_{\cdot j \cdot} = \mu + \frac{1}{I}\Sigma^I_{i = 1}\alpha_i + \epsilon_j\)
+(note aggregated dataset) & \(y_{\cdot j \cdot} = \mu + \frac{1}{I}\Sigma^I_{i = 1}\alpha_i + \epsilon\)
 
 where:
 

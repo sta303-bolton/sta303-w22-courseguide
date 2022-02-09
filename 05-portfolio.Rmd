@@ -189,7 +189,7 @@ Note: These should not be hardcoded (i.e., not `var_patch = 3`), they should mak
 
 - `var_int`, residual variance after fitting the version of this linear model with this most parameters
 
-- `var_ab`, variance in yield explained by the interaction between patch and treatment, after accounting 
+- `var_ab`, variance in yield explained by the interaction between patch and treatment, after accounting for the fixed effects and other sources.
 
 
 ```{r, eval=FALSE, include = FALSE}
