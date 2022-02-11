@@ -722,7 +722,7 @@ Figure 6.1: Target figure for task 2a (your patch data will be different, though
 <p>Write out the model formulation for the model that fits a fixed effect for treatment, a random effect for patch, and a random effect for the interaction of treatment and patch.</p>
 <ul>
 <li><p>Make sure you also EXPLAIN each term. All random effects should have a statement of their distribution.</p></li>
-<li><p>While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Stardew Valley interactive.</p></li>
+<li><p>While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Statdew Valley interactive.</p></li>
 <li><p>Create a table with the following columns: <code>Source of variation</code>, the name for this source of variation <code>Variance</code>, the values you’ve calculated (<code>var_patch</code>, <code>var_int</code>, <code>var_ab</code>), <code>Proportion</code>, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use <code>kable</code> to display the table nicely and add an appropriate caption.</p></li>
 </ul>
 </div>
@@ -919,7 +919,7 @@ var_int
 <span id="cb4-38"><a href="portfolio.html#cb4-38" aria-hidden="true" tabindex="-1"></a>ci_test2 <span class="ot">&lt;-</span> <span class="fu">interpret_ci</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="st">&quot;mean number of shoes owned by students&quot;</span>)</span>
 <span id="cb4-39"><a href="portfolio.html#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-40"><a href="portfolio.html#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Test 3</span></span>
-<span id="cb4-41"><a href="portfolio.html#cb4-41" aria-hidden="true" tabindex="-1"></a>ci_test3 <span class="ot">&lt;-</span> <span class="fu">interpret_ci</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">95</span>, <span class="dv">99</span>)</span></code></pre></div>
+<span id="cb4-41"><a href="portfolio.html#cb4-41" aria-hidden="true" tabindex="-1"></a>ci_test3 <span class="ot">&lt;-</span> <span class="fu">interpret_ci</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="fu">tibble</span>(<span class="at">stat =</span> <span class="dv">3</span>))</span></code></pre></div>
 <p><strong>CI function test 1:</strong> This is the confidence level: 99%. And the text fed to stat is mean number of shoes owned by students. There is also the lower and upper bounds: 10 and 20. This part needs to be fixed!</p>
 <p><strong>CI function test 2:</strong>
 Warning: Your ci_level is wrooooong.

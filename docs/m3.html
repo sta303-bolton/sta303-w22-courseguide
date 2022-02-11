@@ -1248,7 +1248,13 @@ C. These models are not identifiable.</p>
 <span id="cb94-2"><a href="m3.html#cb94-2" aria-hidden="true" tabindex="-1"></a>var_int <span class="ot">&lt;-</span> <span class="fu">summary</span>(bee_int_mod)<span class="sc">$</span>sigma<span class="sc">^</span><span class="dv">2</span></span>
 <span id="cb94-3"><a href="m3.html#cb94-3" aria-hidden="true" tabindex="-1"></a>var_int</span></code></pre></div>
 <pre><code>## [1] 13.20828</code></pre>
-<p>We can all talk about the proportion of variance explained by each of our sources of variation. This is also called intraclass correlation coefficient (ICC) or the variance partition coefficient (VPC). We can calculate it by finding the sum</p>
+<p>We can all talk about the proportion of variance explained by each of our sources of variation. This is also called intraclass correlation coefficient (ICC) or the variance partition coefficient (VPC). We can calculate it by finding the sum of all these variances, and setting that value as our denominator.</p>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="m3.html#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">Source =</span> <span class="fu">c</span>(<span class="st">&quot;song:hive&quot;</span>, <span class="st">&quot;hive&quot;</span>, <span class="st">&quot;residual&quot;</span>),</span>
+<span id="cb96-2"><a href="m3.html#cb96-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Proportion of variance explained</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb96-3"><a href="m3.html#cb96-3" aria-hidden="true" tabindex="-1"></a>    var_ab <span class="sc">/</span> (var_ab <span class="sc">+</span> var_hive <span class="sc">+</span> var_int),</span>
+<span id="cb96-4"><a href="m3.html#cb96-4" aria-hidden="true" tabindex="-1"></a>    var_hive <span class="sc">/</span> (var_ab <span class="sc">+</span> var_hive <span class="sc">+</span> var_int),</span>
+<span id="cb96-5"><a href="m3.html#cb96-5" aria-hidden="true" tabindex="-1"></a>    var_int <span class="sc">/</span> (var_ab <span class="sc">+</span> var_hive <span class="sc">+</span> var_int))) <span class="sc">%&gt;%</span> </span>
+<span id="cb96-6"><a href="m3.html#cb96-6" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -1321,7 +1327,7 @@ D. Impossible to say.</p>
 <td><code>lm(honey_g ~ song*hive, data = honey)</code></td>
 <td><p><span class="math inline">\(y_{ijk} = \mu + \alpha_i + b_j + (\alpha b)_{ij} + \epsilon_{ijk}\)</span></p>
 <p><strong>Traditional linear regression</strong></p>
-<p><span class="math inline">\(y_{ijk} = \beta_0 + \beta_2 \text{song}_i + \beta_2\text{hive}_j + \beta_3\text{song}_i\text{hive}_j + \epsilon_{ijk}\)</span></p>
+<p><span class="math inline">\(y_{ijk} = \beta_0 + \beta_1 \text{song}_i + \beta_2\text{hive}_j + \beta_3\text{song}_i\text{hive}_j + \epsilon_{ijk}\)</span></p>
 <p><br />
 These are equivalent, just with different contrasts (how we set up our model matrix).</p></td>
 <td><span class="math inline">\(RSE^2\)</span> is <span class="math inline">\(\sigma^2\)</span> is the unexplained variation after fitting the most complicated model.</td>
@@ -1351,7 +1357,7 @@ These are equivalent, just with different contrasts (how we set up our model mat
 <p>where</p>
 <p><span class="math inline">\(\epsilon_{ij} = (\alpha b)_{ij}+\frac{1}{K}\Sigma_{k=1}^n\)</span></p>
 <p><strong>Traditional linear regression</strong></p>
-<p><span class="math inline">\(y_{ij\cdot} = \beta_0 + \beta_2 \text{song}_i + \beta_3\text{hive}_j + \epsilon_{ij}\)</span></p></td>
+<p><span class="math inline">\(y_{ij\cdot} = \beta_0 + \beta_1 \text{song}_i + \beta_2\text{hive}_j + \epsilon_{ij}\)</span></p></td>
 <td>The <span class="math inline">\(RSE^2\)</span> here is the unexplained variation in the average honey production after accounting for the main effects of song and hive. We will use it to help find <span class="math inline">\(\sigma_{\alpha b}\)</span>.</td>
 </tr>
 </tbody>
@@ -1428,7 +1434,7 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <div id="read-in-the-data-and-explore-it" class="section level3" number="16.5.3">
 <h3><span class="header-section-number">16.5.3</span> Read in the data and explore it</h3>
 <p>For convenience, I have created a new variable called <code>condition</code>, it is just a modification of the <code>attitude</code> variable, that takes the level <code>formal</code> if the particular measurement was under formal conditions and <code>informal</code> if the measurement was under informal conditions. This variable contains the same information as the <code>attitude</code> variable, just coded how I want it to be, so I remove the <code>attitude</code> variable at the end.</p>
-<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="m3.html#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(polite_data, <span class="at">width=</span><span class="dv">85</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="m3.html#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(polite_data, <span class="at">width=</span><span class="dv">85</span>)</span></code></pre></div>
 <pre><code>## Rows: 84
 ## Columns: 7
 ## $ subject   &lt;chr&gt; &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;, &quot;F1&quot;,…
@@ -1438,7 +1444,7 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 ## $ frequency &lt;dbl&gt; 213.3, 204.5, 285.1, 259.7, 203.9, 286.9, 250.8, 276.8, 231.9, 25…
 ## $ condition &lt;fct&gt; formal, informal, formal, informal, formal, informal, formal, inf…
 ## $ sex       &lt;fct&gt; F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F,…</code></pre>
-<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="m3.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(polite_data)</span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="m3.html#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(polite_data)</span></code></pre></div>
 <pre><code>## # A tibble: 6 × 7
 ##   subject gender scenario attitude frequency condition sex  
 ##   &lt;chr&gt;   &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt; &lt;fct&gt;     &lt;fct&gt;
@@ -1471,16 +1477,16 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <div id="lets-start-with-a-picture" class="section level4" number="16.5.4.2">
 <h4><span class="header-section-number">16.5.4.2</span> Let’s start with a picture</h4>
 <p>Female subjects have an ID starting with “F” and males subjects have an ID starting with “M.” <strong>What do you see?</strong></p>
-<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="m3.html#cb100-1" aria-hidden="true" tabindex="-1"></a>polite_data <span class="sc">%&gt;%</span> </span>
-<span id="cb100-2"><a href="m3.html#cb100-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> condition, </span>
-<span id="cb100-3"><a href="m3.html#cb100-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> frequency,</span>
-<span id="cb100-4"><a href="m3.html#cb100-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">color=</span>subject)) <span class="sc">+</span></span>
-<span id="cb100-5"><a href="m3.html#cb100-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
-<span id="cb100-6"><a href="m3.html#cb100-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb100-7"><a href="m3.html#cb100-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>subject, <span class="at">nrow =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb100-8"><a href="m3.html#cb100-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="at">label=</span><span class="st">&quot;Voice pitch by subjects and formal/informal setting&quot;</span>) <span class="sc">+</span></span>
-<span id="cb100-9"><a href="m3.html#cb100-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb100-10"><a href="m3.html#cb100-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="co"># remove legend because we have facet names</span></span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="m3.html#cb101-1" aria-hidden="true" tabindex="-1"></a>polite_data <span class="sc">%&gt;%</span> </span>
+<span id="cb101-2"><a href="m3.html#cb101-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> condition, </span>
+<span id="cb101-3"><a href="m3.html#cb101-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> frequency,</span>
+<span id="cb101-4"><a href="m3.html#cb101-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">color=</span>subject)) <span class="sc">+</span></span>
+<span id="cb101-5"><a href="m3.html#cb101-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb101-6"><a href="m3.html#cb101-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb101-7"><a href="m3.html#cb101-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>subject, <span class="at">nrow =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb101-8"><a href="m3.html#cb101-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="at">label=</span><span class="st">&quot;Voice pitch by subjects and formal/informal setting&quot;</span>) <span class="sc">+</span></span>
+<span id="cb101-9"><a href="m3.html#cb101-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb101-10"><a href="m3.html#cb101-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="co"># remove legend because we have facet names</span></span></code></pre></div>
 <p><img src="images/m3/explore.png" width="100%" /></p>
 <div id="key-themes-from-our-plot" class="section level5" number="16.5.4.2.1">
 <h5><span class="header-section-number">16.5.4.2.1</span> Key themes from our plot</h5>
@@ -1575,11 +1581,11 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <h3><span class="header-section-number">16.6.5</span> How do we tell R which situation we’re in?</h3>
 <p>We’ll be using the <code>lmer()</code> function from the <code>lme4</code> package.</p>
 <p>Many R packages provide a “vignette” to help you understand how to use the package and the theory behind it.</p>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="m3.html#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This line only installs lme4 if you haven&#39;t got it installed already</span></span>
-<span id="cb101-2"><a href="m3.html#cb101-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span>(<span class="st">&quot;lme4&quot;</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>())) <span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
-<span id="cb101-3"><a href="m3.html#cb101-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb101-4"><a href="m3.html#cb101-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
-<span id="cb101-5"><a href="m3.html#cb101-5" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">&quot;lmer&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="m3.html#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This line only installs lme4 if you haven&#39;t got it installed already</span></span>
+<span id="cb102-2"><a href="m3.html#cb102-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span>(<span class="st">&quot;lme4&quot;</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>())) <span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
+<span id="cb102-3"><a href="m3.html#cb102-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb102-4"><a href="m3.html#cb102-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
+<span id="cb102-5"><a href="m3.html#cb102-5" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">&quot;lmer&quot;</span>)</span></code></pre></div>
 <div id="vignette-activity" class="section level4" number="16.6.5.1">
 <h4><span class="header-section-number">16.6.5.1</span> Vignette activity</h4>
 <p><strong><em>Have you ever looked at a package vignette before?</em></strong></p>
@@ -1629,11 +1635,11 @@ Random effects can be variables that were opportunistically measured whose varia
 <p>We are going to use the package <code>lme4</code> and the function <code>lmer()</code> and then fit a model with only the random effect of subject (each subject gets their own intercept).</p>
 <div id="random-intercept-only-model" class="section level4" number="16.7.1.1">
 <h4><span class="header-section-number">16.7.1.1</span> Random intercept only model</h4>
-<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="m3.html#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;lme4&quot;)</span></span>
-<span id="cb102-2"><a href="m3.html#cb102-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4) <span class="co"># load the package</span></span>
-<span id="cb102-3"><a href="m3.html#cb102-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb102-4"><a href="m3.html#cb102-4" aria-hidden="true" tabindex="-1"></a>sub_only <span class="ot">=</span> <span class="fu">lmer</span>(frequency <span class="sc">~</span> (<span class="dv">1</span> <span class="sc">|</span> subject),  <span class="at">data =</span> polite_data)</span></code></pre></div>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="m3.html#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sub_only)</span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="m3.html#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;lme4&quot;)</span></span>
+<span id="cb103-2"><a href="m3.html#cb103-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4) <span class="co"># load the package</span></span>
+<span id="cb103-3"><a href="m3.html#cb103-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-4"><a href="m3.html#cb103-4" aria-hidden="true" tabindex="-1"></a>sub_only <span class="ot">=</span> <span class="fu">lmer</span>(frequency <span class="sc">~</span> (<span class="dv">1</span> <span class="sc">|</span> subject),  <span class="at">data =</span> polite_data)</span></code></pre></div>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="m3.html#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sub_only)</span></code></pre></div>
 <pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
 ## Formula: frequency ~ (1 | subject)
 ##    Data: polite_data
@@ -1805,7 +1811,7 @@ Random effects can be variables that were opportunistically measured whose varia
 ## condtnnfrml -0.171       
 ## sexM        -0.651  0.000</code></pre>
 <p><strong><em>Does adding random intercepts for the scenarios improve the model?</em></strong></p>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="m3.html#cb112-1" aria-hidden="true" tabindex="-1"></a>lmtest<span class="sc">::</span><span class="fu">lrtest</span>(w_scen, w_fixed)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="m3.html#cb113-1" aria-hidden="true" tabindex="-1"></a>lmtest<span class="sc">::</span><span class="fu">lrtest</span>(w_scen, w_fixed)</span></code></pre></div>
 <pre><code>## Likelihood ratio test
 ## 
 ## Model 1: frequency ~ condition + sex + (1 | subject) + (1 | scenario)

@@ -1859,7 +1859,7 @@ Write out the model formulation for the model that fits a fixed effect for treat
 \item
   Make sure you also EXPLAIN each term. All random effects should have a statement of their distribution.
 \item
-  While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Stardew Valley interactive.
+  While there are multiple ways to write out this model, I strongly suggest you mimic the structure written out for the honey model in the Statdew Valley interactive.
 \item
   Create a table with the following columns: \texttt{Source\ of\ variation}, the name for this source of variation \texttt{Variance}, the values you've calculated (\texttt{var\_patch}, \texttt{var\_int}, \texttt{var\_ab}), \texttt{Proportion}, which is the proportion of variance in yield (not explained by treatment) explained by this source (round to 2 decimal places). Use \texttt{kable} to display the table nicely and add an appropriate caption.
 \end{itemize}
@@ -2085,7 +2085,7 @@ Note: For this and the next task, you are largely replacing and reworking what I
 \NormalTok{ci\_test2 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_ci}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{, }\StringTok{"mean number of shoes owned by students"}\NormalTok{)}
 
 \CommentTok{\# Test 3}
-\NormalTok{ci\_test3 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_ci}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{95}\NormalTok{, }\DecValTok{99}\NormalTok{)}
+\NormalTok{ci\_test3 }\OtherTok{\textless{}{-}} \FunctionTok{interpret\_ci}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{, }\FunctionTok{tibble}\NormalTok{(}\AttributeTok{stat =} \DecValTok{3}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -7475,7 +7475,18 @@ So now we can take our hive-to-hive variability subtract the variability explain
 ## [1] 13.20828
 \end{verbatim}
 
-We can all talk about the proportion of variance explained by each of our sources of variation. This is also called intraclass correlation coefficient (ICC) or the variance partition coefficient (VPC). We can calculate it by finding the sum
+We can all talk about the proportion of variance explained by each of our sources of variation. This is also called intraclass correlation coefficient (ICC) or the variance partition coefficient (VPC). We can calculate it by finding the sum of all these variances, and setting that value as our denominator.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tibble}\NormalTok{(}\AttributeTok{Source =} \FunctionTok{c}\NormalTok{(}\StringTok{"song:hive"}\NormalTok{, }\StringTok{"hive"}\NormalTok{, }\StringTok{"residual"}\NormalTok{),}
+  \StringTok{\textasciigrave{}}\AttributeTok{Proportion of variance explained}\StringTok{\textasciigrave{}} \OtherTok{=} \FunctionTok{c}\NormalTok{(}
+\NormalTok{    var\_ab }\SpecialCharTok{/}\NormalTok{ (var\_ab }\SpecialCharTok{+}\NormalTok{ var\_hive }\SpecialCharTok{+}\NormalTok{ var\_int),}
+\NormalTok{    var\_hive }\SpecialCharTok{/}\NormalTok{ (var\_ab }\SpecialCharTok{+}\NormalTok{ var\_hive }\SpecialCharTok{+}\NormalTok{ var\_int),}
+\NormalTok{    var\_int }\SpecialCharTok{/}\NormalTok{ (var\_ab }\SpecialCharTok{+}\NormalTok{ var\_hive }\SpecialCharTok{+}\NormalTok{ var\_int))) }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{tabular}{l|r}
 \hline
@@ -7524,7 +7535,7 @@ In R & Notation & RSE \\
 
 \textbf{Traditional linear regression}
 
-\(y_{ijk} = \beta_0 + \beta_2 \text{song}_i + \beta_2\text{hive}_j + \beta_3\text{song}_i\text{hive}_j + \epsilon_{ijk}\)
+\(y_{ijk} = \beta_0 + \beta_1 \text{song}_i + \beta_2\text{hive}_j + \beta_3\text{song}_i\text{hive}_j + \epsilon_{ijk}\)
 
 \vtop{\hbox{\strut }\hbox{\strut These are equivalent, just with different contrasts (how we set up our model matrix).}} & \(RSE^2\) is \(\sigma^2\) is the unexplained variation after fitting the most complicated model. \\
 \bottomrule
@@ -7549,7 +7560,7 @@ where
 
 \textbf{Traditional linear regression}
 
-\(y_{ij\cdot} = \beta_0 + \beta_2 \text{song}_i + \beta_3\text{hive}_j + \epsilon_{ij}\) & The \(RSE^2\) here is the unexplained variation in the average honey production after accounting for the main effects of song and hive. We will use it to help find \(\sigma_{\alpha b}\). \\
+\(y_{ij\cdot} = \beta_0 + \beta_1 \text{song}_i + \beta_2\text{hive}_j + \epsilon_{ij}\) & The \(RSE^2\) here is the unexplained variation in the average honey production after accounting for the main effects of song and hive. We will use it to help find \(\sigma_{\alpha b}\). \\
 \bottomrule
 \end{longtable}
 
@@ -9130,8 +9141,27 @@ Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=212} \\
 \texttt{var\_ab}, variance in yield explained by the interaction between patch and treatment, after accounting for the fixed effects and other sources.
 
 Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=216} \\
+6 & Portfolio instructions & Task 3a) Test 3:
+
+In the original version the 3rd test was shown as \texttt{interpret\_ci(10,\ 20,\ 95,\ 99)} in the template. The instructions say \texttt{interpret\_ci(10,\ 20,\ -1,\ tibble(stat\ =\ 3))} and is the version that should be used.
+
+\vtop{\hbox{\strut Piazza:}\hbox{\strut \url{https://piazza.com/class/kx47tj4fmy65dg?cid=238}}} \\
+7 & Statdew Valley & In the Summary tables, the model formula should read \(\beta_1\text{song}_i\), not \(\beta_2\).
+
+Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=241}
+
+At the end of \textbf{16.4.5.6.5 Summary of all our calculated error variances:}
+
+Added a little more information AND some example code.
+
+Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=240} \\
 \bottomrule
 \end{longtable}
+
++----+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ \textbar{}
+\textbar{} \textbar{} \textbar{} Piazza:~ \textbar{}
+\textbar{} \textbar{} \textbar{} \url{https://piazza.com/class/kx47tj4fmy65dg?cid=238} \textbar{}
++----+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 \hypertarget{bits-and-pieces}{%
 \chapter{Bits and pieces}\label{bits-and-pieces}}

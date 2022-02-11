@@ -634,7 +634,7 @@ Answer: C. You can't be nested and crossed for the same grouping variable. A ful
 This looks like:
 $$ y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}$$
 
-where $y_{ijk}$ is the amount of honey produced (in grams) in the $k^{th}$ month by the $j^{th}$ hive while listening to song $i$. Here, $\mu$ is the grand mean of honey production, $\alpha_i$ are the $I$ fixed effects for `song` and $b_j$ are the random effects for hive $j$. $(\alpha b)_{ij}$ are the $IJ$ interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. $(\alpha b)_{ij}$ is a random effect because any term involving a random effect must also be a random effect. $(\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})$, $b_k \sim N(0, \sigma_b^2)$ and $\epsilon_{ijk} \sim N(0, \sigma^2)$. All the random effects are mutually independent random variables.
+where $y_{ijk}$ is the amount of honey produced (in grams) in the $k^{th}$ month by the $j^{th}$ hive while listening to song $i$. Here, $\mu$ is the grand mean of honey production, $\alpha_i$ are the $I$ fixed effects for `song` and $b_j$ are the random effects for hive $j$. $(\alpha b)_{ij}$ are the $IJ$ interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. $(\alpha b)_{ij}$ is a random effect because any term involving a random effect must also be a random effect. $(\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})$, $b_j \sim N(0, \sigma_b^2)$ and $\epsilon_{ijk} \sim N(0, \sigma^2)$. All the random effects are mutually independent random variables.
 
 #### Fit the models
 
@@ -837,15 +837,17 @@ var_int
 
 ```
 
-We can all talk about the proportion of variance explained by each of our sources of variation. This is also  called intraclass correlation coefficient (ICC) or the variance partition coefficient (VPC). We can calculate it by finding the sum 
+We can all talk about the proportion of variance explained by each of our sources of variation. This is also  called intraclass correlation coefficient (ICC) or the variance partition coefficient (VPC). We can calculate it by finding the sum of all these variances, and setting that value as our denominator.
 
-```{r}
+```{r, echo = TRUE}
 tibble(Source = c("song:hive", "hive", "residual"),
-`Proportion of variance explained` = c(var_ab / (var_ab + var_hive + var_int),
-var_hive / (var_ab + var_hive + var_int),
-var_int / (var_ab + var_hive + var_int))) %>% 
+  `Proportion of variance explained` = c(
+    var_ab / (var_ab + var_hive + var_int),
+    var_hive / (var_ab + var_hive + var_int),
+    var_int / (var_ab + var_hive + var_int))) %>% 
   knitr::kable()
 ```
+
 
 __Question: Which of our random effects explains the greatest variance in the honey production, after controlling for our fixed effects?__
 
@@ -879,7 +881,7 @@ Note: The $\cdot$ you'll see in some of the following subscripts indicate where 
 |                                         |                                                                                                                         |                                                                                              |
 |                                         | **Traditional linear regression**                                                                                       |                                                                                              |
 |                                         |                                                                                                                         |                                                                                              |
-|                                         | $y_{ijk} = \beta_0 + \beta_2 \text{song}_i + \beta_2\text{hive}_j + \beta_3\text{song}_i\text{hive}_j + \epsilon_{ijk}$ |                                                                                              |
+|                                         | $y_{ijk} = \beta_0 + \beta_1 \text{song}_i + \beta_2\text{hive}_j + \beta_3\text{song}_i\text{hive}_j + \epsilon_{ijk}$ |                                                                                              |
 |                                         |                                                                                                                         |                                                                                              |
 |                                         | \                                                                                                                       |                                                                                              |
 |                                         | These are equivalent, just with different contrasts (how we set up our model matrix).                                   |                                                                                              |
@@ -898,7 +900,7 @@ Note: The $\cdot$ you'll see in some of the following subscripts indicate where 
 |                                               |                                                                                        |                                                                                                                                                                                        |
 |                                               | **Traditional linear regression**                                                      |                                                                                                                                                                                        |
 |                                               |                                                                                        |                                                                                                                                                                                        |
-|                                               | $y_{ij\cdot} = \beta_0 + \beta_2 \text{song}_i + \beta_3\text{hive}_j + \epsilon_{ij}$ |                                                                                                                                                                                        |
+|                                               | $y_{ij\cdot} = \beta_0 + \beta_1 \text{song}_i + \beta_2\text{hive}_j + \epsilon_{ij}$ |                                                                                                                                                                                        |
 +-----------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ##### Intercept only model for hives averages (`bee_hive_mod`)

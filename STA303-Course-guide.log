@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.7)  9 FEB 2022 14:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.10)  11 FEB 2022 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -133,7 +133,7 @@ Package: expl3 2022-02-05 L3 programming layer (loader)
 
 (/Users/lizabolton/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xet
 ex.def
-File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
 (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count268
 \l__color_backend_stack_int=\count269
@@ -1889,22 +1889,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 7352--7354
 File: images/m3/fancyaveraging.png Graphic file (type bmp)
 <images/m3/fancyaveraging.png>
 
-Overfull \hbox (93.80136pt too wide) in paragraph at lines 7506--7507
+Overfull \hbox (93.80136pt too wide) in paragraph at lines 7517--7518
 [][] 
  []
 
 
-Overfull \hbox (149.49194pt too wide) in alignment at lines 7518--7522
- [] [] [] 
- []
-
-
-Overfull \hbox (149.49194pt too wide) in alignment at lines 7522--7531
- [] [] [] 
- []
+Underfull \vbox (badness 1838) has occurred while \output is active []
 
 [153]
-Overfull \hbox (12.04254pt too wide) in paragraph at lines 7567--7568
+Overfull \hbox (149.49194pt too wide) in alignment at lines 7529--7533
+ [] [] [] 
+ []
+
+
+Overfull \hbox (149.49194pt too wide) in alignment at lines 7533--7542
+ [] [] [] 
+ []
+
+
+Overfull \hbox (12.04254pt too wide) in paragraph at lines 7578--7579
 \TU/lmtt/m/n/10 honey_agg_hive)  
  []
 
@@ -1914,109 +1917,113 @@ File: images/m3/boss.jpeg Graphic file (type bmp)
 File: images/m3/friend.jpeg Graphic file (type bmp)
 <images/m3/friend.jpeg>
 
-Overfull \hbox (2.21944pt too wide) in paragraph at lines 7635--7636
+Overfull \hbox (2.21944pt too wide) in paragraph at lines 7646--7647
 [][] [] 
  []
 
-[155] [156]
+
+Underfull \vbox (badness 7869) has occurred while \output is active []
+
+[155] [156] [157]
 File: images/m3/explore.png Graphic file (type bmp)
 <images/m3/explore.png>
-[157]
+[158]
 File: images/m3/trellis.jpeg Graphic file (type bmp)
 <images/m3/trellis.jpeg>
-[158] [159]
+[159]
 File: images/m3/rand_slope.png Graphic file (type bmp)
 <images/m3/rand_slope.png>
+[160]
 File: images/m3/rand_slope_int.png Graphic file (type bmp)
 <images/m3/rand_slope_int.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[160]
+[161]
 File: images/m3/table.png Graphic file (type bmp)
 <images/m3/table.png>
-[161]
+[162]
 File: images/m3/names_for_lmm.png Graphic file (type bmp)
 <images/m3/names_for_lmm.png>
-[162] [163]
-Underfull \hbox (badness 10000) in paragraph at lines 8010--8012
+[163] [164]
+Underfull \hbox (badness 10000) in paragraph at lines 8021--8023
 
  []
 
-[164]
+[165]
 File: images/m3/aside.png Graphic file (type bmp)
 <images/m3/aside.png>
 
-Overfull \hbox (861.89012pt too wide) in paragraph at lines 8072--8073
+Overfull \hbox (861.89012pt too wide) in paragraph at lines 8083--8084
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[165]
+[166]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[166]
+[167]
 Overfull \vbox (24.49304pt too high) has occurred while \output is active []
 
-[167]
+[168]
 File: images/m3/subject_slopes.png Graphic file (type bmp)
 <images/m3/subject_slopes.png>
 
-Overfull \hbox (180.70305pt too wide) in paragraph at lines 8081--8082
+Overfull \hbox (180.70305pt too wide) in paragraph at lines 8092--8093
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[168] [169] [170]
+[169] [170] [171]
 File: images/m3/scen_int.png Graphic file (type bmp)
 <images/m3/scen_int.png>
 
-Overfull \hbox (407.77766pt too wide) in paragraph at lines 8162--8163
+Overfull \hbox (407.77766pt too wide) in paragraph at lines 8173--8174
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[171] [172]
+[172] [173]
 File: images/m3/scenario_slopes.png Graphic file (type bmp)
 <images/m3/scenario_slopes.png>
 
-Overfull \hbox (589.45572pt too wide) in paragraph at lines 8221--8222
+Overfull \hbox (589.45572pt too wide) in paragraph at lines 8232--8233
 [][] 
  []
 
 
 Underfull \vbox (badness 1917) has occurred while \output is active []
 
-[173] [174] [175]
+[174] [175] [176]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 8301.
-[176] [177] [178]
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 8312.
+[177] [178] [179]
  17.
-[179
+[180
 
 ]
  18.
-[180
-
-] [181
+[181
 
 ] [182
+
+] [183
 
 ]
  19.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8437--8439
+Underfull \hbox (badness 10000) in paragraph at lines 8448--8450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8439--8441
+Underfull \hbox (badness 10000) in paragraph at lines 8450--8452
 
  []
 
@@ -2030,7 +2037,7 @@ File: images/course-tools/markus_logo.jpeg Graphic file (type bmp)
 <images/course-tools/markus_logo.jpeg>
 File: images/course-tools/peer-scholar.png Graphic file (type bmp)
 <images/course-tools/peer-scholar.png>
-[183
+[184
 
 ]
 File: images/course-tools/engage.jpeg Graphic file (type bmp)
@@ -2038,90 +2045,117 @@ File: images/course-tools/engage.jpeg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[184]
+[185]
 Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
 tex-text;!
 Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
 tex-text;!
 Missing character: There is no 🏠 (U+1F3E0) in font [lmroman10-regular]:mapping=
 tex-text;!
-[185]
+[186]
 Missing character: There is no 🧺 (U+1F9FA) in font [lmroman10-regular]:mapping=
 tex-text;!
 Missing character: There is no 👻 (U+1F47B) in font [lmroman10-regular]:mapping=
 tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 8620--8622
+Underfull \hbox (badness 10000) in paragraph at lines 8631--8633
 
  []
 
-[186]
+[187]
 File: images/course-tools/gototool.png Graphic file (type bmp)
 <images/course-tools/gototool.png>
 File: images/course-tools/choose create.png Graphic file (type bmp)
 <images/course-tools/choose create.png>
 File: images/course-tools/group id.png Graphic file (type bmp)
 <images/course-tools/group id.png>
-[187]
+[188]
 File: images/course-tools/gototool.png Graphic file (type bmp)
 <images/course-tools/gototool.png>
 File: images/course-tools/choose create.png Graphic file (type bmp)
 <images/course-tools/choose create.png>
-[188]
+[189]
 File: images/course-tools/submit.png Graphic file (type bmp)
 <images/course-tools/submit.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 8694--8697
+Underfull \hbox (badness 10000) in paragraph at lines 8705--8708
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8694--8697
+Underfull \hbox (badness 10000) in paragraph at lines 8705--8708
 
  []
 
-[189] [190] [191]
+[190] [191] [192]
  20.
-[192
+[193
 
-] [193] [194] [195]
-Overfull \hbox (6.48778pt too wide) in paragraph at lines 9109--9109
+] [194] [195] [196]
+Overfull \hbox (6.48778pt too wide) in paragraph at lines 9120--9120
 []|\TU/lmr/m/n/10 ID|  
  []
 
 
-Overfull \hbox (397.96404pt too wide) in alignment at lines 9107--9111
+Overfull \hbox (397.96404pt too wide) in alignment at lines 9118--9122
  [] [] [] 
  []
 
 
-Overfull \hbox (397.96404pt too wide) in alignment at lines 9111--9134
+Overfull \hbox (397.96404pt too wide) in alignment at lines 9122--9159
  [] [] [] 
  []
 
-[196] [197]
+[197]
+Underfull \hbox (badness 10000) in paragraph at lines 9161--9165
+[]\TU/lmr/m/n/10 +—-+——————————————+—————————————————————————————
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9161--9165
+\TU/lmr/m/n/10 ———————————————————————————————————————————————
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 9161--9165
+\TU/lmr/m/n/10 ———————————————————————————————-+ | | | | Piazza:  | | | | [][]$
+[][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9161--9165
+[] [] [][][][][][] [] [][][] [] [][][][][] [] [][][][][][][][][][][][][][] [] [
+][][] [] [][][]$[][] \TU/lmr/m/n/10 | +—-+——————————————+—————————
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9161--9165
+\TU/lmr/m/n/10 ——————————————————————————————————————————————————
+ []
+
+[198]
  21.
-[198
+[199
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 9200--9202
+Underfull \hbox (badness 10000) in paragraph at lines 9230--9232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9202--9204
+Underfull \hbox (badness 10000) in paragraph at lines 9232--9234
 
  []
 
-[199] [200] [201]
-Underfull \hbox (badness 10000) in paragraph at lines 9429--9431
+[200] [201] [202]
+Underfull \hbox (badness 10000) in paragraph at lines 9459--9461
 
  []
 
-[202] [203]
+[203] [204]
  22.
 
-Overfull \hbox (764.3367pt too wide) in alignment at lines 9472--9476
+Overfull \hbox (764.3367pt too wide) in alignment at lines 9502--9506
  [] [] [] 
  []
 
@@ -2146,33 +2180,33 @@ tex-text;!
 Missing character: There is no ≠ (U+2260) in font [lmroman10-bold]:mapping=tex-
 text;!
 
-Overfull \hbox (764.3367pt too wide) in alignment at lines 9476--9756
+Overfull \hbox (764.3367pt too wide) in alignment at lines 9506--9786
  [] [] [] 
  []
 
-[204
+[205
 
-] [205] [206] [207] [208] [209]
-Underfull \hbox (badness 10000) in paragraph at lines 9778--9779
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9781--9782
+] [206] [207] [208] [209] [210]
+Underfull \hbox (badness 10000) in paragraph at lines 9808--9809
 
  []
 
-[210]
+
+Underfull \hbox (badness 10000) in paragraph at lines 9811--9812
+
+ []
+
+[211]
 File: images/Student Rep Ad (Winter 2022).png Graphic file (type bmp)
 <images/Student Rep Ad (Winter 2022).png>
-[211] (./STA303-Course-guide.aux) ) 
+[212] (./STA303-Course-guide.aux) ) 
 Here is how much of TeX's memory you used:
  21254 strings out of 478181
- 407607 string characters out of 5853357
- 944120 words of memory out of 5000000
+ 407607 string characters out of 5853356
+ 944122 words of memory out of 5000000
  41436 multiletter control sequences out of 15000+600000
  477445 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,11n,121p,1128b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on STA303-Course-guide.pdf (211 pages).
+Output written on STA303-Course-guide.pdf (212 pages).
