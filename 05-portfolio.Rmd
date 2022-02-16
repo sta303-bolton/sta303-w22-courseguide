@@ -167,7 +167,7 @@ Write out the model formulation for the model that fits a fixed effect for treat
 
 ###### Tibbles
 
-- `my_patch`, your 'patch' of strawberries, grown based on a `set.seed` that is the last THREE digits of your numeric student ID.
+- `my_patch`, your ‘patch’ of strawberries, grown based on using your `last3digplus` as the seed (created in the first part of the task).
 
 - `agg_patch`, starting with `my_patch`, group by `patch` and then summarize to create a new variable, `yield_avg_patch`.
 
@@ -695,7 +695,7 @@ pvals %>%
 
 #### Q-Q plots
 
-- Create one final plot that creates a 2x2 figure with Q-Q plots for each simulation. You must determine what the distribution of a _p_ value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of _p_ values we have generated.
+- Create one final plot that creates a 3x1 figure with Q-Q plots for each simulation. You must determine what the distribution of a _p_ value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of _p_ values we have generated.
 
 I have provided a template for the code, you just need to decide which quantile function to put where the XXXXXXX is now. (e.g., `qpois` is the quantile function for the Poisson distribution). Also adjust the caption with your authorship and add an appropriate figure caption.
 

@@ -339,15 +339,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.2.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-6"><i class="fa fa-check"></i><b>13.2.1</b> Instructions</a></li>
 <li class="chapter" data-level="13.2.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance"><i class="fa fa-check"></i><b>13.2.2</b> Workshop attendance</a></li>
 </ul></li>
-<li class="chapter" data-level="13.3" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#module-check-ins"><i class="fa fa-check"></i><b>13.3</b> Module check-ins</a>
+<li class="chapter" data-level="13.3" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#writing-workshop"><i class="fa fa-check"></i><b>13.3</b> Writing workshop</a>
 <ul>
-<li class="chapter" data-level="13.3.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-7"><i class="fa fa-check"></i><b>13.3.1</b> Instructions</a></li>
+<li class="chapter" data-level="13.3.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance-1"><i class="fa fa-check"></i><b>13.3.1</b> Workshop attendance</a></li>
 </ul></li>
-<li class="chapter" data-level="13.4" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#team-up-activities"><i class="fa fa-check"></i><b>13.4</b> Team Up! activities</a></li>
-<li class="chapter" data-level="13.5" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#graduate-school-info-session"><i class="fa fa-check"></i><b>13.5</b> Graduate school info session</a></li>
-<li class="chapter" data-level="13.6" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#punctuation-art"><i class="fa fa-check"></i><b>13.6</b> Punctuation art</a>
+<li class="chapter" data-level="13.4" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#module-check-ins"><i class="fa fa-check"></i><b>13.4</b> Module check-ins</a>
 <ul>
-<li class="chapter" data-level="13.6.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.6.1</b> Instructions</a></li>
+<li class="chapter" data-level="13.4.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-7"><i class="fa fa-check"></i><b>13.4.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#team-up-activities"><i class="fa fa-check"></i><b>13.5</b> Team Up! activities</a></li>
+<li class="chapter" data-level="13.6" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#graduate-school-info-session"><i class="fa fa-check"></i><b>13.6</b> Graduate school info session</a></li>
+<li class="chapter" data-level="13.7" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#punctuation-art"><i class="fa fa-check"></i><b>13.7</b> Punctuation art</a>
+<ul>
+<li class="chapter" data-level="13.7.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.7.1</b> Instructions</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Modules</b></span></li>
@@ -1006,7 +1010,7 @@ D. Not possible to design a nested version.</p>
 <h4><span class="header-section-number">16.4.5.2</span> Model formula</h4>
 <p>This looks like:
 <span class="math display">\[ y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}\]</span></p>
-<p>where <span class="math inline">\(y_{ijk}\)</span> is the amount of honey produced (in grams) in the <span class="math inline">\(k^{th}\)</span> month by the <span class="math inline">\(j^{th}\)</span> hive while listening to song <span class="math inline">\(i\)</span>. Here, <span class="math inline">\(\mu\)</span> is the grand mean of honey production, <span class="math inline">\(\alpha_i\)</span> are the <span class="math inline">\(I\)</span> fixed effects for <code>song</code> and <span class="math inline">\(b_j\)</span> are the random effects for hive <span class="math inline">\(j\)</span>. <span class="math inline">\((\alpha b)_{ij}\)</span> are the <span class="math inline">\(IJ\)</span> interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. <span class="math inline">\((\alpha b)_{ij}\)</span> is a random effect because any term involving a random effect must also be a random effect. <span class="math inline">\((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\)</span>, <span class="math inline">\(b_k \sim N(0, \sigma_b^2)\)</span> and <span class="math inline">\(\epsilon_{ijk} \sim N(0, \sigma^2)\)</span>. All the random effects are mutually independent random variables.</p>
+<p>where <span class="math inline">\(y_{ijk}\)</span> is the amount of honey produced (in grams) in the <span class="math inline">\(k^{th}\)</span> month by the <span class="math inline">\(j^{th}\)</span> hive while listening to song <span class="math inline">\(i\)</span>. Here, <span class="math inline">\(\mu\)</span> is the grand mean of honey production, <span class="math inline">\(\alpha_i\)</span> are the <span class="math inline">\(I\)</span> fixed effects for <code>song</code> and <span class="math inline">\(b_j\)</span> are the random effects for hive <span class="math inline">\(j\)</span>. <span class="math inline">\((\alpha b)_{ij}\)</span> are the <span class="math inline">\(IJ\)</span> interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. <span class="math inline">\((\alpha b)_{ij}\)</span> is a random effect because any term involving a random effect must also be a random effect. <span class="math inline">\((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\)</span>, <span class="math inline">\(b_j \sim N(0, \sigma_b^2)\)</span> and <span class="math inline">\(\epsilon_{ijk} \sim N(0, \sigma^2)\)</span>. All the random effects are mutually independent random variables.</p>
 </div>
 <div id="fit-the-models" class="section level4" number="16.4.5.3">
 <h4><span class="header-section-number">16.4.5.3</span> Fit the models</h4>
@@ -1206,9 +1210,9 @@ C. These models are not identifiable.</p>
 ## 4 4               225.
 ## 5 5               237.
 ## 6 6               191.</code></pre>
-<p>Once you have your <code>honey_agg_hive</code> dataset, use it to fit an <strong>intercept-only</strong> model, saved as <code>bee_hive</code> that effectively just calculate one coefficient, the grand mean of honey production in our data. The <strong>RSE</strong> for this model is really the same as the standard deviation of average honey production, hive-to-hive.</p>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="m3.html#cb84-1" aria-hidden="true" tabindex="-1"></a>bee_hive <span class="ot">&lt;-</span> <span class="fu">lm</span>(honey_avg_hive <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> honey_agg_hive)</span>
-<span id="cb84-2"><a href="m3.html#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bee_hive)</span></code></pre></div>
+<p>Once you have your <code>honey_agg_hive</code> dataset, use it to fit an <strong>intercept-only</strong> model, saved as <code>bee_hive_mod</code> that effectively just calculate one coefficient, the grand mean of honey production in our data. The <strong>RSE</strong> for this model is really the same as the standard deviation of average honey production, hive-to-hive.</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="m3.html#cb84-1" aria-hidden="true" tabindex="-1"></a>bee_hive_mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(honey_avg_hive <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> honey_agg_hive)</span>
+<span id="cb84-2"><a href="m3.html#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bee_hive_mod)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = honey_avg_hive ~ 1, data = honey_agg_hive)

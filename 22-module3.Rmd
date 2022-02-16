@@ -798,12 +798,12 @@ honey_agg_hive <- honey %>%
 honey_agg_hive
 ```
 
-Once you have your `honey_agg_hive` dataset, use it to fit an **intercept-only** model, saved as `bee_hive` that effectively just calculate one coefficient, the grand mean of honey production in our data. The __RSE__ for this model is really the same as the standard deviation of average honey production, hive-to-hive.
+Once you have your `honey_agg_hive` dataset, use it to fit an **intercept-only** model, saved as `bee_hive_mod` that effectively just calculate one coefficient, the grand mean of honey production in our data. The __RSE__ for this model is really the same as the standard deviation of average honey production, hive-to-hive.
 
 
 ```{r varhth-solution, echo=T}
-bee_hive <- lm(honey_avg_hive ~ 1, data = honey_agg_hive)
-summary(bee_hive)
+bee_hive_mod <- lm(honey_avg_hive ~ 1, data = honey_agg_hive)
+summary(bee_hive_mod)
 
 # Notice that the RSE here is just the SD of the average honey production hive-to-hive
 sqrt(var(honey_agg_hive$honey_avg_hive))

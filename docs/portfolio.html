@@ -339,15 +339,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.2.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-6"><i class="fa fa-check"></i><b>13.2.1</b> Instructions</a></li>
 <li class="chapter" data-level="13.2.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance"><i class="fa fa-check"></i><b>13.2.2</b> Workshop attendance</a></li>
 </ul></li>
-<li class="chapter" data-level="13.3" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#module-check-ins"><i class="fa fa-check"></i><b>13.3</b> Module check-ins</a>
+<li class="chapter" data-level="13.3" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#writing-workshop"><i class="fa fa-check"></i><b>13.3</b> Writing workshop</a>
 <ul>
-<li class="chapter" data-level="13.3.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-7"><i class="fa fa-check"></i><b>13.3.1</b> Instructions</a></li>
+<li class="chapter" data-level="13.3.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance-1"><i class="fa fa-check"></i><b>13.3.1</b> Workshop attendance</a></li>
 </ul></li>
-<li class="chapter" data-level="13.4" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#team-up-activities"><i class="fa fa-check"></i><b>13.4</b> Team Up! activities</a></li>
-<li class="chapter" data-level="13.5" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#graduate-school-info-session"><i class="fa fa-check"></i><b>13.5</b> Graduate school info session</a></li>
-<li class="chapter" data-level="13.6" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#punctuation-art"><i class="fa fa-check"></i><b>13.6</b> Punctuation art</a>
+<li class="chapter" data-level="13.4" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#module-check-ins"><i class="fa fa-check"></i><b>13.4</b> Module check-ins</a>
 <ul>
-<li class="chapter" data-level="13.6.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.6.1</b> Instructions</a></li>
+<li class="chapter" data-level="13.4.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-7"><i class="fa fa-check"></i><b>13.4.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#team-up-activities"><i class="fa fa-check"></i><b>13.5</b> Team Up! activities</a></li>
+<li class="chapter" data-level="13.6" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#graduate-school-info-session"><i class="fa fa-check"></i><b>13.6</b> Graduate school info session</a></li>
+<li class="chapter" data-level="13.7" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#punctuation-art"><i class="fa fa-check"></i><b>13.7</b> Punctuation art</a>
+<ul>
+<li class="chapter" data-level="13.7.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.7.1</b> Instructions</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Modules</b></span></li>
@@ -731,7 +735,7 @@ Figure 6.1: Target figure for task 2a (your patch data will be different, though
 <div id="tibbles" class="section level6" number="6.5.3.3.2.1">
 <h6><span class="header-section-number">6.5.3.3.2.1</span> Tibbles</h6>
 <ul>
-<li><p><code>my_patch</code>, your ‘patch’ of strawberries, grown based on a <code>set.seed</code> that is the last THREE digits of your numeric student ID.</p></li>
+<li><p><code>my_patch</code>, your ‘patch’ of strawberries, grown based on using your <code>last3digplus</code> as the seed (created in the first part of the task).</p></li>
 <li><p><code>agg_patch</code>, starting with <code>my_patch</code>, group by <code>patch</code> and then summarize to create a new variable, <code>yield_avg_patch</code>.</p></li>
 <li><p><code>agg_int</code>, starting with <code>my_patch</code>, group by both <code>patch</code> and <code>treatment</code> and then summarize to create a new variable, <code>yield_avg_int</code> that is the average strawberry yield for each <code>patch</code> and <code>treatment</code> combination.</p></li>
 </ul>
@@ -1127,7 +1131,7 @@ Figure 6.3: Target second visualisation for task 5
 <div id="q-q-plots" class="section level4" number="6.5.9.3">
 <h4><span class="header-section-number">6.5.9.3</span> Q-Q plots</h4>
 <ul>
-<li>Create one final plot that creates a 2x2 figure with Q-Q plots for each simulation. You must determine what the distribution of a <em>p</em> value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of <em>p</em> values we have generated.</li>
+<li>Create one final plot that creates a 3x1 figure with Q-Q plots for each simulation. You must determine what the distribution of a <em>p</em> value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of <em>p</em> values we have generated.</li>
 </ul>
 <p>I have provided a template for the code, you just need to decide which quantile function to put where the XXXXXXX is now. (e.g., <code>qpois</code> is the quantile function for the Poisson distribution). Also adjust the caption with your authorship and add an appropriate figure caption.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="portfolio.html#cb10-1" aria-hidden="true" tabindex="-1"></a>pvals <span class="sc">%&gt;%</span> </span>

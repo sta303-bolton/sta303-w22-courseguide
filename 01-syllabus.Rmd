@@ -224,15 +224,23 @@ There are two special elements of assessment/grade calculation in this course th
 
 [^syllabus-3]: "Whaowhia te kete mātauranga" is a Māori proverb meaning "Fill up the basket of knowledge". Mātauranga is specifically traditional Māori knowledge. You can listen to the pronunciation here <https://www.massey.ac.nz/student-life/m%C4%81ori-at-massey/te-reo-m%C4%81ori-and-tikanga-resources/te-reo-m%C4%81ori-pronunciation-and-translations/whakatauk%C4%AB-m%C4%81ori-proverbs/>
 
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
 | Assessment            | Path A | Path B | STA1002 ONLY | Due dates                                                   |
-|-----------------------|-------:|-------:|-------------:|-------------------------------------------------------------|
-| Mini-portfolio        |      5 |      0 |            0 | Feb 3                                                       |
-| Portfolio             |     20 |     25 |           25 | Feb 7                                                       |
-| Mini-mixed assessment |      5 |      0 |            0 | Mar 9 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET)  |
-| Mixed assessment      |     20 |     25 |           25 | Mar 16 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) |
-| Final project         |     45 |     45 |           50 | Apr 7 (2% pt bonus) \| Apr 11 (no bonus)                    |
-| Knowledge basket      |      5 |      5 |            0 | Multiple                                                    |
-| Total                 |    100 |    100 |          100 |                                                             |
++=======================+=======:+=======:+=============:+=============================================================+
+| Mini-portfolio        | 5      | 0      | 0            | Feb 3                                                       |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Portfolio             | 20     | 25     | 25           | Feb 7                                                       |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Mini-mixed assessment | 5      | 0      | 0            | Mar 9 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET)  |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Mixed assessment      | 20     | 25     | 25           | Mar 16 (12-hour assessment window, 8:00 a.m.--8:00 p.m. ET) |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Final project         | 45     | 45     | 50           | Apr 7 (2% pt bonus) \| Apr 11 (no bonus)                    |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Knowledge basket      | 5      | 5      | 0            | Multiple                                                    |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
+| Total                 | 100    | 100    | 100          |                                                             |
++-----------------------+--------+--------+--------------+-------------------------------------------------------------+
 
 Everything [^syllabus-4] in STA303 is due at 3:03 p.m. ET
 
@@ -244,14 +252,21 @@ Note: All times in this course are in Eastern Time (Toronto time). Please note t
 
 The following components are guaranteed knowledge basket assessment options. Additional opportunities may be offered throughout the course (Team Up!, speaker series reflections, etc.)
 
++-----------------------------------------------------+---------+-----------------------------------------+
 | Assessment                                          | \%      | Due date                                |
-|-----------------------------------------------------|---------|-----------------------------------------|
++=====================================================+=========+=========================================+
 | Pre-knowledge check: completion                     | 0.5     | Jan 20                                  |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Pre-knowledge check: 80%+ or workshop               | 0.5     | Jan 20 (80%+ score) \| Feb 2 (workshop) |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Professional development task proposal              | 1       | Feb 3                                   |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Professional development task evidence & reflection | 3       | Mar 31                                  |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Writing & peer review (Create-Assess-Reflect) x 5   | 0.5 X 5 | Friday-Tuesday-Friday each Module       |
++-----------------------------------------------------+---------+-----------------------------------------+
 | Module check-in x 5                                 | 0.1 X 5 | Last Friday of each Module              |
++-----------------------------------------------------+---------+-----------------------------------------+
 
 ## Hours expectations
 
@@ -271,7 +286,7 @@ Plan to be doing 6--8 hours of work on STA303 each week. In a **two-week module*
 
 ## Marking concerns / regrade requests
 
-Any request to have an assessment remarked must be submitted to [the appropriate form](https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNE02UzJaMUNQM0Q2U0RTOUlJS1JMM1dCTC4u) on the Forms page on Quercus under the following conditions:
+Any request to have an assessment remarked must be submitted to [the appropriate form](https://q.utoronto.ca/courses/253305/pages/forms) on the Forms page on Quercus under the following conditions:
 
 -   **Wait** 24 hours after the release of grades. Use this time to go over any sample solutions and feedback, the instructions, and relevant course materials.
 
@@ -482,3 +497,4 @@ Writing not only helps you explain yourself to others, it can also be a fulfilli
 ### Course content is Accessible
 
 My intention is to make this course accessible as possible with captions for all video and audio and Quercus/course guide design that is easy for folks using screen readers to navigate. If there is something I could do differently in this area that would make your life easier and you're comfortable to tell me, please do! One thing I know isn't great but, regretfully, don't have the resources to change, is the 'quality assurance' of the autogenerated captions for videos. Please reach out on Piazza if you're ever unsure about something they say.
+

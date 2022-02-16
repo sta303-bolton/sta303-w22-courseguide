@@ -510,10 +510,10 @@ There are two special elements of assessment/grade calculation in this course th
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.20}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.07}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.07}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.12}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.54}}@{}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.13}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.52}}@{}}
 \toprule
 Assessment & Path A & Path B & STA1002 ONLY & Due dates \\
 \midrule
@@ -577,7 +577,7 @@ Plan to be doing 6--8 hours of work on STA303 each week. In a \textbf{two-week m
 \hypertarget{marking-concerns-regrade-requests}{%
 \section{Marking concerns / regrade requests}\label{marking-concerns-regrade-requests}}
 
-Any request to have an assessment remarked must be submitted to \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUNE02UzJaMUNQM0Q2U0RTOUlJS1JMM1dCTC4u}{the appropriate form} on the Forms page on Quercus under the following conditions:
+Any request to have an assessment remarked must be submitted to \href{https://q.utoronto.ca/courses/253305/pages/forms}{the appropriate form} on the Forms page on Quercus under the following conditions:
 
 \begin{itemize}
 \item
@@ -1872,7 +1872,7 @@ Write out the model formulation for the model that fits a fixed effect for treat
 
 \begin{itemize}
 \item
-  \texttt{my\_patch}, your `patch' of strawberries, grown based on a \texttt{set.seed} that is the last THREE digits of your numeric student ID.
+  \texttt{my\_patch}, your `patch' of strawberries, grown based on using your \texttt{last3digplus} as the seed (created in the first part of the task).
 \item
   \texttt{agg\_patch}, starting with \texttt{my\_patch}, group by \texttt{patch} and then summarize to create a new variable, \texttt{yield\_avg\_patch}.
 \item
@@ -2398,7 +2398,7 @@ sim_description <- tibble(sim = 1:4,
 \begin{itemize}
 \tightlist
 \item
-  Create one final plot that creates a 2x2 figure with Q-Q plots for each simulation. You must determine what the distribution of a \emph{p} value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of \emph{p} values we have generated.
+  Create one final plot that creates a 3x1 figure with Q-Q plots for each simulation. You must determine what the distribution of a \emph{p} value should be, WHEN THE NULL HYPOTHESIS IS TRUE, and compare it it to the distributions of \emph{p} values we have generated.
 \end{itemize}
 
 I have provided a template for the code, you just need to decide which quantile function to put where the XXXXXXX is now. (e.g., \texttt{qpois} is the quantile function for the Poisson distribution). Also adjust the caption with your authorship and add an appropriate figure caption.
@@ -3840,6 +3840,41 @@ If you didn't earn a full 1\% from the pre-knowledge quiz (either didn't score o
   A recording of the session will be posted later, for your reference, but watching that will NOT be eligible for points.
 \item
   You can do a \textbf{practice version} of the \href{https://q.utoronto.ca/courses/253305/quizzes/242031}{pre-knowledge check} as many times as you like. There is also commentary on some of the question after you submit.
+\end{itemize}
+
+\hypertarget{writing-workshop}{%
+\section{Writing workshop}\label{writing-workshop}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.39}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.61}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Writing workshop attendance and participation \\
+Type (Main, Mini or Basket) & Basket \\
+Value & 0.25\% for attendance AND survey \\
+Due & Attendance on February 16 and submission of survey by 3:03 p.m. on Friday, February 18 \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/245911}{Via Quercus surveys}
+
+Untimed, unlimited attempts \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{workshop-attendance-1}{%
+\subsection{Workshop attendance}\label{workshop-attendance-1}}
+
+\begin{itemize}
+\item
+  To `participate fully' you must attend \textbf{at least 75\% of a single 50-minute workshop} AND \textbf{complete the \href{https://q.utoronto.ca/courses/253305/quizzes/245911}{post-event survey}}.
+\item
+  Please arrive \textbf{on time}!~
+\item
+  You can come to both if you want (they will be the \emph{same content} though!) but \emph{cannot} double up on points or `share' attendance across the two.
+\item
+  A \textbf{recording} of the session will be posted later, for your reference, but watching that will NOT be eligible for points.
 \end{itemize}
 
 \hypertarget{module-check-ins}{%
@@ -7038,7 +7073,7 @@ Answer: C. You can't be nested and crossed for the same grouping variable. A ful
 This looks like:
 \[ y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}\]
 
-where \(y_{ijk}\) is the amount of honey produced (in grams) in the \(k^{th}\) month by the \(j^{th}\) hive while listening to song \(i\). Here, \(\mu\) is the grand mean of honey production, \(\alpha_i\) are the \(I\) fixed effects for \texttt{song} and \(b_j\) are the random effects for hive \(j\). \((\alpha b)_{ij}\) are the \(IJ\) interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. \((\alpha b)_{ij}\) is a random effect because any term involving a random effect must also be a random effect. \((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\), \(b_k \sim N(0, \sigma_b^2)\) and \(\epsilon_{ijk} \sim N(0, \sigma^2)\). All the random effects are mutually independent random variables.
+where \(y_{ijk}\) is the amount of honey produced (in grams) in the \(k^{th}\) month by the \(j^{th}\) hive while listening to song \(i\). Here, \(\mu\) is the grand mean of honey production, \(\alpha_i\) are the \(I\) fixed effects for \texttt{song} and \(b_j\) are the random effects for hive \(j\). \((\alpha b)_{ij}\) are the \(IJ\) interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. \((\alpha b)_{ij}\) is a random effect because any term involving a random effect must also be a random effect. \((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\), \(b_j \sim N(0, \sigma_b^2)\) and \(\epsilon_{ijk} \sim N(0, \sigma^2)\). All the random effects are mutually independent random variables.
 
 \hypertarget{fit-the-models}{%
 \subsubsection{Fit the models}\label{fit-the-models}}
@@ -7382,12 +7417,12 @@ Start by creating a new dataset called \texttt{honey\_agg\_hive}.
 ## 6 6               191.
 \end{verbatim}
 
-Once you have your \texttt{honey\_agg\_hive} dataset, use it to fit an \textbf{intercept-only} model, saved as \texttt{bee\_hive} that effectively just calculate one coefficient, the grand mean of honey production in our data. The \textbf{RSE} for this model is really the same as the standard deviation of average honey production, hive-to-hive.
+Once you have your \texttt{honey\_agg\_hive} dataset, use it to fit an \textbf{intercept-only} model, saved as \texttt{bee\_hive\_mod} that effectively just calculate one coefficient, the grand mean of honey production in our data. The \textbf{RSE} for this model is really the same as the standard deviation of average honey production, hive-to-hive.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{bee\_hive }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(honey\_avg\_hive }\SpecialCharTok{\textasciitilde{}} \DecValTok{1}\NormalTok{, }\AttributeTok{data =}\NormalTok{ honey\_agg\_hive)}
-\FunctionTok{summary}\NormalTok{(bee\_hive)}
+\NormalTok{bee\_hive\_mod }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(honey\_avg\_hive }\SpecialCharTok{\textasciitilde{}} \DecValTok{1}\NormalTok{, }\AttributeTok{data =}\NormalTok{ honey\_agg\_hive)}
+\FunctionTok{summary}\NormalTok{(bee\_hive\_mod)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -9155,13 +9190,16 @@ At the end of \textbf{16.4.5.6.5 Summary of all our calculated error variances:}
 Added a little more information AND some example code.
 
 Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=240} \\
+8 & Portfolio instructions & Task 2a)
+
+\sout{\mbox{\texttt{my\_patch}}, your `patch' of strawberries, grown based on a \mbox{\texttt{set.seed}} that is the last THREE digits of your numeric student ID.}
+
+\texttt{my\_patch}, your `patch' of strawberries, grown based on using your \texttt{last3digplus} as the seed (created in the first part of the task). \\
+9 & Portfolio instructions & Task 5: Q-Q plots should be 3x1 not 2x1.
+
+Piazza: \url{https://piazza.com/class/kx47tj4fmy65dg?cid=285} \\
 \bottomrule
 \end{longtable}
-
-+----+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ \textbar{}
-\textbar{} \textbar{} \textbar{} Piazza:~ \textbar{}
-\textbar{} \textbar{} \textbar{} \url{https://piazza.com/class/kx47tj4fmy65dg?cid=238} \textbar{}
-+----+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 \hypertarget{bits-and-pieces}{%
 \chapter{Bits and pieces}\label{bits-and-pieces}}
