@@ -248,7 +248,7 @@ __Notes__:
 
 This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
 
-Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you _can_, but this task/prompt can only be used once. I.e., if you do a punctiation art based component for your professional development, you cannot also submit this assessment.
+Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you _can_, but this task/prompt can only be used once. I.e., if you do a punctuation art based component for your professional development, you cannot also submit this assessment.
 
 #### Prompt
 
@@ -299,3 +299,228 @@ Submit the following:
 | **Task completion** | No submission OR instructions insufficiently satisfied. | Some appropriate work shown, but may be somewhat incomplete or irrelevant. | Prompt/instructions sufficiently satisfied. |
 +---------------------+---------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------+
 
+## Breathing exercise
+
+| **Information**                                        | **Note**                                            |
+|:-------------------------------------------------------|:----------------------------------------------------|
+| Name                                                   | Breathing exercise                                  |
+| Type (Main, Mini or Basket)                            | Basket                                              |
+| Value                                                  | 1%                                                  |
+| Due                                                    | `r oneperc`                                         |
+| Submission instructions                                | Submission: Via Quercus                             |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
+
+### Instructions
+
+This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
+
+Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you *can*, but this task/prompt can only be used once. I.e., if you do a `gganimate` breathing based component for your professional development, you cannot also submit this assessment.
+
+#### Prompt
+
+Use R to create a box breathing exercise GIF. Box breathing involves inhaling for 4 seconds, holding that breath for 4 seconds, exhaling for 4 seconds, holding for 4 seconds and then repeating as many times as desired.
+
+##### Background
+
+Breath like a Navy SEAL? [Checkout this interesting article about stress and breathing.](https://www.forbes.com/sites/nomanazish/2019/05/30/how-to-de-stress-in-5-minutes-or-less-according-to-a-navy-seal/?sh=7b2aad83046d)
+
+##### A note
+
+If focusing on breathing ends up making you feel anxious, or just isn't the appropriate choice for you and your body right now, remember that you can create this without necessarily having to use it AND that there are lots of other ways to earn your knowledge basket points.
+
+#### Examples
+
+Not created in R:
+
+```{r, echo=FALSE, fig.align='center', out.width="50%", fig.cap="Source: https://smho-smso.ca/emhc/stress-management-and-coping/deep-breathing/deep-belly-breathing/"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version. It is viewable at: https://smho-smso.ca/wp-content/uploads/2020/06/Four-square-breathing-EN.gif")
+} else {
+ knitr::include_graphics("https://smho-smso.ca/wp-content/uploads/2020/06/Four-square-breathing-EN.gif")
+}
+```
+
+```{r, echo=FALSE, fig.align='center', out.width="50%", fig.cap="Source: https://quietkit.com/box-breathing/"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version. It is viewable at: https://quietkit.com/img/box-breathing-4x-v03.gif")
+} else {
+ knitr::include_graphics("https://quietkit.com/img/box-breathing-4x-v03.gif")
+}
+```
+
+A few I whipped up on a Saturday evening:
+
+```{r, echo=FALSE, fig.align='center', out.width="50%", fig.cap="Expanding circle box breathing exercise, created by Prof. B with gganimate"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version.")
+} else {
+ knitr::include_graphics("images/assessments/breathing_circle.gif")
+}
+
+```
+
+```{r, echo=FALSE, fig.align='center', out.width="50%", fig.cap="Flying dots box brathing exercise, created by Prof. B with gganimate"}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output("There is a GIF in the web version.")
+} else {
+ knitr::include_graphics("images/assessments/box_dots.gif")
+}
+
+```
+
+#### Skills
+
+-   data simulation
+-   dynamic data visualization with `ggplot2` and `gganimate`
+
+#### Tips/links
+
+-   [gganimate website and tutorials](https://gganimate.com/articles/gganimate.html)
+
+    -   [Cheat sheet](https://ugoproto.github.io/ugo_r_doc/pdf/gganimate.pdf)
+
+    -   `transision_states` was the `gganimate` function I found particularly helpful.
+
+-   `theme_void()` removes all the background and axes labels, which is really helpful for creating an image like these.
+
+-   You can use `anim_save` to save the outputs as a GIF file.
+
+-   If you want to play with colour palettes, I like playing with <https://coolors.co/>
+
+    -   I used `scale_color_gradient()` for the circle (sets two colours, 'high' and 'low') and `scale_colour_gradientn()` in the GIF with the flying dots (4 colours transitioned between). [Here is the documentation for these functions.](https://ggplot2.tidyverse.org/reference/scale_gradient.html)
+
+#### Submission instructions
+
+Submit the following:
+
+-   **Commented** code that produces your breathing exercise (Rmd file)
+
+-   Your final activity output, as a GIF
+
+-   A PDF one-page description that:
+
+    -   introduces what your breathing exercise is and provides some background, and
+    -   provide a brief summary of the skills you learned or demonstrated in this task.
+
+-   If you would be willing to have your exercise shared with current/future students, please include at the end of your write-up "I give my permission for my breathing exercise to be shared [anonymously \| and credited to me, <name>]". Update the statement appropriately, e.g., *I give my permission for my* breathing exercise *to be shared and credited to me, Liza Bolton.*. If you have posted it on social media or a personal website, you're welcome to also provide that link.
+
+#### Rubric
+
+|                     | **Missing or insufficient** 0%                          | P**artial** 0.5%                                                           | **Complete** 1%                             |
+|---------------------|---------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------|
+| **Task completion** | No submission OR instructions insufficiently satisfied. | Some appropriate work shown, but may be somewhat incomplete or irrelevant. | Prompt/instructions sufficiently satisfied. |
+
+## Linear Mixed Models study guide
+
+| **Information**                                        | **Note**                                                                                                    |
+|:-------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|
+| Name                                                   | Linear Mixed Models study guide                                                                             |
+| Type (Main, Mini or Basket)                            | Basket                                                                                                      |
+| Value                                                  | 1%                                                                                                          |
+| Due                                                    | `r lmm_sg`                                                                                                  |
+| Submission instructions                                | Submission: [Via Quercus discussion boards](https://q.utoronto.ca/courses/253305/discussion_topics/1637653) |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                         |
+
+### Instructions
+
+Create a 1 page **study guide** for the topic of **Linear Mixed Models** (Module 3), as relevant to this course, and post it to the class discussion board for this topic.
+
+#### Considerations
+
+-   What are the main topics, key vocabulary, useful equations?
+
+-   That page can be whatever size you choose, but I'd suggest aiming for a printable letter or legal size page.
+
+-   The guide should be submitted in PDF format. PLEASE. I'm always disappointed by the number of folks that miss this instruction.
+
+-   Text should *NOT* be hand-written, in order to ensure it is readable for your classmates.
+
+-   While not a requirement, consider how you can make your guide most accessible. Image descriptions? Easy to read fonts? Colour-blindness friendly?
+
+#### Rubric
+
+|                     | **Missing or insufficient** 0%                          | P**artial** 0.5%                                                                      | **Complete** 1%                             |
+|---------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------|
+| **Task completion** | No submission OR instructions insufficiently satisfied. | Some appropriate work shown, but may be somewhat incorrect, incomplete or irrelevant. | Prompt/instructions sufficiently satisfied. |
+
+## Generalized Linear Models study guide
+
+| **Information**                                        | **Note**                                                                                                    |
+|:-------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|
+| Name                                                   | Generalized Linear Models study guide                                                                       |
+| Type (Main, Mini or Basket)                            | Basket                                                                                                      |
+| Value                                                  | 1%                                                                                                          |
+| Due                                                    | `r glm_sg`                                                                                                  |
+| Submission instructions                                | Submission: [Via Quercus discussion boards](https://q.utoronto.ca/courses/253305/discussion_topics/1637653) |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                         |
+
+### Instructions
+
+Create a 1 page **study guide** for the topic of **Generalized Linear Models (Module 4)**, as relevant to this course, and post it to the class discussion board for this topic.
+
+#### Considerations
+
+-   What are the main topics, key vocabulary, useful equations?
+
+-   That page can be whatever size you choose, but I'd suggest aiming for a printable letter or legal size page.
+
+-   The guide should be submitted in PDF format. PLEASE. I'm always disappointed by the number of folks that miss this instruction.
+
+-   Text should *NOT* be hand-written, in order to ensure it is readable for your classmates.
+
+-   While not a requirement, consider how you can make your guide most accessible. Image descriptions? Easy to read fonts? Colour-blindness friendly?
+
+#### Rubric
+
+|                     | **Missing or insufficient** 0%                          | P**artial** 0.5%                                                                      | **Complete** 1%                             |
+|---------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------|
+| **Task completion** | No submission OR instructions insufficiently satisfied. | Some appropriate work shown, but may be somewhat incorrect, incomplete or irrelevant. | Prompt/instructions sufficiently satisfied. |
+
+## Hack your class workshop attendance and reflection
+
+| **Information**                                        | **Note**                                            |
+|:-------------------------------------------------------|:----------------------------------------------------|
+| Name                                                   | Hack your class workshop attendance and reflection  |
+| Type (Main, Mini or Basket)                            | Basket                                              |
+| Value                                                  | 0.25%                                               |
+| Due                                                    | Friday March 4, 2022 at 3:03 p.m. ET                |
+| Submission instructions                                | Submission: [Via Quercus](https://q.utoronto.ca/courses/253305/quizzes/246839)  |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
+
+### Instructions
+
+> *Reboot and refresh after Reading Week! Register for this workshop to learn how to Hack Your Class to get the absolute most out of your experience.*
+
+To earn these points, you must:
+
+-   [Register for](https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEO8qoh9ZPflFrDrfXlNN6AdUMVZKSE9BNUpTQThWMVdaUEtCSEFSMUdPMS4u) and attend at least 75% of the 'Hack your class' workshop, hosted by the Department of Statistical Sciences on **Thursday March 3rd, 10 to 11am ET**, AND
+
+-   Submit a short reflection about what you learned from the session on Quercus by 3:03 p.m. ET on Friday, March 4.
+
+
+[__Register here]__(https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEO8qoh9ZPflFrDrfXlNN6AdUMVZKSE9BNUpTQThWMVdaUEtCSEFSMUdPMS4u) 
+
+## Sports analytics workshop attendance and reflection
+
+| **Information**                                        | **Note**                                            |
+|:-------------------------------------------------------|:----------------------------------------------------|
+| Name                                                   | Sports analytics workshop attendance and reflection |
+| Type (Main, Mini or Basket)                            | Basket                                              |
+| Value                                                  | 0.25%                                               |
+| Due                                                    | Friday March 4, 2022 at 3:03 p.m. ET                |
+| Submission instructions                                | Submission: [Via Quercus](https://q.utoronto.ca/courses/253305/quizzes/246815)  |
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
+
+### Instructions
+
+To earn these points, you must:
+
+-   [Register for](https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEKx69ygcj5RNkthLmVGb1A5UNkJUQlRYNFhUTTVPRThRMVJINTVSRE1ZVi4u) and attend at least 75% of the 'Sports analytics' workshop, hosted by the Department of Statistical Sciences (and led by two former STA303 students!) on **Thursday, March 3, from noon to 1:30 p.m. ET**, AND
+
+-   Submit a short reflection about what you learned from the session on Quercus by 3:03 p.m. ET on Friday, March 4.
+
+[__Register here__](https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEKx69ygcj5RNkthLmVGb1A5UNkJUQlRYNFhUTTVPRThRMVJINTVSRE1ZVi4u)

@@ -353,6 +353,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="13.7.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.7.1</b> Instructions</a></li>
 </ul></li>
+<li class="chapter" data-level="13.8" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#breathing-exercise"><i class="fa fa-check"></i><b>13.8</b> Breathing exercise</a>
+<ul>
+<li class="chapter" data-level="13.8.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-9"><i class="fa fa-check"></i><b>13.8.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.9" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#linear-mixed-models-study-guide"><i class="fa fa-check"></i><b>13.9</b> Linear Mixed Models study guide</a>
+<ul>
+<li class="chapter" data-level="13.9.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-10"><i class="fa fa-check"></i><b>13.9.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.10" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#generalized-linear-models-study-guide"><i class="fa fa-check"></i><b>13.10</b> Generalized Linear Models study guide</a>
+<ul>
+<li class="chapter" data-level="13.10.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-11"><i class="fa fa-check"></i><b>13.10.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.11" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#hack-your-class-workshop-attendance-and-reflection"><i class="fa fa-check"></i><b>13.11</b> Hack your class workshop attendance and reflection</a>
+<ul>
+<li class="chapter" data-level="13.11.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-12"><i class="fa fa-check"></i><b>13.11.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.12" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#sports-analytics-workshop-attendance-and-reflection"><i class="fa fa-check"></i><b>13.12</b> Sports analytics workshop attendance and reflection</a>
+<ul>
+<li class="chapter" data-level="13.12.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-13"><i class="fa fa-check"></i><b>13.12.1</b> Instructions</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>Modules</b></span></li>
 <li class="chapter" data-level="14" data-path="m1.html"><a href="m1.html"><i class="fa fa-check"></i><b>14</b> Module 1</a>
@@ -542,7 +562,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="21.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#code-to-generate-course-art"><i class="fa fa-check"></i><b>21.1</b> Code to generate course art</a></li>
 <li class="chapter" data-level="21.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#matrices"><i class="fa fa-check"></i><b>21.2</b> M1 supporting information on matrices (not assessed)</a>
 <ul>
-<li class="chapter" data-level="21.2.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#background"><i class="fa fa-check"></i><b>21.2.1</b> Background</a></li>
+<li class="chapter" data-level="21.2.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#background-1"><i class="fa fa-check"></i><b>21.2.1</b> Background</a></li>
 <li class="chapter" data-level="21.2.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#example-3"><i class="fa fa-check"></i><b>21.2.2</b> Example</a></li>
 <li class="chapter" data-level="21.2.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#regression-not-classic-actually-anova-no-intercept"><i class="fa fa-check"></i><b>21.2.3</b> Regression NOT classic, actually ANOVA! (no intercept)</a></li>
 <li class="chapter" data-level="21.2.4" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#further-reading-if-you-want-it"><i class="fa fa-check"></i><b>21.2.4</b> Further reading (if you want it)</a></li>
@@ -750,10 +770,10 @@ Figure 6.1: Target figure for task 2a (your patch data will be different, though
 </div>
 <div id="numeric-values" class="section level6" number="6.5.3.3.2.3">
 <h6><span class="header-section-number">6.5.3.3.2.3</span> Numeric values</h6>
-<p>Note: These should not be hardcoded (i.e., not <code>var_patch = 3</code>), they should make use of your models</p>
+<p>Note: These should not be hardcoded (i.e., not <code>var_patch = 3</code>), they should make use of your models.</p>
 <ul>
-<li><p><code>var_patch</code>, variance in average yield patch-to-patch</p></li>
-<li><p><code>var_int</code>, residual variance after fitting the version of this linear model with this most parameters</p></li>
+<li><p><code>var_patch</code>, variance in average yield explained by patch-to-patch variance, after accounting for fixed effects and other sources.</p></li>
+<li><p><code>var_int</code>, residual variance after fitting the version of this linear model with the most parameters</p></li>
 <li><p><code>var_ab</code>, variance in yield explained by the interaction between patch and treatment, after accounting for the fixed effects and other sources.</p></li>
 </ul>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="portfolio.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example tibble</span></span>

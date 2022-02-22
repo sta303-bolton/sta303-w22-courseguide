@@ -183,11 +183,11 @@ Write out the model formulation for the model that fits a fixed effect for treat
 
 ###### Numeric values
 
-Note: These should not be hardcoded (i.e., not `var_patch = 3`), they should make use of your models
+Note: These should not be hardcoded (i.e., not `var_patch = 3`), they should make use of your models.
 
-- `var_patch`, variance in average yield patch-to-patch
+- `var_patch`, variance in average yield explained by patch-to-patch variance, after accounting for fixed effects and other sources.
 
-- `var_int`, residual variance after fitting the version of this linear model with this most parameters
+- `var_int`, residual variance after fitting the version of this linear model with the most parameters
 
 - `var_ab`, variance in yield explained by the interaction between patch and treatment, after accounting for the fixed effects and other sources.
 

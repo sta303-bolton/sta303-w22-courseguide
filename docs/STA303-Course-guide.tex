@@ -510,10 +510,10 @@ There are two special elements of assessment/grade calculation in this course th
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.20}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.08}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.08}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.13}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.52}}@{}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.07}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.07}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.12}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.54}}@{}}
 \toprule
 Assessment & Path A & Path B & STA1002 ONLY & Due dates \\
 \midrule
@@ -1894,13 +1894,13 @@ Write out the model formulation for the model that fits a fixed effect for treat
 \hypertarget{numeric-values}{%
 \subparagraph{Numeric values}\label{numeric-values}}
 
-Note: These should not be hardcoded (i.e., not \texttt{var\_patch\ =\ 3}), they should make use of your models
+Note: These should not be hardcoded (i.e., not \texttt{var\_patch\ =\ 3}), they should make use of your models.
 
 \begin{itemize}
 \item
-  \texttt{var\_patch}, variance in average yield patch-to-patch
+  \texttt{var\_patch}, variance in average yield explained by patch-to-patch variance, after accounting for fixed effects and other sources.
 \item
-  \texttt{var\_int}, residual variance after fitting the version of this linear model with this most parameters
+  \texttt{var\_int}, residual variance after fitting the version of this linear model with the most parameters
 \item
   \texttt{var\_ab}, variance in yield explained by the interaction between patch and treatment, after accounting for the fixed effects and other sources.
 \end{itemize}
@@ -3997,7 +3997,7 @@ Late submissions, accommodations, and extension policy & No late submissions, ac
 
 This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
 
-Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you \emph{can}, but this task/prompt can only be used once. I.e., if you do a punctiation art based component for your professional development, you cannot also submit this assessment.
+Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you \emph{can}, but this task/prompt can only be used once. I.e., if you do a punctuation art based component for your professional development, you cannot also submit this assessment.
 
 \hypertarget{prompt-2}{%
 \subsubsection{Prompt}\label{prompt-2}}
@@ -4088,6 +4088,322 @@ Submit the following:
 \textbf{Task completion} & No submission OR instructions insufficiently satisfied. & Some appropriate work shown, but may be somewhat incomplete or irrelevant. & Prompt/instructions sufficiently satisfied. \\
 \bottomrule
 \end{longtable}
+
+\hypertarget{breathing-exercise}{%
+\section{Breathing exercise}\label{breathing-exercise}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.51}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.49}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Breathing exercise \\
+Type (Main, Mini or Basket) & Basket \\
+Value & 1\% \\
+Due & Friday, April 8, 2022 at 3:03 p.m. ET \\
+Submission instructions & Submission: Via Quercus \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-9}{%
+\subsection{Instructions}\label{instructions-9}}
+
+This is a self-contained mini-code and communication activity. It can be submitted anytime before the due date.
+
+Note: If you like this idea and want to build it out further into your professional development task, or an aspect of it, you \emph{can}, but this task/prompt can only be used once. I.e., if you do a \texttt{gganimate} breathing based component for your professional development, you cannot also submit this assessment.
+
+\hypertarget{prompt-3}{%
+\subsubsection{Prompt}\label{prompt-3}}
+
+Use R to create a box breathing exercise GIF. Box breathing involves inhaling for 4 seconds, holding that breath for 4 seconds, exhaling for 4 seconds, holding for 4 seconds and then repeating as many times as desired.
+
+\hypertarget{background}{%
+\paragraph{Background}\label{background}}
+
+Breath like a Navy SEAL? \href{https://www.forbes.com/sites/nomanazish/2019/05/30/how-to-de-stress-in-5-minutes-or-less-according-to-a-navy-seal/?sh=7b2aad83046d}{Checkout this interesting article about stress and breathing.}
+
+\hypertarget{a-note}{%
+\paragraph{A note}\label{a-note}}
+
+If focusing on breathing ends up making you feel anxious, or just isn't the appropriate choice for you and your body right now, remember that you can create this without necessarily having to use it AND that there are lots of other ways to earn your knowledge basket points.
+
+\hypertarget{examples-7}{%
+\subsubsection{Examples}\label{examples-7}}
+
+Not created in R:
+
+There is a GIF in the web version. It is viewable at: \url{https://smho-smso.ca/wp-content/uploads/2020/06/Four-square-breathing-EN.gif}
+
+There is a GIF in the web version. It is viewable at: \url{https://quietkit.com/img/box-breathing-4x-v03.gif}
+
+A few I whipped up on a Saturday evening:
+
+There is a GIF in the web version.
+
+There is a GIF in the web version.
+
+\hypertarget{skills-1}{%
+\subsubsection{Skills}\label{skills-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  data simulation
+\item
+  dynamic data visualization with \texttt{ggplot2} and \texttt{gganimate}
+\end{itemize}
+
+\hypertarget{tipslinks}{%
+\subsubsection{Tips/links}\label{tipslinks}}
+
+\begin{itemize}
+\item
+  \href{https://gganimate.com/articles/gganimate.html}{gganimate website and tutorials}
+
+  \begin{itemize}
+  \item
+    \href{https://ugoproto.github.io/ugo_r_doc/pdf/gganimate.pdf}{Cheat sheet}
+  \item
+    \texttt{transision\_states} was the \texttt{gganimate} function I found particularly helpful.
+  \end{itemize}
+\item
+  \texttt{theme\_void()} removes all the background and axes labels, which is really helpful for creating an image like these.
+\item
+  You can use \texttt{anim\_save} to save the outputs as a GIF file.
+\item
+  If you want to play with colour palettes, I like playing with \url{https://coolors.co/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    I used \texttt{scale\_color\_gradient()} for the circle (sets two colours, `high' and `low') and \texttt{scale\_colour\_gradientn()} in the GIF with the flying dots (4 colours transitioned between). \href{https://ggplot2.tidyverse.org/reference/scale_gradient.html}{Here is the documentation for these functions.}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{submission-instructions-3}{%
+\subsubsection{Submission instructions}\label{submission-instructions-3}}
+
+Submit the following:
+
+\begin{itemize}
+\item
+  \textbf{Commented} code that produces your breathing exercise (Rmd file)
+\item
+  Your final activity output, as a GIF
+\item
+  A PDF one-page description that:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    introduces what your breathing exercise is and provides some background, and
+  \item
+    provide a brief summary of the skills you learned or demonstrated in this task.
+  \end{itemize}
+\item
+  If you would be willing to have your exercise shared with current/future students, please include at the end of your write-up ``I give my permission for my breathing exercise to be shared {[}anonymously \textbar{} and credited to me, {]}.'' Update the statement appropriately, e.g., \emph{I give my permission for my} breathing exercise \emph{to be shared and credited to me, Liza Bolton.}. If you have posted it on social media or a personal website, you're welcome to also provide that link.
+\end{itemize}
+
+\hypertarget{rubric-5}{%
+\subsubsection{Rubric}\label{rubric-5}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.11}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.29}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.38}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.23}}@{}}
+\toprule
+& \textbf{Missing or insufficient} 0\% & P\textbf{artial} 0.5\% & \textbf{Complete} 1\% \\
+\midrule
+\endhead
+\textbf{Task completion} & No submission OR instructions insufficiently satisfied. & Some appropriate work shown, but may be somewhat incomplete or irrelevant. & Prompt/instructions sufficiently satisfied. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{linear-mixed-models-study-guide}{%
+\section{Linear Mixed Models study guide}\label{linear-mixed-models-study-guide}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.34}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.66}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Linear Mixed Models study guide \\
+Type (Main, Mini or Basket) & Basket \\
+Value & 1\% \\
+Due & Tuesday, March 15, 2022 at 3:03 p.m ET \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/discussion_topics/1637653}{Via Quercus discussion boards} \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-10}{%
+\subsection{Instructions}\label{instructions-10}}
+
+Create a 1 page \textbf{study guide} for the topic of \textbf{Linear Mixed Models} (Module 3), as relevant to this course, and post it to the class discussion board for this topic.
+
+\hypertarget{considerations}{%
+\subsubsection{Considerations}\label{considerations}}
+
+\begin{itemize}
+\item
+  What are the main topics, key vocabulary, useful equations?
+\item
+  That page can be whatever size you choose, but I'd suggest aiming for a printable letter or legal size page.
+\item
+  The guide should be submitted in PDF format. PLEASE. I'm always disappointed by the number of folks that miss this instruction.
+\item
+  Text should \emph{NOT} be hand-written, in order to ensure it is readable for your classmates.
+\item
+  While not a requirement, consider how you can make your guide most accessible. Image descriptions? Easy to read fonts? Colour-blindness friendly?
+\end{itemize}
+
+\hypertarget{rubric-6}{%
+\subsubsection{Rubric}\label{rubric-6}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.10}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.27}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.41}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.21}}@{}}
+\toprule
+& \textbf{Missing or insufficient} 0\% & P\textbf{artial} 0.5\% & \textbf{Complete} 1\% \\
+\midrule
+\endhead
+\textbf{Task completion} & No submission OR instructions insufficiently satisfied. & Some appropriate work shown, but may be somewhat incorrect, incomplete or irrelevant. & Prompt/instructions sufficiently satisfied. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{generalized-linear-models-study-guide}{%
+\section{Generalized Linear Models study guide}\label{generalized-linear-models-study-guide}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.34}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.66}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Generalized Linear Models study guide \\
+Type (Main, Mini or Basket) & Basket \\
+Value & 1\% \\
+Due & Tuesday, March 15, 2022 at 3:03 p.m ET \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/discussion_topics/1637653}{Via Quercus discussion boards} \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-11}{%
+\subsection{Instructions}\label{instructions-11}}
+
+Create a 1 page \textbf{study guide} for the topic of \textbf{Generalized Linear Models (Module 4)}, as relevant to this course, and post it to the class discussion board for this topic.
+
+\hypertarget{considerations-1}{%
+\subsubsection{Considerations}\label{considerations-1}}
+
+\begin{itemize}
+\item
+  What are the main topics, key vocabulary, useful equations?
+\item
+  That page can be whatever size you choose, but I'd suggest aiming for a printable letter or legal size page.
+\item
+  The guide should be submitted in PDF format. PLEASE. I'm always disappointed by the number of folks that miss this instruction.
+\item
+  Text should \emph{NOT} be hand-written, in order to ensure it is readable for your classmates.
+\item
+  While not a requirement, consider how you can make your guide most accessible. Image descriptions? Easy to read fonts? Colour-blindness friendly?
+\end{itemize}
+
+\hypertarget{rubric-7}{%
+\subsubsection{Rubric}\label{rubric-7}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.10}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.27}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.41}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.21}}@{}}
+\toprule
+& \textbf{Missing or insufficient} 0\% & P\textbf{artial} 0.5\% & \textbf{Complete} 1\% \\
+\midrule
+\endhead
+\textbf{Task completion} & No submission OR instructions insufficiently satisfied. & Some appropriate work shown, but may be somewhat incorrect, incomplete or irrelevant. & Prompt/instructions sufficiently satisfied. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{hack-your-class-workshop-attendance-and-reflection}{%
+\section{Hack your class workshop attendance and reflection}\label{hack-your-class-workshop-attendance-and-reflection}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.51}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.49}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Hack your class workshop attendance and reflection \\
+Type (Main, Mini or Basket) & Basket \\
+Value & 0.25\% \\
+Due & Friday March 4, 2022 at 3:03 p.m. ET \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/246839}{Via Quercus} \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-12}{%
+\subsection{Instructions}\label{instructions-12}}
+
+\begin{quote}
+\emph{Reboot and refresh after Reading Week! Register for this workshop to learn how to Hack Your Class to get the absolute most out of your experience.}
+\end{quote}
+
+To earn these points, you must:
+
+\begin{itemize}
+\item
+  \href{https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEO8qoh9ZPflFrDrfXlNN6AdUMVZKSE9BNUpTQThWMVdaUEtCSEFSMUdPMS4u}{Register for} and attend at least 75\% of the `Hack your class' workshop, hosted by the Department of Statistical Sciences on \textbf{Thursday March 3rd, 10 to 11am ET}, AND
+\item
+  Submit a short reflection about what you learned from the session on Quercus by 3:03 p.m. ET on Friday, March 4.
+\end{itemize}
+
+{[}\_\_Register here{]}\_\_(\url{https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEO8qoh9ZPflFrDrfXlNN6AdUMVZKSE9BNUpTQThWMVdaUEtCSEFSMUdPMS4u})
+
+\hypertarget{sports-analytics-workshop-attendance-and-reflection}{%
+\section{Sports analytics workshop attendance and reflection}\label{sports-analytics-workshop-attendance-and-reflection}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.51}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.49}}@{}}
+\toprule
+\textbf{Information} & \textbf{Note} \\
+\midrule
+\endhead
+Name & Sports analytics workshop attendance and reflection \\
+Type (Main, Mini or Basket) & Basket \\
+Value & 0.25\% \\
+Due & Friday March 4, 2022 at 3:03 p.m. ET \\
+Submission instructions & Submission: \href{https://q.utoronto.ca/courses/253305/quizzes/246815}{Via Quercus} \\
+Late submissions, accommodations, and extension policy & No late submissions, accommodations, or extensions. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{instructions-13}{%
+\subsection{Instructions}\label{instructions-13}}
+
+To earn these points, you must:
+
+\begin{itemize}
+\item
+  \href{https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEKx69ygcj5RNkthLmVGb1A5UNkJUQlRYNFhUTTVPRThRMVJINTVSRE1ZVi4u}{Register for} and attend at least 75\% of the `Sports analytics' workshop, hosted by the Department of Statistical Sciences (and led by two former STA303 students!) on \textbf{Thursday, March 3, from noon to 1:30 p.m. ET}, AND
+\item
+  Submit a short reflection about what you learned from the session on Quercus by 3:03 p.m. ET on Friday, March 4.
+\end{itemize}
+
+\href{https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEKx69ygcj5RNkthLmVGb1A5UNkJUQlRYNFhUTTVPRThRMVJINTVSRE1ZVi4u}{\textbf{Register here}}
 
 \hypertarget{part-modules}{%
 \part*{Modules}\label{part-modules}}
@@ -6648,8 +6964,8 @@ The two longer horizontal lines in this graph represent \(\alpha_{basic}\) and \
 
 \begin{figure}
 \centering
-\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-82-1.pdf}
-\caption{\label{fig:unnamed-chunk-82}\emph{Figure: Visual representation of the equation for this data}}
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-86-1.pdf}
+\caption{\label{fig:unnamed-chunk-86}\emph{Figure: Visual representation of the equation for this data}}
 \end{figure}
 
 Now, this probably looks a little different to how you've been writing models, but I hope it makes sense as describing the data that we're interested in.
@@ -7045,7 +7361,7 @@ She left you some data that she thinks proves this. While the sample size isn't 
 
 We've actually made an interaction plot for our data. There is a function in the core \texttt{stats} package that also does this for us.
 
-\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-90-1.pdf}
+\includegraphics{STA303-Course-guide_files/figure-latex/unnamed-chunk-94-1.pdf}
 
 \textbf{Question: What has us worried about the independence assumption if we were just going to do regression as usual?}
 
@@ -9256,8 +9572,8 @@ ggsave(paste0(course_code, "-base.png"), width = 24, height = 2)
 \hypertarget{matrices}{%
 \section{M1 supporting information on matrices (not assessed)}\label{matrices}}
 
-\hypertarget{background}{%
-\subsection{Background}\label{background}}
+\hypertarget{background-1}{%
+\subsection{Background}\label{background-1}}
 
 \hypertarget{some-true-things-about-matrices}{%
 \subsubsection{Some true things about matrices}\label{some-true-things-about-matrices}}
