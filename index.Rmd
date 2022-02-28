@@ -11,13 +11,16 @@ biblio-style: apalike
 link-citations: yes
 geometry: margin=2cm
 urlcolor: blue
-description: "This is a course for STA303: Methods of Data Analysis II at the University of Toronto"
+description: "This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto"
 ---
 
-```{r, include=FALSE}
+```{r, include=FALSE, message = FALSE}
 library(knitr)
 #source("links.R", local = knit_global())
 sys.source("links.R", envir = knit_global())
+knitr::opts_chunk$set(cache=TRUE)
+library(palmerpenguins)
+library(tidyverse)
 ```
 
 # How to use this course guide
@@ -48,4 +51,4 @@ Tutoring companies do not have any right to suggest they are associated with thi
 
 ## Contributors
 
-Big thanks to Amin Banihashemi, Sonia Markes, Ian Richter, Dongyang (Dawn) Yang, Kevin Zhang, and Rob Zimmerman for their contributions to this course guide.
+Big thanks to Amin Banihashemi and Ian Richter for their contributions to this course guide.

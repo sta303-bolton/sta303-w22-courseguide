@@ -1,1 +1,7 @@
-# Module 5
+# Module 5 {#m5}
+
+::: {.yellowbox data-latex=""}
+WARNING: This chapter is still in draft form.  
+Materials for March 21--April 1, 2022.
+:::
+

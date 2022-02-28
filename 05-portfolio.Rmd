@@ -464,7 +464,7 @@ pval_test4 <- interpret_pval("0.05", 7)
 
 __p value function test 1:__ `r pval_test1`
 
-__p value function test 2:__`r pval_test2`
+__p value function test 2:__ `r pval_test2`
 
 __p value function test 3:__ `r pval_test3`
 

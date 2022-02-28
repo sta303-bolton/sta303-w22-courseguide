@@ -45,9 +45,9 @@ pd_prop = "Thursday, February 3, 2022 at 3:03 p.m. ET"
 
 pd_evidence = "Thursday, March 31, 2022 at 3:03 p.m. ET"
 
-mini_mixed = "Wednesday, March 9, 2022; assessment window from 8:00 a.m. ET - 8:00 p.m. ET"
+mini_mixed = "Wednesday, March 9, 2022; assessment window from 8:00 a.m. ET to 8:00 p.m. ET"
 
-mixed = "Wednesday, March 16, 2022; assessment window from 8:00 a.m. ET - 8:00 p.m. ET"
+mixed = "Wednesday, March 16, 2022; assessment window from 8:00 a.m. ET to 8:00 p.m. ET"
 
 final_project = "Thursday, April 7, 2022 at 3:03 p.m. ET for 2% pt bonus. Submission accepted until Monday, April 11, 2022 at 3:03 p.m."
 
@@ -84,6 +84,12 @@ m3_a = "Tuesday, February 15, 2022 at 3:03 p.m ET"
 m3_r = "Friday, February 18, 2022 at 3:03 p.m ET"
 
 m3_link = "https://q.utoronto.ca/courses/253305/assignments/782398"
+
+m4_c = "Friday, March 04, 2022 at 3:03 p.m ET"
+m4_a = "Tuesday, March 08, 2022 at 3:03 p.m ET"
+m4_r = "Friday, March 11, 2022 at 3:03 p.m ET"
+
+m4_link = "https://q.utoronto.ca/courses/253305/assignments/782399"
 
 # m1_link =
 

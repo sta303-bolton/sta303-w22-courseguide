@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>17 Module 4 | STA303: Methods of Data Analysis II</title>
+  <meta name="description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="17 Module 4 | STA303: Methods of Data Analysis II" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="17 Module 4 | STA303: Methods of Data Analysis II" />
+  
+  <meta name="twitter:description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
+  
+
+<meta name="author" content="Prof. Liza Bolton" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="m3.html"/>
+<link rel="next" href="m5.html"/>
+<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STA303: Methods of Data Analysis II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> How to use this course guide</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#communication-policy-reminder"><i class="fa fa-check"></i><b>1.1</b> Communication policy reminder</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#intellectual-property-statement"><i class="fa fa-check"></i><b>1.2</b> Intellectual property statement</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#tutoring-companies"><i class="fa fa-check"></i><b>1.2.1</b> Tutoring companies</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i><b>1.3</b> Contributors</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i><b>2</b> Syllabus</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="syllabus.html"><a href="syllabus.html#course-information"><i class="fa fa-check"></i><b>2.1</b> Course information</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="syllabus.html"><a href="syllabus.html#course-description"><i class="fa fa-check"></i><b>2.1.1</b> Course description</a></li>
+<li class="chapter" data-level="2.1.2" data-path="syllabus.html"><a href="syllabus.html#class-times"><i class="fa fa-check"></i><b>2.1.2</b> Class times</a></li>
+<li class="chapter" data-level="2.1.3" data-path="syllabus.html"><a href="syllabus.html#materials"><i class="fa fa-check"></i><b>2.1.3</b> Materials</a></li>
+<li class="chapter" data-level="2.1.4" data-path="syllabus.html"><a href="syllabus.html#teaching-team"><i class="fa fa-check"></i><b>2.1.4</b> Teaching team</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="syllabus.html"><a href="syllabus.html#land-acknowledgment"><i class="fa fa-check"></i><b>2.2</b> Land acknowledgment</a></li>
+<li class="chapter" data-level="2.3" data-path="syllabus.html"><a href="syllabus.html#prerequisites"><i class="fa fa-check"></i><b>2.3</b> Prerequisites</a></li>
+<li class="chapter" data-level="2.4" data-path="syllabus.html"><a href="syllabus.html#course-format-and-organization"><i class="fa fa-check"></i><b>2.4</b> Course format and organization</a></li>
+<li class="chapter" data-level="2.5" data-path="syllabus.html"><a href="syllabus.html#learning-objectives"><i class="fa fa-check"></i><b>2.5</b> Learning objectives</a></li>
+<li class="chapter" data-level="2.6" data-path="syllabus.html"><a href="syllabus.html#textbooks"><i class="fa fa-check"></i><b>2.6</b> Textbooks</a></li>
+<li class="chapter" data-level="2.7" data-path="syllabus.html"><a href="syllabus.html#computing-and-minimum-technical-requirements"><i class="fa fa-check"></i><b>2.7</b> Computing and minimum technical requirements</a></li>
+<li class="chapter" data-level="2.8" data-path="syllabus.html"><a href="syllabus.html#course-outline"><i class="fa fa-check"></i><b>2.8</b> Course outline</a></li>
+<li class="chapter" data-level="2.9" data-path="syllabus.html"><a href="syllabus.html#assessments"><i class="fa fa-check"></i><b>2.9</b> Assessments</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="syllabus.html"><a href="syllabus.html#knowledge-basket"><i class="fa fa-check"></i><b>2.9.1</b> Knowledge basket</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="syllabus.html"><a href="syllabus.html#hours-expectations"><i class="fa fa-check"></i><b>2.10</b> Hours expectations</a></li>
+<li class="chapter" data-level="2.11" data-path="syllabus.html"><a href="syllabus.html#marking-concerns-regrade-requests"><i class="fa fa-check"></i><b>2.11</b> Marking concerns / regrade requests</a></li>
+<li class="chapter" data-level="2.12" data-path="syllabus.html"><a href="syllabus.html#missed-work-policies"><i class="fa fa-check"></i><b>2.12</b> Missed work policies</a>
+<ul>
+<li class="chapter" data-level="2.12.1" data-path="syllabus.html"><a href="syllabus.html#exceptions"><i class="fa fa-check"></i><b>2.12.1</b> Exceptions</a></li>
+<li class="chapter" data-level="2.12.2" data-path="syllabus.html"><a href="syllabus.html#important-notes"><i class="fa fa-check"></i><b>2.12.2</b> IMPORTANT NOTES</a></li>
+</ul></li>
+<li class="chapter" data-level="2.13" data-path="syllabus.html"><a href="syllabus.html#communication-policy"><i class="fa fa-check"></i><b>2.13</b> Communication policy</a></li>
+<li class="chapter" data-level="2.14" data-path="syllabus.html"><a href="syllabus.html#accommodations-and-accessibility"><i class="fa fa-check"></i><b>2.14</b> Accommodations and accessibility</a>
+<ul>
+<li class="chapter" data-level="2.14.1" data-path="syllabus.html"><a href="syllabus.html#accessibility-services"><i class="fa fa-check"></i><b>2.14.1</b> Accessibility services</a></li>
+<li class="chapter" data-level="2.14.2" data-path="syllabus.html"><a href="syllabus.html#religious-accommodation"><i class="fa fa-check"></i><b>2.14.2</b> Religious Accommodation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.15" data-path="syllabus.html"><a href="syllabus.html#recognized-study-groups"><i class="fa fa-check"></i><b>2.15</b> Recognized study groups</a></li>
+<li class="chapter" data-level="2.16" data-path="syllabus.html"><a href="syllabus.html#meet-to-complete"><i class="fa fa-check"></i><b>2.16</b> Meet to complete</a></li>
+<li class="chapter" data-level="2.17" data-path="syllabus.html"><a href="syllabus.html#feeling-distressed"><i class="fa fa-check"></i><b>2.17</b> Feeling distressed?</a></li>
+<li class="chapter" data-level="2.18" data-path="syllabus.html"><a href="syllabus.html#intellectual-property-statement-1"><i class="fa fa-check"></i><b>2.18</b> Intellectual property statement</a></li>
+<li class="chapter" data-level="2.19" data-path="syllabus.html"><a href="syllabus.html#academic-integrity"><i class="fa fa-check"></i><b>2.19</b> Academic integrity</a>
+<ul>
+<li class="chapter" data-level="2.19.1" data-path="syllabus.html"><a href="syllabus.html#plagiarism"><i class="fa fa-check"></i><b>2.19.1</b> Plagiarism</a></li>
+<li class="chapter" data-level="2.19.2" data-path="syllabus.html"><a href="syllabus.html#specific-advice-on-untimed-assessments"><i class="fa fa-check"></i><b>2.19.2</b> Specific advice on untimed assessments</a></li>
+<li class="chapter" data-level="2.19.3" data-path="syllabus.html"><a href="syllabus.html#rules-for-timed-assessments-e.g.-mixed-assessments"><i class="fa fa-check"></i><b>2.19.3</b> Rules for timed assessments (e.g., mixed assessments)</a></li>
+<li class="chapter" data-level="2.19.4" data-path="syllabus.html"><a href="syllabus.html#note-be-careful-about-private-tutoring-companies"><i class="fa fa-check"></i><b>2.19.4</b> NOTE: BE CAREFUL ABOUT PRIVATE TUTORING COMPANIES</a></li>
+</ul></li>
+<li class="chapter" data-level="2.20" data-path="syllabus.html"><a href="syllabus.html#course-design-principles"><i class="fa fa-check"></i><b>2.20</b> Course design principles</a>
+<ul>
+<li class="chapter" data-level="2.20.1" data-path="syllabus.html"><a href="syllabus.html#humans-learn-better-little-and-often-but-everyone-is-burnout-from-two-years-of-a-pandemic"><i class="fa fa-check"></i><b>2.20.1</b> Humans learn better ‘little and often’ but everyone is burnout from two years of a pandemic</a></li>
+<li class="chapter" data-level="2.20.2" data-path="syllabus.html"><a href="syllabus.html#writing-is-good-for-statisticians"><i class="fa fa-check"></i><b>2.20.2</b> Writing is good for statisticians</a></li>
+<li class="chapter" data-level="2.20.3" data-path="syllabus.html"><a href="syllabus.html#course-content-is-accessible"><i class="fa fa-check"></i><b>2.20.3</b> Course content is Accessible</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="start-here.html"><a href="start-here.html"><i class="fa fa-check"></i><b>3</b> Start here!</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="start-here.html"><a href="start-here.html#introductions"><i class="fa fa-check"></i><b>3.1</b> Introductions</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="start-here.html"><a href="start-here.html#professor-liza-bolton-instructor"><i class="fa fa-check"></i><b>3.1.1</b> Professor Liza Bolton, Instructor</a></li>
+<li class="chapter" data-level="3.1.2" data-path="start-here.html"><a href="start-here.html#amin-banihashemi-head-ta"><i class="fa fa-check"></i><b>3.1.2</b> Amin Banihashemi, Head TA</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="start-here.html"><a href="start-here.html#a-few-things-to-know-upfront"><i class="fa fa-check"></i><b>3.2</b> A few things to know upfront</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="start-here.html"><a href="start-here.html#students-joining-off-the-waitlist"><i class="fa fa-check"></i><b>3.2.1</b> Students joining off the waitlist</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="start-here.html"><a href="start-here.html#howthiscourseworks"><i class="fa fa-check"></i><b>3.3</b> How this course works</a></li>
+<li class="chapter" data-level="3.4" data-path="start-here.html"><a href="start-here.html#hours-expectations-1"><i class="fa fa-check"></i><b>3.4</b> Hours expectations</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="start-here.html"><a href="start-here.html#communication"><i class="fa fa-check"></i><b>3.4.1</b> Communication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="start-here.html"><a href="start-here.html#to-do-now"><i class="fa fa-check"></i><b>3.5</b> To do now</a></li>
+</ul></li>
+<li class="part"><span><b>Assessments overview</b></span></li>
+<li class="chapter" data-level="4" data-path="assessmentsoverview.html"><a href="assessmentsoverview.html"><i class="fa fa-check"></i><b>4</b> Assessment overview</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="assessmentsoverview.html"><a href="assessmentsoverview.html#graduate-student-modification-1002h"><i class="fa fa-check"></i><b>4.1</b> Graduate student modification (1002H)</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mini-portfolio.html"><a href="mini-portfolio.html"><i class="fa fa-check"></i><b>5</b> Mini-portfolio</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#general-instructions"><i class="fa fa-check"></i><b>5.1</b> General instructions</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#template"><i class="fa fa-check"></i><b>5.1.1</b> Template</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#submission-instructions"><i class="fa fa-check"></i><b>5.2</b> Submission instructions</a></li>
+<li class="chapter" data-level="5.3" data-path="mini-portfolio.html"><a href="mini-portfolio.html#cover-page"><i class="fa fa-check"></i><b>5.3</b> Cover page</a></li>
+<li class="chapter" data-level="5.4" data-path="mini-portfolio.html"><a href="mini-portfolio.html#introduction"><i class="fa fa-check"></i><b>5.4</b> Introduction</a></li>
+<li class="chapter" data-level="5.5" data-path="mini-portfolio.html"><a href="mini-portfolio.html#statistical-skills-sample"><i class="fa fa-check"></i><b>5.5</b> Statistical skills sample</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-1-setting-up-libraries"><i class="fa fa-check"></i><b>5.5.1</b> Task 1: Setting up libraries</a></li>
+<li class="chapter" data-level="5.5.2" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-2-visualizing-the-variance-of-a-binomial-random-variable-for-varying-proportions"><i class="fa fa-check"></i><b>5.5.2</b> Task 2: Visualizing the variance of a Binomial random variable for varying proportions</a></li>
+<li class="chapter" data-level="5.5.3" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-3-demonstrating-frequentist-confidence-intervals-as-long-run-probabilities-of-capturing-a-population-parameter"><i class="fa fa-check"></i><b>5.5.3</b> Task 3: Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter</a></li>
+<li class="chapter" data-level="5.5.4" data-path="mini-portfolio.html"><a href="mini-portfolio.html#task-4-investigating-whether-there-is-an-association-between-cgpa-and-sta3031002-students-correctly-answering-a-question-on-global-poverty-rates"><i class="fa fa-check"></i><b>5.5.4</b> Task 4: Investigating whether there is an association between cGPA and STA303/1002 students correctly answering a question on global poverty rates</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="mini-portfolio.html"><a href="mini-portfolio.html#writing-sample"><i class="fa fa-check"></i><b>5.6</b> Writing sample</a></li>
+<li class="chapter" data-level="5.7" data-path="mini-portfolio.html"><a href="mini-portfolio.html#reflection"><i class="fa fa-check"></i><b>5.7</b> Reflection</a></li>
+<li class="chapter" data-level="5.8" data-path="mini-portfolio.html"><a href="mini-portfolio.html#rubric"><i class="fa fa-check"></i><b>5.8</b> Rubric</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="portfolio.html"><a href="portfolio.html"><i class="fa fa-check"></i><b>6</b> Portfolio</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="portfolio.html"><a href="portfolio.html#general-instructions-1"><i class="fa fa-check"></i><b>6.1</b> General instructions</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="portfolio.html"><a href="portfolio.html#template-1"><i class="fa fa-check"></i><b>6.1.1</b> Template</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="portfolio.html"><a href="portfolio.html#submission-instructions-1"><i class="fa fa-check"></i><b>6.2</b> Submission instructions</a></li>
+<li class="chapter" data-level="6.3" data-path="portfolio.html"><a href="portfolio.html#cover-page-1"><i class="fa fa-check"></i><b>6.3</b> Cover page</a></li>
+<li class="chapter" data-level="6.4" data-path="portfolio.html"><a href="portfolio.html#introduction-1"><i class="fa fa-check"></i><b>6.4</b> Introduction</a></li>
+<li class="chapter" data-level="6.5" data-path="portfolio.html"><a href="portfolio.html#statistical-skills-sample-1"><i class="fa fa-check"></i><b>6.5</b> Statistical skills sample</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="portfolio.html"><a href="portfolio.html#a-note-on-time-management."><i class="fa fa-check"></i><b>6.5.1</b> A note on time management.</a></li>
+<li class="chapter" data-level="6.5.2" data-path="portfolio.html"><a href="portfolio.html#task-1-setting-up-libraries-and-seed-value"><i class="fa fa-check"></i><b>6.5.2</b> Task 1: Setting up libraries and seed value</a></li>
+<li class="chapter" data-level="6.5.3" data-path="portfolio.html"><a href="portfolio.html#task-2a-return-to-statdew-valley-exploring-sources-of-variance-in-a-balanced-experimental-design-teaching-and-learning-world"><i class="fa fa-check"></i><b>6.5.3</b> Task 2a: Return to Statdew Valley: exploring sources of variance in a balanced experimental design (teaching and learning world)</a></li>
+<li class="chapter" data-level="6.5.4" data-path="portfolio.html"><a href="portfolio.html#task-2b-applying-linear-mixed-models-for-the-strawberry-data-practical-world"><i class="fa fa-check"></i><b>6.5.4</b> Task 2b: Applying linear mixed models for the strawberry data (practical world)</a></li>
+<li class="chapter" data-level="6.5.5" data-path="portfolio.html"><a href="portfolio.html#task-3a-building-a-confidence-interval-interpreter"><i class="fa fa-check"></i><b>6.5.5</b> Task 3a: Building a confidence interval interpreter</a></li>
+<li class="chapter" data-level="6.5.6" data-path="portfolio.html"><a href="portfolio.html#task-3b-building-a-p-value-interpreter"><i class="fa fa-check"></i><b>6.5.6</b> Task 3b: Building a p value interpreter</a></li>
+<li class="chapter" data-level="6.5.7" data-path="portfolio.html"><a href="portfolio.html#task-3c-user-instructions-and-disclaimer"><i class="fa fa-check"></i><b>6.5.7</b> Task 3c: User instructions and disclaimer</a></li>
+<li class="chapter" data-level="6.5.8" data-path="portfolio.html"><a href="portfolio.html#task-4-creating-a-reproducible-example-reprex"><i class="fa fa-check"></i><b>6.5.8</b> Task 4: Creating a reproducible example (reprex)</a></li>
+<li class="chapter" data-level="6.5.9" data-path="portfolio.html"><a href="portfolio.html#task-5-simulating-p-values"><i class="fa fa-check"></i><b>6.5.9</b> Task 5: Simulating p values</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="portfolio.html"><a href="portfolio.html#writing-sample-1"><i class="fa fa-check"></i><b>6.6</b> Writing sample</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="portfolio.html"><a href="portfolio.html#prompt-1"><i class="fa fa-check"></i><b>6.6.1</b> Prompt</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="portfolio.html"><a href="portfolio.html#reflection-1"><i class="fa fa-check"></i><b>6.7</b> Reflection</a></li>
+<li class="chapter" data-level="6.8" data-path="portfolio.html"><a href="portfolio.html#rubric-1"><i class="fa fa-check"></i><b>6.8</b> Rubric</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="mini-mixed-assessment.html"><a href="mini-mixed-assessment.html"><i class="fa fa-check"></i><b>7</b> Mini-mixed assessment</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="mini-mixed-assessment.html"><a href="mini-mixed-assessment.html#instructions-1"><i class="fa fa-check"></i><b>7.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="mixed-assessment.html"><a href="mixed-assessment.html"><i class="fa fa-check"></i><b>8</b> Mixed assessment</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="mixed-assessment.html"><a href="mixed-assessment.html#instructions-2"><i class="fa fa-check"></i><b>8.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="final-project.html"><a href="final-project.html"><i class="fa fa-check"></i><b>9</b> Final project</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="final-project.html"><a href="final-project.html#instructions-3"><i class="fa fa-check"></i><b>9.0.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="knowledge-basket-overview.html"><a href="knowledge-basket-overview.html"><i class="fa fa-check"></i><b>10</b> Knowledge basket overview</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="knowledge-basket-overview.html"><a href="knowledge-basket-overview.html#planning-and-tips"><i class="fa fa-check"></i><b>10.0.1</b> Planning and tips</a></li>
+<li class="chapter" data-level="10.0.2" data-path="knowledge-basket-overview.html"><a href="knowledge-basket-overview.html#examples"><i class="fa fa-check"></i><b>10.0.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html"><i class="fa fa-check"></i><b>11</b> Knowledge basket: Writing and peer feedback</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#writinggeneral"><i class="fa fa-check"></i><b>11.1</b> General instructions</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#create-phase"><i class="fa fa-check"></i><b>11.1.1</b> Create phase</a></li>
+<li class="chapter" data-level="11.1.2" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#assess-phase"><i class="fa fa-check"></i><b>11.1.2</b> Assess phase</a></li>
+<li class="chapter" data-level="11.1.3" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#reflect-phase"><i class="fa fa-check"></i><b>11.1.3</b> Reflect phase</a></li>
+<li class="chapter" data-level="11.1.4" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#general-instructions-2"><i class="fa fa-check"></i><b>11.1.4</b> General instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-1-writing-task"><i class="fa fa-check"></i><b>11.2</b> Module 1 writing task</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m1-instructions"><i class="fa fa-check"></i><b>11.2.1</b> M1 Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-2-writing-task"><i class="fa fa-check"></i><b>11.3</b> Module 2 writing task</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m2-instructions"><i class="fa fa-check"></i><b>11.3.1</b> M2 Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-3-writing-task"><i class="fa fa-check"></i><b>11.4</b> Module 3 writing task</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m3-instructions"><i class="fa fa-check"></i><b>11.4.1</b> M3 instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#module-4-writing-task"><i class="fa fa-check"></i><b>11.5</b> Module 4 writing task</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#m4-instructions"><i class="fa fa-check"></i><b>11.5.1</b> M4 instructions</a></li>
+<li class="chapter" data-level="11.5.2" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#rubric-2"><i class="fa fa-check"></i><b>11.5.2</b> Rubric</a></li>
+<li class="chapter" data-level="11.5.3" data-path="knowledge-basket-writing-and-peer-feedback.html"><a href="knowledge-basket-writing-and-peer-feedback.html#reference"><i class="fa fa-check"></i><b>11.5.3</b> Reference</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html"><i class="fa fa-check"></i><b>12</b> Knowledge basket: Professional development task</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#professional-development-proposal"><i class="fa fa-check"></i><b>12.1</b> Professional development proposal</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#instructions-4"><i class="fa fa-check"></i><b>12.1.1</b> Instructions</a></li>
+<li class="chapter" data-level="12.1.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#submission-requirements-1"><i class="fa fa-check"></i><b>12.1.2</b> Submission requirements</a></li>
+<li class="chapter" data-level="12.1.3" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#rubric-3"><i class="fa fa-check"></i><b>12.1.3</b> Rubric</a></li>
+<li class="chapter" data-level="12.1.4" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#checklist"><i class="fa fa-check"></i><b>12.1.4</b> Checklist</a></li>
+<li class="chapter" data-level="12.1.5" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#things-to-keep-in-minds-as-you-start-working-towards-your-professional-development-goal"><i class="fa fa-check"></i><b>12.1.5</b> Things to keep in minds as you start working towards your professional development goal</a></li>
+<li class="chapter" data-level="12.1.6" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#example-smart-goal"><i class="fa fa-check"></i><b>12.1.6</b> Example smart goal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#professional-development-evidence-and-reflection"><i class="fa fa-check"></i><b>12.2</b> Professional development evidence and reflection</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#templates"><i class="fa fa-check"></i><b>12.2.1</b> Templates</a></li>
+<li class="chapter" data-level="12.2.2" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#reflection-and-evidence-components"><i class="fa fa-check"></i><b>12.2.2</b> Reflection and evidence components</a></li>
+<li class="chapter" data-level="12.2.3" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#recommended-structure"><i class="fa fa-check"></i><b>12.2.3</b> Recommended structure</a></li>
+<li class="chapter" data-level="12.2.4" data-path="knowledge-basket-professional-development-task.html"><a href="knowledge-basket-professional-development-task.html#rubric-4"><i class="fa fa-check"></i><b>12.2.4</b> Rubric</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html"><i class="fa fa-check"></i><b>13</b> Knowledge basket: Other</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#getting-to-know-you-survey"><i class="fa fa-check"></i><b>13.1</b> ‘Getting to know you’ survey</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-5"><i class="fa fa-check"></i><b>13.1.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#pre-knowledge-check"><i class="fa fa-check"></i><b>13.2</b> Pre-knowledge check</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-6"><i class="fa fa-check"></i><b>13.2.1</b> Instructions</a></li>
+<li class="chapter" data-level="13.2.2" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance"><i class="fa fa-check"></i><b>13.2.2</b> Workshop attendance</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#writing-workshop"><i class="fa fa-check"></i><b>13.3</b> Writing workshop</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#workshop-attendance-1"><i class="fa fa-check"></i><b>13.3.1</b> Workshop attendance</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#module-check-ins"><i class="fa fa-check"></i><b>13.4</b> Module check-ins</a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-7"><i class="fa fa-check"></i><b>13.4.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#team-up-activities"><i class="fa fa-check"></i><b>13.5</b> Team Up! activities</a></li>
+<li class="chapter" data-level="13.6" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#graduate-school-info-session"><i class="fa fa-check"></i><b>13.6</b> Graduate school info session</a></li>
+<li class="chapter" data-level="13.7" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#punctuation-art"><i class="fa fa-check"></i><b>13.7</b> Punctuation art</a>
+<ul>
+<li class="chapter" data-level="13.7.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-8"><i class="fa fa-check"></i><b>13.7.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.8" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#breathing-exercise"><i class="fa fa-check"></i><b>13.8</b> Breathing exercise</a>
+<ul>
+<li class="chapter" data-level="13.8.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-9"><i class="fa fa-check"></i><b>13.8.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.9" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#linear-mixed-models-study-guide"><i class="fa fa-check"></i><b>13.9</b> Linear Mixed Models study guide</a>
+<ul>
+<li class="chapter" data-level="13.9.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-10"><i class="fa fa-check"></i><b>13.9.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.10" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#generalized-linear-models-study-guide"><i class="fa fa-check"></i><b>13.10</b> Generalized Linear Models study guide</a>
+<ul>
+<li class="chapter" data-level="13.10.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-11"><i class="fa fa-check"></i><b>13.10.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.11" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#hack-your-class-workshop-attendance-and-reflection"><i class="fa fa-check"></i><b>13.11</b> Hack your class workshop attendance and reflection</a>
+<ul>
+<li class="chapter" data-level="13.11.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-12"><i class="fa fa-check"></i><b>13.11.1</b> Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="13.12" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#sports-analytics-workshop-attendance-and-reflection"><i class="fa fa-check"></i><b>13.12</b> Sports analytics workshop attendance and reflection</a>
+<ul>
+<li class="chapter" data-level="13.12.1" data-path="knowledge-basket-other.html"><a href="knowledge-basket-other.html#instructions-13"><i class="fa fa-check"></i><b>13.12.1</b> Instructions</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>Modules</b></span></li>
+<li class="chapter" data-level="14" data-path="m1.html"><a href="m1.html"><i class="fa fa-check"></i><b>14</b> Module 1</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="m1.html"><a href="m1.html#learning-checklist"><i class="fa fa-check"></i><b>14.1</b> Learning checklist</a></li>
+<li class="chapter" data-level="14.2" data-path="m1.html"><a href="m1.html#instructor-information"><i class="fa fa-check"></i><b>14.2</b> Instructor information</a></li>
+<li class="chapter" data-level="14.3" data-path="m1.html"><a href="m1.html#upward-management-tips"><i class="fa fa-check"></i><b>14.3</b> Upward management tips</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="m1.html"><a href="m1.html#communicate-using-the-tools-your-manager-prefers"><i class="fa fa-check"></i><b>14.3.1</b> Communicate using the tools your manager prefers</a></li>
+<li class="chapter" data-level="14.3.2" data-path="m1.html"><a href="m1.html#write-good-emails-when-emails-are-appropriate"><i class="fa fa-check"></i><b>14.3.2</b> Write good emails (when emails are appropriate)</a></li>
+<li class="chapter" data-level="14.3.3" data-path="m1.html"><a href="m1.html#understand-your-managers-goals"><i class="fa fa-check"></i><b>14.3.3</b> Understand your manager’s goals</a></li>
+<li class="chapter" data-level="14.3.4" data-path="m1.html"><a href="m1.html#demonstrate-self-management-and-resilience-while-also-asking-for-help-and-flagging-problems-early."><i class="fa fa-check"></i><b>14.3.4</b> Demonstrate self-management and resilience while also asking for help and flagging problems early.</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="m1.html"><a href="m1.html#recap-of-linear-models"><i class="fa fa-check"></i><b>14.4</b> Recap of linear models</a>
+<ul>
+<li class="chapter" data-level="14.4.1" data-path="m1.html"><a href="m1.html#why-model"><i class="fa fa-check"></i><b>14.4.1</b> Why model?</a></li>
+<li class="chapter" data-level="14.4.2" data-path="m1.html"><a href="m1.html#linear-models"><i class="fa fa-check"></i><b>14.4.2</b> Linear models</a></li>
+<li class="chapter" data-level="14.4.3" data-path="m1.html"><a href="m1.html#linear-regression-assumptions"><i class="fa fa-check"></i><b>14.4.3</b> Linear regression assumptions</a></li>
+<li class="chapter" data-level="14.4.4" data-path="m1.html"><a href="m1.html#what-makes-it-a-linear-model"><i class="fa fa-check"></i><b>14.4.4</b> What makes it a <em>linear</em> model?</a></li>
+<li class="chapter" data-level="14.4.5" data-path="m1.html"><a href="m1.html#optional-refresher-reading"><i class="fa fa-check"></i><b>14.4.5</b> Optional refresher reading</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="m1.html"><a href="m1.html#the-data-for-module-1"><i class="fa fa-check"></i><b>14.5</b> The data for module 1</a>
+<ul>
+<li class="chapter" data-level="14.5.1" data-path="m1.html"><a href="m1.html#lets-meet-the-penguins"><i class="fa fa-check"></i><b>14.5.1</b> Let’s meet the penguins</a></li>
+<li class="chapter" data-level="14.5.2" data-path="m1.html"><a href="m1.html#the-variables"><i class="fa fa-check"></i><b>14.5.2</b> The variables</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="m1.html"><a href="m1.html#common-statistical-tests-as-linear-regression"><i class="fa fa-check"></i><b>14.6</b> Common statistical tests as linear regression</a>
+<ul>
+<li class="chapter" data-level="14.6.1" data-path="m1.html"><a href="m1.html#introduction-2"><i class="fa fa-check"></i><b>14.6.1</b> Introduction</a></li>
+<li class="chapter" data-level="14.6.2" data-path="m1.html"><a href="m1.html#one-sample-t-test"><i class="fa fa-check"></i><b>14.6.2</b> One-sample t-test</a></li>
+<li class="chapter" data-level="14.6.3" data-path="m1.html"><a href="m1.html#dummy-variables"><i class="fa fa-check"></i><b>14.6.3</b> Dummy variables</a></li>
+<li class="chapter" data-level="14.6.4" data-path="m1.html"><a href="m1.html#two-means"><i class="fa fa-check"></i><b>14.6.4</b> Two means</a></li>
+<li class="chapter" data-level="14.6.5" data-path="m1.html"><a href="m1.html#anova"><i class="fa fa-check"></i><b>14.6.5</b> ANOVA</a></li>
+<li class="chapter" data-level="14.6.6" data-path="m1.html"><a href="m1.html#credits"><i class="fa fa-check"></i><b>14.6.6</b> Credits</a></li>
+</ul></li>
+<li class="chapter" data-level="14.7" data-path="m1.html"><a href="m1.html#reproducible-examples-reprex"><i class="fa fa-check"></i><b>14.7</b> Reproducible examples (reprex)</a>
+<ul>
+<li class="chapter" data-level="14.7.1" data-path="m1.html"><a href="m1.html#what-is-a-reproducible-example"><i class="fa fa-check"></i><b>14.7.1</b> What is a reproducible example?</a></li>
+<li class="chapter" data-level="14.7.2" data-path="m1.html"><a href="m1.html#why-should-you-care-about-creating-reproducible-examples"><i class="fa fa-check"></i><b>14.7.2</b> Why should you care about creating reproducible examples?</a></li>
+<li class="chapter" data-level="14.7.3" data-path="m1.html"><a href="m1.html#watch-the-creator-of-the-reprex-package-explain-it"><i class="fa fa-check"></i><b>14.7.3</b> Watch the creator of the reprex package explain it</a></li>
+<li class="chapter" data-level="14.7.4" data-path="m1.html"><a href="m1.html#using-reprexes-on-piazza"><i class="fa fa-check"></i><b>14.7.4</b> Using reprexes on Piazza</a></li>
+</ul></li>
+<li class="chapter" data-level="14.8" data-path="m1.html"><a href="m1.html#previewskim"><i class="fa fa-check"></i><b>14.8</b> Reading strategy: previewing and skimming</a></li>
+<li class="chapter" data-level="14.9" data-path="m1.html"><a href="m1.html#getting-ahead-on-module-2"><i class="fa fa-check"></i><b>14.9</b> Getting ahead on Module 2</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="m2.html"><a href="m2.html"><i class="fa fa-check"></i><b>15</b> Module 2</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="m2.html"><a href="m2.html#learning-checklist-1"><i class="fa fa-check"></i><b>15.1</b> Learning checklist</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="m2.html"><a href="m2.html#key-functions"><i class="fa fa-check"></i><b>15.1.1</b> Key functions</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="m2.html"><a href="m2.html#introduction-to-module-2"><i class="fa fa-check"></i><b>15.2</b> Introduction to Module 2</a></li>
+<li class="chapter" data-level="15.3" data-path="m2.html"><a href="m2.html#readings-for-this-module"><i class="fa fa-check"></i><b>15.3</b> Readings for this module</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="m2.html"><a href="m2.html#r-for-data-science-story-time"><i class="fa fa-check"></i><b>15.3.1</b> R for Data Science (+ story time)</a></li>
+<li class="chapter" data-level="15.3.2" data-path="m2.html"><a href="m2.html#common-misconceptions-about-data-analysis-and-statistics"><i class="fa fa-check"></i><b>15.3.2</b> Common misconceptions about data analysis and statistics</a></li>
+<li class="chapter" data-level="15.3.3" data-path="m2.html"><a href="m2.html#to-predict-and-serve"><i class="fa fa-check"></i><b>15.3.3</b> To predict and serve?</a></li>
+<li class="chapter" data-level="15.3.4" data-path="m2.html"><a href="m2.html#science-isnt-broken"><i class="fa fa-check"></i><b>15.3.4</b> Science isn’t broken</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="m2.html"><a href="m2.html#data-wrangling-and-visualization"><i class="fa fa-check"></i><b>15.4</b> Data wrangling and visualization</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="m2.html"><a href="m2.html#tidy-data"><i class="fa fa-check"></i><b>15.4.1</b> Tidy data</a></li>
+<li class="chapter" data-level="15.4.2" data-path="m2.html"><a href="m2.html#student-grades-case-study"><i class="fa fa-check"></i><b>15.4.2</b> Student grades case study</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="m2.html"><a href="m2.html#ethical-professional-practice-for-statisticians"><i class="fa fa-check"></i><b>15.5</b> Ethical professional practice for statisticians</a>
+<ul>
+<li class="chapter" data-level="15.5.1" data-path="m2.html"><a href="m2.html#why-should-statisticians-be-ethical"><i class="fa fa-check"></i><b>15.5.1</b> Why should statisticians be ethical?</a></li>
+<li class="chapter" data-level="15.5.2" data-path="m2.html"><a href="m2.html#getting-data"><i class="fa fa-check"></i><b>15.5.2</b> Getting data</a></li>
+<li class="chapter" data-level="15.5.3" data-path="m2.html"><a href="m2.html#analyzingethics"><i class="fa fa-check"></i><b>15.5.3</b> Analyzing data</a></li>
+<li class="chapter" data-level="15.5.4" data-path="m2.html"><a href="m2.html#making-decisions-with-data"><i class="fa fa-check"></i><b>15.5.4</b> Making decisions with data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.6" data-path="m2.html"><a href="m2.html#statistical-communication"><i class="fa fa-check"></i><b>15.6</b> Statistical communication</a>
+<ul>
+<li class="chapter" data-level="15.6.1" data-path="m2.html"><a href="m2.html#prioritize-statistical-communication-as-part-of-your-toolbox"><i class="fa fa-check"></i><b>15.6.1</b> Prioritize statistical communication as part of your toolbox</a></li>
+<li class="chapter" data-level="15.6.2" data-path="m2.html"><a href="m2.html#what-do-statisticians-usually-write"><i class="fa fa-check"></i><b>15.6.2</b> What do statisticians usually <em>write</em>?</a></li>
+<li class="chapter" data-level="15.6.3" data-path="m2.html"><a href="m2.html#common-report-components"><i class="fa fa-check"></i><b>15.6.3</b> Common report components</a></li>
+<li class="chapter" data-level="15.6.4" data-path="m2.html"><a href="m2.html#paraphrasing"><i class="fa fa-check"></i><b>15.6.4</b> Paraphrasing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="m3.html"><a href="m3.html"><i class="fa fa-check"></i><b>16</b> Module 3</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="m3.html"><a href="m3.html#learning-checklist-2"><i class="fa fa-check"></i><b>16.1</b> Learning checklist</a></li>
+<li class="chapter" data-level="16.2" data-path="m3.html"><a href="m3.html#introduction-3"><i class="fa fa-check"></i><b>16.2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="16.2.1" data-path="m3.html"><a href="m3.html#how-deep-are-we-going-on-likelihoods"><i class="fa fa-check"></i><b>16.2.1</b> How deep are we going on likelihoods?</a></li>
+<li class="chapter" data-level="16.2.2" data-path="m3.html"><a href="m3.html#model-comparison-more-generally"><i class="fa fa-check"></i><b>16.2.2</b> Model comparison more generally</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="m3.html"><a href="m3.html#correlated-data"><i class="fa fa-check"></i><b>16.3</b> Correlated data</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="m3.html"><a href="m3.html#reading"><i class="fa fa-check"></i><b>16.3.1</b> Reading</a></li>
+<li class="chapter" data-level="16.3.2" data-path="m3.html"><a href="m3.html#key-vocabulary"><i class="fa fa-check"></i><b>16.3.2</b> Key vocabulary</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="m3.html"><a href="m3.html#statdew-valley-interactive"><i class="fa fa-check"></i><b>16.4</b> Statdew Valley interactive</a>
+<ul>
+<li class="chapter" data-level="16.4.1" data-path="m3.html"><a href="m3.html#welcome-to-statdew-valley"><i class="fa fa-check"></i><b>16.4.1</b> Welcome to Statdew Valley!</a></li>
+<li class="chapter" data-level="16.4.2" data-path="m3.html"><a href="m3.html#optional-create-your-16-bit-character"><i class="fa fa-check"></i><b>16.4.2</b> Optional: Create your 16 bit character</a></li>
+<li class="chapter" data-level="16.4.3" data-path="m3.html"><a href="m3.html#task-1-tomatoes-part-1"><i class="fa fa-check"></i><b>16.4.3</b> Task 1: Tomatoes (part 1)</a></li>
+<li class="chapter" data-level="16.4.4" data-path="m3.html"><a href="m3.html#task-1-tomatoes-part-2"><i class="fa fa-check"></i><b>16.4.4</b> Task 1: Tomatoes (part 2)</a></li>
+<li class="chapter" data-level="16.4.5" data-path="m3.html"><a href="m3.html#task-2-life-is-sweet-as-honey"><i class="fa fa-check"></i><b>16.4.5</b> Task 2: Life is sweet as honey</a></li>
+<li class="chapter" data-level="16.4.6" data-path="m3.html"><a href="m3.html#where-to-next"><i class="fa fa-check"></i><b>16.4.6</b> Where to next?</a></li>
+<li class="chapter" data-level="16.4.7" data-path="m3.html"><a href="m3.html#credits-1"><i class="fa fa-check"></i><b>16.4.7</b> Credits</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="m3.html"><a href="m3.html#vocal-pitch-case-study-part-1-lmms"><i class="fa fa-check"></i><b>16.5</b> Vocal pitch case study: Part 1 (LMMs)</a>
+<ul>
+<li class="chapter" data-level="16.5.1" data-path="m3.html"><a href="m3.html#motivation"><i class="fa fa-check"></i><b>16.5.1</b> Motivation</a></li>
+<li class="chapter" data-level="16.5.2" data-path="m3.html"><a href="m3.html#design-of-the-experiment"><i class="fa fa-check"></i><b>16.5.2</b> Design of the experiment</a></li>
+<li class="chapter" data-level="16.5.3" data-path="m3.html"><a href="m3.html#read-in-the-data-and-explore-it"><i class="fa fa-check"></i><b>16.5.3</b> Read in the data and explore it</a></li>
+<li class="chapter" data-level="16.5.4" data-path="m3.html"><a href="m3.html#recall-linear-regression-assumptions"><i class="fa fa-check"></i><b>16.5.4</b> Recall: Linear regression assumptions</a></li>
+</ul></li>
+<li class="chapter" data-level="16.6" data-path="m3.html"><a href="m3.html#linear-mixed-models"><i class="fa fa-check"></i><b>16.6</b> Linear mixed models</a>
+<ul>
+<li class="chapter" data-level="16.6.1" data-path="m3.html"><a href="m3.html#thoughts-on-plots-for-hierarchicalcorrelated-data-generally"><i class="fa fa-check"></i><b>16.6.1</b> Thoughts on plots for hierarchical/correlated data generally</a></li>
+<li class="chapter" data-level="16.6.2" data-path="m3.html"><a href="m3.html#assumptions-3"><i class="fa fa-check"></i><b>16.6.2</b> Assumptions</a></li>
+<li class="chapter" data-level="16.6.3" data-path="m3.html"><a href="m3.html#our-model-set-up"><i class="fa fa-check"></i><b>16.6.3</b> Our model set up</a></li>
+<li class="chapter" data-level="16.6.4" data-path="m3.html"><a href="m3.html#what-can-correlated-errors-look-like"><i class="fa fa-check"></i><b>16.6.4</b> What can correlated errors look like?</a></li>
+<li class="chapter" data-level="16.6.5" data-path="m3.html"><a href="m3.html#how-do-we-tell-r-which-situation-were-in"><i class="fa fa-check"></i><b>16.6.5</b> How do we tell R which situation we’re in?</a></li>
+<li class="chapter" data-level="16.6.6" data-path="m3.html"><a href="m3.html#additional-considerations"><i class="fa fa-check"></i><b>16.6.6</b> Additional considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="16.7" data-path="m3.html"><a href="m3.html#vocal-pitch-case-study-part-2"><i class="fa fa-check"></i><b>16.7</b> Vocal pitch case study: Part 2</a>
+<ul>
+<li class="chapter" data-level="16.7.1" data-path="m3.html"><a href="m3.html#modelling-individual-means-with-random-intercepts"><i class="fa fa-check"></i><b>16.7.1</b> Modelling individual means with random intercepts</a></li>
+<li class="chapter" data-level="16.7.2" data-path="m3.html"><a href="m3.html#scenario-random-slopes"><i class="fa fa-check"></i><b>16.7.2</b> Scenario random slopes</a></li>
+</ul></li>
+<li class="chapter" data-level="16.8" data-path="m3.html"><a href="m3.html#interactions-between-random-effects-and-fixed-effects"><i class="fa fa-check"></i><b>16.8</b> Interactions between random effects and fixed effects</a>
+<ul>
+<li class="chapter" data-level="16.8.1" data-path="m3.html"><a href="m3.html#model-formula-2"><i class="fa fa-check"></i><b>16.8.1</b> Model formula</a></li>
+<li class="chapter" data-level="16.8.2" data-path="m3.html"><a href="m3.html#how-would-we-fit-this-with-lmer"><i class="fa fa-check"></i><b>16.8.2</b> How would we fit this with <code>lmer</code>?</a></li>
+</ul></li>
+<li class="chapter" data-level="16.9" data-path="m3.html"><a href="m3.html#more-fixed-vs-random-effects-practice"><i class="fa fa-check"></i><b>16.9</b> More fixed vs random effects practice</a>
+<ul>
+<li class="chapter" data-level="16.9.1" data-path="m3.html"><a href="m3.html#answers"><i class="fa fa-check"></i><b>16.9.1</b> Answers</a></li>
+</ul></li>
+<li class="chapter" data-level="16.10" data-path="m3.html"><a href="m3.html#advice-for-polishing-your-writing"><i class="fa fa-check"></i><b>16.10</b> Advice for polishing your writing</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="m4.html"><a href="m4.html"><i class="fa fa-check"></i><b>17</b> Module 4</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="m4.html"><a href="m4.html#learning-checklist-3"><i class="fa fa-check"></i><b>17.1</b> Learning checklist</a></li>
+<li class="chapter" data-level="17.2" data-path="m4.html"><a href="m4.html#introduction-4"><i class="fa fa-check"></i><b>17.2</b> Introduction</a></li>
+<li class="chapter" data-level="17.3" data-path="m4.html"><a href="m4.html#distributions-recap"><i class="fa fa-check"></i><b>17.3</b> Distributions (recap)</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="m4.html"><a href="m4.html#sections-to-preview-and-skim"><i class="fa fa-check"></i><b>17.3.1</b> Sections to preview and skim</a></li>
+<li class="chapter" data-level="17.3.2" data-path="m4.html"><a href="m4.html#reading-guide"><i class="fa fa-check"></i><b>17.3.2</b> Reading guide</a></li>
+<li class="chapter" data-level="17.3.3" data-path="m4.html"><a href="m4.html#cheat-sheet-template"><i class="fa fa-check"></i><b>17.3.3</b> Cheat sheet template</a></li>
+</ul></li>
+<li class="chapter" data-level="17.4" data-path="m4.html"><a href="m4.html#ontario-covid-hospitalizations"><i class="fa fa-check"></i><b>17.4</b> Ontario COVID hospitalizations</a>
+<ul>
+<li class="chapter" data-level="17.4.1" data-path="m4.html"><a href="m4.html#creating-tables-in-r"><i class="fa fa-check"></i><b>17.4.1</b> Creating tables in R</a></li>
+<li class="chapter" data-level="17.4.2" data-path="m4.html"><a href="m4.html#creating-tables"><i class="fa fa-check"></i><b>17.4.2</b> Creating tables</a></li>
+<li class="chapter" data-level="17.4.3" data-path="m4.html"><a href="m4.html#calculations-with-tables"><i class="fa fa-check"></i><b>17.4.3</b> Calculations with tables</a></li>
+<li class="chapter" data-level="17.4.4" data-path="m4.html"><a href="m4.html#joint-probabilities"><i class="fa fa-check"></i><b>17.4.4</b> Joint probabilities</a></li>
+<li class="chapter" data-level="17.4.5" data-path="m4.html"><a href="m4.html#marginal-probabilities"><i class="fa fa-check"></i><b>17.4.5</b> Marginal probabilities</a></li>
+<li class="chapter" data-level="17.4.6" data-path="m4.html"><a href="m4.html#conditional-probabilities"><i class="fa fa-check"></i><b>17.4.6</b> Conditional probabilities</a></li>
+<li class="chapter" data-level="17.4.7" data-path="m4.html"><a href="m4.html#risk-and-odds"><i class="fa fa-check"></i><b>17.4.7</b> Risk and odds</a></li>
+<li class="chapter" data-level="17.4.8" data-path="m4.html"><a href="m4.html#hospitalization-risk-and-odds"><i class="fa fa-check"></i><b>17.4.8</b> Hospitalization risk and odds</a></li>
+<li class="chapter" data-level="17.4.9" data-path="m4.html"><a href="m4.html#odds-ratio-and-risk-ratios"><i class="fa fa-check"></i><b>17.4.9</b> Odds ratio and risk ratios</a></li>
+<li class="chapter" data-level="17.4.10" data-path="m4.html"><a href="m4.html#when-do-we-use-rr-vs-or"><i class="fa fa-check"></i><b>17.4.10</b> When do we use RR vs OR?</a></li>
+</ul></li>
+<li class="chapter" data-level="17.5" data-path="m4.html"><a href="m4.html#generalized-linear-models-glms"><i class="fa fa-check"></i><b>17.5</b> Generalized linear models (GLMs)</a>
+<ul>
+<li class="chapter" data-level="17.5.1" data-path="m4.html"><a href="m4.html#assumptions-of-the-generalized-linear-model"><i class="fa fa-check"></i><b>17.5.1</b> Assumptions of the Generalized Linear Model</a></li>
+<li class="chapter" data-level="17.5.2" data-path="m4.html"><a href="m4.html#components-of-a-generalized-linear-model"><i class="fa fa-check"></i><b>17.5.2</b> Components of a Generalized Linear Model</a></li>
+<li class="chapter" data-level="17.5.3" data-path="m4.html"><a href="m4.html#generalized-linear-models"><i class="fa fa-check"></i><b>17.5.3</b> Generalized Linear Models</a></li>
+<li class="chapter" data-level="17.5.4" data-path="m4.html"><a href="m4.html#ordinary-least-squares-again"><i class="fa fa-check"></i><b>17.5.4</b> Ordinary Least Squares again</a></li>
+</ul></li>
+<li class="chapter" data-level="17.6" data-path="m4.html"><a href="m4.html#binomial-or-logistic-regression"><i class="fa fa-check"></i><b>17.6</b> Binomial (or logistic) regression</a>
+<ul>
+<li class="chapter" data-level="17.6.1" data-path="m4.html"><a href="m4.html#case-study-challenger-disaster"><i class="fa fa-check"></i><b>17.6.1</b> Case study: Challenger disaster</a></li>
+</ul></li>
+<li class="chapter" data-level="17.7" data-path="m4.html"><a href="m4.html#glms-a-unifying-theory"><i class="fa fa-check"></i><b>17.7</b> GLMS: A unifying theory</a>
+<ul>
+<li class="chapter" data-level="17.7.1" data-path="m4.html"><a href="m4.html#optional-accompanying-video"><i class="fa fa-check"></i><b>17.7.1</b> Optional accompanying video</a></li>
+<li class="chapter" data-level="17.7.2" data-path="m4.html"><a href="m4.html#readings"><i class="fa fa-check"></i><b>17.7.2</b> Readings</a></li>
+<li class="chapter" data-level="17.7.3" data-path="m4.html"><a href="m4.html#recall"><i class="fa fa-check"></i><b>17.7.3</b> Recall</a></li>
+<li class="chapter" data-level="17.7.4" data-path="m4.html"><a href="m4.html#exponential-family-forms"><i class="fa fa-check"></i><b>17.7.4</b> Exponential family forms</a></li>
+<li class="chapter" data-level="17.7.5" data-path="m4.html"><a href="m4.html#canonical-link-functions"><i class="fa fa-check"></i><b>17.7.5</b> Canonical link functions</a></li>
+<li class="chapter" data-level="17.7.6" data-path="m4.html"><a href="m4.html#exponential-family-of-distributions"><i class="fa fa-check"></i><b>17.7.6</b> Exponential Family of Distributions</a></li>
+<li class="chapter" data-level="17.7.7" data-path="m4.html"><a href="m4.html#iteratively-re-weighted-least-squares-algorithm-a-sketch"><i class="fa fa-check"></i><b>17.7.7</b> Iteratively re-weighted least squares algorithm (a sketch)</a></li>
+<li class="chapter" data-level="17.7.8" data-path="m4.html"><a href="m4.html#a-quick-note-on-the-large-sample-distribution-of-hatbeta"><i class="fa fa-check"></i><b>17.7.8</b> A quick note on the large sample distribution of <span class="math inline">\(\hat{\beta}\)</span></a></li>
+<li class="chapter" data-level="17.7.9" data-path="m4.html"><a href="m4.html#deviance"><i class="fa fa-check"></i><b>17.7.9</b> Deviance</a></li>
+<li class="chapter" data-level="17.7.10" data-path="m4.html"><a href="m4.html#reading-logistic-regression"><i class="fa fa-check"></i><b>17.7.10</b> Reading: Logistic regression</a></li>
+<li class="chapter" data-level="17.7.11" data-path="m4.html"><a href="m4.html#logistic-regression-case-study-trying-to-lose-weight"><i class="fa fa-check"></i><b>17.7.11</b> Logistic regression case study: Trying to lose weight</a></li>
+</ul></li>
+<li class="chapter" data-level="17.8" data-path="m4.html"><a href="m4.html#poisson-regression-key-concepts-reading"><i class="fa fa-check"></i><b>17.8</b> Poisson regression key concepts + reading</a>
+<ul>
+<li class="chapter" data-level="17.8.1" data-path="m4.html"><a href="m4.html#reading-1"><i class="fa fa-check"></i><b>17.8.1</b> Reading</a></li>
+<li class="chapter" data-level="17.8.2" data-path="m4.html"><a href="m4.html#key-concepts-for-poisson-regression"><i class="fa fa-check"></i><b>17.8.2</b> Key concepts for Poisson regression</a></li>
+<li class="chapter" data-level="17.8.3" data-path="m4.html"><a href="m4.html#poisson-regression-case-studies-1-household-size-in-the-philippines-and-2-campus-crime"><i class="fa fa-check"></i><b>17.8.3</b> Poisson regression case studies: (1) Household size in the Philippines and (2) Campus crime</a></li>
+<li class="chapter" data-level="17.8.4" data-path="m4.html"><a href="m4.html#access-the-code-for-the-case-studies-optional"><i class="fa fa-check"></i><b>17.8.4</b> Access the code for the case studies (optional)</a></li>
+</ul></li>
+<li class="chapter" data-level="17.9" data-path="m4.html"><a href="m4.html#extra-for-the-curious-not-assessed"><i class="fa fa-check"></i><b>17.9</b> Extra for the curious (NOT assessed)</a>
+<ul>
+<li class="chapter" data-level="17.9.1" data-path="m4.html"><a href="m4.html#efficient-maximization-for-your-reference-only"><i class="fa fa-check"></i><b>17.9.1</b> Efficient maximization (for your reference only)</a></li>
+<li class="chapter" data-level="17.9.2" data-path="m4.html"><a href="m4.html#numerical-maximizers-for-your-reference-only"><i class="fa fa-check"></i><b>17.9.2</b> Numerical maximizers (for your reference only)</a></li>
+<li class="chapter" data-level="17.9.3" data-path="m4.html"><a href="m4.html#automatic-differentiation-for-your-reference-only"><i class="fa fa-check"></i><b>17.9.3</b> Automatic differentiation (for your reference only)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="m5.html"><a href="m5.html"><i class="fa fa-check"></i><b>18</b> Module 5</a></li>
+<li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
+<li class="part"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="19" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>19</b> Resources</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="resources.html"><a href="resources.html#course-tools-overview"><i class="fa fa-check"></i><b>19.1</b> Course tools overview</a>
+<ul>
+<li class="chapter" data-level="19.1.1" data-path="resources.html"><a href="resources.html#admin"><i class="fa fa-check"></i><b>19.1.1</b> Admin</a></li>
+</ul></li>
+<li class="chapter" data-level="19.2" data-path="resources.html"><a href="resources.html#using-rstudio-with-the-jupyterhub"><i class="fa fa-check"></i><b>19.2</b> Using RStudio with the JupyterHub</a></li>
+<li class="chapter" data-level="19.3" data-path="resources.html"><a href="resources.html#team-up"><i class="fa fa-check"></i><b>19.3</b> Team Up!</a>
+<ul>
+<li class="chapter" data-level="19.3.1" data-path="resources.html"><a href="resources.html#to-participate-in-these-activities-you-need"><i class="fa fa-check"></i><b>19.3.1</b> To participate in these activities, you <strong>need</strong>:</a></li>
+<li class="chapter" data-level="19.3.2" data-path="resources.html"><a href="resources.html#before-the-activity-you-should"><i class="fa fa-check"></i><b>19.3.2</b> <strong>Before</strong> the activity you should:</a></li>
+<li class="chapter" data-level="19.3.3" data-path="resources.html"><a href="resources.html#some-ruleslogistics"><i class="fa fa-check"></i><b>19.3.3</b> Some rules/logistics</a></li>
+<li class="chapter" data-level="19.3.4" data-path="resources.html"><a href="resources.html#team-up-instructions"><i class="fa fa-check"></i><b>19.3.4</b> Team Up! Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="19.4" data-path="resources.html"><a href="resources.html#zoomzoomzoomzoom"><i class="fa fa-check"></i><b>19.4</b> Zoom, Zoom, Zoom, Zoom…</a>
+<ul>
+<li class="chapter" data-level="19.4.1" data-path="resources.html"><a href="resources.html#make-sure-your-zoom-is-up-to-date"><i class="fa fa-check"></i><b>19.4.1</b> Make sure your Zoom is up to date</a></li>
+<li class="chapter" data-level="19.4.2" data-path="resources.html"><a href="resources.html#customize"><i class="fa fa-check"></i><b>19.4.2</b> Customize!</a></li>
+<li class="chapter" data-level="19.4.3" data-path="resources.html"><a href="resources.html#vpn"><i class="fa fa-check"></i><b>19.4.3</b> VPN</a></li>
+<li class="chapter" data-level="19.4.4" data-path="resources.html"><a href="resources.html#notes"><i class="fa fa-check"></i><b>19.4.4</b> Notes:</a></li>
+<li class="chapter" data-level="19.4.5" data-path="resources.html"><a href="resources.html#changing-your-profile-picture-on-zoom-and-quercus"><i class="fa fa-check"></i><b>19.4.5</b> Changing your profile picture on Zoom and Quercus</a></li>
+<li class="chapter" data-level="19.4.6" data-path="resources.html"><a href="resources.html#what-to-do-if-you-experience-technical-difficulties-during-class"><i class="fa fa-check"></i><b>19.4.6</b> What to do if you experience technical difficulties during class?</a></li>
+<li class="chapter" data-level="19.4.7" data-path="resources.html"><a href="resources.html#what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom"><i class="fa fa-check"></i><b>19.4.7</b> What to do if your instructor or TA is experiencing technical difficulties on Zoom</a></li>
+</ul></li>
+<li class="chapter" data-level="19.5" data-path="resources.html"><a href="resources.html#student-support-services-and-resources"><i class="fa fa-check"></i><b>19.5</b> Student support services and resources</a>
+<ul>
+<li class="chapter" data-level="19.5.1" data-path="resources.html"><a href="resources.html#mental-health-support"><i class="fa fa-check"></i><b>19.5.1</b> Mental health support</a></li>
+<li class="chapter" data-level="19.5.2" data-path="resources.html"><a href="resources.html#general-university-resources"><i class="fa fa-check"></i><b>19.5.2</b> General University resources</a></li>
+<li class="chapter" data-level="19.5.3" data-path="resources.html"><a href="resources.html#financial-support"><i class="fa fa-check"></i><b>19.5.3</b> Financial support</a></li>
+<li class="chapter" data-level="19.5.4" data-path="resources.html"><a href="resources.html#arts-science-covid19-faq"><i class="fa fa-check"></i><b>19.5.4</b> Arts &amp; Science COVID19 FAQ</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html"><i class="fa fa-check"></i><b>20</b> FAQs and Errata</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#frequently-asked-questions"><i class="fa fa-check"></i><b>20.1</b> Frequently asked questions</a>
+<ul>
+<li class="chapter" data-level="20.1.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#course-admin"><i class="fa fa-check"></i><b>20.1.1</b> Course admin</a></li>
+<li class="chapter" data-level="20.1.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#assessments-faq"><i class="fa fa-check"></i><b>20.1.2</b> Assessments FAQ</a></li>
+<li class="chapter" data-level="20.1.3" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#team-up-1"><i class="fa fa-check"></i><b>20.1.3</b> Team Up!</a></li>
+</ul></li>
+<li class="chapter" data-level="20.2" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#other"><i class="fa fa-check"></i><b>20.2</b> Other</a>
+<ul>
+<li class="chapter" data-level="20.2.1" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#references-2"><i class="fa fa-check"></i><b>20.2.1</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="20.3" data-path="faqs-and-errata.html"><a href="faqs-and-errata.html#errata"><i class="fa fa-check"></i><b>20.3</b> Errata</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html"><i class="fa fa-check"></i><b>21</b> Bits and pieces</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#code-to-generate-course-art"><i class="fa fa-check"></i><b>21.1</b> Code to generate course art</a></li>
+<li class="chapter" data-level="21.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#matrices"><i class="fa fa-check"></i><b>21.2</b> M1 supporting information on matrices (not assessed)</a>
+<ul>
+<li class="chapter" data-level="21.2.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#background-1"><i class="fa fa-check"></i><b>21.2.1</b> Background</a></li>
+<li class="chapter" data-level="21.2.2" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#example-3"><i class="fa fa-check"></i><b>21.2.2</b> Example</a></li>
+<li class="chapter" data-level="21.2.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#regression-not-classic-actually-anova-no-intercept"><i class="fa fa-check"></i><b>21.2.3</b> Regression NOT classic, actually ANOVA! (no intercept)</a></li>
+<li class="chapter" data-level="21.2.4" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#further-reading-if-you-want-it"><i class="fa fa-check"></i><b>21.2.4</b> Further reading (if you want it)</a></li>
+</ul></li>
+<li class="chapter" data-level="21.3" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#p-values-recap"><i class="fa fa-check"></i><b>21.3</b> <em>p</em> values (recap)</a>
+<ul>
+<li class="chapter" data-level="21.3.1" data-path="bits-and-pieces.html"><a href="bits-and-pieces.html#what-if-you-get-a-value-that-is-exactly-one-of-these-thresholds"><i class="fa fa-check"></i><b>21.3.1</b> What if you get a value that is exactly one of these thresholds?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="announcements-summary.html"><a href="announcements-summary.html"><i class="fa fa-check"></i><b>22</b> Announcements summary</a>
+<ul>
+<li class="chapter" data-level="22.0.1" data-path="announcements-summary.html"><a href="announcements-summary.html#studentrep"><i class="fa fa-check"></i><b>22.0.1</b> Looking for student representatives for STA303</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.statistics.utoronto.ca/" target="blank">Department of Statistical Sciences, The University of Toronto</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STA303: Methods of Data Analysis II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="m4" class="section level1" number="17">
+<h1><span class="header-section-number">17</span> Module 4</h1>
+<div class="yellowbox">
+<p>Materials for February 28–March 11, 2022.</p>
+</div>
+<div id="learning-checklist-3" class="section level2" number="17.1">
+<h2><span class="header-section-number">17.1</span> Learning checklist</h2>
+<ul>
+<li><p>Distributions</p>
+<ul>
+<li><p>Recognize a form of the probability density function for
+Bernoulli, binomial, Poisson, exponential, and gamma.</p></li>
+<li><p>Identify how changing values for a parameter affects the
+characteristics of the probability distribution.</p></li>
+<li><p>Identify the mean and variance for each distribution.</p></li>
+<li><p>Match the response for a study to a plausible random variable
+and provide reasons for ruling out other random variables.</p></li>
+<li><p>Match a histogram of sample data to plausible distributions.</p></li>
+</ul></li>
+<li><p>Odds, risks and logistic regression</p>
+<ul>
+<li><p>Create tables and calculate joint, marginal and conditional
+probabilities with them.</p></li>
+<li><p>Calculate odds, risks, odds ratios (OR), and risk ratios (RR).</p></li>
+<li><p>Understand why ORs and RRs are similar for rare outcomes.</p></li>
+<li><p>Interpret logistic regression output.</p></li>
+<li><p>Differentiate between logistic regression models with binary and
+binomial responses.</p></li>
+<li><p>Use the residual deviance to compare models, and to test for
+lack-of-fit when appropriate.</p></li>
+</ul></li>
+<li><p>GLM properties and unifying theory</p>
+<ul>
+<li><p>State the assumptions of GLMs.</p></li>
+<li><p>Identify appropriate modeling approaches to start with from a
+description of a study/data.</p></li>
+<li><p>Determine if a probability distribution can be expressed in
+one-parameter exponential family form.</p></li>
+<li><p>Identify canonical links for distributions of one-parameter
+exponential family form.</p></li>
+</ul></li>
+<li><p>Poisson regression</p>
+<ul>
+<li><p>Conduct Poisson regression and interpret the coefficients.</p></li>
+<li><p>Use and describes offsets, as appropriate.</p></li>
+<li><p>Check for overdispersion.</p></li>
+<li><p>Consider negative binomial, quasi-likelihoods, and zero-inflated
+extensions to Poisson regression.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="introduction-4" class="section level2" number="17.2">
+<h2><span class="header-section-number">17.2</span> Introduction</h2>
+<p>In this module, we will draw on knowledge of common distributions from
+your previous statistics courses, and then moving into logistics
+regression, and then broadening our horizons further with the family of
+models that come under the title of generalized linear models.</p>
+<p>This big picture: A key assumption of linear regression you’ve worked
+through so far is that is that the residuals should be normal. With our
+current tools, we can’t well account for binary data, probabilities
+(bounded [0, 1]), skewed distributions or even counts and in many cases.</p>
+</div>
+<div id="distributions-recap" class="section level2" number="17.3">
+<h2><span class="header-section-number">17.3</span> Distributions (recap)</h2>
+<p>Much of this section should be recap of things you’ve learned in second-year statistics courses.</p>
+<p><strong>Reading:</strong> <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html">Chapter
+3</a> (§
+3.3.1, 3.3.2, 3.3.4, 3.3.6, 3.4.2, 3.5) of Roback, P. &amp; Legler, J.
+Beyond Multiple Linear Regression. (2021).
+<a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a>.</p>
+<div id="sections-to-preview-and-skim" class="section level3" number="17.3.1">
+<h3><span class="header-section-number">17.3.1</span> Sections to preview and skim</h3>
+<ul>
+<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html#sec-binary">3.3.1 Binary Random
+Variable</a></li>
+<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html#sec-binomial">3.3.2 Binomial Random
+Variable</a></li>
+<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html#poisson-random-variable">3.3.6 Poisson Random
+Variable</a></li>
+<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html#exponential-random-variable">3.4.1 Exponential Random
+Variable</a></li>
+<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html#gamma-random-variable">3.4.2 Gamma Random
+Variable</a></li>
+</ul>
+<div id="recommended-revision" class="section level4" number="17.3.1.1">
+<h4><span class="header-section-number">17.3.1.1</span> Recommended revision</h4>
+<ul>
+<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-distthry.html#distributions-used-in-testing">3.5 Distributions Used in
+Testing</a></li>
+<li>Honestly, all of Chapter 3 is a great resource for revising these
+distributions.</li>
+</ul>
+</div>
+</div>
+<div id="reading-guide" class="section level3" number="17.3.2">
+<h3><span class="header-section-number">17.3.2</span> Reading guide</h3>
+<p>Try to answer the following for the selected distributions:</p>
+<ul>
+<li>What is the probability distribution function?</li>
+<li>What is/are the parameter(s)?</li>
+<li>How do changes to the the parameter(s) effect the response?</li>
+<li>What are the <strong>mean</strong> and <strong>variance</strong>?</li>
+<li>What values can your response variable take?</li>
+<li>When might you use this distribution? Come up with an example.</li>
+<li>What R code can you use to explore the density of this distribution?</li>
+<li>Can you simulate the distribution? Play with the parameters for
+yourself.</li>
+</ul>
+</div>
+<div id="cheat-sheet-template" class="section level3" number="17.3.3">
+<h3><span class="header-section-number">17.3.3</span> Cheat sheet template</h3>
+<p>I’ve made a template for a ‘cheat sheet’ on which you can take these
+notes/play with code. You can pull it on the <a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=rstudio%2F">JupyterHub with this
+link</a>.
+From your Home directory, you will need to navigate to
+<code>sta303-w22-activities -&gt; m4</code>. There are several Rmd you can play with
+in this file. The one for this activity is: <code>1A dist-cheat-sheet.Rmd</code>.</p>
+</div>
+</div>
+<div id="ontario-covid-hospitalizations" class="section level2" number="17.4">
+<h2><span class="header-section-number">17.4</span> Ontario COVID hospitalizations</h2>
+<p>Suppose you’re interested in hospitalizations by age group in Ontario
+due to COVID. This table also shows the estimated population in each age
+group.</p>
+<p>This data is old, it was retrieved from
+<a href="https://www.publichealthontario.ca/en/data-and-analysis/infectious-disease/covid-19-data-surveillance/covid-19-data-tool?tab=ageSex" class="uri">https://www.publichealthontario.ca/en/data-and-analysis/infectious-disease/covid-19-data-surveillance/covid-19-data-tool?tab=ageSex</a>
+on 2021-02-28.</p>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-137">Table 17.1: </span>COVID-19 hospitalizations in Ontario, by age group
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Age
+</th>
+<th style="text-align:right;">
+Hospitalizations
+</th>
+<th style="text-align:right;">
+Population
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+0 to 09
+</td>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:right;">
+1518527
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10 to 19
+</td>
+<td style="text-align:right;">
+92
+</td>
+<td style="text-align:right;">
+1617937
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+20 to 29
+</td>
+<td style="text-align:right;">
+402
+</td>
+<td style="text-align:right;">
+2100175
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+30 to 39
+</td>
+<td style="text-align:right;">
+668
+</td>
+<td style="text-align:right;">
+2056056
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+40 to 49
+</td>
+<td style="text-align:right;">
+1010
+</td>
+<td style="text-align:right;">
+1876585
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+50 to 59
+</td>
+<td style="text-align:right;">
+1932
+</td>
+<td style="text-align:right;">
+2060937
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+60 to 69
+</td>
+<td style="text-align:right;">
+2714
+</td>
+<td style="text-align:right;">
+1795047
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+70 to 79
+</td>
+<td style="text-align:right;">
+3151
+</td>
+<td style="text-align:right;">
+1159898
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+80 to 89
+</td>
+<td style="text-align:right;">
+3354
+</td>
+<td style="text-align:right;">
+539715
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+90+
+</td>
+<td style="text-align:right;">
+1645
+</td>
+<td style="text-align:right;">
+139551
+</td>
+</tr>
+</tbody>
+</table>
+<div id="creating-tables-in-r" class="section level3" number="17.4.1">
+<h3><span class="header-section-number">17.4.1</span> Creating tables in R</h3>
+<p>Suppose our raw data has an observation per row.</p>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="m4.html#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read teh data in</span></span>
+<span id="cb145-2"><a href="m4.html#cb145-2" aria-hidden="true" tabindex="-1"></a>ontario <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;data/m4/ontario_full.RDS&quot;</span>)</span>
+<span id="cb145-3"><a href="m4.html#cb145-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ontario)</span></code></pre></div>
+<pre><code>Rows: 14,864,428
+Columns: 2
+$ Age    &lt;fct&gt; 0 to 09, 0 to 09, 0 to 09, 0 to 09, 0 to 09, 0 to 09, 0 to 09, 0 …
+$ Status &lt;chr&gt; &quot;Hospitalized&quot;, &quot;Hospitalized&quot;, &quot;Hospitalized&quot;, &quot;Hospitalized&quot;, &quot;…</code></pre>
+</div>
+<div id="creating-tables" class="section level3" number="17.4.2">
+<h3><span class="header-section-number">17.4.2</span> Creating tables</h3>
+<p>You can create a table with the <code>table()</code> function in R. (The <code>xtabs</code>
+function is also useful for creating cross (x) tables.)</p>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="m4.html#cb147-1" aria-hidden="true" tabindex="-1"></a>hosp_table <span class="ot">&lt;-</span> <span class="fu">table</span>(ontario<span class="sc">$</span>Age, ontario<span class="sc">$</span>Status)</span>
+<span id="cb147-2"><a href="m4.html#cb147-2" aria-hidden="true" tabindex="-1"></a>hosp_table</span></code></pre></div>
+</div>
+<div id="calculations-with-tables" class="section level3" number="17.4.3">
+<h3><span class="header-section-number">17.4.3</span> Calculations with tables</h3>
+<p>From this kind of table there are three types of proportions that we can
+calculate.</p>
+<ul>
+<li><p><strong>Joint</strong></p>
+<ul>
+<li>Joint proportions reflect the proportion total observation for
+which given levels of your categorical variables co-occur. I.e.,
+what proportion of people were over 90 and hospitalized?</li>
+<li>General calculation: Cell value over the grand total.</li>
+</ul></li>
+<li><p><strong>Marginal</strong></p>
+<ul>
+<li>Marginal proportions sum across rows or columns. I.e., what is
+the proportion the Ontario population that has been
+hospitalized? We’d need to add up all the hospitalized and then
+divide that by the sum of all the cells.</li>
+<li>General calculation: Row or columns sums over the grand total</li>
+</ul></li>
+<li><p><strong>Conditional</strong></p>
+<ul>
+<li>Conditional proportions hold one variable level as given, it is
+a bit like zooming in to only one row or one column.</li>
+<li>General calculation: Cell value over a row or column sum.</li>
+</ul></li>
+</ul>
+<p>The <code>margin.table()</code> and <code>prop.table()</code> functions will be very helpful
+to us!</p>
+</div>
+<div id="joint-probabilities" class="section level3" number="17.4.4">
+<h3><span class="header-section-number">17.4.4</span> Joint probabilities</h3>
+<p>Calculate joint proportions:</p>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="m4.html#cb148-1" aria-hidden="true" tabindex="-1"></a>hosp_table<span class="sc">/</span><span class="fu">sum</span>(hosp_table)</span></code></pre></div>
+<pre><code>##           
+##            Hospitalized Not hospitalized
+##   0 to 09  6.592921e-06     1.021519e-01
+##   10 to 19 6.189273e-06     1.088400e-01
+##   20 to 29 2.704443e-05     1.412616e-01
+##   30 to 39 4.493950e-05     1.382756e-01
+##   40 to 49 6.794745e-05     1.261788e-01
+##   50 to 59 1.299747e-04     1.385190e-01
+##   60 to 69 1.825835e-04     1.205787e-01
+##   70 to 79 2.119826e-04     7.781981e-02
+##   80 to 89 2.256394e-04     3.608353e-02
+##   90+      1.106669e-04     9.277585e-03</code></pre>
+<p><span class="math display">\[\frac{n_{ij}}{\Sigma n_{ij}}\]</span></p>
+</div>
+<div id="marginal-probabilities" class="section level3" number="17.4.5">
+<h3><span class="header-section-number">17.4.5</span> Marginal probabilities</h3>
+<p>Proportion of people in each age group:</p>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="m4.html#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">margin.table</span>(hosp_table, <span class="at">margin =</span> <span class="dv">1</span>)<span class="sc">/</span><span class="fu">sum</span>(<span class="fu">margin.table</span>(hosp_table, <span class="at">margin =</span> <span class="dv">1</span>)), <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## 
+##  0 to 09 10 to 19 20 to 29 30 to 39 40 to 49 50 to 59 60 to 69 70 to 79 
+##    0.102    0.109    0.141    0.138    0.126    0.139    0.121    0.078 
+## 80 to 89      90+ 
+##    0.036    0.009</code></pre>
+<p>Proportion of people in each hospitalization status group:</p>
+<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="m4.html#cb152-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">margin.table</span>(hosp_table, <span class="at">margin =</span> <span class="dv">2</span>)<span class="sc">/</span><span class="fu">sum</span>(<span class="fu">margin.table</span>(hosp_table, <span class="at">margin =</span> <span class="dv">2</span>)), <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## 
+##     Hospitalized Not hospitalized 
+##            0.001            0.999</code></pre>
+</div>
+<div id="conditional-probabilities" class="section level3" number="17.4.6">
+<h3><span class="header-section-number">17.4.6</span> Conditional probabilities</h3>
+<p>Conditional on each row:</p>
+<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="m4.html#cb154-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">prop.table</span>(hosp_table, <span class="at">margin =</span> <span class="dv">1</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Hospitalized
+</th>
+<th style="text-align:right;">
+Not hospitalized
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+0 to 09
+</td>
+<td style="text-align:right;">
+0.0000645
+</td>
+<td style="text-align:right;">
+0.9999355
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10 to 19
+</td>
+<td style="text-align:right;">
+0.0000569
+</td>
+<td style="text-align:right;">
+0.9999431
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+20 to 29
+</td>
+<td style="text-align:right;">
+0.0001914
+</td>
+<td style="text-align:right;">
+0.9998086
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+30 to 39
+</td>
+<td style="text-align:right;">
+0.0003249
+</td>
+<td style="text-align:right;">
+0.9996751
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+40 to 49
+</td>
+<td style="text-align:right;">
+0.0005382
+</td>
+<td style="text-align:right;">
+0.9994618
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+50 to 59
+</td>
+<td style="text-align:right;">
+0.0009374
+</td>
+<td style="text-align:right;">
+0.9990626
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+60 to 69
+</td>
+<td style="text-align:right;">
+0.0015119
+</td>
+<td style="text-align:right;">
+0.9984881
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+70 to 79
+</td>
+<td style="text-align:right;">
+0.0027166
+</td>
+<td style="text-align:right;">
+0.9972834
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+80 to 89
+</td>
+<td style="text-align:right;">
+0.0062144
+</td>
+<td style="text-align:right;">
+0.9937856
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+90+
+</td>
+<td style="text-align:right;">
+0.0117878
+</td>
+<td style="text-align:right;">
+0.9882122
+</td>
+</tr>
+</tbody>
+</table>
+<p>Conditional on each column:</p>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="m4.html#cb155-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">round</span>(<span class="fu">prop.table</span>(hosp_table, <span class="at">margin =</span> <span class="dv">2</span>), <span class="dv">3</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Hospitalized
+</th>
+<th style="text-align:right;">
+Not hospitalized
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+0 to 09
+</td>
+<td style="text-align:right;">
+0.007
+</td>
+<td style="text-align:right;">
+0.102
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10 to 19
+</td>
+<td style="text-align:right;">
+0.006
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+20 to 29
+</td>
+<td style="text-align:right;">
+0.027
+</td>
+<td style="text-align:right;">
+0.141
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+30 to 39
+</td>
+<td style="text-align:right;">
+0.044
+</td>
+<td style="text-align:right;">
+0.138
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+40 to 49
+</td>
+<td style="text-align:right;">
+0.067
+</td>
+<td style="text-align:right;">
+0.126
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+50 to 59
+</td>
+<td style="text-align:right;">
+0.128
+</td>
+<td style="text-align:right;">
+0.139
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+60 to 69
+</td>
+<td style="text-align:right;">
+0.180
+</td>
+<td style="text-align:right;">
+0.121
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+70 to 79
+</td>
+<td style="text-align:right;">
+0.209
+</td>
+<td style="text-align:right;">
+0.078
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+80 to 89
+</td>
+<td style="text-align:right;">
+0.223
+</td>
+<td style="text-align:right;">
+0.036
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+90+
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+<td style="text-align:right;">
+0.009
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="risk-and-odds" class="section level3" number="17.4.7">
+<h3><span class="header-section-number">17.4.7</span> Risk and odds</h3>
+<dl>
+<dt>“Risk” refers to the probability of the occurrence of an event or outcome. Statistically, risk = chance of the outcome of interest/all possible outcomes. The term “odds” is often used instead of risk. “Odds” refers to the probability of occurrence of an event/probability of the event not occurring. At first glance, though these two concepts seem similar and interchangeable, there are important differences that dictate where the use of either of these is appropriate.</dt>
+<dd><p>From <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4640017/">Common pitfalls in statistical analysis: Odds versus
+risk</a></p>
+</dd>
+</dl>
+</div>
+<div id="hospitalization-risk-and-odds" class="section level3" number="17.4.8">
+<h3><span class="header-section-number">17.4.8</span> Hospitalization risk and odds</h3>
+<p>Let’s focus on folks aged 80 to 89.</p>
+<pre><code>           Hospitalized Not hospitalized
+  80 to 89         3354           536361</code></pre>
+<p>This <strong>risk</strong> of being hospitalized for this group is
+<span class="math inline">\(\frac{3354}{3354+536361} = 0.0062\)</span>.</p>
+<p>The <strong>odds</strong> of being hospitalized are <span class="math inline">\(\frac{3354}{536361} = 0.0063\)</span>.</p>
+<p>These values look fairly similar. Odds and risks <strong>will</strong> be similar
+when the outcome of interest is rare. This can be seen by the fact that
+the only difference between the two calculations is whether the count of
+the outcome is included in the denominator or not. As a rule of thumb,
+an outcome is ‘rare’ if it occurs less than 10% of the time.</p>
+</div>
+<div id="odds-ratio-and-risk-ratios" class="section level3" number="17.4.9">
+<h3><span class="header-section-number">17.4.9</span> Odds ratio and risk ratios</h3>
+<p>Risk ratios are also called ‘relative’ risks. Risk ratios and odds
+ratios are…ratios of risks and odds respectively.</p>
+<p>They are used to make comparisons between groups. Let’s for example,
+compare 80 to 89 year olds with 10 to 19 year olds.</p>
+<pre><code>           Hospitalized Not hospitalized
+  10 to 19           92          1617845
+  80 to 89         3354           536361</code></pre>
+<p><span class="math display">\[OR = \frac{3354/536361}{92/1617845} = 110\]</span>
+<span class="math display">\[RR = \frac{3354/(3354+536361)}{92/(92+1617845)} = 109\]</span> Once again,
+these values are similar because being hospitalized is (thankfully!)
+rare.</p>
+</div>
+<div id="when-do-we-use-rr-vs-or" class="section level3" number="17.4.10">
+<h3><span class="header-section-number">17.4.10</span> When do we use RR vs OR?</h3>
+<p>Calculation of <em>risk</em> requires as to know how many people are ‘at risk.’
+As we’ll see next week, in case-control studies, where such totals are
+not available to us, we cannot calculate a relative risk. BUT, we can
+calculate odds ratios and make a comment on the strength of association
+between our exposure and the outcome.</p>
+<p>In cohort studies, where we do have the number number exposed, we can
+calculate either/both.</p>
+<p>Logistic regression, which we’ll be seeing more of in the next few
+weeks, calculates adjusted ORs and not RRs and so being able to
+interpret them is going to be important to us.</p>
+</div>
+</div>
+<div id="generalized-linear-models-glms" class="section level2" number="17.5">
+<h2><span class="header-section-number">17.5</span> Generalized linear models (GLMs)</h2>
+<p>Generalized linear models are a <strong>flexible</strong> class of models that let us
+<em>generalize</em> from the linear model to include more types of response
+variables, such as <em>count, binary, and proportion data</em>.</p>
+<p><img src="images/m4/flex.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<p><em>Image description: A feminine person in active wear holding a yoga pose
+where they are standing on their right foot, leaning forward and
+extending their right arm and holding the left leg out behind their back
+with their left arm.</em></p>
+<p>Let’s get flexible, flexible…</p>
+<div id="assumptions-of-the-generalized-linear-model" class="section level3" number="17.5.1">
+<h3><span class="header-section-number">17.5.1</span> Assumptions of the Generalized Linear Model</h3>
+<ul>
+<li><p>The data <span class="math inline">\(Y_1, Y_2, ..., Y_n\)</span> are independently distributed, i.e.,
+cases are independent.</p>
+<ul>
+<li>Thus errors are independent… but NOT necessarily normally
+distributed.</li>
+</ul></li>
+<li><p>The dependent variable <span class="math inline">\(Y_i\)</span> does NOT need to be normally
+distributed, but it assumes a distribution, typically from an
+exponential family (e.g. binomial, Poisson, gamma,…)</p></li>
+<li><p>GLM does NOT assume a linear relationship between the dependent
+variable and the independent variables, but <strong>it does assume a
+linear relationship between the transformed response (in terms of
+the link function) and the explanatory variables</strong>; e.g., for binary
+logistic regression <span class="math inline">\(logit(p) = \beta_0 + \beta_1X\)</span>.</p></li>
+<li><p>The homogeneity of variance does NOT need to be satisfied.</p></li>
+<li><p>It uses maximum likelihood estimation (MLE) rather than ordinary
+least squares (OLS) to estimate the parameters, and thus relies on
+large-sample approximations.</p></li>
+</ul>
+</div>
+<div id="components-of-a-generalized-linear-model" class="section level3" number="17.5.2">
+<h3><span class="header-section-number">17.5.2</span> Components of a Generalized Linear Model</h3>
+<p>Generalized linear models have three parts:</p>
+<ol style="list-style-type: decimal">
+<li><strong>random</strong> component: the response and an associated probability
+distribution<br />
+</li>
+<li><strong>systematic</strong> component: explanatory variables and relationships
+among them (e.g., interaction terms)</li>
+<li><strong>link function</strong>, which tell us about the relationship between the
+systematic component (or linear predictor) and the mean of the
+response</li>
+</ol>
+<p>It is the <strong>link function</strong> that allows us to generalize the linear
+models for count, binomial and percent data. It ensures the linearity
+and constrains the predictions to be within a range of possible values.</p>
+</div>
+<div id="generalized-linear-models" class="section level3" number="17.5.3">
+<h3><span class="header-section-number">17.5.3</span> Generalized Linear Models</h3>
+<p><span class="math inline">\(Y_i \sim G(\mu_i, \theta)\)</span><br />
+<span class="math inline">\(h(\mu_i) = X_i^T\beta\)</span></p>
+<ul>
+<li><span class="math inline">\(G\)</span> is the distribution of the response variable</li>
+<li><span class="math inline">\(\mu_i\)</span> is a location parameter for observation <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(\theta\)</span> are additional parameters for the density of <span class="math inline">\(G\)</span></li>
+<li><span class="math inline">\(h\)</span> is a link function</li>
+<li><span class="math inline">\(X_i\)</span> are covariates for observation <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(\beta\)</span> is a vector of regression coefficients</li>
+</ul>
+</div>
+<div id="ordinary-least-squares-again" class="section level3" number="17.5.4">
+<h3><span class="header-section-number">17.5.4</span> Ordinary Least Squares again</h3>
+<div id="glm" class="section level4" number="17.5.4.1">
+<h4><span class="header-section-number">17.5.4.1</span> GLM</h4>
+<p><span class="math display">\[\begin{align*}
+Y_i \sim &amp; G (\mu_i, \theta)\\\\
+h(\mu_i) = &amp; X_i\^T \beta
+\end{align*}\]</span></p>
+</div>
+<div id="ols" class="section level4" number="17.5.4.2">
+<h4><span class="header-section-number">17.5.4.2</span> OLS</h4>
+<span class="math display">\[\begin{align*}
+Y_i \sim &amp; N( \mu_i, \sigma^2)\\
+\mu_i = &amp; X^T_i \beta
+\end{align*}\]</span>
+<p>OLS is just a flavour of GLM when:<br />
+- <span class="math inline">\(G\)</span> is a Normal distribution<br />
+- <span class="math inline">\(\theta\)</span> is the variance parameter, denoted <span class="math inline">\(\sigma^2\)</span> - <span class="math inline">\(h\)</span> is the
+identity function</p>
+</div>
+</div>
+</div>
+<div id="binomial-or-logistic-regression" class="section level2" number="17.6">
+<h2><span class="header-section-number">17.6</span> Binomial (or logistic) regression</h2>
+<span class="math display">\[\begin{align*}
+Y_i \sim &amp; \text{Binomial}(N_i, p_i)\\
+\log\left(\frac{p_i}{1-p_i}\right) = &amp; X_i \beta
+\end{align*}\]</span>
+<ul>
+<li><span class="math inline">\(G\)</span> is a Binomial distribution</li>
+<li>… or a Bernoulli if <span class="math inline">\(N_i=1\)</span></li>
+<li><span class="math inline">\(h\)</span> is the logit link</li>
+</ul>
+<p><img src="STA303-Course-guide_files/figure-html/logit-1.png" width="672" /></p>
+<ul>
+<li><span class="math inline">\(X_i^T \beta\)</span> can be negative</li>
+<li><span class="math inline">\(p_i\)</span> is between 0 and 1.</li>
+</ul>
+<p>Let’s look at an example…</p>
+<div id="case-study-challenger-disaster" class="section level3" number="17.6.1">
+<h3><span class="header-section-number">17.6.1</span> Case study: Challenger disaster</h3>
+<p><img src="images/stop-video.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>The Challenger case study can be read and understood ‘standalone,’ but if you prefer
+having video commentary, this is the video I filmed last year. Not
+required to watch and please ignore any references to assessments from
+last year, etc.</p>
+<p><a href="https://play.library.utoronto.ca/watch/90be23ecc7045074528121fafd36d5f2">Video from last year</a></p>
+<div id="shuttle-data" class="section level4" number="17.6.1.1">
+<h4><span class="header-section-number">17.6.1.1</span> Shuttle data</h4>
+<p>On January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds
+into its flight, killing all seven crew members. The spacecraft
+<strong>disintegrated</strong> over the Atlantic Ocean. The disintegration of the
+vehicle began after a joint in its right rocket booster failed at
+liftoff. The failure was caused by the <strong>failure of O-ring seals</strong> used
+in the joint that were not designed to handle the unusually cold
+conditions that existed at this launch.</p>
+<p><img src="images/m4/Challenger_explosion.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<p><em>Image description: spiralling trail of white/grey smoke against a black
+background.</em></p>
+<p>We will look at a data set about the number of rubber O-rings showing
+thermal distress for 23 flights of the space shuttle, with the ambient
+temperature and pressure at which tests on the putty next to the rings
+were performed.</p>
+</div>
+<div id="follow-along-with-the-case-study" class="section level4" number="17.6.1.2">
+<h4><span class="header-section-number">17.6.1.2</span> Follow along with the case study</h4>
+<p>I’ve made a template for a ‘cheat sheet’ on which you can take these
+notes/play with code. You can pull it on the <a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=rstudio%2F">JupyterHub with this
+link</a>.
+From your Home directory, you will need to navigate to
+<code>sta303-w22-activities -&gt; m4</code>. There are several Rmd you can play with
+in this file. The one for this activity is: <code>1B challenger.Rmd</code>.</p>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="m4.html#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This package is available in the JupyterHub, but you may need to install if working locally</span></span>
+<span id="cb158-2"><a href="m4.html#cb158-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;SMPracticals&quot;)</span></span>
+<span id="cb158-3"><a href="m4.html#cb158-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&#39;shuttle&#39;</span>, <span class="at">package=</span><span class="st">&#39;SMPracticals&#39;</span>)</span>
+<span id="cb158-4"><a href="m4.html#cb158-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(shuttle) <span class="ot">=</span> <span class="fu">as.character</span>(<span class="fu">rownames</span>(shuttle))</span>
+<span id="cb158-5"><a href="m4.html#cb158-5" aria-hidden="true" tabindex="-1"></a>shuttle[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,]</span></code></pre></div>
+<pre><code>##   m r temperature pressure
+## 1 6 0          66       50
+## 2 6 1          70       50
+## 3 6 0          69       50
+## 4 6 0          68       50</code></pre>
+<ul>
+<li><code>m</code>: number of rings</li>
+<li><code>r</code>: number of damaged rings</li>
+</ul>
+<p>Thus we have a situation where we are interested in the number of
+successes out of a fixed number of trials. Hopefully your memories of
+the Binomial distribution are being triggered by that language.</p>
+<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="m4.html#cb160-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base R plot</span></span>
+<span id="cb160-2"><a href="m4.html#cb160-2" aria-hidden="true" tabindex="-1"></a><span class="co"># plot(shuttle$temperature, shuttle$r/shuttle$m)</span></span>
+<span id="cb160-3"><a href="m4.html#cb160-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb160-4"><a href="m4.html#cb160-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot</span></span>
+<span id="cb160-5"><a href="m4.html#cb160-5" aria-hidden="true" tabindex="-1"></a>shuttle <span class="sc">%&gt;%</span> </span>
+<span id="cb160-6"><a href="m4.html#cb160-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> temperature, <span class="at">y =</span> r<span class="sc">/</span>m)) <span class="sc">+</span></span>
+<span id="cb160-7"><a href="m4.html#cb160-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb160-8"><a href="m4.html#cb160-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="STA303-Course-guide_files/figure-html/shuttlePlot-1.png" width="672" /></p>
+</div>
+<div id="are-shuttle-rings-more-likely-to-get-damaged-in-cold-weather" class="section level4" number="17.6.1.3">
+<h4><span class="header-section-number">17.6.1.3</span> Are shuttle rings more likely to get damaged in cold weather?</h4>
+<p>We can think of <strong>m</strong> as the number of trials, and <strong>r</strong> as the number
+of “successes.” (It feels weird to call damage a success, but it is our
+outcome of interest, so we treat it as such.)</p>
+<span class="math display">\[\begin{align*}
+Y_i \sim &amp; \text{Binomial}(N_i, \mu_i)\\
+\log\left(\frac{\mu_i}{1-\mu_i}\right) = &amp; X_i \beta
+\end{align*}\]</span>
+<ul>
+<li>m: number of rings, <span class="math inline">\(N_i\)</span></li>
+<li>r: number of damaged rings <span class="math inline">\(Y_i\)</span></li>
+<li>pressure, temperature: covariates <span class="math inline">\(X_i\)</span></li>
+<li><span class="math inline">\(\mu_i\)</span>: probability of a ring becoming damaged given <span class="math inline">\(X_i\)</span></li>
+<li><span class="math inline">\(\beta_{\text{temperature}}\)</span>: parameter of interest</li>
+</ul>
+</div>
+<div id="inference-parameter-estimation" class="section level4" number="17.6.1.4">
+<h4><span class="header-section-number">17.6.1.4</span> Inference: parameter estimation</h4>
+<span class="math display">\[\begin{align*}
+Y_i \sim &amp; G (\mu_i, \theta)\\
+h(\mu_i) = &amp; X_i \beta\\
+\pi(Y_1 ... Y_N; \beta, \theta)  = &amp; 
+\prod_{i=1}^N f_G (Y_i ; \mu_i, \theta)\\
+\log L(\beta, \theta ; y_1 ... y_N) = &amp;
+\sum_{i=1}^N \log f_G (y_i; \mu_i, \theta)
+\end{align*}\]</span>
+<ul>
+<li>The <span class="math inline">\(Y_i\)</span> are <em>independently distributed</em></li>
+<li><strong>Joint density</strong> <span class="math inline">\(\pi\)</span> of random variables <span class="math inline">\((Y_1 ...Y_N)\)</span> is the
+product of the marginal densities <span class="math inline">\(f_G\)</span>.</li>
+<li><strong>Likelihood function</strong> <span class="math inline">\(L\)</span> given observed data <span class="math inline">\(y_1 ... y_N\)</span> is a
+function of the parameters.</li>
+<li><strong>Maximum Likelihood Estimation</strong>: <span class="math display">\[
+\hat\beta, \hat\theta = \text{argmax}_{\beta,\theta}L(\beta, \theta ; y_1 \ldots y_N)
+\]</span></li>
+<li>The best parameters are those which are most likely to produce the
+observed data</li>
+</ul>
+</div>
+<div id="shuttle-example-in-r" class="section level4" number="17.6.1.5">
+<h4><span class="header-section-number">17.6.1.5</span> Shuttle example in R</h4>
+<ul>
+<li><p><code>glm</code> works like <code>lm</code> with a <code>family</code> argument.</p></li>
+<li><p>Binomial models can take two types of inputs:</p>
+<ul>
+<li>If, as in this case, we have groups of trials, we need our
+response to be a matrix with two columns: <code>y</code> and <code>N-y</code>.</li>
+<li>If our <code>y</code> is a single 0/1 (or otherwise binary categorical
+variable) then we can set it up as usual, just a single column.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="m4.html#cb161-1" aria-hidden="true" tabindex="-1"></a>shuttle<span class="sc">$</span>notDamaged <span class="ot">&lt;-</span> shuttle<span class="sc">$</span>m <span class="sc">-</span> shuttle<span class="sc">$</span>r</span>
+<span id="cb161-2"><a href="m4.html#cb161-2" aria-hidden="true" tabindex="-1"></a>shuttle<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(shuttle[,<span class="fu">c</span>(<span class="st">&#39;r&#39;</span>,<span class="st">&#39;notDamaged&#39;</span>)])</span>
+<span id="cb161-3"><a href="m4.html#cb161-3" aria-hidden="true" tabindex="-1"></a>shuttleFit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> temperature <span class="sc">+</span> pressure, </span>
+<span id="cb161-4"><a href="m4.html#cb161-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">family=</span><span class="fu">binomial</span>(<span class="at">link=</span><span class="st">&#39;logit&#39;</span>), <span class="at">data=</span>shuttle)</span>
+<span id="cb161-5"><a href="m4.html#cb161-5" aria-hidden="true" tabindex="-1"></a>shuttleFit<span class="sc">$</span>coef</span></code></pre></div>
+<pre><code>##  (Intercept)  temperature     pressure 
+##  2.520194641 -0.098296750  0.008484021</code></pre>
+</div>
+<div id="summary-of-fit" class="section level4" number="17.6.1.6">
+<h4><span class="header-section-number">17.6.1.6</span> Summary of fit</h4>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="m4.html#cb163-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Summarise the model</span></span>
+<span id="cb163-2"><a href="m4.html#cb163-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(shuttleFit)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## glm(formula = y ~ temperature + pressure, family = binomial(link = &quot;logit&quot;), 
+##     data = shuttle)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.0361  -0.6434  -0.5308  -0.1625   2.3418  
+## 
+## Coefficients:
+##              Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)  2.520195   3.486784   0.723   0.4698  
+## temperature -0.098297   0.044890  -2.190   0.0285 *
+## pressure     0.008484   0.007677   1.105   0.2691  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 24.230  on 22  degrees of freedom
+## Residual deviance: 16.546  on 20  degrees of freedom
+## AIC: 36.106
+## 
+## Number of Fisher Scoring iterations: 5</code></pre>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="m4.html#cb165-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute confidence intervals</span></span>
+<span id="cb165-2"><a href="m4.html#cb165-2" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(shuttleFit)</span></code></pre></div>
+<pre><code>##                    2.5 %      97.5 %
+## (Intercept) -4.322926283  9.77264497
+## temperature -0.194071699 -0.01356289
+## pressure    -0.004346403  0.02885221</code></pre>
+<p>There is no evidence that pressure is significantly associated with
+failure of O-rings…but how do we interpret these values?</p>
+</div>
+<div id="interpreting-logistic-models" class="section level4" number="17.6.1.7">
+<h4><span class="header-section-number">17.6.1.7</span> Interpreting logistic models</h4>
+<span class="math display">\[\begin{align*}
+Y_i \sim &amp; \text{Binomial}(N_i, \mu_i)\\
+\log\left(\frac{\mu_i}{1-\mu_i}\right) = &amp; \sum_{p=1}^P X_{ip} \beta_p\\
+\left(\frac{\mu_i}{1-\mu_i}\right) = &amp; \prod_{p=1}^P \exp(\beta_p)^{X_{ip}}
+\end{align*}\]</span>
+<ul>
+<li><span class="math inline">\(\mu_i\)</span> is a probability</li>
+<li><span class="math inline">\(\log[\mu_i / (1-\mu_i)]\)</span> is a log-odds</li>
+<li><span class="math inline">\(\mu_i / (1-\mu_i)\)</span> is an odds</li>
+<li>If <span class="math inline">\(\mu_i \approx 0\)</span>, then <span class="math inline">\(\mu_i \approx \mu_i / (1-\mu_i)\)</span></li>
+</ul>
+<span class="math display">\[\begin{align*}
+\beta_q = &amp;\log\left(\frac{\mu_2}{1-\mu_2}\right) - \log\left(\frac{\mu_1}{1-\mu_1}\right) \\
+\exp(\beta_q) = &amp; \left(\frac{\mu_2}{1-\mu_2}\right) \left/ \left(\frac{\mu_1}{1-\mu_1}\right)\right. \\
+\end{align*}\]</span>
+<ul>
+<li><span class="math inline">\(\beta_q\)</span> is the log-odds ratio</li>
+<li><span class="math inline">\(\exp(\beta_q)\)</span> is the odds ratio</li>
+<li><span class="math inline">\(\exp(\text{intercept})\)</span> is the baseline odds, when
+<span class="math inline">\(X_{1} \ldots X_{n} = 0\)</span>.</li>
+</ul>
+</div>
+<div id="centring-parameters" class="section level4" number="17.6.1.8">
+<h4><span class="header-section-number">17.6.1.8</span> Centring parameters</h4>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="m4.html#cb167-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(shuttle<span class="sc">$</span>temperature)</span></code></pre></div>
+<pre><code>##   0%  25%  50%  75% 100% 
+##   53   67   70   75   81</code></pre>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="m4.html#cb169-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(shuttle<span class="sc">$</span>pressure)</span></code></pre></div>
+<pre><code>##   0%  25%  50%  75% 100% 
+##   50   75  200  200  200</code></pre>
+<p>Currently the intercept is log-odds when temperature = 0 and pressure = 0. This isn’t really a meaningful value for us to interpret, so we can center the covariate to a more meaningful baseline.</p>
+<p>Let’s centre the covariates so the intercept refers to:</p>
+<pre><code>-   temperature = 70 (degrees Farenheit)
+
+-   pressure = 200 (pounds per square inch)</code></pre>
+<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="m4.html#cb172-1" aria-hidden="true" tabindex="-1"></a>shuttle<span class="sc">$</span>temperatureC <span class="ot">&lt;-</span> shuttle<span class="sc">$</span>temperature  <span class="sc">-</span> <span class="dv">70</span></span>
+<span id="cb172-2"><a href="m4.html#cb172-2" aria-hidden="true" tabindex="-1"></a>shuttle<span class="sc">$</span>pressureC <span class="ot">&lt;-</span>  shuttle<span class="sc">$</span>pressure <span class="sc">-</span> <span class="dv">200</span></span>
+<span id="cb172-3"><a href="m4.html#cb172-3" aria-hidden="true" tabindex="-1"></a>shuttleFit2 <span class="ot">&lt;-</span>  <span class="fu">glm</span>(y <span class="sc">~</span> temperatureC <span class="sc">+</span> pressureC, <span class="at">family=</span><span class="st">&#39;binomial&#39;</span>, <span class="at">data=</span>shuttle)</span></code></pre></div>
+</div>
+<div id="shuttle-odds-parameters" class="section level4" number="17.6.1.9">
+<h4><span class="header-section-number">17.6.1.9</span> Shuttle odds parameters</h4>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="m4.html#cb173-1" aria-hidden="true" tabindex="-1"></a>par_table <span class="ot">=</span> <span class="fu">cbind</span>(<span class="at">est =</span> <span class="fu">summary</span>(</span>
+<span id="cb173-2"><a href="m4.html#cb173-2" aria-hidden="true" tabindex="-1"></a>  shuttleFit2)<span class="sc">$</span>coef[,<span class="dv">1</span>],</span>
+<span id="cb173-3"><a href="m4.html#cb173-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">confint</span>(shuttleFit2))</span>
+<span id="cb173-4"><a href="m4.html#cb173-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(par_table)[<span class="dv">1</span>]<span class="ot">=</span> <span class="st">&quot;Baseline&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="m4.html#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">exp</span>(par_table),<span class="dv">3</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb174-2"><a href="m4.html#cb174-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">&quot;MLEs of baseline odds and odds ratios, with 95% confidence</span></span>
+<span id="cb174-3"><a href="m4.html#cb174-3" aria-hidden="true" tabindex="-1"></a><span class="st">intervals.&quot;</span>)</span></code></pre></div>
+<table>
+<caption>
+<span id="tab:shuttleSummaryExp">Table 17.2: </span>MLEs of baseline odds and odds ratios, with 95% confidence
+intervals.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+est
+</th>
+<th style="text-align:right;">
+2.5 %
+</th>
+<th style="text-align:right;">
+97.5 %
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Baseline
+</td>
+<td style="text-align:right;">
+0.070
+</td>
+<td style="text-align:right;">
+0.023
+</td>
+<td style="text-align:right;">
+0.155
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+temperatureC
+</td>
+<td style="text-align:right;">
+0.906
+</td>
+<td style="text-align:right;">
+0.824
+</td>
+<td style="text-align:right;">
+0.987
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pressureC
+</td>
+<td style="text-align:right;">
+1.009
+</td>
+<td style="text-align:right;">
+0.996
+</td>
+<td style="text-align:right;">
+1.029
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="interpreting-shuttle-parameters" class="section level4" number="17.6.1.10">
+<h4><span class="header-section-number">17.6.1.10</span> Interpreting shuttle parameters</h4>
+<p>Because we centred our variables on meaningful values of temperature and pressure, our intercept is meaningful to interpret.</p>
+<p>We can read from the table above that the odds of a ring being damaged when temperature = 70 and pressure
+= 200 is 0.07, which corresponds
+to a probability of:</p>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="m4.html#cb175-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">exp</span>(par_table[<span class="dv">1</span>,<span class="st">&#39;est&#39;</span>]) <span class="sc">/</span> (<span class="dv">1</span><span class="sc">+</span><span class="fu">exp</span>(par_table[<span class="dv">1</span>,<span class="st">&#39;est&#39;</span>])), <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] 0.065</code></pre>
+<p>We can only make this claim about probability for the intercept value!</p>
+<p><span class="math display">\[P(\text{damage}|\text{temp = 70, pressure = 200}) = \frac{\beta_0}{1+\beta_0}\]</span></p>
+<p>Each degree increase in temperature (in Fahrenheit) decreases the odds of damage by (in percent)</p>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="m4.html#cb177-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="dv">100</span><span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(par_table[<span class="dv">2</span>,<span class="st">&#39;est&#39;</span>]) ), <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] 9.362</code></pre>
+</div>
+</div>
+</div>
+<div id="glms-a-unifying-theory" class="section level2" number="17.7">
+<h2><span class="header-section-number">17.7</span> GLMS: A unifying theory</h2>
+<div id="optional-accompanying-video" class="section level3" number="17.7.1">
+<h3><span class="header-section-number">17.7.1</span> Optional accompanying video</h3>
+<p><img src="images/stop-video.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>The following section can be read and understood be able to ‘standalone,’ but if you prefer
+having video commentary, this is the video I filmed last year. Not
+required to watch and please ignore any references to assessments from
+last year, etc. Might be most interesting/useful for the exponential family re-arrangements.</p>
+<p><a href="https://play.library.utoronto.ca/watch/fe7ad273500e61254a66884818512fe0">GLMS: A unifying theory</a></p>
+</div>
+<div id="readings" class="section level3" number="17.7.2">
+<h3><span class="header-section-number">17.7.2</span> Readings</h3>
+<p><strong>Reading:</strong> <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-glms.html">Chapter
+5</a> of
+Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression. (2021).
+<a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a>.</p>
+<p><strong>Optional reading:</strong> Wood, S.N. Generalized Additive Models: An
+Introduction with R, 2nd Edition. 2017.
+<a href="https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4862399" class="uri">https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4862399</a>
+(requires you to log in with your UTORid)</p>
+<p>(The chapter in Wood covers more of the theory, but use what is covered
+in the slides as your guide to what is assessable.)</p>
+</div>
+<div id="recall" class="section level3" number="17.7.3">
+<h3><span class="header-section-number">17.7.3</span> Recall</h3>
+<p>For a generalized model, we’ve said that:</p>
+<p><span class="math display">\[Y_i \sim  \text{some distribution}(\mu_i);\ g(\mu_i) =  X_i^T\beta\]</span></p>
+</div>
+<div id="exponential-family-forms" class="section level3" number="17.7.4">
+<h3><span class="header-section-number">17.7.4</span> Exponential family forms</h3>
+<p>The first model we met in the Generalized Linear Model family was
+logistic regression. But! there is a whole broader extended ‘family’ of
+these models that have a unifying trait:</p>
+<p><strong>their probability distribution function can be expressed in
+exponential form:</strong></p>
+<p><span class="math display">\[f_y(\theta)=e^{[ \{y\theta-B(\theta)\}/A(\phi)+C(y, \phi)]}\]</span></p>
+<p>where <span class="math inline">\(\phi\)</span> is an arbitrary ‘scale’ parameter and <span class="math inline">\(\theta\)</span> is know as
+the <em>canonical parameter</em> of the distribution. Functions A, B and C are
+arbitrary functions. You’ll see lots of different letters and symbols
+used for these functions, I’m not sure which set to call the ‘most’
+popular versions.</p>
+<p>As you’ll see in this module’s reading, we can also set <span class="math inline">\(\phi = 1\)</span> (or
+it is by default 1 for Poisson and binomial) and talk about these as
+members of a ‘one-parameter exponential family’ where you can write the
+probability formula like this ( <span class="math inline">\(\theta\)</span> is the ‘one parameter’):</p>
+<p><span class="math display">\[f(y;\theta)=e^{[a(y)b(\theta)+c(\theta)+d(y)]}\]</span></p>
+<p>The canonical (also called “natural”) parameter of a one-parameter
+exponential family is <span class="math inline">\(\theta=g(\mu)\)</span>.</p>
+<p><strong>Exponentials with an extra parameter</strong></p>
+<p>The <strong>Tweedie</strong> and <strong>negative binomial</strong> distributions are also
+commonly employed. They can be expressed as members of the exponential
+family but with a single <em>additional</em> parameter. The negative binomial
+is often used when we have count data that is <strong>overdispersed</strong> relative
+to a Poisson distribution. I mostly only know Tweedie through its use by
+<strong>actuaries</strong> and have never used it in research myself.</p>
+<div id="show-that-the-normal-distribution-is-in-the-exponential-family" class="section level4" number="17.7.4.1">
+<h4><span class="header-section-number">17.7.4.1</span> Show that the normal distribution is in the exponential family</h4>
+<p>I chat through the steps in the video linked above.</p>
+<p>We want to get from the Normal distribtion:</p>
+<p><span class="math display">\[f_\mu(y) =  \frac{1}{\sigma\sqrt{2\pi}}\text{exp}[-\frac{(y-\mu)^2}{2\sigma^2}]\]</span></p>
+<p>To our genreal exponential form:</p>
+<p><span class="math display">\[f_\theta(y) = \text{exp}[\frac{y\theta - B(\theta)}{A(\phi)} + c(y, \phi)]\]</span>
+Note, this is the same as above, I’ve just tried to make it a little easier to read and focus on what is in the exponent.</p>
+<p>Using the fact that <span class="math inline">\(\exp(\log(x)) = x\)</span>, some algebraic rearrangements (and remembering our log rules!), and a knowledge of the final form we want to reach, we can show that the normal distribution is part of the exponential family.</p>
+<p><img src="images/m4/normal.jpeg" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="show-that-the-poisson-distribution-is-in-the-exponential-family" class="section level4" number="17.7.4.2">
+<h4><span class="header-section-number">17.7.4.2</span> Show that the Poisson distribution is in the exponential family</h4>
+<p>I chat through the steps in the video linked above.</p>
+<p><img src="images/m4/Poisson.jpeg" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="your-turn-show-that-the-binomial-distribution-is-in-the-exponential-family" class="section level4" number="17.7.4.3">
+<h4><span class="header-section-number">17.7.4.3</span> Your turn! Show that the binomial distribution is in the exponential family</h4>
+<p>I talk about some hints in the video linked above.</p>
+<p><img src="images/m4/binomial-hints.jpeg" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="canonical-link-functions" class="section level3" number="17.7.5">
+<h3><span class="header-section-number">17.7.5</span> Canonical link functions</h3>
+<p>A link function, <span class="math inline">\(g(\mu_i)\)</span> is <strong>canonical</strong> if <span class="math inline">\(g(\mu_i) = \theta_i\)</span>.</p>
+<p>We’ve been using the canonical link for logistic regression, the logit
+link, where <span class="math inline">\(g(\mu) = log(\frac{\mu}{n-\mu})\)</span>.</p>
+<p>There are a few nice properties that come with using the canonical link:</p>
+<ul>
+<li>They ensure <span class="math inline">\(\mu\)</span> will be in the range the outcome variable can take (e.g. no probabilities greater than 1).<br />
+</li>
+<li>Two methods for finding the MLE, Newton’s method and the Fisher scoring method, will be identical when using the canonical link.<br />
+</li>
+<li>Residuals will sum to 0, an ‘observed unbiasedness.’<br />
+</li>
+<li>The Hessian for the log-likelihood will be equal to its expected value.<br />
+</li>
+<li>The Hessian is the matrix of second derivatives of the likelihood with respect to the parameters.</li>
+</ul>
+</div>
+<div id="exponential-family-of-distributions" class="section level3" number="17.7.6">
+<h3><span class="header-section-number">17.7.6</span> Exponential Family of Distributions</h3>
+<ul>
+<li><p>Includes most of our familiar distributions:</p>
+<ul>
+<li>normal, exponential, log-normal, gamma, chi-squared, beta,
+Bernoulli, Poisson, inverse Gaussian…and more!</li>
+</ul></li>
+<li><p>Who’s <em>not</em> in the family?</p>
+<ul>
+<li>Student’s <span class="math inline">\(t\)</span>-distribution, <span class="math inline">\(F\)</span>-distribution, most distributions
+that are a mixture of others.</li>
+</ul></li>
+<li><p>Provides a unified theory for generalized linear models.</p></li>
+<li><p>A general, highly efficient method for finding MLEs numerically:
+Iterative weighted least squares (IRLS)</p></li>
+</ul>
+<p><img src="images/m4/we-are-family.png" width="30%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="iteratively-re-weighted-least-squares-algorithm-a-sketch" class="section level3" number="17.7.7">
+<h3><span class="header-section-number">17.7.7</span> Iteratively re-weighted least squares algorithm (a sketch)</h3>
+<ol style="list-style-type: decimal">
+<li>Start with an estimate of the mean, <span class="math inline">\(\hat{\mu}_i = y_i + \delta_i\)</span> (
+<span class="math inline">\(\delta_i\)</span> is usually 0, but sometimes it is a small constant to
+ensure that the <span class="math inline">\(g(\mu_i\)</span>) is finite).</li>
+<li>Create some ‘pseudodata,’ <span class="math inline">\(z_i\)</span>, using the values from the previous
+step and the original data and the associated weights (there are
+equations for all of this, of course, but they’re not being covered
+in this class).</li>
+<li>Find the value of <span class="math inline">\(\hat{\beta}\)</span> that minimizes the weighted least
+squares objective,
+<span class="math inline">\(\Sigma^n_{i = 1}w_i(z_i - \textbf{X}_i \beta)^2\)</span>.</li>
+<li>Update <span class="math inline">\(\theta = X\hat{\beta}\)</span> and
+<span class="math inline">\(\hat{\mu}_i = g^{-1}(X_i\hat{\beta})\)</span> and start at step 2 again.</li>
+</ol>
+<div id="how-do-decide-when-to-stop" class="section level4" number="17.7.7.1">
+<h4><span class="header-section-number">17.7.7.1</span> How do decide when to stop?</h4>
+<p>We can judge that this algorithm has converged? One common way is
+checking the change in the negative log likelihood between each
+iteration and stopping once it is near zero (for a given value of
+‘nearness.’)</p>
+</div>
+</div>
+<div id="a-quick-note-on-the-large-sample-distribution-of-hatbeta" class="section level3" number="17.7.8">
+<h3><span class="header-section-number">17.7.8</span> A quick note on the large sample distribution of <span class="math inline">\(\hat{\beta}\)</span></h3>
+<p>From the properties of maximum likelihood, we have that:
+<span class="math inline">\(\hat{\beta} \sim N(\beta, \mathcal{I}^{-1})\)</span> or
+<span class="math inline">\(\hat{\beta} \sim N(\beta, \hat{\mathcal{I}}^{-1})\)</span></p>
+<p>This isn’t an exact distributional result, it relies on large sample
+approximations.</p>
+</div>
+<div id="deviance" class="section level3" number="17.7.9">
+<h3><span class="header-section-number">17.7.9</span> Deviance</h3>
+<p>It is nice to be able to make comments about GLMs in a similar way we
+are used to talking about the residual sum of squares in ordinary linear
+regression.</p>
+<p>The <strong>deviance</strong> can take on this role for us. (In our R output it is
+called the <em>Residual deviance</em>.)</p>
+<p><span class="math display">\[D = 2 \{ l(\hat{\beta}_{max}) - l(\hat{\beta)} \}\phi \]</span></p>
+<p><span class="math inline">\(l(\hat{\beta}_{max})\)</span> is the maximum likelihood of the saturated model
+(super overfitting, one <span class="math inline">\(\beta\)</span> per observation) and is the highest log
+likelihood we could possibly get with this data.</p>
+<p>The <strong>scaled deviance</strong> is <span class="math inline">\(D\text{*} = D/\phi\)</span>. Once again relying on
+large sample results for likelihoods, we can say that if our model is
+true, <span class="math inline">\(D\text{*} \sim \chi^2_{n-p}\)</span>.</p>
+<p>There is also the <strong>null deviance</strong>, <span class="math inline">\(D_0\)</span>, which is the deviance
+between the null model (only an intercept) and the saturated model
+(perfect fit, one parameter per data point).</p>
+<div id="comparing-models" class="section level4" number="17.7.9.1">
+<h4><span class="header-section-number">17.7.9.1</span> Comparing models</h4>
+<p>Suppose we’re interested in testing:
+<span class="math inline">\(\text{H}_0\text{:}\  g(\mathbf{\mu}) = \mathbf{X}_0\mathbf{\beta}_0\)</span> vs
+<span class="math inline">\(\ \text{H}_1\text{:}\  g(\mathbf{\mu}) = \mathbf{X}_1\mathbf{\beta}_1\)</span></p>
+<p><span class="math inline">\(\mathbf{\mu}\)</span> is the expected value of our response variable (and our
+observations are independent), and are from the same member of the
+exponential family of distributions and the models are nested. (I.e.,
+<span class="math inline">\(\mathbf{X}_0 \subset \mathbf{X}_1\)</span>.)</p>
+<p>We can show, though won’t here, that we can apply the likelihood ratio
+test as an expression of scaled model deviances, and that <span class="math inline">\(\phi\)</span> will
+cancel (nice!) so that this still works for us for GLMs where our scale
+parameter is not known.</p>
+<p>A note on AIC from Simon Wood: <em>“In some quarters AIC has acquired cult
+status as the one true way to model selection, in a similar way to
+p-values, somewhat earlier. This is unfortunate nonsense. Like p-values,
+AIC is useful as a rough and ready quantitative aid to selecting between
+models, nothing more.”</em></p>
+</div>
+<div id="quasi-likelihood" class="section level4" number="17.7.9.2">
+<h4><span class="header-section-number">17.7.9.2</span> Quasi-likelihood</h4>
+<p>We’ve assumed so far that we know our response distribution to be a
+member of the exponential family, the whole unifying property of our GLM
+framework, so far.</p>
+<p>BUT, sometimes we don’t know the distribution quite so precisely. We may
+have a specific relationship between the mean and variance of the
+response in mind, but that’s it.</p>
+<p><strong>Is all lost?</strong></p>
+<p>No! WE can actually get pretty far with the idea of
+<strong>quasi-likelihood</strong>.</p>
+<p><img src="images/m4/quasi.png" width="90%" style="display: block; margin: auto;" /></p>
+<p>Our main <strong>practical interest</strong> in this is that we can use it to model
+count data for which our variance is higher than we could get from the
+Poisson or binomial distributions.</p>
+<p>Examples (family component of <code>glm</code>):<br />
+<code>family = quasibinomial(link = "logit")</code> <code>family = quasipoisson</code></p>
+</div>
+<div id="so-what-does-this-whole-section-mean-for-us-in-practice" class="section level4" number="17.7.9.3">
+<h4><span class="header-section-number">17.7.9.3</span> So what does this whole section mean for us in practice?</h4>
+<ul>
+<li>We’ll use the <strong>canonical link</strong> functions unless we have good
+reason to prefer something else (gamma is really the only example I
+tend to use a non-canonical link for).</li>
+<li>Under the hood, <code>glm</code> is making use of nice properties of our
+<strong>exponential family</strong> and using the iteratively re-weighted least
+squares algorithm.</li>
+<li><strong>Deviances</strong> tell us about goodness-of-fit.</li>
+<li>In this course, we’ll use <strong>likelihood ratio tests</strong> when comparing
+nested GLMs.</li>
+<li>We can (easily) use <strong>quasi-likelihood</strong> methods in situations where
+we want to ‘loosen’ up our distributional assumptions.</li>
+</ul>
+</div>
+</div>
+<div id="reading-logistic-regression" class="section level3" number="17.7.10">
+<h3><span class="header-section-number">17.7.10</span> Reading: Logistic regression</h3>
+<p><strong>Reading:</strong> <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html">Chapter
+6</a> (§
+6.2, 6.4) of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression.
+(2021). <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a>.</p>
+<p>This chapter should provide some good review of odds and logistic
+regression.</p>
+</div>
+<div id="logistic-regression-case-study-trying-to-lose-weight" class="section level3" number="17.7.11">
+<h3><span class="header-section-number">17.7.11</span> Logistic regression case study: Trying to lose weight</h3>
+<p>This case study is drawn from the content in <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html">Chapter
+6</a> (§
+6.7) of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression.
+(2021). <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a>.</p>
+<p>It differs from the <strong>Challenger</strong> example in that the response is
+binary (0/1) instead of a number of successes out of a given number of
+trials. This is a really common application of these methods.</p>
+<div id="access-the-code-for-the-case-studies" class="section level4" number="17.7.11.1">
+<h4><span class="header-section-number">17.7.11.1</span> Access the code for the case studies</h4>
+<p>You can pull the code on to the <a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=rstudio%2F">JupyterHub with this
+link</a>.
+From your Home directory, you will need to navigate to
+<code>sta303-w22-activities -&gt; m4</code>. There are several Rmd you can play with
+in this file. The ones for this reading <code>6.7 weightloss.Rmd</code> and
+<code>6.7 weightloss_ans.Rmd</code>.</p>
+</div>
+</div>
+</div>
+<div id="poisson-regression-key-concepts-reading" class="section level2" number="17.8">
+<h2><span class="header-section-number">17.8</span> Poisson regression key concepts + reading</h2>
+<div id="reading-1" class="section level3" number="17.8.1">
+<h3><span class="header-section-number">17.8.1</span> Reading</h3>
+<p>You may wish to read the entire Poisson regression chapter, but I
+recommend you focus on these sections at least.</p>
+<p><strong>Reading:</strong> <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html">Chapter
+4</a> (§
+4.2, 4.4, 4.6, 4.7, 4.8, 4.9, 4.10) of Roback, P. &amp; Legler, J. Beyond
+Multiple Linear Regression. (2021).
+<a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a>.</p>
+</div>
+<div id="key-concepts-for-poisson-regression" class="section level3" number="17.8.2">
+<h3><span class="header-section-number">17.8.2</span> Key concepts for Poisson regression</h3>
+<div id="use-case-3" class="section level4" number="17.8.2.1">
+<h4><span class="header-section-number">17.8.2.1</span> Use case</h4>
+<p>Counts, which can also extend to rates, i.e. counts per some unit of
+time or space.</p>
+</div>
+<div id="assumptions-4" class="section level4" number="17.8.2.2">
+<h4><span class="header-section-number">17.8.2.2</span> Assumptions</h4>
+<ul>
+<li>Poisson response</li>
+<li>Independence</li>
+<li>Mean = variance</li>
+<li><span class="math inline">\(log(\lambda)\)</span> is a linear function of <span class="math inline">\(x\)</span></li>
+</ul>
+</div>
+<div id="model-2" class="section level4" number="17.8.2.3">
+<h4><span class="header-section-number">17.8.2.3</span> Model</h4>
+<p><span class="math display">\[Y_i \sim \text{Poisson}(\lambda_i) \]</span> <span class="math display">\[\log(\lambda_i) = X_i\beta\]</span>
+<strong>Canonical link: log</strong></p>
+<ul>
+<li><p>We interpret <strong>coefficients</strong> as <strong>risk ratios</strong></p>
+<ul>
+<li>Similar to logistic regression, we are interpreting the
+coefficients on the multiplicative scale after transforming with
+inverse of our link function.</li>
+</ul></li>
+<li><p><strong>Offsets</strong></p>
+<ul>
+<li>Accounts for different denominators in rates, while allowing for
+counts to still be the response.</li>
+</ul></li>
+<li><p>Note: We’re using ‘log’ here to mean the ‘natural log,’ i.e., base
+<em>e</em>. <code>log()</code> in R is also base e.<br />
+</p></li>
+<li><p><strong>Overdispersion</strong></p>
+<ul>
+<li>A key assumption of Poission regression is that the mean and
+variance of our response are equal. If the variance is greater
+than the mean we have overdispersion.</li>
+<li>If we ignore overdispersion, our standard errors might be
+falsely small, meaning we’ll probably have falsely small
+p-values, which might lead us to choose an more complicated
+model</li>
+</ul></li>
+<li><p><strong>Negative binomial regression</strong></p>
+<ul>
+<li>This is another approach to dealing with overdispersion. As
+we’ve seen negative binomial isn’t part of the one parameter
+exponential family, it requires a second parameter, but this
+gives us more flexibility AND assumes an explicit likelihood
+function (unlike quasipoisson).</li>
+</ul></li>
+<li><p><strong>Zero-inflated Poisson (ZIP)</strong></p>
+<ul>
+<li>Some situations have two underlying processes, one that is
+Poisson and one that always produces zeros.</li>
+</ul></li>
+</ul>
+</div>
+<div id="zero-inflated-poisson-situations" class="section level4" number="17.8.2.4">
+<h4><span class="header-section-number">17.8.2.4</span> Zero-inflated Poisson situations</h4>
+<p><img src="images/m4/fishing.jpeg" width="49%" height="20%" style="display: block; margin: auto;" /><img src="images/m4/preggers.jpeg" width="49%" height="20%" style="display: block; margin: auto;" /></p>
+<p>Suppose you’re modelling the fish caught by people staying at a lakeside
+resort. The count of fish caught will always be zero for people who
+don’t go fishing and sometimes zero for people who do.</p>
+<p>Another common example arises with fertility data. If you have the count
+of live-births per person, for people who can give birth to a child,
+some will never have children, either by choice (e.g., through
+contraceptive use) or due to fertility/health status.]</p>
+</div>
+</div>
+<div id="poisson-regression-case-studies-1-household-size-in-the-philippines-and-2-campus-crime" class="section level3" number="17.8.3">
+<h3><span class="header-section-number">17.8.3</span> Poisson regression case studies: (1) Household size in the Philippines and (2) Campus crime</h3>
+<div id="reading-guides-for-the-case-studies" class="section level4" number="17.8.3.1">
+<h4><span class="header-section-number">17.8.3.1</span> Reading guides for the case studies</h4>
+<p>Read through these case studies, experiment with the code and pay
+particular attention to these questions.</p>
+<div id="household-size-in-the-philippines" class="section level5" number="17.8.3.1.1">
+<h5><span class="header-section-number">17.8.3.1.1</span> Household size in the Philippines</h5>
+<ul>
+<li>How do we interpret the coefficients?</li>
+<li>How do we compare models?</li>
+<li>What are the reasons why this model might not fit well?</li>
+</ul>
+<p>You can ignore 4.4.5 and 4.4.8, if you wish.</p>
+</div>
+<div id="campus-crime-includes-4.7-4.8-and-4.9" class="section level5" number="17.8.3.1.2">
+<h5><span class="header-section-number">17.8.3.1.2</span> Campus crime (includes 4.7, 4.8 and 4.9)</h5>
+<ul>
+<li>Why would we use offsets in logistic regression?</li>
+<li>How do we include offsets in the model in R?</li>
+<li>What makes us concerned about our model assumptions?</li>
+<li>How does this example help us account for multiple testing?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="access-the-code-for-the-case-studies-optional" class="section level3" number="17.8.4">
+<h3><span class="header-section-number">17.8.4</span> Access the code for the case studies (optional)</h3>
+<p>You can pull the files on to the <a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=rstudio%2F">JupyterHub with this
+link</a>.
+From your Home directory, you will need to navigate to
+<code>sta303-w22-activities -&gt; m4</code>. There are several Rmd you can play with
+in this file. The ones for this reading <code>4.4 phillipines.Rmd</code> and
+<code>4.6 campus-crime.Rmd</code>.</p>
+</div>
+</div>
+<div id="extra-for-the-curious-not-assessed" class="section level2" number="17.9">
+<h2><span class="header-section-number">17.9</span> Extra for the curious (NOT assessed)</h2>
+<p>The information on the following slides is <strong>not assessed in this
+course</strong>.</p>
+<p>Consider taking a course like STA442 to go deeper! (Courses vary instructor to instructor, but the following is based on notes from Patrick Brown who has taught this course.)</p>
+<div id="efficient-maximization-for-your-reference-only" class="section level3" number="17.9.1">
+<h3><span class="header-section-number">17.9.1</span> Efficient maximization (for your reference only)</h3>
+<ul>
+<li>Iteratively Reweighted Least Squares is the ‘classic’ algorithm when
+<span class="math inline">\(G\)</span> is in the exponential family</li>
+<li>… but GLMs are easy for any density which is differentiable</li>
+<li>The derivatives with respect to <span class="math inline">\(\beta\)</span> are easy to compute with the
+chain rule</li>
+</ul>
+<p><span class="math display">\[\begin{multline*}
+\frac{\partial}{\partial \beta_p} \log L(\beta, \theta ; y_1 \ldots t_N) = \\
+   \sum_{i=1}^N \left[\frac{d}{d \mu} \log f_G (Y_i; \mu, \theta)
+\right]_{\mu = h^{-1}(X_i^T\beta)} 
+\left[ 
+\frac{d}{d \eta}h^{-1}(\eta)
+\right]_{\eta = X_i^T\beta} \cdot X_{ip}
+\end{multline*}\]</span></p>
+<ul>
+<li>Analytical expressions exist for the derivatives of <span class="math inline">\(\log f_G\)</span> and
+<span class="math inline">\(h^{-1}\)</span></li>
+<li>Second derivatives are also tractable</li>
+<li>Numerical maximization to find <span class="math inline">\(\hat\beta\)</span> is fast when derivatives
+are available</li>
+</ul>
+</div>
+<div id="numerical-maximizers-for-your-reference-only" class="section level3" number="17.9.2">
+<h3><span class="header-section-number">17.9.2</span> Numerical maximizers (for your reference only)</h3>
+<ul>
+<li><p>There are hundreds of them!</p></li>
+<li><p><code>optim</code> is the standard <code>R</code> optimizer, which has 6 methods
+available.</p>
+<ul>
+<li>some methods will use gradients if you provide them.</li>
+</ul></li>
+<li><p><code>TrustOptim</code> uses derivatives and ‘trust regions,’ the method used
+in INLA.</p></li>
+<li><p><code>ipopt</code> is probably the cutting edge.</p></li>
+<li><p>Statisticians don’t make enough use of of-the-shelf optimizers.</p></li>
+</ul>
+</div>
+<div id="automatic-differentiation-for-your-reference-only" class="section level3" number="17.9.3">
+<h3><span class="header-section-number">17.9.3</span> Automatic differentiation (for your reference only)</h3>
+<p><span class="math display">\[\sum_{i=1}^N \left[\frac{d}{d \mu} \log f_G (Y_i; \mu, \theta)
+\right]_{\mu = h^{-1}(X_i^T\beta)} 
+\left[ 
+\frac{d}{d \eta}h^{-1}(\eta)
+\right]_{\eta = X_i^T\beta} \cdot X_{ip}\]</span></p>
+<ul>
+<li>Overkill for most GLMs, but infinitely extensible.</li>
+<li>Computers evaluate logs, sines, and other functions through some
+Taylor-series-like polynomial thing… which are easy to differentiate!</li>
+<li>AD programs can take computer code and figure out how to
+differentiate it.</li>
+<li>Used in Neural Nets, Hamiltonian MCMC, optimization, and many more.</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="m3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="m5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["STA303-Course-guide.pdf", "PDF"]],
+"toc": {
+"collapse": "section",
+"toc_depth": 2,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

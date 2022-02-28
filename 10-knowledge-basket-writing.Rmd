@@ -361,3 +361,231 @@ von Elm, E., Altman, D. G., Egger, M., Pocock, S. J., Gotzsche, P. C., Vandenbro
 |                         |                                                                                                                                                                                 |                                                                                                                                       |                                                                                                                              |                                                                                                                                          |
 |                         | In-text citation may or may not be used. References NOT provided at the end.                                                                                                    |                                                                                                                                       |                                                                                                                              | In-text citation may or may not be used. References provided at the end.                                                                 |
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+   
+
+## Module 4 writing task
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Module 4 writing task                      |
++--------------------------------------------------------+----------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                             |
++--------------------------------------------------------+----------------------------------------------------+
+| Value                                                  | 0.5% (0.245%, 0.245%, 0.01%) <br> Completion                                           |
++--------------------------------------------------------+----------------------------------------------------+
+| Due                                                    | __Create phase__: `r m4_c`;  <br> __Assess phase__: `r m4_a`; <br> __Reflect phase__: `r m4_r`;                                |
++--------------------------------------------------------+----------------------------------------------------+
+| Submission instructions                                | Submission: [Via peerScholar](`r m4_link`)                |
+|                                                        |                                                    |
+|                                                        | Marked for completion              |
++--------------------------------------------------------+----------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
++--------------------------------------------------------+----------------------------------------------------+
+
+### M4 instructions
+
+Make sure you are familiar with the [general instructions](#writinggeneral) for these types of tasks.
+
+#### M4 prompt
+
+*The rubric for this assessment (below) has some specific elements for this prompt, so make sure you take a look at it.*
+
+Write an **executive summary** for the case study in your reading this week on Poisson regression, section 4.10 of (Roback & Legler, 2021): [https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html\#cs:drinking (Links to an external site.)](https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html#cs:drinking).
+
+An executive summary is a summary of a larger text mostly used in a business setting prepared for executives, managers and policymakers.
+
+You will need to write one for your project.
+
++-----------------------------+----------------------------------------+---------------------------------------+
+|                             | **Executive Summary**                  | **Abstract**                          |
++=============================+========================================+=======================================+
+| Summary of a larger text    | Yes                                    | Yes                                   |
++-----------------------------+----------------------------------------+---------------------------------------+
+| Audience                    | Not technical: executives, managers,   | Technical: researchers, experts, ...  |
+|                             |                                        |                                       |
+|                             | policymakers                           |                                       |
++-----------------------------+----------------------------------------+---------------------------------------+
+| Background & Aim            | Yes                                    | Yes                                   |
++-----------------------------+----------------------------------------+---------------------------------------+
+| Methods                     | No or brief: non-technical             | Yes: mostly technical                 |
++-----------------------------+----------------------------------------+---------------------------------------+
+| Key findings / Limitations  | Yes, as bullet points                  | Yes                                   |
++-----------------------------+----------------------------------------+---------------------------------------+
+| Tables or figures           | Sometimes                              | Almost never                          |
++-----------------------------+----------------------------------------+---------------------------------------+
+| Length                      | 1-2 pages                              | 150--300 words                        |
++-----------------------------+----------------------------------------+---------------------------------------+
+
+#### *Example* executive summary
+
+Here is an executive summary from a consulting company whose report was presented to the Canadian Government on the economic impact of international education in Canada: <https://www.international.gc.ca/education/report-rapport/impact-2017/index.aspx?lang=eng>.
+
+Notice the brief background and aims, in this case, without any headings and all in one paragraph. This is followed by bullet point findings and a final concluding statement which can be easily remembered by anyone: *"A 10% increase or decrease in spending by international students results in an approximately 10-11% change in economic impacts."*
+
+**Assignment format:** This module writing has TWO pages, see the instructions below. (Still a similar amount of writing.)
+
+**Audience:** University health and well-being team (managers, non-statisticians, non-technical).
+
+#### Page 1: Text
+
+Write the executive summary text. Use the following headings and structure:
+
++-------------------+-----------------------------------+------------------------------------+----------------+
+| **Heading**       | **Implied question**              | **Writing style**                  | **How many?**  |
++===================+===================================+====================================+================+
+| Background & Aim  | What do we know about the topic?  | Paragraphs                         | 1-2            |
+|                   |                                   |                                    |                |
+|                   | What is this study about?         |                                    |                |
++-------------------+-----------------------------------+------------------------------------+----------------+
+| Key findings      | What was discovered?              | Bullet points, one per finding     | 6              |
++-------------------+-----------------------------------+------------------------------------+----------------+
+| Limitations       | What are the limitations?         | Bullet points, one per limitation  | 1-3            |
++-------------------+-----------------------------------+------------------------------------+----------------+
+
+-   Describe **6 'Key findings'** and **1-3 'Limitations'** as bullet points.
+
+-   Refer to both Table 1 and Figure 1 in the bullet points at least once.
+
+-   Do NOT use *p* values, name of statistical tests, 95% CI, or other technical details.
+
+-   Median and interquartile range are okay but need explaining when first used.
+
+#### Page 2: Table and Figure
+
+-   Copy/paste Table 1 (after modification, see "**Include Table 1"** bullet below) and Figure 1 to page 2 of your executive summary.
+
+-   **Do not include Table 2**.
+
+-   Refer to Table 1 and Figure 1 at least once in the main text, i.e., on page 1.
+
+| **Heading**  | **Implied question**  | **Writing style**            | **How many?**  |
+|--------------|-----------------------|------------------------------|----------------|
+| Table        | -                     | Table with a caption on top  | 1              |
+| Figure       | -                     | Figure with a caption below  | 1              |
+
+-   **Include Table 1** on page 2 of the executive summary. **Remove technical details from Table1** (p-value column and second footnote of names of statistical tests highlighted) before copy/pasting to page 2. Notice that the table caption is on top, as discussed in Module 2 and the writing workshop.
+
+**Table 1.** Characteristics of students overall and based on whether they are a first-year or not.
+
++-------------------------+-----------+--------------------+--------------------------+---------------+
+| **Characteristic**      | Overall   | First-year student | Not a first-year student | *p* value^b  |
++=========================+===========+====================+==========================+===============+
+| Counts                  | *N* = 77  | *n* = 18           | *n* = 59                 |               |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+| **Residence**           |           |                    |                          | 0.2           |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+|    Dorm                 | 70 (91%)  | 18 (100%)^a        | 52 (88%)^a               |               |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+|    Off campus           | 7 (9.1%)  | 0 (0%)             | 7 (12%)                  |               |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+| **Sex**                 |           |                    |                          | 0.13          |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+|    Female               | 56 (73%)  | 16 (89%)           | 40 (68%)                 |               |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+|    Male                 | 21 (27%)  | 2 (11%)            | 19 (32%)                 |               |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+| **Drinks last weekend** | 1 (0, 3)  | 0 (0, 1)           | 1 (0, 4)                 | 0.023         |
++-------------------------+-----------+--------------------+--------------------------+---------------+
+
+^a n (%); Median (IQR)  
+
+*Median* separates the highest 50% of values from lowest 50% of values when values are arranged from lowest to highest (i.e. at least half of first year students had no alcoholic drinks the prior weekend).
+
+*IQR* is interquartile range, representing the range of values from the bottom 25% to top 75% of values (i.e. 25% of first year students had at least 1 alcoholic drink the prior weekend).
+
+^b^ Fisher's exact test; Wilcoxon rank sum test.
+
+
+-   **DO NOT include Table 2** on page 2 of your executive summary. State findings in simple words in 'Key findings' (no p-values, 95% CI). If you decide to describe log(IRR), do so with simple words.
+
+**Table 2.** Poisson model to predict the number of alcoholic drinks consumed during the prior weekend.
+
++--------------------+---------------+---------------+-------------------+
+| **Characteristic** | **log(IRR)^a**| **95% CI^a ** | ***p*** **value** |
++====================+===============+===============+===================+
+| **Residence**      |               |               |                   |
++--------------------+---------------+---------------+-------------------+
+|    Dorm            | ---           | ---           |                   |
++--------------------+---------------+---------------+-------------------+
+|    Off campus      | 0.90          | 0.49, 1.3     | <.001             |
++--------------------+---------------+---------------+-------------------+
+| **Sex**            |               |               |                   |
++--------------------+---------------+---------------+-------------------+
+|    Female          | ---           | ---           |                   |
++--------------------+---------------+---------------+-------------------+
+|    Male            | 1.1           | 0.80, 1.4     | <.001             |
++--------------------+---------------+---------------+-------------------+
+
+^a IRR = Incidence Rate Ratio, CI = Confidence Interval  \
+Model: Number of alcoholic drinks \~ Off-campus status + Sex
+
+
+-   **Zero-inflated Poisson model:** State the estimated chance that a first-year student is a non-drinker in 'Key findings' as a bullet point (no p-values, no statistical test names in 'Key findings').
+
+-   **Include Figure 1** on page 2 of the executive summary. Include figure title/legend below figure.
+
+![](images/assessments/m4-writing.jpeg)
+
+**Figure 1.** Distribution of drinking habits across 9 dorms, off campus residences, and overall, by sex and first year status of student. The horizontal *median line* in the middle of the boxes represents the point separating the highest 50% number of alcoholic drinks from the lowest 50% (the middle value). The top of the box represents 75% and the bottom of the box 25% of number of alcoholic drinks. The lines and dots extending beyond the box give the full range of values, with more extreme values further away from the box.
+
+**Note 1:** The code/data is available in the Weekend Drinking case study but you can just copy objects from this prompt directly. Amin has used the `ggthemes` package to apply the 'Stata' theme to this particular plot.
+
+**Note 2:** In your project executive summary you might want to place images and tables more strategically throughout the text, but for this short writing activity we didn't want you to spend time on formatting.
+
+**Note 3:** It is unlikely that you will need to cite anything, as you are writing as if ***you*** are the one who conducted this study. If you were ever to post this writing outside of class, then you should carefully explain the assessment context AND reference the textbook from which the case study comes BUT for in-class submission purposes, don't worry about it.
+
+**Aim to spend about 30 minutes on this task**. Write about 200--400 words responding to the prompt. The word count isn't strict, but the submission requirements listed below ARE.
+
+-   The prompt should be clearly and comprehensively addressed.
+
+-   Your writing should be in full sentences and be broken into paragraphs or bullets as appropriate.
+
+-   Any grammatical or word choice errors should be minimal and not obstruct the meaning.
+
+-   There is a clear central idea that is well introduced in the introduction and well summarized in a conclusion.
+
+-   There should be 2 pages, structured as instructed.
+
+### Rubric
+
+You will be asked to assess the writing of 2 peers on the following rubric. Peers will also assess you on this rubric, so it is important to keep in mind when you are writing.
+
++------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|                        | **Poor or Missing**                                                                                                   | **Adequate**                                                                                                                                            | **Good**                                                                                                                                                   | **Excellent**                                                                                                                                   |
++========================+=======================================================================================================================+=========================================================================================================================================================+============================================================================================================================================================+=================================================================================================================================================+
+| **Addresses prompt**   | Does not address the prompt for this week.                                                                            | Only one item of the prompt is addressed or much of the response is not relevant/off-topic.                                                             | Prompt is addressed, though may go somewhat off-topic at points, or does not mention at least one of main points.                                          | Prompt is answered with regard to all three main points: association of sex, residence and first-year status on alcoholic drinking.             |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       | Inappropriate for the audience. More than 1 mention of p-value or statistical test.                                                                     | Either Table 1 or Figure 1 is not used.                                                                                                                    | Table 1 and Figure 1 are used.                                                                                                                  |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         | Mostly appropriate for the audience. One mention of a p-value or a statistical test.                                                                       | Appropriate for the audience. No p-values or names of statistical tests.                                                                        |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
++------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Structure**          | There is no structure, very difficult to follow. No paragraphs, single block of text.                                 | 1--2 headings used.                                                                                                                                     | 3--4 headings used.                                                                                                                                        | Five headings used.                                                                                                                             |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       | Neither 'Key findings' or 'Limitations' are in bullet points.                                                                                           | Either 'Key findings' or 'Limitations' are not in bullet points.                                                                                           | 'Key findings' and 'Limitations' are in bullet points.                                                                                          |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       | More than 1 paragraph/bullet point contains unrelated ideas, or more than 1 paragraph does not introduce the topic of the paragraph at the beginning.   | At least 1 paragraph/bullet point contains an unrelated idea and/or at least 1 paragraph does not introduce the topic of the paragraph at the beginning.   | Each paragraph/bullet point contains a clear main point and related ideas. Paragraphs introduce the topic of the paragraph at the beginning.    |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       | Some structure but difficult to follow.                                                                                                                 | Well organized, follows a logical structure.                                                                                                               | Well organized, follows a logical structure.                                                                                                    |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
+|                        |                                                                                                                       |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                 |
++------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Writing mechanics**  | Considerable writing and grammatical issues that obscure the meaning OR lots of slang and inappropriate word choice.  | Multiple sentences/phrases are difficult to read, have slang or inappropriate word choice, or grammar problems obstructing meaning.                     | Slight difficulty in understanding one or two sentences/phrases but otherwise understandable.                                                              | Can read and follow along with minimal effort. Some grammatical or word choice errors are allowable, but they must not obstruct meaning.        |
++------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+### Reference
+
+Roback, P., & Legler, J. (2021). 4.10 Case Study: Weekend Drinking. In *Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R* (1. ed., pp. 436). Boca Raton: CRC Press.
+
