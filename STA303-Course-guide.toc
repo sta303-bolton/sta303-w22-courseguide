@@ -121,515 +121,520 @@
 \contentsline {section}{\numberline {6.8}Rubric}{55}{section.6.8}%
 \contentsline {chapter}{\numberline {7}Mini-mixed assessment}{56}{chapter.7}%
 \contentsline {subsection}{\numberline {7.0.1}Instructions}{56}{subsection.7.0.1}%
-\contentsline {chapter}{\numberline {8}Mixed assessment}{57}{chapter.8}%
-\contentsline {subsection}{\numberline {8.0.1}Instructions}{57}{subsection.8.0.1}%
-\contentsline {chapter}{\numberline {9}Final project}{58}{chapter.9}%
-\contentsline {subsection}{\numberline {9.0.1}Instructions}{58}{subsection.9.0.1}%
-\contentsline {subsubsection}{\numberline {9.0.1.1}Project groups}{58}{subsubsection.9.0.1.1}%
-\contentsline {chapter}{\numberline {10}Knowledge basket overview}{59}{chapter.10}%
-\contentsline {subsection}{\numberline {10.0.1}Planning and tips}{60}{subsection.10.0.1}%
-\contentsline {subsection}{\numberline {10.0.2}Examples}{60}{subsection.10.0.2}%
-\contentsline {subsubsection}{\numberline {10.0.2.1}Student A}{60}{subsubsection.10.0.2.1}%
-\contentsline {subsubsection}{\numberline {10.0.2.2}Student B}{60}{subsubsection.10.0.2.2}%
-\contentsline {subsubsection}{\numberline {10.0.2.3}Student C}{60}{subsubsection.10.0.2.3}%
-\contentsline {chapter}{\numberline {11}Knowledge basket: Writing and peer feedback}{62}{chapter.11}%
-\contentsline {section}{\numberline {11.1}General instructions}{62}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}Create phase}{62}{subsection.11.1.1}%
-\contentsline {subsubsection}{\numberline {11.1.1.1}Submission requirements}{62}{subsubsection.11.1.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Assess phase}{63}{subsection.11.1.2}%
-\contentsline {subsection}{\numberline {11.1.3}Reflect phase}{63}{subsection.11.1.3}%
-\contentsline {subsection}{\numberline {11.1.4}General instructions}{63}{subsection.11.1.4}%
-\contentsline {section}{\numberline {11.2}Module 1 writing task}{63}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}M1 Instructions}{63}{subsection.11.2.1}%
-\contentsline {subsubsection}{\numberline {11.2.1.1}M1 Prompt}{64}{subsubsection.11.2.1.1}%
-\contentsline {subsubsection}{\numberline {11.2.1.2}M1 Rubric}{64}{subsubsection.11.2.1.2}%
-\contentsline {section}{\numberline {11.3}Module 2 writing task}{64}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}M2 Instructions}{64}{subsection.11.3.1}%
-\contentsline {subsubsection}{\numberline {11.3.1.1}M2 Prompt}{64}{subsubsection.11.3.1.1}%
-\contentsline {paragraph}{\numberline {11.3.1.1.1}M2 Reference}{65}{paragraph.11.3.1.1.1}%
-\contentsline {subsubsection}{\numberline {11.3.1.2}M2 Rubric}{65}{subsubsection.11.3.1.2}%
-\contentsline {section}{\numberline {11.4}Module 3 writing task}{65}{section.11.4}%
-\contentsline {subsection}{\numberline {11.4.1}M3 instructions}{66}{subsection.11.4.1}%
-\contentsline {subsubsection}{\numberline {11.4.1.1}M3 prompt}{66}{subsubsection.11.4.1.1}%
-\contentsline {paragraph}{\numberline {11.4.1.1.1}Example from a \emph {different} article: Modified from (Berlowitz et al., 2017):}{68}{paragraph.11.4.1.1.1}%
-\contentsline {paragraph}{\numberline {11.4.1.1.2}Reference: Berlowitz, D. R., Foy, C. G., Kazis, L. E., Bolin, L. P., Conroy, M. B., Fitzpatrick, P., . . . Group, S. R. (2017). Effect of Intensive Blood-Pressure Treatment on Patient-Reported Outcomes. \emph {N Engl J Med, 377}(8), 733-744. \url {doi:10.1056/NEJMoa1611179}}{69}{paragraph.11.4.1.1.2}%
-\contentsline {subsubsection}{\numberline {11.4.1.2}References for this prompt}{69}{subsubsection.11.4.1.2}%
-\contentsline {subsubsection}{\numberline {11.4.1.3}M3 Rubric}{69}{subsubsection.11.4.1.3}%
-\contentsline {section}{\numberline {11.5}Module 4 writing task}{70}{section.11.5}%
-\contentsline {subsection}{\numberline {11.5.1}M4 instructions}{70}{subsection.11.5.1}%
-\contentsline {subsubsection}{\numberline {11.5.1.1}M4 prompt}{70}{subsubsection.11.5.1.1}%
-\contentsline {subsubsection}{\numberline {11.5.1.2}\emph {Example} executive summary}{71}{subsubsection.11.5.1.2}%
-\contentsline {subsubsection}{\numberline {11.5.1.3}Page 1: Text}{71}{subsubsection.11.5.1.3}%
-\contentsline {subsubsection}{\numberline {11.5.1.4}Page 2: Table and Figure}{71}{subsubsection.11.5.1.4}%
-\contentsline {subsection}{\numberline {11.5.2}Rubric}{74}{subsection.11.5.2}%
-\contentsline {subsection}{\numberline {11.5.3}Reference}{75}{subsection.11.5.3}%
-\contentsline {chapter}{\numberline {12}Knowledge basket: Professional development task}{76}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Professional development proposal}{77}{section.12.1}%
-\contentsline {subsection}{\numberline {12.1.1}Instructions}{77}{subsection.12.1.1}%
-\contentsline {subsection}{\numberline {12.1.2}Submission requirements}{78}{subsection.12.1.2}%
-\contentsline {subsection}{\numberline {12.1.3}Rubric}{78}{subsection.12.1.3}%
-\contentsline {subsection}{\numberline {12.1.4}Checklist}{80}{subsection.12.1.4}%
-\contentsline {subsection}{\numberline {12.1.5}Things to keep in minds as you start working towards your professional development goal}{80}{subsection.12.1.5}%
-\contentsline {subsection}{\numberline {12.1.6}Example smart goal}{80}{subsection.12.1.6}%
-\contentsline {subsubsection}{\numberline {12.1.6.1}Specific}{81}{subsubsection.12.1.6.1}%
-\contentsline {subsubsection}{\numberline {12.1.6.2}Measurable}{81}{subsubsection.12.1.6.2}%
-\contentsline {subsubsection}{\numberline {12.1.6.3}Attainable}{81}{subsubsection.12.1.6.3}%
-\contentsline {subsubsection}{\numberline {12.1.6.4}Relevant}{81}{subsubsection.12.1.6.4}%
-\contentsline {subsubsection}{\numberline {12.1.6.5}Time-bounded:}{82}{subsubsection.12.1.6.5}%
-\contentsline {section}{\numberline {12.2}Professional development evidence and reflection}{82}{section.12.2}%
-\contentsline {subsection}{\numberline {12.2.1}Templates}{82}{subsection.12.2.1}%
-\contentsline {subsection}{\numberline {12.2.2}Reflection and evidence components}{83}{subsection.12.2.2}%
-\contentsline {subsubsection}{\numberline {12.2.2.1}Activity, alignment and lessons}{83}{subsubsection.12.2.2.1}%
-\contentsline {paragraph}{\numberline {12.2.2.1.1}Examples}{83}{paragraph.12.2.2.1.1}%
-\contentsline {paragraph}{\numberline {12.2.2.1.2}Examples}{83}{paragraph.12.2.2.1.2}%
-\contentsline {paragraph}{\numberline {12.2.2.1.3}Examples}{83}{paragraph.12.2.2.1.3}%
-\contentsline {subsubsection}{\numberline {12.2.2.2}Evidence}{83}{subsubsection.12.2.2.2}%
-\contentsline {paragraph}{\numberline {12.2.2.2.1}Examples}{83}{paragraph.12.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {12.2.2.3}Timesheet}{84}{subsubsection.12.2.2.3}%
-\contentsline {paragraph}{\numberline {12.2.2.3.1}Examples}{84}{paragraph.12.2.2.3.1}%
-\contentsline {subsection}{\numberline {12.2.3}Recommended structure}{84}{subsection.12.2.3}%
-\contentsline {subsection}{\numberline {12.2.4}Rubric}{84}{subsection.12.2.4}%
-\contentsline {chapter}{\numberline {13}Knowledge basket: Other}{86}{chapter.13}%
-\contentsline {section}{\numberline {13.1}`Getting to know you' survey}{86}{section.13.1}%
-\contentsline {subsection}{\numberline {13.1.1}Instructions}{86}{subsection.13.1.1}%
-\contentsline {section}{\numberline {13.2}Pre-knowledge check}{86}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Instructions}{87}{subsection.13.2.1}%
-\contentsline {subsubsection}{\numberline {13.2.1.1}Grade structure}{87}{subsubsection.13.2.1.1}%
-\contentsline {subsection}{\numberline {13.2.2}Workshop attendance}{87}{subsection.13.2.2}%
-\contentsline {section}{\numberline {13.3}Writing workshop}{88}{section.13.3}%
-\contentsline {subsection}{\numberline {13.3.1}Workshop attendance}{88}{subsection.13.3.1}%
-\contentsline {section}{\numberline {13.4}Module check-ins}{88}{section.13.4}%
-\contentsline {subsection}{\numberline {13.4.1}Instructions}{88}{subsection.13.4.1}%
-\contentsline {section}{\numberline {13.5}Team Up! activities}{88}{section.13.5}%
-\contentsline {section}{\numberline {13.6}Graduate school info session}{89}{section.13.6}%
-\contentsline {section}{\numberline {13.7}Punctuation art}{89}{section.13.7}%
-\contentsline {subsection}{\numberline {13.7.1}Instructions}{90}{subsection.13.7.1}%
-\contentsline {subsubsection}{\numberline {13.7.1.1}Prompt}{90}{subsubsection.13.7.1.1}%
-\contentsline {subsubsection}{\numberline {13.7.1.2}Examples}{90}{subsubsection.13.7.1.2}%
-\contentsline {subsubsection}{\numberline {13.7.1.3}Skills}{91}{subsubsection.13.7.1.3}%
-\contentsline {subsubsection}{\numberline {13.7.1.4}Tips}{91}{subsubsection.13.7.1.4}%
-\contentsline {subsubsection}{\numberline {13.7.1.5}Submission instructions}{92}{subsubsection.13.7.1.5}%
-\contentsline {subsubsection}{\numberline {13.7.1.6}Rubric}{92}{subsubsection.13.7.1.6}%
-\contentsline {section}{\numberline {13.8}Breathing exercise}{92}{section.13.8}%
-\contentsline {subsection}{\numberline {13.8.1}Instructions}{92}{subsection.13.8.1}%
-\contentsline {subsubsection}{\numberline {13.8.1.1}Prompt}{93}{subsubsection.13.8.1.1}%
-\contentsline {paragraph}{\numberline {13.8.1.1.1}Background}{93}{paragraph.13.8.1.1.1}%
-\contentsline {paragraph}{\numberline {13.8.1.1.2}A note}{93}{paragraph.13.8.1.1.2}%
-\contentsline {subsubsection}{\numberline {13.8.1.2}Examples}{93}{subsubsection.13.8.1.2}%
-\contentsline {subsubsection}{\numberline {13.8.1.3}Skills}{93}{subsubsection.13.8.1.3}%
-\contentsline {subsubsection}{\numberline {13.8.1.4}Tips/links}{93}{subsubsection.13.8.1.4}%
-\contentsline {subsubsection}{\numberline {13.8.1.5}Submission instructions}{94}{subsubsection.13.8.1.5}%
-\contentsline {subsubsection}{\numberline {13.8.1.6}Rubric}{94}{subsubsection.13.8.1.6}%
-\contentsline {section}{\numberline {13.9}Linear Mixed Models study guide}{94}{section.13.9}%
-\contentsline {subsection}{\numberline {13.9.1}Instructions}{94}{subsection.13.9.1}%
-\contentsline {subsubsection}{\numberline {13.9.1.1}Considerations}{94}{subsubsection.13.9.1.1}%
-\contentsline {subsubsection}{\numberline {13.9.1.2}Rubric}{95}{subsubsection.13.9.1.2}%
-\contentsline {section}{\numberline {13.10}Generalized Linear Models study guide}{95}{section.13.10}%
-\contentsline {subsection}{\numberline {13.10.1}Instructions}{95}{subsection.13.10.1}%
-\contentsline {subsubsection}{\numberline {13.10.1.1}Considerations}{95}{subsubsection.13.10.1.1}%
-\contentsline {subsubsection}{\numberline {13.10.1.2}Rubric}{95}{subsubsection.13.10.1.2}%
-\contentsline {section}{\numberline {13.11}Hack your class workshop attendance and reflection}{96}{section.13.11}%
-\contentsline {subsection}{\numberline {13.11.1}Instructions}{96}{subsection.13.11.1}%
-\contentsline {section}{\numberline {13.12}Sports analytics workshop attendance and reflection}{96}{section.13.12}%
-\contentsline {subsection}{\numberline {13.12.1}Instructions}{96}{subsection.13.12.1}%
-\contentsline {part}{Modules}{98}{part*.3}%
-\contentsline {chapter}{\numberline {14}Module 1}{98}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Learning checklist}{98}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Instructor information}{98}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Upward management tips}{98}{section.14.3}%
-\contentsline {subsection}{\numberline {14.3.1}Communicate using the tools your manager prefers}{99}{subsection.14.3.1}%
-\contentsline {subsection}{\numberline {14.3.2}Write good emails (when emails are appropriate)}{99}{subsection.14.3.2}%
-\contentsline {subsection}{\numberline {14.3.3}Understand your manager's goals}{99}{subsection.14.3.3}%
-\contentsline {subsection}{\numberline {14.3.4}Demonstrate self-management and resilience while also asking for help and flagging problems early.}{100}{subsection.14.3.4}%
-\contentsline {section}{\numberline {14.4}Recap of linear models}{100}{section.14.4}%
-\contentsline {subsection}{\numberline {14.4.1}Why model?}{100}{subsection.14.4.1}%
-\contentsline {subsection}{\numberline {14.4.2}Linear models}{100}{subsection.14.4.2}%
-\contentsline {subsection}{\numberline {14.4.3}Linear regression assumptions}{100}{subsection.14.4.3}%
-\contentsline {subsection}{\numberline {14.4.4}What makes it a \emph {linear} model?}{100}{subsection.14.4.4}%
-\contentsline {subsubsection}{\numberline {14.4.4.1}Linear}{101}{subsubsection.14.4.4.1}%
-\contentsline {subsubsection}{\numberline {14.4.4.2}NOT linear}{101}{subsubsection.14.4.4.2}%
-\contentsline {subsection}{\numberline {14.4.5}Optional refresher reading}{101}{subsection.14.4.5}%
-\contentsline {subsubsection}{\numberline {14.4.5.1}Brief discussion of assumptions with examples}{101}{subsubsection.14.4.5.1}%
-\contentsline {subsubsection}{\numberline {14.4.5.2}Fitting linear models in R}{101}{subsubsection.14.4.5.2}%
-\contentsline {subsubsection}{\numberline {14.4.5.3}Delicious mathematics}{101}{subsubsection.14.4.5.3}%
-\contentsline {section}{\numberline {14.5}The data for module 1}{101}{section.14.5}%
-\contentsline {subsection}{\numberline {14.5.1}Let's meet the penguins}{102}{subsection.14.5.1}%
-\contentsline {subsection}{\numberline {14.5.2}The variables}{102}{subsection.14.5.2}%
-\contentsline {section}{\numberline {14.6}Common statistical tests as linear regression}{103}{section.14.6}%
-\contentsline {subsection}{\numberline {14.6.1}Introduction}{103}{subsection.14.6.1}%
-\contentsline {subsubsection}{\numberline {14.6.1.1}Parametric}{104}{subsubsection.14.6.1.1}%
-\contentsline {subsubsection}{\numberline {14.6.1.2}Non-parametric}{104}{subsubsection.14.6.1.2}%
-\contentsline {subsubsection}{\numberline {14.6.1.3}Aside: But why are there two types of tests?}{104}{subsubsection.14.6.1.3}%
-\contentsline {subsection}{\numberline {14.6.2}One-sample t-test}{104}{subsection.14.6.2}%
-\contentsline {subsubsection}{\numberline {14.6.2.1}Use case}{104}{subsubsection.14.6.2.1}%
-\contentsline {subsubsection}{\numberline {14.6.2.2}Assumptions}{104}{subsubsection.14.6.2.2}%
-\contentsline {subsubsection}{\numberline {14.6.2.3}Hypotheses}{105}{subsubsection.14.6.2.3}%
-\contentsline {subsubsection}{\numberline {14.6.2.4}Example}{105}{subsubsection.14.6.2.4}%
-\contentsline {subsubsection}{\numberline {14.6.2.5}Now as a linear model}{105}{subsubsection.14.6.2.5}%
-\contentsline {subsubsection}{\numberline {14.6.2.6}Wilcoxon signed-rank test}{107}{subsubsection.14.6.2.6}%
-\contentsline {subsubsection}{\numberline {14.6.2.7}Paired sample t-test and Wilcoxon matched pair}{108}{subsubsection.14.6.2.7}%
-\contentsline {subsection}{\numberline {14.6.3}Dummy variables}{108}{subsection.14.6.3}%
-\contentsline {subsubsection}{\numberline {14.6.3.1}The matrices we use for linear regression}{108}{subsubsection.14.6.3.1}%
-\contentsline {subsubsection}{\numberline {14.6.3.2}Getting our model matrix in R}{109}{subsubsection.14.6.3.2}%
-\contentsline {subparagraph}{\numberline {14.6.3.2.0.1}{[}Unassessed aside{]} Why do we have to drop one of the levels?}{110}{subparagraph.14.6.3.2.0.1}%
-\contentsline {subsection}{\numberline {14.6.4}Two means}{110}{subsection.14.6.4}%
-\contentsline {subsubsection}{\numberline {14.6.4.1}Use case}{111}{subsubsection.14.6.4.1}%
-\contentsline {subsubsection}{\numberline {14.6.4.2}Assumptions}{111}{subsubsection.14.6.4.2}%
-\contentsline {subsubsection}{\numberline {14.6.4.3}Hypotheses}{111}{subsubsection.14.6.4.3}%
-\contentsline {subsubsection}{\numberline {14.6.4.4}Example}{111}{subsubsection.14.6.4.4}%
-\contentsline {subsubsection}{\numberline {14.6.4.5}Mann-Whitney U}{112}{subsubsection.14.6.4.5}%
-\contentsline {subsection}{\numberline {14.6.5}ANOVA}{113}{subsection.14.6.5}%
-\contentsline {subsubsection}{\numberline {14.6.5.1}Use case}{113}{subsubsection.14.6.5.1}%
-\contentsline {subsubsection}{\numberline {14.6.5.2}Assumptions}{113}{subsubsection.14.6.5.2}%
-\contentsline {subsubsection}{\numberline {14.6.5.3}Hypotheses}{113}{subsubsection.14.6.5.3}%
-\contentsline {subsubsection}{\numberline {14.6.5.4}Example}{114}{subsubsection.14.6.5.4}%
-\contentsline {subsection}{\numberline {14.6.6}Credits}{114}{subsection.14.6.6}%
-\contentsline {section}{\numberline {14.7}Reproducible examples (reprex)}{114}{section.14.7}%
-\contentsline {subsection}{\numberline {14.7.1}What is a reproducible example?}{114}{subsection.14.7.1}%
-\contentsline {subsection}{\numberline {14.7.2}Why should you care about creating reproducible examples?}{114}{subsection.14.7.2}%
-\contentsline {subsubsection}{\numberline {14.7.2.1}Other things to know}{114}{subsubsection.14.7.2.1}%
-\contentsline {subsection}{\numberline {14.7.3}Watch the creator of the reprex package explain it}{115}{subsection.14.7.3}%
-\contentsline {subsection}{\numberline {14.7.4}Using reprexes on Piazza}{115}{subsection.14.7.4}%
-\contentsline {section}{\numberline {14.8}Reading strategy: previewing and skimming}{115}{section.14.8}%
-\contentsline {section}{\numberline {14.9}Getting ahead on Module 2}{116}{section.14.9}%
-\contentsline {chapter}{\numberline {15}Module 2}{117}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Learning checklist}{117}{section.15.1}%
-\contentsline {subsection}{\numberline {15.1.1}Key functions}{118}{subsection.15.1.1}%
-\contentsline {section}{\numberline {15.2}Introduction to Module 2}{119}{section.15.2}%
-\contentsline {section}{\numberline {15.3}Readings for this module}{119}{section.15.3}%
-\contentsline {subsection}{\numberline {15.3.1}R for Data Science (+ story time)}{119}{subsection.15.3.1}%
-\contentsline {subsection}{\numberline {15.3.2}Common misconceptions about data analysis and statistics}{119}{subsection.15.3.2}%
-\contentsline {subsection}{\numberline {15.3.3}To predict and serve?}{120}{subsection.15.3.3}%
-\contentsline {subsection}{\numberline {15.3.4}Science isn't broken}{120}{subsection.15.3.4}%
-\contentsline {section}{\numberline {15.4}Data wrangling and visualization}{120}{section.15.4}%
-\contentsline {subsection}{\numberline {15.4.1}Tidy data}{120}{subsection.15.4.1}%
-\contentsline {subsubsection}{\numberline {15.4.1.1}A bit of advice\ldots and why we need \textbf {tidy} data}{120}{subsubsection.15.4.1.1}%
-\contentsline {subsubsection}{\numberline {15.4.1.2}Rules of tidy data}{121}{subsubsection.15.4.1.2}%
-\contentsline {subsubsection}{\numberline {15.4.1.3}Recognizing Tidy Data}{121}{subsubsection.15.4.1.3}%
-\contentsline {subsubsection}{\numberline {15.4.1.4}Further reading on tidy data (optional)}{121}{subsubsection.15.4.1.4}%
-\contentsline {subsection}{\numberline {15.4.2}Student grades case study}{121}{subsection.15.4.2}%
-\contentsline {subsubsection}{\numberline {15.4.2.1}Videos}{122}{subsubsection.15.4.2.1}%
-\contentsline {section}{\numberline {15.5}Ethical professional practice for statisticians}{123}{section.15.5}%
-\contentsline {subsection}{\numberline {15.5.1}Why should statisticians be ethical?}{123}{subsection.15.5.1}%
-\contentsline {subsubsection}{\numberline {15.5.1.1}Relevant codes of conduct for statistical societies/associations in North America}{123}{subsubsection.15.5.1.1}%
-\contentsline {subsection}{\numberline {15.5.2}Getting data}{124}{subsection.15.5.2}%
-\contentsline {subsubsection}{\numberline {15.5.2.1}Confounding and study design}{124}{subsubsection.15.5.2.1}%
-\contentsline {paragraph}{\numberline {15.5.2.1.1}Confounders (i.e.\nobreakspace {}confounding factors or confounding variables)}{124}{paragraph.15.5.2.1.1}%
-\contentsline {paragraph}{\numberline {15.5.2.1.2}Designing studies to avoid confounding}{125}{paragraph.15.5.2.1.2}%
-\contentsline {paragraph}{\numberline {15.5.2.1.3}Common study designs and how to recognize them}{126}{paragraph.15.5.2.1.3}%
-\contentsline {paragraph}{\numberline {15.5.2.1.4}Causation from observational studies?}{126}{paragraph.15.5.2.1.4}%
-\contentsline {subparagraph}{\numberline {15.5.2.1.4.1}Bradford Hill criteria (not assessed)}{126}{subparagraph.15.5.2.1.4.1}%
-\contentsline {subsubsection}{\numberline {15.5.2.2}Human research ethics}{127}{subsubsection.15.5.2.2}%
-\contentsline {paragraph}{\numberline {15.5.2.2.1}Principles of free and informed consent}{127}{paragraph.15.5.2.2.1}%
-\contentsline {subparagraph}{\numberline {15.5.2.2.1.1}Information}{127}{subparagraph.15.5.2.2.1.1}%
-\contentsline {subparagraph}{\numberline {15.5.2.2.1.2}Comprehension}{127}{subparagraph.15.5.2.2.1.2}%
-\contentsline {subparagraph}{\numberline {15.5.2.2.1.3}Voluntariness}{127}{subparagraph.15.5.2.2.1.3}%
-\contentsline {subsubsection}{\numberline {15.5.2.3}Web scraping and APIs}{127}{subsubsection.15.5.2.3}%
-\contentsline {paragraph}{\numberline {15.5.2.3.1}What do you need to web scrape?}{128}{paragraph.15.5.2.3.1}%
-\contentsline {paragraph}{\numberline {15.5.2.3.2}The Ethical Scraper}{128}{paragraph.15.5.2.3.2}%
-\contentsline {paragraph}{\numberline {15.5.2.3.3}Terms and Conditions and Robots.txt}{128}{paragraph.15.5.2.3.3}%
-\contentsline {paragraph}{\numberline {15.5.2.3.4}Robots.txt}{129}{paragraph.15.5.2.3.4}%
-\contentsline {paragraph}{\numberline {15.5.2.3.5}Using an API}{129}{paragraph.15.5.2.3.5}%
-\contentsline {subsubsection}{\numberline {15.5.2.4}Indigenous data sovereignty}{129}{subsubsection.15.5.2.4}%
-\contentsline {paragraph}{\numberline {15.5.2.4.1}How can U of T students develop their knowledge?}{129}{paragraph.15.5.2.4.1}%
-\contentsline {subsubsection}{\numberline {15.5.2.5}Selection bias}{130}{subsubsection.15.5.2.5}%
-\contentsline {paragraph}{\numberline {15.5.2.5.1}Survivorship bias}{130}{paragraph.15.5.2.5.1}%
-\contentsline {subsection}{\numberline {15.5.3}Analyzing data}{131}{subsection.15.5.3}%
-\contentsline {subsubsection}{\numberline {15.5.3.1}HARKing}{131}{subsubsection.15.5.3.1}%
-\contentsline {subsubsection}{\numberline {15.5.3.2}Multiple testing problem}{132}{subsubsection.15.5.3.2}%
-\contentsline {paragraph}{\numberline {15.5.3.2.1}Correcting for multiple comparisons?}{132}{paragraph.15.5.3.2.1}%
-\contentsline {subsection}{\numberline {15.5.4}Making decisions with data}{133}{subsection.15.5.4}%
-\contentsline {subsubsection}{\numberline {15.5.4.1}Algorithmic bias}{133}{subsubsection.15.5.4.1}%
-\contentsline {paragraph}{\numberline {15.5.4.1.1}Proxy variables}{133}{paragraph.15.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {15.5.4.2}Should algorithms be transparent?}{133}{subsubsection.15.5.4.2}%
-\contentsline {section}{\numberline {15.6}Statistical communication}{133}{section.15.6}%
-\contentsline {subsection}{\numberline {15.6.1}Prioritize statistical communication as part of your toolbox}{133}{subsection.15.6.1}%
-\contentsline {subsubsection}{\numberline {15.6.1.1}What can statisticians learn about communication from Winston Churchill's mother's dinner conversation?}{134}{subsubsection.15.6.1.1}%
-\contentsline {subsection}{\numberline {15.6.2}What do statisticians usually \emph {write}?}{134}{subsection.15.6.2}%
-\contentsline {subsection}{\numberline {15.6.3}Common report components}{135}{subsection.15.6.3}%
-\contentsline {subsubsection}{\numberline {15.6.3.1}Brief overview (ONE of the following, not both)}{135}{subsubsection.15.6.3.1}%
-\contentsline {paragraph}{\numberline {15.6.3.1.1}Abstract (or summary)}{135}{paragraph.15.6.3.1.1}%
-\contentsline {subparagraph}{\numberline {15.6.3.1.1.1}`Plain English' summaries}{135}{subparagraph.15.6.3.1.1.1}%
-\contentsline {paragraph}{\numberline {15.6.3.1.2}Executive summary}{135}{paragraph.15.6.3.1.2}%
-\contentsline {subsubsection}{\numberline {15.6.3.2}Introduction}{135}{subsubsection.15.6.3.2}%
-\contentsline {subsubsection}{\numberline {15.6.3.3}Data summary (optional)}{136}{subsubsection.15.6.3.3}%
-\contentsline {subsubsection}{\numberline {15.6.3.4}Methods}{136}{subsubsection.15.6.3.4}%
-\contentsline {subsubsection}{\numberline {15.6.3.5}Results}{136}{subsubsection.15.6.3.5}%
-\contentsline {subsubsection}{\numberline {15.6.3.6}Conclusion/discussion}{137}{subsubsection.15.6.3.6}%
-\contentsline {subsubsection}{\numberline {15.6.3.7}References}{138}{subsubsection.15.6.3.7}%
-\contentsline {subsubsection}{\numberline {15.6.3.8}Appendices}{138}{subsubsection.15.6.3.8}%
-\contentsline {subsubsection}{\numberline {15.6.3.9}Final notes on organization}{138}{subsubsection.15.6.3.9}%
-\contentsline {subsection}{\numberline {15.6.4}Paraphrasing}{138}{subsection.15.6.4}%
-\contentsline {subsubsection}{\numberline {15.6.4.1}Example activity prompt}{139}{subsubsection.15.6.4.1}%
-\contentsline {paragraph}{\numberline {15.6.4.1.1}Sample partial/complete answers with overall gradings}{139}{paragraph.15.6.4.1.1}%
-\contentsline {subparagraph}{\numberline {15.6.4.1.1.1}Poor}{139}{subparagraph.15.6.4.1.1.1}%
-\contentsline {subparagraph}{\numberline {15.6.4.1.1.2}Adequate}{140}{subparagraph.15.6.4.1.1.2}%
-\contentsline {subparagraph}{\numberline {15.6.4.1.1.3}Excellent}{140}{subparagraph.15.6.4.1.1.3}%
-\contentsline {subsubsection}{\numberline {15.6.4.2}How to think about paraphrasing?}{140}{subsubsection.15.6.4.2}%
-\contentsline {paragraph}{\numberline {15.6.4.2.1}Example using the Swales \& Feak (2012) approach}{140}{paragraph.15.6.4.2.1}%
-\contentsline {subsubsection}{\numberline {15.6.4.3}References}{141}{subsubsection.15.6.4.3}%
-\contentsline {chapter}{\numberline {16}Module 3}{142}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Learning checklist}{142}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Introduction}{142}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}How deep are we going on likelihoods?}{142}{subsection.16.2.1}%
-\contentsline {subsubsection}{\numberline {16.2.1.1}Maximum likelihood review}{143}{subsubsection.16.2.1.1}%
-\contentsline {subsubsection}{\numberline {16.2.1.2}Properties of maximum likelihood estimators}{143}{subsubsection.16.2.1.2}%
-\contentsline {subsubsection}{\numberline {16.2.1.3}Suggested reading}{143}{subsubsection.16.2.1.3}%
-\contentsline {subsection}{\numberline {16.2.2}Model comparison more generally}{143}{subsection.16.2.2}%
-\contentsline {paragraph}{\numberline {16.2.2.0.1}References}{144}{paragraph.16.2.2.0.1}%
-\contentsline {section}{\numberline {16.3}Correlated data}{144}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Reading}{144}{subsection.16.3.1}%
-\contentsline {subsection}{\numberline {16.3.2}Key vocabulary}{144}{subsection.16.3.2}%
-\contentsline {section}{\numberline {16.4}Statdew Valley interactive}{145}{section.16.4}%
-\contentsline {subsection}{\numberline {16.4.1}Welcome to Statdew Valley!}{145}{subsection.16.4.1}%
-\contentsline {subsection}{\numberline {16.4.2}Optional: Create your 16 bit character}{145}{subsection.16.4.2}%
-\contentsline {subsection}{\numberline {16.4.3}Task 1: Tomatoes (part 1)}{147}{subsection.16.4.3}%
-\contentsline {subsubsection}{\numberline {16.4.3.1}Plot the tomat-ah dat-ah}{148}{subsubsection.16.4.3.1}%
-\contentsline {subsubsection}{\numberline {16.4.3.2}The WRONG approach: fixed effects only}{149}{subsubsection.16.4.3.2}%
-\contentsline {paragraph}{\numberline {16.4.3.2.1}Model}{149}{paragraph.16.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {16.4.3.3}Let's try some models: Part 1}{151}{subsubsection.16.4.3.3}%
-\contentsline {subsubsection}{\numberline {16.4.3.4}Summary}{152}{subsubsection.16.4.3.4}%
-\contentsline {subsection}{\numberline {16.4.4}Task 1: Tomatoes (part 2)}{152}{subsection.16.4.4}%
-\contentsline {subsubsection}{\numberline {16.4.4.1}The RIGHT approach: mixed effects}{152}{subsubsection.16.4.4.1}%
-\contentsline {paragraph}{\numberline {16.4.4.1.1}Model}{153}{paragraph.16.4.4.1.1}%
-\contentsline {subsubsection}{\numberline {16.4.4.2}Variance of our random effect}{154}{subsubsection.16.4.4.2}%
-\contentsline {subsection}{\numberline {16.4.5}Task 2: Life is sweet as honey}{156}{subsection.16.4.5}%
-\contentsline {subsubsection}{\numberline {16.4.5.1}Wrangle and plot the data}{157}{subsubsection.16.4.5.1}%
-\contentsline {subsubsection}{\numberline {16.4.5.2}Model formula}{159}{subsubsection.16.4.5.2}%
-\contentsline {subsubsection}{\numberline {16.4.5.3}Fit the models}{160}{subsubsection.16.4.5.3}%
-\contentsline {subsubsection}{\numberline {16.4.5.4}Model with our aggregated data}{160}{subsubsection.16.4.5.4}%
-\contentsline {subsubsection}{\numberline {16.4.5.5}Describing our residuals}{161}{subsubsection.16.4.5.5}%
-\contentsline {paragraph}{\numberline {16.4.5.5.1}Calculate the residual sum of squares for the \texttt {bee\_int\_mod} model. Save it as \texttt {rss\_int}.}{161}{paragraph.16.4.5.5.1}%
-\contentsline {paragraph}{\numberline {16.4.5.5.2}Calculate the RSE for the \texttt {bee\_int\_mod} model.}{161}{paragraph.16.4.5.5.2}%
-\contentsline {subsubsection}{\numberline {16.4.5.6}Calculating our random effect variances}{163}{subsubsection.16.4.5.6}%
-\contentsline {paragraph}{\numberline {16.4.5.6.1}Overview}{163}{paragraph.16.4.5.6.1}%
-\contentsline {paragraph}{\numberline {16.4.5.6.2}Unexplained variance after fitting the interaction model}{163}{paragraph.16.4.5.6.2}%
-\contentsline {paragraph}{\numberline {16.4.5.6.3}RSE for main effects model on aggregated data}{164}{paragraph.16.4.5.6.3}%
-\contentsline {paragraph}{\numberline {16.4.5.6.4}Hive-to-hive variance}{164}{paragraph.16.4.5.6.4}%
-\contentsline {paragraph}{\numberline {16.4.5.6.5}Summary of all our calculated error variances}{166}{paragraph.16.4.5.6.5}%
-\contentsline {subsubsection}{\numberline {16.4.5.7}Summary}{166}{subsubsection.16.4.5.7}%
-\contentsline {paragraph}{\numberline {16.4.5.7.1}Full interaction model (includes main effects) (\texttt {bee\_int\_mod})}{167}{paragraph.16.4.5.7.1}%
-\contentsline {paragraph}{\numberline {16.4.5.7.2}Main effects only model, on hive/song aggregated data (\texttt {bee\_agg\_mod})}{167}{paragraph.16.4.5.7.2}%
-\contentsline {paragraph}{\numberline {16.4.5.7.3}Intercept only model for hives averages (\texttt {bee\_hive\_mod})}{167}{paragraph.16.4.5.7.3}%
-\contentsline {subsection}{\numberline {16.4.6}Where to next?}{168}{subsection.16.4.6}%
-\contentsline {subsection}{\numberline {16.4.7}Credits}{168}{subsection.16.4.7}%
-\contentsline {section}{\numberline {16.5}Vocal pitch case study: Part 1 (LMMs)}{168}{section.16.5}%
-\contentsline {subsection}{\numberline {16.5.1}Motivation}{168}{subsection.16.5.1}%
-\contentsline {subsection}{\numberline {16.5.2}Design of the experiment}{168}{subsection.16.5.2}%
-\contentsline {subsection}{\numberline {16.5.3}Read in the data and explore it}{169}{subsection.16.5.3}%
-\contentsline {subsection}{\numberline {16.5.4}Recall: Linear regression assumptions}{170}{subsection.16.5.4}%
-\contentsline {subsubsection}{\numberline {16.5.4.1}Why we can't assume independence}{170}{subsubsection.16.5.4.1}%
-\contentsline {subsubsection}{\numberline {16.5.4.2}Let's start with a picture}{170}{subsubsection.16.5.4.2}%
-\contentsline {paragraph}{\numberline {16.5.4.2.1}Key themes from our plot}{171}{paragraph.16.5.4.2.1}%
-\contentsline {section}{\numberline {16.6}Linear mixed models}{172}{section.16.6}%
-\contentsline {subsection}{\numberline {16.6.1}Thoughts on plots for hierarchical/correlated data generally}{172}{subsection.16.6.1}%
-\contentsline {subsection}{\numberline {16.6.2}Assumptions}{172}{subsection.16.6.2}%
-\contentsline {subsection}{\numberline {16.6.3}Our model set up}{173}{subsection.16.6.3}%
-\contentsline {subsubsection}{\numberline {16.6.3.1}Our STA302 linear model}{173}{subsubsection.16.6.3.1}%
-\contentsline {subsubsection}{\numberline {16.6.3.2}Linear mixed model}{173}{subsubsection.16.6.3.2}%
-\contentsline {subsubsection}{\numberline {16.6.3.3}Alternative formulations}{173}{subsubsection.16.6.3.3}%
-\contentsline {subsection}{\numberline {16.6.4}What can correlated errors look like?}{173}{subsection.16.6.4}%
-\contentsline {subsubsection}{\numberline {16.6.4.1}Random intercepts}{173}{subsubsection.16.6.4.1}%
-\contentsline {subsubsection}{\numberline {16.6.4.2}Random slopes}{174}{subsubsection.16.6.4.2}%
-\contentsline {subsubsection}{\numberline {16.6.4.3}Random slopes and intercepts}{175}{subsubsection.16.6.4.3}%
-\contentsline {subsection}{\numberline {16.6.5}How do we tell R which situation we're in?}{175}{subsection.16.6.5}%
-\contentsline {subsubsection}{\numberline {16.6.5.1}Vignette activity}{175}{subsubsection.16.6.5.1}%
-\contentsline {subsection}{\numberline {16.6.6}Additional considerations}{176}{subsection.16.6.6}%
-\contentsline {subsubsection}{\numberline {16.6.6.1}Linear mixed models come with lots of different names}{176}{subsubsection.16.6.6.1}%
-\contentsline {subsubsection}{\numberline {16.6.6.2}Fixed vs.\nobreakspace {}random effects}{176}{subsubsection.16.6.6.2}%
-\contentsline {subsubsection}{\numberline {16.6.6.3}REML or ML}{177}{subsubsection.16.6.6.3}%
-\contentsline {subsubsection}{\numberline {16.6.6.4}Confidence intervals and tests}{177}{subsubsection.16.6.6.4}%
-\contentsline {section}{\numberline {16.7}Vocal pitch case study: Part 2}{177}{section.16.7}%
-\contentsline {subsection}{\numberline {16.7.1}Modelling individual means with random intercepts}{177}{subsection.16.7.1}%
-\contentsline {subsubsection}{\numberline {16.7.1.1}Random intercept only model}{178}{subsubsection.16.7.1.1}%
-\contentsline {subsubsection}{\numberline {16.7.1.2}What does this model do?}{178}{subsubsection.16.7.1.2}%
-\contentsline {subsubsection}{\numberline {16.7.1.3}Interpreting this output}{178}{subsubsection.16.7.1.3}%
-\contentsline {subsubsection}{\numberline {16.7.1.4}Adding our fixed effects}{179}{subsubsection.16.7.1.4}%
-\contentsline {subsubsection}{\numberline {16.7.1.5}Model with condition and sex}{179}{subsubsection.16.7.1.5}%
-\contentsline {subsubsection}{\numberline {16.7.1.6}Aside: Summary of means}{181}{subsubsection.16.7.1.6}%
-\contentsline {subsubsection}{\numberline {16.7.1.7}Random slopes for condition}{182}{subsubsection.16.7.1.7}%
-\contentsline {subsubsection}{\numberline {16.7.1.8}Scenario random intercepts}{185}{subsubsection.16.7.1.8}%
-\contentsline {subsection}{\numberline {16.7.2}Scenario random slopes}{187}{subsection.16.7.2}%
-\contentsline {section}{\numberline {16.8}Interactions between random effects and fixed effects}{190}{section.16.8}%
-\contentsline {subsection}{\numberline {16.8.1}Model formula}{191}{subsection.16.8.1}%
-\contentsline {subsection}{\numberline {16.8.2}How would we fit this with \texttt {lmer}?}{191}{subsection.16.8.2}%
-\contentsline {subsubsection}{\numberline {16.8.2.1}Do we need the interaction?}{191}{subsubsection.16.8.2.1}%
-\contentsline {section}{\numberline {16.9}More fixed vs random effects practice}{192}{section.16.9}%
-\contentsline {subsection}{\numberline {16.9.1}Answers}{192}{subsection.16.9.1}%
-\contentsline {subsubsection}{\numberline {16.9.1.1}Cockroaches}{192}{subsubsection.16.9.1.1}%
-\contentsline {subsubsection}{\numberline {16.9.1.2}Radon}{192}{subsubsection.16.9.1.2}%
-\contentsline {section}{\numberline {16.10}Advice for polishing your writing}{193}{section.16.10}%
-\contentsline {chapter}{\numberline {17}Module 4}{194}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Learning checklist}{194}{section.17.1}%
-\contentsline {section}{\numberline {17.2}Introduction}{195}{section.17.2}%
-\contentsline {section}{\numberline {17.3}Distributions (recap)}{195}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}Sections to preview and skim}{195}{subsection.17.3.1}%
-\contentsline {subsubsection}{\numberline {17.3.1.1}Recommended revision}{195}{subsubsection.17.3.1.1}%
-\contentsline {subsection}{\numberline {17.3.2}Reading guide}{195}{subsection.17.3.2}%
-\contentsline {subsection}{\numberline {17.3.3}Cheat sheet template}{195}{subsection.17.3.3}%
-\contentsline {section}{\numberline {17.4}Ontario COVID hospitalizations}{196}{section.17.4}%
-\contentsline {subsection}{\numberline {17.4.1}Creating tables in R}{196}{subsection.17.4.1}%
-\contentsline {subsection}{\numberline {17.4.2}Creating tables}{196}{subsection.17.4.2}%
-\contentsline {subsection}{\numberline {17.4.3}Calculations with tables}{196}{subsection.17.4.3}%
-\contentsline {subsection}{\numberline {17.4.4}Joint probabilities}{197}{subsection.17.4.4}%
-\contentsline {subsection}{\numberline {17.4.5}Marginal probabilities}{197}{subsection.17.4.5}%
-\contentsline {subsection}{\numberline {17.4.6}Conditional probabilities}{198}{subsection.17.4.6}%
-\contentsline {subsection}{\numberline {17.4.7}Risk and odds}{198}{subsection.17.4.7}%
-\contentsline {subsection}{\numberline {17.4.8}Hospitalization risk and odds}{198}{subsection.17.4.8}%
-\contentsline {subsection}{\numberline {17.4.9}Odds ratio and risk ratios}{199}{subsection.17.4.9}%
-\contentsline {subsection}{\numberline {17.4.10}When do we use RR vs OR?}{199}{subsection.17.4.10}%
-\contentsline {section}{\numberline {17.5}Generalized linear models (GLMs)}{199}{section.17.5}%
-\contentsline {subsection}{\numberline {17.5.1}Assumptions of the Generalized Linear Model}{200}{subsection.17.5.1}%
-\contentsline {subsection}{\numberline {17.5.2}Components of a Generalized Linear Model}{200}{subsection.17.5.2}%
-\contentsline {subsection}{\numberline {17.5.3}Generalized Linear Models}{201}{subsection.17.5.3}%
-\contentsline {subsection}{\numberline {17.5.4}Ordinary Least Squares again}{201}{subsection.17.5.4}%
-\contentsline {subsubsection}{\numberline {17.5.4.1}GLM}{201}{subsubsection.17.5.4.1}%
-\contentsline {subsubsection}{\numberline {17.5.4.2}OLS}{201}{subsubsection.17.5.4.2}%
-\contentsline {section}{\numberline {17.6}Binomial (or logistic) regression}{201}{section.17.6}%
-\contentsline {subsection}{\numberline {17.6.1}Case study: Challenger disaster}{202}{subsection.17.6.1}%
-\contentsline {subsubsection}{\numberline {17.6.1.1}Shuttle data}{203}{subsubsection.17.6.1.1}%
-\contentsline {subsubsection}{\numberline {17.6.1.2}Follow along with the case study}{203}{subsubsection.17.6.1.2}%
-\contentsline {subsubsection}{\numberline {17.6.1.3}Are shuttle rings more likely to get damaged in cold weather?}{204}{subsubsection.17.6.1.3}%
-\contentsline {subsubsection}{\numberline {17.6.1.4}Inference: parameter estimation}{204}{subsubsection.17.6.1.4}%
-\contentsline {subsubsection}{\numberline {17.6.1.5}Shuttle example in R}{204}{subsubsection.17.6.1.5}%
-\contentsline {subsubsection}{\numberline {17.6.1.6}Summary of fit}{205}{subsubsection.17.6.1.6}%
-\contentsline {subsubsection}{\numberline {17.6.1.7}Interpreting logistic models}{206}{subsubsection.17.6.1.7}%
-\contentsline {subsubsection}{\numberline {17.6.1.8}Centring parameters}{206}{subsubsection.17.6.1.8}%
-\contentsline {subsubsection}{\numberline {17.6.1.9}Shuttle odds parameters}{207}{subsubsection.17.6.1.9}%
-\contentsline {subsubsection}{\numberline {17.6.1.10}Interpreting shuttle parameters}{207}{subsubsection.17.6.1.10}%
-\contentsline {section}{\numberline {17.7}GLMS: A unifying theory}{208}{section.17.7}%
-\contentsline {subsection}{\numberline {17.7.1}Optional accompanying video}{208}{subsection.17.7.1}%
-\contentsline {subsection}{\numberline {17.7.2}Readings}{208}{subsection.17.7.2}%
-\contentsline {subsection}{\numberline {17.7.3}Recall}{208}{subsection.17.7.3}%
-\contentsline {subsection}{\numberline {17.7.4}Exponential family forms}{208}{subsection.17.7.4}%
-\contentsline {subsubsection}{\numberline {17.7.4.1}Show that the normal distribution is in the exponential family}{209}{subsubsection.17.7.4.1}%
-\contentsline {subsubsection}{\numberline {17.7.4.2}Show that the Poisson distribution is in the exponential family}{210}{subsubsection.17.7.4.2}%
-\contentsline {subsubsection}{\numberline {17.7.4.3}Your turn! Show that the binomial distribution is in the exponential family}{211}{subsubsection.17.7.4.3}%
-\contentsline {subsection}{\numberline {17.7.5}Canonical link functions}{212}{subsection.17.7.5}%
-\contentsline {subsection}{\numberline {17.7.6}Exponential Family of Distributions}{212}{subsection.17.7.6}%
-\contentsline {subsection}{\numberline {17.7.7}Iteratively re-weighted least squares algorithm (a sketch)}{213}{subsection.17.7.7}%
-\contentsline {subsubsection}{\numberline {17.7.7.1}How do decide when to stop?}{213}{subsubsection.17.7.7.1}%
-\contentsline {subsection}{\numberline {17.7.8}A quick note on the large sample distribution of \(\hat {\mitbeta }\)}{213}{subsection.17.7.8}%
-\contentsline {subsection}{\numberline {17.7.9}Deviance}{214}{subsection.17.7.9}%
-\contentsline {subsubsection}{\numberline {17.7.9.1}Comparing models}{214}{subsubsection.17.7.9.1}%
-\contentsline {subsubsection}{\numberline {17.7.9.2}Quasi-likelihood}{214}{subsubsection.17.7.9.2}%
-\contentsline {subsubsection}{\numberline {17.7.9.3}So what does this whole section mean for us in practice?}{215}{subsubsection.17.7.9.3}%
-\contentsline {subsection}{\numberline {17.7.10}Reading: Logistic regression}{215}{subsection.17.7.10}%
-\contentsline {subsection}{\numberline {17.7.11}Logistic regression case study: Trying to lose weight}{215}{subsection.17.7.11}%
-\contentsline {subsubsection}{\numberline {17.7.11.1}Access the code for the case studies}{215}{subsubsection.17.7.11.1}%
-\contentsline {section}{\numberline {17.8}Poisson regression key concepts + reading}{215}{section.17.8}%
-\contentsline {subsection}{\numberline {17.8.1}Reading}{215}{subsection.17.8.1}%
-\contentsline {subsection}{\numberline {17.8.2}Key concepts for Poisson regression}{215}{subsection.17.8.2}%
-\contentsline {subsubsection}{\numberline {17.8.2.1}Use case}{215}{subsubsection.17.8.2.1}%
-\contentsline {subsubsection}{\numberline {17.8.2.2}Assumptions}{216}{subsubsection.17.8.2.2}%
-\contentsline {subsubsection}{\numberline {17.8.2.3}Model}{216}{subsubsection.17.8.2.3}%
-\contentsline {subsubsection}{\numberline {17.8.2.4}Zero-inflated Poisson situations}{216}{subsubsection.17.8.2.4}%
-\contentsline {subsection}{\numberline {17.8.3}Poisson regression case studies: (1) Household size in the Philippines and (2) Campus crime}{217}{subsection.17.8.3}%
-\contentsline {subsubsection}{\numberline {17.8.3.1}Reading guides for the case studies}{217}{subsubsection.17.8.3.1}%
-\contentsline {paragraph}{\numberline {17.8.3.1.1}Household size in the Philippines}{217}{paragraph.17.8.3.1.1}%
-\contentsline {paragraph}{\numberline {17.8.3.1.2}Campus crime (includes 4.7, 4.8 and 4.9)}{217}{paragraph.17.8.3.1.2}%
-\contentsline {subsection}{\numberline {17.8.4}Access the code for the case studies (optional)}{217}{subsection.17.8.4}%
-\contentsline {section}{\numberline {17.9}Extra for the curious (NOT assessed)}{217}{section.17.9}%
-\contentsline {subsection}{\numberline {17.9.1}Efficient maximization (for your reference only)}{217}{subsection.17.9.1}%
-\contentsline {subsection}{\numberline {17.9.2}Numerical maximizers (for your reference only)}{218}{subsection.17.9.2}%
-\contentsline {subsection}{\numberline {17.9.3}Automatic differentiation (for your reference only)}{218}{subsection.17.9.3}%
-\contentsline {chapter}{\numberline {18}Module 5}{219}{chapter.18}%
-\contentsline {chapter}{References}{220}{chapter*.4}%
-\contentsline {part}{Appendix}{222}{part*.5}%
-\contentsline {chapter}{\numberline {19}Resources}{222}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Course tools overview}{222}{section.19.1}%
-\contentsline {subsection}{\numberline {19.1.1}Admin}{222}{subsection.19.1.1}%
-\contentsline {section}{\numberline {19.2}Using RStudio with the JupyterHub}{223}{section.19.2}%
-\contentsline {section}{\numberline {19.3}Team Up!}{223}{section.19.3}%
-\contentsline {subsection}{\numberline {19.3.1}To participate in these activities, you \textbf {need}:}{224}{subsection.19.3.1}%
-\contentsline {subsection}{\numberline {19.3.2}\textbf {Before} the activity you should:}{224}{subsection.19.3.2}%
-\contentsline {subsection}{\numberline {19.3.3}Some rules/logistics}{225}{subsection.19.3.3}%
-\contentsline {subsection}{\numberline {19.3.4}Team Up! Instructions}{225}{subsection.19.3.4}%
-\contentsline {subsubsection}{\numberline {19.3.4.1}Step 1: Decide on roles}{225}{subsubsection.19.3.4.1}%
-\contentsline {subsubsection}{\numberline {19.3.4.2}Step 2: Driver sets up group}{226}{subsubsection.19.3.4.2}%
-\contentsline {subsubsection}{\numberline {19.3.4.3}Step 3: Members join}{227}{subsubsection.19.3.4.3}%
-\contentsline {subsubsection}{\numberline {19.3.4.4}Step 4: Complete the activity}{227}{subsubsection.19.3.4.4}%
-\contentsline {subsubsection}{\numberline {19.3.4.5}Step 5: The Driver MUST click Submit to Quercus for your answers to be processed.}{228}{subsubsection.19.3.4.5}%
-\contentsline {section}{\numberline {19.4}Zoom, Zoom, Zoom, Zoom\ldots {}}{228}{section.19.4}%
-\contentsline {subsection}{\numberline {19.4.1}Make sure your Zoom is up to date}{228}{subsection.19.4.1}%
-\contentsline {subsection}{\numberline {19.4.2}Customize!}{228}{subsection.19.4.2}%
-\contentsline {subsection}{\numberline {19.4.3}VPN}{228}{subsection.19.4.3}%
-\contentsline {subsection}{\numberline {19.4.4}Notes:}{229}{subsection.19.4.4}%
-\contentsline {subsection}{\numberline {19.4.5}Changing your profile picture on Zoom and Quercus}{229}{subsection.19.4.5}%
-\contentsline {subsection}{\numberline {19.4.6}What to do if you experience technical difficulties during class?}{229}{subsection.19.4.6}%
-\contentsline {subsection}{\numberline {19.4.7}What to do if your instructor or TA is experiencing technical difficulties on Zoom}{229}{subsection.19.4.7}%
-\contentsline {section}{\numberline {19.5}Student support services and resources}{229}{section.19.5}%
-\contentsline {subsection}{\numberline {19.5.1}Mental health support}{229}{subsection.19.5.1}%
-\contentsline {subsection}{\numberline {19.5.2}General University resources}{230}{subsection.19.5.2}%
-\contentsline {subsection}{\numberline {19.5.3}Financial support}{230}{subsection.19.5.3}%
-\contentsline {subsection}{\numberline {19.5.4}Arts \& Science COVID19 FAQ}{230}{subsection.19.5.4}%
-\contentsline {chapter}{\numberline {20}FAQs and Errata}{231}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Frequently asked questions}{231}{section.20.1}%
-\contentsline {subsection}{\numberline {20.1.1}Course admin}{231}{subsection.20.1.1}%
-\contentsline {subsubsection}{\numberline {20.1.1.1}STA303 pre-requisites}{231}{subsubsection.20.1.1.1}%
-\contentsline {paragraph}{\numberline {20.1.1.1.1}\emph {I didn't take STA302 or an equivalent course, can I still take STA303?}\\ }{231}{paragraph.20.1.1.1.1}%
-\contentsline {subsubsection}{\numberline {20.1.1.2}Lecture and tutorial times}{231}{subsubsection.20.1.1.2}%
-\contentsline {paragraph}{\numberline {20.1.1.2.1}\emph {How exactly do the tutorials and lectures work?}}{231}{paragraph.20.1.1.2.1}%
-\contentsline {subsubsection}{\numberline {20.1.1.3}Recorded lectures}{231}{subsubsection.20.1.1.3}%
-\contentsline {paragraph}{\numberline {20.1.1.3.1}\emph {``Where can I find recorded lectures and how soon can I expect them to be available?''}}{231}{paragraph.20.1.1.3.1}%
-\contentsline {subsubsection}{\numberline {20.1.1.4}Sections}{232}{subsubsection.20.1.1.4}%
-\contentsline {paragraph}{\numberline {20.1.1.4.1}\emph {``Do L0101 and L0201 cover the same materials?''}}{232}{paragraph.20.1.1.4.1}%
-\contentsline {subsubsection}{\numberline {20.1.1.5}Attending synchronous class}{232}{subsubsection.20.1.1.5}%
-\contentsline {paragraph}{\numberline {20.1.1.5.1}\emph {``Can I attend the synchronous class for the other section?''}}{232}{paragraph.20.1.1.5.1}%
-\contentsline {paragraph}{\numberline {20.1.1.5.2}\emph {``Why can't I access the class/office hour Zoom meeting?''}}{232}{paragraph.20.1.1.5.2}%
-\contentsline {paragraph}{\numberline {20.1.1.5.3}\emph {``Will STA303/STA1002 be able to be completed online-only?''}}{232}{paragraph.20.1.1.5.3}%
-\contentsline {paragraph}{\numberline {20.1.1.5.4}\emph {``Where is your \textbf {office}?''}/\emph {``Can I come see you in-person?''}}{232}{paragraph.20.1.1.5.4}%
-\contentsline {subsection}{\numberline {20.1.2}Assessments FAQ}{232}{subsection.20.1.2}%
-\contentsline {subsubsection}{\numberline {20.1.2.1}Knowledge basket FAQ}{232}{subsubsection.20.1.2.1}%
-\contentsline {paragraph}{\numberline {20.1.2.1.1}\emph {``I don't really understand the knowledge basket, how will that work? Can we earn more than 5 marks?''}}{232}{paragraph.20.1.2.1.1}%
-\contentsline {paragraph}{\numberline {20.1.2.1.2}\emph {``Can we do as many knowledge basket activities as we want in order to gain the full 5\%?''}}{232}{paragraph.20.1.2.1.2}%
-\contentsline {paragraph}{\numberline {20.1.2.1.3}\emph {``How fast will we receive grades back for the knowledge basket activities?''}}{232}{paragraph.20.1.2.1.3}%
-\contentsline {paragraph}{\numberline {20.1.2.1.4}\emph {``I am not too sure what `pre-knowledge quiz: 80\% or workshop' is supposed to mean.''}}{233}{paragraph.20.1.2.1.4}%
-\contentsline {paragraph}{\numberline {20.1.2.1.5}\emph {``What will additional opportunities like speaker series reflections be like?''}}{233}{paragraph.20.1.2.1.5}%
-\contentsline {paragraph}{\numberline {20.1.2.1.6}\emph {``Are the three phases of each writing assignment graded on completion?''}}{233}{paragraph.20.1.2.1.6}%
-\contentsline {paragraph}{\numberline {20.1.2.1.7}\emph {``No questions, although seems to be a hectic course with a lot of minor deadlines.''}}{233}{paragraph.20.1.2.1.7}%
-\contentsline {subsubsection}{\numberline {20.1.2.2}Portfolios FAQ}{233}{subsubsection.20.1.2.2}%
-\contentsline {paragraph}{\numberline {20.1.2.2.1}\emph {``I am curious about the format of portfolio and assessment and how they will be conducted.''}}{233}{paragraph.20.1.2.2.1}%
-\contentsline {subsubsection}{\numberline {20.1.2.3}Mixed assessments FAQ}{233}{subsubsection.20.1.2.3}%
-\contentsline {paragraph}{\numberline {20.1.2.3.1}\emph {``How does the mixed assessment work? Is it like a midterm?''}}{233}{paragraph.20.1.2.3.1}%
-\contentsline {paragraph}{\numberline {20.1.2.3.2}\emph {``What's the difference between mini and mixed assessments? Are they both term tests?''}}{233}{paragraph.20.1.2.3.2}%
-\contentsline {paragraph}{\numberline {20.1.2.3.3}\emph {Will we get some sample practice problems to work on before the mini-mixed and mixed assessments?}}{233}{paragraph.20.1.2.3.3}%
-\contentsline {paragraph}{\numberline {20.1.2.3.4}\emph {``What exactly will we do in assessment weeks?''}}{233}{paragraph.20.1.2.3.4}%
-\contentsline {subsubsection}{\numberline {20.1.2.4}Final project FAQ}{234}{subsubsection.20.1.2.4}%
-\contentsline {paragraph}{\numberline {20.1.2.4.1}\emph {``What kind of activities will the final project entail?''}}{234}{paragraph.20.1.2.4.1}%
-\contentsline {subsubsection}{\numberline {20.1.2.5}Assessments: General FAQ}{234}{subsubsection.20.1.2.5}%
-\contentsline {paragraph}{\numberline {20.1.2.5.1}\emph {``How we can choose path A or B for the marking scheme-- would this be on Quercus?''}}{234}{paragraph.20.1.2.5.1}%
-\contentsline {paragraph}{\numberline {20.1.2.5.2}\emph {``So are all assessment due on Thursday 3:03?''}}{234}{paragraph.20.1.2.5.2}%
-\contentsline {paragraph}{\numberline {20.1.2.5.3}\emph {``Are we allowed to answer assignments with programming languages other than R?''}}{234}{paragraph.20.1.2.5.3}%
-\contentsline {paragraph}{\numberline {20.1.2.5.4}\emph {``What are the minimum requirements to pass the course?''}}{234}{paragraph.20.1.2.5.4}%
-\contentsline {subsection}{\numberline {20.1.3}Team Up!}{234}{subsection.20.1.3}%
-\contentsline {subsubsection}{\numberline {20.1.3.1}Troubleshooting \& FAQ advice from U of T CTSI}{234}{subsubsection.20.1.3.1}%
-\contentsline {paragraph}{\numberline {20.1.3.1.1}\emph {``My screen seems to be lagging compared to those of my group members (e.g., I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)''}}{234}{paragraph.20.1.3.1.1}%
-\contentsline {paragraph}{\numberline {20.1.3.1.2}\emph {``I've been disconnected. Will my quiz progress be saved? Can I re-join my group?''}}{234}{paragraph.20.1.3.1.2}%
-\contentsline {paragraph}{\numberline {20.1.3.1.3}\emph {``How do I send my completed quiz results?''}}{234}{paragraph.20.1.3.1.3}%
-\contentsline {paragraph}{\numberline {20.1.3.1.4}\emph {``Can we change our group driver?''}}{234}{paragraph.20.1.3.1.4}%
-\contentsline {paragraph}{\numberline {20.1.3.1.5}\emph {``How is the driver for our group chosen, and how can the driver pass the group ID to others in remote classes?''}}{234}{paragraph.20.1.3.1.5}%
-\contentsline {paragraph}{\numberline {20.1.3.1.6}\emph {``The Driver of my group has to leave unexpectedly or their device has stopped functioning. How do we proceed with the quiz?''}}{235}{paragraph.20.1.3.1.6}%
-\contentsline {section}{\numberline {20.2}Other}{235}{section.20.2}%
-\contentsline {subsection}{\numberline {20.2.1}References}{235}{subsection.20.2.1}%
-\contentsline {paragraph}{\numberline {20.2.1.0.1}\emph {``Can you (Prof.\nobreakspace {}Bolton) write me a reference?''}}{235}{paragraph.20.2.1.0.1}%
-\contentsline {paragraph}{\numberline {20.2.1.0.2}\emph {``Do you (Prof.\nobreakspace {}Bolton) have any research opportunities available?''}}{235}{paragraph.20.2.1.0.2}%
-\contentsline {section}{\numberline {20.3}Errata}{235}{section.20.3}%
-\contentsline {chapter}{\numberline {21}Bits and pieces}{237}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Code to generate course art}{237}{section.21.1}%
-\contentsline {section}{\numberline {21.2}M1 supporting information on matrices (not assessed)}{238}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}Background}{238}{subsection.21.2.1}%
-\contentsline {subsubsection}{\numberline {21.2.1.1}Some true things about matrices}{238}{subsubsection.21.2.1.1}%
-\contentsline {subsection}{\numberline {21.2.2}Example}{238}{subsection.21.2.2}%
-\contentsline {subsubsection}{\numberline {21.2.2.1}Classic regression, k-1 dummies (intercept)}{239}{subsubsection.21.2.2.1}%
-\contentsline {subsubsection}{\numberline {21.2.2.2}Classic regression but trying to force k dummies (with an intercept)}{240}{subsubsection.21.2.2.2}%
-\contentsline {subsection}{\numberline {21.2.3}Regression NOT classic, actually ANOVA! (no intercept)}{241}{subsection.21.2.3}%
-\contentsline {subsection}{\numberline {21.2.4}Further reading (if you want it)}{243}{subsection.21.2.4}%
-\contentsline {section}{\numberline {21.3}\emph {p} values (recap)}{243}{section.21.3}%
-\contentsline {subsection}{\numberline {21.3.1}What if you get a value that is exactly one of these thresholds?}{243}{subsection.21.3.1}%
-\contentsline {chapter}{\numberline {22}Announcements summary}{244}{chapter.22}%
-\contentsline {subsection}{\numberline {22.0.1}Looking for student representatives for STA303}{250}{subsection.22.0.1}%
-\contentsline {subsubsection}{\numberline {22.0.1.1}The role of a student representative}{251}{subsubsection.22.0.1.1}%
-\contentsline {subsubsection}{\numberline {22.0.1.2}Benefits of being a student representative}{251}{subsubsection.22.0.1.2}%
-\contentsline {subsubsection}{\numberline {22.0.1.3}How to become a rep}{251}{subsubsection.22.0.1.3}%
-\contentsline {subsubsection}{\numberline {22.0.1.4}Eligibility criteria}{251}{subsubsection.22.0.1.4}%
+\contentsline {subsubsection}{\numberline {7.0.1.1}How your grade is calculated}{56}{subsubsection.7.0.1.1}%
+\contentsline {subsubsection}{\numberline {7.0.1.2}Getting help}{56}{subsubsection.7.0.1.2}%
+\contentsline {subsubsection}{\numberline {7.0.1.3}Academic integrity}{57}{subsubsection.7.0.1.3}%
+\contentsline {subsubsection}{\numberline {7.0.1.4}Untimed component}{57}{subsubsection.7.0.1.4}%
+\contentsline {subsubsection}{\numberline {7.0.1.5}Timed component}{57}{subsubsection.7.0.1.5}%
+\contentsline {chapter}{\numberline {8}Mixed assessment}{59}{chapter.8}%
+\contentsline {subsection}{\numberline {8.0.1}Instructions}{59}{subsection.8.0.1}%
+\contentsline {chapter}{\numberline {9}Final project}{60}{chapter.9}%
+\contentsline {subsection}{\numberline {9.0.1}Instructions}{60}{subsection.9.0.1}%
+\contentsline {subsubsection}{\numberline {9.0.1.1}Project groups}{60}{subsubsection.9.0.1.1}%
+\contentsline {chapter}{\numberline {10}Knowledge basket overview}{61}{chapter.10}%
+\contentsline {subsection}{\numberline {10.0.1}Planning and tips}{62}{subsection.10.0.1}%
+\contentsline {subsection}{\numberline {10.0.2}Examples}{62}{subsection.10.0.2}%
+\contentsline {subsubsection}{\numberline {10.0.2.1}Student A}{62}{subsubsection.10.0.2.1}%
+\contentsline {subsubsection}{\numberline {10.0.2.2}Student B}{62}{subsubsection.10.0.2.2}%
+\contentsline {subsubsection}{\numberline {10.0.2.3}Student C}{62}{subsubsection.10.0.2.3}%
+\contentsline {chapter}{\numberline {11}Knowledge basket: Writing and peer feedback}{64}{chapter.11}%
+\contentsline {section}{\numberline {11.1}General instructions}{64}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Create phase}{64}{subsection.11.1.1}%
+\contentsline {subsubsection}{\numberline {11.1.1.1}Submission requirements}{64}{subsubsection.11.1.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Assess phase}{65}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}Reflect phase}{65}{subsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.1.4}General instructions}{65}{subsection.11.1.4}%
+\contentsline {section}{\numberline {11.2}Module 1 writing task}{65}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}M1 Instructions}{65}{subsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.1.1}M1 Prompt}{66}{subsubsection.11.2.1.1}%
+\contentsline {subsubsection}{\numberline {11.2.1.2}M1 Rubric}{66}{subsubsection.11.2.1.2}%
+\contentsline {section}{\numberline {11.3}Module 2 writing task}{66}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}M2 Instructions}{66}{subsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.1.1}M2 Prompt}{66}{subsubsection.11.3.1.1}%
+\contentsline {paragraph}{\numberline {11.3.1.1.1}M2 Reference}{67}{paragraph.11.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {11.3.1.2}M2 Rubric}{67}{subsubsection.11.3.1.2}%
+\contentsline {section}{\numberline {11.4}Module 3 writing task}{67}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}M3 instructions}{68}{subsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.1.1}M3 prompt}{68}{subsubsection.11.4.1.1}%
+\contentsline {paragraph}{\numberline {11.4.1.1.1}Example from a \emph {different} article: Modified from (Berlowitz et al., 2017):}{70}{paragraph.11.4.1.1.1}%
+\contentsline {paragraph}{\numberline {11.4.1.1.2}Reference: Berlowitz, D. R., Foy, C. G., Kazis, L. E., Bolin, L. P., Conroy, M. B., Fitzpatrick, P., . . . Group, S. R. (2017). Effect of Intensive Blood-Pressure Treatment on Patient-Reported Outcomes. \emph {N Engl J Med, 377}(8), 733-744. \url {doi:10.1056/NEJMoa1611179}}{71}{paragraph.11.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {11.4.1.2}References for this prompt}{71}{subsubsection.11.4.1.2}%
+\contentsline {subsubsection}{\numberline {11.4.1.3}M3 Rubric}{71}{subsubsection.11.4.1.3}%
+\contentsline {section}{\numberline {11.5}Module 4 writing task}{72}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}M4 instructions}{72}{subsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.1.1}M4 prompt}{72}{subsubsection.11.5.1.1}%
+\contentsline {subsubsection}{\numberline {11.5.1.2}\emph {Example} executive summary}{73}{subsubsection.11.5.1.2}%
+\contentsline {subsubsection}{\numberline {11.5.1.3}Page 1: Text}{73}{subsubsection.11.5.1.3}%
+\contentsline {subsubsection}{\numberline {11.5.1.4}Page 2: Table and Figure}{73}{subsubsection.11.5.1.4}%
+\contentsline {subsection}{\numberline {11.5.2}Rubric}{76}{subsection.11.5.2}%
+\contentsline {subsection}{\numberline {11.5.3}Reference}{77}{subsection.11.5.3}%
+\contentsline {chapter}{\numberline {12}Knowledge basket: Professional development task}{78}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Professional development proposal}{79}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Instructions}{79}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}Submission requirements}{80}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.3}Rubric}{80}{subsection.12.1.3}%
+\contentsline {subsection}{\numberline {12.1.4}Checklist}{82}{subsection.12.1.4}%
+\contentsline {subsection}{\numberline {12.1.5}Things to keep in minds as you start working towards your professional development goal}{82}{subsection.12.1.5}%
+\contentsline {subsection}{\numberline {12.1.6}Example smart goal}{82}{subsection.12.1.6}%
+\contentsline {subsubsection}{\numberline {12.1.6.1}Specific}{83}{subsubsection.12.1.6.1}%
+\contentsline {subsubsection}{\numberline {12.1.6.2}Measurable}{83}{subsubsection.12.1.6.2}%
+\contentsline {subsubsection}{\numberline {12.1.6.3}Attainable}{83}{subsubsection.12.1.6.3}%
+\contentsline {subsubsection}{\numberline {12.1.6.4}Relevant}{83}{subsubsection.12.1.6.4}%
+\contentsline {subsubsection}{\numberline {12.1.6.5}Time-bounded:}{84}{subsubsection.12.1.6.5}%
+\contentsline {section}{\numberline {12.2}Professional development evidence and reflection}{84}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Templates}{84}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Reflection and evidence components}{85}{subsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.2.1}Activity, alignment and lessons}{85}{subsubsection.12.2.2.1}%
+\contentsline {paragraph}{\numberline {12.2.2.1.1}Examples}{85}{paragraph.12.2.2.1.1}%
+\contentsline {paragraph}{\numberline {12.2.2.1.2}Examples}{85}{paragraph.12.2.2.1.2}%
+\contentsline {paragraph}{\numberline {12.2.2.1.3}Examples}{85}{paragraph.12.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {12.2.2.2}Evidence}{85}{subsubsection.12.2.2.2}%
+\contentsline {paragraph}{\numberline {12.2.2.2.1}Examples}{85}{paragraph.12.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2.3}Timesheet}{86}{subsubsection.12.2.2.3}%
+\contentsline {paragraph}{\numberline {12.2.2.3.1}Examples}{86}{paragraph.12.2.2.3.1}%
+\contentsline {subsection}{\numberline {12.2.3}Recommended structure}{86}{subsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.2.4}Rubric}{86}{subsection.12.2.4}%
+\contentsline {chapter}{\numberline {13}Knowledge basket: Other}{88}{chapter.13}%
+\contentsline {section}{\numberline {13.1}`Getting to know you' survey}{88}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Instructions}{88}{subsection.13.1.1}%
+\contentsline {section}{\numberline {13.2}Pre-knowledge check}{88}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Instructions}{89}{subsection.13.2.1}%
+\contentsline {subsubsection}{\numberline {13.2.1.1}Grade structure}{89}{subsubsection.13.2.1.1}%
+\contentsline {subsection}{\numberline {13.2.2}Workshop attendance}{89}{subsection.13.2.2}%
+\contentsline {section}{\numberline {13.3}Writing workshop}{90}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Workshop attendance}{90}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Module check-ins}{90}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Instructions}{90}{subsection.13.4.1}%
+\contentsline {section}{\numberline {13.5}Team Up! activities}{90}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Graduate school info session}{91}{section.13.6}%
+\contentsline {section}{\numberline {13.7}Punctuation art}{91}{section.13.7}%
+\contentsline {subsection}{\numberline {13.7.1}Instructions}{92}{subsection.13.7.1}%
+\contentsline {subsubsection}{\numberline {13.7.1.1}Prompt}{92}{subsubsection.13.7.1.1}%
+\contentsline {subsubsection}{\numberline {13.7.1.2}Examples}{92}{subsubsection.13.7.1.2}%
+\contentsline {subsubsection}{\numberline {13.7.1.3}Skills}{93}{subsubsection.13.7.1.3}%
+\contentsline {subsubsection}{\numberline {13.7.1.4}Tips}{93}{subsubsection.13.7.1.4}%
+\contentsline {subsubsection}{\numberline {13.7.1.5}Submission instructions}{94}{subsubsection.13.7.1.5}%
+\contentsline {subsubsection}{\numberline {13.7.1.6}Rubric}{94}{subsubsection.13.7.1.6}%
+\contentsline {section}{\numberline {13.8}Breathing exercise}{94}{section.13.8}%
+\contentsline {subsection}{\numberline {13.8.1}Instructions}{94}{subsection.13.8.1}%
+\contentsline {subsubsection}{\numberline {13.8.1.1}Prompt}{95}{subsubsection.13.8.1.1}%
+\contentsline {paragraph}{\numberline {13.8.1.1.1}Background}{95}{paragraph.13.8.1.1.1}%
+\contentsline {paragraph}{\numberline {13.8.1.1.2}A note}{95}{paragraph.13.8.1.1.2}%
+\contentsline {subsubsection}{\numberline {13.8.1.2}Examples}{95}{subsubsection.13.8.1.2}%
+\contentsline {subsubsection}{\numberline {13.8.1.3}Skills}{95}{subsubsection.13.8.1.3}%
+\contentsline {subsubsection}{\numberline {13.8.1.4}Tips/links}{95}{subsubsection.13.8.1.4}%
+\contentsline {subsubsection}{\numberline {13.8.1.5}Submission instructions}{96}{subsubsection.13.8.1.5}%
+\contentsline {subsubsection}{\numberline {13.8.1.6}Rubric}{96}{subsubsection.13.8.1.6}%
+\contentsline {section}{\numberline {13.9}Linear Mixed Models study guide}{96}{section.13.9}%
+\contentsline {subsection}{\numberline {13.9.1}Instructions}{96}{subsection.13.9.1}%
+\contentsline {subsubsection}{\numberline {13.9.1.1}Considerations}{96}{subsubsection.13.9.1.1}%
+\contentsline {subsubsection}{\numberline {13.9.1.2}Rubric}{97}{subsubsection.13.9.1.2}%
+\contentsline {section}{\numberline {13.10}Generalized Linear Models study guide}{97}{section.13.10}%
+\contentsline {subsection}{\numberline {13.10.1}Instructions}{97}{subsection.13.10.1}%
+\contentsline {subsubsection}{\numberline {13.10.1.1}Considerations}{97}{subsubsection.13.10.1.1}%
+\contentsline {subsubsection}{\numberline {13.10.1.2}Rubric}{97}{subsubsection.13.10.1.2}%
+\contentsline {section}{\numberline {13.11}Hack your class workshop attendance and reflection}{98}{section.13.11}%
+\contentsline {subsection}{\numberline {13.11.1}Instructions}{98}{subsection.13.11.1}%
+\contentsline {section}{\numberline {13.12}Sports analytics workshop attendance and reflection}{98}{section.13.12}%
+\contentsline {subsection}{\numberline {13.12.1}Instructions}{98}{subsection.13.12.1}%
+\contentsline {part}{Modules}{100}{part*.3}%
+\contentsline {chapter}{\numberline {14}Module 1}{100}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Learning checklist}{100}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Instructor information}{100}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Upward management tips}{100}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Communicate using the tools your manager prefers}{101}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Write good emails (when emails are appropriate)}{101}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Understand your manager's goals}{101}{subsection.14.3.3}%
+\contentsline {subsection}{\numberline {14.3.4}Demonstrate self-management and resilience while also asking for help and flagging problems early.}{102}{subsection.14.3.4}%
+\contentsline {section}{\numberline {14.4}Recap of linear models}{102}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Why model?}{102}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}Linear models}{102}{subsection.14.4.2}%
+\contentsline {subsection}{\numberline {14.4.3}Linear regression assumptions}{102}{subsection.14.4.3}%
+\contentsline {subsection}{\numberline {14.4.4}What makes it a \emph {linear} model?}{102}{subsection.14.4.4}%
+\contentsline {subsubsection}{\numberline {14.4.4.1}Linear}{103}{subsubsection.14.4.4.1}%
+\contentsline {subsubsection}{\numberline {14.4.4.2}NOT linear}{103}{subsubsection.14.4.4.2}%
+\contentsline {subsection}{\numberline {14.4.5}Optional refresher reading}{103}{subsection.14.4.5}%
+\contentsline {subsubsection}{\numberline {14.4.5.1}Brief discussion of assumptions with examples}{103}{subsubsection.14.4.5.1}%
+\contentsline {subsubsection}{\numberline {14.4.5.2}Fitting linear models in R}{103}{subsubsection.14.4.5.2}%
+\contentsline {subsubsection}{\numberline {14.4.5.3}Delicious mathematics}{103}{subsubsection.14.4.5.3}%
+\contentsline {section}{\numberline {14.5}The data for module 1}{103}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}Let's meet the penguins}{104}{subsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.5.2}The variables}{104}{subsection.14.5.2}%
+\contentsline {section}{\numberline {14.6}Common statistical tests as linear regression}{105}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}Introduction}{105}{subsection.14.6.1}%
+\contentsline {subsubsection}{\numberline {14.6.1.1}Parametric}{106}{subsubsection.14.6.1.1}%
+\contentsline {subsubsection}{\numberline {14.6.1.2}Non-parametric}{106}{subsubsection.14.6.1.2}%
+\contentsline {subsubsection}{\numberline {14.6.1.3}Aside: But why are there two types of tests?}{106}{subsubsection.14.6.1.3}%
+\contentsline {subsection}{\numberline {14.6.2}One-sample t-test}{106}{subsection.14.6.2}%
+\contentsline {subsubsection}{\numberline {14.6.2.1}Use case}{106}{subsubsection.14.6.2.1}%
+\contentsline {subsubsection}{\numberline {14.6.2.2}Assumptions}{106}{subsubsection.14.6.2.2}%
+\contentsline {subsubsection}{\numberline {14.6.2.3}Hypotheses}{107}{subsubsection.14.6.2.3}%
+\contentsline {subsubsection}{\numberline {14.6.2.4}Example}{107}{subsubsection.14.6.2.4}%
+\contentsline {subsubsection}{\numberline {14.6.2.5}Now as a linear model}{107}{subsubsection.14.6.2.5}%
+\contentsline {subsubsection}{\numberline {14.6.2.6}Wilcoxon signed-rank test}{109}{subsubsection.14.6.2.6}%
+\contentsline {subsubsection}{\numberline {14.6.2.7}Paired sample t-test and Wilcoxon matched pair}{110}{subsubsection.14.6.2.7}%
+\contentsline {subsection}{\numberline {14.6.3}Dummy variables}{110}{subsection.14.6.3}%
+\contentsline {subsubsection}{\numberline {14.6.3.1}The matrices we use for linear regression}{110}{subsubsection.14.6.3.1}%
+\contentsline {subsubsection}{\numberline {14.6.3.2}Getting our model matrix in R}{111}{subsubsection.14.6.3.2}%
+\contentsline {subparagraph}{\numberline {14.6.3.2.0.1}{[}Unassessed aside{]} Why do we have to drop one of the levels?}{112}{subparagraph.14.6.3.2.0.1}%
+\contentsline {subsection}{\numberline {14.6.4}Two means}{112}{subsection.14.6.4}%
+\contentsline {subsubsection}{\numberline {14.6.4.1}Use case}{113}{subsubsection.14.6.4.1}%
+\contentsline {subsubsection}{\numberline {14.6.4.2}Assumptions}{113}{subsubsection.14.6.4.2}%
+\contentsline {subsubsection}{\numberline {14.6.4.3}Hypotheses}{113}{subsubsection.14.6.4.3}%
+\contentsline {subsubsection}{\numberline {14.6.4.4}Example}{113}{subsubsection.14.6.4.4}%
+\contentsline {subsubsection}{\numberline {14.6.4.5}Mann-Whitney U}{114}{subsubsection.14.6.4.5}%
+\contentsline {subsection}{\numberline {14.6.5}ANOVA}{115}{subsection.14.6.5}%
+\contentsline {subsubsection}{\numberline {14.6.5.1}Use case}{115}{subsubsection.14.6.5.1}%
+\contentsline {subsubsection}{\numberline {14.6.5.2}Assumptions}{115}{subsubsection.14.6.5.2}%
+\contentsline {subsubsection}{\numberline {14.6.5.3}Hypotheses}{115}{subsubsection.14.6.5.3}%
+\contentsline {subsubsection}{\numberline {14.6.5.4}Example}{116}{subsubsection.14.6.5.4}%
+\contentsline {subsection}{\numberline {14.6.6}Credits}{116}{subsection.14.6.6}%
+\contentsline {section}{\numberline {14.7}Reproducible examples (reprex)}{116}{section.14.7}%
+\contentsline {subsection}{\numberline {14.7.1}What is a reproducible example?}{116}{subsection.14.7.1}%
+\contentsline {subsection}{\numberline {14.7.2}Why should you care about creating reproducible examples?}{116}{subsection.14.7.2}%
+\contentsline {subsubsection}{\numberline {14.7.2.1}Other things to know}{116}{subsubsection.14.7.2.1}%
+\contentsline {subsection}{\numberline {14.7.3}Watch the creator of the reprex package explain it}{117}{subsection.14.7.3}%
+\contentsline {subsection}{\numberline {14.7.4}Using reprexes on Piazza}{117}{subsection.14.7.4}%
+\contentsline {section}{\numberline {14.8}Reading strategy: previewing and skimming}{117}{section.14.8}%
+\contentsline {section}{\numberline {14.9}Getting ahead on Module 2}{118}{section.14.9}%
+\contentsline {chapter}{\numberline {15}Module 2}{119}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Learning checklist}{119}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Key functions}{120}{subsection.15.1.1}%
+\contentsline {section}{\numberline {15.2}Introduction to Module 2}{121}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Readings for this module}{121}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}R for Data Science (+ story time)}{121}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Common misconceptions about data analysis and statistics}{121}{subsection.15.3.2}%
+\contentsline {subsection}{\numberline {15.3.3}To predict and serve?}{122}{subsection.15.3.3}%
+\contentsline {subsection}{\numberline {15.3.4}Science isn't broken}{122}{subsection.15.3.4}%
+\contentsline {section}{\numberline {15.4}Data wrangling and visualization}{122}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}Tidy data}{122}{subsection.15.4.1}%
+\contentsline {subsubsection}{\numberline {15.4.1.1}A bit of advice\ldots and why we need \textbf {tidy} data}{122}{subsubsection.15.4.1.1}%
+\contentsline {subsubsection}{\numberline {15.4.1.2}Rules of tidy data}{123}{subsubsection.15.4.1.2}%
+\contentsline {subsubsection}{\numberline {15.4.1.3}Recognizing Tidy Data}{123}{subsubsection.15.4.1.3}%
+\contentsline {subsubsection}{\numberline {15.4.1.4}Further reading on tidy data (optional)}{123}{subsubsection.15.4.1.4}%
+\contentsline {subsection}{\numberline {15.4.2}Student grades case study}{123}{subsection.15.4.2}%
+\contentsline {subsubsection}{\numberline {15.4.2.1}Videos}{124}{subsubsection.15.4.2.1}%
+\contentsline {section}{\numberline {15.5}Ethical professional practice for statisticians}{125}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}Why should statisticians be ethical?}{125}{subsection.15.5.1}%
+\contentsline {subsubsection}{\numberline {15.5.1.1}Relevant codes of conduct for statistical societies/associations in North America}{125}{subsubsection.15.5.1.1}%
+\contentsline {subsection}{\numberline {15.5.2}Getting data}{126}{subsection.15.5.2}%
+\contentsline {subsubsection}{\numberline {15.5.2.1}Confounding and study design}{126}{subsubsection.15.5.2.1}%
+\contentsline {paragraph}{\numberline {15.5.2.1.1}Confounders (i.e.\nobreakspace {}confounding factors or confounding variables)}{126}{paragraph.15.5.2.1.1}%
+\contentsline {paragraph}{\numberline {15.5.2.1.2}Designing studies to avoid confounding}{127}{paragraph.15.5.2.1.2}%
+\contentsline {paragraph}{\numberline {15.5.2.1.3}Common study designs and how to recognize them}{128}{paragraph.15.5.2.1.3}%
+\contentsline {paragraph}{\numberline {15.5.2.1.4}Causation from observational studies?}{128}{paragraph.15.5.2.1.4}%
+\contentsline {subparagraph}{\numberline {15.5.2.1.4.1}Bradford Hill criteria (not assessed)}{128}{subparagraph.15.5.2.1.4.1}%
+\contentsline {subsubsection}{\numberline {15.5.2.2}Human research ethics}{129}{subsubsection.15.5.2.2}%
+\contentsline {paragraph}{\numberline {15.5.2.2.1}Principles of free and informed consent}{129}{paragraph.15.5.2.2.1}%
+\contentsline {subparagraph}{\numberline {15.5.2.2.1.1}Information}{129}{subparagraph.15.5.2.2.1.1}%
+\contentsline {subparagraph}{\numberline {15.5.2.2.1.2}Comprehension}{129}{subparagraph.15.5.2.2.1.2}%
+\contentsline {subparagraph}{\numberline {15.5.2.2.1.3}Voluntariness}{129}{subparagraph.15.5.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {15.5.2.3}Web scraping and APIs}{129}{subsubsection.15.5.2.3}%
+\contentsline {paragraph}{\numberline {15.5.2.3.1}What do you need to web scrape?}{130}{paragraph.15.5.2.3.1}%
+\contentsline {paragraph}{\numberline {15.5.2.3.2}The Ethical Scraper}{130}{paragraph.15.5.2.3.2}%
+\contentsline {paragraph}{\numberline {15.5.2.3.3}Terms and Conditions and Robots.txt}{130}{paragraph.15.5.2.3.3}%
+\contentsline {paragraph}{\numberline {15.5.2.3.4}Robots.txt}{131}{paragraph.15.5.2.3.4}%
+\contentsline {paragraph}{\numberline {15.5.2.3.5}Using an API}{131}{paragraph.15.5.2.3.5}%
+\contentsline {subsubsection}{\numberline {15.5.2.4}Indigenous data sovereignty}{131}{subsubsection.15.5.2.4}%
+\contentsline {paragraph}{\numberline {15.5.2.4.1}How can U of T students develop their knowledge?}{131}{paragraph.15.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {15.5.2.5}Selection bias}{132}{subsubsection.15.5.2.5}%
+\contentsline {paragraph}{\numberline {15.5.2.5.1}Survivorship bias}{132}{paragraph.15.5.2.5.1}%
+\contentsline {subsection}{\numberline {15.5.3}Analyzing data}{133}{subsection.15.5.3}%
+\contentsline {subsubsection}{\numberline {15.5.3.1}HARKing}{133}{subsubsection.15.5.3.1}%
+\contentsline {subsubsection}{\numberline {15.5.3.2}Multiple testing problem}{134}{subsubsection.15.5.3.2}%
+\contentsline {paragraph}{\numberline {15.5.3.2.1}Correcting for multiple comparisons?}{134}{paragraph.15.5.3.2.1}%
+\contentsline {subsection}{\numberline {15.5.4}Making decisions with data}{135}{subsection.15.5.4}%
+\contentsline {subsubsection}{\numberline {15.5.4.1}Algorithmic bias}{135}{subsubsection.15.5.4.1}%
+\contentsline {paragraph}{\numberline {15.5.4.1.1}Proxy variables}{135}{paragraph.15.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {15.5.4.2}Should algorithms be transparent?}{135}{subsubsection.15.5.4.2}%
+\contentsline {section}{\numberline {15.6}Statistical communication}{135}{section.15.6}%
+\contentsline {subsection}{\numberline {15.6.1}Prioritize statistical communication as part of your toolbox}{135}{subsection.15.6.1}%
+\contentsline {subsubsection}{\numberline {15.6.1.1}What can statisticians learn about communication from Winston Churchill's mother's dinner conversation?}{136}{subsubsection.15.6.1.1}%
+\contentsline {subsection}{\numberline {15.6.2}What do statisticians usually \emph {write}?}{136}{subsection.15.6.2}%
+\contentsline {subsection}{\numberline {15.6.3}Common report components}{137}{subsection.15.6.3}%
+\contentsline {subsubsection}{\numberline {15.6.3.1}Brief overview (ONE of the following, not both)}{137}{subsubsection.15.6.3.1}%
+\contentsline {paragraph}{\numberline {15.6.3.1.1}Abstract (or summary)}{137}{paragraph.15.6.3.1.1}%
+\contentsline {subparagraph}{\numberline {15.6.3.1.1.1}`Plain English' summaries}{137}{subparagraph.15.6.3.1.1.1}%
+\contentsline {paragraph}{\numberline {15.6.3.1.2}Executive summary}{137}{paragraph.15.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {15.6.3.2}Introduction}{137}{subsubsection.15.6.3.2}%
+\contentsline {subsubsection}{\numberline {15.6.3.3}Data summary (optional)}{138}{subsubsection.15.6.3.3}%
+\contentsline {subsubsection}{\numberline {15.6.3.4}Methods}{138}{subsubsection.15.6.3.4}%
+\contentsline {subsubsection}{\numberline {15.6.3.5}Results}{138}{subsubsection.15.6.3.5}%
+\contentsline {subsubsection}{\numberline {15.6.3.6}Conclusion/discussion}{139}{subsubsection.15.6.3.6}%
+\contentsline {subsubsection}{\numberline {15.6.3.7}References}{140}{subsubsection.15.6.3.7}%
+\contentsline {subsubsection}{\numberline {15.6.3.8}Appendices}{140}{subsubsection.15.6.3.8}%
+\contentsline {subsubsection}{\numberline {15.6.3.9}Final notes on organization}{140}{subsubsection.15.6.3.9}%
+\contentsline {subsection}{\numberline {15.6.4}Paraphrasing}{140}{subsection.15.6.4}%
+\contentsline {subsubsection}{\numberline {15.6.4.1}Example activity prompt}{141}{subsubsection.15.6.4.1}%
+\contentsline {paragraph}{\numberline {15.6.4.1.1}Sample partial/complete answers with overall gradings}{141}{paragraph.15.6.4.1.1}%
+\contentsline {subparagraph}{\numberline {15.6.4.1.1.1}Poor}{141}{subparagraph.15.6.4.1.1.1}%
+\contentsline {subparagraph}{\numberline {15.6.4.1.1.2}Adequate}{142}{subparagraph.15.6.4.1.1.2}%
+\contentsline {subparagraph}{\numberline {15.6.4.1.1.3}Excellent}{142}{subparagraph.15.6.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {15.6.4.2}How to think about paraphrasing?}{142}{subsubsection.15.6.4.2}%
+\contentsline {paragraph}{\numberline {15.6.4.2.1}Example using the Swales \& Feak (2012) approach}{142}{paragraph.15.6.4.2.1}%
+\contentsline {subsubsection}{\numberline {15.6.4.3}References}{143}{subsubsection.15.6.4.3}%
+\contentsline {chapter}{\numberline {16}Module 3}{144}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Learning checklist}{144}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Introduction}{144}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}How deep are we going on likelihoods?}{144}{subsection.16.2.1}%
+\contentsline {subsubsection}{\numberline {16.2.1.1}Maximum likelihood review}{145}{subsubsection.16.2.1.1}%
+\contentsline {subsubsection}{\numberline {16.2.1.2}Properties of maximum likelihood estimators}{145}{subsubsection.16.2.1.2}%
+\contentsline {subsubsection}{\numberline {16.2.1.3}Suggested reading}{145}{subsubsection.16.2.1.3}%
+\contentsline {subsection}{\numberline {16.2.2}Model comparison more generally}{145}{subsection.16.2.2}%
+\contentsline {paragraph}{\numberline {16.2.2.0.1}References}{146}{paragraph.16.2.2.0.1}%
+\contentsline {section}{\numberline {16.3}Correlated data}{146}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Reading}{146}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}Key vocabulary}{146}{subsection.16.3.2}%
+\contentsline {section}{\numberline {16.4}Statdew Valley interactive}{147}{section.16.4}%
+\contentsline {subsection}{\numberline {16.4.1}Welcome to Statdew Valley!}{147}{subsection.16.4.1}%
+\contentsline {subsection}{\numberline {16.4.2}Optional: Create your 16 bit character}{147}{subsection.16.4.2}%
+\contentsline {subsection}{\numberline {16.4.3}Task 1: Tomatoes (part 1)}{149}{subsection.16.4.3}%
+\contentsline {subsubsection}{\numberline {16.4.3.1}Plot the tomat-ah dat-ah}{150}{subsubsection.16.4.3.1}%
+\contentsline {subsubsection}{\numberline {16.4.3.2}The WRONG approach: fixed effects only}{151}{subsubsection.16.4.3.2}%
+\contentsline {paragraph}{\numberline {16.4.3.2.1}Model}{151}{paragraph.16.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {16.4.3.3}Let's try some models: Part 1}{153}{subsubsection.16.4.3.3}%
+\contentsline {subsubsection}{\numberline {16.4.3.4}Summary}{154}{subsubsection.16.4.3.4}%
+\contentsline {subsection}{\numberline {16.4.4}Task 1: Tomatoes (part 2)}{154}{subsection.16.4.4}%
+\contentsline {subsubsection}{\numberline {16.4.4.1}The RIGHT approach: mixed effects}{154}{subsubsection.16.4.4.1}%
+\contentsline {paragraph}{\numberline {16.4.4.1.1}Model}{155}{paragraph.16.4.4.1.1}%
+\contentsline {subsubsection}{\numberline {16.4.4.2}Variance of our random effect}{156}{subsubsection.16.4.4.2}%
+\contentsline {subsection}{\numberline {16.4.5}Task 2: Life is sweet as honey}{158}{subsection.16.4.5}%
+\contentsline {subsubsection}{\numberline {16.4.5.1}Wrangle and plot the data}{159}{subsubsection.16.4.5.1}%
+\contentsline {subsubsection}{\numberline {16.4.5.2}Model formula}{161}{subsubsection.16.4.5.2}%
+\contentsline {subsubsection}{\numberline {16.4.5.3}Fit the models}{162}{subsubsection.16.4.5.3}%
+\contentsline {subsubsection}{\numberline {16.4.5.4}Model with our aggregated data}{162}{subsubsection.16.4.5.4}%
+\contentsline {subsubsection}{\numberline {16.4.5.5}Describing our residuals}{163}{subsubsection.16.4.5.5}%
+\contentsline {paragraph}{\numberline {16.4.5.5.1}Calculate the residual sum of squares for the \texttt {bee\_int\_mod} model. Save it as \texttt {rss\_int}.}{163}{paragraph.16.4.5.5.1}%
+\contentsline {paragraph}{\numberline {16.4.5.5.2}Calculate the RSE for the \texttt {bee\_int\_mod} model.}{163}{paragraph.16.4.5.5.2}%
+\contentsline {subsubsection}{\numberline {16.4.5.6}Calculating our random effect variances}{165}{subsubsection.16.4.5.6}%
+\contentsline {paragraph}{\numberline {16.4.5.6.1}Overview}{165}{paragraph.16.4.5.6.1}%
+\contentsline {paragraph}{\numberline {16.4.5.6.2}Unexplained variance after fitting the interaction model}{165}{paragraph.16.4.5.6.2}%
+\contentsline {paragraph}{\numberline {16.4.5.6.3}RSE for main effects model on aggregated data}{166}{paragraph.16.4.5.6.3}%
+\contentsline {paragraph}{\numberline {16.4.5.6.4}Hive-to-hive variance}{166}{paragraph.16.4.5.6.4}%
+\contentsline {paragraph}{\numberline {16.4.5.6.5}Summary of all our calculated error variances}{168}{paragraph.16.4.5.6.5}%
+\contentsline {subsubsection}{\numberline {16.4.5.7}Summary}{168}{subsubsection.16.4.5.7}%
+\contentsline {paragraph}{\numberline {16.4.5.7.1}Full interaction model (includes main effects) (\texttt {bee\_int\_mod})}{169}{paragraph.16.4.5.7.1}%
+\contentsline {paragraph}{\numberline {16.4.5.7.2}Main effects only model, on hive/song aggregated data (\texttt {bee\_agg\_mod})}{169}{paragraph.16.4.5.7.2}%
+\contentsline {paragraph}{\numberline {16.4.5.7.3}Intercept only model for hives averages (\texttt {bee\_hive\_mod})}{169}{paragraph.16.4.5.7.3}%
+\contentsline {subsection}{\numberline {16.4.6}Where to next?}{170}{subsection.16.4.6}%
+\contentsline {subsection}{\numberline {16.4.7}Credits}{170}{subsection.16.4.7}%
+\contentsline {section}{\numberline {16.5}Vocal pitch case study: Part 1 (LMMs)}{170}{section.16.5}%
+\contentsline {subsection}{\numberline {16.5.1}Motivation}{170}{subsection.16.5.1}%
+\contentsline {subsection}{\numberline {16.5.2}Design of the experiment}{170}{subsection.16.5.2}%
+\contentsline {subsection}{\numberline {16.5.3}Read in the data and explore it}{171}{subsection.16.5.3}%
+\contentsline {subsection}{\numberline {16.5.4}Recall: Linear regression assumptions}{172}{subsection.16.5.4}%
+\contentsline {subsubsection}{\numberline {16.5.4.1}Why we can't assume independence}{172}{subsubsection.16.5.4.1}%
+\contentsline {subsubsection}{\numberline {16.5.4.2}Let's start with a picture}{172}{subsubsection.16.5.4.2}%
+\contentsline {paragraph}{\numberline {16.5.4.2.1}Key themes from our plot}{173}{paragraph.16.5.4.2.1}%
+\contentsline {section}{\numberline {16.6}Linear mixed models}{174}{section.16.6}%
+\contentsline {subsection}{\numberline {16.6.1}Thoughts on plots for hierarchical/correlated data generally}{174}{subsection.16.6.1}%
+\contentsline {subsection}{\numberline {16.6.2}Assumptions}{174}{subsection.16.6.2}%
+\contentsline {subsection}{\numberline {16.6.3}Our model set up}{175}{subsection.16.6.3}%
+\contentsline {subsubsection}{\numberline {16.6.3.1}Our STA302 linear model}{175}{subsubsection.16.6.3.1}%
+\contentsline {subsubsection}{\numberline {16.6.3.2}Linear mixed model}{175}{subsubsection.16.6.3.2}%
+\contentsline {subsubsection}{\numberline {16.6.3.3}Alternative formulations}{175}{subsubsection.16.6.3.3}%
+\contentsline {subsection}{\numberline {16.6.4}What can correlated errors look like?}{175}{subsection.16.6.4}%
+\contentsline {subsubsection}{\numberline {16.6.4.1}Random intercepts}{175}{subsubsection.16.6.4.1}%
+\contentsline {subsubsection}{\numberline {16.6.4.2}Random slopes}{176}{subsubsection.16.6.4.2}%
+\contentsline {subsubsection}{\numberline {16.6.4.3}Random slopes and intercepts}{177}{subsubsection.16.6.4.3}%
+\contentsline {subsection}{\numberline {16.6.5}How do we tell R which situation we're in?}{177}{subsection.16.6.5}%
+\contentsline {subsubsection}{\numberline {16.6.5.1}Vignette activity}{177}{subsubsection.16.6.5.1}%
+\contentsline {subsection}{\numberline {16.6.6}Additional considerations}{178}{subsection.16.6.6}%
+\contentsline {subsubsection}{\numberline {16.6.6.1}Linear mixed models come with lots of different names}{178}{subsubsection.16.6.6.1}%
+\contentsline {subsubsection}{\numberline {16.6.6.2}Fixed vs.\nobreakspace {}random effects}{178}{subsubsection.16.6.6.2}%
+\contentsline {subsubsection}{\numberline {16.6.6.3}REML or ML}{179}{subsubsection.16.6.6.3}%
+\contentsline {subsubsection}{\numberline {16.6.6.4}Confidence intervals and tests}{179}{subsubsection.16.6.6.4}%
+\contentsline {section}{\numberline {16.7}Vocal pitch case study: Part 2}{179}{section.16.7}%
+\contentsline {subsection}{\numberline {16.7.1}Modelling individual means with random intercepts}{179}{subsection.16.7.1}%
+\contentsline {subsubsection}{\numberline {16.7.1.1}Random intercept only model}{180}{subsubsection.16.7.1.1}%
+\contentsline {subsubsection}{\numberline {16.7.1.2}What does this model do?}{180}{subsubsection.16.7.1.2}%
+\contentsline {subsubsection}{\numberline {16.7.1.3}Interpreting this output}{180}{subsubsection.16.7.1.3}%
+\contentsline {subsubsection}{\numberline {16.7.1.4}Adding our fixed effects}{181}{subsubsection.16.7.1.4}%
+\contentsline {subsubsection}{\numberline {16.7.1.5}Model with condition and sex}{181}{subsubsection.16.7.1.5}%
+\contentsline {subsubsection}{\numberline {16.7.1.6}Aside: Summary of means}{183}{subsubsection.16.7.1.6}%
+\contentsline {subsubsection}{\numberline {16.7.1.7}Random slopes for condition}{184}{subsubsection.16.7.1.7}%
+\contentsline {subsubsection}{\numberline {16.7.1.8}Scenario random intercepts}{187}{subsubsection.16.7.1.8}%
+\contentsline {subsection}{\numberline {16.7.2}Scenario random slopes}{189}{subsection.16.7.2}%
+\contentsline {section}{\numberline {16.8}Interactions between random effects and fixed effects}{192}{section.16.8}%
+\contentsline {subsection}{\numberline {16.8.1}Model formula}{193}{subsection.16.8.1}%
+\contentsline {subsection}{\numberline {16.8.2}How would we fit this with \texttt {lmer}?}{193}{subsection.16.8.2}%
+\contentsline {subsubsection}{\numberline {16.8.2.1}Do we need the interaction?}{193}{subsubsection.16.8.2.1}%
+\contentsline {section}{\numberline {16.9}More fixed vs random effects practice}{194}{section.16.9}%
+\contentsline {subsection}{\numberline {16.9.1}Answers}{194}{subsection.16.9.1}%
+\contentsline {subsubsection}{\numberline {16.9.1.1}Cockroaches}{194}{subsubsection.16.9.1.1}%
+\contentsline {subsubsection}{\numberline {16.9.1.2}Radon}{194}{subsubsection.16.9.1.2}%
+\contentsline {section}{\numberline {16.10}Advice for polishing your writing}{195}{section.16.10}%
+\contentsline {chapter}{\numberline {17}Module 4}{196}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Learning checklist}{196}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Introduction}{197}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Distributions (recap)}{197}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Sections to preview and skim}{197}{subsection.17.3.1}%
+\contentsline {subsubsection}{\numberline {17.3.1.1}Recommended revision}{197}{subsubsection.17.3.1.1}%
+\contentsline {subsection}{\numberline {17.3.2}Reading guide}{197}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Cheat sheet template}{197}{subsection.17.3.3}%
+\contentsline {section}{\numberline {17.4}Ontario COVID hospitalizations}{198}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}Creating tables in R}{198}{subsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.4.2}Creating tables}{198}{subsection.17.4.2}%
+\contentsline {subsection}{\numberline {17.4.3}Calculations with tables}{198}{subsection.17.4.3}%
+\contentsline {subsection}{\numberline {17.4.4}Joint probabilities}{199}{subsection.17.4.4}%
+\contentsline {subsection}{\numberline {17.4.5}Marginal probabilities}{199}{subsection.17.4.5}%
+\contentsline {subsection}{\numberline {17.4.6}Conditional probabilities}{200}{subsection.17.4.6}%
+\contentsline {subsection}{\numberline {17.4.7}Risk and odds}{200}{subsection.17.4.7}%
+\contentsline {subsection}{\numberline {17.4.8}Hospitalization risk and odds}{200}{subsection.17.4.8}%
+\contentsline {subsection}{\numberline {17.4.9}Odds ratio and risk ratios}{201}{subsection.17.4.9}%
+\contentsline {subsection}{\numberline {17.4.10}When do we use RR vs OR?}{201}{subsection.17.4.10}%
+\contentsline {section}{\numberline {17.5}Generalized linear models (GLMs)}{201}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}Assumptions of the Generalized Linear Model}{202}{subsection.17.5.1}%
+\contentsline {subsection}{\numberline {17.5.2}Components of a Generalized Linear Model}{202}{subsection.17.5.2}%
+\contentsline {subsection}{\numberline {17.5.3}Generalized Linear Models}{203}{subsection.17.5.3}%
+\contentsline {subsection}{\numberline {17.5.4}Ordinary Least Squares again}{203}{subsection.17.5.4}%
+\contentsline {subsubsection}{\numberline {17.5.4.1}GLM}{203}{subsubsection.17.5.4.1}%
+\contentsline {subsubsection}{\numberline {17.5.4.2}OLS}{203}{subsubsection.17.5.4.2}%
+\contentsline {section}{\numberline {17.6}Binomial (or logistic) regression}{203}{section.17.6}%
+\contentsline {subsection}{\numberline {17.6.1}Case study: Challenger disaster}{204}{subsection.17.6.1}%
+\contentsline {subsubsection}{\numberline {17.6.1.1}Shuttle data}{205}{subsubsection.17.6.1.1}%
+\contentsline {subsubsection}{\numberline {17.6.1.2}Follow along with the case study}{205}{subsubsection.17.6.1.2}%
+\contentsline {subsubsection}{\numberline {17.6.1.3}Are shuttle rings more likely to get damaged in cold weather?}{206}{subsubsection.17.6.1.3}%
+\contentsline {subsubsection}{\numberline {17.6.1.4}Inference: parameter estimation}{206}{subsubsection.17.6.1.4}%
+\contentsline {subsubsection}{\numberline {17.6.1.5}Shuttle example in R}{206}{subsubsection.17.6.1.5}%
+\contentsline {subsubsection}{\numberline {17.6.1.6}Summary of fit}{207}{subsubsection.17.6.1.6}%
+\contentsline {subsubsection}{\numberline {17.6.1.7}Interpreting logistic models}{208}{subsubsection.17.6.1.7}%
+\contentsline {subsubsection}{\numberline {17.6.1.8}Centring parameters}{208}{subsubsection.17.6.1.8}%
+\contentsline {subsubsection}{\numberline {17.6.1.9}Shuttle odds parameters}{209}{subsubsection.17.6.1.9}%
+\contentsline {subsubsection}{\numberline {17.6.1.10}Interpreting shuttle parameters}{209}{subsubsection.17.6.1.10}%
+\contentsline {section}{\numberline {17.7}GLMS: A unifying theory}{210}{section.17.7}%
+\contentsline {subsection}{\numberline {17.7.1}Optional accompanying video}{210}{subsection.17.7.1}%
+\contentsline {subsection}{\numberline {17.7.2}Readings}{210}{subsection.17.7.2}%
+\contentsline {subsection}{\numberline {17.7.3}Recall}{210}{subsection.17.7.3}%
+\contentsline {subsection}{\numberline {17.7.4}Exponential family forms}{210}{subsection.17.7.4}%
+\contentsline {subsubsection}{\numberline {17.7.4.1}Show that the normal distribution is in the exponential family}{211}{subsubsection.17.7.4.1}%
+\contentsline {subsubsection}{\numberline {17.7.4.2}Show that the Poisson distribution is in the exponential family}{212}{subsubsection.17.7.4.2}%
+\contentsline {subsubsection}{\numberline {17.7.4.3}Your turn! Show that the binomial distribution is in the exponential family}{213}{subsubsection.17.7.4.3}%
+\contentsline {subsection}{\numberline {17.7.5}Canonical link functions}{214}{subsection.17.7.5}%
+\contentsline {subsection}{\numberline {17.7.6}Exponential Family of Distributions}{214}{subsection.17.7.6}%
+\contentsline {subsection}{\numberline {17.7.7}Iteratively re-weighted least squares algorithm (a sketch)}{215}{subsection.17.7.7}%
+\contentsline {subsubsection}{\numberline {17.7.7.1}How do decide when to stop?}{215}{subsubsection.17.7.7.1}%
+\contentsline {subsection}{\numberline {17.7.8}A quick note on the large sample distribution of \(\hat {\mitbeta }\)}{215}{subsection.17.7.8}%
+\contentsline {subsection}{\numberline {17.7.9}Deviance}{216}{subsection.17.7.9}%
+\contentsline {subsubsection}{\numberline {17.7.9.1}Comparing models}{216}{subsubsection.17.7.9.1}%
+\contentsline {subsubsection}{\numberline {17.7.9.2}Quasi-likelihood}{216}{subsubsection.17.7.9.2}%
+\contentsline {subsubsection}{\numberline {17.7.9.3}So what does this whole section mean for us in practice?}{217}{subsubsection.17.7.9.3}%
+\contentsline {subsection}{\numberline {17.7.10}Reading: Logistic regression}{217}{subsection.17.7.10}%
+\contentsline {subsection}{\numberline {17.7.11}Logistic regression case study: Trying to lose weight}{217}{subsection.17.7.11}%
+\contentsline {subsubsection}{\numberline {17.7.11.1}Access the code for the case studies}{217}{subsubsection.17.7.11.1}%
+\contentsline {section}{\numberline {17.8}Poisson regression key concepts + reading}{217}{section.17.8}%
+\contentsline {subsection}{\numberline {17.8.1}Reading}{217}{subsection.17.8.1}%
+\contentsline {subsection}{\numberline {17.8.2}Key concepts for Poisson regression}{217}{subsection.17.8.2}%
+\contentsline {subsubsection}{\numberline {17.8.2.1}Use case}{217}{subsubsection.17.8.2.1}%
+\contentsline {subsubsection}{\numberline {17.8.2.2}Assumptions}{218}{subsubsection.17.8.2.2}%
+\contentsline {subsubsection}{\numberline {17.8.2.3}Model}{218}{subsubsection.17.8.2.3}%
+\contentsline {subsubsection}{\numberline {17.8.2.4}Zero-inflated Poisson situations}{218}{subsubsection.17.8.2.4}%
+\contentsline {subsection}{\numberline {17.8.3}Poisson regression case studies: (1) Household size in the Philippines and (2) Campus crime}{219}{subsection.17.8.3}%
+\contentsline {subsubsection}{\numberline {17.8.3.1}Reading guides for the case studies}{219}{subsubsection.17.8.3.1}%
+\contentsline {paragraph}{\numberline {17.8.3.1.1}Household size in the Philippines}{219}{paragraph.17.8.3.1.1}%
+\contentsline {paragraph}{\numberline {17.8.3.1.2}Campus crime (includes 4.7, 4.8 and 4.9)}{219}{paragraph.17.8.3.1.2}%
+\contentsline {subsection}{\numberline {17.8.4}Access the code for the case studies (optional)}{219}{subsection.17.8.4}%
+\contentsline {section}{\numberline {17.9}Extra for the curious (NOT assessed)}{219}{section.17.9}%
+\contentsline {subsection}{\numberline {17.9.1}Efficient maximization (for your reference only)}{219}{subsection.17.9.1}%
+\contentsline {subsection}{\numberline {17.9.2}Numerical maximizers (for your reference only)}{220}{subsection.17.9.2}%
+\contentsline {subsection}{\numberline {17.9.3}Automatic differentiation (for your reference only)}{220}{subsection.17.9.3}%
+\contentsline {chapter}{\numberline {18}Module 5}{221}{chapter.18}%
+\contentsline {chapter}{References}{222}{chapter*.4}%
+\contentsline {part}{Appendix}{224}{part*.5}%
+\contentsline {chapter}{\numberline {19}Resources}{224}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Course tools overview}{224}{section.19.1}%
+\contentsline {subsection}{\numberline {19.1.1}Admin}{224}{subsection.19.1.1}%
+\contentsline {section}{\numberline {19.2}Using RStudio with the JupyterHub}{225}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Team Up!}{225}{section.19.3}%
+\contentsline {subsection}{\numberline {19.3.1}To participate in these activities, you \textbf {need}:}{226}{subsection.19.3.1}%
+\contentsline {subsection}{\numberline {19.3.2}\textbf {Before} the activity you should:}{226}{subsection.19.3.2}%
+\contentsline {subsection}{\numberline {19.3.3}Some rules/logistics}{227}{subsection.19.3.3}%
+\contentsline {subsection}{\numberline {19.3.4}Team Up! Instructions}{227}{subsection.19.3.4}%
+\contentsline {subsubsection}{\numberline {19.3.4.1}Step 1: Decide on roles}{227}{subsubsection.19.3.4.1}%
+\contentsline {subsubsection}{\numberline {19.3.4.2}Step 2: Driver sets up group}{228}{subsubsection.19.3.4.2}%
+\contentsline {subsubsection}{\numberline {19.3.4.3}Step 3: Members join}{229}{subsubsection.19.3.4.3}%
+\contentsline {subsubsection}{\numberline {19.3.4.4}Step 4: Complete the activity}{229}{subsubsection.19.3.4.4}%
+\contentsline {subsubsection}{\numberline {19.3.4.5}Step 5: The Driver MUST click Submit to Quercus for your answers to be processed.}{230}{subsubsection.19.3.4.5}%
+\contentsline {section}{\numberline {19.4}Zoom, Zoom, Zoom, Zoom\ldots {}}{230}{section.19.4}%
+\contentsline {subsection}{\numberline {19.4.1}Make sure your Zoom is up to date}{230}{subsection.19.4.1}%
+\contentsline {subsection}{\numberline {19.4.2}Customize!}{230}{subsection.19.4.2}%
+\contentsline {subsection}{\numberline {19.4.3}VPN}{230}{subsection.19.4.3}%
+\contentsline {subsection}{\numberline {19.4.4}Notes:}{231}{subsection.19.4.4}%
+\contentsline {subsection}{\numberline {19.4.5}Changing your profile picture on Zoom and Quercus}{231}{subsection.19.4.5}%
+\contentsline {subsection}{\numberline {19.4.6}What to do if you experience technical difficulties during class?}{231}{subsection.19.4.6}%
+\contentsline {subsection}{\numberline {19.4.7}What to do if your instructor or TA is experiencing technical difficulties on Zoom}{231}{subsection.19.4.7}%
+\contentsline {section}{\numberline {19.5}Student support services and resources}{231}{section.19.5}%
+\contentsline {subsection}{\numberline {19.5.1}Mental health support}{231}{subsection.19.5.1}%
+\contentsline {subsection}{\numberline {19.5.2}General University resources}{232}{subsection.19.5.2}%
+\contentsline {subsection}{\numberline {19.5.3}Financial support}{232}{subsection.19.5.3}%
+\contentsline {subsection}{\numberline {19.5.4}Arts \& Science COVID19 FAQ}{232}{subsection.19.5.4}%
+\contentsline {chapter}{\numberline {20}FAQs and Errata}{233}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Frequently asked questions}{233}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}Course admin}{233}{subsection.20.1.1}%
+\contentsline {subsubsection}{\numberline {20.1.1.1}STA303 pre-requisites}{233}{subsubsection.20.1.1.1}%
+\contentsline {paragraph}{\numberline {20.1.1.1.1}\emph {I didn't take STA302 or an equivalent course, can I still take STA303?}\\ }{233}{paragraph.20.1.1.1.1}%
+\contentsline {subsubsection}{\numberline {20.1.1.2}Lecture and tutorial times}{233}{subsubsection.20.1.1.2}%
+\contentsline {paragraph}{\numberline {20.1.1.2.1}\emph {How exactly do the tutorials and lectures work?}}{233}{paragraph.20.1.1.2.1}%
+\contentsline {subsubsection}{\numberline {20.1.1.3}Recorded lectures}{233}{subsubsection.20.1.1.3}%
+\contentsline {paragraph}{\numberline {20.1.1.3.1}\emph {``Where can I find recorded lectures and how soon can I expect them to be available?''}}{233}{paragraph.20.1.1.3.1}%
+\contentsline {subsubsection}{\numberline {20.1.1.4}Sections}{234}{subsubsection.20.1.1.4}%
+\contentsline {paragraph}{\numberline {20.1.1.4.1}\emph {``Do L0101 and L0201 cover the same materials?''}}{234}{paragraph.20.1.1.4.1}%
+\contentsline {subsubsection}{\numberline {20.1.1.5}Attending synchronous class}{234}{subsubsection.20.1.1.5}%
+\contentsline {paragraph}{\numberline {20.1.1.5.1}\emph {``Can I attend the synchronous class for the other section?''}}{234}{paragraph.20.1.1.5.1}%
+\contentsline {paragraph}{\numberline {20.1.1.5.2}\emph {``Why can't I access the class/office hour Zoom meeting?''}}{234}{paragraph.20.1.1.5.2}%
+\contentsline {paragraph}{\numberline {20.1.1.5.3}\emph {``Will STA303/STA1002 be able to be completed online-only?''}}{234}{paragraph.20.1.1.5.3}%
+\contentsline {paragraph}{\numberline {20.1.1.5.4}\emph {``Where is your \textbf {office}?''}/\emph {``Can I come see you in-person?''}}{234}{paragraph.20.1.1.5.4}%
+\contentsline {subsection}{\numberline {20.1.2}Assessments FAQ}{234}{subsection.20.1.2}%
+\contentsline {subsubsection}{\numberline {20.1.2.1}Knowledge basket FAQ}{234}{subsubsection.20.1.2.1}%
+\contentsline {paragraph}{\numberline {20.1.2.1.1}\emph {``I don't really understand the knowledge basket, how will that work? Can we earn more than 5 marks?''}}{234}{paragraph.20.1.2.1.1}%
+\contentsline {paragraph}{\numberline {20.1.2.1.2}\emph {``Can we do as many knowledge basket activities as we want in order to gain the full 5\%?''}}{234}{paragraph.20.1.2.1.2}%
+\contentsline {paragraph}{\numberline {20.1.2.1.3}\emph {``How fast will we receive grades back for the knowledge basket activities?''}}{234}{paragraph.20.1.2.1.3}%
+\contentsline {paragraph}{\numberline {20.1.2.1.4}\emph {``I am not too sure what `pre-knowledge quiz: 80\% or workshop' is supposed to mean.''}}{235}{paragraph.20.1.2.1.4}%
+\contentsline {paragraph}{\numberline {20.1.2.1.5}\emph {``What will additional opportunities like speaker series reflections be like?''}}{235}{paragraph.20.1.2.1.5}%
+\contentsline {paragraph}{\numberline {20.1.2.1.6}\emph {``Are the three phases of each writing assignment graded on completion?''}}{235}{paragraph.20.1.2.1.6}%
+\contentsline {paragraph}{\numberline {20.1.2.1.7}\emph {``No questions, although seems to be a hectic course with a lot of minor deadlines.''}}{235}{paragraph.20.1.2.1.7}%
+\contentsline {subsubsection}{\numberline {20.1.2.2}Portfolios FAQ}{235}{subsubsection.20.1.2.2}%
+\contentsline {paragraph}{\numberline {20.1.2.2.1}\emph {``I am curious about the format of portfolio and assessment and how they will be conducted.''}}{235}{paragraph.20.1.2.2.1}%
+\contentsline {subsubsection}{\numberline {20.1.2.3}Mixed assessments FAQ}{235}{subsubsection.20.1.2.3}%
+\contentsline {paragraph}{\numberline {20.1.2.3.1}\emph {``How does the mixed assessment work? Is it like a midterm?''}}{235}{paragraph.20.1.2.3.1}%
+\contentsline {paragraph}{\numberline {20.1.2.3.2}\emph {``What's the difference between mini and mixed assessments? Are they both term tests?''}}{235}{paragraph.20.1.2.3.2}%
+\contentsline {paragraph}{\numberline {20.1.2.3.3}\emph {Will we get some sample practice problems to work on before the mini-mixed and mixed assessments?}}{235}{paragraph.20.1.2.3.3}%
+\contentsline {paragraph}{\numberline {20.1.2.3.4}\emph {``What exactly will we do in assessment weeks?''}}{235}{paragraph.20.1.2.3.4}%
+\contentsline {subsubsection}{\numberline {20.1.2.4}Final project FAQ}{236}{subsubsection.20.1.2.4}%
+\contentsline {paragraph}{\numberline {20.1.2.4.1}\emph {``What kind of activities will the final project entail?''}}{236}{paragraph.20.1.2.4.1}%
+\contentsline {subsubsection}{\numberline {20.1.2.5}Assessments: General FAQ}{236}{subsubsection.20.1.2.5}%
+\contentsline {paragraph}{\numberline {20.1.2.5.1}\emph {``How we can choose path A or B for the marking scheme-- would this be on Quercus?''}}{236}{paragraph.20.1.2.5.1}%
+\contentsline {paragraph}{\numberline {20.1.2.5.2}\emph {``So are all assessment due on Thursday 3:03?''}}{236}{paragraph.20.1.2.5.2}%
+\contentsline {paragraph}{\numberline {20.1.2.5.3}\emph {``Are we allowed to answer assignments with programming languages other than R?''}}{236}{paragraph.20.1.2.5.3}%
+\contentsline {paragraph}{\numberline {20.1.2.5.4}\emph {``What are the minimum requirements to pass the course?''}}{236}{paragraph.20.1.2.5.4}%
+\contentsline {subsection}{\numberline {20.1.3}Team Up!}{236}{subsection.20.1.3}%
+\contentsline {subsubsection}{\numberline {20.1.3.1}Troubleshooting \& FAQ advice from U of T CTSI}{236}{subsubsection.20.1.3.1}%
+\contentsline {paragraph}{\numberline {20.1.3.1.1}\emph {``My screen seems to be lagging compared to those of my group members (e.g., I'm not on the same question as the driver/members, the answer I chose does not appear on my group members' screens, etc.)''}}{236}{paragraph.20.1.3.1.1}%
+\contentsline {paragraph}{\numberline {20.1.3.1.2}\emph {``I've been disconnected. Will my quiz progress be saved? Can I re-join my group?''}}{236}{paragraph.20.1.3.1.2}%
+\contentsline {paragraph}{\numberline {20.1.3.1.3}\emph {``How do I send my completed quiz results?''}}{236}{paragraph.20.1.3.1.3}%
+\contentsline {paragraph}{\numberline {20.1.3.1.4}\emph {``Can we change our group driver?''}}{236}{paragraph.20.1.3.1.4}%
+\contentsline {paragraph}{\numberline {20.1.3.1.5}\emph {``How is the driver for our group chosen, and how can the driver pass the group ID to others in remote classes?''}}{236}{paragraph.20.1.3.1.5}%
+\contentsline {paragraph}{\numberline {20.1.3.1.6}\emph {``The Driver of my group has to leave unexpectedly or their device has stopped functioning. How do we proceed with the quiz?''}}{237}{paragraph.20.1.3.1.6}%
+\contentsline {section}{\numberline {20.2}Other}{237}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}References}{237}{subsection.20.2.1}%
+\contentsline {paragraph}{\numberline {20.2.1.0.1}\emph {``Can you (Prof.\nobreakspace {}Bolton) write me a reference?''}}{237}{paragraph.20.2.1.0.1}%
+\contentsline {paragraph}{\numberline {20.2.1.0.2}\emph {``Do you (Prof.\nobreakspace {}Bolton) have any research opportunities available?''}}{237}{paragraph.20.2.1.0.2}%
+\contentsline {section}{\numberline {20.3}Errata}{237}{section.20.3}%
+\contentsline {chapter}{\numberline {21}Bits and pieces}{239}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Code to generate course art}{239}{section.21.1}%
+\contentsline {section}{\numberline {21.2}M1 supporting information on matrices (not assessed)}{240}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}Background}{240}{subsection.21.2.1}%
+\contentsline {subsubsection}{\numberline {21.2.1.1}Some true things about matrices}{240}{subsubsection.21.2.1.1}%
+\contentsline {subsection}{\numberline {21.2.2}Example}{240}{subsection.21.2.2}%
+\contentsline {subsubsection}{\numberline {21.2.2.1}Classic regression, k-1 dummies (intercept)}{241}{subsubsection.21.2.2.1}%
+\contentsline {subsubsection}{\numberline {21.2.2.2}Classic regression but trying to force k dummies (with an intercept)}{242}{subsubsection.21.2.2.2}%
+\contentsline {subsection}{\numberline {21.2.3}Regression NOT classic, actually ANOVA! (no intercept)}{243}{subsection.21.2.3}%
+\contentsline {subsection}{\numberline {21.2.4}Further reading (if you want it)}{245}{subsection.21.2.4}%
+\contentsline {section}{\numberline {21.3}\emph {p} values (recap)}{245}{section.21.3}%
+\contentsline {subsection}{\numberline {21.3.1}What if you get a value that is exactly one of these thresholds?}{245}{subsection.21.3.1}%
+\contentsline {chapter}{\numberline {22}Announcements summary}{246}{chapter.22}%
+\contentsline {subsection}{\numberline {22.0.1}Looking for student representatives for STA303}{252}{subsection.22.0.1}%
+\contentsline {subsubsection}{\numberline {22.0.1.1}The role of a student representative}{253}{subsubsection.22.0.1.1}%
+\contentsline {subsubsection}{\numberline {22.0.1.2}Benefits of being a student representative}{253}{subsubsection.22.0.1.2}%
+\contentsline {subsubsection}{\numberline {22.0.1.3}How to become a rep}{253}{subsubsection.22.0.1.3}%
+\contentsline {subsubsection}{\numberline {22.0.1.4}Eligibility criteria}{253}{subsubsection.22.0.1.4}%

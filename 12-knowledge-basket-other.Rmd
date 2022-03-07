@@ -455,7 +455,7 @@ Create a 1 page **study guide** for the topic of **Linear Mixed Models** (Module
 | Type (Main, Mini or Basket)                            | Basket                                                                                                      |
 | Value                                                  | 1%                                                                                                          |
 | Due                                                    | `r glm_sg`                                                                                                  |
-| Submission instructions                                | Submission: [Via Quercus discussion boards](https://q.utoronto.ca/courses/253305/discussion_topics/1637653) |
+| Submission instructions                                | Submission: [Via Quercus discussion boards](https://q.utoronto.ca/courses/253305/discussion_topics/1637656) |
 | Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                         |
 
 ### Instructions
@@ -502,7 +502,7 @@ To earn these points, you must:
 -   Submit a short reflection about what you learned from the session on Quercus by 3:03 p.m. ET on Friday, March 4.
 
 
-[__Register here]__(https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEO8qoh9ZPflFrDrfXlNN6AdUMVZKSE9BNUpTQThWMVdaUEtCSEFSMUdPMS4u) 
+[__Register here__](https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEO8qoh9ZPflFrDrfXlNN6AdUMVZKSE9BNUpTQThWMVdaUEtCSEFSMUdPMS4u) 
 
 ## Sports analytics workshop attendance and reflection
 
