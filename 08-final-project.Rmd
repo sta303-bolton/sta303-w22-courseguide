@@ -10,7 +10,9 @@
 
 ### Instructions
 
-To be announced.
+:::: {.yellowbox data-latex=""}
+This assessment has its own website: https://sta303-bolton.github.io/sta303-w22-final-project/
+::::
 
 #### Project groups
 
