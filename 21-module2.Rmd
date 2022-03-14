@@ -111,8 +111,8 @@ This module introduces or recaps a range of necessary data wrangling and visuali
 
 With respect to the ethical professional practice components, think of this as just a very high-level survey of these ideas; we aren't going very deep on any of them, but some will set up conversations/tasks later in the course.
 
-+ We'll revisit some of these concepts in later classes, like __case-control studies__ and logistic regression, __black box algorithms__ (very briefly) when we discuss GAMs and issues of confounding, proxies and ethical sourcing of data, throughout.
-+ We'll touch on __web scraping__ in the Team Up! activity for this module.
+- We'll revisit some of these concepts in later classes, like __case-control studies__ and logistic regression, __black box algorithms__ (very briefly) when we discuss GAMs and issues of confounding, proxies and ethical sourcing of data, throughout.
+- We'll touch on __web scraping__ in the Team Up! activity for this module.
 
 Folks who have taken or TAed STA130 might be more familiar with some of these concepts than others, but I'm not assuming much prior knowledge.
 
@@ -280,13 +280,13 @@ I hope this questions seems a bit silly to most of you, shouldn't we all strive 
 Statistical tools are used to create knowledge. Therefore, anyone using statistical tools is responsible for the knowledge they create through their data collection and analyses.
 
 As ethical statisticians it is important to:
-+ be accurate in our analyses and conclusions
-+ be alert to possible consequences of our results/recommendations on others
-+ be honest in reporting results, even when we don't get the results we hoped for
-+ be respectful of other reasonable results (based on well-conducted research) even if they differ from our own
-+ be mindful of what your data represents, especially if it represents people or their behaviour (a study on people has _subjects_, not objects)
-+ share credit when our work is based on the ideas of others
-+ and more...
+- be accurate in our analyses and conclusions
+- be alert to possible consequences of our results/recommendations on others
+- be honest in reporting results, even when we don't get the results we hoped for
+- be respectful of other reasonable results (based on well-conducted research) even if they differ from our own
+- be mindful of what your data represents, especially if it represents people or their behaviour (a study on people has _subjects_, not objects)
+- share credit when our work is based on the ideas of others
+- and more...
 
 You will be asked to write your own code of ethics in your final project. 
 
@@ -363,15 +363,15 @@ relationship, observational studies can also help build __evidence__ for causati
 
 ###### Bradford Hill criteria (not assessed)
 
-+ Strength of association
-+ Consistency
-+ Specificity
-+ Temporality
-+ Biological gradient
-+ Plausibility
-+ Coherence
-+ Experiment
-+ Analogy
+- Strength of association
+- Consistency
+- Specificity
+- Temporality
+- Biological gradient
+- Plausibility
+- Coherence
+- Experiment
+- Analogy
 
 > Science is not a magic wand that turns everything it touches to truth. Instead, “science operates as a procedure of uncertainty reduction,” said Nosek, of the Center for Open Science. “The goal is to get less wrong over time.” This concept is fundamental — whatever we know now is only our best approximation of the truth. We can never presume to have everything right.
 
@@ -392,8 +392,8 @@ The Nuremberg code was formulated in August 1947 in Nuremberg, Germany, by Ameri
 ] sitting in judgment of Nazi doctors accused of conducting murderous and torturous human experiments in concentration camps during the war.
 
 The Nuremberg code codified many of our standard principles of ethical research, including:
-+ research must appropriately balance risk and potential benefits
-+ researchers must be well-versed in their discipline and ground human experiments in animal trials.
+- research must appropriately balance risk and potential benefits
+- researchers must be well-versed in their discipline and ground human experiments in animal trials.
 
 ##### Principles of free and informed consent
 
@@ -418,12 +418,12 @@ Downloading a ready-made .csv file hosted by a site wouldn't be considered web s
 
 ##### What do you need to web scrape?
 
-+ Some knowledge of URLs, HTML and CSS
-  + URL - Universal Resource Locator
-  + HTML - HyperText Markup Language
-  + CSS - Cascading Style Sheets
-+ The `rvest` and `polite` packages in R (or `Rcrawler`, there may be others too) or `Beautiful Soup` for Python
-+ Professional ethics!
+- Some knowledge of URLs, HTML and CSS
+  - URL - Universal Resource Locator
+  - HTML - HyperText Markup Language
+  - CSS - Cascading Style Sheets
+- The `rvest` and `polite` packages in R (or `Rcrawler`, there may be others too) or `Beautiful Soup` for Python
+- Professional ethics!
 
 
 ```{r, echo=FALSE, fig.align='center', out.width="90%"}
@@ -435,14 +435,14 @@ knitr::include_graphics("images/m2/you-can.png")
 
 I, the web scraper will live by the following principles:
 
-+ If you have a public API that provides the data I'm looking for, I'll use it and avoid scraping all together.
-+ I will always provide a User Agent string that makes my intentions clear and provides a way for you to contact me with questions or concerns.
-+ I will request data at a reasonable rate. I will strive to never be confused for a DDoS attack.
-+ I will only save the data I absolutely need from your page. If all I need is OpenGraph meta-data, that's all I'll keep.
-+ I will respect any content I do keep. I'll never pass it off as my own.
-+ I will look for ways to return value to you. Maybe I can drive some (real) traffic to your site or credit you in an article or post.
-+ I will respond in a timely fashion to your outreach and work with you towards a resolution.
-+ I will scrape for the purpose of creating new value from the data, not to duplicate it.
+- If you have a public API that provides the data I'm looking for, I'll use it and avoid scraping all together.  
+- I will always provide a User Agent string that makes my intentions clear and provides a way for you to contact me with questions or concerns.  
+- I will request data at a reasonable rate. I will strive to never be confused for a DDoS attack.  
+- I will only save the data I absolutely need from your page. If all I need is OpenGraph meta-data, that's all I'll keep.  
+- I will respect any content I do keep. I'll never pass it off as my own.  
+- I will look for ways to return value to you. Maybe I can drive some (real) traffic to your site or credit you in an article or post.  
+- I will respond in a timely fashion to your outreach and work with you towards a resolution.  
+- I will scrape for the purpose of creating new value from the data, not to duplicate it.  
 
 Source: James Densmore, https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01
 
@@ -464,11 +464,11 @@ More on these protocols (and templates you could add to your own site here).
 http://www.robotstxt.org/robotstxt.html (optional)
 
 An ethical scraper…
-+ ...follows the site's terms and conditions and/or robots.txt.
-+ ...uses an API when provided.
-+ ...rate limits their requests.
-  + I.e., respect a 'crawl limit' suggested by the site, 5 seconds is a polite default if not told otherwise.
-+ ...credits their sources.
+- ...follows the site's terms and conditions and/or robots.txt.  
+- ...uses an API when provided.  
+- ...rate limits their requests.  
+  - I.e., respect a 'crawl limit' suggested by the site, 5 seconds is a polite default if not told otherwise.
+- ...credits their sources.
 
 
 ##### Using an API
