@@ -589,3 +589,140 @@ You will be asked to assess the writing of 2 peers on the following rubric. Peer
 
 Roback, P., & Legler, J. (2021). 4.10 Case Study: Weekend Drinking. In *Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R* (1. ed., pp. 436). Boca Raton: CRC Press.
 
+
+## Module 5 writing task
+
++--------------------------------------------------------+----------------------------------------------------+
+| **Information**                                        | **Note**                                           |
++:=======================================================+:===================================================+
+| Name                                                   | Module 5 writing task                      |
++--------------------------------------------------------+----------------------------------------------------+
+| Type (Main, Mini or Basket)                              | Basket                                             |
++--------------------------------------------------------+----------------------------------------------------+
+| Value                                                  | 0.5% (0.245%, 0.245%, 0.01%) <br> Completion                                           |
++--------------------------------------------------------+----------------------------------------------------+
+| Due                                                    | __Create phase__: `r m5_c`;  <br> __Assess phase__: `r m5_a`; <br> __Reflect phase__: `r m5_r`;                                |
++--------------------------------------------------------+----------------------------------------------------+
+| Submission instructions                                | Submission: [Via peerScholar](`r m5_link`)                |
+|                                                        |                                                    |
+|                                                        | Marked for completion              |
++--------------------------------------------------------+----------------------------------------------------+
+| Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions. |
++--------------------------------------------------------+----------------------------------------------------+
+
+### M5 instructions
+
+Make sure you are familiar with the [general instructions](#writinggeneral) for these types of tasks.
+
+#### M5 prompt
+
+Summarize and paraphrase section [**6.7.5 Model Discussion and Summary** (Links to an external site.)](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#model-discussion-and-summary) of (Roback & Legler, 2021a). The first paragraph is key results, and the next 3 paragraphs are limitations. Paraphrase and summarize key results and limitations into two paragraphs, and then write your own conclusion in a few sentences.
+
+#### Address the prompt using the following material: 
+
+| **Section** | **Activity**           | **Location**     | **Source**                                                                                                                                                       |
+|-------------|------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Study aim   | Paraphrase             | Paragraph 4      | [6.7 Case Study: Trying to Lose Weight](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#case-study-trying-to-lose-weight): We are interested in... |
+| Key results | Paraphrase             | Paragraph 1      | [6.7.5 Model Discussion and Summary](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#model-discussion-and-summary): We found that...               |
+| Limitations | Summarise & Paraphrase | Paragraphs 2,3,4 | [6.7.5 Model Discussion and Summary](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#model-discussion-and-summary): A limitation of ...            |
+| Conclusion  | Write                  |                  | Your own thoughts                                                                                                                                                |
+
+#### Structure of writing
+
+**Discussion**
+
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+
+| Part                       | To do                                                                                                                                                                                                                   | Length        |
++============================+=========================================================================================================================================================================================================================+===============+
+| Study aim(s) & Key results | (a) Restate study aim(s) from introduction in condense format                                                                                                                                                           | 1 paragraph   |
+|                            |                                                                                                                                                                                                                         |               |
+|                            | (b) Summarize key results                                                                                                                                                                                               |               |
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+
+| Limitations                | Discuss limitations of the study, taking into account sources of potential bias or imprecision, such as:                                                                                                                | 1 paragraph   |
+|                            |                                                                                                                                                                                                                         |               |
+|                            | (a) data missingness                                                                                                                                                                                                    |               |
+|                            |                                                                                                                                                                                                                         |               |
+|                            | (b) definitions and selection or survivorship bias                                                                                                                                                                      |               |
+|                            |                                                                                                                                                                                                                         |               |
+|                            | (c) data collection (survey) methods                                                                                                                                                                                    |               |
+|                            |                                                                                                                                                                                                                         |               |
+|                            | (d) confounders, if any                                                                                                                                                                                                 |               |
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+
+| Conclusion                 | Give a cautious overall interpretation of results considering aim(s), key results, and limitations                                                                                                                      | 1-3 sentences |
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+
+| Reference                  | Place reference at the end of your writing. In-text citation is not required, aim to write as if you were part of the study.                                                                                            | 1 reference   |
+|                            |                                                                                                                                                                                                                         |               |
+|                            | Roback, P., & Legler, J. (2021). 6.7.5 Model Discussion and Summary. In *Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R* (1. ed., pp. 180-181). Boca Raton: CRC Press. |               |
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+
+
+Adapted from [STROBE checklist](https://www.strobe-statement.org/index.php?id=available-checklists) (von Elm et al., 2007).
+
+#### Useful phrases to consider
+
+Examples and resources to use with or without modification. You can also write your own.
+
++-------------------------+------------------------------------------------------------------------+
+| Part                    | Example phrases                                                        |
++=========================+========================================================================+
+| Study aim & Key results | This study set out to ...                                              |
+|                         |                                                                        |
+|                         | The aim of the present research was to examine ...                     |
+|                         |                                                                        |
+|                         | The current study found that ...                                       |
+|                         |                                                                        |
+|                         | This experiment did not detect any evidence for ...                    |
+|                         |                                                                        |
+|                         | Surprisingly, no differences were found in ....                        |
++-------------------------+------------------------------------------------------------------------+
+| Limitations             | There are three limitations to this study. The first limitation is ... |
+|                         |                                                                        |
+|                         | These findings may be somewhat limited by ...                          |
+|                         |                                                                        |
+|                         | These data must be interpreted with caution because ...                |
++-------------------------+------------------------------------------------------------------------+
+| Conclusion              | In conclusion ...                                                      |
+|                         |                                                                        |
+|                         | The results of this study indicate that ...                            |
+|                         |                                                                        |
+|                         | These findings may help us to understand ...                           |
+|                         |                                                                        |
+|                         | Notwithstanding these limitations, the study suggests that ...         |
++-------------------------+------------------------------------------------------------------------+
+
+Adapted from Manchester Academic Phrase Bank sections: [Discussing Findings](https://www.phrasebank.manchester.ac.uk/discussing-findings/) and [Writing Conclusions](https://www.phrasebank.manchester.ac.uk/writing-conclusions/).
+
+#### How to restate study aims in the discussion
+
+There are four aims in the *introduction* of the current study (paragraph 4 of [6.7 Case Study: Trying to Lose Weight](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#case-study-trying-to-lose-weight): We are interested in...), but when restating the aims in the *discussion* we can summarize and paraphrase them by condensing them to a sentence or two instead of repeating all the questions or aims. One good example is sentence 3 of paragraph 1 of [6.7 Case Study: Trying to Lose Weight](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#case-study-trying-to-lose-weight): "Here we examine characteristics of young people who are trying to lose weight." We want a little more specificity for our discussion, try to condense the four aims into a sentence (or two) of your own.
+
+##### Example 1 (Roback & Legler 11.2 Case Study: College Basketball Referees)
+
+Aims in the introduction: "Data have been gathered from the 2009--2010 college basketball season for three major conferences to investigate the following questions (Noecker & Roback, 2012):
+
+-   Does evidence that college basketball referees tend to "even out" calls still exist in 2010 as it did in 2005?
+
+-   How do results change if our analysis accounts for the correlation in calls from the same game and the same teams?
+
+-   Is the tendency to even out calls stronger for fouls over which the referee generally has greater control? Fouls are divided into offensive, personal, and shooting fouls, and one could argue that referees have the most control over offensive fouls (for example, where the player with the ball knocks over a stationary defender) and the least control over shooting fouls (where an offensive player is fouled in the act of shooting).
+
+-   Are the actions of referees associated with the score of the game?" (Roback & Legler, 2021b)
+
+***Condensed*** aims for discussion: This study set out to investigates the existence of "even out" calls in basketball games, and their correlation with four items: player teams, game being played, foul type and score of game. The current study found that ...
+
+##### Example 2 
+
+**Aims in the introduction:** "An important question related to pandemic preparedness remains unanswered: what killed people during the 1918--1919 pandemic and subsequent influenza pandemics? In the present study, we have examined recut tissue specimens obtained during autopsy from 58 influenza victims in 1918--1919, and have reviewed epidemiologic, pathologic, and microbiologic data from published reports for 8,398 post-mortem examinations bearing on this question. We have also reviewed relevant information, accumulated over 9 decades, related to the circulation of descendants of the 1918 virus." (Morens, Taubenberger, & Fauci, 2008)
+
+***Condensed*** aims for discussion: We examined epidemiologic, pathologic, and microbiologic evidence from the 1918--1919 pandemic continuing to subsequent pandemics from similar viruses to determine the likely cause of death during such pandemics. The results of this investigation show that ...
+
+#### References
+
+Morens, D. M., Taubenberger, J. K., & Fauci, A. S. (2008). Predominant Role of Bacterial Pneumonia as a Cause of Death in Pandemic Influenza: Implications for Pandemic Influenza Preparedness. *The Journal of Infectious Diseases, 198*(7), 962-970. doi:10.1086/591708
+
+Noecker, C. A., & Roback, P. (2012). New Insights on the Tendency of NCAA Basketball Officials to Even Out Foul Calls. *Journal of Quantitative Analysis in Sports, 8*(3). doi:doi:10.1515/1559-0410.1402
+
+Roback, P., & Legler, J. (2021a). 6.7.5 Model Discussion and Summary. In *Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R* (1. ed., pp. 180-181). Boca Raton: CRC Press.
+
+Roback, P., & Legler, J. (2021b). 11.2 Case Study: College Basketball Referees. In *Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R* (1. ed., pp. 374-400). Boca Raton: CRC Press.
+
+von Elm, E., Altman, D. G., Egger, M., Pocock, S. J., Gotzsche, P. C., Vandenbroucke, J. P., & Initiative, S. (2007). The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. *Lancet, 370*(9596), 1453-1457. doi:10.1016/S0140-6736(07)61602-X

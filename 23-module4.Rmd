@@ -415,7 +415,7 @@ $h(\mu_i) = X_i^T\beta$
 
 \begin{align*}
 Y_i \sim & G (\mu_i, \theta)\\\\
-h(\mu_i) = & X_i\^T \beta
+h(\mu_i) = & X_i^T \beta
 \end{align*}
 
 #### OLS

@@ -13,3 +13,5 @@ palmerpenguins
 Matrix
 lme4
 pander
+nlme
+mgcv

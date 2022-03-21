@@ -91,6 +91,13 @@ m4_r = "Friday, March 11, 2022 at 3:03 p.m ET"
 
 m4_link = "https://q.utoronto.ca/courses/253305/assignments/782399"
 
+m5_c = "Friday, March 25, 2022 at 3:03 p.m ET"
+m5_a = "Tuesday, March 29, 2022 at 3:03 p.m ET"
+m5_r = "Friday, April 01, 2022 at 3:03 p.m ET"
+
+m5_link = "https://q.utoronto.ca/courses/253305/assignments/782400"
+
+
 # m1_link =
 
 colorize <- function(x, color) {
