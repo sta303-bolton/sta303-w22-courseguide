@@ -616,7 +616,7 @@ Make sure you are familiar with the [general instructions](#writinggeneral) for 
 
 #### M5 prompt
 
-Summarize and paraphrase section [**6.7.5 Model Discussion and Summary** (Links to an external site.)](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#model-discussion-and-summary) of (Roback & Legler, 2021a). The first paragraph is key results, and the next 3 paragraphs are limitations. Paraphrase and summarize key results and limitations into two paragraphs, and then write your own conclusion in a few sentences.
+Summarize and paraphrase section [**6.7.5 Model Discussion and Summary**](https://bookdown.org/roback/bookdown-BeyondMLR/ch-logreg.html#model-discussion-and-summary) of (Roback & Legler, 2021a). The first paragraph is key results, and the next 3 paragraphs are limitations. Paraphrase and summarize key results and limitations into two paragraphs, and then write your own conclusion in a few sentences.
 
 #### Address the prompt using the following material: 
 
