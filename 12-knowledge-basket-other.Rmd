@@ -153,6 +153,11 @@ If you didn't earn a full 1% from the pre-knowledge quiz (either didn't score ov
 
 ## 5 Ways to Well-being workshop attendance and reflection
 
+---
+title: "R Notebook"
+output: html_notebook
+---
+
 +--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | **Information**                                        | **Note**                                                                                                   |
 +:=======================================================+:===========================================================================================================+
@@ -164,12 +169,24 @@ If you didn't earn a full 1% from the pre-knowledge quiz (either didn't score ov
 +--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | Due                                                    | Attendance on Wednesday March 30 at 10:10 a.m. ET and submission of survey by 3:03 p.m. on Friday, April 1 |
 +--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Submission instructions                                | Submission: Via Quercus surveys                                                                            |
+| Submission instructions                                | Submission: Via [Quercus surveys](https://q.utoronto.ca/courses/253305/quizzes/252639)                     |
 |                                                        |                                                                                                            |
 |                                                        | Untimed, unlimited attempts                                                                                |
 +--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | Late submissions, accommodations, and extension policy | No late submissions, accommodations, or extensions.                                                        |
 +--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+### 5WtW information
+
+5 Ways To Wellbeing: Investing in practices that are protective of our mental health have never been more important.  Drawing on evidence from the study of wellbeing, this participatory webinar will provide an opportunity to explore and practice a cluster of activities that promote resiliency and support us in feeling and functioning better.  
+  
+To get the most out of this workshop please: 
+
+- Be prepared to use your webcam.  That said, don’t feel you need to make yourself or your space look pretty.  We'll be striving for a learning environment that’s free of judgment (of others and ourselves).  
+- Have your cell phone handy. 
+- Give yourself permission to be present. Don't feel the need to be multi-tasking. 
+- Bring along your snack, tea, coffee, or other refreshments that you enjoy (this is a self-care workshop after all). 
 
 ### Workshop attendance
 
@@ -194,7 +211,7 @@ If you didn't earn a full 1% from the pre-knowledge quiz (either didn't score ov
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 | Due                                                    | Attendance on Wednesday March 30 at 3:10 p.m. ET and submission of survey by 3:03 p.m. on Friday, April 1 |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
-| Submission instructions                                | Submission: Via Quercus surveys                                                                           |
+| Submission instructions                                | Submission: Via [Quercus surveys](https://q.utoronto.ca/courses/253305/quizzes/252645)                    |
 |                                                        |                                                                                                           |
 |                                                        | Untimed, unlimited attempts                                                                               |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+

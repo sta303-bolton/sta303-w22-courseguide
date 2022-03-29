@@ -220,14 +220,15 @@
 \contentsline {section}{\numberline {13.3}Writing workshop}{96}{section.13.3}%
 \contentsline {subsection}{\numberline {13.3.1}Workshop attendance}{96}{subsection.13.3.1}%
 \contentsline {section}{\numberline {13.4}5 Ways to Well-being workshop attendance and reflection}{96}{section.13.4}%
-\contentsline {subsection}{\numberline {13.4.1}Workshop attendance}{96}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.1}5WtW information}{96}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Workshop attendance}{97}{subsection.13.4.2}%
 \contentsline {section}{\numberline {13.5}Academic resilience workshop attendance and reflection}{97}{section.13.5}%
 \contentsline {subsection}{\numberline {13.5.1}Workshop attendance}{97}{subsection.13.5.1}%
 \contentsline {section}{\numberline {13.6}Module check-ins}{97}{section.13.6}%
-\contentsline {subsection}{\numberline {13.6.1}Instructions}{97}{subsection.13.6.1}%
-\contentsline {section}{\numberline {13.7}Team Up! activities}{97}{section.13.7}%
+\contentsline {subsection}{\numberline {13.6.1}Instructions}{98}{subsection.13.6.1}%
+\contentsline {section}{\numberline {13.7}Team Up! activities}{98}{section.13.7}%
 \contentsline {section}{\numberline {13.8}Graduate school info session}{98}{section.13.8}%
-\contentsline {section}{\numberline {13.9}Punctuation art}{98}{section.13.9}%
+\contentsline {section}{\numberline {13.9}Punctuation art}{99}{section.13.9}%
 \contentsline {subsection}{\numberline {13.9.1}Instructions}{99}{subsection.13.9.1}%
 \contentsline {subsubsection}{\numberline {13.9.1.1}Prompt}{99}{subsubsection.13.9.1.1}%
 \contentsline {subsubsection}{\numberline {13.9.1.2}Examples}{99}{subsubsection.13.9.1.2}%
