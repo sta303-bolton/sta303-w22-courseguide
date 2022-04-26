@@ -861,9 +861,9 @@ Answer: C. Of the three variances for our random effects, the variance for the h
 
 #### Summary
 
-Note the below notation is is based on using least squares and treating all variables as fixed effects. This isn't the way you would explain a linear model in practice, but I hope helps you see how we are thinking about partitioning our variance. It also helps remind us that regression is just fancy averaging.
+Note the below notation is based on using least squares and treating all variables as fixed effects. This isn't the way you would explain a linear model in practice, but I hope helps you see how we are thinking about partitioning our variance. It also helps remind us that regression is just fancy averaging.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width="100%"}
 knitr::include_graphics("images/m3/fancyaveraging.png")
 ```
 
@@ -1334,7 +1334,7 @@ Males have lower pitches than females by an average of 109 Hz and in informal si
 
 #### Aside: Summary of means
 
-```{r, echo=FALSE, out.width = 1000, eval=FALSE}
+```{r, echo=FALSE, eval=FALSE}
 polite_data %>% 
   group_by(sex, condition) %>%
   summarise(mean_pitch = mean(frequency)) %>% 
@@ -1347,7 +1347,7 @@ ggsave("images/m3/aside.png", width = 8, height = 4)
 ```
 
 
-```{r, echo=FALSE, out.width="910%"}
+```{r, echo=FALSE}
 #ggsave("libs/images/wk5/aside.png", width = 7, wight = 5)
  knitr::include_graphics("images/m3/aside.png")
 ```

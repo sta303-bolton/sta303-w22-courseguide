@@ -1,0 +1,40 @@
+---
+title: "MarkusYAML"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+portfolio = 1
+library(tidyverse)
+
+rubric <- read_csv("pd-prop.csv")
+
+i = 1
+
+```
+
+
+`r rubric$Component[i]`:
+  type: rubric
+  max_mark: `r rubric$Points[i]`
+  levels:
+    `r names(rubric)[2]`:
+      description: `r rubric[i, 2]`
+      mark: 0.0
+    `r names(rubric)[3]`:
+      description: `r rubric[i, 3]`
+      mark: 0.25
+    `r names(rubric)[4]`:
+      description: `r rubric[i, 4]`
+      mark: 0.5
+    `r names(rubric)[5]`:
+      description: `r rubric[i, 5]`
+      mark: 0.75
+    `r names(rubric)[6]`:
+      description: `r rubric[i, 6]`
+      mark: 1.0
+  ta_visible: true
+  peer_visible: false
+  bonus: false

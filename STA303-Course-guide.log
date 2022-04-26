@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.20)  29 MAR 2022 10:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.20)  26 APR 2022 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2031,11 +2031,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 8728--8730
 [173] [174]
 File: images/m3/fancyaveraging.png Graphic file (type bmp)
 <images/m3/fancyaveraging.png>
-
-Overfull \hbox (93.80136pt too wide) in paragraph at lines 8893--8894
-[][] 
- []
-
 [175]
 Overfull \hbox (149.49194pt too wide) in alignment at lines 8905--8909
  [] [] [] 
@@ -2475,7 +2470,7 @@ File: images/Student Rep Ad (Winter 2022).png Graphic file (type bmp)
 Here is how much of TeX's memory you used:
  20625 strings out of 478179
  403650 string characters out of 5853299
- 928278 words of memory out of 5000000
+ 929278 words of memory out of 5000000
  40822 multiletter control sequences out of 15000+600000
  477461 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
