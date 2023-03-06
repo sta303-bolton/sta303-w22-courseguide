@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>18 Module 5 | R Notebook</title>
   <meta name="description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="18 Module 5 | R Notebook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
   
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="m4.html"/>
 <link rel="next" href="references-1.html"/>
-<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link rel="shortcut icon" href="images/favicon.ico" />
@@ -95,7 +94,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -108,7 +107,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -718,13 +717,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="m5" class="section level1" number="18">
-<h1><span class="header-section-number">18</span> Module 5</h1>
+<div id="m5" class="section level1 hasAnchor" number="18">
+<h1><span class="header-section-number">18</span> Module 5<a href="m5.html#m5" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="yellowbox">
 <p>Materials for March 21–April 1, 2022.</p>
 </div>
-<div id="introduction-5" class="section level2" number="18.1">
-<h2><span class="header-section-number">18.1</span> Introduction</h2>
+<div id="introduction-5" class="section level2 hasAnchor" number="18.1">
+<h2><span class="header-section-number">18.1</span> Introduction<a href="m5.html#introduction-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>What models have we looked at so far?</strong></p>
 <ul>
 <li><p>recapped linear regression + model matrices</p></li>
@@ -750,15 +749,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 </div>
-<div id="glmms" class="section level2" number="18.2">
-<h2><span class="header-section-number">18.2</span> GLMMs</h2>
-<div id="what-were-mixed-effects-again" class="section level3" number="18.2.1">
-<h3><span class="header-section-number">18.2.1</span> What were mixed effects, again?</h3>
+<div id="glmms" class="section level2 hasAnchor" number="18.2">
+<h2><span class="header-section-number">18.2</span> GLMMs<a href="m5.html#glmms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="what-were-mixed-effects-again" class="section level3 hasAnchor" number="18.2.1">
+<h3><span class="header-section-number">18.2.1</span> What were mixed effects, again?<a href="m5.html#what-were-mixed-effects-again" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We call these mixed effect models because they mix <strong>fixed</strong> effects (the way you’re used to comparing the differences between treatments or effect of covariates) and <strong>random</strong> effects (generally experimental or observational blocks within which observations are grouped).</p>
 <p>These types of models can be especially useful for people working with psychological, economic, social and ecological data.</p>
 </div>
-<div id="pros-and-cons-of-generalized-linear-mixed-models" class="section level3" number="18.2.2">
-<h3><span class="header-section-number">18.2.2</span> Pros and cons of generalized linear mixed models</h3>
+<div id="pros-and-cons-of-generalized-linear-mixed-models" class="section level3 hasAnchor" number="18.2.2">
+<h3><span class="header-section-number">18.2.2</span> Pros and cons of generalized linear mixed models<a href="m5.html#pros-and-cons-of-generalized-linear-mixed-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Pros</strong></p>
 <ul>
 <li><p>Powerful class of models that combine the characteristics of generalized linear models (GLMs) and linear mixed models (LMMs).</p></li>
@@ -773,29 +772,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Note: GLMMs are still under <strong>active</strong> development by statisticians so not all the answers are know (even by the experts working on them).</p>
 </div>
-<div id="assumptions-5" class="section level3" number="18.2.3">
-<h3><span class="header-section-number">18.2.3</span> Assumptions</h3>
-<div id="pause-and-think" class="section level4" number="18.2.3.1">
-<h4><span class="header-section-number">18.2.3.1</span> Pause and think</h4>
+<div id="assumptions-5" class="section level3 hasAnchor" number="18.2.3">
+<h3><span class="header-section-number">18.2.3</span> Assumptions<a href="m5.html#assumptions-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="pause-and-think" class="section level4 hasAnchor" number="18.2.3.1">
+<h4><span class="header-section-number">18.2.3.1</span> Pause and think<a href="m5.html#pause-and-think" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><strong>Based on the assumptions for the previous models we’ve considered in this course, what do you think the assumptions for GLMMs will be?</strong></p>
 </div>
-<div id="the-assumptions-for-glmms" class="section level4" number="18.2.3.2">
-<h4><span class="header-section-number">18.2.3.2</span> The assumptions for GLMMs</h4>
+<div id="the-assumptions-for-glmms" class="section level4 hasAnchor" number="18.2.3.2">
+<h4><span class="header-section-number">18.2.3.2</span> The assumptions for GLMMs<a href="m5.html#the-assumptions-for-glmms" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li><p>Our units/subjects are independent, even through observations within each subject are taken not to to be. (Replace subjects with ‘groups,’ same idea.)</p></li>
+<li><p>Our units/subjects are independent, even through observations within each subject are taken not to to be. (Replace subjects with ‘groups’, same idea.)</p></li>
 <li><p>Random effects come from a normal distribution.</p></li>
 <li><p>The random effects errors and within-unit residual errors have constant variance. I.e., Are variances of data (transformed by the link function) homogeneous across categories?</p></li>
 <li><p>The chosen link function is appropriate / the model is correctly specified.</p></li>
 </ul>
 </div>
-<div id="pause-and-think-1" class="section level4" number="18.2.3.3">
-<h4><span class="header-section-number">18.2.3.3</span> Pause and think</h4>
+<div id="pause-and-think-1" class="section level4 hasAnchor" number="18.2.3.3">
+<h4><span class="header-section-number">18.2.3.3</span> Pause and think<a href="m5.html#pause-and-think-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Here are the general model forms for the classes of models we’ve met so far:</p>
 <p><img src="images/m5/mod-table.png" width="976" /></p>
 <p>(Recall that MVN is multivariate normal.)</p>
 </div>
-<div id="questions" class="section level4" number="18.2.3.4">
-<h4><span class="header-section-number">18.2.3.4</span> Questions</h4>
+<div id="questions" class="section level4 hasAnchor" number="18.2.3.4">
+<h4><span class="header-section-number">18.2.3.4</span> Questions<a href="m5.html#questions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li><p>What are the similarities in each row?</p></li>
 <li><p>What are the similarities in each column?</p></li>
@@ -803,8 +802,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 </div>
-<div id="example-bacteria-in-blood-samples" class="section level3" number="18.2.4">
-<h3><span class="header-section-number">18.2.4</span> Example: Bacteria in blood samples 🦠💉</h3>
+<div id="example-bacteria-in-blood-samples" class="section level3 hasAnchor" number="18.2.4">
+<h3><span class="header-section-number">18.2.4</span> Example: Bacteria in blood samples 🦠💉<a href="m5.html#example-bacteria-in-blood-samples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="m5.html#cb179-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data comes from the MASS package</span></span>
 <span id="cb179-2"><a href="m5.html#cb179-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(bacteria, <span class="at">package=</span><span class="st">&#39;MASS&#39;</span>)</span>
 <span id="cb179-3"><a href="m5.html#cb179-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bacteria)</span></code></pre></div>
@@ -823,8 +822,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p><strong>The question:</strong> does the treatment reduce the probability of bacteria in the sample?</p>
 <p><strong>The complication:</strong> data are not independent. Some people are more susceptible to bacteria/infection than others.</p>
-<div id="bacteria-model" class="section level4" number="18.2.4.1">
-<h4><span class="header-section-number">18.2.4.1</span> Bacteria model</h4>
+<div id="bacteria-model" class="section level4 hasAnchor" number="18.2.4.1">
+<h4><span class="header-section-number">18.2.4.1</span> Bacteria model<a href="m5.html#bacteria-model" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <span class="math display">\[\begin{align*}
 Y_{it} \sim &amp; \text{Bernoulli}(\rho_{it})\\
 \text{logit}(\rho_{it}) = &amp; \mu + X_{it} \beta + U_i\\
@@ -839,8 +838,8 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 <p>This is a <em>Generalized Linear Mixed Model</em> (GLMM)</p>
 </div>
 </div>
-<div id="inference-for-glmms" class="section level3" number="18.2.5">
-<h3><span class="header-section-number">18.2.5</span> Inference for GLMMs</h3>
+<div id="inference-for-glmms" class="section level3 hasAnchor" number="18.2.5">
+<h3><span class="header-section-number">18.2.5</span> Inference for GLMMs<a href="m5.html#inference-for-glmms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We know the probabilities of the <span class="math inline">\(Y_{it}\)</span> conditional on the random effects:</p>
 <p><span class="math display">\[pr(Y_{it} | U_i;\mu,\beta) = \frac{\exp(X_{it} + U_i)}{1+\exp(X_{it} + U_i)}\]</span></p>
 <p>If we knew the <span class="math inline">\(U_i\)</span>, maximize the above to estimate <span class="math inline">\(\hat\beta\)</span></p>
@@ -853,8 +852,8 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 \text{E}(U_i |Y; \hat{\mu},\hat{\beta}, \hat{\sigma})
 \]</span></p>
 </div>
-<div id="problems-with-likelihood-that-affect-our-inference-for-glmms" class="section level3" number="18.2.6">
-<h3><span class="header-section-number">18.2.6</span> Problems with Likelihood that affect our inference for GLMMs</h3>
+<div id="problems-with-likelihood-that-affect-our-inference-for-glmms" class="section level3 hasAnchor" number="18.2.6">
+<h3><span class="header-section-number">18.2.6</span> Problems with Likelihood that affect our inference for GLMMs<a href="m5.html#problems-with-likelihood-that-affect-our-inference-for-glmms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>~10 years ago</strong></p>
 <ul>
 <li><p>We couldn’t evaluate the likelihood, let alone maximize it.</p></li>
@@ -878,8 +877,8 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 <li><p>Packages: <code>lme4</code>, <code>glmmTMB</code>, <code>prevmap</code></p></li>
 </ul>
 </div>
-<div id="back-to-the-bacteria" class="section level3" number="18.2.7">
-<h3><span class="header-section-number">18.2.7</span> Back to the bacteria</h3>
+<div id="back-to-the-bacteria" class="section level3 hasAnchor" number="18.2.7">
+<h3><span class="header-section-number">18.2.7</span> Back to the bacteria<a href="m5.html#back-to-the-bacteria" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="m5.html#cb181-1" aria-hidden="true" tabindex="-1"></a><span class="co"># How many children?</span></span>
 <span id="cb181-2"><a href="m5.html#cb181-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(bacteria<span class="sc">$</span>ID))</span></code></pre></div>
 <pre><code>## [1] 50</code></pre>
@@ -904,8 +903,8 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 ##   &lt;fct&gt; &lt;int&gt;
 ## 1 a        29
 ## 2 p        21</code></pre>
-<div id="fitting-a-model-with-lme4" class="section level4" number="18.2.7.1">
-<h4><span class="header-section-number">18.2.7.1</span> Fitting a model with <code>lme4</code></h4>
+<div id="fitting-a-model-with-lme4" class="section level4 hasAnchor" number="18.2.7.1">
+<h4><span class="header-section-number">18.2.7.1</span> Fitting a model with <code>lme4</code><a href="m5.html#fitting-a-model-with-lme4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Create a new binary variable <code>y</code>:</p>
 <div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="m5.html#cb189-1" aria-hidden="true" tabindex="-1"></a>bacteria<span class="sc">$</span>newy <span class="ot">=</span> <span class="fu">as.integer</span>(bacteria<span class="sc">$</span>y<span class="sc">==</span><span class="st">&#39;y&#39;</span>)</span></code></pre></div>
 <p>Set treatment variable to placebo for everyone at week zero:</p>
@@ -917,8 +916,8 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 <span id="cb192-2"><a href="m5.html#cb192-2" aria-hidden="true" tabindex="-1"></a>bRes <span class="ot">=</span> lme4<span class="sc">::</span><span class="fu">glmer</span>(newy <span class="sc">~</span> <span class="fu">factor</span>(week) <span class="sc">+</span> ap <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> ID), </span>
 <span id="cb192-3"><a href="m5.html#cb192-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">family=</span><span class="st">&#39;binomial&#39;</span>, <span class="at">data=</span>bacteria)</span></code></pre></div>
 </div>
-<div id="parameter-estimates" class="section level4" number="18.2.7.2">
-<h4><span class="header-section-number">18.2.7.2</span> Parameter estimates</h4>
+<div id="parameter-estimates" class="section level4 hasAnchor" number="18.2.7.2">
+<h4><span class="header-section-number">18.2.7.2</span> Parameter estimates<a href="m5.html#parameter-estimates" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="m5.html#cb193-1" aria-hidden="true" tabindex="-1"></a>bRes <span class="ot">=</span> lme4<span class="sc">::</span><span class="fu">glmer</span>(newy <span class="sc">~</span> <span class="fu">factor</span>(week) <span class="sc">+</span> ap <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> ID), </span>
 <span id="cb193-2"><a href="m5.html#cb193-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">family=</span><span class="st">&#39;binomial&#39;</span>, <span class="at">data=</span>bacteria)</span>
 <span id="cb193-3"><a href="m5.html#cb193-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bRes)</span></code></pre></div>
@@ -972,8 +971,8 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 ## factor(week)11    -0.78       0.75   -1.05     0.29
 ## apa               -1.23       0.60   -2.03     0.04</code></pre>
 </div>
-<div id="confidence-intervals" class="section level4" number="18.2.7.3">
-<h4><span class="header-section-number">18.2.7.3</span> Confidence intervals</h4>
+<div id="confidence-intervals" class="section level4 hasAnchor" number="18.2.7.3">
+<h4><span class="header-section-number">18.2.7.3</span> Confidence intervals<a href="m5.html#confidence-intervals" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>This takes a long time to run</li>
 <li>…it is computing profile likelihoods so that we can estimate appropriate confidence intervals for our random (<code>.sig01</code>) and fixed effects.</li>
@@ -990,21 +989,21 @@ U_i \sim &amp; \text{N}(0, \sigma^2)
 ## apa            -2.5352226 -0.07351393</code></pre>
 <p>Notice that were are reporting the standard deviation of the random effects, NOT the individual random effect for each person.</p>
 </div>
-<div id="aside-plotting-random-effects" class="section level4" number="18.2.7.4">
-<h4><span class="header-section-number">18.2.7.4</span> Aside: Plotting random effects</h4>
+<div id="aside-plotting-random-effects" class="section level4 hasAnchor" number="18.2.7.4">
+<h4><span class="header-section-number">18.2.7.4</span> Aside: Plotting random effects<a href="m5.html#aside-plotting-random-effects" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We focused a lot on the variance and standard deviation of our random effects, but these statistics are are OF something, namely the random effect values for each level of the random effect. We can see the random intercept associated with each subject in the plot below. Sometimes we might be interested in interpreting these values, but usually not as much as our fixed effect.</p>
 <div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="m5.html#cb202-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ranef() allows us to pull out the random effects</span></span>
 <span id="cb202-2"><a href="m5.html#cb202-2" aria-hidden="true" tabindex="-1"></a>lattice<span class="sc">::</span><span class="fu">dotplot</span>(lme4<span class="sc">::</span><span class="fu">ranef</span>(bRes, <span class="at">condVar=</span><span class="cn">TRUE</span>)) </span></code></pre></div>
 <pre><code>## $ID</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-164"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-164"></span>
 <img src="STA303-Course-guide_files/figure-html/unnamed-chunk-164-1.png" alt="Value of the random intercepts for each subject in the bacteria study" width="672" />
 <p class="caption">
 Figure 18.1: Value of the random intercepts for each subject in the bacteria study
 </p>
 </div>
 </div>
-<div id="prepare-a-table-for-reporting" class="section level4" number="18.2.7.5">
-<h4><span class="header-section-number">18.2.7.5</span> Prepare a table for reporting</h4>
+<div id="prepare-a-table-for-reporting" class="section level4 hasAnchor" number="18.2.7.5">
+<h4><span class="header-section-number">18.2.7.5</span> Prepare a table for reporting<a href="m5.html#prepare-a-table-for-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="m5.html#cb204-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the estimates transformed</span></span>
 <span id="cb204-2"><a href="m5.html#cb204-2" aria-hidden="true" tabindex="-1"></a>ests <span class="ot">&lt;-</span> <span class="fu">format</span>(<span class="fu">round</span>(<span class="fu">exp</span>(<span class="fu">summary</span>(bRes)<span class="sc">$</span>coeff)[,<span class="dv">1</span>], <span class="dv">2</span>), <span class="at">nsmall =</span> <span class="dv">2</span>)</span>
 <span id="cb204-3"><a href="m5.html#cb204-3" aria-hidden="true" tabindex="-1"></a>ests</span></code></pre></div>
@@ -1077,14 +1076,14 @@ Figure 18.1: Value of the random intercepts for each subject in the bacteria stu
 </tbody>
 </table>
 </div>
-<div id="pulling-it-all-together-a-short-description-of-the-methods-model-written-out-previously" class="section level4" number="18.2.7.6">
-<h4><span class="header-section-number">18.2.7.6</span> Pulling it all together: A short description of the methods (model written out previously)</h4>
+<div id="pulling-it-all-together-a-short-description-of-the-methods-model-written-out-previously" class="section level4 hasAnchor" number="18.2.7.6">
+<h4><span class="header-section-number">18.2.7.6</span> Pulling it all together: A short description of the methods (model written out previously)<a href="m5.html#pulling-it-all-together-a-short-description-of-the-methods-model-written-out-previously" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This study investigates the association between an active treatment and the presence or absence of <em>H. influenzae</em> in children with otitis media in the Northern Territory of Australia. Children were randomly assigned to take either a placebo or drug after the baseline tests at week 0. 50 children were involved in the study (29 in treatment group, 21 in the placebo group) with blood tests conducted at 0, 2, 4, 6 and 11 weeks of treatment. Not all children were tested at all checks, but at least 80% were tested at any given check.</p>
 <p>Our outcome of interest was the presence or absence of the bacteria and our predictors were week, treated as a factor, and whether the child was in that active treatment or placebo group. As there were repeated measures for each child, a generalized linear mixed model with logit link was used and random intercepts were estimated for each child.</p>
 <p>Menzies School of Health Research 1999–2000 Annual Report. p.20. <a href="http://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf" class="uri">http://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf</a>.</p>
 </div>
-<div id="pulling-it-all-together-results" class="section level4" number="18.2.7.7">
-<h4><span class="header-section-number">18.2.7.7</span> Pulling it all together: Results</h4>
+<div id="pulling-it-all-together-results" class="section level4 hasAnchor" number="18.2.7.7">
+<h4><span class="header-section-number">18.2.7.7</span> Pulling it all together: Results<a href="m5.html#pulling-it-all-together-results" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The odds of there being bacteria in a blood sample at week 0 are roughly 16:1. Recall that all children are represented in the baseline as everyone was set as receiving the ‘placebo’ at week 0, i.e., no active treatment <em>before</em> treatment started.</p>
 <p>Children receiving the treatment had 71% lower odds (95% confidence interval from 7 to 92% lower odds) of having bacteria present in the subsequent tests. There was no significant change in odds of finding bacteria in a child’s blood test from week to week.</p>
 <table>
@@ -1130,8 +1129,8 @@ Figure 18.1: Value of the random intercepts for each subject in the bacteria stu
 </table>
 </div>
 </div>
-<div id="generalized-linear-mixed-models-more-generally" class="section level3" number="18.2.8">
-<h3><span class="header-section-number">18.2.8</span> Generalized Linear Mixed Models, more generally</h3>
+<div id="generalized-linear-mixed-models-more-generally" class="section level3 hasAnchor" number="18.2.8">
+<h3><span class="header-section-number">18.2.8</span> Generalized Linear Mixed Models, more generally<a href="m5.html#generalized-linear-mixed-models-more-generally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><span class="math display">\[
 \begin{aligned}
 Y_i \sim &amp;\pi(\lambda_i; \theta)\\
@@ -1153,8 +1152,8 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 </ul>
 <p>(MVN is multivariate normal)</p>
 </div>
-<div id="some-key-conclusions" class="section level3" number="18.2.9">
-<h3><span class="header-section-number">18.2.9</span> Some key conclusions</h3>
+<div id="some-key-conclusions" class="section level3 hasAnchor" number="18.2.9">
+<h3><span class="header-section-number">18.2.9</span> Some key conclusions<a href="m5.html#some-key-conclusions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>GLMMs are easy to fit (thanks to Taylor series/Gaussian approximations, which we’re not covering here)</li>
 <li>Interpreting GLMMs is similar to interpreting GLMs; we need to be thoughtful as link function makes interpretation subtle at times.</li>
@@ -1163,19 +1162,19 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 <li>Be Bayesian if you wish, but Frequentist GLMMs are a feasible and convenient option.</li>
 </ul>
 </div>
-<div id="glmm-reading" class="section level3" number="18.2.10">
-<h3><span class="header-section-number">18.2.10</span> GLMM Reading</h3>
+<div id="glmm-reading" class="section level3 hasAnchor" number="18.2.10">
+<h3><span class="header-section-number">18.2.10</span> GLMM Reading<a href="m5.html#glmm-reading" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Reading:</strong> <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-glms.html">Chapter 11</a> of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression. (2021). <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a>.</p>
 <p>This is a really interesting study that looks to update evidence from 2004/2005 that found that referees appeared to be ‘evening out’ foul calls across NCAA men’s college basketball games. It also expands upon the original logistic regression that was applied to attempt to account for additional correlations in the data.</p>
 </div>
 </div>
-<div id="case-control-studies-and-conditional-logistic-regression-optional" class="section level2" number="18.3">
-<h2><span class="header-section-number">18.3</span> Case control studies and conditional logistic regression (OPTIONAL)</h2>
+<div id="case-control-studies-and-conditional-logistic-regression-optional" class="section level2 hasAnchor" number="18.3">
+<h2><span class="header-section-number">18.3</span> Case control studies and conditional logistic regression (OPTIONAL)<a href="m5.html#case-control-studies-and-conditional-logistic-regression-optional" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Based on what we’re focusing on this semester, I am making the content about case control studies and conditional logistic regression optional.</p>
 <p>If you’re interested in this, you can <a href="https://play.library.utoronto.ca/watch/71756e16598c3010d53f732f4be115b9">check out the 28 minute video from last year</a>, but it won’t be assessed.</p>
 </div>
-<div id="gams" class="section level2" number="18.4">
-<h2><span class="header-section-number">18.4</span> GAMs</h2>
+<div id="gams" class="section level2 hasAnchor" number="18.4">
+<h2><span class="header-section-number">18.4</span> GAMs<a href="m5.html#gams" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The models you’re probably most familiar with at this point in your statistics education, namely those from courses like STA302 and 303, are on one of an interpretability continuum. We can (with some statistics training) interpret what the coefficients for linear regression mean about our data and make inferences in well understood ways. They aren’t the most flexible of models though. On the other side, there are our ‘black-box’ machine learning methods. These can be incredibly flexible and valuable tools for prediction, but in many cases difficult, if not impossible to interpret.</p>
 <p>Generalized additive models (or GAMs) are a form of non-parametric modelling that allow us some of the flexibility of machine learning and some of the interpretability of our classic statistical methods.</p>
 <p><img src="images/m5/continuum.png" width="95%" style="display: block; margin: auto;" /></p>
@@ -1191,33 +1190,33 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 </li>
 <li>Splines</li>
 </ul>
-<div id="a-one-tweet-gam-lesson" class="section level3" number="18.4.1">
-<h3><span class="header-section-number">18.4.1</span> A one tweet GAM lesson</h3>
+<div id="a-one-tweet-gam-lesson" class="section level3 hasAnchor" number="18.4.1">
+<h3><span class="header-section-number">18.4.1</span> A one tweet GAM lesson<a href="m5.html#a-one-tweet-gam-lesson" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="images/m5/tweet.png" width="700"/></p>
 <p><a href="https://twitter.com/ucfagls/status/842444686513991680?ref_src=twsrc%5Etfw" class="uri">https://twitter.com/ucfagls/status/842444686513991680?ref_src=twsrc%5Etfw</a></p>
 </div>
-<div id="some-fake-data" class="section level3" number="18.4.2">
-<h3><span class="header-section-number">18.4.2</span> Some fake data</h3>
+<div id="some-fake-data" class="section level3 hasAnchor" number="18.4.2">
+<h3><span class="header-section-number">18.4.2</span> Some fake data<a href="m5.html#some-fake-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>It is very wiggly.</p>
 <p><img src="images/m5/fake.png" width="95%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="linear-model" class="section level3" number="18.4.3">
-<h3><span class="header-section-number">18.4.3</span> Linear model?</h3>
+<div id="linear-model" class="section level3 hasAnchor" number="18.4.3">
+<h3><span class="header-section-number">18.4.3</span> Linear model?<a href="m5.html#linear-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="m5.html#cb212-1" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&quot;lm&quot;</span>)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="images/m5/linear.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>Well, that seems bad…</p>
-<div id="wouldnt-something-like-this-be-much-nicer" class="section level4" number="18.4.3.1">
-<h4><span class="header-section-number">18.4.3.1</span> Wouldn’t something like this be much nicer?</h4>
+<div id="wouldnt-something-like-this-be-much-nicer" class="section level4 hasAnchor" number="18.4.3.1">
+<h4><span class="header-section-number">18.4.3.1</span> Wouldn’t something like this be much nicer?<a href="m5.html#wouldnt-something-like-this-be-much-nicer" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m5/nicer.png" width="80%" style="display: block; margin: auto;" /></p>
 <p><strong>But, HOW do we get the wiggles?</strong></p>
 <p><img src="images/m5/wiggles.jpeg" width="800"/></p>
 <p>That is our goal for the rest of this module.</p>
 </div>
 </div>
-<div id="how-do-we-get-the-wiggles" class="section level3" number="18.4.4">
-<h3><span class="header-section-number">18.4.4</span> How do we get the wiggles?</h3>
+<div id="how-do-we-get-the-wiggles" class="section level3 hasAnchor" number="18.4.4">
+<h3><span class="header-section-number">18.4.4</span> How do we get the wiggles?<a href="m5.html#how-do-we-get-the-wiggles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Answer: Splines!</strong></p>
 <p>If you’ve looked at interference of waves in physics, you’ll love this. If you haven’t….you’ll also love this!</p>
 <p><img src="images/m5/pr.jpeg" width="300"/></p>
@@ -1228,8 +1227,8 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 <li>Each of those coefficients is a parameter of our model</li>
 </ul>
 </div>
-<div id="splines" class="section level3" number="18.4.5">
-<h3><span class="header-section-number">18.4.5</span> Splines</h3>
+<div id="splines" class="section level3 hasAnchor" number="18.4.5">
+<h3><span class="header-section-number">18.4.5</span> Splines<a href="m5.html#splines" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Splines are <em>functions</em> composed of simpler functions</li>
 <li>Our simpler functions are <em>basis functions</em> &amp; the set of basis functions is a <em>basis</em></li>
@@ -1238,8 +1237,8 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 </ul>
 <p><span class="math display">\[s(x) = \sum_{k = 1}^K \beta_k b_k(x)\]</span></p>
 </div>
-<div id="picturing-basis-functions" class="section level3" number="18.4.6">
-<h3><span class="header-section-number">18.4.6</span> Picturing basis functions</h3>
+<div id="picturing-basis-functions" class="section level3 hasAnchor" number="18.4.6">
+<h3><span class="header-section-number">18.4.6</span> Picturing basis functions<a href="m5.html#picturing-basis-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><strong>Plot a</strong> shows the basis functions of a GAM where all the coefficients are the same.<br />
 </li>
@@ -1250,12 +1249,12 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 <p><img src="images/m5/basis-functions-nr.png" width="700"/></p>
 <p>Image created by <a href="https://github.com/noamross/gams-in-r-course/blob/master/images/basis-functions-1.png">Noam Ross</a>.</p>
 </div>
-<div id="wiggle-wiggle-wiggle" class="section level3" number="18.4.7">
-<h3><span class="header-section-number">18.4.7</span> Wiggle, wiggle, wiggle</h3>
+<div id="wiggle-wiggle-wiggle" class="section level3 hasAnchor" number="18.4.7">
+<h3><span class="header-section-number">18.4.7</span> Wiggle, wiggle, wiggle<a href="m5.html#wiggle-wiggle-wiggle" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="https://github.com/gavinsimpson/intro-gam-webinar-2020/blob/master/resources/basis-fun-anim.gif?raw=true" width="20%" style="display: block; margin: auto;" /></p>
 <p>GIF by <a href="https://github.com/gavinsimpson">Gavin Simpson</a></p>
-<div id="taking-a-peak-at-our-coefficients" class="section level4" number="18.4.7.1">
-<h4><span class="header-section-number">18.4.7.1</span> Taking a peak at our coefficients</h4>
+<div id="taking-a-peak-at-our-coefficients" class="section level4 hasAnchor" number="18.4.7.1">
+<h4><span class="header-section-number">18.4.7.1</span> Taking a peak at our coefficients<a href="m5.html#taking-a-peak-at-our-coefficients" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="m5.html#cb215-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mgcv) <span class="co"># you will need to install this</span></span>
 <span id="cb215-2"><a href="m5.html#cb215-2" aria-hidden="true" tabindex="-1"></a>gam_mod <span class="ot">&lt;-</span> <span class="fu">gam</span>(y <span class="sc">~</span> <span class="fu">s</span>(x, <span class="at">k=</span><span class="dv">7</span>), <span class="at">data=</span>my_data, <span class="at">method=</span><span class="st">&quot;REML&quot;</span>)</span>
 <span id="cb215-3"><a href="m5.html#cb215-3" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(gam_mod)</span></code></pre></div>
@@ -1265,18 +1264,18 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 ##   10.047384</code></pre>
 <p>This is just some meaningless fake data, we’ll work through a Case Study more fully.</p>
 </div>
-<div id="how-many-basis-functions-do-we-want" class="section level4" number="18.4.7.2">
-<h4><span class="header-section-number">18.4.7.2</span> How many basis functions do we want?</h4>
+<div id="how-many-basis-functions-do-we-want" class="section level4 hasAnchor" number="18.4.7.2">
+<h4><span class="header-section-number">18.4.7.2</span> How many basis functions do we want?<a href="m5.html#how-many-basis-functions-do-we-want" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m5/diffbasis-nr.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Image created by <a href="https://github.com/noamross/gams-in-r-course/blob/master/images/diffbasis-1.png">Noam Ross</a>.</p>
 </div>
-<div id="smoothing" class="section level4" number="18.4.7.3">
-<h4><span class="header-section-number">18.4.7.3</span> Smoothing</h4>
+<div id="smoothing" class="section level4 hasAnchor" number="18.4.7.3">
+<h4><span class="header-section-number">18.4.7.3</span> Smoothing<a href="m5.html#smoothing" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m5/diffsmooth-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Image created by <a href="https://github.com/noamross/gams-in-r-course/blob/master/images/diffsmooth-1.png">Noam Ross</a>.</p>
 </div>
-<div id="smoothing-1" class="section level4" number="18.4.7.4">
-<h4><span class="header-section-number">18.4.7.4</span> Smoothing</h4>
+<div id="smoothing-1" class="section level4 hasAnchor" number="18.4.7.4">
+<h4><span class="header-section-number">18.4.7.4</span> Smoothing<a href="m5.html#smoothing-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>You can think of our fit as being:</p>
 <p><span class="math display">\[\text{penalized log lik} =\log(\text{Likelihood}) - \lambda \cdot \text{Wiggliness}\]</span></p>
 <p>where <span class="math inline">\(\lambda\)</span> is a smoothing parameter.</p>
@@ -1291,19 +1290,19 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 <span id="cb217-8"><a href="m5.html#cb217-8" aria-hidden="true" tabindex="-1"></a>gam_mod <span class="ot">&lt;-</span> <span class="fu">gam</span>(y <span class="sc">~</span> <span class="fu">s</span>(x), <span class="at">data=</span>my_data, <span class="at">method =</span> <span class="st">&quot;REML&quot;</span>)</span></code></pre></div>
 </div>
 </div>
-<div id="choices-to-make" class="section level3" number="18.4.8">
-<h3><span class="header-section-number">18.4.8</span> Choices to make</h3>
-<div id="wiggliness" class="section level4" number="18.4.8.1">
-<h4><span class="header-section-number">18.4.8.1</span> Wiggliness</h4>
+<div id="choices-to-make" class="section level3 hasAnchor" number="18.4.8">
+<h3><span class="header-section-number">18.4.8</span> Choices to make<a href="m5.html#choices-to-make" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="wiggliness" class="section level4 hasAnchor" number="18.4.8.1">
+<h4><span class="header-section-number">18.4.8.1</span> Wiggliness<a href="m5.html#wiggliness" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>There are LOTS of ways to pick your wiggle: AIC, generalized cross-validation (GCV, part of the name of <code>mgcv</code> and the default for that package), ML and REML.</p>
 </div>
-<div id="basis-complexity" class="section level4" number="18.4.8.2">
-<h4><span class="header-section-number">18.4.8.2</span> Basis complexity</h4>
-<p>We can set a maximum wiggliness by setting a ‘size,’ k, that indicates a maximum number of small functions that could be used to build the model. If we set it bigger than the data, we’ll get an error, and if we set it much bigger than needed, it is computationally costly.</p>
+<div id="basis-complexity" class="section level4 hasAnchor" number="18.4.8.2">
+<h4><span class="header-section-number">18.4.8.2</span> Basis complexity<a href="m5.html#basis-complexity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We can set a maximum wiggliness by setting a ‘size’, k, that indicates a maximum number of small functions that could be used to build the model. If we set it bigger than the data, we’ll get an error, and if we set it much bigger than needed, it is computationally costly.</p>
 <p>Our effective degrees of freedom (edf) will always be less than k. We can check if we’ve been sensible in our choice of <em>k</em> with <code>gam.check()</code>.</p>
 </div>
-<div id="basis-expansions" class="section level4" number="18.4.8.3">
-<h4><span class="header-section-number">18.4.8.3</span> Basis expansions</h4>
+<div id="basis-expansions" class="section level4 hasAnchor" number="18.4.8.3">
+<h4><span class="header-section-number">18.4.8.3</span> Basis expansions<a href="m5.html#basis-expansions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>In the polynomial models we used a polynomial basis expansion of <span class="math inline">\(\boldsymbol{x}\)</span></p>
 <ul>
 <li><span class="math inline">\(\boldsymbol{x}^0 = \boldsymbol{1}\)</span> — the model constant term</li>
@@ -1315,8 +1314,8 @@ U \sim &amp; \text{MVN}[0,\Sigma(\theta)]
 <p>So! If the <strong>effective degrees of freedom</strong> we need for a term is approximately 1, then we’re really just smoothing it down to a linear term, the way a covariate would usually enter a model as a fixed effect in our previous models. We may choose to just put it in the model as such, so that we can interpret the coefficient it receives.</p>
 </div>
 </div>
-<div id="generalized-additive-mixed-models" class="section level3" number="18.4.9">
-<h3><span class="header-section-number">18.4.9</span> Generalized additive (mixed) models</h3>
+<div id="generalized-additive-mixed-models" class="section level3 hasAnchor" number="18.4.9">
+<h3><span class="header-section-number">18.4.9</span> Generalized additive (mixed) models<a href="m5.html#generalized-additive-mixed-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can combine everything we’ve done in this course so far into generalized additive models (including adding random effects).</p>
 <span class="math display">\[\begin{align*}
 Y_i \sim &amp; G(\mu_i, \theta)\\
@@ -1340,8 +1339,8 @@ g(\mu_i) = &amp; X_i \beta + Z_iU + f(W_i)
 <span id="cb218-4"><a href="m5.html#cb218-4" aria-hidden="true" tabindex="-1"></a>m_nlme <span class="ot">&lt;-</span> lme4<span class="sc">::</span><span class="fu">lmer</span>(travel <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> Rail), <span class="at">data =</span> Rail, <span class="at">REML =</span> <span class="cn">TRUE</span>) </span>
 <span id="cb218-5"><a href="m5.html#cb218-5" aria-hidden="true" tabindex="-1"></a>m_gam  <span class="ot">&lt;-</span> <span class="fu">gam</span>(travel <span class="sc">~</span> <span class="fu">s</span>(Rail, <span class="at">bs =</span> <span class="st">&quot;re&quot;</span>), <span class="at">data =</span> Rail, <span class="at">method =</span> <span class="st">&quot;REML&quot;</span>)</span></code></pre></div>
 </div>
-<div id="random-effects" class="section level3" number="18.4.10">
-<h3><span class="header-section-number">18.4.10</span> Random effects</h3>
+<div id="random-effects" class="section level3 hasAnchor" number="18.4.10">
+<h3><span class="header-section-number">18.4.10</span> Random effects<a href="m5.html#random-effects" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The random effect basis, <code>bs = 're'</code>, is <em>not</em> as computationally efficient as <em>lme4</em> if we have complex random effects terms or even if we just have random effects with many levels (which isn’t really that unusual with random effects).</p>
 <p>Instead we could use <code>gamm()</code> or <code>gamm4::gamm4()</code>:</p>
 <ul>
@@ -1350,36 +1349,36 @@ g(\mu_i) = &amp; X_i \beta + Z_iU + f(W_i)
 </ul>
 <p>I.e., you’re wanting a response with a conditional distribution that isn’t <em>normal</em>, use <code>gamm4::gamm4()</code></p>
 </div>
-<div id="case-studies-cherry-trees-and-portugese-larks" class="section level3" number="18.4.11">
-<h3><span class="header-section-number">18.4.11</span> Case studies: Cherry trees and Portugese larks</h3>
-<div id="access-the-code-for-the-case-studies-1" class="section level4" number="18.4.11.1">
-<h4><span class="header-section-number">18.4.11.1</span> Access the code for the case studies</h4>
+<div id="case-studies-cherry-trees-and-portugese-larks" class="section level3 hasAnchor" number="18.4.11">
+<h3><span class="header-section-number">18.4.11</span> Case studies: Cherry trees and Portugese larks<a href="m5.html#case-studies-cherry-trees-and-portugese-larks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="access-the-code-for-the-case-studies-1" class="section level4 hasAnchor" number="18.4.11.1">
+<h4><span class="header-section-number">18.4.11.1</span> Access the code for the case studies<a href="m5.html#access-the-code-for-the-case-studies-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>You can pull the code on to the <a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=rstudio%2F">JupyterHub with this
 link</a>.
 From your Home directory, you will need to navigate to
 <code>sta303-w22-activities -&gt; m5</code>.</p>
 </div>
 </div>
-<div id="further-comments-on-gams" class="section level3" number="18.4.12">
-<h3><span class="header-section-number">18.4.12</span> Further comments on GAMs</h3>
-<div id="gams-are-models-too" class="section level4" number="18.4.12.1">
-<h4><span class="header-section-number">18.4.12.1</span> GAMs are models too</h4>
+<div id="further-comments-on-gams" class="section level3 hasAnchor" number="18.4.12">
+<h3><span class="header-section-number">18.4.12</span> Further comments on GAMs<a href="m5.html#further-comments-on-gams" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="gams-are-models-too" class="section level4 hasAnchor" number="18.4.12.1">
+<h4><span class="header-section-number">18.4.12.1</span> GAMs are models too<a href="m5.html#gams-are-models-too" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>How accurate your predictions are depends on how good the model is, as always. (Credit: Eric Pedersen &amp; Gavin Simpson)</p>
 <p><img src="STA303-Course-guide_files/figure-html/misspecify-5-1.png" width="672" /></p>
 </div>
-<div id="variable-selection" class="section level4" number="18.4.12.2">
-<h4><span class="header-section-number">18.4.12.2</span> Variable selection</h4>
+<div id="variable-selection" class="section level4 hasAnchor" number="18.4.12.2">
+<h4><span class="header-section-number">18.4.12.2</span> Variable selection<a href="m5.html#variable-selection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Unmodified smoothness selection by GCV, AIC, REML etc. will not usually remove a smooth from a model (not set edf to 0). Most smoothing penalties view the null-space of a smooth as ‘completely smooth’ and so further penalization does not change it.</p>
 <p>With <code>select = TRUE</code> we add an extra penalty to the null-space part (the part of the spline that is perfectly smooth).</p>
 <p>If you don’t have this, smoothness selection can usually only penalize a smooth back to a linear function</p>
 <p>(because the penalty that’s doing smoothness selection only works on the non-smooth (the wiggly) parts of the basis). To perform selection we need to be able to penalize the null space (the smooth parts of the basis) as well.</p>
 </div>
-<div id="smoothness-selection" class="section level4" number="18.4.12.3">
-<h4><span class="header-section-number">18.4.12.3</span> Smoothness selection</h4>
+<div id="smoothness-selection" class="section level4 hasAnchor" number="18.4.12.3">
+<h4><span class="header-section-number">18.4.12.3</span> Smoothness selection<a href="m5.html#smoothness-selection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The <code>method</code> argument to gam selects the smoothness selection criterion. For many practitioners, ‘ML’ or ‘REML’ are their default choice, though not the default in <code>gam()</code>. Using a likelihood based approach essentially treats the smooth components as random effects.</p>
 </div>
-<div id="more-conditional-distributions-than-you-can-shake-a-squiggly-line-at" class="section level4" number="18.4.12.4">
-<h4><span class="header-section-number">18.4.12.4</span> More conditional distributions than you can shake a squiggly line at</h4>
+<div id="more-conditional-distributions-than-you-can-shake-a-squiggly-line-at" class="section level4 hasAnchor" number="18.4.12.4">
+<h4><span class="header-section-number">18.4.12.4</span> More conditional distributions than you can shake a squiggly line at<a href="m5.html#more-conditional-distributions-than-you-can-shake-a-squiggly-line-at" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>A GAM is just a fancy GLM! So we can fit any of the models we’ve learned (Poisson, Logistic, Gamma as we saw today in the cherry example). The creators of the <code>mgcv</code> package (Simon Wood &amp; colleagues (2016)) have extended the methods to some non-exponential family distributions that are also very helpful, of which we’ve seen Negative Binomial and Zero-inflated Poisson.</p>
 <ul>
 <li><p><code>binomial()</code></p></li>
@@ -1400,8 +1399,8 @@ From your Home directory, you will need to navigate to
 <li><p><code>ocat()</code></p></li>
 </ul>
 </div>
-<div id="a-symphony-of-smoothers" class="section level4" number="18.4.12.5">
-<h4><span class="header-section-number">18.4.12.5</span> A symphony of smoothers</h4>
+<div id="a-symphony-of-smoothers" class="section level4 hasAnchor" number="18.4.12.5">
+<h4><span class="header-section-number">18.4.12.5</span> A symphony of smoothers<a href="m5.html#a-symphony-of-smoothers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The type of smoother is controlled by the <code>bs</code> argument (think <em>b</em>asi<em>s</em>)</p>
 <p>The default is a low-rank thin plate spline <code>bs = 'tp'</code></p>
 <p>Many others available (thanks Gavin Simpson for making this list):</p>
@@ -1419,16 +1418,16 @@ From your Home directory, you will need to navigate to
 <li>Gaussian process <code>bs = 'gp'</code></li>
 </ul>
 </div>
-<div id="how-do-we-talk-about-gams" class="section level4" number="18.4.12.6">
-<h4><span class="header-section-number">18.4.12.6</span> How do we talk about GAMs?</h4>
+<div id="how-do-we-talk-about-gams" class="section level4 hasAnchor" number="18.4.12.6">
+<h4><span class="header-section-number">18.4.12.6</span> How do we talk about GAMs?<a href="m5.html#how-do-we-talk-about-gams" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Presenting results from GAMs is similar to presenting results from other models we’ve learned except that for smoothed terms we have no single coefficient you can make inference from (i.e. negative, positive, effect size etc.).</p>
 <p>For smoothed variables, we rely a lot on visual methods (e.g. <code>plot(gam_model)</code>) for describing our results and we can also make inference from predicted values.</p>
 <p>For parametric variables, we can make inferences like we normally would.</p>
 <p>GAMs are especially useful for accounting for a non-linear phenomenon that may not be the main thing you are interested in. This is similar to how we have already used random effects to account for correlation in our data that is not the main thing of interest but shouldn’t be ignored.</p>
 </div>
 </div>
-<div id="conclusions" class="section level3" number="18.4.13">
-<h3><span class="header-section-number">18.4.13</span> Conclusions</h3>
+<div id="conclusions" class="section level3 hasAnchor" number="18.4.13">
+<h3><span class="header-section-number">18.4.13</span> Conclusions<a href="m5.html#conclusions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>GAMs are GLMMs</p></li>
 <li><p>Anything you can do with LMs/LMMs/GLMs/GLMMs you can do with GAMs</p>
@@ -1438,8 +1437,8 @@ From your Home directory, you will need to navigate to
 <li><p>use ML to estimate parameters</p></li>
 <li><p>use a lot of knots</p></li>
 </ul>
-<div id="other-gams-things-we-wont-get-to-look-at-in-detail-in-this-course" class="section level4" number="18.4.13.1">
-<h4><span class="header-section-number">18.4.13.1</span> Other GAMs things we won’t get to look at in detail in this course</h4>
+<div id="other-gams-things-we-wont-get-to-look-at-in-detail-in-this-course" class="section level4 hasAnchor" number="18.4.13.1">
+<h4><span class="header-section-number">18.4.13.1</span> Other GAMs things we won’t get to look at in detail in this course<a href="m5.html#other-gams-things-we-wont-get-to-look-at-in-detail-in-this-course" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>changing basis functions (see a list of options by running <code>?smooth.terms</code>)</li>
 </ul>
@@ -1458,7 +1457,6 @@ From your Home directory, you will need to navigate to
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1498,6 +1496,10 @@ gitbook.start({
 "text": null
 },
 "download": [["STA303-Course-guide.pdf", "PDF"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "toc_depth": 2,

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>16 Module 3 | R Notebook</title>
   <meta name="description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="16 Module 3 | R Notebook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
   
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="m2.html"/>
 <link rel="next" href="m4.html"/>
-<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link rel="shortcut icon" href="images/favicon.ico" />
@@ -95,7 +94,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -108,7 +107,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -718,13 +717,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="m3" class="section level1" number="16">
-<h1><span class="header-section-number">16</span> Module 3</h1>
+<div id="m3" class="section level1 hasAnchor" number="16">
+<h1><span class="header-section-number">16</span> Module 3<a href="m3.html#m3" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="yellowbox">
 <p>Materials for February 7–February 18, 2022.</p>
 </div>
-<div id="learning-checklist-2" class="section level2" number="16.1">
-<h2><span class="header-section-number">16.1</span> Learning checklist</h2>
+<div id="learning-checklist-2" class="section level2 hasAnchor" number="16.1">
+<h2><span class="header-section-number">16.1</span> Learning checklist<a href="m3.html#learning-checklist-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>By the end of this module, you should be able to:</p>
 <ul>
 <li>Describe grouping structures for correlated data.</li>
@@ -738,15 +737,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Polish your professional writing.</li>
 </ul>
 </div>
-<div id="introduction-3" class="section level2" number="16.2">
-<h2><span class="header-section-number">16.2</span> Introduction</h2>
+<div id="introduction-3" class="section level2 hasAnchor" number="16.2">
+<h2><span class="header-section-number">16.2</span> Introduction<a href="m3.html#introduction-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This module recaps a few topics you should have encountered in previous courses:
 * statistical independence and correlated data,<br />
 * specifically, <em>from your understanding of the context/collection of data, can you identify whether observations are likely to be independent?</em>, and<br />
 * maximum likelihood/maximum likelihood estimation .</p>
 <p>It also introduces an extension to regression, the <strong>linear mixed model</strong>, that uses maximum likelihood estimation to allow us to more flexibly deal with correlated data, that would violate our independence assumptions.</p>
-<div id="how-deep-are-we-going-on-likelihoods" class="section level3" number="16.2.1">
-<h3><span class="header-section-number">16.2.1</span> How deep are we going on likelihoods?</h3>
+<div id="how-deep-are-we-going-on-likelihoods" class="section level3 hasAnchor" number="16.2.1">
+<h3><span class="header-section-number">16.2.1</span> How deep are we going on likelihoods?<a href="m3.html#how-deep-are-we-going-on-likelihoods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We’ll need the concept of maximum likelihood for most of the models we’ll meet in this course. That said, <strong>proofs about MLEs are not the focus of <em>this</em> course.</strong></p>
 <ul>
 <li>You should have encountered the concept of likelihood in <em>STA238: Probability, Statistics and Data Analysis II</em> OR <em>STA261: Probability and Statistics II</em>.
@@ -762,15 +761,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 <p>These recommendations are based only on the calendar entries for these courses, the <a href="https://www.statistics.utoronto.ca/resources/past-courses-outlines">latest syllabi</a> of these courses are probably your best guide to what is covered.</p>
-<div id="maximum-likelihood-review" class="section level4" number="16.2.1.1">
-<h4><span class="header-section-number">16.2.1.1</span> Maximum likelihood review</h4>
+<div id="maximum-likelihood-review" class="section level4 hasAnchor" number="16.2.1.1">
+<h4><span class="header-section-number">16.2.1.1</span> Maximum likelihood review<a href="m3.html#maximum-likelihood-review" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><span class="math display">\[L(\theta) = f(x | \theta) \]</span>
 * Likelihood helps us understand how well our model fits our data.
 * Maximizing the likelihood function estimates the coefficient values for our model that make <em>the data we actually observed the most likely</em>.
 * That might feel a little backwards, as you could say the chance of observing out data is 100%, because we did…observe it…but hopefully the idea of picking the coefficient estimates for our model that make our data the most likely makes some sense.</p>
 </div>
-<div id="properties-of-maximum-likelihood-estimators" class="section level4" number="16.2.1.2">
-<h4><span class="header-section-number">16.2.1.2</span> Properties of maximum likelihood estimators</h4>
+<div id="properties-of-maximum-likelihood-estimators" class="section level4 hasAnchor" number="16.2.1.2">
+<h4><span class="header-section-number">16.2.1.2</span> Properties of maximum likelihood estimators<a href="m3.html#properties-of-maximum-likelihood-estimators" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>For large sample sizes:</p>
 <ul>
 <li>Bias goes to 0 (as sample size increases)<br />
@@ -781,15 +780,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Another nice feature of MLEs are that they are ‘<strong>invariant</strong>’ under transformation. This means that if <span class="math inline">\(\hat\theta\)</span> is an MLE of <span class="math inline">\(\theta\)</span>, and <span class="math inline">\(g\)</span> is a 1-1 function, then <span class="math inline">\(g(\hat\theta)\)</span> is an MLE of <span class="math inline">\(g(\theta)\)</span>. This will come in handy in future modules when we want to transform our coefficient estimates with link functions.</p>
 </div>
-<div id="suggested-reading" class="section level4" number="16.2.1.3">
-<h4><span class="header-section-number">16.2.1.3</span> Suggested reading</h4>
+<div id="suggested-reading" class="section level4 hasAnchor" number="16.2.1.3">
+<h4><span class="header-section-number">16.2.1.3</span> Suggested reading<a href="m3.html#suggested-reading" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>As this should mostly be a recap of likelihood, this is a great article on which to practice your <a href="m1.html#previewskim">previewing and skimming strategies</a>.</p>
 <p>You may want to pay special attention to the likelihood ratio test.</p>
 <p><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-beyondmost.html">Chapter 2</a> (§ 2.1–2.9) of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression. (2021). Retrieved from: <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a> (Links to an external site.)</p>
 </div>
 </div>
-<div id="model-comparison-more-generally" class="section level3" number="16.2.2">
-<h3><span class="header-section-number">16.2.2</span> Model comparison more generally</h3>
+<div id="model-comparison-more-generally" class="section level3 hasAnchor" number="16.2.2">
+<h3><span class="header-section-number">16.2.2</span> Model comparison more generally<a href="m3.html#model-comparison-more-generally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><em>Thank you to TA Ian for developing this section! He applies statistics in his own research in ecology.</em></p>
 <ul>
 <li><p>Model selection is a key component of the development of any statistical model. In model development, there may be multiple plausible hypotheses that can be evaluated simultaneously by parameterizing different models with the same data. These candidate models can differ in both fixed and random effects however the models generally have a similar structure (e.g., multiple combinations of a set of fixed effects). To test the hypotheses with the candidate models, one must determine and compare the support for each model to determine which model(s) fit the observed data the best. While the likelihood-ratio test is suitable when comparing two models to one another, there are certain situations when the goal is to compare multiple (&gt; 2) models to identify the model that best fits the data.</p></li>
@@ -797,41 +796,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>For this course, we will use likelihood ratio tests as well as the information-theoretic (I-T) approach using AIC for model selection. AIC measures the lack of model fit to the data based on the log-likelihood of the model while penalizing for the number of parameters in the model. Lower AIC values indicate that the model strongly fits the observed data whereas a higher value indicates a poor model fit. <strong>The absolute AIC values can be challenging to interpret</strong> so the values are compared relative to one another. Among the candidate models, identify the lowest AIC value (<span class="math inline">\(AIC_{min}\)</span>}) and calculate the differences between <span class="math inline">\(AIC_{min}\)</span> and the AIC values of every candidate model (<span class="math inline">\(AIC_{i}\)</span>) to obtain AIC differences (<span class="math inline">\(\Delta\)</span>AIC) for each model. In general, large values of <span class="math inline">\(\Delta\)</span>AIC (&gt; 10) indicate no support for the model, models with intermediate values (4-7) have little support, and models with small values (0-3) have strong support. These categories are arbitrary and may differ among studies.</p></li>
 <li><p>There are scenarios where multiple models have similar support and there is no considerable difference among the model selection criteria. These models would then represent plausible models and support their associated hypotheses. Additionally, model weights can be calculated to evaluate the relative support of each model by the data. Larger weights indicate that the model is strongly supported by the data whereas small values suggest the model poorly fits the data.</p></li>
 </ul>
-<div id="references" class="section level5" number="16.2.2.0.1">
-<h5><span class="header-section-number">16.2.2.0.1</span> References</h5>
+<div id="references" class="section level5 hasAnchor" number="16.2.2.0.1">
+<h5><span class="header-section-number">16.2.2.0.1</span> References<a href="m3.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Burnham, K. P., Anderson, D. R., &amp; Huyvaert, K. P. (2011). AIC model selection and multimodel inference in behavioral ecology: some background, observations, and comparisons. Behavioral ecology and sociobiology, 65(1), 23-35.</p>
 </div>
 </div>
 </div>
-<div id="correlated-data" class="section level2" number="16.3">
-<h2><span class="header-section-number">16.3</span> Correlated data</h2>
-<div id="reading" class="section level3" number="16.3.1">
-<h3><span class="header-section-number">16.3.1</span> Reading</h3>
+<div id="correlated-data" class="section level2 hasAnchor" number="16.3">
+<h2><span class="header-section-number">16.3</span> Correlated data<a href="m3.html#correlated-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="reading" class="section level3 hasAnchor" number="16.3.1">
+<h3><span class="header-section-number">16.3.1</span> Reading<a href="m3.html#reading" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 (§ 7.3 and 7.8) of Roback, P. &amp; Legler, J. Beyond Multiple Linear Regression. (2021). Retrieved from: https://bookdown.org/roback/bookdown-BeyondMLR/</a></p>
 </div>
-<div id="key-vocabulary" class="section level3" number="16.3.2">
-<h3><span class="header-section-number">16.3.2</span> Key vocabulary</h3>
+<div id="key-vocabulary" class="section level3 hasAnchor" number="16.3.2">
+<h3><span class="header-section-number">16.3.2</span> Key vocabulary<a href="m3.html#key-vocabulary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><strong>Fixed effects</strong>: These are non-random quantities. All the coefficients you were estimating in STA302 are examples of fixed effects as you were not treating <span class="math inline">\(\beta_1\)</span> as a random variable, for example.</li>
 <li><strong>Random effects</strong>: These ARE random quantities. These model parameters are treated as random variables.</li>
 <li><strong>Mixed effects model</strong>: A model that includes both fixed and random effects as its parameters. These are also called hierarchical models and just mixed models. They are NOT the same as <em>mixed methods</em>, which is a ‘mix’ of <em>quantitative</em> and <em>qualitative</em> research methodology.</li>
 <li><strong>Nested/nesting design</strong>: Observational units are grouped within grouping units. There may be multiple levels of grouping.</li>
 <li><strong>Crossed effect design</strong>: Every observational unit experiences every level of the treatment variable.</li>
-<li><strong>Observational units</strong>: The person or thing on which your outcome of interest is measured. In an experiment we might also call this the ‘experimental unit’ or some might say ‘statistical unit.’ In <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 of Beyond Multiple Linear Regression</a>, these are referred to as ‘level-one observational units.’
+<li><strong>Observational units</strong>: The person or thing on which your outcome of interest is measured. In an experiment we might also call this the ‘experimental unit’ or some might say ‘statistical unit’. In <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 of Beyond Multiple Linear Regression</a>, these are referred to as ‘level-one observational units’.
 <ul>
 <li>E.g. In a survey of our class, each student is the observational unit. When I am preparing my final grades, each assessment for each student is my unit of observation. This links back to tidy data (week 2). We want each observational unit to have its own row and only that one row.</li>
 </ul></li>
-<li><strong>Grouping units</strong>: How your observational units are grouped together. In <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 of Beyond Multiple Linear Regression</a>, these are referred to as ‘level-two observational units,’ but you could have even more levels of grouping. Groups within groups, etc.</li>
+<li><strong>Grouping units</strong>: How your observational units are grouped together. In <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#recognizing-correlation">Chapter 7 of Beyond Multiple Linear Regression</a>, these are referred to as ‘level-two observational units’, but you could have even more levels of grouping. Groups within groups, etc.</li>
 </ul>
 </div>
 </div>
-<div id="statdew-valley-interactive" class="section level2" number="16.4">
-<h2><span class="header-section-number">16.4</span> Statdew Valley interactive</h2>
+<div id="statdew-valley-interactive" class="section level2 hasAnchor" number="16.4">
+<h2><span class="header-section-number">16.4</span> Statdew Valley interactive<a href="m3.html#statdew-valley-interactive" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m3_statdew%2Fsta303_m3_statdew-valley.Rmd&amp;branch=master">Click this text to go to the interactive</a></p>
 <p><img src="images/m3/statdewvalley.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Note: A ‘static’ version of this interactive follows, to aid review, but I recommend you work through the interactive the first time.</p>
-<div id="welcome-to-statdew-valley" class="section level3" number="16.4.1">
-<h3><span class="header-section-number">16.4.1</span> Welcome to Statdew Valley!</h3>
+<div id="welcome-to-statdew-valley" class="section level3 hasAnchor" number="16.4.1">
+<h3><span class="header-section-number">16.4.1</span> Welcome to Statdew Valley!<a href="m3.html#welcome-to-statdew-valley" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You’re grandmother has asked you to take over her old farm plot in <em>Statdew Valley</em>. Armed with statistical knowledge, you set out to begin your new life!</p>
 <p>There are two of datasets for you to analyze to better understand the operation of your farm.</p>
 <p>Note: The final ‘hint’ for code chunks will be the solution.</p>
@@ -841,8 +840,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </br>
 <em>Yes, this is totally an homage to <a href="https://www.stardewvalley.net/">Stardew Valley</a>. Have I played? No, but à la Girlfriend Reviews on YouTube, this is based on “what it’s like to live with someone who plays Stardew Valley.”</em></p>
 </div>
-<div id="optional-create-your-16-bit-character" class="section level3" number="16.4.2">
-<h3><span class="header-section-number">16.4.2</span> Optional: Create your 16 bit character</h3>
+<div id="optional-create-your-16-bit-character" class="section level3 hasAnchor" number="16.4.2">
+<h3><span class="header-section-number">16.4.2</span> Optional: Create your 16 bit character<a href="m3.html#optional-create-your-16-bit-character" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can use R for so much more than just running regressions! This section is <strong>totally optional</strong>, and definitely <strong>not assessed.</strong></p>
 <ol style="list-style-type: decimal">
 <li><strong>Copy this code into a separate .Rmd</strong>. It won’t work from within a Shiny App (this interactive).<br />
@@ -916,8 +915,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/m3/lb-example.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>Is this GOOD character pixel art? No. But I think it is cool that you can do image manipulation in R!</p>
 </div>
-<div id="task-1-tomatoes-part-1" class="section level3" number="16.4.3">
-<h3><span class="header-section-number">16.4.3</span> Task 1: Tomatoes (part 1)</h3>
+<div id="task-1-tomatoes-part-1" class="section level3 hasAnchor" number="16.4.3">
+<h3><span class="header-section-number">16.4.3</span> Task 1: Tomatoes (part 1)<a href="m3.html#task-1-tomatoes-part-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Suppose your farm has a small experimental tomato patch. You are interested in knowing if there is any difference between the weight of tomatoes produced from plants that are fertilized with basic fertilizer vs tomatoes produced from plants that are fertilized with quality fertilizer.</p>
 <p>Tee patch has two plots, one for each fertilizer type. In each plot there are three tomato plants (all of the same species). Other growth influencing factors, like light exposure and precipitation are the same for each plot.</p>
 <p>4 tomatoes were chosen at random from each plant and weighed (reported in grams). This data is stored in <code>tomatoes</code>.</p>
@@ -929,8 +928,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## $ plant      &lt;int&gt; 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5,…
 ## $ fertilizer &lt;chr&gt; &quot;basic&quot;, &quot;basic&quot;, &quot;basic&quot;, &quot;basic&quot;, &quot;basic&quot;, &quot;basic&quot;, &quot;basi…
 ## $ weight     &lt;dbl&gt; 123.0, 124.0, 128.0, 125.0, 135.0, 140.0, 129.0, 131.0, 146…</code></pre>
-<div id="plot-the-tomat-ah-dat-ah" class="section level4" number="16.4.3.1">
-<h4><span class="header-section-number">16.4.3.1</span> Plot the tomat-ah dat-ah</h4>
+<div id="plot-the-tomat-ah-dat-ah" class="section level4 hasAnchor" number="16.4.3.1">
+<h4><span class="header-section-number">16.4.3.1</span> Plot the tomat-ah dat-ah<a href="m3.html#plot-the-tomat-ah-dat-ah" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Create a plot with <code>plant</code> on the x axis, <code>weight</code> on the y axis and coloured by <code>fertilizer</code> type. Choose a sensible geometry. I also used <code>theme_minimal()</code> because I like the way it looks. This is just an exploratory plot for our benefit, so it can be a bit rough. No title, etc.</p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="m3.html#cb46-1" aria-hidden="true" tabindex="-1"></a>tomatoes <span class="sc">%&gt;%</span> </span>
 <span id="cb46-2"><a href="m3.html#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> plant, <span class="at">y =</span> weight, <span class="at">colour =</span> fertilizer)) <span class="sc">+</span></span>
@@ -939,15 +938,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="STA303-Course-guide_files/figure-html/tom_plot-solution-1.png" width="672" /></p>
 <p><em>Note: We’re going to take a pretty STA302 approach here. We’ll start out by doing something WRONG and then improve it in the next section, still under the least squares framework. We can do this BECAUSE this is what is called a ‘balanced data’ design. That is, there is an equal number of observations in each combination of levels: 4 tomatoes per plant per fertilizer type plot.</em></p>
 </div>
-<div id="the-wrong-approach-fixed-effects-only" class="section level4" number="16.4.3.2">
-<h4><span class="header-section-number">16.4.3.2</span> The WRONG approach: fixed effects only</h4>
+<div id="the-wrong-approach-fixed-effects-only" class="section level4 hasAnchor" number="16.4.3.2">
+<h4><span class="header-section-number">16.4.3.2</span> The WRONG approach: fixed effects only<a href="m3.html#the-wrong-approach-fixed-effects-only" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><strong>Fertilizer is our variable of interest</strong>, so we need to include it in the model, but we might expect that tomatoes from the same plant are more similar to each other in weight than tomatoes from different plants. This also seems believable based on the plot. So, let’s start by proposing a model like this:</p>
-<div id="model" class="section level5" number="16.4.3.2.1">
-<h5><span class="header-section-number">16.4.3.2.1</span> Model</h5>
+<div id="model" class="section level5 hasAnchor" number="16.4.3.2.1">
+<h5><span class="header-section-number">16.4.3.2.1</span> Model<a href="m3.html#model" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p><span class="math display">\[y_{i} = \alpha_j + \beta_k + \epsilon_{i}  \]</span></p>
 <p>where <span class="math inline">\(y_{i}\)</span> is the weight of the <span class="math inline">\(i^{th}\)</span> tomato from plant <span class="math inline">\(k\)</span> in fertilizer plot <span class="math inline">\(j\)</span>. Here, <span class="math inline">\(\alpha_j\)</span> is the population mean weight for fertilizer plot <span class="math inline">\(j\)</span> and <span class="math inline">\(\beta_k\)</span> is the difference of plant <span class="math inline">\(k\)</span> from that mean.</p>
 <p>The two longer horizontal lines in this graph represent <span class="math inline">\(\alpha_{basic}\)</span> and <span class="math inline">\(\alpha_{quality}\)</span> respectively. Each plant also has a shorter horizontal line shown which represents the mean weight of tomatoes from that plant. The distances (shown with the 6 vertical lines) are the <span class="math inline">\(\beta\)</span> values discussed above. (You’re not required to be able to create this plot right now. If you’re curious you can see the code in the .Rmd version of this activity.)</p>
-<div class="figure"><span id="fig:unnamed-chunk-86"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-86"></span>
 <img src="STA303-Course-guide_files/figure-html/unnamed-chunk-86-1.png" alt="*Figure: Visual representation of the equation for this data*" width="672" />
 <p class="caption">
 Figure 16.1: <em>Figure: Visual representation of the equation for this data</em>
@@ -955,13 +954,13 @@ Figure 16.1: <em>Figure: Visual representation of the equation for this data</em
 </div>
 <p>Now, this probably looks a little different to how you’ve been writing models, but I hope it makes sense as describing the data that we’re interested in.</p>
 <p><strong>Question: Could we use this model to predict the average weight of tomatoes from a new plant (e.g. plant 7) grown in the quality fertilizer?</strong></p>
-<p>Answer: No We have no coefficient for plant 7, so no, this model as it is currently won’t help us make predictions for any plants other than the ones we’ve observed."</p>
+<p>Answer: No We have no coefficient for plant 7, so no, this model as it is currently won’t help us make predictions for any plants other than the ones we’ve observed.”</p>
 <p><strong>Question: Is this model identifiable as currently set out? That is, is there only one possible set of values that we could set these parameters to to get the correct response value?</strong></p>
-<p>Answer: No. The <span class="math inline">\(\beta_k\)</span> s are completely nested within our fertilizer levels, with three plants in the ‘basic’ fertilizer plot and three in the ‘quality fertilizer plot.’ Why is the a problem? In trying to fit these values, you’ll end up with an infinite number of possible values, because you can add any value to <span class="math inline">\(\alpha_{basic}\)</span> and subtract the same value from <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span> and <span class="math inline">\(\beta_3\)</span> to get the same value of <span class="math inline">\(y\)</span>. (Likewise for the ‘quality’ fertilizer plot and associated plants). Our model conceptualized in this way will not be identifiable."</p>
+<p>Answer: No. The <span class="math inline">\(\beta_k\)</span> s are completely nested within our fertilizer levels, with three plants in the ‘basic’ fertilizer plot and three in the ‘quality fertilizer plot’. Why is the a problem? In trying to fit these values, you’ll end up with an infinite number of possible values, because you can add any value to <span class="math inline">\(\alpha_{basic}\)</span> and subtract the same value from <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span> and <span class="math inline">\(\beta_3\)</span> to get the same value of <span class="math inline">\(y\)</span>. (Likewise for the ‘quality’ fertilizer plot and associated plants). Our model conceptualized in this way will not be identifiable.”</p>
 </div>
 </div>
-<div id="lets-try-some-models-part-1" class="section level4" number="16.4.3.3">
-<h4><span class="header-section-number">16.4.3.3</span> Let’s try some models: Part 1</h4>
+<div id="lets-try-some-models-part-1" class="section level4 hasAnchor" number="16.4.3.3">
+<h4><span class="header-section-number">16.4.3.3</span> Let’s try some models: Part 1<a href="m3.html#lets-try-some-models-part-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li>Fit a model called <code>tom1</code> with <code>weight</code> as the outcome and <code>fertilizer</code> and <code>plant</code> as the predictors. Make sure <code>plant</code> is treated as a categorical (factor) variable, not numeric.</li>
 <li>Fit a model called <code>tom2</code> with <code>weight</code> as the outcome and and just <code>fertilizer</code> as the predictor.</li>
@@ -1007,8 +1006,8 @@ B. We have no evidence against the claim that the plant only model fits the data
 C. Because of the nesting of plant within fertilizer, these models are actually really the SAME model and comparing them tells us nothing about the fertilizer.</p>
 <p>Answer: C. These models actually are the SAME in terms of the information they have, because of the total nesting of plants within fertilizer plots. You’ll notice the residual degrees of freedom are the same. So it is true that comparing them tells us nothing about fertilizer effects.</p>
 </div>
-<div id="summary" class="section level4" number="16.4.3.4">
-<h4><span class="header-section-number">16.4.3.4</span> Summary</h4>
+<div id="summary" class="section level4 hasAnchor" number="16.4.3.4">
+<h4><span class="header-section-number">16.4.3.4</span> Summary<a href="m3.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Approaching our model in this way has several problems.</p>
 <ul>
 <li>Our model isn’t <strong>identifiable.</strong> In fact, if you run <code>summary(tom1)</code>, you’ll see that the fertilizer coefficient is NA because of this! Oops.</li>
@@ -1019,15 +1018,15 @@ C. Because of the nesting of plant within fertilizer, these models are actually 
 <p>Nope!</p>
 </div>
 </div>
-<div id="task-1-tomatoes-part-2" class="section level3" number="16.4.4">
-<h3><span class="header-section-number">16.4.4</span> Task 1: Tomatoes (part 2)</h3>
-<div id="the-right-approach-mixed-effects" class="section level4" number="16.4.4.1">
-<h4><span class="header-section-number">16.4.4.1</span> The RIGHT approach: mixed effects</h4>
+<div id="task-1-tomatoes-part-2" class="section level3 hasAnchor" number="16.4.4">
+<h3><span class="header-section-number">16.4.4</span> Task 1: Tomatoes (part 2)<a href="m3.html#task-1-tomatoes-part-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="the-right-approach-mixed-effects" class="section level4 hasAnchor" number="16.4.4.1">
+<h4><span class="header-section-number">16.4.4.1</span> The RIGHT approach: mixed effects<a href="m3.html#the-right-approach-mixed-effects" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To approach this problem better, let us take a step back and realize that we really want to treat <code>fertilizer</code> and <code>plant</code> <strong><em>differently</em></strong>. Fertilizer is a classic <em>fixed effect</em> kind of variable. We want to be able to treat the parameter as fixed and we want to be able to use it to generalize so we can make claims about whether or not there is a difference between the fertilizers. Meanwhile, we’re not <em>really</em> that interested in the effects of each of these plants. We want information that will help us make decisions for future plants. What if we plant 20 new tomato plants? We want to be able make data driven claims in that case, too, not just for these 6 plants. BUT we also can’t ignore the plant effects (independence assumption, as discussed).</p>
 <p>Our solution? <strong>Treat plant effect as a random variable</strong>. We can think of these 6 plants as drawn from the population of all tomato plants (of this species, in these conditions). We can then understand each of their effects as an independent observation from this distribution.</p>
 <p><strong>Decision: We will model <code>fertilizer</code> as a fixed effect and <code>plant</code> as a random effect.</strong></p>
-<div id="model-1" class="section level5" number="16.4.4.1.1">
-<h5><span class="header-section-number">16.4.4.1.1</span> Model</h5>
+<div id="model-1" class="section level5 hasAnchor" number="16.4.4.1.1">
+<h5><span class="header-section-number">16.4.4.1.1</span> Model<a href="m3.html#model-1" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>This looks like:
 <span class="math display">\[ y_i = \alpha_j + b_k + \epsilon_i\]</span></p>
 <p>where, again, <span class="math inline">\(y_{i}\)</span> is the weight of the <span class="math inline">\(i^{th}\)</span> tomato from plant <span class="math inline">\(k\)</span> in fertilizer plot <span class="math inline">\(j\)</span>. Here, <span class="math inline">\(\alpha_j\)</span> is again the population mean weight for fertilizer plot <span class="math inline">\(j\)</span> BUT <span class="math inline">\(b_k \sim N(0, \sigma_b^2)\)</span> and <span class="math inline">\(\epsilon_i \sim N(0, \sigma^2)\)</span>. <span class="math inline">\(b_k\)</span> and <span class="math inline">\(\epsilon_i\)</span> are mutually independent.</p>
@@ -1045,8 +1044,8 @@ C. Calculate average weight by plant and fertilizer and refit with formula <code
 </ol>
 <p><strong>Before you run the code, see if you can predict what the output should look based on these instructions.</strong></p>
 <p><strong>Question: What will the new <code>tom_agg</code> data set look like?</strong></p>
-<p>A. There will be one row for each plant, so 6 rows total. Three columns, for fertilizer, plant and weight_avg.", correct = TRUE),
-B. There will be one row for each plant and fertilizer combination, so 2*6 = 12 rows total. Three columns, for fertilizer, plant and weight_avg.“),
+<p>A. There will be one row for each plant, so 6 rows total. Three columns, for fertilizer, plant and weight_avg.”, correct = TRUE),
+B. There will be one row for each plant and fertilizer combination, so 2*6 = 12 rows total. Three columns, for fertilizer, plant and weight_avg.”),
 C. There will still be 24 rows and the original three columns, but now there will be an additional <code>weight_avg</code> column.”),
 D. We can’t predict how many rows there will be, but there should be 3 columns.</p>
 <p>Answer: Run the code and see! (or see below)</p>
@@ -1091,11 +1090,11 @@ B. It is plausible, at the 95% confidence level, that on average, quality fertil
 C. At the 5% significance level we fail to reject the hypothesis that the average weight of tomatoes grown each fertilizer type is the same.<br />
 D. Using a 5% significance level here, there is a chance that we are making a type II error.<br />
 E. More than one of the above.</p>
-<p>Answer: All of these are actually correct! A) If using a ‘strength’ approach instead of a reject/fail to reject one, we often say a p-value between 0.1 and 0.05 is ‘weak evidence.’ B) 10 is in our 95% confidence interval, so it is a ‘plausible’ or believable value, because a CI is a range of plausible values for our parameter. C) Our p-value is larger than 0.05, so we fail to reject it at the 5% level. D) Because we are failing to reject the null, there is a chance that we’re wrong, and we SHOULD have rejected the null. Failing to reject the null when you should is a type II error. I remember this with ‘fail <strong>2</strong> reject -&gt; type <strong>2</strong>’</p>
+<p>Answer: All of these are actually correct! A) If using a ‘strength’ approach instead of a reject/fail to reject one, we often say a p-value between 0.1 and 0.05 is ‘weak evidence’. B) 10 is in our 95% confidence interval, so it is a ‘plausible’ or believable value, because a CI is a range of plausible values for our parameter. C) Our p-value is larger than 0.05, so we fail to reject it at the 5% level. D) Because we are failing to reject the null, there is a chance that we’re wrong, and we SHOULD have rejected the null. Failing to reject the null when you should is a type II error. I remember this with ‘fail <strong>2</strong> reject -&gt; type <strong>2</strong>’</p>
 </div>
 </div>
-<div id="variance-of-our-random-effect" class="section level4" number="16.4.4.2">
-<h4><span class="header-section-number">16.4.4.2</span> Variance of our random effect</h4>
+<div id="variance-of-our-random-effect" class="section level4 hasAnchor" number="16.4.4.2">
+<h4><span class="header-section-number">16.4.4.2</span> Variance of our random effect<a href="m3.html#variance-of-our-random-effect" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>When we are conducting mixed effects models, we’re often interested in the variability of our random effects. So, we want to estimate <span class="math inline">\(\sigma_b^2\)</span> from the model above.</p>
 <p>Firstly, we can think about what variability that isn’t explained by our fixed effects. This is our <em>residual</em> variance. We get this from squaring the residual standard error in <code>tom_final</code>. This value is actually partitioned into two independent sources of variability, <span class="math inline">\(\hat{\sigma}^2\)</span>, the variance of our random error, and <span class="math inline">\(\hat{\sigma_b}^2\)</span>, the variance of our random effect.</p>
 <p>While you can derive this yourself if you like, let’s also take as true the following:
@@ -1172,8 +1171,8 @@ E. More than one of the above.</p>
 <p>So, <span class="math inline">\(\hat{b} \sim N(0,\)</span> 105.57 <span class="math inline">\()\)</span> . As you might expect, a lot of the variance in tomato weight that we can’t account for just based on the fertilizer is due to plant-to-plant variation</p>
 </div>
 </div>
-<div id="task-2-life-is-sweet-as-honey" class="section level3" number="16.4.5">
-<h3><span class="header-section-number">16.4.5</span> Task 2: Life is sweet as honey</h3>
+<div id="task-2-life-is-sweet-as-honey" class="section level3 hasAnchor" number="16.4.5">
+<h3><span class="header-section-number">16.4.5</span> Task 2: Life is sweet as honey<a href="m3.html#task-2-life-is-sweet-as-honey" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Your grandmother was a bit eccentric when it came to farm management. She swore that her bees produced more honey if she played them music in the morning. In fact, she even mentioned that she thought they particularly liked K-pop.</p>
 <p>She left you some data that she thinks proves this. While the sample size isn’t that large, you decide to take a look anyways. The data is called <code>honey</code> and records the honey produced each month for each of her 6 hives (in grams). Each hive listened to each of the song options (Butter by BTS, Adagio in B minor by Mozart and No music) for a month, three times. The order was randomized for each hive. It took 9 months to collect this data and the information your grandmother left you says honey production should have been fairly constant over this period and that all the hives experienced the same weather conditions, food access, etc.</p>
 <p>(Note: this is definitely not accurate to how beekeeping or weather actually works…but ignore this for our purposes.)</p>
@@ -1184,8 +1183,8 @@ E. More than one of the above.</p>
 ## $ hive    &lt;fct&gt; 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 1, 1, 1,…
 ## $ song    &lt;fct&gt; No music, No music, No music, No music, No music, No music, No…
 ## $ honey_g &lt;dbl&gt; 196.56, 199.58, 200.71, 195.80, 199.58, 200.71, 226.80, 227.55…</code></pre>
-<div id="wrangle-and-plot-the-data" class="section level4" number="16.4.5.1">
-<h4><span class="header-section-number">16.4.5.1</span> Wrangle and plot the data</h4>
+<div id="wrangle-and-plot-the-data" class="section level4 hasAnchor" number="16.4.5.1">
+<h4><span class="header-section-number">16.4.5.1</span> Wrangle and plot the data<a href="m3.html#wrangle-and-plot-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li>Wrangle the honey data so that the <code>song</code> variable is a factor in this order: No music, Adagio in B minor by Mozart and Butter by BTS.</li>
 <li>Make <code>hive</code> a factor variable also.</li>
@@ -1221,7 +1220,7 @@ B. We don’t expect production for a given hive to be independent from month to
 C. We don’t expect these observations to be independent because they all experienced the same weather conditions and food availability.<br />
 D. No concerns about the independence assumption.</p>
 <p>Answer: B. We expect that some hives will be more productive than others, naturally; a ‘hive’ effect. We want to estimate if there is in fact an effect of song, so that isn’t an independence violation. We’re glad the other conditions that could affect honey production were similar across the whole period for all hives as this means any difference we see is likely due to song effect (once we account for hive effect), not weather fluctuations.</p>
-<p>This data is an example of <strong>crossed effects</strong>, because every hive experiences every level of the ‘treatment,’ i.e. each hive listens to each song.</p>
+<p>This data is an example of <strong>crossed effects</strong>, because every hive experiences every level of the ‘treatment’, i.e. each hive listens to each song.</p>
 <p><strong>Question: What would a completely nested version of this study look like?</strong></p>
 <p>A. This is both nested and crossed already.<br />
 B. Assign hives 1, 2 and to listen to randomly swap between no music for and then Mozart for 9 months. Hives 4, 5 and 6 would be similar but BTS instead of Mozart.<br />
@@ -1229,14 +1228,14 @@ C. Repeated measures (x9) of honey production on each hive, listening to the sam
 D. Not possible to design a nested version.</p>
 <p>Answer: C. You can’t be nested and crossed for the same grouping variable. A fully nested version of this would be much like our tomato study, with two hives assigned to each song.</p>
 </div>
-<div id="model-formula-1" class="section level4" number="16.4.5.2">
-<h4><span class="header-section-number">16.4.5.2</span> Model formula</h4>
+<div id="model-formula-1" class="section level4 hasAnchor" number="16.4.5.2">
+<h4><span class="header-section-number">16.4.5.2</span> Model formula<a href="m3.html#model-formula-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This looks like:
 <span class="math display">\[ y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}\]</span></p>
 <p>where <span class="math inline">\(y_{ijk}\)</span> is the amount of honey produced (in grams) in the <span class="math inline">\(k^{th}\)</span> month by the <span class="math inline">\(j^{th}\)</span> hive while listening to song <span class="math inline">\(i\)</span>. Here, <span class="math inline">\(\mu\)</span> is the grand mean of honey production, <span class="math inline">\(\alpha_i\)</span> are the <span class="math inline">\(I\)</span> fixed effects for <code>song</code> and <span class="math inline">\(b_j\)</span> are the random effects for hive <span class="math inline">\(j\)</span>. <span class="math inline">\((\alpha b)_{ij}\)</span> are the <span class="math inline">\(IJ\)</span> interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. <span class="math inline">\((\alpha b)_{ij}\)</span> is a random effect because any term involving a random effect must also be a random effect. <span class="math inline">\((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\)</span>, <span class="math inline">\(b_j \sim N(0, \sigma_b^2)\)</span> and <span class="math inline">\(\epsilon_{ijk} \sim N(0, \sigma^2)\)</span>. All the random effects are mutually independent random variables.</p>
 </div>
-<div id="fit-the-models" class="section level4" number="16.4.5.3">
-<h4><span class="header-section-number">16.4.5.3</span> Fit the models</h4>
+<div id="fit-the-models" class="section level4 hasAnchor" number="16.4.5.3">
+<h4><span class="header-section-number">16.4.5.3</span> Fit the models<a href="m3.html#fit-the-models" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li>Fit an interaction model (main effects and interactions) to predict honey production based on <code>song</code> and <code>hive</code>. Call it <code>bee_int_mod</code>.<br />
 </li>
@@ -1262,8 +1261,8 @@ B. There is no evidence against the hypothesis that the main effects model fits 
 C. These models are not identifiable.</p>
 <p>Answer: A. Because the the model with the interaction explains the data significantly better than the main effects only model, we can say it seems like the variability explained by the interaction is going to be important, i.e. we need interaction terms because they aren’t all the same value (which is how we’d have zero variance). These models are identifiable. (Run a summary on them, you’ll get no errors.)</p>
 </div>
-<div id="model-with-our-aggregated-data" class="section level4" number="16.4.5.4">
-<h4><span class="header-section-number">16.4.5.4</span> Model with our aggregated data</h4>
+<div id="model-with-our-aggregated-data" class="section level4 hasAnchor" number="16.4.5.4">
+<h4><span class="header-section-number">16.4.5.4</span> Model with our aggregated data<a href="m3.html#model-with-our-aggregated-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li>Run a new model using the <code>honey_agg_int</code> data, where <code>honey_avg</code> is the response and song and hive are fixed effects, no interactions. Save the model as <code>bee_agg_mod</code>.</li>
 <li>Run an ANOVA on <code>bee_agg_mod</code>.</li>
@@ -1281,8 +1280,8 @@ C. These models are not identifiable.</p>
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>The very low p-values you’ll see above suggest that we can also reject <span class="math inline">\(H_0: \sigma^2_b = 0\)</span> and <span class="math inline">\(H_0: \alpha_{BTS} = \alpha_{Mozart} = \alpha_{no\ song} = 0\)</span> because it seems plausible that there is hive-to-hive variation, and that there are differences in honey production between the songs.</p>
 </div>
-<div id="describing-our-residuals" class="section level4" number="16.4.5.5">
-<h4><span class="header-section-number">16.4.5.5</span> Describing our residuals</h4>
+<div id="describing-our-residuals" class="section level4 hasAnchor" number="16.4.5.5">
+<h4><span class="header-section-number">16.4.5.5</span> Describing our residuals<a href="m3.html#describing-our-residuals" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Recall the formula for the residual sum of squares (RSS):</p>
 <p><span class="math display">\[RSS = \Sigma^{n}_{i=1} \color{green}{e_i}^2 = \Sigma^{n}_{i=1} (\color{orange}{y_i} - \color{blue}{\hat{y_i}})\]</span></p>
 <p>where:</p>
@@ -1293,8 +1292,8 @@ C. These models are not identifiable.</p>
 </li>
 <li><span class="math inline">\(\color{blue}{\hat{y_i}}\)</span> is the <strong>predicted</strong> value (from the model) for the <span class="math inline">\(i^{th}\)</span> observation</li>
 </ul>
-<div id="calculate-the-residual-sum-of-squares-for-the-bee_int_mod-model.-save-it-as-rss_int." class="section level5" number="16.4.5.5.1">
-<h5><span class="header-section-number">16.4.5.5.1</span> Calculate the residual sum of squares for the <code>bee_int_mod</code> model. Save it as <code>rss_int</code>.</h5>
+<div id="calculate-the-residual-sum-of-squares-for-the-bee_int_mod-model.-save-it-as-rss_int." class="section level5 hasAnchor" number="16.4.5.5.1">
+<h5><span class="header-section-number">16.4.5.5.1</span> Calculate the residual sum of squares for the <code>bee_int_mod</code> model. Save it as <code>rss_int</code>.<a href="m3.html#calculate-the-residual-sum-of-squares-for-the-bee_int_mod-model.-save-it-as-rss_int." class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="m3.html#cb77-1" aria-hidden="true" tabindex="-1"></a>rss_int <span class="ot">&lt;-</span> <span class="fu">sum</span>((honey<span class="sc">$</span>honey_g <span class="sc">-</span> <span class="fu">predict</span>(bee_int_mod))<span class="sc">^</span><span class="dv">2</span>)</span></code></pre></div>
 <p><span class="math display">\[RSE = \sqrt{\frac{RSS}{\color{red}n-\color{blue}p-1}}\]</span></p>
 <p>where:</p>
@@ -1304,8 +1303,8 @@ C. These models are not identifiable.</p>
 <li><span class="math inline">\(\color{blue}p\)</span> is the number of coefficients being estimated in our model (not including the intercept)</li>
 </ul>
 </div>
-<div id="calculate-the-rse-for-the-bee_int_mod-model." class="section level5" number="16.4.5.5.2">
-<h5><span class="header-section-number">16.4.5.5.2</span> Calculate the RSE for the <code>bee_int_mod</code> model.</h5>
+<div id="calculate-the-rse-for-the-bee_int_mod-model." class="section level5 hasAnchor" number="16.4.5.5.2">
+<h5><span class="header-section-number">16.4.5.5.2</span> Calculate the RSE for the <code>bee_int_mod</code> model.<a href="m3.html#calculate-the-rse-for-the-bee_int_mod-model." class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <ul>
 <li>Start by getting the sample size from the data (i.e., don’t ‘hard code’ it). Save it as <code>n_int</code>.
 <ul>
@@ -1377,26 +1376,26 @@ C. These models are not identifiable.</p>
 <pre><code>## [1] 3.63432</code></pre>
 </div>
 </div>
-<div id="calculating-our-random-effect-variances" class="section level4" number="16.4.5.6">
-<h4><span class="header-section-number">16.4.5.6</span> Calculating our random effect variances</h4>
-<div id="overview" class="section level5" number="16.4.5.6.1">
-<h5><span class="header-section-number">16.4.5.6.1</span> Overview</h5>
+<div id="calculating-our-random-effect-variances" class="section level4 hasAnchor" number="16.4.5.6">
+<h4><span class="header-section-number">16.4.5.6</span> Calculating our random effect variances<a href="m3.html#calculating-our-random-effect-variances" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="overview" class="section level5 hasAnchor" number="16.4.5.6.1">
+<h5><span class="header-section-number">16.4.5.6.1</span> Overview<a href="m3.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>In this section I’m just going claim a couple equations for how we can partition (separate into components) the unexplained variation in the models we have fit.</p>
 <p>We will have a variance component for every one of our random effects (and interactions between a fixed and random effect are also random effects themselves!) as well as the overall residual variance.</p>
 <p>We can use this to claim what proportion of variance is explained by our different random effects and what proportion remains unexplained by our variables.</p>
 <p>I practice, we’ll let R handle this for us, especially as things will get a little messier when we leave the safety of balanced designs. See the Wood reading referenced in the credits if you want to cover this further now. Optional, <em>not</em> assessed.</p>
 <p>Basically, I want you to take away from this section that <strong>we can estimate how much our different sources of variation are each contributing to our overall variation.</strong></p>
 </div>
-<div id="unexplained-variance-after-fitting-the-interaction-model" class="section level5" number="16.4.5.6.2">
-<h5><span class="header-section-number">16.4.5.6.2</span> Unexplained variance after fitting the interaction model</h5>
+<div id="unexplained-variance-after-fitting-the-interaction-model" class="section level5 hasAnchor" number="16.4.5.6.2">
+<h5><span class="header-section-number">16.4.5.6.2</span> Unexplained variance after fitting the interaction model<a href="m3.html#unexplained-variance-after-fitting-the-interaction-model" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>As we saw above, our unexplained variability, after fitting the interaction model (the most complicated linear model possible for this data), <code>bee_int_mod</code>, gives us our <span class="math inline">\(\sigma^2\)</span>, i.e., the variability of the error term is <span class="math inline">\(\sigma^2 = 3.63^2\)</span>.</p>
 <p>Save the squared residual standard error from the <code>bee_int_mod</code> model as <code>var_int</code>.</p>
 <div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="m3.html#cb88-1" aria-hidden="true" tabindex="-1"></a>var_int <span class="ot">&lt;-</span> <span class="fu">summary</span>(bee_int_mod)<span class="sc">$</span>sigma<span class="sc">^</span><span class="dv">2</span></span>
 <span id="cb88-2"><a href="m3.html#cb88-2" aria-hidden="true" tabindex="-1"></a>var_int</span></code></pre></div>
 <pre><code>## [1] 13.20828</code></pre>
 </div>
-<div id="rse-for-main-effects-model-on-aggregated-data" class="section level5" number="16.4.5.6.3">
-<h5><span class="header-section-number">16.4.5.6.3</span> RSE for main effects model on aggregated data</h5>
+<div id="rse-for-main-effects-model-on-aggregated-data" class="section level5 hasAnchor" number="16.4.5.6.3">
+<h5><span class="header-section-number">16.4.5.6.3</span> RSE for main effects model on aggregated data<a href="m3.html#rse-for-main-effects-model-on-aggregated-data" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Next, we want to consider the what portion of the variability is explained by the interaction of hive and song. Our <code>bee_agg_mod</code> residual variance will come from two sources: the variance that CAN be explained by the interaction of hive and song AND the variability we cannot explain (even with out most complicated model), our random error.</p>
 <p><span class="math display">\[\text{RSE}_{bee\_agg}^2 = \sigma_{\alpha b}^2 + \frac{\sigma^2}{K} \]</span></p>
 <p>So, <span class="math inline">\(\text{RSE}_{bee\_agg}\)</span> is the <code>sigma</code> value calculated from our main effects only model on the aggregated data, and <span class="math inline">\(K\)</span> is the number of observations at each level of our interaction, i.e., the number of levels we have averaged over in aggregating this data. We want this value as we can use it to take the average of the squared errors from our interaction model (remember that <span class="math inline">\(sigma^2\)</span> is the RSE squared.)</p>
@@ -1408,8 +1407,8 @@ C. These models are not identifiable.</p>
 <span id="cb90-2"><a href="m3.html#cb90-2" aria-hidden="true" tabindex="-1"></a>var_ab</span></code></pre></div>
 <pre><code>## [1] 198.7458</code></pre>
 </div>
-<div id="hive-to-hive-variance" class="section level5" number="16.4.5.6.4">
-<h5><span class="header-section-number">16.4.5.6.4</span> Hive-to-hive variance</h5>
+<div id="hive-to-hive-variance" class="section level5 hasAnchor" number="16.4.5.6.4">
+<h5><span class="header-section-number">16.4.5.6.4</span> Hive-to-hive variance<a href="m3.html#hive-to-hive-variance" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Finally, to get <span class="math inline">\(\sigma^2_{b}\)</span> we do one final aggregation and model.</p>
 <p>Start by creating a new dataset called <code>honey_agg_hive</code>.</p>
 <ul>
@@ -1464,8 +1463,8 @@ C. These models are not identifiable.</p>
 <span id="cb98-3"><a href="m3.html#cb98-3" aria-hidden="true" tabindex="-1"></a>var_hive</span></code></pre></div>
 <pre><code>## [1] 326.595</code></pre>
 </div>
-<div id="summary-of-all-our-calculated-error-variances" class="section level5" number="16.4.5.6.5">
-<h5><span class="header-section-number">16.4.5.6.5</span> Summary of all our calculated error variances</h5>
+<div id="summary-of-all-our-calculated-error-variances" class="section level5 hasAnchor" number="16.4.5.6.5">
+<h5><span class="header-section-number">16.4.5.6.5</span> Summary of all our calculated error variances<a href="m3.html#summary-of-all-our-calculated-error-variances" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="m3.html#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="co"># variance in honey production explained by the interaction of song and hive</span></span>
 <span id="cb100-2"><a href="m3.html#cb100-2" aria-hidden="true" tabindex="-1"></a>var_ab <span class="ot">&lt;-</span> <span class="fu">summary</span>(bee_agg_mod)<span class="sc">$</span>sigma<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> var_int <span class="sc">/</span> <span class="dv">3</span></span>
 <span id="cb100-3"><a href="m3.html#cb100-3" aria-hidden="true" tabindex="-1"></a>var_ab</span></code></pre></div>
@@ -1528,21 +1527,21 @@ residual
 B. Random noise.<br />
 C. Hive-to-hive variability.<br />
 D. Impossible to say.</p>
-<p>Answer: C. Of the three variances for our random effects, the variance for the hive effect is the largest, and so explains the greatest proportion of the variability in honey production not explained by the song differences."</p>
+<p>Answer: C. Of the three variances for our random effects, the variance for the hive effect is the largest, and so explains the greatest proportion of the variability in honey production not explained by the song differences.”</p>
 </div>
 </div>
-<div id="summary-1" class="section level4" number="16.4.5.7">
-<h4><span class="header-section-number">16.4.5.7</span> Summary</h4>
+<div id="summary-1" class="section level4 hasAnchor" number="16.4.5.7">
+<h4><span class="header-section-number">16.4.5.7</span> Summary<a href="m3.html#summary-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Note the below notation is based on using least squares and treating all variables as fixed effects. This isn’t the way you would explain a linear model in practice, but I hope helps you see how we are thinking about partitioning our variance. It also helps remind us that regression is just fancy averaging.</p>
 <p><img src="images/m3/fancyaveraging.png" width="100%" /></p>
 <p><a href="https://twitter.com/ajeanstevenson/status/1488601482505060352">Link to tweet</a></p>
 <p>Note: The <span class="math inline">\(\cdot\)</span> you’ll see in some of the following subscripts indicate where we are aggregating and averaging across that level of the data.</p>
-<div id="full-interaction-model-includes-main-effects-bee_int_mod" class="section level5" number="16.4.5.7.1">
-<h5><span class="header-section-number">16.4.5.7.1</span> Full interaction model (includes main effects) (<code>bee_int_mod</code>)</h5>
-<table>
+<div id="full-interaction-model-includes-main-effects-bee_int_mod" class="section level5 hasAnchor" number="16.4.5.7.1">
+<h5><span class="header-section-number">16.4.5.7.1</span> Full interaction model (includes main effects) (<code>bee_int_mod</code>)<a href="m3.html#full-interaction-model-includes-main-effects-bee_int_mod" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<table style="width:100%;">
 <colgroup>
 <col width="16%" />
-<col width="47%" />
+<col width="46%" />
 <col width="36%" />
 </colgroup>
 <thead>
@@ -1565,9 +1564,9 @@ These are equivalent, just with different contrasts (how we set up our model mat
 </tbody>
 </table>
 </div>
-<div id="main-effects-only-model-on-hivesong-aggregated-data-bee_agg_mod" class="section level5" number="16.4.5.7.2">
-<h5><span class="header-section-number">16.4.5.7.2</span> Main effects only model, on hive/song aggregated data (<code>bee_agg_mod</code>)</h5>
-<table>
+<div id="main-effects-only-model-on-hivesong-aggregated-data-bee_agg_mod" class="section level5 hasAnchor" number="16.4.5.7.2">
+<h5><span class="header-section-number">16.4.5.7.2</span> Main effects only model, on hive/song aggregated data (<code>bee_agg_mod</code>)<a href="m3.html#main-effects-only-model-on-hivesong-aggregated-data-bee_agg_mod" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<table style="width:100%;">
 <colgroup>
 <col width="14%" />
 <col width="27%" />
@@ -1593,13 +1592,13 @@ These are equivalent, just with different contrasts (how we set up our model mat
 </tbody>
 </table>
 </div>
-<div id="intercept-only-model-for-hives-averages-bee_hive_mod" class="section level5" number="16.4.5.7.3">
-<h5><span class="header-section-number">16.4.5.7.3</span> Intercept only model for hives averages (<code>bee_hive_mod</code>)</h5>
-<table>
+<div id="intercept-only-model-for-hives-averages-bee_hive_mod" class="section level5 hasAnchor" number="16.4.5.7.3">
+<h5><span class="header-section-number">16.4.5.7.3</span> Intercept only model for hives averages (<code>bee_hive_mod</code>)<a href="m3.html#intercept-only-model-for-hives-averages-bee_hive_mod" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<table style="width:100%;">
 <colgroup>
 <col width="14%" />
 <col width="25%" />
-<col width="60%" />
+<col width="59%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1624,13 +1623,13 @@ These are equivalent, just with different contrasts (how we set up our model mat
 </div>
 </div>
 </div>
-<div id="where-to-next" class="section level3" number="16.4.6">
-<h3><span class="header-section-number">16.4.6</span> Where to next?</h3>
+<div id="where-to-next" class="section level3 hasAnchor" number="16.4.6">
+<h3><span class="header-section-number">16.4.6</span> Where to next?<a href="m3.html#where-to-next" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We’ve done pretty much everything we can while remaining in the ordinary least squares context, and even in the simplest examples, all the aggregating and model fitting we’re doing will get a little tedious. Now we will turn to fitting <strong>linear mixed models</strong> more in more sophisticated ways with a specialist package.</p>
 <p>The models we’ll be fitting will rely on maximum likelihood methods.</p>
 </div>
-<div id="credits-1" class="section level3" number="16.4.7">
-<h3><span class="header-section-number">16.4.7</span> Credits</h3>
+<div id="credits-1" class="section level3 hasAnchor" number="16.4.7">
+<h3><span class="header-section-number">16.4.7</span> Credits<a href="m3.html#credits-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>The commentary for this activity draws heavily on section 2.1 of
 Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017. <a href="https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4862399" class="uri">https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4862399</a> (requires you to log in with your UTORid).</li>
@@ -1639,14 +1638,14 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 </ul>
 </div>
 </div>
-<div id="vocal-pitch-case-study-part-1-lmms" class="section level2" number="16.5">
-<h2><span class="header-section-number">16.5</span> Vocal pitch case study: Part 1 (LMMs)</h2>
-<div id="motivation" class="section level3" number="16.5.1">
-<h3><span class="header-section-number">16.5.1</span> Motivation</h3>
+<div id="vocal-pitch-case-study-part-1-lmms" class="section level2 hasAnchor" number="16.5">
+<h2><span class="header-section-number">16.5</span> Vocal pitch case study: Part 1 (LMMs)<a href="m3.html#vocal-pitch-case-study-part-1-lmms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="motivation" class="section level3 hasAnchor" number="16.5.1">
+<h3><span class="header-section-number">16.5.1</span> Motivation<a href="m3.html#motivation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You’re interested in a language and especially want to investigate how <strong>voice pitch</strong> (perceived “highness” or “lowness” of a voice) is related to politeness for speakers of that language.</p>
 </div>
-<div id="design-of-the-experiment" class="section level3" number="16.5.2">
-<h3><span class="header-section-number">16.5.2</span> Design of the experiment</h3>
+<div id="design-of-the-experiment" class="section level3 hasAnchor" number="16.5.2">
+<h3><span class="header-section-number">16.5.2</span> Design of the experiment<a href="m3.html#design-of-the-experiment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>You recruit 6 speakers of the language as subjects in your study.</li>
 <li>There are 3 males and 3 females.</li>
@@ -1661,8 +1660,8 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <p><img src="images/m3/boss.jpeg" width="50%" /><img src="images/m3/friend.jpeg" width="50%" /></p>
 <p>Photos from unsplash.com</p>
 </div>
-<div id="read-in-the-data-and-explore-it" class="section level3" number="16.5.3">
-<h3><span class="header-section-number">16.5.3</span> Read in the data and explore it</h3>
+<div id="read-in-the-data-and-explore-it" class="section level3 hasAnchor" number="16.5.3">
+<h3><span class="header-section-number">16.5.3</span> Read in the data and explore it<a href="m3.html#read-in-the-data-and-explore-it" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>For convenience, I have created a new variable called <code>condition</code>, it is just a modification of the <code>attitude</code> variable, that takes the level <code>formal</code> if the particular measurement was under formal conditions and <code>informal</code> if the measurement was under informal conditions. This variable contains the same information as the <code>attitude</code> variable, just coded how I want it to be, so I remove the <code>attitude</code> variable at the end.</p>
 <div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="m3.html#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="co"># data wrangling</span></span>
 <span id="cb107-2"><a href="m3.html#cb107-2" aria-hidden="true" tabindex="-1"></a>polite_data <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">&#39;data/m3/politeness_data.csv&#39;</span>) <span class="sc">%&gt;%</span> </span>
@@ -1690,8 +1689,8 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 ## 6 F1      F             3 inf           287. informal  F</code></pre>
 <p><strong>Without doing any analysis, how might this data violate our assumptions for a linear model?</strong></p>
 </div>
-<div id="recall-linear-regression-assumptions" class="section level3" number="16.5.4">
-<h3><span class="header-section-number">16.5.4</span> Recall: Linear regression assumptions</h3>
+<div id="recall-linear-regression-assumptions" class="section level3 hasAnchor" number="16.5.4">
+<h3><span class="header-section-number">16.5.4</span> Recall: Linear regression assumptions<a href="m3.html#recall-linear-regression-assumptions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li><strong>Errors are independent (observations are independent)</strong></li>
 <li>Errors are identically distributed and the expected value of the errors is zero, <span class="math inline">\(E[\epsilon_i]=0\)</span></li>
@@ -1700,17 +1699,17 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 </ol>
 <p>1.-3. are usually expressed as assuming the errors are i.i.d normally distributed with mean of zero and variance <span class="math inline">\(\sigma^2\)</span>,
 <span class="math display">\[\epsilon_i \sim N(0, \sigma^2)\]</span></p>
-<div id="why-we-cant-assume-independence" class="section level4" number="16.5.4.1">
-<h4><span class="header-section-number">16.5.4.1</span> Why we can’t assume independence</h4>
+<div id="why-we-cant-assume-independence" class="section level4 hasAnchor" number="16.5.4.1">
+<h4><span class="header-section-number">16.5.4.1</span> Why we can’t assume independence<a href="m3.html#why-we-cant-assume-independence" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Each subject has 14 measurements of their pitch (measured as the frequency of the vibration of your vocal cords) in different scenarios and different levels of politeness (formal/informal).</p>
 <p>With this kind of data, since each subject gave multiple responses (a “repeated measures” design), we can see that this would violate the independence assumption that’s important in linear modelling: <strong>multiple responses from the same subject cannot be regarded as independent from each other</strong>.</p>
 <p>In this scenario, every person has a <em>slightly different</em> voice pitch. This personal factor affects all responses from the same subject, thus responses are inter-dependent (correlated) within subjects rather than independent. I.e., if you have a generally low voice, even if you change your pitch when you are being informal versus formal, you probably still have a generally low pitch.</p>
 <p>There also differences, on <em>average</em> in pitch by sex, so this is something we will also want to account for in our model, later.</p>
 <p><strong>So what do we do?</strong></p>
 </div>
-<div id="lets-start-with-a-picture" class="section level4" number="16.5.4.2">
-<h4><span class="header-section-number">16.5.4.2</span> Let’s start with a picture</h4>
-<p>Female subjects have an ID starting with “F” and males subjects have an ID starting with “M.” <strong>What do you see?</strong></p>
+<div id="lets-start-with-a-picture" class="section level4 hasAnchor" number="16.5.4.2">
+<h4><span class="header-section-number">16.5.4.2</span> Let’s start with a picture<a href="m3.html#lets-start-with-a-picture" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Female subjects have an ID starting with “F” and males subjects have an ID starting with “M”. <strong>What do you see?</strong></p>
 <div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="m3.html#cb112-1" aria-hidden="true" tabindex="-1"></a>polite_data <span class="sc">%&gt;%</span> </span>
 <span id="cb112-2"><a href="m3.html#cb112-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> condition, </span>
 <span id="cb112-3"><a href="m3.html#cb112-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> frequency,</span>
@@ -1722,8 +1721,8 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <span id="cb112-9"><a href="m3.html#cb112-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
 <span id="cb112-10"><a href="m3.html#cb112-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="co"># remove legend because we have facet names</span></span></code></pre></div>
 <p><img src="images/m3/explore.png" width="100%" /></p>
-<div id="key-themes-from-our-plot" class="section level5" number="16.5.4.2.1">
-<h5><span class="header-section-number">16.5.4.2.1</span> Key themes from our plot</h5>
+<div id="key-themes-from-our-plot" class="section level5 hasAnchor" number="16.5.4.2.1">
+<h5><span class="header-section-number">16.5.4.2.1</span> Key themes from our plot<a href="m3.html#key-themes-from-our-plot" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <ol style="list-style-type: decimal">
 <li>Males tend to have lower voices than females.</li>
 <li>Within the male and the female groups, there is plenty of individual variation. Some subjects have relatively high pitch for their sex and others have relatively low values, regardless of the formal/informal version of the scenario.</li>
@@ -1734,10 +1733,10 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 </div>
 </div>
 </div>
-<div id="linear-mixed-models" class="section level2" number="16.6">
-<h2><span class="header-section-number">16.6</span> Linear mixed models</h2>
-<div id="thoughts-on-plots-for-hierarchicalcorrelated-data-generally" class="section level3" number="16.6.1">
-<h3><span class="header-section-number">16.6.1</span> Thoughts on plots for hierarchical/correlated data generally</h3>
+<div id="linear-mixed-models" class="section level2 hasAnchor" number="16.6">
+<h2><span class="header-section-number">16.6</span> Linear mixed models<a href="m3.html#linear-mixed-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="thoughts-on-plots-for-hierarchicalcorrelated-data-generally" class="section level3 hasAnchor" number="16.6.1">
+<h3><span class="header-section-number">16.6.1</span> Thoughts on plots for hierarchical/correlated data generally<a href="m3.html#thoughts-on-plots-for-hierarchicalcorrelated-data-generally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Make use of faceted plots! You may have also seen these called lattice plots or trellis plots. These plots show you relationships in your data, conditioned on one or more of your other variables. Facet based on your grouping units.</li>
 <li>When working with ggplot you can facet by adding the <code>facet_wrap</code> command. You can control which variables you condition on and how many rows and columns the facets are organised into. (There are lots of other great features we won’t go in to in depth here.)</li>
@@ -1748,8 +1747,8 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <p><img src="images/m3/trellis.jpeg" width="100%" style="display: block; margin: auto;" /></p>
 <p>These names come from the appearance of these plots being similar to the lattice of a garden trellis. They also show you different <em>faces</em> (facets) of your data.]</p>
 </div>
-<div id="assumptions-3" class="section level3" number="16.6.2">
-<h3><span class="header-section-number">16.6.2</span> Assumptions</h3>
+<div id="assumptions-3" class="section level3 hasAnchor" number="16.6.2">
+<h3><span class="header-section-number">16.6.2</span> Assumptions<a href="m3.html#assumptions-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Linear mixed models assume that:</p>
 <ol style="list-style-type: decimal">
 <li>There is a continuous response variable.</li>
@@ -1760,15 +1759,15 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 </ol>
 <p>While it is possible to some extent to check these assumptions through various diagnostics, a natural concern is that if one or more assumptions do not hold, our inferences may be invalid. Fortunately it turns out that linear mixed models are robust to violations of some of their assumptions.</p>
 </div>
-<div id="our-model-set-up" class="section level3" number="16.6.3">
-<h3><span class="header-section-number">16.6.3</span> Our model set up</h3>
-<div id="our-sta302-linear-model" class="section level4" number="16.6.3.1">
-<h4><span class="header-section-number">16.6.3.1</span> Our STA302 linear model</h4>
+<div id="our-model-set-up" class="section level3 hasAnchor" number="16.6.3">
+<h3><span class="header-section-number">16.6.3</span> Our model set up<a href="m3.html#our-model-set-up" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="our-sta302-linear-model" class="section level4 hasAnchor" number="16.6.3.1">
+<h4><span class="header-section-number">16.6.3.1</span> Our STA302 linear model<a href="m3.html#our-sta302-linear-model" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><span class="math display">\[\boldsymbol{y} = \boldsymbol{X\beta} + \boldsymbol{\epsilon}\]</span>
 <span class="math display">\[\boldsymbol{\epsilon} \sim N(0, \Lambda_\theta)\]</span></p>
 </div>
-<div id="linear-mixed-model" class="section level4" number="16.6.3.2">
-<h4><span class="header-section-number">16.6.3.2</span> Linear mixed model</h4>
+<div id="linear-mixed-model" class="section level4 hasAnchor" number="16.6.3.2">
+<h4><span class="header-section-number">16.6.3.2</span> Linear mixed model<a href="m3.html#linear-mixed-model" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><span class="math display">\[\boldsymbol{y} = \boldsymbol{X\beta} + \boldsymbol{Zb} + \epsilon\]</span>
 <span class="math display">\[\boldsymbol{b} \sim N(0, \psi_\theta),\ \  \boldsymbol{\epsilon} \sim N(0, \Lambda_\theta)\]</span></p>
 <ul>
@@ -1778,8 +1777,8 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <li><span class="math inline">\(\epsilon\)</span> is the residual errors, normally distributed with a given variance and the errors within units are mutually independent. In this course we won’t deal with more complicated situations than a simple error vector that is distributed <span class="math inline">\(N(0, \sigma^2)\)</span>.</li>
 </ul>
 </div>
-<div id="alternative-formulations" class="section level4" number="16.6.3.3">
-<h4><span class="header-section-number">16.6.3.3</span> Alternative formulations</h4>
+<div id="alternative-formulations" class="section level4 hasAnchor" number="16.6.3.3">
+<h4><span class="header-section-number">16.6.3.3</span> Alternative formulations<a href="m3.html#alternative-formulations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Where you have observations <span class="math inline">\(Y_{ij}\)</span> for repeated measures <span class="math inline">\(j\)</span> on individuals <span class="math inline">\(i\)</span>, you may also see:</p>
 <p><span class="math display">\[Y_{ij} = \boldsymbol{X_{ij}\beta} + \epsilon_{ij}\]</span></p>
 <p>Where <span class="math inline">\(\epsilon_{ij} = U_i + Z_{ij}\)</span> and <span class="math inline">\(Z_{ij} \sim N(0, \tau^2)\)</span>.</p>
@@ -1794,25 +1793,25 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 </ul>
 </div>
 </div>
-<div id="what-can-correlated-errors-look-like" class="section level3" number="16.6.4">
-<h3><span class="header-section-number">16.6.4</span> What can correlated errors look like?</h3>
-<div id="random-intercepts" class="section level4" number="16.6.4.1">
-<h4><span class="header-section-number">16.6.4.1</span> Random intercepts</h4>
+<div id="what-can-correlated-errors-look-like" class="section level3 hasAnchor" number="16.6.4">
+<h3><span class="header-section-number">16.6.4</span> What can correlated errors look like?<a href="m3.html#what-can-correlated-errors-look-like" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="random-intercepts" class="section level4 hasAnchor" number="16.6.4.1">
+<h4><span class="header-section-number">16.6.4.1</span> Random intercepts<a href="m3.html#random-intercepts" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This is one example of dependence. Here, if a subject is above average in one observation, they’re likely to be above average in their other observations.</p>
 </div>
-<div id="random-slopes" class="section level4" number="16.6.4.2">
-<h4><span class="header-section-number">16.6.4.2</span> Random slopes</h4>
+<div id="random-slopes" class="section level4 hasAnchor" number="16.6.4.2">
+<h4><span class="header-section-number">16.6.4.2</span> Random slopes<a href="m3.html#random-slopes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m3/rand_slope.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>In this case, not only would the residuals for subject 1 tend to be positive while the residuals for subject 2 would tend to be negative, the difference would get bigger as x increases. You don’t want that kind of pattern in the residuals!</p>
 </div>
-<div id="random-slopes-and-intercepts" class="section level4" number="16.6.4.3">
-<h4><span class="header-section-number">16.6.4.3</span> Random slopes and intercepts</h4>
+<div id="random-slopes-and-intercepts" class="section level4 hasAnchor" number="16.6.4.3">
+<h4><span class="header-section-number">16.6.4.3</span> Random slopes and intercepts<a href="m3.html#random-slopes-and-intercepts" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m3/rand_slope_int.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Subjects appear to have different slopes AND intercepts.</p>
 </div>
 </div>
-<div id="how-do-we-tell-r-which-situation-were-in" class="section level3" number="16.6.5">
-<h3><span class="header-section-number">16.6.5</span> How do we tell R which situation we’re in?</h3>
+<div id="how-do-we-tell-r-which-situation-were-in" class="section level3 hasAnchor" number="16.6.5">
+<h3><span class="header-section-number">16.6.5</span> How do we tell R which situation we’re in?<a href="m3.html#how-do-we-tell-r-which-situation-were-in" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We’ll be using the <code>lmer()</code> function from the <code>lme4</code> package.</p>
 <p>Many R packages provide a “vignette” to help you understand how to use the package and the theory behind it.</p>
 <div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="m3.html#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This line only installs lme4 if you haven&#39;t got it installed already</span></span>
@@ -1820,41 +1819,41 @@ Wood, S. Generalized Additive Models: An Introduction with R, 2nd Edition. 2017.
 <span id="cb113-3"><a href="m3.html#cb113-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb113-4"><a href="m3.html#cb113-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
 <span id="cb113-5"><a href="m3.html#cb113-5" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">&quot;lmer&quot;</span>)</span></code></pre></div>
-<div id="vignette-activity" class="section level4" number="16.6.5.1">
-<h4><span class="header-section-number">16.6.5.1</span> Vignette activity</h4>
+<div id="vignette-activity" class="section level4 hasAnchor" number="16.6.5.1">
+<h4><span class="header-section-number">16.6.5.1</span> Vignette activity<a href="m3.html#vignette-activity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><strong><em>Have you ever looked at a package vignette before?</em></strong></p>
 <p>Use the vignette for this package (see the code above) to try to fill out the syntax for the following situations. You may find Table 2 on page 7 of the vignette quite helpful.</p>
 <p><img src="images/m3/table.png" width="100%" /></p>
 </div>
 </div>
-<div id="additional-considerations" class="section level3" number="16.6.6">
-<h3><span class="header-section-number">16.6.6</span> Additional considerations</h3>
-<div id="linear-mixed-models-come-with-lots-of-different-names" class="section level4" number="16.6.6.1">
-<h4><span class="header-section-number">16.6.6.1</span> Linear mixed models come with lots of different names</h4>
+<div id="additional-considerations" class="section level3 hasAnchor" number="16.6.6">
+<h3><span class="header-section-number">16.6.6</span> Additional considerations<a href="m3.html#additional-considerations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="linear-mixed-models-come-with-lots-of-different-names" class="section level4 hasAnchor" number="16.6.6.1">
+<h4><span class="header-section-number">16.6.6.1</span> Linear mixed models come with lots of different names<a href="m3.html#linear-mixed-models-come-with-lots-of-different-names" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m3/names_for_lmm.png" /></p>
 </div>
-<div id="fixed-vs.-random-effects" class="section level4" number="16.6.6.2">
-<h4><span class="header-section-number">16.6.6.2</span> Fixed vs. random effects</h4>
+<div id="fixed-vs.-random-effects" class="section level4 hasAnchor" number="16.6.6.2">
+<h4><span class="header-section-number">16.6.6.2</span> Fixed vs. random effects<a href="m3.html#fixed-vs.-random-effects" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Fixed effects are the things you care about and want to estimate. You likely chose the factor levels for a specific reason or measured the variable because you are interested in the relationship it has to your response variable.
 Random effects can be variables that were opportunistically measured whose variation needs to be accounted for but that you are not necessarily interested in (e.g. spatial block in a large experiment). The levels of the random effect are likely a random subset of all possible levels (although as a rule of thumb, there should usually be at least 5). However, if the experimental design includes nesting or non-independence of any kind, this needs to be accounted for to avoid pseudoreplication.</p>
 </div>
-<div id="reml" class="section level4" number="16.6.6.3">
-<h4><span class="header-section-number">16.6.6.3</span> REML or ML</h4>
+<div id="reml" class="section level4 hasAnchor" number="16.6.6.3">
+<h4><span class="header-section-number">16.6.6.3</span> REML or ML<a href="m3.html#reml" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The math behind maximum likelihood (ML) and restricted maximum likelihood (REML) is beyond what I will assess you on in this course. The main difference between the two is how they estimate the variance parameters. They will estimate <span class="math inline">\(\beta\)</span>s the same way.</p>
 <p>REML is effectively a two-stage approach where estimates of the random effects are conditioned on the fixed effects. REML accounts for the degrees of freedom lost when estimating the fixed effects and provides us with unbiased estimates of our variance components. ML estimates of the variance components tend to be biased downward (smaller than they should be), making us more likely to pick models with simpler random effects structures than we should.</p>
 <p>We <strong>prefer ML</strong> if we need to compare two <strong>nested</strong> models based on their <em>fixed effects</em>, as we can’t do likelihood ratio tests with models fit with REML <em>unless</em> the fixed effects are exactly the same. We <strong>prefer REML</strong> when there is a large number of parameters or if our main goal is estimates of our model parameters (random and fixed). Which is <em>usually</em> our goal.</p>
 <p>For this course, we’ll usually use REML, unless we are trying to compare nested models with the same random effects. There are often not major differences between the two methods, anyways.</p>
 </div>
-<div id="confidence-intervals-and-tests" class="section level4" number="16.6.6.4">
-<h4><span class="header-section-number">16.6.6.4</span> Confidence intervals and tests</h4>
+<div id="confidence-intervals-and-tests" class="section level4 hasAnchor" number="16.6.6.4">
+<h4><span class="header-section-number">16.6.6.4</span> Confidence intervals and tests<a href="m3.html#confidence-intervals-and-tests" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>You can create Wald confidence intervals for fixed effects the way you’re used to from STA302. BUT for our random effects things can get a bit more awkward.</p>
 <p>A variance must be in <span class="math inline">\([0, \infty)\)</span>, so what happens if you get an estimate for <span class="math inline">\(\hat{\sigma_b^2}\)</span> that is <span class="math inline">\(0.02 \pm 0.04 = (-0.02, 0.06)\)</span>? We can get into trouble if our variance components are close to the boundary of the parameter space or if a test requires us to fix them at these boundaries.</p>
 <p>Despite these difficulties, if our interval estimates of our variance components are pretty safely away from 0, then we can conclude the associated random effect is needed in the model. If it seems that a variance component is effectively 0, than we can conclude we don’t need the associated random effect. We can also get this from likelihood ratio tests, where big or small p-values lead to clear-cut conclusions, but we face more challenges for making inferences when our p-value is close to our decision criteria.</p>
 </div>
 </div>
 </div>
-<div id="vocal-pitch-case-study-part-2" class="section level2" number="16.7">
-<h2><span class="header-section-number">16.7</span> Vocal pitch case study: Part 2</h2>
+<div id="vocal-pitch-case-study-part-2" class="section level2 hasAnchor" number="16.7">
+<h2><span class="header-section-number">16.7</span> Vocal pitch case study: Part 2<a href="m3.html#vocal-pitch-case-study-part-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Recall:</p>
 <p><span class="math display">\[Y_{ij} = \boldsymbol{X_{ij}\beta} + Z_{i}\boldsymbol{b} + \epsilon_{ij}\]</span></p>
 <ul>
@@ -1863,12 +1862,12 @@ Random effects can be variables that were opportunistically measured whose varia
 <li><span class="math inline">\(Z_ib\)</span> represents subject <span class="math inline">\(i\)</span>’s ‘baseline’ pitch</li>
 <li><span class="math inline">\(\epsilon_{ij}\)</span> is random noise (and potentially other unmeasured confounders)</li>
 </ul>
-<div id="modelling-individual-means-with-random-intercepts" class="section level3" number="16.7.1">
-<h3><span class="header-section-number">16.7.1</span> Modelling individual means with random intercepts</h3>
+<div id="modelling-individual-means-with-random-intercepts" class="section level3 hasAnchor" number="16.7.1">
+<h3><span class="header-section-number">16.7.1</span> Modelling individual means with random intercepts<a href="m3.html#modelling-individual-means-with-random-intercepts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can consider each subject’s mean vocal pitch and in our model we will assume different random intercepts for each subject. The mixed model estimates these intercepts for us.</p>
 <p>We are going to use the package <code>lme4</code> and the function <code>lmer()</code> and then fit a model with only the random effect of subject (each subject gets their own intercept).</p>
-<div id="random-intercept-only-model" class="section level4" number="16.7.1.1">
-<h4><span class="header-section-number">16.7.1.1</span> Random intercept only model</h4>
+<div id="random-intercept-only-model" class="section level4 hasAnchor" number="16.7.1.1">
+<h4><span class="header-section-number">16.7.1.1</span> Random intercept only model<a href="m3.html#random-intercept-only-model" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="m3.html#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;lme4&quot;)</span></span>
 <span id="cb114-2"><a href="m3.html#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4) <span class="co"># load the package</span></span>
 <span id="cb114-3"><a href="m3.html#cb114-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1894,12 +1893,12 @@ Random effects can be variables that were opportunistically measured whose varia
 ##             Estimate Std. Error t value
 ## (Intercept)   192.66      26.04   7.397</code></pre>
 </div>
-<div id="what-does-this-model-do" class="section level4" number="16.7.1.2">
-<h4><span class="header-section-number">16.7.1.2</span> What does this model do?</h4>
+<div id="what-does-this-model-do" class="section level4 hasAnchor" number="16.7.1.2">
+<h4><span class="header-section-number">16.7.1.2</span> What does this model do?<a href="m3.html#what-does-this-model-do" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><code>(1 | subject)</code> is the R syntax for a random intercept. It asks that we assume there is a different intercept for each subject. The ‘1’ stands for the intercept and the term to the right of the ‘|’ should be a nominal or factor variable to be used for the random effect. You can think of this formula as telling your model that it should expect that there’s going to be multiple responses per subject, and these responses will depend on each subject’s baseline level. This effectively resolves the non-independence that stems from having multiple responses by the same subject.</p>
 </div>
-<div id="interpreting-this-output" class="section level4" number="16.7.1.3">
-<h4><span class="header-section-number">16.7.1.3</span> Interpreting this output</h4>
+<div id="interpreting-this-output" class="section level4 hasAnchor" number="16.7.1.3">
+<h4><span class="header-section-number">16.7.1.3</span> Interpreting this output<a href="m3.html#interpreting-this-output" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>From top to bottom:</p>
 <ul>
 <li>The model was fit using restricted maximum likelihood (REML) - what is that? We’ll see soon.<br />
@@ -1910,13 +1909,13 @@ Random effects can be variables that were opportunistically measured whose varia
 <li>Finally, we have the fixed effect portions of the model, with a separate intercept but nothing else yet because we haven’t added any fixed effects.</li>
 </ul>
 </div>
-<div id="adding-our-fixed-effects" class="section level4" number="16.7.1.4">
-<h4><span class="header-section-number">16.7.1.4</span> Adding our fixed effects</h4>
+<div id="adding-our-fixed-effects" class="section level4 hasAnchor" number="16.7.1.4">
+<h4><span class="header-section-number">16.7.1.4</span> Adding our fixed effects<a href="m3.html#adding-our-fixed-effects" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We’re interested in the effects of a formal/informal scenario and sex on the pitch of the subject’s voice, so we’ll add these as fixed effects.</p>
 <p><strong>Question of interest: What is the influence of formal vs informal condition on voice pitch in speakers of this language, while accounting for sex and variation within subjects?</strong></p>
 </div>
-<div id="model-with-condition-and-sex" class="section level4" number="16.7.1.5">
-<h4><span class="header-section-number">16.7.1.5</span> Model with condition and sex</h4>
+<div id="model-with-condition-and-sex" class="section level4 hasAnchor" number="16.7.1.5">
+<h4><span class="header-section-number">16.7.1.5</span> Model with condition and sex<a href="m3.html#model-with-condition-and-sex" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="m3.html#cb117-1" aria-hidden="true" tabindex="-1"></a>w_fixed <span class="ot">=</span> <span class="fu">lmer</span>(frequency <span class="sc">~</span> condition <span class="sc">+</span> sex <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>subject), <span class="at">data=</span>polite_data)</span>
 <span id="cb117-2"><a href="m3.html#cb117-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(w_fixed)</span></code></pre></div>
 <pre><code>## Linear mixed model fit by REML [&#39;lmerMod&#39;]
@@ -1951,13 +1950,13 @@ Random effects can be variables that were opportunistically measured whose varia
 ##         237.05357          19.86429        -108.65952</code></pre>
 <p>Males have lower pitches than females by an average of 109 Hz and in informal situations speakers have a higher pitch by about 20 Hz on average.</p>
 </div>
-<div id="aside-summary-of-means" class="section level4" number="16.7.1.6">
-<h4><span class="header-section-number">16.7.1.6</span> Aside: Summary of means</h4>
+<div id="aside-summary-of-means" class="section level4 hasAnchor" number="16.7.1.6">
+<h4><span class="header-section-number">16.7.1.6</span> Aside: Summary of means<a href="m3.html#aside-summary-of-means" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/m3/aside.png" width="1200" /></p>
 <p>This gives us a general idea of what is going on…but doesn’t account for variability at all! Maybe these differences don’t actually mean anything in the context of the variability of our data. That is why we want to take a modelling approach.</p>
 </div>
-<div id="random-slopes-for-condition" class="section level4" number="16.7.1.7">
-<h4><span class="header-section-number">16.7.1.7</span> Random slopes for condition</h4>
+<div id="random-slopes-for-condition" class="section level4 hasAnchor" number="16.7.1.7">
+<h4><span class="header-section-number">16.7.1.7</span> Random slopes for condition<a href="m3.html#random-slopes-for-condition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Previously we assumed that the effect of formal/informal conditions were the same for all subjects (one coefficient for this variable). However, the effect of the condition might be <em>different for different subjects</em>; that is, there might be a condition and subject interaction. For example, it might be expected that some people are more polite in formal scenarios, others less. We need a random slope model, where subjects and items are not only allowed to have differing intercepts, but where they are also allowed to have different slopes for the effect of formality on pitch.</p>
 <p><img src="images/m3/subject_slopes.png" width="600" /></p>
 <p><strong><em>Do you think the slopes are different for different subjects?</em></strong></p>
@@ -2020,8 +2019,8 @@ Random effects can be variables that were opportunistically measured whose varia
 <p>Note: We can happily do a likelihood ratio test because we have the same fixed effects and are only comparing nested random effects here. See the <a href="m3.html#reml">additional considerations section</a> for why I mention this.</p>
 <p>Conclusion from this test: The slopes are an unnecessary complication to our model. (I.e., No evidence against the hypothesis that the simpler model explains the data just as well.)</p>
 </div>
-<div id="scenario-random-intercepts" class="section level4" number="16.7.1.8">
-<h4><span class="header-section-number">16.7.1.8</span> Scenario random intercepts</h4>
+<div id="scenario-random-intercepts" class="section level4 hasAnchor" number="16.7.1.8">
+<h4><span class="header-section-number">16.7.1.8</span> Scenario random intercepts<a href="m3.html#scenario-random-intercepts" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><strong><em>Does adding random intercepts for the scenarios improve the model?</em></strong></p>
 <p><img src="images/m3/scen_int.png" width="600" /></p>
 <div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="m3.html#cb129-1" aria-hidden="true" tabindex="-1"></a>w_scen <span class="ot">=</span> <span class="fu">lmer</span>(frequency <span class="sc">~</span> condition <span class="sc">+</span> sex <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>subject) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>scenario), <span class="at">data=</span>polite_data)</span>
@@ -2067,8 +2066,8 @@ Random effects can be variables that were opportunistically measured whose varia
 <p>Conclusion from this test: Yes! Including a random effect for scenario does explain the data better. We have very strong evidence against the hypothesis that the simpler model fits the data just as well.</p>
 </div>
 </div>
-<div id="scenario-random-slopes" class="section level3" number="16.7.2">
-<h3><span class="header-section-number">16.7.2</span> Scenario random slopes</h3>
+<div id="scenario-random-slopes" class="section level3 hasAnchor" number="16.7.2">
+<h3><span class="header-section-number">16.7.2</span> Scenario random slopes<a href="m3.html#scenario-random-slopes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong><em>Does adding random slopes for the scenarios improve the model?</em></strong></p>
 <div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="m3.html#cb133-1" aria-hidden="true" tabindex="-1"></a>w_scen_slope <span class="ot">=</span> </span>
 <span id="cb133-2"><a href="m3.html#cb133-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lmer</span>(frequency <span class="sc">~</span> condition <span class="sc">+</span> </span>
@@ -2119,8 +2118,8 @@ Random effects can be variables that were opportunistically measured whose varia
 <p>Conclusion from this test: We have no evidence against the claim that the model with the simpler random effects is as good a fit to the data as the model with the more complicated random effect structure.</p>
 </div>
 </div>
-<div id="interactions-between-random-effects-and-fixed-effects" class="section level2" number="16.8">
-<h2><span class="header-section-number">16.8</span> Interactions between random effects and fixed effects</h2>
+<div id="interactions-between-random-effects-and-fixed-effects" class="section level2 hasAnchor" number="16.8">
+<h2><span class="header-section-number">16.8</span> Interactions between random effects and fixed effects<a href="m3.html#interactions-between-random-effects-and-fixed-effects" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Recall the honey data from the Statdew Valley interactive.</p>
 <blockquote>
 <p>Your grandmother was a bit eccentric when it came to farm management. She swore that her bees produced more honey if she played them music in the morning. In fact, she even mentioned that she thought they particularly liked K-pop.</p>
@@ -2134,21 +2133,21 @@ Random effects can be variables that were opportunistically measured whose varia
 ## $ hive    &lt;int&gt; 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 1, 1, 1,…
 ## $ song    &lt;chr&gt; &quot;No music&quot;, &quot;No music&quot;, &quot;No music&quot;, &quot;No music&quot;, &quot;No music&quot;, &quot;N…
 ## $ honey_g &lt;dbl&gt; 196.56, 199.58, 200.71, 195.80, 199.58, 200.71, 226.80, 227.55…</code></pre>
-<div id="model-formula-2" class="section level3" number="16.8.1">
-<h3><span class="header-section-number">16.8.1</span> Model formula</h3>
+<div id="model-formula-2" class="section level3 hasAnchor" number="16.8.1">
+<h3><span class="header-section-number">16.8.1</span> Model formula<a href="m3.html#model-formula-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>I said the model formula would look like this:</p>
 <p><span class="math display">\[y_{ijk} = \mu + \alpha_i + b_{j} + + (\alpha b)_{ij} + \epsilon_{ijk}\]</span></p>
 <p>where <span class="math inline">\(y_{ijk}\)</span> is the amount of honey produced (in grams) in the <span class="math inline">\(k^{th}\)</span> month by the <span class="math inline">\(j^{th}\)</span> hive while listening to song <span class="math inline">\(i\)</span>. Here, <span class="math inline">\(\mu\)</span> is the grand mean of honey production, <span class="math inline">\(\alpha_i\)</span> are the <span class="math inline">\(I\)</span> fixed effects for <code>song</code> and <span class="math inline">\(b_j\)</span> are the random effects for hive <span class="math inline">\(j\)</span>. <span class="math inline">\((\alpha b)_{ij}\)</span> are the <span class="math inline">\(IJ\)</span> interaction terms for the interaction between the the hive and the song. What does this represent here? Well, maybe some hives respond to a certain song quite differently to other hives. <span class="math inline">\((\alpha b)_{ij}\)</span> is a random effect because any term involving a random effect must also be a random effect. <span class="math inline">\((\alpha b)_{ij} ~ \sim N(0, \sigma^2_{\alpha b})\)</span>, <span class="math inline">\(b_k \sim N(0, \sigma_b^2)\)</span> and <span class="math inline">\(\epsilon_{ijk} \sim N(0, \sigma^2)\)</span>. All the random effects are mutually independent random variables.</p>
 </div>
-<div id="how-would-we-fit-this-with-lmer" class="section level3" number="16.8.2">
-<h3><span class="header-section-number">16.8.2</span> How would we fit this with <code>lmer</code>?</h3>
+<div id="how-would-we-fit-this-with-lmer" class="section level3 hasAnchor" number="16.8.2">
+<h3><span class="header-section-number">16.8.2</span> How would we fit this with <code>lmer</code>?<a href="m3.html#how-would-we-fit-this-with-lmer" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="m3.html#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4) <span class="co"># library from which we load the lmer function</span></span></code></pre></div>
 <p>This is how we would fit a model with <em>only</em> a hive effect:</p>
 <div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="m3.html#cb141-1" aria-hidden="true" tabindex="-1"></a>mod0 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(honey_g <span class="sc">~</span> song <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>hive), <span class="at">data =</span> honey)</span></code></pre></div>
 <p>This is how we would fit our <strong>full</strong> model, with a hive effect AND a hive and song interaction:</p>
 <div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="m3.html#cb142-1" aria-hidden="true" tabindex="-1"></a>mod1 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(honey_g <span class="sc">~</span> song <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>hive) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>hive<span class="sc">:</span>song), <span class="at">data =</span> honey)</span></code></pre></div>
-<div id="do-we-need-the-interaction" class="section level4" number="16.8.2.1">
-<h4><span class="header-section-number">16.8.2.1</span> Do we need the interaction?</h4>
+<div id="do-we-need-the-interaction" class="section level4 hasAnchor" number="16.8.2.1">
+<h4><span class="header-section-number">16.8.2.1</span> Do we need the interaction?<a href="m3.html#do-we-need-the-interaction" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="m3.html#cb143-1" aria-hidden="true" tabindex="-1"></a>lmtest<span class="sc">::</span><span class="fu">lrtest</span>(mod1, mod0)</span></code></pre></div>
 <pre><code>## Likelihood ratio test
 ## 
@@ -2163,8 +2162,8 @@ Random effects can be variables that were opportunistically measured whose varia
 </div>
 </div>
 </div>
-<div id="more-fixed-vs-random-effects-practice" class="section level2" number="16.9">
-<h2><span class="header-section-number">16.9</span> More fixed vs random effects practice</h2>
+<div id="more-fixed-vs-random-effects-practice" class="section level2 hasAnchor" number="16.9">
+<h2><span class="header-section-number">16.9</span> More fixed vs random effects practice<a href="m3.html#more-fixed-vs-random-effects-practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Consider the following two examples from <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-corrdata.html#exercises-6">Roback &amp; Legler (2021), section 7.10</a>.
 <strong>Identify which variable is the response and which are the fixed effects and the random effects.</strong></p>
 <blockquote>
@@ -2175,10 +2174,10 @@ Random effects can be variables that were opportunistically measured whose varia
 <p>Radon in Minnesota. Radon is a carcinogen – a naturally occurring radioactive gas whose decay products are also radioactive – known to cause lung cancer in high concentrations. The EPA sampled more than 80,000 homes across the U.S. Each house came from a randomly selected county and measurements were made on each level of each home. Uranium measurements at the county level were included to improve the radon estimates.</p>
 </blockquote>
 <p><strong>Variables: radon measurement, home, level of home, uranium, county</strong></p>
-<div id="answers" class="section level3" number="16.9.1">
-<h3><span class="header-section-number">16.9.1</span> Answers</h3>
-<div id="cockroaches" class="section level4" number="16.9.1.1">
-<h4><span class="header-section-number">16.9.1.1</span> Cockroaches</h4>
+<div id="answers" class="section level3 hasAnchor" number="16.9.1">
+<h3><span class="header-section-number">16.9.1</span> Answers<a href="m3.html#answers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="cockroaches" class="section level4 hasAnchor" number="16.9.1.1">
+<h4><span class="header-section-number">16.9.1.1</span> Cockroaches<a href="m3.html#cockroaches" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>response: count of cockroaches</li>
 <li>fixed effects: room type (kitchen, bathroom, bedroom), tenant income, building
@@ -2186,8 +2185,8 @@ age</li>
 <li>random effects: apartment, building</li>
 </ul>
 </div>
-<div id="radon" class="section level4" number="16.9.1.2">
-<h4><span class="header-section-number">16.9.1.2</span> Radon</h4>
+<div id="radon" class="section level4 hasAnchor" number="16.9.1.2">
+<h4><span class="header-section-number">16.9.1.2</span> Radon<a href="m3.html#radon" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>response: radon measurement</li>
 <li>fixed effects: level of home (e.g. upper or lower level), uranium (county level variable)</li>
@@ -2196,8 +2195,8 @@ age</li>
 </div>
 </div>
 </div>
-<div id="advice-for-polishing-your-writing" class="section level2" number="16.10">
-<h2><span class="header-section-number">16.10</span> Advice for polishing your writing</h2>
+<div id="advice-for-polishing-your-writing" class="section level2 hasAnchor" number="16.10">
+<h2><span class="header-section-number">16.10</span> Advice for polishing your writing<a href="m3.html#advice-for-polishing-your-writing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The U of T writing advice site has some great short articles with tips about common writing mistakes and tips for improving your writing. The full list from the <a href="https://advice.writing.utoronto.ca/revising/">‘Revising’</a> section is below. Choose one or two that seem relevant to you and read them. If you don’t know where to start, go for the <a href="https://advice.writing.utoronto.ca/revising/hit-parade-of-errors/">‘Hit Parade’</a>.</p>
 <ul>
 <li><p><a href="https://advice.writing.utoronto.ca/revising/revising-and-editing/">Revising And Editing</a></p></li>
@@ -2230,7 +2229,6 @@ age</li>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -2270,6 +2268,10 @@ gitbook.start({
 "text": null
 },
 "download": [["STA303-Course-guide.pdf", "PDF"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "toc_depth": 2,

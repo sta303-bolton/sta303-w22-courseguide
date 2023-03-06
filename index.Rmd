@@ -1,5 +1,5 @@
 ---
-title: "STA303 Methods of Data Analysis II"
+title: "STA303"
 subtitle: "Course guide"
 author: "Prof. Liza Bolton"
 date: "Winter 2022"

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>19 Resources | R Notebook</title>
   <meta name="description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="19 Resources | R Notebook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
   
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="references-1.html"/>
 <link rel="next" href="faqs-and-errata.html"/>
-<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link rel="shortcut icon" href="images/favicon.ico" />
@@ -95,7 +94,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -108,7 +107,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -718,10 +717,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="resources" class="section level1" number="19">
-<h1><span class="header-section-number">19</span> Resources</h1>
-<div id="course-tools-overview" class="section level2" number="19.1">
-<h2><span class="header-section-number">19.1</span> Course tools overview</h2>
+<div id="resources" class="section level1 hasAnchor" number="19">
+<h1><span class="header-section-number">19</span> Resources<a href="resources.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="course-tools-overview" class="section level2 hasAnchor" number="19.1">
+<h2><span class="header-section-number">19.1</span> Course tools overview<a href="resources.html#course-tools-overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>While we’ve tried to keep things as streamlined as possible, there are still several different tools we’ll be using this semester. Your U of T login should work with all of them. The below PDF file provides an overview of how you’ll be interacting with each one.</p>
 <ul>
 <li>At the bottom of the page is an embedded slideshow introducing you to the JupyterHub.<br />
@@ -730,8 +729,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
 <li>Instructions for setting up your U of T Zoom are on the Zoom page and links are in the Navigation menu and on the home page.</li>
 </ul>
-<div id="admin" class="section level3" number="19.1.1">
-<h3><span class="header-section-number">19.1.1</span> Admin</h3>
+<div id="admin" class="section level3 hasAnchor" number="19.1.1">
+<h3><span class="header-section-number">19.1.1</span> Admin<a href="resources.html#admin" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="55%" />
@@ -792,22 +791,22 @@ assessments.</td>
 </table>
 </div>
 </div>
-<div id="using-rstudio-with-the-jupyterhub" class="section level2" number="19.2">
-<h2><span class="header-section-number">19.2</span> Using RStudio with the JupyterHub</h2>
+<div id="using-rstudio-with-the-jupyterhub" class="section level2 hasAnchor" number="19.2">
+<h2><span class="header-section-number">19.2</span> Using RStudio with the JupyterHub<a href="resources.html#using-rstudio-with-the-jupyterhub" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will be using R through RStudio to conduct analyses in this course. If you have a local installation of R you are welcome to continue using that, but, for this course, you do not need to have R and RStudio installed. Instead, assessments and activities will be shared through the U of T JupyterHub. This gives you access to RStudio in your browser through your U of T login on any internet-connected device. It means you don’t have to fight package installations and we can instead focus on the good stuff.</p>
 <p><strong>Please read through the following slides, experiment with the example sharing link, make sure you know how to knit an Rmd to pdf + export the pdf, and practice navigating and moving files.</strong></p>
 <iframe src="https://rstudio-with-jupyerhub-uoft.netlify.app" width="100%" height="500" allowfullscreen="allowfullscreen" data-mce-fragment="1">
 </iframe>
 <p>Link: <a href="https://rstudio-with-jupyerhub-uoft.netlify.app" class="uri">https://rstudio-with-jupyerhub-uoft.netlify.app</a>.</p>
 </div>
-<div id="team-up" class="section level2" number="19.3">
-<h2><span class="header-section-number">19.3</span> Team Up!</h2>
+<div id="team-up" class="section level2 hasAnchor" number="19.3">
+<h2><span class="header-section-number">19.3</span> Team Up!<a href="resources.html#team-up" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><a href="https://q.utoronto.ca/courses/46670/pages/integration-team-up-for-students">Link to student-facing Quercus Support resources.</a></p>
 <p>Please only attend one of these sessions if you are prepared to…</p>
 <p><img src="images/course-tools/engage.jpeg" width="60%" style="display: block; margin: auto;" /></p>
 <p>Image description: Captain Picard (of the Starship Enterprise) in uniform, pointing forwards. Text reads: ENGAGE</p>
-<div id="to-participate-in-these-activities-you-need" class="section level3" number="19.3.1">
-<h3><span class="header-section-number">19.3.1</span> To participate in these activities, you <strong>need</strong>:</h3>
+<div id="to-participate-in-these-activities-you-need" class="section level3 hasAnchor" number="19.3.1">
+<h3><span class="header-section-number">19.3.1</span> To participate in these activities, you <strong>need</strong>:<a href="resources.html#to-participate-in-these-activities-you-need" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>A U of T LICENSED Zoom account to access the call. Some troubleshooting tips in this announcement: <a href="https://q.utoronto.ca/courses/253305/discussion_topics/1565885" title="Make sure your Zoom is licensed!">Make sure your Zoom is licensed!</a>.</p></li>
 <li><p>A reasonable <strong>internet connection</strong>.</p></li>
@@ -819,8 +818,8 @@ assessments.</td>
 </ul></li>
 </ul>
 </div>
-<div id="before-the-activity-you-should" class="section level3" number="19.3.2">
-<h3><span class="header-section-number">19.3.2</span> <strong>Before</strong> the activity you should:</h3>
+<div id="before-the-activity-you-should" class="section level3 hasAnchor" number="19.3.2">
+<h3><span class="header-section-number">19.3.2</span> <strong>Before</strong> the activity you should:<a href="resources.html#before-the-activity-you-should" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li><p>Remember that <strong>you don’t have to participate in Team Up! activities</strong>, there are plenty of other ways to earn your 🧺knowledge basket marks. </p>
 <ul>
@@ -842,8 +841,8 @@ assessments.</td>
 <li><p>Read over the Team Up! instructions below.</p></li>
 </ol>
 </div>
-<div id="some-ruleslogistics" class="section level3" number="19.3.3">
-<h3><span class="header-section-number">19.3.3</span> Some rules/logistics</h3>
+<div id="some-ruleslogistics" class="section level3 hasAnchor" number="19.3.3">
+<h3><span class="header-section-number">19.3.3</span> Some rules/logistics<a href="resources.html#some-ruleslogistics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p><strong>Speak up!</strong> Practice talking about statistics. For these activities, I’d honestly rather you be wrong out loud than right in silence.</p></li>
 <li><p><strong>Be kind</strong> and constructive. You are in a team, practice being a good team member.</p></li>
@@ -861,8 +860,8 @@ assessments.</td>
 </ul>
 <p><strong>Timing note: Assessment pages will become available at 15 minutes past the hour and remain available for 45 minutes. Ensure sure your team submits by the end of the session.</strong></p>
 </div>
-<div id="team-up-instructions" class="section level3" number="19.3.4">
-<h3><span class="header-section-number">19.3.4</span> Team Up! Instructions</h3>
+<div id="team-up-instructions" class="section level3 hasAnchor" number="19.3.4">
+<h3><span class="header-section-number">19.3.4</span> Team Up! Instructions<a href="resources.html#team-up-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Participating in Team Up! activities can earn you knowledge basket points. They will be based on how well your team does, so work together and give it a good effort.</p>
 <p>You will complete the following 5 steps:
 .midi[
@@ -871,8 +870,8 @@ assessments.</td>
 3. <strong>Members</strong> join Team Up! group
 4. Complete the activity
 5. <strong>Submit</strong> the activity</p>
-<div id="step-1-decide-on-roles" class="section level4" number="19.3.4.1">
-<h4><span class="header-section-number">19.3.4.1</span> Step 1: Decide on roles</h4>
+<div id="step-1-decide-on-roles" class="section level4 hasAnchor" number="19.3.4.1">
+<h4><span class="header-section-number">19.3.4.1</span> Step 1: Decide on roles<a href="resources.html#step-1-decide-on-roles" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>You will need:</p>
 <ul>
 <li><p>An <strong>Instructions Master</strong> who is responsible for helping the team follow these instructions carefully.<br />
@@ -883,13 +882,13 @@ assessments.</td>
 <p>Team Members (other than the Driver) participate and choose vote on answers, so all team mates can see what they have chosen, but they cannot submit their choices to Team Up!.</p>
 <p>DECIDE THIS BEFORE CLICKING ANYTHING TO DO WITH TEAM UP!</p>
 </div>
-<div id="step-2-driver-sets-up-group" class="section level4" number="19.3.4.2">
-<h4><span class="header-section-number">19.3.4.2</span> Step 2: Driver sets up group</h4>
+<div id="step-2-driver-sets-up-group" class="section level4 hasAnchor" number="19.3.4.2">
+<h4><span class="header-section-number">19.3.4.2</span> Step 2: Driver sets up group<a href="resources.html#step-2-driver-sets-up-group" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The person in your group whose first/personal name comes last alphabetically will be the Leader (Driver) for the session.</p>
 <p><strong>The Driver must do the below steps FIRST to get the group code.</strong> Then they will share the group code with all the members of the group so they can also join.</p>
 <p>1 Log-in to Quercus from your device (phone, tablet, computer).</p>
 <p>1 Click on the Team Up! assignment from the <a href="https://q.utoronto.ca/courses/253305/pages/course-overview">Course Overview</a> page.</p>
-<p>2 Click ‘Go to Tool.’ If it is not appearing, refresh your page or try a different browser.</p>
+<p>2 Click ‘Go to Tool’. If it is not appearing, refresh your page or try a different browser.</p>
 <p><img src="images/course-tools/gototool.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>NON-DRIVERS! DO NOT TOUCH ANYTHING!</p>
 <p>3 Choose “Create New Group”</p>
@@ -897,86 +896,86 @@ assessments.</td>
 <p>4 Share group ID in Zoom
 <img src="images/course-tools/group%20id.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="step-3-members-join" class="section level4" number="19.3.4.3">
-<h4><span class="header-section-number">19.3.4.3</span> Step 3: Members join</h4>
+<div id="step-3-members-join" class="section level4 hasAnchor" number="19.3.4.3">
+<h4><span class="header-section-number">19.3.4.3</span> Step 3: Members join<a href="resources.html#step-3-members-join" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Once the Driver has shared the group ID, AND ONLY THEN do the following:</p>
 <p>1 Click on the Team Up! assignment from the <a href="https://q.utoronto.ca/courses/253305/pages/course-overview">Course Overview</a> page.</p>
-<p>2 Click ‘Go to Tool.’ If it is not appearing, refresh your page or try a different browser.</p>
+<p>2 Click ‘Go to Tool’. If it is not appearing, refresh your page or try a different browser.</p>
 <p><img src="images/course-tools/gototool.png" width="50%" style="display: block; margin: auto;" /></p>
-<p>3 Input the code your driver provided and click ‘Join Group.’</p>
+<p>3 Input the code your driver provided and click ‘Join Group’.</p>
 <p><img src="images/course-tools/choose%20create.png" width="45%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="step-4-complete-the-activity" class="section level4" number="19.3.4.4">
-<h4><span class="header-section-number">19.3.4.4</span> Step 4: Complete the activity</h4>
+<div id="step-4-complete-the-activity" class="section level4 hasAnchor" number="19.3.4.4">
+<h4><span class="header-section-number">19.3.4.4</span> Step 4: Complete the activity<a href="resources.html#step-4-complete-the-activity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li><p>You will need to have the <strong>interactive activity (question document)</strong> associated with this task open on to see the answer options and update any code. <strong>Be prepared to switch between Team Up! and the JupyterHub tab.</strong></p></li>
 <li><p>The Driver chooses a question, and the team can participate by choosing their own answers and discussing their choices with each other. Once the team decides on a final answer, the driver chooses it and clicks the Check Answer button. <strong>Note</strong>: The Driver can check an answer despite what the team members choose, so be careful that you have consensus before clicking the Check Answer button. You cannot undo.</p></li>
 <li><p>If the answer is <strong>correct</strong>, you will be awarded the full score or “diamonds” for that question. You will be able to proceed onward by clicking the Next button that will appear under the Check Answer button or by clicking on a question in the menu on the left. If your team’s answer is <strong>not correct</strong>, discuss the question and choose again. Repeat until you get the correct answer. All teammates can see whether responses are correct/incorrect as well as their team’s overall score as they progress through the Team Up! session.</p></li>
 </ol>
 </div>
-<div id="step-5-the-driver-must-click-submit-to-quercus-for-your-answers-to-be-processed." class="section level4" number="19.3.4.5">
-<h4><span class="header-section-number">19.3.4.5</span> Step 5: The Driver MUST click Submit to Quercus for your answers to be processed.</h4>
+<div id="step-5-the-driver-must-click-submit-to-quercus-for-your-answers-to-be-processed." class="section level4 hasAnchor" number="19.3.4.5">
+<h4><span class="header-section-number">19.3.4.5</span> Step 5: The Driver MUST click Submit to Quercus for your answers to be processed.<a href="resources.html#step-5-the-driver-must-click-submit-to-quercus-for-your-answers-to-be-processed." class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If this is not done, no one on the team will get a grade!!!!</p>
 <p><img src="images/course-tools/submit.png" width="70%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 </div>
-<div id="zoomzoomzoomzoom" class="section level2" number="19.4">
-<h2><span class="header-section-number">19.4</span> Zoom, Zoom, Zoom, Zoom…</h2>
+<div id="zoomzoomzoomzoom" class="section level2 hasAnchor" number="19.4">
+<h2><span class="header-section-number">19.4</span> Zoom, Zoom, Zoom, Zoom…<a href="resources.html#zoomzoomzoomzoom" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><br />
 Access to STA303 synchronous meetings and office hours is restricted to our students.<br />
 <br />
 </p>
 <p><a href="https://utoronto.zoom.us/signin">Set up your U of T Zoom account</a></p>
-<div id="make-sure-your-zoom-is-up-to-date" class="section level3" number="19.4.1">
-<h3><span class="header-section-number">19.4.1</span> Make sure your Zoom is up to date</h3>
+<div id="make-sure-your-zoom-is-up-to-date" class="section level3 hasAnchor" number="19.4.1">
+<h3><span class="header-section-number">19.4.1</span> Make sure your Zoom is up to date<a href="resources.html#make-sure-your-zoom-is-up-to-date" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To participate fully, you will need Desktop client or mobile app: version 5.3.0 or higher. You can check your desktop client or mobile app version by following <a href="https://support.zoom.us/hc/en-us/articles/201362393-Viewing-the-Zoom-version-number">these instructions.</a></p>
 </div>
-<div id="customize" class="section level3" number="19.4.2">
-<h3><span class="header-section-number">19.4.2</span> Customize!</h3>
+<div id="customize" class="section level3 hasAnchor" number="19.4.2">
+<h3><span class="header-section-number">19.4.2</span> Customize!<a href="resources.html#customize" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Once you have logged in, <a href="https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-Profile">please customize your profile</a>:</p>
 <ul>
 <li><p>Update your name to your <strong>preferred name</strong> (what you would like us to call you in class) Note: this may not be allowed with your U of T settings, so don’t worry if this doesn’t work.</p></li>
 <li><p>Add a <strong>profile picture</strong> (please make it a photo of YOU or an avatar that looks like you…we don’t want Snoopy or Joe Biden<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a> in class)</p></li>
 </ul>
 </div>
-<div id="vpn" class="section level3" number="19.4.3">
-<h3><span class="header-section-number">19.4.3</span> VPN</h3>
+<div id="vpn" class="section level3 hasAnchor" number="19.4.3">
+<h3><span class="header-section-number">19.4.3</span> VPN<a href="resources.html#vpn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>There is a <a href="https://isea.utoronto.ca/services/vpn/utorvpn/">University of Toronto VPN (UTORvpn)</a> that you have access to as a student. It may help with video quality and access to U of T resources.<br />
 If you are based in mainland China, the <a href="https://onesearch.library.utoronto.ca/ic-faq-categories/alibaba-cloud-enterprise-network-cen-service">Alibaba Cloud Enterprise Network (CEN)Links to an external site.</a> service should help with your Quercus access.</p>
 </div>
-<div id="notes" class="section level3" number="19.4.4">
-<h3><span class="header-section-number">19.4.4</span> Notes:</h3>
+<div id="notes" class="section level3 hasAnchor" number="19.4.4">
+<h3><span class="header-section-number">19.4.4</span> Notes:<a href="resources.html#notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li><p>Please always use your real name and face for this course, and be cautious about changing them and your virtual background for other meetings. A joke background for a call with family or friends may not be appropriate for class.</p></li>
 <li><p>For class meetings, the settings will always be that your camera and microphone are off to begin with so you have the control to check these things first.</p></li>
 <li><p>We do ask that, when possible, you use your microphone in office hours, breakout groups and any other small group meetings and strongly prefer that you use your camera AND microphone. We trust you to make the best choice for your environment, comfort and learning.</p></li>
-<li><p>You may get a <strong>“This meeting is for authorized participants only message.”</strong> Choose the “Sign in with SSO” option to sign in.</p></li>
+<li><p>You may get a <strong>“This meeting is for authorized participants only message”.</strong> Choose the “Sign in with SSO” option to sign in.</p></li>
 </ol>
 </div>
-<div id="changing-your-profile-picture-on-zoom-and-quercus" class="section level3" number="19.4.5">
-<h3><span class="header-section-number">19.4.5</span> Changing your profile picture on Zoom and Quercus</h3>
+<div id="changing-your-profile-picture-on-zoom-and-quercus" class="section level3 hasAnchor" number="19.4.5">
+<h3><span class="header-section-number">19.4.5</span> Changing your profile picture on Zoom and Quercus<a href="resources.html#changing-your-profile-picture-on-zoom-and-quercus" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Follow these instructions to add a profile picture (or bitmoji style avatar if you’d prefer) to <a href="https://community.canvaslms.com/docs/DOC-10599-4212710334">Quercus</a> and <a href="https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-profile">Zoom</a>. I want this experience to be more social and less faceless. Please don’t use photos of cartoon characters, etc. A good photo will be a close-up of your face so we can see who you are even when the photo is small.</p>
 </div>
-<div id="what-to-do-if-you-experience-technical-difficulties-during-class" class="section level3" number="19.4.6">
-<h3><span class="header-section-number">19.4.6</span> What to do if you experience technical difficulties during class?</h3>
+<div id="what-to-do-if-you-experience-technical-difficulties-during-class" class="section level3 hasAnchor" number="19.4.6">
+<h3><span class="header-section-number">19.4.6</span> What to do if you experience technical difficulties during class?<a href="resources.html#what-to-do-if-you-experience-technical-difficulties-during-class" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>First</strong>, (if possible) send me a chat note that you’re having technical difficulties and are working to resolve them.</p>
 <p><strong>Second</strong>, leave the meeting and re-enter. This often resets things and resolves the problem. Before entering the meeting, make sure all of your devices are properly plugged in and Bluetooth devices are connected.</p>
 <p>If that doesn’t fix things, exit the meeting again and update your Zoom Client. This is the Zoom software that should be on your computer. Here’s a short video tutorial explaining how to update the software: <a href="https://www.youtube.com/watch?v=E7zERcVLUBM" class="uri">https://www.youtube.com/watch?v=E7zERcVLUBM</a>.</p>
 <p>After updating, enter the meeting again to see if this resolved your problems.</p>
 <p><strong>Our synchronous classes are recorded, so if your technology is just going catastrophically wrong, go get a cup of tea/coffee/water and relax, you can catch up with the recording when it is posted on Quercus.</strong></p>
 </div>
-<div id="what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom" class="section level3" number="19.4.7">
-<h3><span class="header-section-number">19.4.7</span> What to do if your instructor or TA is experiencing technical difficulties on Zoom</h3>
+<div id="what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom" class="section level3 hasAnchor" number="19.4.7">
+<h3><span class="header-section-number">19.4.7</span> What to do if your instructor or TA is experiencing technical difficulties on Zoom<a href="resources.html#what-to-do-if-your-instructor-or-ta-is-experiencing-technical-difficulties-on-zoom" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>First,</strong> check the <strong>chat</strong> to see if the instructor or the project mentor have said what is going on and what they are doing to fix things and follow any instructions they give.</p>
 <p><strong>Second</strong>, if they have disappeared completely, wait 10 minutes (or until the end of the meeting time, whichever comes first) before closing the call. (You can do other things in the meantime, but be ready to jump back in).</p>
 <p><strong>Third</strong>, expect to see an announcement on Quercus afterwards telling you what to do (e.g. it might be to watch a video I’ll record later, to review some slides or perhaps there is nothing to do and i’ll see you next time).</p>
 </div>
 </div>
-<div id="student-support-services-and-resources" class="section level2" number="19.5">
-<h2><span class="header-section-number">19.5</span> Student support services and resources</h2>
-<div id="mental-health-support" class="section level3" number="19.5.1">
-<h3><span class="header-section-number">19.5.1</span> Mental health support</h3>
+<div id="student-support-services-and-resources" class="section level2 hasAnchor" number="19.5">
+<h2><span class="header-section-number">19.5</span> Student support services and resources<a href="resources.html#student-support-services-and-resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="mental-health-support" class="section level3 hasAnchor" number="19.5.1">
+<h3><span class="header-section-number">19.5.1</span> Mental health support<a href="resources.html#mental-health-support" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You may find yourself feeling overwhelmed, depressed, or anxious. Lots of people feel the same way. There is help available from mental health professionals 24 hours a day via online and phone-based services. Here are some that are available to U of T students:</p>
 <ul>
 <li><p><a href="https://www.studentlife.utoronto.ca/hwc/myssp">MySSP - My Student Support Program</a> 1-844-451-9700, or outside of Canada call 001-416-380-6578</p></li>
@@ -986,8 +985,8 @@ If you are based in mainland China, the <a href="https://onesearch.library.utoro
 <p>There is also the new Navi tool for U of T students, it is a chatbot and your questions are totally anonymous. <a href="http://uoft.me/navi" class="uri">http://uoft.me/navi</a></p>
 <p>The student union are also curating a list here: <a href="https://www.utsu.ca/mental-health/" class="uri">https://www.utsu.ca/mental-health/</a></p>
 </div>
-<div id="general-university-resources" class="section level3" number="19.5.2">
-<h3><span class="header-section-number">19.5.2</span> General University resources</h3>
+<div id="general-university-resources" class="section level3 hasAnchor" number="19.5.2">
+<h3><span class="header-section-number">19.5.2</span> General University resources<a href="resources.html#general-university-resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The following are some important links to help you with academic and/or technical service and support:</p>
 <ul>
 <li><p><a href="https://studentlife.utoronto.ca/department/health-wellness/"><strong>Health &amp; Wellness</strong></a> can help with appointments with a range of clinicians, nutrition, immunizations, sexual and reproductive health and much more. Many of their services continue to be available online.</p></li>
@@ -1006,12 +1005,12 @@ If you are based in mainland China, the <a href="https://onesearch.library.utoro
 </ul>
 <p>Visit the A&amp;S <a href="https://www.artsci.utoronto.ca/current/academic-advising-and-support/online-resources-students">online resources for students page</a> for resources available to support you through your online studies. If you have further questions, please email <a href="mailto:ask.artsci@utoronto.ca">ask.artsci@utoronto.ca</a>.</p>
 </div>
-<div id="financial-support" class="section level3" number="19.5.3">
-<h3><span class="header-section-number">19.5.3</span> Financial support</h3>
+<div id="financial-support" class="section level3 hasAnchor" number="19.5.3">
+<h3><span class="header-section-number">19.5.3</span> Financial support<a href="resources.html#financial-support" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A list of University financial supports, work-study opportunities, as well as provincial and federal government programs is available on the University’s <a href="https://www.viceprovoststudents.utoronto.ca/covid-19/funding-opportunity-directory/">Financial Support &amp; Funding Opportunity directory</a>.</p>
 </div>
-<div id="arts-science-covid19-faq" class="section level3" number="19.5.4">
-<h3><span class="header-section-number">19.5.4</span> Arts &amp; Science COVID19 FAQ</h3>
+<div id="arts-science-covid19-faq" class="section level3 hasAnchor" number="19.5.4">
+<h3><span class="header-section-number">19.5.4</span> Arts &amp; Science COVID19 FAQ<a href="resources.html#arts-science-covid19-faq" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <a href="https://www.artsci.utoronto.ca/covid19-artsci-student-faqs"><strong>Arts &amp; Science Undergraduate FAQ page</strong></a> addresses frequently asked questions that are specific to undergraduate students taking courses with the Faculty of Arts &amp; Science. On this page you will find information for:</p>
 <p>Messages from Dean Woodin can be found on the <a href="https://www.artsci.utoronto.ca/news/covid-19-and-u-ts-response-latest-updates-and-faqs">A&amp;S latest updates page</a>.</p>
 
@@ -1034,7 +1033,6 @@ If you are based in mainland China, the <a href="https://onesearch.library.utoro
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1074,6 +1072,10 @@ gitbook.start({
 "text": null
 },
 "download": [["STA303-Course-guide.pdf", "PDF"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "toc_depth": 2,

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Start here! | R Notebook</title>
   <meta name="description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Start here! | R Notebook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is the course guide for STA303: Methods of Data Analysis II at the University of Toronto" />
   
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="syllabus.html"/>
 <link rel="next" href="assessmentsoverview.html"/>
-<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link rel="shortcut icon" href="images/favicon.ico" />
@@ -95,7 +94,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -108,7 +107,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -718,15 +717,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="start-here" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Start here!</h1>
-<div id="introductions" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Introductions</h2>
+<div id="start-here" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Start here!<a href="start-here.html#start-here" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introductions" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introductions<a href="start-here.html#introductions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Hi folks,</p>
 <p>Welcome to STA303! We’re excited you’re joining us on this statistical voyage. I look forward to introducing myself to you in our first class on Wednesday, but for now, there is are basic introductions below for me and our Head TA Amin. Feel free to skip to <a href="start-here.html#howthiscourseworks">How this course works</a>, I know there is a lot to read in the module!</p>
 <p>Looking forward to a great semester! See you in class on Wednesday.</p>
-<div id="professor-liza-bolton-instructor" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> Professor Liza Bolton, Instructor</h3>
+<div id="professor-liza-bolton-instructor" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Professor Liza Bolton, Instructor<a href="start-here.html#professor-liza-bolton-instructor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Email:</strong> <a href="mailto:sta303@utoronto.ca">sta303@utoronto.ca</a> (Put “[Prof. Bolton]” in the subject line to the email me directly)</p>
 <p><strong>Pronouns:</strong> <a href="https://www.mypronouns.org/she-her">she/her</a></p>
 <p>Before moving (back) to Canada in 2019, I had lived more than half my life in New Zealand. (I still mention New Zealand a lot in class…) My current research areas are in statistics education and online learning, as well as health disparities across ethnic groups. I used to run a small consulting company and called myself a Data Ambassador. Why? Well, lots of people are consultants. I even did an internship in management consulting once upon a time. But it wasn’t a satisfying title for what I wanted my work with people to look like. I wanted something that focused on the communication and interpersonal side, not just high quality and appropriate analysis. People who aren’t confident in their ability to analyse their own data need a go-between, someone who can be an ambassador for their data! While I don’t do consulting any more, I love helping students build their technical and professional skills so they can go out into the world and be excellent ambassadors for data themselves.</p>
@@ -734,16 +733,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Favourite food</strong>: Corn. Popped, on the cob, in a chip, Mmmmm.</p>
 <p><strong>Book most often given as a gift</strong>: <a href="https://www.goodreads.com/book/show/41123067-a-matter-of-fact">A Matter of Fact: Talking Truth in a Post-Truth World</a> by Jess Berentson-Shaw</p>
 </div>
-<div id="amin-banihashemi-head-ta" class="section level3" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Amin Banihashemi, Head TA</h3>
+<div id="amin-banihashemi-head-ta" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Amin Banihashemi, Head TA<a href="start-here.html#amin-banihashemi-head-ta" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Email:</strong> <a href="mailto:sta303@utoronto.ca">sta303@utoronto.ca</a> (Amin will often be the one responding to your emails)</p>
 <p><strong>Pronouns:</strong> <a href="https://www.mypronouns.org/he-him">he/him</a></p>
 <p>I’m a fourth-year PhD student at the Institute of Medical Science. I have been a TA for STA130 in DoSS for the past 3 years and this is my second semester as Head TA of STA303.</p>
 <p>My area of research is clinical Neuroscience, something I am passionate about. I analyze images of brain and eye structures in neurodegenerative diseases. I investigate possible associations of these structures with each other and with the ability to remember well and carry out goal-oriented tasks successfully. I love creating reproducible statistical analysis workflows in R. I also like audiobooks, candlelight, and apple pie (which I make myself!)</p>
 </div>
 </div>
-<div id="a-few-things-to-know-upfront" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> A few things to know upfront</h2>
+<div id="a-few-things-to-know-upfront" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> A few things to know upfront<a href="start-here.html#a-few-things-to-know-upfront" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><strong>R</strong> is the programming language used in this course.</p></li>
 <li><p>I use and teach a lot of <strong><code>tidyverse</code></strong>, especially <strong><code>dplyr</code></strong> for data wrangling and <strong><code>ggplot</code></strong> for visualization.</p>
@@ -765,19 +764,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><p>Check out my <a href="https://www.lizabolton.com/autoresponder.html">autoresponder message post</a> for FAQs and other useful information.</p></li>
 </ul>
-<div id="students-joining-off-the-waitlist" class="section level3" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Students joining off the waitlist</h3>
+<div id="students-joining-off-the-waitlist" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Students joining off the waitlist<a href="start-here.html#students-joining-off-the-waitlist" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You do not have to submit any assessments you missed while on the waitlist. They are all knowledge basket assessments and you will have multiple future opportunities to make up those grades. See the <a href="syllabus.html#syllabus">Syllabus</a> for more information.</p>
 <p>If you have a <em>friend</em> on the waitlist, they can sign up to receive materials <a href="https://forms.office.com/r/sKWPFFE2Cd">here</a>.</p>
 </div>
 </div>
-<div id="howthiscourseworks" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> How this course works</h2>
+<div id="howthiscourseworks" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> How this course works<a href="start-here.html#howthiscourseworks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This course is organized into five two-week modules of learning + two one-week assessment-focus weeks.</p>
 <p>All course material will be made available through this course guide and/or in Quercus.</p>
-<p>All times listed are ‘Toronto time,’ i.e. Eastern Time. Note that Daylight Savings Time begins Sunday, March 13, 2022. You may find this time converter helpful: <a href="https://www.timeanddate.com/worldclock/meeting.html" class="uri">https://www.timeanddate.com/worldclock/meeting.html</a></p>
-<div id="in-most-modules-there-be-will-be" class="section level4" number="3.3.0.1">
-<h4><span class="header-section-number">3.3.0.1</span> <strong>In most modules there be will be:</strong></h4>
+<p>All times listed are ‘Toronto time’, i.e. Eastern Time. Note that Daylight Savings Time begins Sunday, March 13, 2022. You may find this time converter helpful: <a href="https://www.timeanddate.com/worldclock/meeting.html" class="uri">https://www.timeanddate.com/worldclock/meeting.html</a></p>
+<div id="in-most-modules-there-be-will-be" class="section level4 hasAnchor" number="3.3.0.1">
+<h4><span class="header-section-number">3.3.0.1</span> <strong>In most modules there be will be:</strong><a href="start-here.html#in-most-modules-there-be-will-be" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li><p>Asynchronous content released at the beginning.</p></li>
 <li><p>A synchronous class on Wednesday at 10:00 a.m. ET (L0101) and 3:00 p.m. ET (L0201).</p>
@@ -800,8 +799,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 </div>
-<div id="hours-expectations-1" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Hours expectations</h2>
+<div id="hours-expectations-1" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Hours expectations<a href="start-here.html#hours-expectations-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>While everyone has different work styles and learning needs, I want to provide some guidance around how I expect this course to look for students.</p>
 <p>Plan to be doing 6–8 hours of work on STA303 each <em>week.</em> In a two-week module, this may be comprised of:</p>
 <ul>
@@ -811,8 +810,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>2–6 hours on other assessments</p></li>
 <li><p>Remaining time attending reading announcements, office hours, checking Piazza, revision, etc.</p></li>
 </ul>
-<div id="communication" class="section level3" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> Communication</h3>
+<div id="communication" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Communication<a href="start-here.html#communication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Our course discussion board on <a href="https://piazza.com/class/kx47tj4fmy65dg">Piazza</a> is to be used for all content and administration questions. <em>Only</em> sensitive or personal issues/questions should be sent to <a href="mailto:sta303@utoronto.ca">sta303@utoronto.ca</a>. We reserve the right not to respond to emails that should be Piazza posts.</p>
 <ul>
@@ -823,8 +822,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 </div>
-<div id="to-do-now" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> To do now</h2>
+<div id="to-do-now" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> To do now<a href="start-here.html#to-do-now" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p>Read the <a href="syllabus.html#syllabus">Syllabus</a> (pdf version <a href="https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/STA303-1002_W22_syllabus.pdf">here</a>)</p></li>
 <li><p>Join the <a href="https://piazza.com/class/kx47tj4fmy65dg">Piazza discussion board</a>.</p></li>
@@ -848,7 +847,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -888,6 +886,10 @@ gitbook.start({
 "text": null
 },
 "download": [["STA303-Course-guide.pdf", "PDF"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "toc_depth": 2,
