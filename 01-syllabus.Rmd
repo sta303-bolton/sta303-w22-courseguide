@@ -10,7 +10,7 @@ source("links.R", local = knitr::knit_global())
 
 # Syllabus {#syllabus}
 
-You can get a more visual PDF version of the syllabus [here](https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/STA303-1002_W22_syllabus.pdf). This version is hopefully better suited to searching and screen readers.
+You can get a more visual PDF version of the syllabus [here]("https://github.com/sta303-bolton/sta303-w22-courseguide/raw/master/other-files/STA303-1002_W22_syllabus.pdf"). This version is hopefully better suited to searching and screen readers.
 
 *University of Toronto, Department of Statistical Sciences*\
 *STA303/1002: Methods of Data Analysis II*
